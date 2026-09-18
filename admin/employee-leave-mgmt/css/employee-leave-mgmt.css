@@ -1,0 +1,7 @@
+.elm-balance-card { border-left: 4px solid #003f88; }
+.elm-balance-card.sl { border-left-color: #e67e22; }
+.elm-balance-card.comp { border-left-color: #27ae60; }
+.elm-stat-value { font-size: 1.75rem; font-weight: 700; color: #003f88; }
+.elm-stat-label { font-size: 0.8rem; color: #6c757d; text-transform: uppercase; }
+.elm-policy-note { font-size: 0.85rem; color: #555; }
+.elm-sandwich-flag { color: #c0392b; font-size: 0.8rem; }

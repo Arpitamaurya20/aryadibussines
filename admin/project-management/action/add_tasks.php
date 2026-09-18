@@ -1,0 +1,11 @@
+<?php
+@session_start();
+require_once('../../includes/autoloader.inc.php');
+$data = $_POST;
+$dbh = new Dbh();
+$conn = $dbh->_connectodb();
+$data['CreatedBy'] = $_SESSION['pb_username'];
+$project_obj = new Projects($conn);
+$response = $project_obj->SaveTasks($data);
+echo json_encode($response);
+?>

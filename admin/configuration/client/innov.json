@@ -1,0 +1,9 @@
+{
+  "ProductName": "Innov",
+  "primary_color": "#0056A4",
+  "secondary_color_1": "#ED1B25",
+  "secondary_color_2": "#8F8E8D",
+  "logo": "innov_logo.jpg",
+  "favicon": "favicon_innov_v2.ico",
+  "circle_module": true
+}

@@ -1,0 +1,333 @@
+﻿1,Wet Cleaning Premium,Men Mixed Clothes,80
+2,Wet Cleaning Premium,Women Mixed Clothes,80
+3,Wet Cleaning Premium,Children Mixed Clothes,80
+4,Wet Cleaning Premium,Bed Cover,150
+5,Wet Cleaning Premium,Cusion Cover Regular,120
+6,Wet Cleaning Premium,Cusion Cover Large,150
+7,Wet Cleaning Premium,Carpet (2ft*3ft),450
+8,Wet Cleaning Premium,Carpet (3ft*5ft),600
+9,Wet Cleaning Premium,Carpet (5ft*7ft),800
+10,Wet Cleaning Premium,Carpet (6ft*9ft),1300
+11,Wet Cleaning Premium,Carpet (8ft*12ft),2000
+12,Wet Cleaning Premium,Carpet (10ft*12ft),2500
+13,Wet Cleaning Premium,Table Cover Small,120
+14,Wet Cleaning Premium,Table Cover Big,150
+15,Wet Cleaning Premium,Table Napkin,50
+16,Wet Cleaning Premium,Runner,120
+17,Wet Cleaning Premium,Bath Towel,100
+18,Wet Cleaning Premium,Hand Towel,60
+19,Wet Cleaning Premium,Face Towel,60
+20,Wet Cleaning Premium,Bathmate,80
+21,Wet Cleaning Premium,Car Cover,350
+22,Wet Cleaning Premium,Dog Costume,150
+23,Wet Cleaning Premium,Pillow (Small),150
+24,Wet Cleaning Premium,Pillow (Big),250
+25,Wet Cleaning Premium,Soft Toy (Small),150
+26,Wet Cleaning Premium,Soft Toy (Midium),300
+27,Wet Cleaning Premium,Soft Toy (Large),450
+28,Wet Cleaning Premium,Bath Robe,90
+29,Wet Cleaning Premium,Rajai (Small),200
+30,Wet Cleaning Premium,Rajai (Big),300
+31,Wet Cleaning Premium,Bed Sheet Single,120
+32,Wet Cleaning Premium,Bed Sheet Double,200
+33,Wet Cleaning Premium,Blanket Baby,200
+34,Wet Cleaning Premium,Blanket Single,450
+35,Wet Cleaning Premium,Blanket Double,650
+36,Wet Cleaning Premium,Comfoter Single,450
+37,Wet Cleaning Premium,Comfoter Double,650
+38,Wet Cleaning Premium,Duvet Single,450
+39,Wet Cleaning Premium,Duvet Double,650
+40,Wet Cleaning Premium,Duvet Cover Single,180
+41,Wet Cleaning Premium,Duvet Cover Double,250
+42,Wet Cleaning Premium,Pillow Cover,80
+43,Wet Cleaning Premium,Pillow Cover Large,120
+44,Dry Cleaning,Shirt,100
+45,Dry Cleaning,Shirt Silk,120
+46,Dry Cleaning,Shirt Woolen,120
+47,Dry Cleaning,T Shirt,90
+48,Dry Cleaning,Pants,110
+49,Dry Cleaning,Jeans,110
+50,Dry Cleaning,Shorts,90
+51,Dry Cleaning,Pyjama,160
+52,Dry Cleaning,Capri,160
+53,Dry Cleaning,Track Pant,110
+54,Dry Cleaning,Coat,250
+55,Dry Cleaning,Long Coat,380
+56,Dry Cleaning,Jacket Full Sleeves,200
+57,Dry Cleaning,Jacket Half Sleeves,150
+58,Dry Cleaning,Jacket With Hood,260
+59,Dry Cleaning,Mens Kurta ,140
+60,Dry Cleaning,Sweater ,200
+61,Dry Cleaning,Bed Cover,200
+62,Dry Cleaning,Cusion Cover Regular,150
+63,Dry Cleaning,Table Cover Small,150
+64,Dry Cleaning,Table Cover Big,200
+65,Dry Cleaning,Runner,200
+66,Dry Cleaning,Rajai (Small),300
+67,Dry Cleaning,Rajai (Big),450
+68,Dry Cleaning,Bed Sheet Single,150
+69,Dry Cleaning,Bed Sheet Double,250
+70,Dry Cleaning,Blanket Baby,250
+71,Dry Cleaning,Blanket Single,550
+72,Dry Cleaning,Blanket Double,750
+73,Dry Cleaning,Duvet Single,600
+74,Dry Cleaning,Duvet Double,750
+75,Dry Cleaning,Duvet Cover Single,200
+76,Dry Cleaning,Duvet Cover Double,300
+77,Dry Cleaning,Pillow Cover Large,150
+78,Wet Cleaning Standard,Men Mixed Clothes,40
+79,Wet Cleaning Standard,Women Mixed Clothes,40
+80,Wet Cleaning Standard,Children Mixed Clothes,40
+81,Wet Cleaning Standard,Bed Cover,100
+82,Wet Cleaning Standard,Cusion Cover Regular,40
+83,Wet Cleaning Standard,Cusion Cover Large,60
+84,Wet Cleaning Standard,Table Cover Small,60
+85,Wet Cleaning Standard,Table Cover Big,80
+86,Wet Cleaning Standard,Table Napkin,30
+87,Wet Cleaning Standard,Runner,60
+88,Wet Cleaning Standard,Bath Towel,60
+89,Wet Cleaning Standard,Hand Towel,40
+90,Wet Cleaning Standard,Face Towel,40
+91,Wet Cleaning Standard,Bathmate,50
+92,Wet Cleaning Standard,Bath Robe,40
+93,Wet Cleaning Standard,Rajai (Small),100
+94,Wet Cleaning Standard,Rajai (Big),150
+95,Wet Cleaning Standard,Bed Sheet Single,80
+96,Wet Cleaning Standard,Bed Sheet Double,100
+97,Wet Cleaning Standard,Blanket Baby,100
+98,Wet Cleaning Standard,Blanket Single,250
+99,Wet Cleaning Standard,Blanket Double,350
+100,Wet Cleaning Standard,Comfoter Single,250
+101,Wet Cleaning Standard,Comfoter Double,350
+102,Wet Cleaning Standard,Duvet Single,250
+103,Wet Cleaning Standard,Duvet Double,350
+104,Wet Cleaning Standard,Duvet Cover Single,100
+105,Wet Cleaning Standard,Duvet Cover Double,150
+106,Wet Cleaning Standard,Pillow Cover,30
+107,Wet Cleaning Standard,Pillow Cover Large,40
+108,Steam Ironing,Men Mixed Clothes,12
+109,Steam Ironing,Women Mixed Clothes,12
+110,Steam Ironing,Children Mixed Clothes,12
+111,Steam Ironing,Bed Cover,20
+112,Steam Ironing,Cusion Cover Regular,15
+113,Steam Ironing,Cusion Cover Large,20
+114,Steam Ironing,Table Cover Small,60
+115,Steam Ironing,Table Cover Big,20
+116,Steam Ironing,Runner,20
+117,Steam Ironing,Bath Robe,50
+118,Steam Ironing,Rajai (Small),20
+119,Steam Ironing,Rajai (Big),20
+120,Steam Ironing,Bed Sheet Single,15
+121,Steam Ironing,Bed Sheet Double,25
+122,Steam Ironing,Blanket Baby,25
+123,Steam Ironing,Blanket Single,40
+124,Steam Ironing,Blanket Double,60
+125,Steam Ironing,Comfoter Single,40
+126,Steam Ironing,Comfoter Double,60
+127,Steam Ironing,Duvet Cover Single,35
+128,Steam Ironing,Duvet Cover Double,50
+129,Steam Ironing,Pillow Cover,10
+130,Steam Ironing,Pillow Cover Large,15
+131,Wet Cleaning Premium,Ladies Bag Cotton,300
+132,Wet Cleaning Premium,Ladies Bag Leather (Small) (Clean+Polish),300
+133,Wet Cleaning Premium,Ladies Bag Leather (Big) ( Clean+Polish),400
+134,Wet Cleaning Premium,Jacket Leather ( Clean+Polish),350
+135,Wet Cleaning Premium,Travelling Bag (Small),200
+136,Wet Cleaning Premium,Travelling Bag (Big),250
+137,Wet Cleaning Premium,Suitcase (Small),250
+138,Wet Cleaning Premium,Suitcase (Big),350
+139,Wet Cleaning Premium,Sports Shoe (Normal),350
+140,Wet Cleaning Premium,Sports Shoe (Heavy),450
+141,Wet Cleaning Premium,Leather Shoe (Dry Clean+Polish),250
+142,Dry Cleaning,Ladies Bag Cotton,350
+143,Dry Cleaning,Ladies Bag Leather (Small),400
+144,Dry Cleaning,Ladies Bag Leather (Big),450
+145,Wet Cleaning Standard,Ladies Bag Cotton,150
+146,Wet Cleaning Standard,Travelling Bag (Small),100
+147,Wet Cleaning Standard,Travelling Bag (Big),150
+148,Wet Cleaning Premium,Ladies Lengha (Heavy Work),400
+149,Wet Cleaning Premium,Chaniya Choli,250
+150,Wet Cleaning Premium,Chaniya Choli Designer,300
+151,Wet Cleaning Premium,Petticoat,90
+152,Wet Cleaning Premium,Evening Dress(Midium Work),150
+153,Wet Cleaning Premium,Evening Dress(Heavy Work),250
+154,Wet Cleaning Premium,Night Gown,120
+155,Wet Cleaning Premium,Skirt (Short),90
+156,Wet Cleaning Premium,Skirt (Long),150
+157,Wet Cleaning Premium,Swimming Costume,90
+158,Wet Cleaning Premium,Slip,90
+159,Wet Cleaning Premium,Brassiere,50
+160,Wet Cleaning Premium,Panties,50
+161,Wet Cleaning Premium,Palozo,150
+162,Wet Cleaning Premium,Kurta Designer,200
+163,Wet Cleaning Premium,Kurta Anarkali,200
+164,Wet Cleaning Premium,Dupatta,90
+165,Wet Cleaning Premium,Dupatta Embrodary,120
+166,Wet Cleaning Premium,Salvar Kameez,200
+167,Wet Cleaning Premium,Salvar Kameez Designer,300
+168,Wet Cleaning Premium,Pyjama/Leggins,90
+169,Wet Cleaning Premium,Saree Silk,250
+170,Wet Cleaning Premium,Saree Designer (Midium Work),250
+171,Wet Cleaning Premium,Saree Designer ( Heavy Work),300
+172,Wet Cleaning Premium,Blouse Silk,90
+173,Wet Cleaning Premium,Blouse Designer,150
+174,Wet Cleaning Premium,Ladies Lengha (Midium Work),300
+175,Wet Cleaning Premium,Socks/Stocking,60
+176,Wet Cleaning Premium,Frock,200
+177,Dry Cleaning,Ladies Lengha (Heavy Work),500
+178,Dry Cleaning,Chaniya Choli,350
+179,Dry Cleaning,Chaniya Choli Designer,400
+180,Dry Cleaning,Evening Dress(Midium Work),250
+181,Dry Cleaning,Evening Dress(Heavy Work),400
+182,Dry Cleaning,Skirt (Short),150
+183,Dry Cleaning,Skirt (Long),200
+184,Dry Cleaning,Palozo,200
+185,Dry Cleaning,Kurta Designer,250
+186,Dry Cleaning,Kurta Anarkali,300
+187,Dry Cleaning,Dupatta,120
+188,Dry Cleaning,Dupatta Embrodary,200
+189,Dry Cleaning,Salvar Kameez,250
+190,Dry Cleaning,Salvar Kameez Designer,350
+191,Dry Cleaning,Pyjama/Leggins,120
+192,Dry Cleaning,Saree Silk,300
+193,Dry Cleaning,Saree Designer (Midium Work),350
+194,Dry Cleaning,Saree Designer ( Heavy Work),450
+195,Dry Cleaning,Blouse Silk,150
+196,Dry Cleaning,Blouse Designer,200
+197,Dry Cleaning,Ladies Lengha (Midium Work),400
+198,Dry Cleaning,Frock,300
+199,Wet Cleaning Standard,Chaniya Choli,200
+200,Wet Cleaning Standard,Petticoat,40
+201,Wet Cleaning Standard,Evening Dress(Midium Work),120
+202,Wet Cleaning Standard,Night Gown,50
+203,Wet Cleaning Standard,Skirt (Short),40
+204,Wet Cleaning Standard,Skirt (Long),60
+205,Wet Cleaning Standard,Swimming Costume,40
+206,Wet Cleaning Standard,Slip,40
+207,Wet Cleaning Standard,Brassiere,25
+208,Wet Cleaning Standard,Panties,25
+209,Wet Cleaning Standard,Palozo,60
+210,Wet Cleaning Standard,Kurta Designer,80
+211,Wet Cleaning Standard,Kurta Anarkali,80
+212,Wet Cleaning Standard,Dupatta,50
+213,Wet Cleaning Standard,Salvar Kameez,100
+214,Wet Cleaning Standard,Pyjama/Leggins,40
+215,Wet Cleaning Standard,Saree Silk,100
+216,Wet Cleaning Standard,Blouse Silk,40
+217,Wet Cleaning Standard,Socks/Stocking,30
+218,Wet Cleaning Standard,Frock,80
+219,Steam Ironing,Ladies Lengha (Heavy Work),80
+220,Steam Ironing,Chaniya Choli,50
+221,Steam Ironing,Chaniya Choli Designer,80
+222,Steam Ironing,Petticoat,10
+223,Steam Ironing,Evening Dress(Midium Work),20
+224,Steam Ironing,Evening Dress(Heavy Work),50
+225,Steam Ironing,Night Gown,10
+226,Steam Ironing,Skirt (Short),10
+227,Steam Ironing,Skirt (Long),15
+228,Steam Ironing,Swimming Costume,15
+229,Steam Ironing,Slip,10
+230,Steam Ironing,Palozo,15
+231,Steam Ironing,Kurta Designer,15
+232,Steam Ironing,Kurta Anarkali,15
+233,Steam Ironing,Dupatta,15
+234,Steam Ironing,Dupatta Embrodary,20
+235,Steam Ironing,Salvar Kameez,35
+236,Steam Ironing,Salvar Kameez Designer,50
+237,Steam Ironing,Pyjama/Leggins,10
+238,Steam Ironing,Saree Silk,15
+239,Steam Ironing,Saree Designer (Midium Work),20
+240,Steam Ironing,Saree Designer ( Heavy Work),20
+241,Steam Ironing,Blouse Silk,10
+242,Steam Ironing,Blouse Designer,15
+243,Steam Ironing,Ladies Lengha (Midium Work),50
+244,Steam Ironing,Frock,15
+245,Steam Ironing,Sherwani (medium Work),100
+246,Steam Ironing,Sherwani (Heavy Work),120
+247,Steam Ironing,Jodhpuri,100
+248,Steam Ironing,Sherwani Dupatta,15
+249,Steam Ironing,Swimming Trunk,10
+250,Steam Ironing,Inner Wear,10
+251,Steam Ironing,Vest,10
+252,Steam Ironing,Tie,10
+253,Steam Ironing,Dhoti,15
+254,Steam Ironing,Safari Suit (Pant+Shirt) 2Pcs.,35
+255,Dry Cleaning,Sherwani (medium Work),350
+256,Dry Cleaning,Sherwani (Heavy Work),400
+257,Dry Cleaning,Jodhpuri,400
+258,Dry Cleaning,Sherwani Dupatta,120
+259,Dry Cleaning,Tie,80
+260,Dry Cleaning,Dhoti,120
+261,Wet Cleaning Premium,Sherwani (medium Work),300
+262,Wet Cleaning Premium,Sherwani (Heavy Work),350
+263,Wet Cleaning Premium,Jodhpuri,300
+264,Wet Cleaning Premium,Sherwani Dupatta,90
+265,Wet Cleaning Premium,Swimming Trunk,80
+266,Wet Cleaning Premium,Tie,50
+267,Wet Cleaning Premium,Dhoti,90
+268,Wet Cleaning Premium,Safari Suit (Pant+Shirt) 2Pcs.,300
+269,Wet Cleaning Standard,Sherwani Dupatta,50
+270,Wet Cleaning Standard,Swimming Trunk,40
+271,Wet Cleaning Standard,Inner Wear,15
+272,Wet Cleaning Standard,Vest,15
+273,Wet Cleaning Standard,Dhoti,40
+274,Wet Cleaning Standard,Safari Suit (Pant+Shirt) 2Pcs.,120
+275,Cloth Ironing ( Normal Ironing ),Men Mixed Clothes,8
+276,Cloth Ironing ( Normal Ironing ),Women Mixed Clothes,8
+277,Cloth Ironing ( Normal Ironing ),Children Mixed Clothes,8
+278,Cloth Ironing ( Normal Ironing ),Bed Cover,17
+279,Cloth Ironing ( Normal Ironing ),Cusion Cover Regular,12.75
+280,Cloth Ironing ( Normal Ironing ),Cusion Cover Large,17
+281,Cloth Ironing ( Normal Ironing ),Table Cover Small,51
+282,Cloth Ironing ( Normal Ironing ),Table Cover Big,17
+283,Cloth Ironing ( Normal Ironing ),Runner,17
+284,Cloth Ironing ( Normal Ironing ),Bath Robe,42.5
+285,Cloth Ironing ( Normal Ironing ),Rajai (Small),17
+286,Cloth Ironing ( Normal Ironing ),Rajai (Big),17
+287,Cloth Ironing ( Normal Ironing ),Bed Sheet Single,12.75
+288,Cloth Ironing ( Normal Ironing ),Bed Sheet Double,21.25
+289,Cloth Ironing ( Normal Ironing ),Blanket Baby,21.25
+290,Cloth Ironing ( Normal Ironing ),Blanket Single,34
+291,Cloth Ironing ( Normal Ironing ),Blanket Double,51
+292,Cloth Ironing ( Normal Ironing ),Comfoter Single,34
+293,Cloth Ironing ( Normal Ironing ),Comfoter Double,51
+294,Cloth Ironing ( Normal Ironing ),Duvet Cover Single,29.75
+295,Cloth Ironing ( Normal Ironing ),Duvet Cover Double,42.5
+296,Cloth Ironing ( Normal Ironing ),Pillow Cover,8.5
+297,Cloth Ironing ( Normal Ironing ),Pillow Cover Large,12.75
+298,Cloth Ironing ( Normal Ironing ),Ladies Lengha (Heavy Work),68
+299,Cloth Ironing ( Normal Ironing ),Chaniya Choli,42.5
+300,Cloth Ironing ( Normal Ironing ),Chaniya Choli Designer,68
+301,Cloth Ironing ( Normal Ironing ),Petticoat,8.5
+302,Cloth Ironing ( Normal Ironing ),Evening Dress(Midium Work),17
+303,Cloth Ironing ( Normal Ironing ),Evening Dress(Heavy Work),42.5
+304,Cloth Ironing ( Normal Ironing ),Night Gown,8.5
+305,Cloth Ironing ( Normal Ironing ),Skirt (Short),8.5
+306,Cloth Ironing ( Normal Ironing ),Skirt (Long),12.75
+307,Cloth Ironing ( Normal Ironing ),Swimming Costume,12.75
+308,Cloth Ironing ( Normal Ironing ),Slip,8.5
+309,Cloth Ironing ( Normal Ironing ),Palozo,12.75
+310,Cloth Ironing ( Normal Ironing ),Kurta Designer,12.75
+311,Cloth Ironing ( Normal Ironing ),Kurta Anarkali,12.75
+312,Cloth Ironing ( Normal Ironing ),Dupatta,12.75
+313,Cloth Ironing ( Normal Ironing ),Dupatta Embrodary,17
+314,Cloth Ironing ( Normal Ironing ),Salvar Kameez,29.75
+315,Cloth Ironing ( Normal Ironing ),Salvar Kameez Designer,42.5
+316,Cloth Ironing ( Normal Ironing ),Pyjama/Leggins,8.5
+317,Cloth Ironing ( Normal Ironing ),Saree Silk,12.75
+318,Cloth Ironing ( Normal Ironing ),Saree Designer (Midium Work),17
+319,Cloth Ironing ( Normal Ironing ),Saree Designer ( Heavy Work),17
+320,Cloth Ironing ( Normal Ironing ),Blouse Silk,8.5
+321,Cloth Ironing ( Normal Ironing ),Blouse Designer,12.75
+322,Cloth Ironing ( Normal Ironing ),Ladies Lengha (Midium Work),42.5
+323,Cloth Ironing ( Normal Ironing ),Frock,12.75
+324,Cloth Ironing ( Normal Ironing ),Sherwani (medium Work),85
+325,Cloth Ironing ( Normal Ironing ),Sherwani (Heavy Work),102
+326,Cloth Ironing ( Normal Ironing ),Jodhpuri,85
+327,Cloth Ironing ( Normal Ironing ),Sherwani Dupatta,12.75
+328,Cloth Ironing ( Normal Ironing ),Swimming Trunk,8.5
+329,Cloth Ironing ( Normal Ironing ),Inner Wear,8.5
+330,Cloth Ironing ( Normal Ironing ),Vest,8.5
+331,Cloth Ironing ( Normal Ironing ),Tie,8.5
+332,Cloth Ironing ( Normal Ironing ),Dhoti,12.75
+333,Cloth Ironing ( Normal Ironing ),Safari Suit (Pant+Shirt) 2Pcs.,29.75

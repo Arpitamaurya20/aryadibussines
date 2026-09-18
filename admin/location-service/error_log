@@ -1,0 +1,50 @@
+[14-Oct-2022 06:43:44 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/tqunkwmy/public_html/onepointservices/admin/includes/common_header.php on line 589
+[14-Oct-2022 06:43:44 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/tqunkwmy/public_html/onepointservices/admin/includes/common_header.php on line 601
+[14-Oct-2022 06:43:44 America/Boise] PHP Notice:  Undefined index: UserType in /home2/tqunkwmy/public_html/onepointservices/admin/includes/common_header.php on line 602
+[14-Oct-2022 06:43:44 America/Boise] PHP Notice:  Undefined variable: location_servicedata in /home2/tqunkwmy/public_html/onepointservices/admin/location-service/view_location_service.php on line 152
+[14-Oct-2022 06:43:44 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/tqunkwmy/public_html/onepointservices/admin/location-service/view_location_service.php on line 152
+[14-Oct-2022 18:13:53 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/tqunkwmy/public_html/onepointservices/admin/location-service/update_location_service_action.php:10) in /home2/tqunkwmy/public_html/onepointservices/admin/location-service/update_location_service_action.php on line 224
+[15-Oct-2022 07:25:34 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/tqunkwmy/public_html/onepointservices/admin/location-service/update_location_service.php:2) in /home2/tqunkwmy/public_html/onepointservices/admin/location-service/update_location_service.php on line 56
+[15-Oct-2022 07:25:34 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/tqunkwmy/public_html/onepointservices/admin/location-service/update_location_service.php on line 64
+[15-Oct-2022 07:25:34 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/tqunkwmy/public_html/onepointservices/admin/navigation/cfl_navigation.php on line 49
+[15-Oct-2022 07:25:34 America/Boise] PHP Notice:  Undefined index: UserType in /home2/tqunkwmy/public_html/onepointservices/admin/navigation/cfl_navigation.php on line 52
+[15-Oct-2022 07:25:34 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/tqunkwmy/public_html/onepointservices/admin/includes/common_header.php on line 589
+[15-Oct-2022 07:25:34 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/tqunkwmy/public_html/onepointservices/admin/includes/common_header.php on line 601
+[15-Oct-2022 07:25:34 America/Boise] PHP Notice:  Undefined index: UserType in /home2/tqunkwmy/public_html/onepointservices/admin/includes/common_header.php on line 602
+[15-Oct-2022 18:58:33 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/tqunkwmy/public_html/onepointservices/admin/location-service/update_location_service_action.php:10) in /home2/tqunkwmy/public_html/onepointservices/admin/location-service/update_location_service_action.php on line 224
+[17-Oct-2022 04:58:33 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/tqunkwmy/public_html/onepointservices/admin/includes/common_header.php on line 589
+[17-Oct-2022 04:58:33 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/tqunkwmy/public_html/onepointservices/admin/includes/common_header.php on line 601
+[17-Oct-2022 04:58:33 America/Boise] PHP Notice:  Undefined index: UserType in /home2/tqunkwmy/public_html/onepointservices/admin/includes/common_header.php on line 602
+[17-Oct-2022 04:58:33 America/Boise] PHP Notice:  Undefined variable: location_servicedata in /home2/tqunkwmy/public_html/onepointservices/admin/location-service/view_location_service.php on line 152
+[17-Oct-2022 04:58:33 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/tqunkwmy/public_html/onepointservices/admin/location-service/view_location_service.php on line 152
+[17-Oct-2022 04:58:34 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/tqunkwmy/public_html/onepointservices/admin/includes/common_header.php on line 589
+[17-Oct-2022 04:58:34 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/tqunkwmy/public_html/onepointservices/admin/includes/common_header.php on line 601
+[17-Oct-2022 04:58:34 America/Boise] PHP Notice:  Undefined index: UserType in /home2/tqunkwmy/public_html/onepointservices/admin/includes/common_header.php on line 602
+[17-Oct-2022 04:58:34 America/Boise] PHP Notice:  Undefined variable: location_servicedata in /home2/tqunkwmy/public_html/onepointservices/admin/location-service/view_location_service.php on line 152
+[17-Oct-2022 04:58:34 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/tqunkwmy/public_html/onepointservices/admin/location-service/view_location_service.php on line 152
+[30-Oct-2022 06:01:04 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/tqunkwmy/public_html/onepointservices/admin/includes/common_header.php on line 589
+[30-Oct-2022 06:01:04 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/tqunkwmy/public_html/onepointservices/admin/includes/common_header.php on line 601
+[30-Oct-2022 06:01:04 America/Boise] PHP Notice:  Undefined index: UserType in /home2/tqunkwmy/public_html/onepointservices/admin/includes/common_header.php on line 602
+[30-Oct-2022 06:01:04 America/Boise] PHP Notice:  Undefined variable: location_servicedata in /home2/tqunkwmy/public_html/onepointservices/admin/location-service/view_location_service.php on line 152
+[30-Oct-2022 06:01:04 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/tqunkwmy/public_html/onepointservices/admin/location-service/view_location_service.php on line 152
+[31-Oct-2022 02:14:49 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/tqunkwmy/public_html/onepointservices/admin/includes/common_header.php on line 589
+[31-Oct-2022 02:14:49 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/tqunkwmy/public_html/onepointservices/admin/includes/common_header.php on line 601
+[31-Oct-2022 02:14:49 America/Boise] PHP Notice:  Undefined index: UserType in /home2/tqunkwmy/public_html/onepointservices/admin/includes/common_header.php on line 602
+[31-Oct-2022 02:14:49 America/Boise] PHP Notice:  Undefined variable: location_servicedata in /home2/tqunkwmy/public_html/onepointservices/admin/location-service/view_location_service.php on line 152
+[31-Oct-2022 02:14:49 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/tqunkwmy/public_html/onepointservices/admin/location-service/view_location_service.php on line 152
+[24-Nov-2022 01:12:27 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 589
+[24-Nov-2022 01:12:27 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 601
+[24-Nov-2022 01:12:27 America/Boise] PHP Notice:  Undefined index: UserType in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 602
+[24-Nov-2022 01:12:27 America/Boise] PHP Notice:  Undefined variable: location_servicedata in /home2/cypherte/public_html/techxpert/ed/admin/location-service/view_location_service.php on line 152
+[24-Nov-2022 01:12:27 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/cypherte/public_html/techxpert/ed/admin/location-service/view_location_service.php on line 152
+[24-Nov-2022 01:12:30 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/cypherte/public_html/techxpert/ed/admin/location-service/add_location_service.php:2) in /home2/cypherte/public_html/techxpert/ed/admin/location-service/add_location_service.php on line 46
+[24-Nov-2022 01:12:30 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/cypherte/public_html/techxpert/ed/admin/navigation/cfl_navigation.php on line 49
+[24-Nov-2022 01:12:30 America/Boise] PHP Notice:  Undefined index: UserType in /home2/cypherte/public_html/techxpert/ed/admin/navigation/cfl_navigation.php on line 52
+[24-Nov-2022 01:12:30 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 589
+[24-Nov-2022 01:12:30 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 601
+[24-Nov-2022 01:12:30 America/Boise] PHP Notice:  Undefined index: UserType in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 602
+[24-Nov-2022 01:12:44 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 589
+[24-Nov-2022 01:12:44 America/Boise] PHP Notice:  Undefined index: pb_username in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 601
+[24-Nov-2022 01:12:44 America/Boise] PHP Notice:  Undefined index: UserType in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 602
+[24-Nov-2022 01:12:44 America/Boise] PHP Notice:  Undefined variable: location_servicedata in /home2/cypherte/public_html/techxpert/ed/admin/location-service/view_location_service.php on line 152
+[24-Nov-2022 01:12:44 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/cypherte/public_html/techxpert/ed/admin/location-service/view_location_service.php on line 152

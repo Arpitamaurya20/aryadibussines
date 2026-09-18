@@ -1,0 +1,222 @@
+/**
+ * TechXpert Admin — Poppins for UI text only.
+ * Icon fonts (Font Awesome, nextgen-icons) are explicitly excluded so glyphs stay visible.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  --font-family-sans-serif: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-base: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+html {
+  font-family: var(--font-family-base);
+}
+
+body,
+.page-wrapper,
+.page-content,
+.page-header,
+.page-sidebar,
+.nav-menu,
+.panel,
+.panel-hdr,
+.panel-content,
+.modal,
+.modal-title,
+.modal-body,
+.modal-footer,
+.breadcrumb,
+.table,
+.dataTables_wrapper,
+.form-control,
+.custom-select,
+select,
+textarea,
+input:not([type='checkbox']):not([type='radio']):not([type='file']):not([type='image']):not([type='button']):not([type='submit']):not([type='reset']),
+button,
+.btn,
+label,
+legend,
+.alert,
+.card,
+.dropdown-menu,
+.dropdown-item,
+.list-group-item,
+.nav-link:not([class*='fa']):not(.ni),
+.pagination,
+.badge:not([class*='fa']),
+.select2-container--default .select2-selection--single .select2-selection__rendered,
+.select2-container--default .select2-results__option,
+.select2-search__field,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+p,
+small,
+.text-muted,
+.dt-info,
+.dt-length,
+caption,
+th,
+td,
+option {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* ─── Preserve icon fonts (never use Poppins on these) ─── */
+
+/* Font Awesome 5 Pro (theme bundle — fal, some fas) */
+.fal,
+.fa-light,
+[class*=' fa-light'],
+i.fal,
+i.fa-light {
+  font-family: 'Font Awesome 5 Pro' !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+}
+
+/* Font Awesome 5/6 solid */
+.fas,
+.fa-solid,
+.fa.fa-solid,
+i.fas,
+i.fa-solid,
+[class*=' fa-solid'] {
+  font-family: 'Font Awesome 6 Free', 'Font Awesome 5 Pro', 'Font Awesome 5 Free' !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+}
+
+/* Font Awesome regular */
+.far,
+.fa-regular,
+i.far,
+i.fa-regular {
+  font-family: 'Font Awesome 6 Free', 'Font Awesome 5 Pro', 'Font Awesome 5 Free' !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+/* Font Awesome brands */
+.fab,
+.fa-brands,
+i.fab,
+i.fa-brands {
+  font-family: 'Font Awesome 6 Brands', 'Font Awesome 5 Brands' !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+/* Generic .fa (CDN FA6) */
+.fa:not(.fas):not(.far):not(.fal):not(.fab):not(.fa-solid):not(.fa-regular):not(.fa-light):not(.fa-brands),
+i.fa:not(.fas):not(.far):not(.fal):not(.fab) {
+  font-family: 'Font Awesome 6 Free', 'Font Awesome 5 Pro' !important;
+  font-weight: 900 !important;
+}
+
+/* Any element whose class starts with fa- (fa-user, fa-plus, etc.) */
+[class^='fa-']::before,
+[class*=' fa-']::before,
+[class^='fa-']::after,
+[class*=' fa-']::after,
+.fal::before,
+.fal::after,
+.fas::before,
+.fas::after,
+.far::before,
+.far::after,
+.fab::before,
+.fab::after,
+.fa-solid::before,
+.fa-solid::after,
+.fa-regular::before,
+.fa-regular::after,
+.fa-light::before,
+.fa-light::after,
+.fa-brands::before,
+.fa-brands::after,
+.fa::before,
+.fa::after {
+  font-family: inherit !important;
+  font-weight: inherit !important;
+}
+
+/* Icon elements: keep icon stack on <i> / <span> used as icons */
+i[class*='fa'],
+i[class^='fa-'],
+span[class*='fa'][class*='fa-'],
+span.fal,
+span.fas,
+span.far,
+span.fab,
+span.fa-solid,
+span.fa-regular,
+span.fa-light,
+span.fa-brands {
+  font-family: inherit !important;
+  font-style: normal !important;
+  display: inline-block;
+}
+
+i.fal,
+span.fal {
+  font-family: 'Font Awesome 5 Pro' !important;
+  font-weight: 300 !important;
+}
+
+i.fas,
+i.fa-solid,
+span.fas,
+span.fa-solid {
+  font-family: 'Font Awesome 6 Free', 'Font Awesome 5 Pro' !important;
+  font-weight: 900 !important;
+}
+
+i.far,
+i.fa-regular,
+span.far,
+span.fa-regular {
+  font-family: 'Font Awesome 6 Free', 'Font Awesome 5 Pro' !important;
+  font-weight: 400 !important;
+}
+
+i.fab,
+i.fa-brands,
+span.fab,
+span.fa-brands {
+  font-family: 'Font Awesome 6 Brands', 'Font Awesome 5 Brands' !important;
+}
+
+/* NextGen theme icons */
+.ni,
+[class^='ni-'],
+[class*=' ni-'],
+.ni::before,
+[class^='ni-']::before,
+[class*=' ni-']::before {
+  font-family: 'nextgen-icons' !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+
+/* DataTables / theme sort glyphs if they use icon font */
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:before {
+  font-family: 'Font Awesome 5 Pro', 'Font Awesome 6 Free' !important;
+}
+
+/* Pace / loaders that use icon fonts */
+.pace .pace-progress-inner {
+  font-family: inherit !important;
+}

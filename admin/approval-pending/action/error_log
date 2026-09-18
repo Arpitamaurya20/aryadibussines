@@ -1,0 +1,104 @@
+[19-Apr-2023 01:50:03 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 01:50:18 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 01:50:25 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 01:50:34 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 01:50:46 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 01:50:55 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 01:51:04 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 01:51:35 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 01:51:59 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 01:52:36 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 01:52:44 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 01:52:58 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 01:53:04 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 01:53:11 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 01:53:25 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 01:53:34 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 01:53:51 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 01:53:59 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 01:54:12 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 02:43:35 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[19-Apr-2023 02:45:04 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[06-May-2023 06:27:48 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-categories/action/delete_categories.php on line 17
+[17-May-2023 00:41:54 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/techxper/public_html/techxpertindia-app/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/manage-categories/action/delete_categories.php on line 17
+[17-May-2023 01:12:14 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/techxper/public_html/techxpertindia-app/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/manage-categories/action/delete_categories.php on line 17
+[17-May-2023 01:18:47 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/techxper/public_html/techxpertindia-app/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/manage-categories/action/delete_categories.php on line 17
+[17-May-2023 04:54:05 America/Boise] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/techxper/public_html/techxpertindia-app/admin/manage-categories/action/delete_categories.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/manage-categories/action/delete_categories.php on line 17

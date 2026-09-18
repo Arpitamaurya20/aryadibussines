@@ -1,0 +1,977 @@
+/* ==========================================================================
+   TECHXPARK SMART PARKING PLATFORM CSS
+   Theme: Obsidian Dark (#0B0F19), Slate Navy (#0F172A), Electric Cyan (#06B6D4)
+   ========================================================================== */
+
+:root {
+    --primary-txp: #0F172A;
+    --primary-dark: #0B0F19;
+    --accent-cyan: #06b6d4;
+    --accent-blue: #3d8ecf;
+    --accent-indigo: #4f46e5;
+    --success-green: #10B981;
+    --bg-light: #F8FAFC;
+    --bg-white: #ffffff;
+    --border-color: #E2E8F0;
+    --border-dark: rgba(255, 255, 255, 0.08);
+    --text-dark: #0F172A;
+    --text-muted: #475569;
+    --text-light: #94a3b8;
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.02);
+    --shadow-md: 0 12px 30px -4px rgba(15, 23, 42, 0.04), 0 4px 12px -2px rgba(15, 23, 42, 0.02);
+    --shadow-premium: 0 20px 40px -10px rgba(6, 182, 212, 0.12);
+    --shadow-dark: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+    --transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.txp-hero-section {
+    background: radial-gradient(circle at 80% 20%, #15325b 0%, #08111e 100%);
+    padding: 120px 0 140px;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Glowing tech accent dots in background */
+.txp-hero-section::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(6, 182, 212, 0.05) 0%, rgba(0, 0, 0, 0) 70%);
+    pointer-events: none;
+}
+
+.txp-badge {
+    background-color: rgba(6, 182, 212, 0.1);
+    border: 1px solid rgba(6, 182, 212, 0.25);
+    color: #90e0ef;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.txp-badge::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: var(--accent-cyan);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--accent-cyan);
+}
+
+.txp-title {
+    font-size: 3.75rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    color: #ffffff;
+    letter-spacing: -1px;
+}
+
+.txp-title span {
+    background: linear-gradient(90deg, #00f2fe, #4facfe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.txp-desc {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: #cbd5e1;
+    margin-bottom: 40px;
+    max-width: 550px;
+}
+
+.txp-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.btn-txp-download {
+    background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-blue) 100%);
+    color: #ffffff;
+    padding: 14px 32px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0 4px 20px rgba(6, 182, 212, 0.35);
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-txp-download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(6, 182, 212, 0.5);
+    color: #ffffff;
+}
+
+.btn-txp-outline {
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+    padding: 12px 32px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+}
+
+.btn-txp-outline:hover {
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+    color: #ffffff;
+}
+
+.txp-location {
+    font-size: 13.5px;
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Dynamic Phone Mockup Frame */
+.txp-phone-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.txp-phone-frame {
+    width: 290px;
+    height: 590px;
+    border: 12px solid #1e293b;
+    border-radius: 44px;
+    background-color: var(--primary-dark);
+    box-shadow: var(--shadow-dark), inset 0 0 12px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Speaker notch */
+.txp-phone-frame::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 24px;
+    background-color: #1e293b;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    z-index: 10;
+}
+
+.txp-phone-content {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 30%, #0077b6 0%, #03045e 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.txp-phone-logo {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.txp-phone-app-name {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+}
+
+.txp-phone-tagline {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
+}
+
+/* ==========================================================================
+   STEPS SECTION
+   ========================================================================== */
+.txp-steps-section {
+    padding: 100px 0;
+    background-color: var(--bg-white);
+}
+
+.txp-steps-flow {
+    position: relative;
+    margin-top: 50px;
+}
+
+/* Dotted connection line between steps */
+.txp-steps-flow::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 15%;
+    right: 15%;
+    height: 2px;
+    border-top: 2px dashed var(--border-color);
+    z-index: 1;
+}
+
+.txp-step-item {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 0 24px;
+}
+
+.txp-step-icon-wrapper {
+    width: 90px;
+    height: 90px;
+    background-color: var(--bg-light);
+    border: 4px solid var(--bg-white);
+    color: var(--accent-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    font-size: 28px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.txp-step-item:hover .txp-step-icon-wrapper {
+    background-color: var(--accent-cyan);
+    color: #ffffff;
+    box-shadow: var(--shadow-premium);
+    transform: scale(1.05);
+}
+
+.txp-step-number {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--accent-cyan);
+    margin-bottom: 10px;
+    display: block;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.txp-step-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primary-txp);
+    margin-bottom: 14px;
+}
+
+.txp-step-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   FEATURES SECTION
+   ========================================================================== */
+.txp-features-section {
+    padding: 100px 0;
+    background-color: var(--bg-light);
+}
+
+.txp-feature-card {
+    background-color: var(--bg-white);
+    border-radius: 20px;
+    padding: 40px 30px;
+    height: 100%;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.txp-feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-premium);
+    border-color: rgba(6, 182, 212, 0.3);
+}
+
+.txp-feature-icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    font-size: 20px;
+    transition: var(--transition);
+}
+
+.txp-feature-card:hover .txp-feature-icon-box {
+    transform: scale(1.1);
+}
+
+.txp-feature-card-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--primary-txp);
+    margin-bottom: 14px;
+}
+
+.txp-feature-card-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ==========================================================================
+   REAL-TIME NAVIGATION
+   ========================================================================== */
+.txp-nav-section {
+    padding: 120px 0;
+    background-color: var(--bg-white);
+    border-top: 1px solid var(--border-color);
+}
+
+.txp-section-heading {
+    color: var(--primary-txp);
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.txp-section-desc {
+    color: var(--text-muted);
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 36px;
+}
+
+.txp-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.txp-checklist-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.txp-checklist-icon {
+    color: var(--success-green);
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.txp-checklist-text {
+    font-size: 15px;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.txp-phone-mockup-shadow {
+    width: 290px;
+    height: 580px;
+    border: 12px solid #1e293b;
+    border-radius: 44px;
+    background-color: #ffffff;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    transition: var(--transition);
+}
+
+.txp-phone-mockup-shadow:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 35px 75px rgba(0, 0, 0, 0.18);
+}
+
+.txp-phone-mockup-shadow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ==========================================================================
+   APP SHOWCASE (Dark Gradient Showcase)
+   ========================================================================== */
+.txp-showcase-section {
+    padding: 120px 0;
+    background: radial-gradient(circle at 50% 120%, #15325b 0%, #08111e 100%);
+    color: #ffffff;
+}
+
+.txp-showcase-title {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.txp-showcase-subtitle {
+    color: var(--accent-cyan);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.txp-showcase-img-wrapper {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.txp-showcase-img-wrapper img {
+    max-height: 520px;
+    transition: transform 0.6s ease;
+}
+
+.txp-showcase-img-wrapper:hover img {
+    transform: scale(1.02);
+}
+
+.txp-app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.txp-app-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 12px 28px;
+    border-radius: 12px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: left;
+    transition: var(--transition);
+}
+
+.txp-app-btn:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: var(--accent-cyan);
+    transform: translateY(-2px);
+    color: #ffffff;
+}
+
+.txp-app-btn i {
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.txp-app-btn-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+}
+
+.txp-app-btn-subtitle {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--text-light);
+    letter-spacing: 0.5px;
+}
+
+.txp-app-btn-title {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   OWNER DASHBOARD SECTION
+   ========================================================================== */
+.txp-owner-section {
+    padding: 120px 0;
+    background-color: var(--bg-white);
+    border-top: 1px solid var(--border-color);
+}
+
+/* Mock Dashboard Window Frame */
+.txp-dashboard-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txp-dashboard-window {
+    width: 100%;
+    max-width: 520px;
+    background-color: var(--bg-light);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.txp-dashboard-window:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-blue);
+}
+
+.txp-dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.txp-dashboard-title {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--primary-txp);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.txp-dashboard-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.txp-dashboard-dots .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot-red { background-color: #ff5f56; }
+.dot-yellow { background-color: #ffbd2e; }
+.dot-green { background-color: #27c93f; }
+
+.txp-dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+/* Premium Dashboard Metrics Mock elements */
+.txp-db-card {
+    background-color: var(--bg-white);
+    border-radius: 12px;
+    height: 70px;
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    position: relative;
+}
+
+.txp-db-card::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 40%;
+    height: 10px;
+    background-color: #e2e8f0;
+    border-radius: 4px;
+}
+
+.txp-db-card::after {
+    content: '';
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    width: 70%;
+    height: 14px;
+    background-color: #3b82f6;
+    border-radius: 4px;
+    opacity: 0.25;
+}
+
+.txp-db-card:nth-child(2)::after {
+    background-color: #10b981;
+}
+
+.txp-db-card:nth-child(3)::after {
+    background-color: #f59e0b;
+}
+
+.txp-dashboard-main-card {
+    background-color: var(--bg-white);
+    border-radius: 12px;
+    height: 180px;
+    border: 1px solid var(--border-color);
+    position: relative;
+    padding: 20px;
+}
+
+.txp-dashboard-main-card::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 25%;
+    height: 12px;
+    background-color: #cbd5e1;
+    border-radius: 4px;
+}
+
+.txp-dashboard-main-card::after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    height: 100px;
+    background: linear-gradient(180deg, rgba(59, 130, 246, 0.08) 0%, rgba(59, 130, 246, 0) 100%);
+    border-top: 2px solid #3b82f6;
+    clip-path: polygon(0 80%, 20% 60%, 40% 75%, 60% 40%, 80% 50%, 100% 20%, 100% 100%, 0% 100%);
+}
+
+/* ==========================================================================
+   TESTIMONIALS SECTION
+   ========================================================================== */
+.txp-testimonials-section {
+    padding: 100px 0;
+    background-color: var(--bg-white);
+    border-top: 1px solid var(--border-color);
+}
+
+.txp-testimonial-card {
+    background-color: var(--bg-white);
+    border-radius: 20px;
+    padding: 40px 30px;
+    height: 100%;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.txp-testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(6, 182, 212, 0.25);
+}
+
+.txp-testimonial-stars {
+    color: #f59e0b;
+    font-size: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 4px;
+}
+
+.txp-testimonial-text {
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.txp-testimonial-divider {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 20px 0;
+}
+
+.txp-testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.txp-author-avatar {
+    width: 44px;
+    height: 44px;
+    background-color: var(--accent-blue);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.txp-testimonial-card:nth-child(2) .txp-author-avatar {
+    background-color: var(--accent-cyan);
+}
+
+.txp-testimonial-card:nth-child(3) .txp-author-avatar {
+    background-color: var(--accent-indigo);
+}
+
+.txp-author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.txp-author-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--primary-txp);
+    margin: 0;
+}
+
+.txp-author-location {
+    font-size: 12.5px;
+    color: var(--text-light);
+}
+
+/* ==========================================================================
+   CONTACT SECTION
+   ========================================================================== */
+.txp-contact-section {
+    padding: 100px 0;
+    background-color: var(--bg-light);
+    border-top: 1px solid var(--border-color);
+}
+
+.txp-contact-card {
+    background-color: var(--bg-white);
+    border-radius: 24px;
+    padding: 50px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+}
+
+.txp-form-label {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--primary-txp);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.txp-form-input {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 14px 18px;
+    font-size: 15px;
+    color: var(--text-dark);
+    transition: var(--transition);
+    background-color: var(--bg-light);
+}
+
+.txp-form-input:focus {
+    border-color: var(--accent-cyan);
+    background-color: var(--bg-white);
+    box-shadow: 0 0 0 4px rgba(6, 182, 212, 0.12);
+    outline: none;
+}
+
+/* ==========================================================================
+   FINAL DOWNLOAD CTA BANNER
+   ========================================================================== */
+.txp-final-download-section {
+    padding: 120px 0;
+    background: radial-gradient(circle at 50% 50%, #15325b 0%, #08111e 100%);
+    color: #ffffff;
+    text-align: center;
+}
+
+.txp-final-heading {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+}
+
+.txp-final-desc {
+    font-size: 1.15rem;
+    color: #cbd5e1;
+    margin-bottom: 40px;
+}
+
+.txp-qr-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.txp-qr-code {
+    width: 90px;
+    height: 90px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 6px;
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(4px);
+    transition: var(--transition);
+}
+
+.txp-qr-code:hover {
+    border-color: var(--accent-cyan);
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.txp-qr-block {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.txp-qr-code:hover .txp-qr-block {
+    background-color: var(--accent-cyan);
+}
+
+.txp-qr-label {
+    font-size: 12px;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   RESPONSIVENESS MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 991.98px) {
+    .txp-hero-section {
+        padding: 80px 0 100px;
+        text-align: center;
+    }
+
+    .txp-title {
+        font-size: 2.75rem;
+    }
+
+    .txp-desc {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .txp-actions {
+        justify-content: center;
+    }
+
+    .txp-phone-wrapper {
+        margin-top: 50px;
+    }
+
+    .txp-steps-section,
+    .txp-features-section,
+    .txp-nav-section,
+    .txp-showcase-section,
+    .txp-owner-section,
+    .txp-testimonials-section,
+    .txp-contact-section,
+    .txp-final-download-section {
+        padding: 80px 0;
+    }
+
+    .txp-steps-flow {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .txp-steps-flow::before {
+        display: none;
+    }
+
+    .txp-section-heading {
+        font-size: 2rem;
+    }
+
+    .txp-checklist {
+        align-items: center;
+    }
+
+    .txp-checklist-item {
+        text-align: left;
+        max-width: 450px;
+        width: 100%;
+    }
+
+    .txp-showcase-title {
+        font-size: 2rem;
+    }
+
+    .txp-showcase-img-wrapper img {
+        max-height: 400px;
+    }
+
+    .txp-phone-mockup-shadow,
+    .txp-dashboard-window {
+        margin-top: 50px;
+    }
+
+    .txp-contact-card {
+        padding: 30px;
+    }
+
+    .txp-final-heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .txp-title {
+        font-size: 2.25rem;
+    }
+
+    .txp-actions,
+    .txp-app-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-txp-download,
+    .btn-txp-outline,
+    .txp-app-btn {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+}

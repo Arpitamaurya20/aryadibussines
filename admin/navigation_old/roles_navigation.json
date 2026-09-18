@@ -1,0 +1,33 @@
+{
+  "Super Admin":["_Nav_All_Assets","_Nav_Analytics_Dashboard","_Nav_Services","_Nav_Bookings","_Nav_Employees","_Nav_Configuration","_Nav_Site_Setting","_Nav_Contact","_Nav_Corporate","_Nav_Customer","_Nav_All_Order","_Nav_Attendance_List","_Nav_Employee_Convenience","_Nav_Corporate_Finance_Tickets","_Nav_Projects","_Nav_PPM_Tickets","_Nav_Corporate_Raise_Ticket","_Nav_Analytics_Daily_Tracker","_Nav_Accounts_Dashboard","_Nav_Site_Visits","_Nav_My_KPI","_Nav_PPM_SC","_Nav_Mail_SC"],
+  "Admin":["_Nav_Analytics_Dashboard","_Nav_Services","_Nav_Bookings","_Nav_Employees","_Nav_Configuration","_Nav_Site_Setting","_Nav_Contact","_Nav_Corporate","_Nav_Customer","_Nav_All_Order","_Nav_Attendance_List","_Nav_Employee_Convenience","_Nav_Corporate_Finance_Tickets","_Nav_Projects","_Nav_PPM_Tickets","_Nav_Corporate_Raise_Ticket","_Nav_Analytics_Daily_Tracker","_Nav_Accounts_Dashboard","_Nav_All_Assets","_Nav_Site_Visits","_Nav_My_KPI","_Nav_PPM_SC","_Nav_Mail_SC"],
+  "CFO":["_Nav_Analytics_Dashboard","_Nav_Services","_Nav_Bookings","_Nav_Employees","_Nav_Configuration","_Nav_Site_Setting","_Nav_Contact","_Nav_Corporate","_Nav_Customer","_Nav_All_Order","_Nav_Attendance_List","_Nav_Employee_Convenience","_Nav_Corporate_Finance_Tickets","_Nav_PPM_Tickets","_Nav_My_Profile","_Nav_My_KPI","_Nav_PPM_SC","_Nav_Mail_SC"],
+  "Sub Admin":["_Nav_All_Assets","_Nav_Analytics_Dashboard","_Nav_Services","_Nav_Bookings","_Nav_Employees","_Nav_Configuration","_Nav_Site_Setting","_Nav_Contact","_Nav_Corporate","_Nav_Customer","_Nav_Attendance_List","_Nav_Corporate_Finance_Tickets","_Nav_PPM_Tickets","_Nav_My_Profile","_Nav_My_KPI"],
+  "Website Admin":["_Nav_Services","_Nav_Configuration","_Nav_Site_Setting","_Nav_Contact","_Nav_Corporate","_Nav_Customer"],
+  "Region Lead":["_Nav_Bookings","_Nav_My_Profile","_Nav_My_KPI"],
+  "City Lead":["_Nav_Bookings","_Nav_Corporate_Tickets","_Nav_My_Profile","_Nav_My_KPI"],
+  "Vendor":["_Nav_Bookings","_Nav_My_Profile"],
+  "Technician":["_Nav_Bookings","_Nav_My_Profile","_Nav_My_KPI"],
+  "Corporate Admin":["_Nav_All_Assets","_Nav_Corporate_Branches","_Nav_Analytics_Dashboard","_Nav_Corporate_Tickets","_Nav_Corporate_approval","_Nav_Corporate_users","_Nav_PPM_Tickets","_Nav_Rate_Card","_Nav_Analytics_Daily_Tracker","_Nav_Corporate_Raise_Ticket","_Nav_Corporate_Configuration"],
+  "Corporate Branch User":["_Nav_Corporate_Tickets","_Nav_Analytics_Dashboard","_Nav_Corporate_Raise_Ticket","_Nav_Corporate_Profile","_Nav_Corporate_Branches","_Nav_PPM_Tickets","_Nav_Rate_Card","_Nav_Corporate_Raise_Ticket"],
+  "Corporate User":["_Nav_Corporate_Tickets","_Nav_Analytics_Dashboard","_Nav_Corporate_Profile","_Nav_Corporate_Branches","_Nav_Corporate_quotation_approval"],
+  "Ticket Manager":["_Nav_All_Assets","_Nav_Corporate","_Nav_Corporate_Branches","_Nav_Corporate_Tickets","_Nav_Corporate_Raise_Ticket","_Nav_Corporate_Profile","_Nav_PPM_Tickets","_Nav_Analytics_Dashboard","_Nav_Configuration","_Nav_Services","_Nav_Accounts_Dashboard","_Nav_My_Profile","_Nav_Site_Visits","_Nav_My_KPI","_Nav_PPM_SC"],
+  "City Corporate Lead":["_Nav_Bookings","_Nav_Corporate_Tickets","_Nav_Employee_Convenience","_Nav_My_Profile","_Nav_My_KPI"],
+  "Region Corporate Lead":["_Nav_Bookings","_Nav_My_Profile","_Nav_My_KPI"],
+  "State Lead":["_Nav_Bookings","_Nav_My_Profile","_Nav_My_KPI"],
+  "State Corporate Lead":["_Nav_Analytics_Dashboard","_Nav_Accounts_Dashboard","_Nav_Bookings","_Nav_My_Profile","_Nav_Corporate_Tickets","_Nav_PPM_Tickets","_Nav_Corporate_Branches","_Nav_My_KPI","_Nav_All_Assets"],
+  "AMC Ticket Manager":["_Nav_Corporate","_Nav_My_Profile","_Nav_My_KPI","_Nav_PPM_SC"],
+  "Finance":["_Nav_Employee_Convenience","_Nav_Corporate_Tickets","_Nav_Corporate_Finance_Tickets","_Nav_Employee_Convenience","_Nav_My_Profile","_Nav_PPM_SC","_Nav_Mail_SC"],
+  "Accounts":["_Nav_Employee_Convenience","_Nav_Corporate_Tickets","_Nav_Corporate_Finance_Tickets","_Nav_Employee_Convenience","_Nav_My_Profile"],
+  "Procurement":["_Nav_Employee_Convenience","_Nav_Corporate_Tickets","_Nav_Corporate_Finance_Tickets"],
+  "Account Manager":["_Nav_Account_Tickets","_Nav_My_Profile"],
+  "Branch Account Manager":["_Nav_Account_Branch_Tickets","_Nav_PPM_Tickets","_Nav_Analytics_Dashboard","_Nav_My_Profile","_Nav_My_Profile"],
+  "Project Manager":["_Nav_Projects","_Nav_My_Profile"],
+  "HR":["_Nav_Employees","_Nav_Configuration","_Nav_Site_Setting","_Nav_Contact","_Nav_All_Order","_Nav_Employee_Convenience","_Nav_My_Profile","_Nav_Attendance_List","_Nav_PPM_SC","_Nav_Mail_SC"],
+  "Supervisor":[""],
+  "IT":["_Nav_My_Profile"],
+  "Operation":["_Nav_My_Profile"],
+  "Office Executive":["_Nav_My_Profile"]
+}
+
+

@@ -1,0 +1,108 @@
+[12-Jan-2023 04:55:33 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function deletebooking() in /home2/cypherte/public_html/techxpert/ed/admin/booking/action/delete_booking.php:6
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/booking/action/delete_booking.php on line 6
+[12-Jan-2023 04:55:46 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function deletebooking() in /home2/cypherte/public_html/techxpert/ed/admin/booking/action/delete_booking.php:6
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/booking/action/delete_booking.php on line 6
+[12-Jan-2023 04:55:46 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function deletebooking() in /home2/cypherte/public_html/techxpert/ed/admin/booking/action/delete_booking.php:6
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/booking/action/delete_booking.php on line 6
+[12-Jan-2023 04:55:49 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function deletebooking() in /home2/cypherte/public_html/techxpert/ed/admin/booking/action/delete_booking.php:6
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/booking/action/delete_booking.php on line 6
+[12-Jan-2023 04:56:20 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function deletebooking() in /home2/cypherte/public_html/techxpert/ed/admin/booking/action/delete_booking.php:6
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/booking/action/delete_booking.php on line 6
+[08-Feb-2023 01:59:41 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function deletebooking() in /home2/cypherte/public_html/techxpert/ed/admin/booking/action/delete_booking.php:6
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/booking/action/delete_booking.php on line 6
+[08-Feb-2023 01:59:52 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function deletebooking() in /home2/cypherte/public_html/techxpert/ed/admin/booking/action/delete_booking.php:6
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/booking/action/delete_booking.php on line 6
+[29-Mar-2023 11:08:16 Asia/Kolkata] PHP Warning:  Undefined array key "BranchMobile" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 172
+[29-Mar-2023 11:08:16 Asia/Kolkata] PHP Warning:  Undefined variable $branch_Detail in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 173
+[29-Mar-2023 11:08:16 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 173
+[29-Mar-2023 11:09:12 Asia/Kolkata] PHP Warning:  Undefined array key "BranchMobile" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 172
+[29-Mar-2023 11:09:12 Asia/Kolkata] PHP Warning:  Undefined variable $branch_Detail in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 173
+[29-Mar-2023 11:09:12 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 173
+[29-Mar-2023 11:09:38 Asia/Kolkata] PHP Warning:  Undefined array key "BranchMobile" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 172
+[29-Mar-2023 11:09:38 Asia/Kolkata] PHP Warning:  Undefined variable $branch_Detail in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 173
+[29-Mar-2023 11:09:38 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 173
+[29-Mar-2023 11:13:07 Asia/Kolkata] PHP Warning:  Undefined array key "BranchMobile" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 172
+[29-Mar-2023 11:15:43 Asia/Kolkata] PHP Warning:  Undefined variable $TicketStatus in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 180
+[29-Mar-2023 11:21:00 Asia/Kolkata] PHP Warning:  Undefined variable $TicketStatus in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 180
+[29-Mar-2023 11:38:21 Asia/Kolkata] PHP Warning:  Undefined variable $TicketStatus in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 181
+[29-Mar-2023 11:42:04 Asia/Kolkata] PHP Warning:  Undefined variable $TicketStatus in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 181
+[29-Mar-2023 12:11:24 Asia/Kolkata] PHP Warning:  Undefined array key "City_name" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 132
+[29-Mar-2023 12:11:24 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 142
+[29-Mar-2023 12:15:44 Asia/Kolkata] PHP Warning:  Undefined array key "City_name" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 132
+[29-Mar-2023 12:15:44 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 142
+[29-Mar-2023 12:16:43 Asia/Kolkata] PHP Warning:  Undefined array key "City_name" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 132
+[29-Mar-2023 12:16:43 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 142
+[29-Mar-2023 12:18:20 Asia/Kolkata] PHP Warning:  Undefined array key "City_name" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 132
+[29-Mar-2023 12:18:20 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 142
+[29-Mar-2023 12:20:18 Asia/Kolkata] PHP Warning:  Undefined array key "City_name" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 186
+[29-Mar-2023 12:20:18 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 196
+[29-Mar-2023 12:22:35 Asia/Kolkata] PHP Warning:  Undefined array key "City_name" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 186
+[29-Mar-2023 12:22:35 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 196
+[29-Mar-2023 12:30:21 Asia/Kolkata] PHP Warning:  Undefined array key "City_name" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 186
+[29-Mar-2023 12:30:21 Asia/Kolkata] PHP Warning:  Undefined variable $Employee_PhoneNumber in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 187
+[30-Mar-2023 11:15:46 Asia/Kolkata] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 173
+[30-Mar-2023 11:15:46 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 134
+[30-Mar-2023 11:15:46 Asia/Kolkata] PHP Warning:  Undefined variable $service_name in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:15:46 Asia/Kolkata] PHP Warning:  Undefined variable $customer_address in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:15:46 Asia/Kolkata] PHP Warning:  Undefined variable $location_landmark in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:15:46 Asia/Kolkata] PHP Warning:  Undefined variable $city_name in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:15:46 Asia/Kolkata] PHP Warning:  Undefined variable $phone_number in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:15:46 Asia/Kolkata] PHP Warning:  Undefined variable $BookingDate in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:15:46 Asia/Kolkata] PHP Warning:  Undefined variable $Employee_PhoneNumber in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 145
+[30-Mar-2023 11:21:21 Asia/Kolkata] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 173
+[30-Mar-2023 11:21:21 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 134
+[30-Mar-2023 11:21:21 Asia/Kolkata] PHP Warning:  Undefined variable $service_name in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:21:21 Asia/Kolkata] PHP Warning:  Undefined variable $customer_address in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:21:21 Asia/Kolkata] PHP Warning:  Undefined variable $location_landmark in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:21:21 Asia/Kolkata] PHP Warning:  Undefined variable $city_name in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:21:21 Asia/Kolkata] PHP Warning:  Undefined variable $phone_number in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:21:21 Asia/Kolkata] PHP Warning:  Undefined variable $BookingDate in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:21:21 Asia/Kolkata] PHP Warning:  Undefined variable $Employee_PhoneNumber in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 145
+[30-Mar-2023 11:23:06 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 134
+[30-Mar-2023 11:23:06 Asia/Kolkata] PHP Warning:  Undefined variable $service_name in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:23:06 Asia/Kolkata] PHP Warning:  Undefined variable $customer_address in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:23:06 Asia/Kolkata] PHP Warning:  Undefined variable $location_landmark in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:23:06 Asia/Kolkata] PHP Warning:  Undefined variable $city_name in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:23:06 Asia/Kolkata] PHP Warning:  Undefined variable $phone_number in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:23:06 Asia/Kolkata] PHP Warning:  Undefined variable $BookingDate in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:23:06 Asia/Kolkata] PHP Warning:  Undefined variable $Employee_PhoneNumber in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 145
+[30-Mar-2023 11:25:01 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php:131
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php(200): _api_changeBookingStatus(Object(mysqli), Array)
+#1 /home2/cypherte/public_html/techxpert/ed/admin/booking/action/change_booking_assignment.php(15): ManageBookingAssignmentStatus(Object(mysqli), Array)
+#2 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 131
+[30-Mar-2023 11:47:13 Asia/Kolkata] PHP Warning:  Undefined array key "City_name" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 131
+[30-Mar-2023 11:47:13 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 141
+[30-Mar-2023 11:47:13 Asia/Kolkata] PHP Warning:  Undefined variable $service_name in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:47:13 Asia/Kolkata] PHP Warning:  Undefined variable $customer_address in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:47:13 Asia/Kolkata] PHP Warning:  Undefined variable $location_landmark in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:47:13 Asia/Kolkata] PHP Warning:  Undefined variable $city_name in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:47:13 Asia/Kolkata] PHP Warning:  Undefined variable $phone_number in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:47:13 Asia/Kolkata] PHP Warning:  Undefined variable $BookingDate in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 11:48:52 Asia/Kolkata] PHP Warning:  Undefined array key "City_name" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 131
+[30-Mar-2023 11:49:07 Asia/Kolkata] PHP Warning:  Undefined array key "City_name" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 131
+[30-Mar-2023 11:53:01 Asia/Kolkata] PHP Warning:  Undefined array key "City_name" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 131
+[30-Mar-2023 15:37:17 Asia/Kolkata] PHP Warning:  Undefined variable $service_name in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 145
+[30-Mar-2023 15:37:17 Asia/Kolkata] PHP Warning:  Undefined variable $customer_address in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 145
+[30-Mar-2023 15:37:17 Asia/Kolkata] PHP Warning:  Undefined variable $location_landmark in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 145
+[30-Mar-2023 15:37:17 Asia/Kolkata] PHP Warning:  Undefined variable $city_name in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 145
+[30-Mar-2023 15:37:17 Asia/Kolkata] PHP Warning:  Undefined variable $phone_number in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 145
+[30-Mar-2023 15:37:17 Asia/Kolkata] PHP Warning:  Undefined variable $BookingDate in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 145
+[19-Apr-2023 15:25:07 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 142
+[19-Apr-2023 15:26:56 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 135
+[19-Apr-2023 15:26:56 Asia/Kolkata] PHP Warning:  Undefined variable $Employee_PhoneNumber in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 146

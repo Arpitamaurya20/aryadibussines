@@ -1,0 +1,34 @@
+<?php
+@session_start();
+include("../../controllers/common_controllers.php");
+include('../../employees/controller/employee_controller.php');
+
+$conn = _connectodb();
+$response = array('error' => true, 'message' => 'Technical Problem. Please try again');
+
+$ids = isset($_POST['IDs']) && is_array($_POST['IDs']) ? $_POST['IDs'] : array();
+$ids = array_values(array_unique(array_filter(array_map('intval', $ids), function ($id) {
+    return $id > 0;
+})));
+
+if (empty($ids)) {
+    $response['message'] = 'Please select at least one leave request.';
+    echo json_encode($response);
+    exit;
+}
+
+$roles = $_SESSION['Roles'] ?? array();
+if (!hasHrLeaveApprovalAccess($roles)) {
+    $response['message'] = 'You do not have HR leave approval access.';
+    echo json_encode($response);
+    exit;
+}
+
+$approver_employee_id = isset($roles['EmployeeID']) ? (int) $roles['EmployeeID'] : -1;
+$summary = hrBulkApproveEmployeeLeave($conn, $ids, $approver_employee_id, $roles);
+$response['error'] = ((int) ($summary['success'] ?? 0)) <= 0;
+$response['message'] = buildLeaveBulkActionMessage($summary, 'approved by HR');
+$response['summary'] = $summary;
+
+header('Content-Type: application/json; charset=utf-8');
+echo json_encode($response);

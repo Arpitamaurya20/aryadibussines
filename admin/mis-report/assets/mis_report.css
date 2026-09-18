@@ -1,0 +1,48 @@
+.mis-placeholder {
+    border: 2px dashed var(--smd-border, #e2e8f0);
+    border-radius: 12px;
+    background: #f8fafc;
+}
+
+.mis-workforce-section {
+    margin-bottom: 1.5rem;
+}
+
+.mis-workforce-kpis {
+    margin-bottom: 0.5rem;
+}
+
+.mis-emp-table th,
+.mis-emp-table td {
+    white-space: nowrap;
+}
+
+.mis-emp-table td:first-child {
+    white-space: normal;
+    min-width: 140px;
+}
+
+.mis-section-loading {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 0 1rem;
+    color: var(--smd-muted, #64748b);
+    font-size: 0.85rem;
+}
+
+#mis_tickets_body.mis-tickets-pending {
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+    color: #7c3aed;
+    font-weight: 700;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+}
+
+.mis-num-wip {
+    color: #d97706;
+    font-weight: 700;
+}

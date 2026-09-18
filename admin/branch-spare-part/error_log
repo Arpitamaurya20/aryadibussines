@@ -1,0 +1,12 @@
+[07-Apr-2023 00:58:08 America/Boise] PHP Warning:  Undefined variable $testimonialvalue in /home2/cypherte/public_html/techxpert/ed/admin/branch-arc-items/view-branch-arc-items.php on line 97
+[07-Apr-2023 00:58:08 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/branch-arc-items/view-branch-arc-items.php on line 97
+[07-Apr-2023 00:58:33 America/Boise] PHP Warning:  Undefined variable $testimonialvalue in /home2/cypherte/public_html/techxpert/ed/admin/branch-arc-items/view-branch-arc-items.php on line 97
+[07-Apr-2023 00:58:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/branch-arc-items/view-branch-arc-items.php on line 97
+[07-Apr-2023 02:54:10 America/Boise] PHP Warning:  Undefined variable $testimonialvalue in /home2/cypherte/public_html/techxpert/ed/admin/branch-arc-items/view-branch-arc-items.php on line 97
+[07-Apr-2023 02:54:10 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/branch-arc-items/view-branch-arc-items.php on line 97
+[24-Apr-2023 00:34:10 America/Boise] PHP Warning:  Undefined variable $testimonialvalue in /home2/cypherte/public_html/techxpert/ed/admin/branch-arc-items/view-branch-arc-items.php on line 97
+[24-Apr-2023 00:34:10 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/branch-arc-items/view-branch-arc-items.php on line 97
+[24-Apr-2023 00:34:44 America/Boise] PHP Warning:  Undefined variable $testimonialvalue in /home2/cypherte/public_html/techxpert/ed/admin/branch-arc-items/view-branch-arc-items.php on line 97
+[24-Apr-2023 00:34:44 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/branch-arc-items/view-branch-arc-items.php on line 97
+[24-Apr-2023 00:34:56 America/Boise] PHP Warning:  Undefined variable $testimonialvalue in /home2/cypherte/public_html/techxpert/ed/admin/branch-arc-items/view-branch-arc-items.php on line 97
+[24-Apr-2023 00:34:56 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/branch-arc-items/view-branch-arc-items.php on line 97

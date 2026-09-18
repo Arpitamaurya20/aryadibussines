@@ -1,0 +1,90 @@
+[2025-12-09 08:06:36] ===========================================
+[2025-12-09 08:06:36] Auto Monthly PPM Ticket Cron Started
+[2025-12-09 08:06:36] Current Date: 2025-12-09
+[2025-12-09 08:06:36] ===========================================
+[2025-12-09 08:06:36] Required files loaded
+[2025-12-09 13:36:36] Timezone set: Asia/Kolkata
+[2025-12-09 13:36:36] Database connected
+[2025-12-09 13:36:36] Processing Month: 12-2025
+[2025-12-09 13:36:36] Total Pending PPM Records for Month: 1
+[2025-12-09 13:36:36] Processing TempAssetInfoID: 7 | Date: 2025-12-01
+[2025-12-09 13:36:39] FATAL ERROR: Unknown column 'PPMID' in 'where clause'
+[2025-12-09 13:36:39] Cron Completed
+[2025-12-09 13:36:39] ===========================================
+[2025-12-09 08:10:33] ===========================================
+[2025-12-09 08:10:33] Auto Monthly PPM Ticket Cron Started
+[2025-12-09 08:10:33] Current Date: 2025-12-09
+[2025-12-09 08:10:33] ===========================================
+[2025-12-09 08:10:33] Required files loaded
+[2025-12-09 13:40:33] Timezone set: Asia/Kolkata
+[2025-12-09 13:40:33] Database connected
+[2025-12-09 13:40:33] Processing Month: 12-2025
+[2025-12-09 13:40:33] Total Pending PPM Records for Month: 1
+[2025-12-09 13:40:33] Processing TempAssetInfoID: 7 | Date: 2025-12-01
+[2025-12-09 13:40:35] SUCCESS → Ticket Raised | TempAssetInfoID: 7 | TicketID: 30260
+[2025-12-09 13:40:35] ===========================================
+[2025-12-09 13:40:35] TOTAL TICKETS GENERATED: 1
+[2025-12-09 13:40:35] ===========================================
+[2025-12-09 13:40:35] Database connection closed
+[2025-12-09 13:40:35] Cron Completed
+[2025-12-09 13:40:35] ===========================================
+[2025-12-09 08:10:43] ===========================================
+[2025-12-09 08:10:43] Auto Monthly PPM Ticket Cron Started
+[2025-12-09 08:10:43] Current Date: 2025-12-09
+[2025-12-09 08:10:43] ===========================================
+[2025-12-09 08:10:43] Required files loaded
+[2025-12-09 13:40:43] Timezone set: Asia/Kolkata
+[2025-12-09 13:40:43] Database connected
+[2025-12-09 13:40:43] Processing Month: 12-2025
+[2025-12-09 13:40:43] Total Pending PPM Records for Month: 0
+[2025-12-09 13:40:43] No tickets to process for this month
+[2025-12-09 08:10:45] ===========================================
+[2025-12-09 08:10:45] Auto Monthly PPM Ticket Cron Started
+[2025-12-09 08:10:45] Current Date: 2025-12-09
+[2025-12-09 08:10:45] ===========================================
+[2025-12-09 08:10:45] Required files loaded
+[2025-12-09 13:40:45] Timezone set: Asia/Kolkata
+[2025-12-09 13:40:45] Database connected
+[2025-12-09 13:40:45] Processing Month: 12-2025
+[2025-12-09 13:40:45] Total Pending PPM Records for Month: 0
+[2025-12-09 13:40:45] No tickets to process for this month
+[2025-12-09 08:13:01] ===========================================
+[2025-12-09 08:13:01] Auto Monthly PPM Ticket Cron Started
+[2025-12-09 08:13:01] Current Date: 2025-12-09
+[2025-12-09 08:13:01] ===========================================
+[2025-12-09 08:13:01] Required files loaded
+[2025-12-09 13:43:01] Timezone set: Asia/Kolkata
+[2025-12-09 13:43:01] Database connected
+[2025-12-09 13:43:01] Processing Month: 12-2025
+[2025-12-09 13:43:01] Total Pending PPM Records for Month: 0
+[2025-12-09 13:43:01] No tickets to process for this month
+[2025-12-09 08:13:04] ===========================================
+[2025-12-09 08:13:04] Auto Monthly PPM Ticket Cron Started
+[2025-12-09 08:13:04] Current Date: 2025-12-09
+[2025-12-09 08:13:04] ===========================================
+[2025-12-09 08:13:04] Required files loaded
+[2025-12-09 13:43:04] Timezone set: Asia/Kolkata
+[2025-12-09 13:43:04] Database connected
+[2025-12-09 13:43:04] Processing Month: 12-2025
+[2025-12-09 13:43:04] Total Pending PPM Records for Month: 0
+[2025-12-09 13:43:04] No tickets to process for this month
+[2025-12-09 08:13:10] ===========================================
+[2025-12-09 08:13:10] Auto Monthly PPM Ticket Cron Started
+[2025-12-09 08:13:10] Current Date: 2025-12-09
+[2025-12-09 08:13:10] ===========================================
+[2025-12-09 08:13:10] Required files loaded
+[2025-12-09 13:43:10] Timezone set: Asia/Kolkata
+[2025-12-09 13:43:10] Database connected
+[2025-12-09 13:43:10] Processing Month: 12-2025
+[2025-12-09 13:43:10] Total Pending PPM Records for Month: 0
+[2025-12-09 13:43:10] No tickets to process for this month
+[2025-12-09 10:36:55] ===========================================
+[2025-12-09 10:36:55] Auto Monthly PPM Ticket Cron Started
+[2025-12-09 10:36:55] Current Date: 2025-12-09
+[2025-12-09 10:36:55] ===========================================
+[2025-12-09 10:36:55] Required files loaded
+[2025-12-09 16:06:55] Timezone set: Asia/Kolkata
+[2025-12-09 16:06:55] Database connected
+[2025-12-09 16:06:55] Processing Month: 12-2025
+[2025-12-09 16:06:55] Total Pending PPM Records for Month: 0
+[2025-12-09 16:06:55] No tickets to process for this month

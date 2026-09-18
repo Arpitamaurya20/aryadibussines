@@ -1,0 +1,24 @@
+[07-Feb-2023 04:28:55 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function jsonregister() in /home2/cypherte/public_html/techxpert/ed/admin/manage-site/action/add_site.php:35
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-site/action/add_site.php on line 35
+[07-Feb-2023 04:29:48 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function jsonregister() in /home2/cypherte/public_html/techxpert/ed/admin/manage-site/action/add_site.php:35
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-site/action/add_site.php on line 35
+[07-Feb-2023 04:29:56 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function jsonregister() in /home2/cypherte/public_html/techxpert/ed/admin/manage-site/action/add_site.php:35
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-site/action/add_site.php on line 35
+[07-Feb-2023 04:30:02 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function jsonregister() in /home2/cypherte/public_html/techxpert/ed/admin/manage-site/action/add_site.php:35
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-site/action/add_site.php on line 35
+[07-Feb-2023 04:32:49 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function jsonregister() in /home2/cypherte/public_html/techxpert/ed/admin/manage-site/action/add_site.php:51
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-site/action/add_site.php on line 51
+[07-Feb-2023 04:33:53 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function jsonregister() in /home2/cypherte/public_html/techxpert/ed/admin/manage-site/action/add_site.php:26
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-site/action/add_site.php on line 26

@@ -1,0 +1,31 @@
+Branch,Equipment Name,Equipment Number,Make,Model,Serial No,Capacity,Qty,UOM Name,UOM Number,Unit Rate,Amount,Manufacturing Year,Equipment Age,Service Type,Category,CategoryNumber,Sub Category,Sub Category Number,TAT,AMC Start Date,AMC End Date,Floor Number,Equipment Location,Description,Created By,Created Date,Created Time,Interval
+Urban - Kolkata,UPS,9053,LEGRAND,,,,,NOS,30,1,1000,2023,3 Years,CAMC,Electrical,23,UPS,25,,########,########,1,1,,System,########,,Quterly
+Urban - Kolkata,Audible CCTV-3,9348,CP PLUS,CPUSCTC51PL2C0360,,,1,PCS,41,,0,,Years,CAMC,CCTV,8,Camera,4,,,,,1ST FLOOR RECEPTION,,System,########,,Quterly
+Urban - Kolkata,Audible DVR,9357,CP PLUS,8 Channel DVR,,,1,NOS,30,,0,,Years,CAMC,CCTV,8,DVR,1,,,,,2nd floor employee section,,System,########,,Quterly
+Urban - Kolkata,DVR,9407,CP PLUS,16 Channel DVR,,,1,NOS,30,,0,,Years,CAMC,CCTV,8,DVR,1,2,,,,2nd floor employee section,,System,########,,Quterly
+Urban - Kolkata,FAS-CO2-4.5KG-5,9454,Fyrax,4.5 KG,,4.5,1,KG,36,1260,1260,2025,1,NCAMC,Fire Safety,43,FAS,188,2,########,########,Ground Floor,Reception,,System,########,,Quterly
+Urban - Kolkata,Audible CCTV-1,13707,CP PLUS,CPUSCTC51PL2C0360,,,1,PCS,41,,0,,Years,CAMC,CCTV,8,Camera,4,2,,,,1ST FLOOR RECEPTION,,Saniya,########,,Quterly
+Urban - Kolkata,Audible CCTV-2,13708,CP PLUS,CPUSCTC51PL2C0360,,,1,PCS,41,,0,,Years,CAMC,CCTV,8,Camera,4,2,,,,2ND FLOOR RECEPTION,,Saniya,########,,Quterly
+Urban - Kolkata,CCTV-1,13709,CP PLUS,,,,1,,-1,,0,,Years,CAMC,CCTV,8,Camera,4,2,,,,2nd floor employee section,,Saniya,########,,Quterly
+Urban - Kolkata,CCTV-2,13710,CP PLUS,,,,1,NOS,30,,0,,Years,CAMC,CCTV,8,Camera,4,2,,,,2nd floor employee section,,Saniya,########,,Quterly
+Urban - Kolkata,CCTV-3,13711,CP PLUS,,,,1,NOS,30,,0,,Years,CAMC,CCTV,8,Camera,4,2,,,,2nd floor employee section,,Saniya,########,,Quterly
+Urban - Kolkata,CCTV-4,13712,CP PLUS,,,,1,,-1,,0,,Years,CAMC,CCTV,8,Camera,4,2,,,,2nd floor employee section,,Saniya,########,,Quterly
+Urban - Kolkata,CCTV-5,13713,CP PLUS,,,,1,PCS,41,,0,,Years,CAMC,CCTV,8,Camera,4,2,,,,2nd floor employee section,,Saniya,########,,Quterly
+Urban - Kolkata,CCTV-6,13714,CP PLUS,,,,1,PCS,41,,0,,Years,CAMC,CCTV,8,Camera,4,2,,,,2nd floor employee section,,Saniya,########,,Quterly
+Urban - Kolkata,CCTV-7,13715,CP PLUS,,,,1,PCS,41,,0,,Years,CAMC,CCTV,8,Camera,4,2,,,,2nd floor employee section,,Saniya,########,,Quterly
+Urban - Kolkata,CCTV-8,13716,CP PLUS,,,,1,PCS,41,,0,,Years,CAMC,CCTV,8,Camera,4,2,,,,2nd floor employee section,,Saniya,########,,Quterly
+Urban - Kolkata,FAS-CO2-4.5KG-1,13717,AGNI,4.5 KG,,4.5,1,KG,36,1260,1260,2025,1,NCAMC,Fire Safety,43,FAS,188,2,########,########,TR-4,,,Saniya,########,,Quterly
+Urban - Kolkata,FAS-CO2-4.5KG-2,13718,AGNI,4.5 KG,,4.5,1,KG,36,1260,1260,2025,1,NCAMC,Fire Safety,43,FAS,188,2,########,########,,Inventory Room,,Saniya,########,,Quterly
+Urban - Kolkata,FAS-CO2-4.5KG-3,13719,AGNI,,,4.5,1,KG,36,1260,1260,2025,1,NCAMC,Fire Safety,43,FAS,188,2,########,########,,Lobby Room,,Saniya,########,,Quterly
+Urban - Kolkata,FAS-CO2-4.5KG-4,13720,AGNI,,,4.5,1,KG,36,1260,1260,2025,1,NCAMC,Fire Safety,43,FAS,188,2,########,########,TR-8,,,Saniya,########,,Quterly
+Urban - Kolkata,FAS-ABC-4KG-1,13721,AGNI,4 KG,,4,1,KG,36,1260,1260,2025,1,NCAMC,Fire Safety,43,FAS,188,2,########,########,TR-1,,,Saniya,########,,Quterly
+Urban - Kolkata,FAS-ABC-4KG-2,13722,AGNI,4 KG,,4,1,KG,36,1260,1260,2025,1,NCAMC,Fire Safety,43,FAS,188,2,########,########,TR-2,,,Saniya,########,,Quterly
+Urban - Kolkata,FAS-ABC-4KG-3,13723,AGNI,4 KG,,4,1,KG,36,1260,1260,2025,1,NCAMC,Fire Safety,43,FAS,188,2,########,########,TR-5,,,Saniya,########,,Quterly
+Urban - Kolkata,FAS-ABC-4KG-4,13724,AGNI,4 KG,,4,1,KG,36,1260,1260,2025,1,NCAMC,Fire Safety,43,FAS,188,2,########,########,TR- 6,,,Saniya,########,,Quterly
+Urban - Kolkata,FAS-ABC-4KG-5,13725,Resguard,4 KG,,4,1,KG,36,1260,1260,2025,1,NCAMC,Fire Safety,43,FAS,188,2,########,########,Regedtion ,,,Saniya,########,,Quterly
+Urban - Kolkata,FAS-ABC-4KG-6,13726,AGNI,4 KG,,4,1,KG,36,1260,1260,2025,1,NCAMC,Fire Safety,43,FAS,188,2,########,########,TR-3,,,Saniya,########,,Quterly
+Urban - Kolkata,FAS-ABC-4KG-7,13727,Fyrax,4 KG,,4,1,KG,36,1260,1260,2025,1,NCAMC,Fire Safety,43,FAS,188,2,########,########,TR-7,,,Saniya,########,,Quterly
+Urban - Kolkata,FAS-ABC-4KG-8,13728,AGNI,4 KG,,4,1,KG,36,1260,1260,2025,1,NCAMC,Fire Safety,43,FAS,188,2,########,########,TR-9,,,Saniya,########,,Quterly
+Urban - Kolkata,FAS-ABC-4KG-9,13729,AGNI,4 KG,,4,1,KG,36,1260,1260,2025,1,NCAMC,Fire Safety,43,FAS,188,2,########,########,TR-10,,,Saniya,########,,Quterly
+Urban - Kolkata,FAS-ABC-4KG-10,13730,Resguard,4 KG,,4,1,KG,36,1260,1260,2025,1,NCAMC,Fire Safety,43,FAS,188,2,########,########,TR-11,,,Saniya,########,,Quterly
+Urban - Kolkata,FAS-ABC-4KG-11,13731,Resguard,4 KG,,4,1,KG,36,1260,1260,2025,1,NCAMC,Fire Safety,43,FAS,188,2,########,########,Emp- section,Employee Section,,Saniya,########,,Quterly

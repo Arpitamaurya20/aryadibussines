@@ -1,0 +1,80 @@
+/* MIS Report — print layout (same on-screen data + charts) */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .page-sidebar,
+    .page-header,
+    .page-footer,
+    .breadcrumb,
+    .smd-filters,
+    .smd-loading,
+    .smd-error,
+    #smd_print_btn,
+    .smd-no-print {
+        display: none !important;
+    }
+
+    .smd-root,
+    .smd-root * {
+        visibility: visible;
+    }
+
+    .smd-root {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    .smd-hero {
+        background: #1e3a8a !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        page-break-inside: avoid;
+    }
+
+    .smd-kpi,
+    .smd-quote-card,
+    .smd-chart-panel,
+    .smd-panel {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .smd-kpi-grid,
+    .smd-quote-cards,
+    .smd-charts-grid,
+    .smd-grid {
+        break-inside: auto;
+    }
+
+    .smd-chart-wrap canvas {
+        max-height: 220px !important;
+    }
+
+    .smd-feed {
+        max-height: none;
+        overflow: visible;
+    }
+
+    #mis_print_header {
+        display: block !important;
+        visibility: visible !important;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #1e3a8a;
+    }
+
+    #mis_print_header,
+    #mis_print_header * {
+        visibility: visible !important;
+        color: #0f172a !important;
+    }
+}
+
+#mis_print_header {
+    display: none;
+}

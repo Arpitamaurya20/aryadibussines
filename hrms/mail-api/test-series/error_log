@@ -1,0 +1,1 @@
+[10-Aug-2023 17:38:16 Asia/Kolkata] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home2/cypherte/public_html/api-mail/phpmailer/PHPMailerAutoload.php on line 45

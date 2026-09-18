@@ -1,0 +1,368 @@
+[20-Jan-2023 16:45:39 Asia/Kolkata] PHP Warning:  Undefined variable $city_name in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 17
+[20-Jan-2023 16:45:39 Asia/Kolkata] PHP Warning:  Undefined variable $city_name in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 32
+[20-Jan-2023 16:58:41 Asia/Kolkata] PHP Warning:  Undefined array key "state_id" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 14
+[30-Jan-2023 13:25:59 Asia/Kolkata] PHP Warning:  Undefined variable $city_name in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[30-Jan-2023 13:25:59 Asia/Kolkata] PHP Warning:  Undefined variable $city_name in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 34
+[30-Jan-2023 13:37:58 Asia/Kolkata] PHP Warning:  Undefined variable $city_name in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[30-Jan-2023 13:37:58 Asia/Kolkata] PHP Warning:  Undefined variable $city_name in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 34
+[30-Jan-2023 13:38:40 Asia/Kolkata] PHP Warning:  Undefined variable $city_name in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[30-Jan-2023 13:38:40 Asia/Kolkata] PHP Warning:  Undefined variable $city_name in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 34
+[30-Jan-2023 13:43:33 Asia/Kolkata] PHP Warning:  Undefined variable $city_name in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[30-Jan-2023 13:43:33 Asia/Kolkata] PHP Warning:  Undefined variable $city_name in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 34
+[30-Jan-2023 13:48:06 Asia/Kolkata] PHP Warning:  Undefined variable $city_name in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[30-Jan-2023 13:48:06 Asia/Kolkata] PHP Warning:  Undefined variable $city_name in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 34
+[30-Jan-2023 13:48:48 Asia/Kolkata] PHP Warning:  Undefined variable $city_name in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[30-Jan-2023 13:48:48 Asia/Kolkata] PHP Warning:  Undefined variable $city_name in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 34
+[01-Feb-2023 14:49:58 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 59
+[01-Feb-2023 14:49:58 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 67
+[08-Feb-2023 11:28:30 Asia/Kolkata] PHP Warning:  Undefined array key "corporate_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 10
+[08-Feb-2023 11:28:30 Asia/Kolkata] PHP Warning:  Undefined array key "metaTitle" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 11
+[08-Feb-2023 11:28:30 Asia/Kolkata] PHP Warning:  Undefined array key "city_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 12
+[08-Feb-2023 11:28:30 Asia/Kolkata] PHP Warning:  Undefined array key "featured" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 13
+[08-Feb-2023 11:28:30 Asia/Kolkata] PHP Warning:  Undefined array key "metaDescription" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 14
+[08-Feb-2023 11:28:30 Asia/Kolkata] PHP Warning:  Undefined array key "city_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 15
+[08-Feb-2023 11:28:30 Asia/Kolkata] PHP Warning:  Undefined array key "state_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 16
+[08-Feb-2023 11:28:30 Asia/Kolkata] PHP Warning:  Undefined array key "url" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 17
+[08-Feb-2023 11:28:30 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[08-Feb-2023 11:28:30 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[08-Feb-2023 11:28:30 Asia/Kolkata] PHP Warning:  Undefined array key 1 in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 21
+[08-Feb-2023 11:28:30 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[08-Feb-2023 11:28:30 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[08-Feb-2023 11:28:30 Asia/Kolkata] PHP Warning:  Undefined array key "citypromobanner" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[08-Feb-2023 11:28:30 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[08-Feb-2023 11:28:30 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php:39
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[08-Feb-2023 11:29:06 Asia/Kolkata] PHP Warning:  Undefined array key "corporate_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 10
+[08-Feb-2023 11:29:06 Asia/Kolkata] PHP Warning:  Undefined array key "metaTitle" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 11
+[08-Feb-2023 11:29:06 Asia/Kolkata] PHP Warning:  Undefined array key "city_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 12
+[08-Feb-2023 11:29:06 Asia/Kolkata] PHP Warning:  Undefined array key "featured" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 13
+[08-Feb-2023 11:29:06 Asia/Kolkata] PHP Warning:  Undefined array key "metaDescription" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 14
+[08-Feb-2023 11:29:06 Asia/Kolkata] PHP Warning:  Undefined array key "city_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 15
+[08-Feb-2023 11:29:06 Asia/Kolkata] PHP Warning:  Undefined array key "state_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 16
+[08-Feb-2023 11:29:06 Asia/Kolkata] PHP Warning:  Undefined array key "url" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 17
+[08-Feb-2023 11:29:06 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[08-Feb-2023 11:29:06 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[08-Feb-2023 11:29:06 Asia/Kolkata] PHP Warning:  Undefined array key 1 in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 21
+[08-Feb-2023 11:29:06 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[08-Feb-2023 11:29:06 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[08-Feb-2023 11:29:06 Asia/Kolkata] PHP Warning:  Undefined array key "citypromobanner" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[08-Feb-2023 11:29:06 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[08-Feb-2023 11:29:06 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php:39
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[08-Feb-2023 11:29:08 Asia/Kolkata] PHP Warning:  Undefined array key "corporate_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 10
+[08-Feb-2023 11:29:08 Asia/Kolkata] PHP Warning:  Undefined array key "metaTitle" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 11
+[08-Feb-2023 11:29:08 Asia/Kolkata] PHP Warning:  Undefined array key "city_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 12
+[08-Feb-2023 11:29:08 Asia/Kolkata] PHP Warning:  Undefined array key "featured" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 13
+[08-Feb-2023 11:29:08 Asia/Kolkata] PHP Warning:  Undefined array key "metaDescription" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 14
+[08-Feb-2023 11:29:08 Asia/Kolkata] PHP Warning:  Undefined array key "city_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 15
+[08-Feb-2023 11:29:08 Asia/Kolkata] PHP Warning:  Undefined array key "state_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 16
+[08-Feb-2023 11:29:08 Asia/Kolkata] PHP Warning:  Undefined array key "url" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 17
+[08-Feb-2023 11:29:08 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[08-Feb-2023 11:29:08 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[08-Feb-2023 11:29:08 Asia/Kolkata] PHP Warning:  Undefined array key 1 in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 21
+[08-Feb-2023 11:29:08 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[08-Feb-2023 11:29:08 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[08-Feb-2023 11:29:08 Asia/Kolkata] PHP Warning:  Undefined array key "citypromobanner" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[08-Feb-2023 11:29:08 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[08-Feb-2023 11:29:08 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php:39
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 11:22:24 Asia/Kolkata] PHP Warning:  Undefined array key "corporate_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 10
+[09-Feb-2023 11:22:24 Asia/Kolkata] PHP Warning:  Undefined array key "metaTitle" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 11
+[09-Feb-2023 11:22:24 Asia/Kolkata] PHP Warning:  Undefined array key "city_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 12
+[09-Feb-2023 11:22:24 Asia/Kolkata] PHP Warning:  Undefined array key "featured" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 13
+[09-Feb-2023 11:22:24 Asia/Kolkata] PHP Warning:  Undefined array key "metaDescription" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 14
+[09-Feb-2023 11:22:24 Asia/Kolkata] PHP Warning:  Undefined array key "city_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 15
+[09-Feb-2023 11:22:24 Asia/Kolkata] PHP Warning:  Undefined array key "state_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 16
+[09-Feb-2023 11:22:24 Asia/Kolkata] PHP Warning:  Undefined array key "url" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 17
+[09-Feb-2023 11:22:24 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[09-Feb-2023 11:22:24 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[09-Feb-2023 11:22:24 Asia/Kolkata] PHP Warning:  Undefined array key 1 in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 21
+[09-Feb-2023 11:22:24 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[09-Feb-2023 11:22:24 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[09-Feb-2023 11:22:24 Asia/Kolkata] PHP Warning:  Undefined array key "citypromobanner" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 11:22:24 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 11:22:24 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php:39
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 11:34:46 Asia/Kolkata] PHP Warning:  Undefined array key "corporate_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 10
+[09-Feb-2023 11:34:46 Asia/Kolkata] PHP Warning:  Undefined array key "metaTitle" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 11
+[09-Feb-2023 11:34:46 Asia/Kolkata] PHP Warning:  Undefined array key "city_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 12
+[09-Feb-2023 11:34:46 Asia/Kolkata] PHP Warning:  Undefined array key "featured" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 13
+[09-Feb-2023 11:34:46 Asia/Kolkata] PHP Warning:  Undefined array key "metaDescription" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 14
+[09-Feb-2023 11:34:46 Asia/Kolkata] PHP Warning:  Undefined array key "city_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 15
+[09-Feb-2023 11:34:46 Asia/Kolkata] PHP Warning:  Undefined array key "state_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 16
+[09-Feb-2023 11:34:46 Asia/Kolkata] PHP Warning:  Undefined array key "url" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 17
+[09-Feb-2023 11:34:46 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[09-Feb-2023 11:34:46 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[09-Feb-2023 11:34:46 Asia/Kolkata] PHP Warning:  Undefined array key 1 in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 21
+[09-Feb-2023 11:34:46 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[09-Feb-2023 11:34:46 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[09-Feb-2023 11:34:46 Asia/Kolkata] PHP Warning:  Undefined array key "citypromobanner" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 11:34:46 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 11:34:46 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php:39
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 11:35:26 Asia/Kolkata] PHP Warning:  Undefined array key "corporate_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 10
+[09-Feb-2023 11:35:26 Asia/Kolkata] PHP Warning:  Undefined array key "metaTitle" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 11
+[09-Feb-2023 11:35:26 Asia/Kolkata] PHP Warning:  Undefined array key "city_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 12
+[09-Feb-2023 11:35:26 Asia/Kolkata] PHP Warning:  Undefined array key "featured" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 13
+[09-Feb-2023 11:35:26 Asia/Kolkata] PHP Warning:  Undefined array key "metaDescription" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 14
+[09-Feb-2023 11:35:26 Asia/Kolkata] PHP Warning:  Undefined array key "city_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 15
+[09-Feb-2023 11:35:26 Asia/Kolkata] PHP Warning:  Undefined array key "state_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 16
+[09-Feb-2023 11:35:26 Asia/Kolkata] PHP Warning:  Undefined array key "url" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 17
+[09-Feb-2023 11:35:26 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[09-Feb-2023 11:35:26 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[09-Feb-2023 11:35:26 Asia/Kolkata] PHP Warning:  Undefined array key 1 in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 21
+[09-Feb-2023 11:35:26 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[09-Feb-2023 11:35:26 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[09-Feb-2023 11:35:26 Asia/Kolkata] PHP Warning:  Undefined array key "citypromobanner" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 11:35:26 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 11:35:26 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php:39
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 11:52:00 Asia/Kolkata] PHP Warning:  Undefined array key "corporate_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 10
+[09-Feb-2023 11:52:00 Asia/Kolkata] PHP Warning:  Undefined array key "metaTitle" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 11
+[09-Feb-2023 11:52:00 Asia/Kolkata] PHP Warning:  Undefined array key "city_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 12
+[09-Feb-2023 11:52:00 Asia/Kolkata] PHP Warning:  Undefined array key "featured" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 13
+[09-Feb-2023 11:52:00 Asia/Kolkata] PHP Warning:  Undefined array key "metaDescription" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 14
+[09-Feb-2023 11:52:00 Asia/Kolkata] PHP Warning:  Undefined array key "city_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 15
+[09-Feb-2023 11:52:00 Asia/Kolkata] PHP Warning:  Undefined array key "state_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 16
+[09-Feb-2023 11:52:00 Asia/Kolkata] PHP Warning:  Undefined array key "url" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 17
+[09-Feb-2023 11:52:00 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[09-Feb-2023 11:52:00 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[09-Feb-2023 11:52:00 Asia/Kolkata] PHP Warning:  Undefined array key 1 in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 21
+[09-Feb-2023 11:52:00 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[09-Feb-2023 11:52:00 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[09-Feb-2023 11:52:00 Asia/Kolkata] PHP Warning:  Undefined array key "citypromobanner" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 11:52:00 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 11:52:00 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php:39
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 11:56:09 Asia/Kolkata] PHP Warning:  Undefined array key "corporate_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 10
+[09-Feb-2023 11:56:09 Asia/Kolkata] PHP Warning:  Undefined array key "metaTitle" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 11
+[09-Feb-2023 11:56:09 Asia/Kolkata] PHP Warning:  Undefined array key "city_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 12
+[09-Feb-2023 11:56:09 Asia/Kolkata] PHP Warning:  Undefined array key "featured" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 13
+[09-Feb-2023 11:56:09 Asia/Kolkata] PHP Warning:  Undefined array key "metaDescription" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 14
+[09-Feb-2023 11:56:09 Asia/Kolkata] PHP Warning:  Undefined array key "city_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 15
+[09-Feb-2023 11:56:09 Asia/Kolkata] PHP Warning:  Undefined array key "state_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 16
+[09-Feb-2023 11:56:09 Asia/Kolkata] PHP Warning:  Undefined array key "url" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 17
+[09-Feb-2023 11:56:09 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[09-Feb-2023 11:56:09 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[09-Feb-2023 11:56:09 Asia/Kolkata] PHP Warning:  Undefined array key 1 in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 21
+[09-Feb-2023 11:56:09 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[09-Feb-2023 11:56:09 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[09-Feb-2023 11:56:09 Asia/Kolkata] PHP Warning:  Undefined array key "citypromobanner" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 11:56:09 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 11:56:09 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php:39
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 11:56:22 Asia/Kolkata] PHP Warning:  Undefined array key "corporate_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 10
+[09-Feb-2023 11:56:22 Asia/Kolkata] PHP Warning:  Undefined array key "metaTitle" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 11
+[09-Feb-2023 11:56:22 Asia/Kolkata] PHP Warning:  Undefined array key "city_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 12
+[09-Feb-2023 11:56:22 Asia/Kolkata] PHP Warning:  Undefined array key "featured" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 13
+[09-Feb-2023 11:56:22 Asia/Kolkata] PHP Warning:  Undefined array key "metaDescription" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 14
+[09-Feb-2023 11:56:22 Asia/Kolkata] PHP Warning:  Undefined array key "city_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 15
+[09-Feb-2023 11:56:22 Asia/Kolkata] PHP Warning:  Undefined array key "state_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 16
+[09-Feb-2023 11:56:22 Asia/Kolkata] PHP Warning:  Undefined array key "url" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 17
+[09-Feb-2023 11:56:22 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[09-Feb-2023 11:56:22 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[09-Feb-2023 11:56:22 Asia/Kolkata] PHP Warning:  Undefined array key 1 in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 21
+[09-Feb-2023 11:56:22 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[09-Feb-2023 11:56:22 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[09-Feb-2023 11:56:22 Asia/Kolkata] PHP Warning:  Undefined array key "citypromobanner" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 11:56:22 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 11:56:22 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php:39
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 12:05:51 Asia/Kolkata] PHP Warning:  Undefined array key "corporate_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 10
+[09-Feb-2023 12:05:51 Asia/Kolkata] PHP Warning:  Undefined array key "metaTitle" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 11
+[09-Feb-2023 12:05:51 Asia/Kolkata] PHP Warning:  Undefined array key "city_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 12
+[09-Feb-2023 12:05:51 Asia/Kolkata] PHP Warning:  Undefined array key "featured" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 13
+[09-Feb-2023 12:05:51 Asia/Kolkata] PHP Warning:  Undefined array key "metaDescription" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 14
+[09-Feb-2023 12:05:51 Asia/Kolkata] PHP Warning:  Undefined array key "city_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 15
+[09-Feb-2023 12:05:51 Asia/Kolkata] PHP Warning:  Undefined array key "state_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 16
+[09-Feb-2023 12:05:51 Asia/Kolkata] PHP Warning:  Undefined array key "url" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 17
+[09-Feb-2023 12:05:51 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[09-Feb-2023 12:05:51 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[09-Feb-2023 12:05:51 Asia/Kolkata] PHP Warning:  Undefined array key 1 in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 21
+[09-Feb-2023 12:05:51 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[09-Feb-2023 12:05:51 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[09-Feb-2023 12:05:51 Asia/Kolkata] PHP Warning:  Undefined array key "citypromobanner" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 12:05:51 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 12:05:51 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php:39
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 12:07:10 Asia/Kolkata] PHP Warning:  Undefined array key "corporate_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 10
+[09-Feb-2023 12:07:10 Asia/Kolkata] PHP Warning:  Undefined array key "metaTitle" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 11
+[09-Feb-2023 12:07:10 Asia/Kolkata] PHP Warning:  Undefined array key "city_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 12
+[09-Feb-2023 12:07:10 Asia/Kolkata] PHP Warning:  Undefined array key "featured" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 13
+[09-Feb-2023 12:07:10 Asia/Kolkata] PHP Warning:  Undefined array key "metaDescription" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 14
+[09-Feb-2023 12:07:10 Asia/Kolkata] PHP Warning:  Undefined array key "city_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 15
+[09-Feb-2023 12:07:10 Asia/Kolkata] PHP Warning:  Undefined array key "state_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 16
+[09-Feb-2023 12:07:10 Asia/Kolkata] PHP Warning:  Undefined array key "url" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 17
+[09-Feb-2023 12:07:10 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[09-Feb-2023 12:07:10 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[09-Feb-2023 12:07:10 Asia/Kolkata] PHP Warning:  Undefined array key 1 in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 21
+[09-Feb-2023 12:07:10 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[09-Feb-2023 12:07:10 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[09-Feb-2023 12:07:10 Asia/Kolkata] PHP Warning:  Undefined array key "citypromobanner" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 12:07:10 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[09-Feb-2023 12:07:10 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php:39
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[10-Feb-2023 13:27:58 Asia/Kolkata] PHP Warning:  Undefined array key "corporate_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 10
+[10-Feb-2023 13:27:58 Asia/Kolkata] PHP Warning:  Undefined array key "metaTitle" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 11
+[10-Feb-2023 13:27:58 Asia/Kolkata] PHP Warning:  Undefined array key "city_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 12
+[10-Feb-2023 13:27:58 Asia/Kolkata] PHP Warning:  Undefined array key "featured" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 13
+[10-Feb-2023 13:27:58 Asia/Kolkata] PHP Warning:  Undefined array key "metaDescription" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 14
+[10-Feb-2023 13:27:58 Asia/Kolkata] PHP Warning:  Undefined array key "city_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 15
+[10-Feb-2023 13:27:58 Asia/Kolkata] PHP Warning:  Undefined array key "state_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 16
+[10-Feb-2023 13:27:58 Asia/Kolkata] PHP Warning:  Undefined array key "url" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 17
+[10-Feb-2023 13:27:58 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[10-Feb-2023 13:27:58 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[10-Feb-2023 13:27:58 Asia/Kolkata] PHP Warning:  Undefined array key 1 in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 21
+[10-Feb-2023 13:27:58 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[10-Feb-2023 13:27:58 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[10-Feb-2023 13:27:58 Asia/Kolkata] PHP Warning:  Undefined array key "citypromobanner" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[10-Feb-2023 13:27:58 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[10-Feb-2023 13:27:58 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php:39
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[10-Feb-2023 13:28:10 Asia/Kolkata] PHP Warning:  Undefined array key "corporate_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 10
+[10-Feb-2023 13:28:10 Asia/Kolkata] PHP Warning:  Undefined array key "metaTitle" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 11
+[10-Feb-2023 13:28:10 Asia/Kolkata] PHP Warning:  Undefined array key "city_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 12
+[10-Feb-2023 13:28:10 Asia/Kolkata] PHP Warning:  Undefined array key "featured" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 13
+[10-Feb-2023 13:28:10 Asia/Kolkata] PHP Warning:  Undefined array key "metaDescription" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 14
+[10-Feb-2023 13:28:10 Asia/Kolkata] PHP Warning:  Undefined array key "city_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 15
+[10-Feb-2023 13:28:10 Asia/Kolkata] PHP Warning:  Undefined array key "state_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 16
+[10-Feb-2023 13:28:10 Asia/Kolkata] PHP Warning:  Undefined array key "url" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 17
+[10-Feb-2023 13:28:10 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[10-Feb-2023 13:28:10 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[10-Feb-2023 13:28:10 Asia/Kolkata] PHP Warning:  Undefined array key 1 in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 21
+[10-Feb-2023 13:28:10 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[10-Feb-2023 13:28:10 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[10-Feb-2023 13:28:10 Asia/Kolkata] PHP Warning:  Undefined array key "citypromobanner" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[10-Feb-2023 13:28:10 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[10-Feb-2023 13:28:10 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php:39
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[10-Feb-2023 13:31:37 Asia/Kolkata] PHP Warning:  Undefined array key "corporate_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 10
+[10-Feb-2023 13:31:37 Asia/Kolkata] PHP Warning:  Undefined array key "metaTitle" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 11
+[10-Feb-2023 13:31:37 Asia/Kolkata] PHP Warning:  Undefined array key "city_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 12
+[10-Feb-2023 13:31:37 Asia/Kolkata] PHP Warning:  Undefined array key "featured" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 13
+[10-Feb-2023 13:31:37 Asia/Kolkata] PHP Warning:  Undefined array key "metaDescription" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 14
+[10-Feb-2023 13:31:37 Asia/Kolkata] PHP Warning:  Undefined array key "city_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 15
+[10-Feb-2023 13:31:37 Asia/Kolkata] PHP Warning:  Undefined array key "state_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 16
+[10-Feb-2023 13:31:37 Asia/Kolkata] PHP Warning:  Undefined array key "url" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 17
+[10-Feb-2023 13:31:37 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[10-Feb-2023 13:31:37 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[10-Feb-2023 13:31:37 Asia/Kolkata] PHP Warning:  Undefined array key 1 in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 21
+[10-Feb-2023 13:31:37 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[10-Feb-2023 13:31:37 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[10-Feb-2023 13:31:37 Asia/Kolkata] PHP Warning:  Undefined array key "citypromobanner" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[10-Feb-2023 13:31:37 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[10-Feb-2023 13:31:37 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php:39
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[10-Feb-2023 13:34:42 Asia/Kolkata] PHP Warning:  Undefined array key "corporate_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 10
+[10-Feb-2023 13:34:42 Asia/Kolkata] PHP Warning:  Undefined array key "metaTitle" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 11
+[10-Feb-2023 13:34:42 Asia/Kolkata] PHP Warning:  Undefined array key "city_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 12
+[10-Feb-2023 13:34:42 Asia/Kolkata] PHP Warning:  Undefined array key "featured" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 13
+[10-Feb-2023 13:34:42 Asia/Kolkata] PHP Warning:  Undefined array key "metaDescription" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 14
+[10-Feb-2023 13:34:42 Asia/Kolkata] PHP Warning:  Undefined array key "city_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 15
+[10-Feb-2023 13:34:42 Asia/Kolkata] PHP Warning:  Undefined array key "state_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 16
+[10-Feb-2023 13:34:42 Asia/Kolkata] PHP Warning:  Undefined array key "url" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 17
+[10-Feb-2023 13:34:42 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[10-Feb-2023 13:34:42 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[10-Feb-2023 13:34:42 Asia/Kolkata] PHP Warning:  Undefined array key 1 in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 21
+[10-Feb-2023 13:34:42 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[10-Feb-2023 13:34:42 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[10-Feb-2023 13:34:42 Asia/Kolkata] PHP Warning:  Undefined array key "citypromobanner" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[10-Feb-2023 13:34:42 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[10-Feb-2023 13:34:42 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php:39
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[10-Feb-2023 13:34:44 Asia/Kolkata] PHP Warning:  Undefined array key "corporate_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 10
+[10-Feb-2023 13:34:44 Asia/Kolkata] PHP Warning:  Undefined array key "metaTitle" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 11
+[10-Feb-2023 13:34:44 Asia/Kolkata] PHP Warning:  Undefined array key "city_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 12
+[10-Feb-2023 13:34:44 Asia/Kolkata] PHP Warning:  Undefined array key "featured" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 13
+[10-Feb-2023 13:34:44 Asia/Kolkata] PHP Warning:  Undefined array key "metaDescription" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 14
+[10-Feb-2023 13:34:44 Asia/Kolkata] PHP Warning:  Undefined array key "city_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 15
+[10-Feb-2023 13:34:44 Asia/Kolkata] PHP Warning:  Undefined array key "state_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 16
+[10-Feb-2023 13:34:44 Asia/Kolkata] PHP Warning:  Undefined array key "url" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 17
+[10-Feb-2023 13:34:44 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[10-Feb-2023 13:34:44 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[10-Feb-2023 13:34:44 Asia/Kolkata] PHP Warning:  Undefined array key 1 in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 21
+[10-Feb-2023 13:34:44 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[10-Feb-2023 13:34:44 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[10-Feb-2023 13:34:44 Asia/Kolkata] PHP Warning:  Undefined array key "citypromobanner" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[10-Feb-2023 13:34:44 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[10-Feb-2023 13:34:44 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php:39
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[10-Feb-2023 13:35:21 Asia/Kolkata] PHP Warning:  Undefined array key "corporate_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 10
+[10-Feb-2023 13:35:21 Asia/Kolkata] PHP Warning:  Undefined array key "metaTitle" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 11
+[10-Feb-2023 13:35:21 Asia/Kolkata] PHP Warning:  Undefined array key "city_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 12
+[10-Feb-2023 13:35:21 Asia/Kolkata] PHP Warning:  Undefined array key "featured" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 13
+[10-Feb-2023 13:35:21 Asia/Kolkata] PHP Warning:  Undefined array key "metaDescription" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 14
+[10-Feb-2023 13:35:21 Asia/Kolkata] PHP Warning:  Undefined array key "city_lead" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 15
+[10-Feb-2023 13:35:21 Asia/Kolkata] PHP Warning:  Undefined array key "state_name" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 16
+[10-Feb-2023 13:35:21 Asia/Kolkata] PHP Warning:  Undefined array key "url" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 17
+[10-Feb-2023 13:35:21 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[10-Feb-2023 13:35:21 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 19
+[10-Feb-2023 13:35:21 Asia/Kolkata] PHP Warning:  Undefined array key 1 in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 21
+[10-Feb-2023 13:35:21 Asia/Kolkata] PHP Warning:  Undefined array key "image" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[10-Feb-2023 13:35:21 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 23
+[10-Feb-2023 13:35:21 Asia/Kolkata] PHP Warning:  Undefined array key "citypromobanner" in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[10-Feb-2023 13:35:21 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[10-Feb-2023 13:35:21 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php:39
+Stack trace:
+#0 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 39
+[10-Mar-2023 14:04:25 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 59
+[10-Mar-2023 14:04:25 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 67
+[09-Apr-2023 16:00:02 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 59
+[09-Apr-2023 16:00:02 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 67
+[09-Apr-2023 16:33:52 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 59
+[09-Apr-2023 16:33:52 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 67
+[09-Apr-2023 17:13:09 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 59
+[09-Apr-2023 17:13:09 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 67
+[09-Apr-2023 17:56:25 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 59
+[09-Apr-2023 17:56:25 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 67
+[19-Apr-2023 11:09:20 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 59
+[19-Apr-2023 11:09:20 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 67
+[19-Apr-2023 12:12:37 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 59
+[19-Apr-2023 12:12:37 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 67
+[19-Apr-2023 12:23:09 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 59
+[19-Apr-2023 12:23:09 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 67
+[19-Apr-2023 12:30:04 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 59
+[19-Apr-2023 12:30:04 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 67
+[19-Apr-2023 12:32:44 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 59
+[19-Apr-2023 12:32:44 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 67
+[19-Apr-2023 12:35:18 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 59
+[19-Apr-2023 12:35:18 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 67
+[19-Apr-2023 12:37:41 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 59
+[19-Apr-2023 12:37:41 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 67
+[19-Apr-2023 12:40:25 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 59
+[19-Apr-2023 12:40:25 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 67
+[19-Apr-2023 12:42:46 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 59
+[19-Apr-2023 12:42:46 Asia/Kolkata] PHP Warning:  Undefined variable $CreatedTime in /home2/cypherte/public_html/techxpert/ed/admin/city/action/create_city_action.php on line 67

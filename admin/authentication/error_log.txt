@@ -1,0 +1,36 @@
+[19-Jul-2025 08:00:23 Europe/Berlin] PHP Warning:  include(../controllers/common_controllers.php): Failed to open stream: No such file or directory in /var/www/html/techxpertindia.in/admin/authentication/login.php on line 11
+[19-Jul-2025 08:00:23 Europe/Berlin] PHP Warning:  include(): Failed opening '../controllers/common_controllers.php' for inclusion (include_path='.:/usr/share/php') in /var/www/html/techxpertindia.in/admin/authentication/login.php on line 11
+[19-Jul-2025 08:00:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function SessionCheck() in /var/www/html/techxpertindia.in/admin/authentication/login.php:13
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/techxpertindia.in/admin/authentication/login.php on line 13
+[19-Jul-2025 08:00:25 Europe/Berlin] PHP Warning:  include(../controllers/common_controllers.php): Failed to open stream: No such file or directory in /var/www/html/techxpertindia.in/admin/authentication/login.php on line 11
+[19-Jul-2025 08:00:25 Europe/Berlin] PHP Warning:  include(): Failed opening '../controllers/common_controllers.php' for inclusion (include_path='.:/usr/share/php') in /var/www/html/techxpertindia.in/admin/authentication/login.php on line 11
+[19-Jul-2025 08:00:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function SessionCheck() in /var/www/html/techxpertindia.in/admin/authentication/login.php:13
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/techxpertindia.in/admin/authentication/login.php on line 13
+[19-Jul-2025 08:00:31 Europe/Berlin] PHP Warning:  include(../controllers/common_controllers.php): Failed to open stream: No such file or directory in /var/www/html/techxpertindia.in/admin/authentication/login.php on line 11
+[19-Jul-2025 08:00:31 Europe/Berlin] PHP Warning:  include(): Failed opening '../controllers/common_controllers.php' for inclusion (include_path='.:/usr/share/php') in /var/www/html/techxpertindia.in/admin/authentication/login.php on line 11
+[19-Jul-2025 08:00:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function SessionCheck() in /var/www/html/techxpertindia.in/admin/authentication/login.php:13
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/techxpertindia.in/admin/authentication/login.php on line 13
+[19-Jul-2025 08:05:02 Europe/Berlin] PHP Warning:  include(../controllers/common_controllers.php): Failed to open stream: No such file or directory in /var/www/html/techxpertindia.in/admin/authentication/login.php on line 11
+[19-Jul-2025 08:05:02 Europe/Berlin] PHP Warning:  include(): Failed opening '../controllers/common_controllers.php' for inclusion (include_path='.:/usr/share/php') in /var/www/html/techxpertindia.in/admin/authentication/login.php on line 11
+[19-Jul-2025 08:05:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function SessionCheck() in /var/www/html/techxpertindia.in/admin/authentication/login.php:13
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/techxpertindia.in/admin/authentication/login.php on line 13
+[19-Jul-2025 08:06:08 Europe/Berlin] PHP Warning:  include(../controllers/common_controllers.php): Failed to open stream: No such file or directory in /var/www/html/techxpertindia.in/admin/authentication/login.php on line 11
+[19-Jul-2025 08:06:08 Europe/Berlin] PHP Warning:  include(): Failed opening '../controllers/common_controllers.php' for inclusion (include_path='.:/usr/share/php') in /var/www/html/techxpertindia.in/admin/authentication/login.php on line 11
+[19-Jul-2025 08:06:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function SessionCheck() in /var/www/html/techxpertindia.in/admin/authentication/login.php:13
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/techxpertindia.in/admin/authentication/login.php on line 13
+[19-Jul-2025 08:06:08 Europe/Berlin] PHP Warning:  include(../controllers/common_controllers.php): Failed to open stream: No such file or directory in /var/www/html/techxpertindia.in/admin/authentication/login.php on line 11
+[19-Jul-2025 08:06:08 Europe/Berlin] PHP Warning:  include(): Failed opening '../controllers/common_controllers.php' for inclusion (include_path='.:/usr/share/php') in /var/www/html/techxpertindia.in/admin/authentication/login.php on line 11
+[19-Jul-2025 08:06:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function SessionCheck() in /var/www/html/techxpertindia.in/admin/authentication/login.php:13
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/techxpertindia.in/admin/authentication/login.php on line 13

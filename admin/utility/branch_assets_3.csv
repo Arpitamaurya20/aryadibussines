@@ -1,0 +1,4 @@
+"ID","BranchID","EquipmentName","Make","Model","SNo","Capacity","Qty","UoM","UnitRate","Amount","ManufacturingYear","EquipmentAge","ServiceType","Category","SubCategory","Tat","AMCStartDate","AMCEndDate","SOW","FloorNumber","EquipmentLocation","Description","PPMInterval","UniqueID","CreatedBy","CreatedDate","UpdatedDate","IsActive"
+"12843","18443","MCB","ANCHOR","10Amp,C type",,"10","1","30",,"0",,"2022","CAMC","23","14",,"2025-01-04","2025-12-31",,"MCB","1st Floor",,"Monthly",,"Shivani","2025-01-04",NULL,"1"
+"12844","18443","MCB","ANCHOR","10Amp,C type",,"10","1","30",,"0",,"2022","CAMC","23","14",,"2025-01-04","2025-12-31",,"MCB","1st Floor",,"Monthly",,"Shivani","2025-01-04",NULL,"1"
+"12845","18443","MCB","ANCHOR","10Amp,C type",,"10","1","30",,"0",,"2022","CAMC","23","14",,"2025-01-04","2025-12-31",,"MCB","1st Floor",,"Monthly",,"Shivani","2025-01-04",NULL,"1"

@@ -1,0 +1,226 @@
+* { box-sizing: border-box; }
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background: #0b1220;
+    color: #e8eef9;
+}
+.wb-root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 14px;
+    gap: 8px;
+}
+.wb-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+    padding-bottom: 8px;
+    flex-shrink: 0;
+}
+.wb-brand { font-size: 24px; font-weight: 800; letter-spacing: .02em; }
+.wb-brand span { color: #38bdf8; }
+.wb-meta { font-size: 13px; color: #94a3b8; text-align: right; }
+.wb-meta strong { color: #f8fafc; }
+.wb-fullscreen-btn {
+    margin-top: 6px;
+    border: 1px solid rgba(56,189,248,.55);
+    background: rgba(56,189,248,.14);
+    color: #bae6fd;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.wb-fullscreen-btn:hover {
+    background: rgba(56,189,248,.25);
+}
+.wb-countdown { color: #4ade80; font-weight: 700; }
+.wb-kpi-row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    flex-shrink: 0;
+}
+.wb-kpi-row--7 {
+    grid-template-columns: repeat(5, minmax(0, 1fr)) minmax(140px, 1.4fr) minmax(0, 1fr);
+}
+.wb-kpi--money {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+.wb-kpi-value--money { font-size: 24px; }
+.wb-kpi {
+    border-radius: 10px;
+    padding: 10px 12px;
+    min-height: 70px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.25);
+}
+.wb-kpi-label { font-size: 10px; text-transform: uppercase; letter-spacing: .06em; opacity: .9; }
+.wb-kpi-value { font-size: 28px; font-weight: 800; line-height: 1.1; margin-top: 2px; }
+.wb-kpi--blue { background: linear-gradient(135deg, #2563eb, #1d4ed8); }
+.wb-kpi--green { background: linear-gradient(135deg, #16a34a, #15803d); }
+.wb-kpi--amber { background: linear-gradient(135deg, #f59e0b, #d97706); }
+.wb-kpi--red { background: linear-gradient(135deg, #dc2626, #b91c1c); }
+.wb-kpi--purple { background: linear-gradient(135deg, #7c3aed, #6d28d9); }
+.wb-kpi--cyan { background: linear-gradient(135deg, #0891b2, #0e7490); }
+
+/* 3 explicit rows — fixes collapsed middle panels */
+.wb-main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: minmax(150px, 26vh) minmax(150px, 26vh) minmax(180px, 1fr);
+    gap: 8px;
+    min-height: 0;
+    overflow: hidden;
+}
+.wb-main--today {
+    grid-template-rows: minmax(130px, 22vh) minmax(130px, 22vh) minmax(130px, 22vh) minmax(200px, 1fr);
+}
+.wb-panel {
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 140px;
+    overflow: hidden;
+}
+.wb-panel--feed {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+.wb-panel--side {
+    grid-column: 3;
+    grid-row: 3;
+}
+.wb-panel-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: #94a3b8;
+    margin-bottom: 6px;
+    flex-shrink: 0;
+}
+.wb-panel-body {
+    flex: 1;
+    overflow: auto;
+    min-height: 100px;
+    -webkit-overflow-scrolling: touch;
+}
+.wb-status-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-content: flex-start;
+}
+.wb-chip {
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    background: rgba(56,189,248,.18);
+    border: 1px solid rgba(56,189,248,.4);
+    white-space: nowrap;
+}
+.wb-chip b { font-size: 16px; margin-right: 5px; color: #7dd3fc; }
+.wb-bar-list { list-style: none; margin: 0; padding: 0; }
+.wb-bar-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 6px;
+    font-size: 12px;
+}
+.wb-bar-track {
+    grid-column: 1 / -1;
+    height: 5px;
+    background: rgba(255,255,255,.08);
+    border-radius: 99px;
+    overflow: hidden;
+}
+.wb-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    border-radius: 99px;
+}
+.wb-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+.wb-table th {
+    text-align: left;
+    color: #64748b;
+    font-weight: 600;
+    padding: 4px 5px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    position: sticky;
+    top: 0;
+    background: #111827;
+}
+.wb-table td { padding: 4px 5px; border-bottom: 1px solid rgba(255,255,255,.05); }
+.wb-rank { color: #38bdf8; font-weight: 800; width: 22px; }
+.wb-ticker { min-height: 120px; overflow: hidden; position: relative; }
+.wb-ticker-inner { animation: wb-scroll 50s linear infinite; }
+@keyframes wb-scroll {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+}
+.wb-ticket-row {
+    display: grid;
+    grid-template-columns: 72px 64px 1fr 90px 1fr;
+    gap: 6px;
+    padding: 5px 0;
+    font-size: 11px;
+    border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.wb-tag-open { color: #4ade80; font-weight: 700; }
+.wb-tag-closed { color: #fbbf24; font-weight: 700; }
+.wb-tag-status { color: #a78bfa; font-weight: 700; }
+.wb-num-open { color: #7dd3fc; font-weight: 700; }
+.wb-num-closed { color: #86efac; font-weight: 700; }
+.wb-footer { font-size: 10px; color: #64748b; text-align: center; flex-shrink: 0; }
+.wb-empty { color: #64748b; font-size: 12px; padding: 8px 0; }
+.wb-error {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0b1220;
+    color: #f87171;
+    font-size: 18px;
+    padding: 24px;
+    text-align: center;
+}
+.wb-pulse {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #4ade80;
+    border-radius: 50%;
+    margin-right: 6px;
+    animation: wb-pulse 1.5s ease infinite;
+}
+@keyframes wb-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: .4; transform: scale(.85); }
+}
+@media (max-width: 1200px) {
+    .wb-kpi-row { grid-template-columns: repeat(3, 1fr); }
+    .wb-main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        overflow: auto;
+    }
+    .wb-panel--feed { grid-column: 1 / -1; }
+}

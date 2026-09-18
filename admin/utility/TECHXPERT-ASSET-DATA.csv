@@ -1,0 +1,179 @@
+Branch ,Name of Equipment,Make,Model,SNo,Capacity,Qty,UoM,Unit Rate,Amount,Manufacturing Year,Age of Equipment(years),Types of Services,Category ,Subcatagory,TAT,AMC Start Date,AMC End Date,Floor Number,Equipment Location,Description,Unique ID
+Techxpert-Delhi,Ductable AC unit,Carrier ,PU25VAKD,NA,2.5,1,TR,1950,4875,Jun-18,4.96,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,1-Lift room,Working,May23-9928
+Techxpert-Delhi,Ductable AC unit,Carrier ,PU25VAKD,NA,2.5,1,TR,1950,4875,Jun-18,4.96,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,2-Lift room,Working,May23-9929
+Techxpert-Delhi,Split AC unit,Carrier ,NA,4011175,2,1,TR,1950,3900,Jun-18,4.96,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,2nd  Floor,2nd  Floor GDS ,Working,May23-9930
+Techxpert-Delhi,Ductable AC unit,Mitsubishi,NA,4011175,2.5,1,TR,1950,4875,Jun-18,4.96,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,6th Floor,Conference room 6th Floor,Working,May23-9931
+Techxpert-Delhi,Window AC unit,Voltas ,NA,4011175,1.5,1,TR,1950,2925,Jun-18,4.96,CAMC,HVAC,WINDOW AC,2,2023-04-01,2024-03-30,Ground Floor,Housekeeping Store room,Working,May23-9932
+Techxpert-Delhi,Split AC unit,Voltas ,NA,4501834,2,1,TR,1950,3900,Jun-18,4.96,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Main Gate (Security),Working,May23-9933
+Techxpert-Delhi,Window AC unit,Voltas ,R21NUV1,4501834,1.5,1,TR,1950,2925,Jun-18,4.96,CAMC,HVAC,WINDOW AC,2,2023-04-01,2024-03-30,Ground Floor,Driver Room,Working,May23-9934
+Techxpert-Delhi,Window AC unit,Voltas ,CACS2406316,4501834,1.5,1,TR,1950,2925,Jun-18,4.96,CAMC,HVAC,WINDOW AC,2,2023-04-01,2024-03-30,4th floor ,4th floor Breakout area,Working,May23-9935
+Techxpert-Delhi,Ductable AC unit,Daikin ,40LC004R,NA,2,1,TR,1950,3900,Jun-18,4.96,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,4th Floor ,4th Floor Switch Room,Working,May23-9936
+Techxpert-Delhi,Split AC unit,Voltas,SAC 245VADZ (R32),4552702A21AC10462,2,1,TR,1950,3900,Jun-18,4.96,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,FCO,Working,May23-9937
+Techxpert-Noida,1.5 TR split AC units,voltas ,EV1528,1-45001572085,1.5,1,TR,1950,2925,Jun-18,4.96,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,1-Office ,Working,May23-9938
+Techxpert-Noida,1.5 TR split AC units,voltas ,EV1528,2-45001572085,1.5,1,TR,1950,2925,Jun-18,4.96,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,2-Office ,Working,May23-9939
+Techxpert-Noida,1.5 TR split AC units,voltas ,EV1528,3-45001572085,1.5,1,TR,1950,2925,Jun-18,4.96,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,3-Office ,Working,May23-9940
+Techxpert-Noida,1.5 TR split AC units,voltas ,EV1528,4-45001572085,1.5,1,TR,1950,2925,Jun-18,4.96,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,4-Office ,Working,May23-9941
+Techxpert-Home Care,8.5 TR CAC units,Blue star,NA,NA,8.5,1,TR,1950,16575,Jun-11,11.96,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,1-Office ,Working,May23-9942
+Techxpert-Home Care,8.5 TR CAC units,Blue star,NA,NA,8.5,1,TR,1950,16575,Jun-11,11.96,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,2-Office ,Working,May23-9943
+Techxpert-Home Care,2 TR Split units,Voltas ,NA,NA,2,1,TR,1950,3900,Jun-11,11.96,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,3-Office ,Working,May23-9944
+Techxpert-Home Care,2 TR Split units,Voltas ,NA,NA,1.5,1,TR,1950,2925,Jun-11,11.96,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,4-Office ,Working,May23-9945
+Techxpert-Home Care,2 TR Split units,Voltas ,NA,NA,1.5,1,TR,1950,2925,Jun-11,11.96,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,5-Office ,Working,May23-9946
+Techxpert-Home Care,Hot Bain Marie,N/A,N/A,1,1    ,1    ,Nos,15000,15000,2018,5,NCMC,Kitchen Equipment System ,Hot Bain Marie,2,2022-06-01,2023-05-31,1-GF,1-GF,Working,May23-9947
+Techxpert-Home Care,Vapour Hood,N/A,N/A,2,1    ,1    ,Nos,20000,20000,2018,5,NCMC,Kitchen Equipment System ,Vapour Hood,2,2022-06-01,2023-05-31,2-GF,2-GF,Working,May23-9948
+Techxpert-Home Care,Water softner for dish washer,N/A,N/A,3,1    ,1    ,Nos,15000,15000,2018,5,NCMC,Kitchen Equipment System ,Geyser ,2,2022-06-01,2023-05-31,3-GF,3-GF,Working,May23-9949
+Techxpert-Home Care,Hashizaki Commercial Refrigreator,N/A,N/A,4,1    ,1    ,Nos,21500,21500,2018,5,NCMC,Kitchen Equipment System ,Hashizaki Commercial Refrigreator,2,2022-06-01,2023-05-31,4-GF,4-GF,Working,May23-9950
+Techxpert-Home Care,Western Refrigrator Ice Candy,N/A,N/A,5,1    ,1    ,Nos,18000,18000,2018,5,NCMC,Kitchen Equipment System ,Western Refrigrator Ice Candy,2,2022-06-01,2023-05-31,5-GF,5-GF,Working,May23-9951
+Techxpert-Home Care,Winterhalter Dishwasher,N/A,N/A,6,1    ,1    ,Nos,19050,19050,2018,5,NCMC,Kitchen Equipment System ,Winterhalter Dishwasher,2,2022-06-01,2023-05-31,6-GF,6-GF,Working,May23-9952
+Techxpert-Home Care,RO Water Purifier,N/A,N/A,7,1    ,1    ,Nos,8500,8500,2018,5,NCMC,Kitchen Equipment System ,RO Water Purifier,2,2022-06-01,2023-05-31,7-GF,7-GF,Working,May23-9953
+Techxpert-Home Care,Geyser ,N/A,N/A,8,1    ,1    ,Nos,9500,9500,2018,5,NCMC,Kitchen Equipment System ,Geyser ,2,2022-06-01,2023-05-31,8-GF,8-GF,Working,May23-9954
+Techxpert-Mumbai,2 TR split AC units,voltas ,NA,NA,2,1,TR,1950,3900,Dec-12,10.46,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,1-Office area,Working,May23-9955
+Techxpert-Mumbai,2 TR split AC units,voltas ,NA,NA,2,1,TR,1950,3900,Dec-12,10.46,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,2-Office area,Working,May23-9956
+Techxpert-Mumbai,2 TR split AC units,voltas ,NA,NA,2,1,TR,1950,3900,Dec-12,10.46,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,3-Office area,Working,May23-9957
+Techxpert-Mumbai,2TR Split AC unit ,Voltas ,Voltas 245V ZZV ,4552421A19EA00592,2,1,TR,1950,3900,Jan-13,10.38,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Admin Room GF,Working,May23-9958
+Techxpert-Mumbai,2TR Split AC unit ,Carrier ,CAS24SU3J8F0,224050048570,2,1,TR,1950,3900,Feb-13,10.29,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,GM Room GF,Working,May23-9959
+Techxpert-Mumbai,2TR Split AC unit ,Voltas ,EUFE024KXX1VC,4550042/U/07/D/925786,2,1,TR,1950,3900,Mar-13,10.21,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,1-Workstation Area GF,Working,May23-9960
+Techxpert-Mumbai,2TR Split AC unit ,Voltas ,EU 245V CAZZ,4553104A22DC01448,2,1,TR,1950,3900,"Thursday, June 2, 2022",0.95,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,1-Shiftincharge Cabin GF,Working,May23-9961
+Techxpert-Mumbai,2TR Split AC unit ,Voltas ,EU 245V CAZZ,4553104A22DC01290,2,1,TR,1950,3900,"Thursday, June 2, 2022",0.95,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,2-Workstation Area GF,Working,May23-9962
+Techxpert-Jaipur,1.5 TR Split AC-1,Voltas ,Voltas 183 CZA,4552201A18CB08915,1.5,1,TR,1950,2925,"Tuesday, January 11, 2022",1.34,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,1-Workstation Area GF,Working,May23-9963
+Techxpert-Jaipur,2 TR Split AC-2,Voltas ,EU 245V CAZZ,4553104A22DC01448,2,1,TR,1950,3900,"Monday, May 30, 2022",0.96,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,2-Workstation Area GF,Working,May23-9964
+Techxpert-Jaipur,2 TR Split AC-3,Voltas ,EU 245V CAZZ,4553104A22DC01290,2,1,TR,1950,3900,"Monday, May 30, 2022",0.96,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Sitting Area GF,Working,May23-9965
+Techxpert-Jaipur,1.5 TR Split AC unit ,Voltas ,VOLTAS/183C2A,4552201A18CB08915,1.5,1,TR,1950,2925,"Tuesday, May 31, 2022",0.96,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Office area,Working,May23-9966
+Techxpert-Gurugram,Split AC unit,voltas ,183J2T5,NA,1.5,1,TR,1950,2925,"Wednesday, June 1, 2022",0.96,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,1-Office ,Working,May23-9967
+Techxpert-Gurugram,Split AC unit,voltas ,183J2T5,NA,1.5,1,TR,1950,2925,"Thursday, June 2, 2022",0.95,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,2-Office ,Working,May23-9968
+Techxpert-Gurugram,Split AC unit,voltas ,183J2T5,NA,1.5,1,TR,1950,2925,"Friday, June 3, 2022",0.95,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,3-Office ,Working,May23-9969
+Techxpert-Gurugram,Split AC unit,voltas ,183J2T5,NA,1.5,1,TR,1950,2925,"Saturday, June 4, 2022",0.95,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,4-Office ,Working,May23-9970
+Techxpert-Gurugram,Cassette AC Unit,Voltas,4502922-CAS 48 CZMM,4552760A21LA00838,4,1,TR,1950,7800,2022,117.92,CAMC,HVAC,CASSETTE AC,2,2023-04-01,2024-03-30,Ground Floor,5-Office,Working,May23-9971
+Techxpert-Gurugram,CCTV,Zicom,N/A,1,22,1,Nos,7800,7800,2018,5,NCAMC,CCTV,Camera,2,2022-06-01,2023-05-31,1-GF,1-GF,Working,May23-9972
+Techxpert-Gurugram,FAS,Honeywell,N/A,2,334,1,Nos,24800,24800,2018,5,NCAMC,ELV Automation,Fire Panel,2,2022-06-01,2023-05-31,3-GF,3-GF,Working,May23-9973
+Techxpert-Gurugram,FAS,Honeywell,N/A,3,334,1,Nos,24800,24800,2018,5,NCAMC,ELV Automation,Fire Panel,2,2022-06-01,2023-05-31,3-GF,3-GF,Working,May23-9974
+Techxpert-Gurugram,FM-200,Johnson & Johnson,N/A,4,1,1,Nos,6000,6000,2018,5,NCAMC,ELV Automation,Fire Panel,2,2022-06-01,2023-05-31,4-GF,4-GF,Working,May23-9975
+Techxpert-Gurugram,FM-200,Johnson & Johnson,N/A,5,1,1,Nos,6000,6000,2018,5,NCAMC,ELV Automation,Fire Panel,2,2022-06-01,2023-05-31,4-GF,4-GF,Working,May23-9976
+Techxpert-Gurugram,PA System,Honeywell,N/A,6,54,1,Nos,8100,8100,2018,5,NCAMC,ELV Automation,Fire Panel,2,2022-06-01,2023-05-31,5-GF,5-GF,Working,May23-9977
+Techxpert-Gurugram,FAS,Honeywell,N/A,7,360,1,Nos,8100,8100,2018,5,NCAMC,ELV Automation,Fire Panel,2,2022-06-01,2023-05-31,6-GF,6-GF,Working,May23-9978
+Techxpert-Gurugram,CCTV,CP PLUS,N/A,8,27,1,Nos,7800,7800,2018,5,NCAMC,CCTV,Camera,2,2022-06-01,2023-05-31,7-GF,7-GF,Working,May23-9979
+Techxpert-Gurugram,CCTV,CP PLUS,N/A,9,4,1,Nos,7800,7800,2018,5,NCAMC,CCTV,Camera,2,2022-06-01,2023-05-31,8-GF,8-GF,Working,May23-9980
+Techxpert-Gurugram,CCTV,CP PLUS,N/A,10,20,1,Nos,7800,7800,2018,5,NCAMC,CCTV,Camera,2,2022-06-01,2023-05-31,9-GF,9-GF,Working,May23-9981
+Techxpert-Gurugram,CCTV,CP PLUS,N/A,11,9,1,Nos,7800,7800,2018,5,NCAMC,CCTV,Camera,2,2022-06-01,2023-05-31,10-GF,10-GF,Working,May23-9982
+Techxpert-Gurugram,FAS,Agni,N/A,12,69,1,Nos,10350,10350,2018,5,NCAMC,ELV Automation,Fire Panel,2,2022-06-01,2023-05-31,11-GF,11-GF,Working,May23-9983
+Techxpert-Gurugram,FAS,Agni,N/A,13,107,1,Nos,16050,16050,2018,5,NCAMC,ELV Automation,Fire Panel,2,2022-06-01,2023-05-31,12-GF,12-GF,Working,May23-9984
+Techxpert-Gurugram,FAS,Agni,N/A,14,380,1,Nos,19000,19000,2018,5,NCAMC,ELV Automation,Fire Panel,2,2022-06-01,2023-05-31,13-GF,13-GF,Working,May23-9985
+Techxpert-Gurugram,FAS,Agni,N/A,15,380,1,Nos,19000,19000,2018,5,NCAMC,ELV Automation,Fire Panel,2,2022-06-01,2023-05-31,13-GF,13-GF,Working,May23-9986
+Techxpert-Hyderabad,Split AC unit,Voltas ,Voltas 815VADS( R32),4552524A19GC14290,1.5,1,TR,1950,2925,2019,117.93,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,War Room,Working,May23-9987
+Techxpert-Hyderabad,Split AC unit,Voltas ,Voltas 815VADS( R32),4552524A19GC14137,1.5,1,TR,1950,2925,2019,117.93,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,2nd Office seating Area,Working,May23-9988
+Techxpert-Hyderabad,Split AC unit,Voltas ,Voltas 815VADS( R32),4552524A19GC14110,1.5,1,TR,1950,2925,2019,117.93,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,1st Office seating Area,Working,May23-9989
+Techxpert-Hyderabad,Split AC unit,Voltas ,Voltas 815VADS( R32),4552524A19GC14230,1.5,1,TR,1950,2925,2019,117.93,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,1st Office seating Area,Working,May23-9990
+Techxpert-Hyderabad,Split AC unit,Carrier ,Carrier  42kge-024m ,500312814159004723,2,1,TR,1950,3900,2016,117.93,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,1st Office seating Area,Working,May23-9991
+Techxpert-Hyderabad,Split AC unit,Carrier ,Carrier  42kge-024m ,500312814159004859,2,1,TR,1950,3900,2016,117.93,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,1st Office seating Area,Working,May23-9992
+Techxpert-Hyderabad,Split AC unit,Carrier ,Carrier  42kge-024m ,500312814159004698,2,1,TR,1950,3900,2016,117.93,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,1st Office seating Area,Working,May23-9993
+Techxpert-Hyderabad,Split AC unit,Carrier ,Carrier  42kge-024m ,500312814159004856,2,1,TR,1950,3900,2016,117.93,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,2nd Office reception Area,Working,May23-9994
+Techxpert-Hyderabad,Split AC unit,Carrier ,Carrier  42kge-024m ,500312814159004732,2,1,TR,1950,3900,2016,117.93,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,2nd Office seating Area,Working,May23-9995
+Techxpert-Hyderabad,Split AC unit,Carrier ,Carrier  42kge-024m ,500312814159004733,2,1,TR,1950,3900,2016,117.93,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,2nd Office seating Area,Working,May23-9996
+Techxpert-Hyderabad,Split AC unit,Voltas ,NA,4550979/U/07/H/804524,2,1,TR,1950,3900,2003,117.97,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,1st Office meeting room,Working,May23-9997
+Techxpert-Hyderabad,Split AC unit,Voltas ,NA,AUS-18C53F120D2,1.5,1,TR,1950,2925,2003,117.97,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,1st Office meeting room,Working,May23-9998
+Techxpert-Ahmedabad,4 TR NEW Cassette AC units,Voltas ,R-410A,NA,4,1,TR,1950,7800,Dec-20,2.45,CAMC,HVAC,CASSETTE AC,2,2023-04-01,2024-03-30,Ground Floor,1-Office ,Working,May23-9999
+Techxpert-Ahmedabad,4 TR NEW Cassette AC units,Voltas ,R-410A,NA,4,1,TR,1950,7800,Dec-20,2.45,CAMC,HVAC,CASSETTE AC,2,2023-04-01,2024-03-30,Ground Floor,2-Office ,Working,May23-10000
+Techxpert-Ahmedabad,4 TR NEW Cassette AC units,Voltas ,R-410A,NA,4,1,TR,1950,7800,Dec-20,2.45,CAMC,HVAC,CASSETTE AC,2,2023-04-01,2024-03-30,Ground Floor,3-Office ,Working,May23-10001
+Techxpert-Ahmedabad,2TR Split AC unit ,Carrier,NA,500268106149000000,2,1,TR,1950,3900,Jan-21,2.37,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,4-Office ,Working,May23-10002
+Techxpert-Ahmedabad,1.5 TR Split AC units,voltas ,ESB318HBDO,SE180C02450,1.5,1,TR,1950,2925,Feb-21,2.28,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,5-Office,Working,May23-10003
+Techxpert-Ahmedabad,1.5 TR Split AC units,voltas ,ESB318HBDO,SE180C02450,1.5,1,TR,1950,2925,Mar-21,2.21,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,6-Office ,Working,May23-10004
+Techxpert-Ahmedabad,1.5 TR Split AC units,voltas ,ESB318HBDO,SE180C02450,1.5,1,TR,1950,2925,Apr-21,2.12,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,7-Office ,Working,May23-10005
+Techxpert-Ahmedabad,1.5 TR Split AC units,voltas ,ESB318HBDO,SE180C02450,1.5,1,TR,1950,2925,May-21,2.04,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,8-Office ,Working,May23-10006
+Techxpert-Ahmedabad,1.5 TR Split AC units,voltas ,ESB318HBDO,SE180C02450,1.5,1,TR,1950,2925,Jun-21,1.96,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,9-Office ,Working,May23-10007
+Techxpert-Pune,Split AC unit,Carrier,42K9R-018H,#500222925139019000,1.5,1,TR,1950,2925,Jul-21,1.87,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,GEUST HOUSE  Room No.102,Working,May23-10008
+Techxpert-Pune,Split AC unit,Carrier,NA,#500222925139019758,1.5,1,TR,1950,2925,Aug-21,1.79,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,GEUST HOUSE  Room No.103,Working,May23-10009
+Techxpert-Pune,Split AC unit,Carrier,NA,#500222929128016283,1.5,1,TR,1950,2925,Sep-21,1.70,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,GEUST HOUSE  Room No.105,Working,May23-10010
+Techxpert-Pune,Split AC unit,Carrier,NA,NA,1.5,1,TR,1950,2925,Oct-21,1.62,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,GEUST HOUSE  Room No.106,Working,May23-10011
+Techxpert-Pune,Split AC unit,Carrier,NA,NA,1.5,1,TR,1950,2925,Nov-21,1.54,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,GEUST HOUSE  Room No.107,Working,May23-10012
+Techxpert-Pune,Split AC unit,Carrier,NA,4552076A16FA004285,1.5,1,TR,1950,2925,Dec-21,1.45,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,New GEUST HOUSE  Room No.108,Working,May23-10013
+Techxpert-Pune,Split AC unit,Carrier,NA,#500346824169003741,1.5,1,TR,1950,2925,Jan-22,1.37,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,New GEUST HOUSE  Room No.109,Working,May23-10014
+Techxpert-MPCG,Split AC unit,Carrier,CAC518DN3RS,#500346825169003788,1.5,1,TR,1950,2925,Feb-22,1.28,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,New GEUST HOUSE  Room No.110,Working,May23-10015
+Techxpert-MPCG,Split AC unit,Carrier,CAC518DN3RS,#500346824169003740,1.5,1,TR,1950,2925,Mar-22,1.21,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,New GEUST HOUSE  Room No.111,Working,May23-10016
+Techxpert-MPCG,Split AC unit,Carrier,185VADSR32,#500222907139005456,1.5,1,TR,1950,2925,2013,117.94,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,GEUST HOUSE  Room No.202,Working,May23-10017
+Techxpert-MPCG,Split AC unit,Carrier,185VADSR32,#50022292912816229,1.5,1,TR,1950,2925,2013,117.94,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,GEUST HOUSE  Room No.205,Working,May23-10018
+Techxpert-MPCG,Split AC unit,Carrier,185VADSR32,#50022292929128016209,1.5,1,TR,1950,2925,2013,117.94,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,GEUST HOUSE  Room No.207,Working,May23-10019
+Techxpert-MPCG,Split AC unit,Carrier,185VADSR32,#500312550149000132,1.5,1,TR,1950,2925,2013,117.94,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,New GEUST HOUSE  Room No.208,Working,May23-10020
+Techxpert-MPCG,Split AC unit,Carrier,185VADSR32,#500312550149000125,1.5,1,TR,1950,2925,2013,117.94,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,New GEUST HOUSE  Room No.209,Working,May23-10021
+Techxpert-MPCG,Split AC unit,Carrier,185VADSR32,#500312550149000130,1.5,1,TR,1950,2925,2013,117.94,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,New GEUST HOUSE  Room No.210,Working,May23-10022
+Techxpert-MPCG,Split AC unit,Carrier,NA,#500312550149000136,1.5,1,TR,1950,2925,2013,117.94,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,New GEUST HOUSE  Room No.211,Working,May23-10023
+Techxpert-MPCG,Split AC unit,Voltas ,NA,NA,1.5,1,TR,1950,2925,2013,117.94,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Guest house G.Floor Lounge,Working,May23-10024
+Techxpert-MPCG,Split AC unit,Voltas ,NA,NA,1.5,1,TR,1950,2925,2013,117.94,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Guest house G.Floor Lounge,Working,May23-10025
+Techxpert-MPCG,Split AC unit, Carrier ,NA,NA,1.5,1,TR,1950,2925,2013,117.94,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,TR 1st floor Lounge,Working,May23-10026
+Techxpert-BHJK,Split AC unit,Carrier ,185VADSR32,1-4552524A19GC13770,1.5,1,TR,1950,2925,2013,117.94,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,TR Dining hall,Working,May23-10027
+Techxpert-BHJK,Split AC unit,Carrier ,185VADSR32,2-4552524A19GC13770,1.5,1,TR,1950,2925,2013,117.94,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,TR Dining hall,Working,May23-10028
+Techxpert-BHJK,Split AC unit,Voltas ,NA,3-4552524A19GC13770,1.5,1,TR,1950,2925,2013,117.94,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,TR Reception,Working,May23-10029
+Techxpert-BHJK,Split AC unit,Voltas ,NA,NA,1.5,1,TR,1950,2925,2013,117.94,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,TR Gym Room,Working,May23-10030
+Techxpert-BHJK,Split AC unit,Voltas,NA,NA,1.5,1,TR,1950,2925,2013,117.94,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,TR 1st floor Lounge,Working,May23-10031
+Techxpert-BHJK,Split AC unit,Voltas ,NA,NA,1.5,1,TR,1950,2925,2013,117.94,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,TR Meeting Room,Working,May23-10032
+Techxpert-BHJK,Split AC unit,Carrier,NA,#500222925139019757,1.5,1,TR,1950,2925,2013,117.94,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,TR VIP Meeting Room,Working,May23-10033
+Techxpert-BHJK,Split AC unit,Carrier,CACS24DN3R5,NA,1.5,1,TR,1950,2925,2014,117.94,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,New TR Meeting Room 1,Working,May23-10034
+Techxpert-BHJK,Split AC unit,Carrier,CACS24DN3R5,1-500347118169001000,1.5,1,TR,1950,2925,2015,117.94,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor, NewTR Meeting Room 2,Working,May23-10035
+Techxpert-BHJK,Split AC unit,Carrier,42KGE024MW,2-500347118169001000,1.5,1,TR,1950,2925,2016,117.93,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor, New TR Hall - 1,Working,May23-10036
+Techxpert-BHJK,Split AC unit,Carrier,42KGE024MW,500302347159003000,1.5,1,TR,1950,2925,2017,117.93,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor, New TR Hall - 2,Working,May23-10037
+Techxpert-Kolkata,Ductable AC unit,BLUE STAR ,NA,50030347159003000,2,1,TR,1950,3900,2018,117.93,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,UNDER CAFETERIA Sitting Room,Working,May23-10038
+Techxpert-Kolkata,Ductable AC unit,BLUE STAR ,NA,D202246420114708160048,2,1,TR,1950,3900,2019,117.93,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor, CAFETERIA Store Room,Working,May23-10039
+Techxpert-Kolkata,Cassette AC Unit,BLUE STAR ,NA,D202138620213c13160014,3,1,TR,1950,5850,2020,117.92,CAMC,HVAC,CASSETTE AC,2,2023-04-01,2024-03-30,Ground Floor,CAFETERIA food Serving Area,Working,May23-10040
+Techxpert-Kolkata,Cassette AC Unit,BLUE STAR ,NA,NA,3,1,TR,1950,5850,2021,117.92,CAMC,HVAC,CASSETTE AC,2,2023-04-01,2024-03-30,Ground Floor, CAFETERIA Meeting Room,Working,May23-10041
+Techxpert-Kolkata,Ductable AC unit,Carrier ,NA,1-500189938128000948,11,1,TR,1950,21450,2022,117.92,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,Bandwidth Block ,Working,May23-10042
+Techxpert-Kolkata,Ductable AC unit,Carrier ,NA,2-500189938128000000,11,1,TR,1950,21450,2023,117.92,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,Bandwidth Block ,Working,May23-10043
+Techxpert-Kolkata,Ductable AC unit,Carrier ,NA,3-500189938128000950,11,1,TR,1950,21450,2024,117.91,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,Bandwidth Block ,Working,May23-10044
+Techxpert-Kolkata,Ductable AC unit,Carrier ,NA,NA,3,1,TR,1950,5850,2025,117.91,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,Broadband Tower (Lift room),Working,May23-10045
+Techxpert-Kolkata,Ductable AC unit,Carrier ,NA,NA,3,1,TR,1950,5850,2026,117.91,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,Broadband Tower (Lift room),Working,May23-10046
+Techxpert-Kolkata,Split AC unit,Carrier ,NA,1-500216605149000000,2,1,TR,1950,3900,2027,117.90,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Next Gen Tower Hub Room  ,Working,May23-10047
+Techxpert-Kolkata,Split AC unit,Carrier ,NA,2-500216605149000000,2,1,TR,1950,3900,2028,117.90,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Next Gen Tower Hub Room  ,Working,May23-10048
+Techxpert-Kolkata,Split AC unit,Carrier ,NA,3-500216605149000000,2,1,TR,1950,3900,2029,117.90,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Next Gen Tower Hub Room  ,Working,May23-10049
+Techxpert-Kolkata,Split AC unit,Carrier ,NA,4-500216605149000000,2,1,TR,1950,3900,2030,117.90,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Next Gen Tower Hub Room  ,Working,May23-10050
+Techxpert-Karnataka,Split AC unit,Voltas,EU185VDAZJ,4513122D22EAO7203/4553060B22ECO5112,1.5,1,TR,1950,2925,5/31/2022,0.96,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,1-Ground Floor,Working,May23-10051
+Techxpert-Karnataka,Split AC unit,Carrier ,42KGN,1-018SS/2015,1.5,1,TR,1950,2925,6/1/2022,0.96,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,2-Ground Floor,Working,May23-10052
+Techxpert-Karnataka,Split AC unit,Carrier ,42KGN,2-018SS/2015,1.5,1,TR,1950,2925,6/2/2022,0.95,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,3-Ground Floor,Working,May23-10053
+Techxpert-Karnataka,Split AC unit,Carrier ,42KGN,1-018SS/2015,2,1,TR,1950,3900,6/3/2022,0.95,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,4-Ground Floor,Working,May23-10054
+Techxpert-Karnataka,Split AC unit,Carrier ,42KGN,2-018SS/2015,2,1,TR,1950,3900,6/4/2022,0.95,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,5-Ground Floor,Working,May23-10055
+Techxpert-Upper North,Ductable AC unit,carrier,NA,1-500183024188001752,5.5,1,TR,1950,10725,6/5/2022,0.95,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,CAFETERIA Terrace (AHU Room - 1-3 ),Working,May23-10056
+Techxpert-Upper North,Ductable AC unit,carrier,NA,2-500203725188001053,5.5,1,TR,1950,10725,6/6/2022,0.94,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,CAFETERIA Terrace (AHU Room - 1-3 ),Working,May23-10057
+Techxpert-Upper North,Ductable AC unit,carrier,NA,3-500183022188000672,5.5,1,TR,1950,10725,6/7/2022,0.94,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,CAFETERIA Terrace (AHU Room - 1-3 ),Working,May23-10058
+Techxpert-Upper North,Ductable AC unit, EDGETECH ,NA,NA,11.25,1,TR,1950,21937.5,6/8/2022,0.94,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,CAFETERIA Terrace,Working,May23-10059
+Techxpert-Upper North,Ductable AC unit,BLUE STAR,DSA661R1A-I14F02128,DSA661R1A-I14F02128,11,1,TR,1950,21450,6/9/2022,0.93,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,CAFETERIA Terrace,Working,May23-10060
+Techxpert-Upper North,Ductable AC unit,BLUE STAR,NA,DSA661R1A-114F02113,11,1,TR,1950,21450,6/10/2022,0.93,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,CAFETERIA Terrace,Working,May23-10061
+Techxpert-Upper North,Ductable AC unit,BLUE STAR,NA,DSA661R1A-0A14F02094,11,1,TR,1950,21450,6/11/2022,0.93,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,CAFETERIA Terrace,Working,May23-10062
+Techxpert-Upper North,Split AC unit,Voltas ,4551144,1-C10120982110513130831,1.5,1,TR,1950,2925,6/12/2022,0.93,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Bandwidth UPS Room ,Working,May23-10063
+Techxpert-Upper North,Split AC unit,Voltas ,4551144,2-C10120982110513130831,1.5,1,TR,1950,2925,6/13/2022,0.92,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Bandwidth UPS Room ,Working,May23-10064
+Techxpert-Upper North,Split AC unit,Carrier ,CACSX24DASRS,1-500588521189001000,2,1,TR,1950,3900,6/14/2022,0.92,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,GYM Room ,Working,May23-10065
+Techxpert-Upper North,Split AC unit,Carrier ,CACSX24DASRS,2-500588521189001000,2,1,TR,1950,3900,6/15/2022,0.92,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,GYM Room ,Working,May23-10066
+Techxpert-Upper North,Split AC unit,Carrier ,CACSX24DASRS,3-500588521189001000,2,1,TR,1950,3900,6/16/2022,0.92,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,GYM Room ,Working,May23-10067
+Techxpert-Upper North,Split AC unit,Carrier ,CACSX24DASRS,4-500588521189001000,2,1,TR,1950,3900,6/17/2022,0.91,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,GYM Room ,Working,May23-10068
+Techxpert-Upper North,Ductable AC unit,Carrier ,38LIH-96655DR,1-500183022188000672,5.5,1,TR,1950,10725,6/18/2022,0.91,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,Cafeteria ,Working,May23-10069
+Techxpert-Upper North,Ductable AC unit,Carrier ,38LIH-96655DR,2-500183024188000751,5.5,1,TR,1950,10725,6/19/2022,0.91,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,Cafeteria ,Working,May23-10070
+Techxpert-Upper North,Ductable AC unit,Carrier ,38LIH-96655DR,3-500203722188000973,5.5,1,TR,1950,10725,6/20/2022,0.90,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,Cafeteria ,Working,May23-10071
+Techxpert-Upper North,Ductable AC unit,Carrier ,38LIH-96655DR,4-500183022188000673,5.5,1,TR,1950,10725,6/21/2022,0.90,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,Cafeteria ,Working,May23-10072
+Techxpert-Upper North,Ductable AC unit,Carrier ,38LIH-96655DR,5-500588521189001495,5.5,1,TR,1950,10725,6/22/2022,0.90,CAMC,HVAC,DUCTABLE AC,2,2023-04-01,2024-03-30,Ground Floor,Cafeteria ,Working,May23-10073
+Techxpert-Chennai,Split AC unit,BLUE STAR,NA,NA,1.5,1,TR,1950,2925,6/23/2022,0.90,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30, 3rd Floor ,  C- 8 3rd Floor | SDF Block-C  NSEZ ,Working,May23-10074
+Techxpert-Chennai,Split AC unit,BLUE STAR,NA,NA,1.5,1,TR,1950,2925,6/24/2022,0.89,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30, 3rd Floor ,  C- 8 3rd Floor | SDF Block-C  NSEZ ,Working,May23-10075
+Techxpert-Chennai,Split AC unit,BLUE STAR,NA,NA,1.5,1,TR,1950,2925,6/25/2022,0.89,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30, 3rd Floor ,  C- 8 3rd Floor | SDF Block-C  NSEZ ,Working,May23-10076
+Techxpert-Chennai,Split AC unit,BLUE STAR,NA,NA,1.5,1,TR,1950,2925,6/26/2022,0.89,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30, 3rd Floor ,  C- 8 3rd Floor | SDF Block-C  NSEZ ,Working,May23-10077
+Techxpert-Chennai,Split AC unit, Samsung ,NA,NA,2,1,TR,1950,3900,6/27/2022,0.88,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30, 3rd Floor ,  C- 8 3rd Floor | SDF Block-C  NSEZ ,Working,May23-10078
+Techxpert-Chennai,Split AC unit, Samsung ,NA,NA,2,1,TR,1950,3900,6/28/2022,0.88,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30, 3rd Floor ,  C- 8 3rd Floor | SDF Block-C  NSEZ ,Working,May23-10079
+Techxpert-Chennai,Split AC unit,Carrier ,CACS18DA3RS,1#500386738179024286,1.5,1,TR,1950,2925,6/29/2022,0.88,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor, Day Care School  ,Working,May23-10080
+Techxpert-Chennai,Split AC unit,Carrier ,CACS18DA3RS,2#500386738179024286,1.5,1,TR,1950,2925,6/30/2022,0.88,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor, Day Care School  ,Working,May23-10081
+Techxpert-Chennai,Split AC unit,Carrier ,CACS18DA3RS,3#500386738179024286,1.5,1,TR,1950,2925,7/1/2022,0.87,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor, Day Care School  ,Working,May23-10082
+Techxpert-Chennai,Split AC unit,Carrier ,CACS18DA3RS,4#500386738179024286,1.5,1,TR,1950,2925,7/2/2022,0.87,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor, Day Care School  ,Working,May23-10083
+Techxpert-Chennai,Split AC unit,Voltas ,NA,NA,2,1,TR,1950,3900,7/3/2022,0.87,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Next Gen Tower Lift Machine Room  ,Working,May23-10084
+Techxpert-Chennai,Split AC unit,Videocon,NA,NA,1.5,1,TR,1950,2925,7/4/2022,0.87,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,New Union Room  ,Working,May23-10085
+Techxpert-Chennai,Split AC unit,Voltas ,EU185VDAZJ,4553062B22DC04028,1.5,1,TR,1950,2925,5/21/2022,0.99,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,CAM room,Working,May23-10086
+Techxpert-Chennai,Split AC unit,Voltas ,EU185VDAZJ,4553062B22DC04565,1.5,1,TR,1950,2925,5/21/2022,0.99,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,CAM room,Working,May23-10087
+Techxpert-Chennai,Split AC unit,Voltas ,EU185VDAZJ,4553062B22DC04033,1.5,1,TR,1950,2925,5/21/2022,0.99,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,CAM room,Working,May23-10088
+Techxpert-Chennai,Split AC unit,AQURE,AIU2400A2016,1-4448042003765,1.5,1,TR,1950,2925,5/22/2022,0.98,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,CAM room,Working,May23-10089
+Techxpert-Chennai,Split AC unit,AQURE,AIU2400A2016,2-4448042003765,1.5,1,TR,1950,2925,5/23/2022,0.98,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,CAM room,Working,May23-10090
+Techxpert-Chennai,Split AC unit,AQURE,NA,NA,2,1,TR,1950,3900,5/24/2022,0.98,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Cafetaria LT Room,Working,May23-10091
+Techxpert-Chennai,Split AC unit,AQURE,NA,NA,2,1,TR,1950,3900,5/25/2022,0.98,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Cafetaria LT Room,Working,May23-10092
+Techxpert-Chennai,Split AC unit,Voltas,EU185VJZJT,4552840A21DC18215,1.5,1,TR,1950,2925,9/30/2022,0.62,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Security Main Gate New Porta cabin,Working,May23-10093
+Techxpert-Chennai,Split AC unit,Voltas,EU185VJZJT,4552840A21DC15684,1.5,1,TR,1950,2925,9/30/2022,0.62,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Security Main Gate New Porta cabin,Working,May23-10094
+Techxpert-Chennai,Split AC unit,Voltas,EU185VJZJT,4552840A21DC18046,1.5,1,TR,1950,2925,9/30/2022,0.62,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Security Main Gate New Porta cabin,Working,May23-10095
+Techxpert-Chennai,Split AC unit,Voltas ,NA,NA,1.5,1,TR,1950,2925,10/1/2022,0.62,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Broad Band Main Gate Despatch,Working,May23-10096
+Techxpert-Chennai,Window AC unit,Voltas ,4011175,1-4501834,1.5,1,TR,1950,2925,10/2/2022,0.62,CAMC,HVAC,WINDOW AC,2,2023-04-01,2024-03-30,Ground Floor,1-Server Room,Working,May23-10097
+Techxpert-Chennai,Window AC unit,Voltas ,4011175,2-4501834,1.5,1,TR,1950,2925,10/3/2022,0.62,CAMC,HVAC,WINDOW AC,2,2023-04-01,2024-03-30,Ground Floor,2-Server Room,Working,May23-10098
+Techxpert-Chennai,Split AC unit,Videocon,4011175,1-4011175,2,1,TR,1950,3900,10/4/2022,0.61,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,1-Office ,Working,May23-10099
+Techxpert-Chennai,Split AC unit,Videocon,4011175,2-4011175,2,1,TR,1950,3900,10/5/2022,0.61,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,2-Office ,Working,May23-10100
+Techxpert-Chennai,Split AC unit,Voltas ,NA,NA,1.5,1,TR,1950,2925,10/6/2022,0.61,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,TR GEUST HOUSE  Room No.101,Working,May23-10101
+Techxpert-Chennai,Split AC unit,Voltas ,NA,NA,1.5,1,TR,1950,2925,1/1/2015,8.38,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,TR GEUST HOUSE  Room No.201,Working,May23-10102
+Techxpert-Chennai,Split AC unit,Voltas ,NA,NA,1.5,1,TR,1950,2925,1/1/2015,8.38,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,TR Dining hall,Working,May23-10103
+Techxpert-Chennai,Split AC unit,Voltas ,NA,NA,1.5,1,TR,1950,2925,1/1/2015,8.38,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,TR Dining hall,Working,May23-10104
+Techxpert-Chennai,Split AC unit,Voltas ,NA,NA,2,1,TR,1950,3900,1/2/2015,8.37,CAMC,HVAC,SPLIT AC,2,2023-04-01,2024-03-30,Ground Floor,Next Gen Tower Lift Machine Room  ,Working,May23-10105

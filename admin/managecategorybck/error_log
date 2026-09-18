@@ -1,0 +1,28 @@
+[12-May-2023 03:18:24 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/techxper/public_html/techxpertindia-app/admin/manage-categories/view-categories.php on line 10
+[12-May-2023 03:18:24 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 292
+[12-May-2023 03:18:24 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 295
+[12-May-2023 03:18:24 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/techxper/public_html/techxpertindia-app/admin/navigation/admin_navigation.php on line 58
+[12-May-2023 03:18:24 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/techxper/public_html/techxpertindia-app/admin/navigation/admin_navigation.php on line 61
+[12-May-2023 03:18:24 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/techxper/public_html/techxpertindia-app/admin/includes/common_header.php on line 600
+[12-May-2023 03:18:24 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/techxper/public_html/techxpertindia-app/admin/includes/common_header.php on line 612
+[12-May-2023 03:18:24 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/techxper/public_html/techxpertindia-app/admin/includes/common_header.php on line 613
+[17-May-2023 01:14:17 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Too many connections in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php:61
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php(61): mysqli->__construct('localhost', 'techxper_techxp...', 'TechXpert@123!', 'techxper_techxp...')
+#1 /home2/techxper/public_html/techxpertindia-app/admin/manage-categories/view-categories.php(11): _connectodb()
+#2 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 61
+[17-May-2023 01:15:51 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/techxper/public_html/techxpertindia-app/admin/manage-categories/view-categories.php on line 10
+[17-May-2023 01:15:51 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 292
+[17-May-2023 01:15:51 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 296
+[17-May-2023 01:15:51 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/techxper/public_html/techxpertindia-app/admin/navigation/admin_navigation.php on line 58
+[17-May-2023 01:15:51 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/techxper/public_html/techxpertindia-app/admin/navigation/admin_navigation.php on line 61
+[17-May-2023 01:15:51 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/techxper/public_html/techxpertindia-app/admin/includes/common_header.php on line 600
+[17-May-2023 01:15:51 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/techxper/public_html/techxpertindia-app/admin/includes/common_header.php on line 612
+[17-May-2023 01:15:51 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/techxper/public_html/techxpertindia-app/admin/includes/common_header.php on line 613
+[17-May-2023 01:17:30 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Too many connections in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php:61
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php(61): mysqli->__construct('localhost', 'techxper_techxp...', 'TechXpert@123!', 'techxper_techxp...')
+#1 /home2/techxper/public_html/techxpertindia-app/admin/manage-categories/view-categories.php(11): _connectodb()
+#2 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 61

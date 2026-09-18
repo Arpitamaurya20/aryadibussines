@@ -1,0 +1,23 @@
+{
+  "center-filter-pages": [
+    "admin-dashboard",
+    "view-all-courses",
+    "view-users",
+    "view-all-fee-reminders",
+    "view_lead_analytics",
+    "view-all-admission-enrollments",
+    "view-all-admission-transaction",
+    "view-all-assigned-lead",
+    "view-all-telecaller-leads",
+    "view-all-pending-admission",
+    "view-all-refund",
+    "view-all-drop",
+    "view-all-test-series",
+    "feature-page",
+    "view-all-admission-pending-payments"
+  ],
+  "center-filter-roles": [
+    "System Admin",
+    "Admin"
+  ]
+}

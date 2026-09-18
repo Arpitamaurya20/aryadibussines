@@ -1,0 +1,28 @@
+[11-May-2023 23:32:41 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'techxper_techxpertindia.arc' doesn't exist in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php:159
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php(159): mysqli_query(Object(mysqli), 'Select * from a...')
+#1 /home2/techxper/public_html/techxpertindia-app/admin/arc/controller/arc_controller.php(6): _getTableRecords(Object(mysqli), 'arc', ' where ID = ID')
+#2 /home2/techxper/public_html/techxpertindia-app/admin/arc/view-arc.php(37): getAllARC(Object(mysqli))
+#3 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 159
+[12-May-2023 00:54:09 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'techxper_techxpertindia.arc' doesn't exist in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php:159
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php(159): mysqli_query(Object(mysqli), 'Select * from a...')
+#1 /home2/techxper/public_html/techxpertindia-app/admin/arc/controller/arc_controller.php(6): _getTableRecords(Object(mysqli), 'arc', ' where ID = ID')
+#2 /home2/techxper/public_html/techxpertindia-app/admin/arc/view-arc.php(37): getAllARC(Object(mysqli))
+#3 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 159
+[16-May-2023 05:56:24 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'techxper_techxpertindia.arc' doesn't exist in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php:159
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php(159): mysqli_query(Object(mysqli), 'Select * from a...')
+#1 /home2/techxper/public_html/techxpertindia-app/admin/arc/controller/arc_controller.php(6): _getTableRecords(Object(mysqli), 'arc', ' where ID = ID')
+#2 /home2/techxper/public_html/techxpertindia-app/admin/arc/view-arc.php(37): getAllARC(Object(mysqli))
+#3 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 159
+[16-May-2023 05:57:14 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'techxper_techxpertindia.arc' doesn't exist in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php:159
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php(159): mysqli_query(Object(mysqli), 'Select * from a...')
+#1 /home2/techxper/public_html/techxpertindia-app/admin/arc/controller/arc_controller.php(6): _getTableRecords(Object(mysqli), 'arc', ' where ID = ID')
+#2 /home2/techxper/public_html/techxpertindia-app/admin/arc/view-arc.php(37): getAllARC(Object(mysqli))
+#3 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 159

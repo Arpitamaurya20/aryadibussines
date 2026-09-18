@@ -1,0 +1,515 @@
+================================================================================
+  ZELTOHEALTH / CHECKLIST APIs - Endpoints & Payloads
+  Base URL: http://localhost/projects/MyFinalsetupforanyproject/api
+            (or your domain e.g. https://yoursite.com/api)
+================================================================================
+
+Protected APIs require one of these headers (use token from Login response):
+  - Authorization: Bearer <access_token>
+  - X-Access-Token: <access_token>
+
+Checklist ownership: Checklist APIs use CreatedBy = current user ID. Users only see and
+  manage their own checklists (and habits/tracking for those checklists). Do not send
+  CreatedBy in payloads; it is set from the token on create. 403 = not your checklist.
+
+--------------------------------------------------------------------------------
+1. LOGIN (no auth required)
+--------------------------------------------------------------------------------
+Method:  POST
+URL:     /zeltohealth_login.php
+Headers: Content-Type: application/json
+
+Payload:
+{
+    "Email": "rohit@zeltohealth.com",
+    "Password": "1234"
+}
+
+Response (success): token, refresh_token, expires_in, role, user
+
+--------------------------------------------------------------------------------
+2. REFRESH TOKEN (no auth required)
+--------------------------------------------------------------------------------
+Method:  POST
+URL:     /zeltohealth_refresh_token.php
+Headers: Content-Type: application/json
+
+Payload:
+{
+    "refresh_token": "ab340b9648817adc8d746b28ffe9e99d66d93026fd919481e25d1a104c6916d6"
+}
+
+Response (success): token, expires_in, role, user
+
+--------------------------------------------------------------------------------
+3. LOGOUT (no auth required)
+--------------------------------------------------------------------------------
+Method:  POST
+URL:     /zeltohealth_logout.php
+Headers: Content-Type: application/json
+
+Payload:
+{
+    "refresh_token": "ab340b9648817adc8d746b28ffe9e99d66d93026fd919481e25d1a104c6916d6"
+}
+
+Response: { "error": false, "message": "Logout successful." }
+
+--------------------------------------------------------------------------------
+4. SEND OTP (no auth) – email + mobile
+--------------------------------------------------------------------------------
+Method:  POST
+URL:     /zeltohealth_send_otp.php
+Headers: Content-Type: application/json
+
+Payload (for registration – Email + Mobile required):
+{
+    "Email": "user@example.com",
+    "Mobile": "9876543210",
+    "Purpose": "register"
+}
+
+Payload (for forgot password – only Email; mobile taken from user_details):
+{
+    "Email": "user@example.com",
+    "Purpose": "forgot"
+}
+
+Response: { "error": false, "message": "OTP sent to your email and mobile." }
+
+--------------------------------------------------------------------------------
+5. REGISTER (no auth) – after OTP sent
+--------------------------------------------------------------------------------
+Method:  POST
+URL:     /zeltohealth_register.php
+Headers: Content-Type: application/json
+
+Payload:
+{
+    "Name": "John Doe",
+    "Email": "user@example.com",
+    "Mobile": "9876543210",
+    "Password": "yourpassword",
+    "OTP": "123456",
+    "UserType": "User"
+}
+
+UserType optional (default "User"). OTP must match latest sent for this Email with Purpose=register.
+
+Response (success): { "error": false, "message": "...", "user_id": 1 }
+
+--------------------------------------------------------------------------------
+6. FORGOT PASSWORD – request OTP (no auth)
+--------------------------------------------------------------------------------
+Method:  POST
+URL:     /zeltohealth_forgot_password_request.php
+Headers: Content-Type: application/json
+
+Payload:
+{
+    "Email": "user@example.com"
+}
+
+Response: { "error": false, "message": "OTP sent to your email and mobile." }
+
+--------------------------------------------------------------------------------
+7. FORGOT PASSWORD – reset with OTP (no auth)
+--------------------------------------------------------------------------------
+Method:  POST
+URL:     /zeltohealth_forgot_password_reset.php
+Headers: Content-Type: application/json
+
+Payload:
+{
+    "Email": "user@example.com",
+    "OTP": "123456",
+    "NewPassword": "newpassword"
+}
+
+Response: { "error": false, "message": "Password updated successfully. You can now login with your new password." }
+
+--------------------------------------------------------------------------------
+8. CHECKLIST DETAILS (JWT required) – own checklists only (CreatedBy = user_id)
+--------------------------------------------------------------------------------
+CreatedBy is set automatically from token on create. GET returns only your checklists.
+PUT/DELETE allowed only on your own checklist; otherwise 403.
+
+--- 8.1 CREATE checklist ---
+Method:  POST
+URL:     /checklistdetails_api.php
+Headers: Content-Type: application/json
+         Authorization: Bearer <token>   OR   X-Access-Token: <token>
+
+Payload (minimal):
+{
+    "CheckListName": "My First Checklist"
+}
+
+Payload (full) – do not send CreatedBy; it is set from token:
+{
+    "CheckListName": "Daily Habits",
+    "StartDate": "2025-02-15",
+    "TargetDays": 30,
+    "CreatedDate": "2025-02-15",
+    "IsActive": 1
+}
+
+Response (success): { "error": false, "message": "...", "id": 3 }
+
+--- 8.2 UPDATE checklist (only your own; 403 otherwise) ---
+Method:  PUT
+URL:     /checklistdetails_api.php
+Headers: Content-Type: application/json, Authorization / X-Access-Token
+
+Payload:
+{
+    "ID": 3,
+    "CheckListName": "Updated Name",
+    "StartDate": "2025-02-20",
+    "TargetDays": 45,
+    "IsActive": 1
+}
+
+Response: { "error": false, "message": "Checklist details updated successfully." }
+403: "You can only update your own checklist."
+
+--- 8.3 DELETE checklist (soft, only your own; 403 otherwise) ---
+Method:  DELETE
+URL:     /checklistdetails_api.php
+Headers: Content-Type: application/json, Authorization / X-Access-Token
+
+Payload:
+{
+    "ID": 3
+}
+OR query: ?id=3
+
+Response: { "error": false, "message": "Checklist details deleted successfully." }
+403: "You can only delete your own checklist."
+
+--- 8.4 GET checklist list (active only) – only your checklists ---
+Method:  GET
+URL:     /checklistdetails_api.php
+Headers: Authorization: Bearer <token>   OR   X-Access-Token: <token>
+
+Payload: none
+
+Response: { "error": false, "data": [ {...}, ... ] }  (only rows where CreatedBy = your user_id)
+
+--- 8.5 GET checklist by ID – only your own ---
+Method:  GET
+URL:     /checklistdetails_api.php?id=3
+Headers: Authorization / X-Access-Token
+
+Payload: none
+
+Response: { "error": false, "data": { "ID", "CheckListName", "CreatedBy", ... } }
+If checklist is not yours: "Record not found or access denied."
+
+--- 8.6 GET all checklists (including inactive) ---
+Method:  GET
+URL:     /checklistdetails_api.php?all=1
+Headers: Authorization / X-Access-Token
+
+--------------------------------------------------------------------------------
+9. CHECKLIST HABIT (add habit to checklist) - JWT required
+--------------------------------------------------------------------------------
+CheckListID must be your own checklist (CreatedBy = your user_id); otherwise 403.
+
+--- 9.1 ADD habit to checklist (only your own checklist) ---
+Method:  POST
+URL:     /checklist_habbit_api.php
+Headers: Content-Type: application/json, Authorization / X-Access-Token
+
+Payload:
+{
+    "CheckListID": 3,
+    "HabbitID": 1
+}
+
+Optional: "CreatedDate", "IsActive". Use a CheckListID that belongs to you.
+
+Response (success): { "error": false, "message": "...", "id": <checklistsetting.ID> }
+403: "You can only add habits to your own checklist."
+
+--- 9.2 GET master habit list ---
+Method:  GET
+URL:     /checklist_habbit_api.php?master=1
+Headers: Authorization / X-Access-Token
+
+Payload: none
+
+Response: { "error": false, "data": [ { "ID", "HabbitName", "CreateData", "IsActive" }, ... ] }
+
+--- 9.3 GET habits in a checklist (only your own checklist) ---
+Method:  GET
+URL:     /checklist_habbit_api.php?CheckListID=3
+Headers: Authorization / X-Access-Token
+
+Payload: none. Use your own CheckListID.
+
+Response: { "error": false, "data": [ { "ID", "CheckListID", "HabbitID", "HabbitName", ... }, ... ] }
+403: "You can only view habits for your own checklist."
+
+--- 9.4 REMOVE habit from checklist (only your own checklist) ---
+Method:  DELETE
+URL:     /checklist_habbit_api.php
+Headers: Content-Type: application/json, Authorization / X-Access-Token
+
+Payload (by row ID):
+{
+    "ID": 10
+}
+
+Payload (by checklist + habit):
+{
+    "CheckListID": 3,
+    "HabbitID": 1
+}
+OR query: ?CheckListID=3&HabbitID=1
+
+Response: { "error": false, "message": "Habit removed from checklist successfully." }
+403: "You can only remove habits from your own checklist."
+
+--------------------------------------------------------------------------------
+10. HABIT TRACKING (date-wise Yes/No checks) - JWT required
+--------------------------------------------------------------------------------
+CheckListID must be your own checklist; otherwise 403. Same for GET/PUT/DELETE by ID.
+
+--- 10.1 SUBMIT single check (only your own checklist) ---
+Method:  POST
+URL:     /habbit_tracking_api.php
+Headers: Content-Type: application/json, Authorization / X-Access-Token
+
+Payload:
+{
+    "CheckListID": 3,
+    "HabbitID": 1,
+    "CheckingDate": "2025-02-15",
+    "CheckStatus": "Yes",
+    "ImagePath": ""
+}
+
+CheckStatus: "Yes" or "No". CheckingDate optional (default today). Use your own CheckListID.
+
+Response: { "error": false, "message": "...", "id": <id>, "inserted": true/false }
+403: "You can only submit tracking for your own checklist."
+
+--- 10.2 SUBMIT batch checks (only your own checklist) ---
+Method:  POST
+URL:     /habbit_tracking_api.php
+Headers: Content-Type: application/json, Authorization / X-Access-Token
+
+Payload:
+{
+    "CheckListID": 3,
+    "CheckingDate": "2025-02-15",
+    "entries": [
+        { "HabbitID": 1, "CheckStatus": "Yes", "ImagePath": "" },
+        { "HabbitID": 2, "CheckStatus": "No" },
+        { "HabbitID": 3, "CheckStatus": "Yes" }
+    ]
+}
+
+Use your own CheckListID. Response: { "error": false, "message": "...", "results": [ ... ] }
+403: "You can only submit tracking for your own checklist."
+
+--- 10.3 GET tracking by checklist + date (only your own checklist) ---
+Method:  GET
+URL:     /habbit_tracking_api.php?CheckListID=3&CheckingDate=2025-02-15
+Headers: Authorization / X-Access-Token
+
+Payload: none (CheckingDate optional, default today). Use your own CheckListID.
+
+Response: { "error": false, "data": [ { "ID", "CheckListID", "HabbitID", "CheckingDate", "CheckStatus", "HabbitName", ... }, ... ] }
+403: "You can only view tracking for your own checklist."
+
+--- 10.4 GET tracking by date range ---
+Method:  GET
+URL:     /habbit_tracking_api.php?CheckListID=3&FromDate=2025-02-01&ToDate=2025-02-15
+Headers: Authorization / X-Access-Token
+
+Response: { "error": false, "data": [ ... ] }
+
+--- 10.5 GET single tracking record by ID (only your checklist’s tracking) ---
+Method:  GET
+URL:     /habbit_tracking_api.php?id=10
+Headers: Authorization / X-Access-Token
+
+Response: { "error": false, "data": { ... } }
+403: "You can only view tracking for your own checklist."
+
+--- 10.6 UPDATE tracking record (only your checklist’s tracking) ---
+Method:  PUT
+URL:     /habbit_tracking_api.php
+Headers: Content-Type: application/json, Authorization / X-Access-Token
+
+Payload:
+{
+    "ID": 10,
+    "CheckStatus": "Yes",
+    "ImagePath": "/path/to/image.jpg"
+}
+
+Optional: CheckingDate, IsActive
+
+Response: { "error": false, "message": "Tracking updated successfully." }
+403: "You can only update tracking for your own checklist."
+
+--- 10.7 DELETE tracking record (soft, only your checklist’s tracking) ---
+Method:  DELETE
+URL:     /habbit_tracking_api.php
+Headers: Content-Type: application/json, Authorization / X-Access-Token
+
+Payload:
+{
+    "ID": 10
+}
+OR query: ?id=10
+
+Response: { "error": false, "message": "Tracking record deleted successfully." }
+403: "You can only delete tracking for your own checklist."
+
+--------------------------------------------------------------------------------
+11. MASTER HABIT (JWT required) – Create: any user; Delete: System Admin only
+--------------------------------------------------------------------------------
+
+--- 11.1 GET list (active only) – any authenticated user ---
+Method:  GET
+URL:     /master_habbit_api.php
+Headers: Authorization: Bearer <token>   OR   X-Access-Token: <token>
+
+Payload: none
+
+Response: { "error": false, "data": [ { "ID", "HabbitName", "CreateData", "IsActive" }, ... ] }
+
+--- 11.2 GET all (including inactive) – any authenticated user ---
+Method:  GET
+URL:     /master_habbit_api.php?all=1
+Headers: Authorization / X-Access-Token
+
+Payload: none
+
+Response: { "error": false, "data": [ ... ] }
+
+--- 11.3 GET one by ID – any authenticated user ---
+Method:  GET
+URL:     /master_habbit_api.php?id=1
+Headers: Authorization / X-Access-Token
+
+Payload: none
+
+Response: { "error": false, "data": { "ID", "HabbitName", "CreateData", "IsActive" } }
+
+--- 11.4 POST create – any authenticated user ---
+Method:  POST
+URL:     /master_habbit_api.php
+Headers: Content-Type: application/json
+         Authorization: Bearer <token>   OR   X-Access-Token: <token>
+
+Payload (minimal):
+{
+    "HabbitName": "Morning Exercise"
+}
+
+Payload (full):
+{
+    "HabbitName": "Drink 8 glasses water",
+    "CreateData": "2025-02-15",
+    "IsActive": 1
+}
+
+CreateData optional (default today). IsActive optional (default 1).
+
+Response (success): { "error": false, "message": "Master habit created successfully.", "id": 5 }
+
+--- 11.5 DELETE – System Admin only ---
+Method:  DELETE
+URL:     /master_habbit_api.php
+Headers: Content-Type: application/json
+         Authorization: Bearer <token>   OR   X-Access-Token: <token>
+
+Payload:
+{
+    "ID": 1
+}
+OR query: ?id=1
+
+If role is NOT "System Admin": 403 Forbidden
+Response: { "error": true, "message": "Only System Admin can delete master habit." }
+
+If role is "System Admin": 200 OK
+Response: { "error": false, "message": "Master habit deleted successfully." }
+
+--------------------------------------------------------------------------------
+SUMMARY - API FILES
+--------------------------------------------------------------------------------
+zeltohealth_login.php             POST   Login (Email, Password)
+zeltohealth_refresh_token.php     POST   New token from refresh_token
+zeltohealth_logout.php            POST   Logout (refresh_token)
+zeltohealth_send_otp.php          POST   Send OTP to email + mobile (register/forgot)
+zeltohealth_register.php          POST   Register with OTP
+zeltohealth_forgot_password_request.php  POST   Forgot password – send OTP
+zeltohealth_forgot_password_reset.php    POST   Forgot password – set new password with OTP
+master_habbit_api.php             GET    List / get by id | POST   Create | DELETE (System Admin only)
+checklistdetails_api.php          POST   Create checklist
+                             PUT    Update checklist
+                             DELETE Soft delete checklist
+                             GET    List / get by id
+checklist_habbit_api.php    POST   Add habit to checklist
+                             GET    Master habits (?master=1) or habits in checklist (?CheckListID=3)
+                             DELETE Remove habit from checklist
+habbit_tracking_api.php     POST   Submit check(s) – single or batch
+                             GET    By CheckListID + date or date range or id
+                             PUT    Update one record
+                             DELETE Soft delete one record
+push_register_api.php      POST   Register FCM token (water reminder 7 AM–11:30 PM, every 30 min)
+                             DELETE Unregister FCM token
+cron_push_water_reminder.php  Cron  Run every 5–10 min; sends "Drink water" push at :00 and :30 (7 AM–11:30 PM)
+
+--------------------------------------------------------------------------------
+12. PUSH NOTIFICATIONS – WATER REMINDER (JWT required for register/unregister)
+--------------------------------------------------------------------------------
+Schedule: Every 30 minutes from 7:00 AM to 11:30 PM (Asia/Kolkata).
+Message:  Title "Stay hydrated", body "Time for a glass of water."
+Database: Run api/push_tokens_table.sql once to create table push_tokens.
+
+--- 12.1 REGISTER device for push (FCM token) ---
+Method:  POST
+URL:     <base>/api/push_register_api.php
+Headers: Content-Type: application/json, Authorization: Bearer <token> or X-Access-Token: <token>
+
+Payload:
+{
+    "FCMToken": "device-fcm-token-from-firebase",
+    "Platform": "android",
+    "WaterReminderEnabled": 1
+}
+
+Platform: "android" | "ios" | "web" (default "android"). WaterReminderEnabled: 1 = on (default), 0 = off.
+401: Missing or invalid JWT.
+Response: { "error": false, "message": "Device registered for push. Water reminder: 7 AM–11:30 PM every 30 min." }
+
+--- 12.2 UNREGISTER device ---
+Method:  DELETE
+URL:     <base>/api/push_register_api.php
+Headers: Content-Type: application/json, Authorization: Bearer <token> or X-Access-Token: <token>
+
+Payload:
+{
+    "FCMToken": "device-fcm-token-from-firebase"
+}
+
+401: Missing or invalid JWT.
+Response: { "error": false, "message": "Device unregistered from push." }
+
+--- 12.3 CRON / TRIGGER – Water reminder ---
+• Scheduled: Run every 5–10 minutes (cron/Task Scheduler). Notifications go at :00 and :30 (e.g. 7:00, 7:30, 8:00) between 7:00–23:30.
+• On trigger: Open the URL in a browser (or GET the URL) anytime between 7:00–23:30 to send one notification immediately to all registered devices.
+URL:     <base>/api/cron_push_water_reminder.php
+Optional: ?key=YOUR_CRON_SECRET — if CRON_PUSH_SECRET is set (config or env), request must include ?key= that value; otherwise 403.
+
+Requires: push_tokens table (api/push_tokens_table.sql), Firebase HTTP v1.
+FCM: Firebase Console > Project Settings > Service Accounts > Generate new private key (JSON). Save as config/fcm-service-account.json (or set FCM_SERVICE_ACCOUNT_PATH in include/fcm_config.php).
+
+================================================================================

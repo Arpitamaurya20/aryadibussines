@@ -1,0 +1,41 @@
+<?php
+@session_start();
+include('../../includes/autoloader.inc.php');
+include('../controller/dashboard_controller.php');
+$CorporateID = $_POST['CorporateID'];
+$state_filter = $_POST['state_filter'];
+$region_filter = $_POST['region_filter'];
+$ticket_type_filter = $_POST['ticket_type_filter'];
+$ticket_status_filter = $_POST['ticket_status_filter'];
+$filter_date = $_POST['filter_date'];
+$dbh = new Dbh();
+$conn = $dbh->_connectodb();
+$state = new State($conn);   
+$filter['state'] = $state_filter;
+$filter['region'] = $region_filter;
+$filter['ticket_type'] = $ticket_type_filter;
+$filter['ticket_status'] = $ticket_status_filter;
+$filter['filter_date'] = $filter_date;
+if(isset($_POST['sql_in_state_string']))
+{
+    $filter['sql_in_state_string'] = $_POST['sql_in_state_string'];
+}
+if(isset($_POST['sql_in_branch_account_string']))
+{
+    $filter['sql_in_branch_account_string'] = $_POST['sql_in_branch_account_string'];
+}
+applyAnalyticsBranchFilter($filter);
+$corporate_tickets_state_array = $state->getTicketsGroupedByState($CorporateID,$filter);
+$response = array();
+$data = array();
+$data_labels = array();
+
+foreach ($corporate_tickets_state_array as $i_state => $tickets_count) {
+  array_push($data,$tickets_count);
+  array_push($data_labels,$i_state);
+
+}
+$response['chart_data']['data'] = $data;
+$response['chart_data']['data_labels'] = $data_labels;
+echo json_encode($response);
+?>

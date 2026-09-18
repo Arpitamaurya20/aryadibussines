@@ -1,0 +1,66 @@
+/**
+ * Loads after theme CSS (injected from common_scripts.php).
+ * Fixes invisible button labels caused by -webkit-text-fill-color / gradient text overrides.
+ */
+
+button.btn,
+a.btn,
+input.btn,
+.btn {
+  -webkit-text-fill-color: currentColor !important;
+  text-fill-color: currentColor !important;
+  background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+}
+
+.btn-primary,
+.btn.btn-primary,
+.hc-btn-primary,
+.hc-btn-accent,
+#hc_raise_ticket_btn,
+#hc_btn_raise_ticket,
+#hc_assignment_save_btn,
+.hc-modal .modal-footer .btn-primary,
+.hc-modal .modal-footer .hc-btn-primary {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background-color: #003f88 !important;
+  background-image: none !important;
+  border-color: #003f88 !important;
+  opacity: 1 !important;
+  font-size: 0.8125rem !important;
+  visibility: visible !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.hc-btn-primary:hover,
+.hc-btn-accent:hover,
+#hc_raise_ticket_btn:hover,
+#hc_btn_raise_ticket:hover,
+#hc_assignment_save_btn:hover {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background-color: #002d66 !important;
+  border-color: #002d66 !important;
+}
+
+.btn-primary .hc-btn-text,
+.btn-primary i,
+.hc-btn-primary .hc-btn-text,
+.hc-btn-primary i,
+#hc_raise_ticket_btn .hc-btn-text,
+#hc_raise_ticket_btn i,
+#hc_btn_raise_ticket i {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.hc-btn-ghost,
+.btn.hc-btn-ghost,
+.hc-modal .modal-footer .hc-btn-ghost {
+  color: #334155 !important;
+  -webkit-text-fill-color: #334155 !important;
+  background-color: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+}

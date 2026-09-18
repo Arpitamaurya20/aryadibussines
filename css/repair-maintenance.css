@@ -1,0 +1,852 @@
+/* ==========================================================================
+   REPAIR & MAINTENANCE PAGE SPECIFIC STYLE
+   Theme: Corporate Navy (#0B1B3D), Pure White (#ffffff), Platinum Gray (#F3F5F9)
+   Accents: Vibrant Blue (#0066cc), Success Green (#22c55e)
+   ========================================================================== */
+
+:root {
+    --primary-navy: #0B1B3D;
+    --navy-light: #162a52;
+    --accent-blue: #0066cc;
+    --accent-hover: #0052a3;
+    --accent-light: #e6f0fa;
+    --success-green: #22c55e;
+    --bg-platinum: #F3F5F9;
+    --bg-white: #ffffff;
+    --border-color: #e2e8f0;
+    --text-dark: #0f172a;
+    --text-muted: #475569;
+    --text-light: #94a3b8;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    --shadow-lg: 0 15px 30px -5px rgba(11, 27, 61, 0.08), 0 5px 15px -3px rgba(11, 27, 61, 0.03);
+    --shadow-premium: 0 20px 40px -10px rgba(0, 102, 204, 0.12);
+    --transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* ==========================================================================
+   BREADCRUMBS
+   ========================================================================== */
+.breadcrumbs-section {
+    background-color: var(--bg-platinum);
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.breadcrumbs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.breadcrumbs-list a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.breadcrumbs-list a:hover {
+    color: var(--accent-blue);
+}
+
+.breadcrumbs-list .separator {
+    color: var(--text-light);
+    font-weight: 300;
+}
+
+.breadcrumbs-list .active-crumb {
+    color: var(--primary-navy);
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   HERO / DETAILS HERO
+   ========================================================================== */
+.service-details-hero {
+    padding: 100px 0;
+    background: var(--white) !important;
+    position: relative;
+}
+
+.service-details-subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--accent-blue);
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: var(--accent-light);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.service-details-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--primary-navy);
+    line-height: 1.15;
+    margin-bottom: 24px;
+}
+
+.service-details-desc {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+}
+
+.service-details-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-proposal {
+    background: linear-gradient(135deg, var(--accent-blue) 0%, #0052a3 100%) !important;
+    color: var(--bg-white) !important;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0, 102, 204, 0.2);
+    transition: var(--transition);
+}
+
+.btn-proposal:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.35);
+}
+
+.btn-contact-outline {
+    border: 2px solid var(--primary-navy) !important;
+    color: var(--primary-navy) !important;
+    background-color: transparent !important;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.btn-contact-outline:hover {
+    background-color: var(--primary-navy) !important;
+    color: var(--bg-white) !important;
+    transform: translateY(-2px);
+}
+
+.service-details-img-box {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 6px solid var(--bg-platinum);
+    transition: var(--transition);
+}
+
+.service-details-img-box:hover {
+    transform: scale(1.02);
+}
+
+/* ==========================================================================
+   STATS BANNER
+   ========================================================================== */
+.rm-stats-banner {
+    background-color: var(--primary-navy);
+    padding: 60px 0;
+    position: relative;
+}
+
+.rm-stat-col {
+    position: relative;
+}
+
+.rm-stat-col:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 20%;
+    width: 1px;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.rm-stat-item {
+    text-align: center;
+    color: var(--bg-white);
+}
+
+.rm-stat-badge-wrapper {
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.rm-badge-circle, .rm-badge-patch, .rm-badge-shield, .rm-badge-graph {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--accent-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.rm-stat-number {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: var(--bg-white);
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.rm-stat-label {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+/* ==========================================================================
+   WHY ARYADI FEATURES SECTION
+   ========================================================================== */
+.rm-features-section {
+    padding: 100px 0;
+    background-color: var(--bg-platinum);
+}
+
+.rm-features-subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--accent-blue);
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.rm-features-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-navy);
+}
+
+.rm-feature-card {
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 40px;
+    height: 100%;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    position: relative;
+}
+
+.rm-feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background-color: var(--accent-blue);
+    transition: var(--transition);
+}
+
+.rm-feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(0, 102, 204, 0.15);
+}
+
+.rm-feature-card:hover::before {
+    width: 100%;
+}
+
+.rm-feature-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-navy);
+    margin-bottom: 16px;
+}
+
+.rm-feature-card-desc {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* ==========================================================================
+   LIFECYCLE GOVERNANCE SECTION
+   ========================================================================== */
+.rm-governance-section {
+    padding: 100px 0;
+    background-color: var(--bg-white);
+}
+
+.governance-img-box {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 6px solid var(--bg-platinum);
+    position: relative;
+}
+
+.governance-subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--accent-blue);
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.governance-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-navy);
+    margin-bottom: 20px;
+}
+
+.governance-lead {
+    font-size: 1.15rem;
+    color: var(--primary-navy);
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.governance-desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.governance-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-column: gap-20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.governance-list-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.governance-list-icon {
+    width: 36px;
+    height: 36px;
+    background-color: var(--accent-light);
+    color: var(--accent-blue);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.governance-list-text {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.governance-list-text strong {
+    color: var(--primary-navy);
+}
+
+/* ==========================================================================
+   SCOPE OF WORK
+   ========================================================================== */
+.rm-scope-section {
+    padding: 100px 0;
+    background-color: var(--bg-platinum);
+}
+
+.scope-subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--accent-blue);
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.scope-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-navy);
+    margin-bottom: 16px;
+}
+
+.scope-desc {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin-bottom: 50px;
+}
+
+.rm-scope-card {
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.rm-scope-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-premium);
+    border-color: rgba(0, 102, 204, 0.15);
+}
+
+.rm-scope-img-wrapper {
+    position: relative;
+    height: 190px;
+    overflow: hidden;
+}
+
+.rm-scope-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.rm-scope-card:hover .rm-scope-img {
+    transform: scale(1.08);
+}
+
+.rm-scope-body {
+    padding: 28px;
+}
+
+.rm-scope-icon-badge-inline {
+    width: 38px;
+    height: 38px;
+    background-color: var(--accent-light);
+    color: var(--accent-blue);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+    transition: var(--transition);
+}
+
+.rm-scope-card:hover .rm-scope-icon-badge-inline {
+    background-color: var(--accent-blue);
+    color: var(--bg-white);
+}
+
+.rm-scope-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-navy);
+}
+
+.rm-scope-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* ==========================================================================
+   SLA & KPI BENCHMARKS
+   ========================================================================== */
+.rm-benchmarks-section {
+    padding: 100px 0;
+    background-color: var(--bg-white);
+}
+
+.benchmarks-subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--accent-blue);
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.benchmarks-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-navy);
+    margin-bottom: 16px;
+}
+
+.benchmarks-desc {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin-bottom: 50px;
+}
+
+.rm-benchmark-card {
+    background-color: var(--bg-platinum);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    height: 100%;
+    transition: var(--transition);
+}
+
+.rm-benchmark-card:hover {
+    background-color: var(--bg-white);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-blue);
+}
+
+.rm-benchmark-stat {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--accent-blue);
+    margin-bottom: 12px;
+}
+
+.rm-benchmark-card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-navy);
+    margin-bottom: 12px;
+}
+
+.rm-benchmark-card-desc {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* ==========================================================================
+   VALUE ENGINEERING SECTION
+   ========================================================================== */
+.rm-value-section {
+    padding: 100px 0;
+    background-color: var(--bg-platinum);
+}
+
+.value-subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--accent-blue);
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.value-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-navy);
+    margin-bottom: 20px;
+}
+
+.value-lead {
+    font-size: 1.15rem;
+    color: var(--primary-navy);
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.value-desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.value-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.value-list-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.value-list-icon {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(34, 197, 94, 0.12);
+    color: var(--success-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.value-list-text {
+    font-size: 14.5px;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.value-list-text strong {
+    color: var(--primary-navy);
+}
+
+.value-img-box {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 6px solid var(--bg-white);
+    transition: var(--transition);
+}
+
+.value-img-box:hover {
+    transform: scale(1.02);
+}
+
+/* ==========================================================================
+   AUDIT CTA SECTION
+   ========================================================================== */
+.rm-audit-cta-section {
+    background: linear-gradient(135deg, var(--primary-navy) 0%, var(--navy-light) 100%);
+    padding: 80px 0;
+    color: var(--bg-white);
+    position: relative;
+}
+
+.rm-audit-cta-text {
+    font-size: 1.85rem;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.rm-audit-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--bg-white);
+    color: var(--primary-navy);
+    font-weight: 700;
+    padding: 16px 32px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.rm-audit-cta-btn:hover {
+    background-color: var(--bg-platinum);
+    color: var(--accent-blue);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.rm-audit-cta-btn-arrow {
+    transition: transform 0.2s ease;
+}
+
+.rm-audit-cta-btn:hover .rm-audit-cta-btn-arrow {
+    transform: translateX(6px);
+}
+
+/* ==========================================================================
+   INDUSTRIES WE SERVE
+   ========================================================================== */
+.rm-industries-section {
+    padding: 100px 0;
+    background-color: var(--bg-white);
+}
+
+.industries-subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--accent-blue);
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.industries-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-navy);
+    margin-bottom: 16px;
+}
+
+.industries-lead-desc {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin-bottom: 50px;
+}
+
+.industries-badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.industry-badge {
+    background-color: var(--bg-platinum);
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    padding: 14px 28px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--primary-navy);
+    transition: var(--transition);
+}
+
+.industry-badge i {
+    color: var(--accent-blue);
+    font-size: 18px;
+}
+
+.industry-badge:hover {
+    background-color: var(--bg-white);
+    border-color: var(--accent-blue);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   HEARTBEAT CTA SECTION
+   ========================================================================== */
+.rm-heartbeat-section {
+    background: linear-gradient(135deg, var(--navy-light) 0%, var(--primary-navy) 100%);
+    padding: 100px 0;
+    color: var(--bg-white);
+    position: relative;
+    border-top: 4px solid var(--accent-blue);
+}
+
+.heartbeat-title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.heartbeat-desc {
+    font-size: 1.15rem;
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.7;
+}
+
+.heartbeat-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-heartbeat-white {
+    background-color: var(--bg-white) !important;
+    color: var(--primary-navy) !important;
+    font-weight: 700;
+    padding: 16px 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: var(--transition);
+}
+
+.btn-heartbeat-white:hover {
+    background-color: var(--bg-platinum) !important;
+    color: var(--accent-blue) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.btn-heartbeat-orange {
+    background-color: var(--accent-blue) !important;
+    color: var(--bg-white) !important;
+    font-weight: 700;
+    padding: 16px 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.25);
+    transition: var(--transition);
+}
+
+.btn-heartbeat-orange:hover {
+    background-color: var(--accent-hover) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 102, 204, 0.4);
+}
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 991.98px) {
+    .service-details-title {
+        font-size: 2.75rem;
+    }
+
+    .service-details-hero {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .service-details-actions {
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .rm-stat-col:not(:last-child)::after {
+        display: none;
+    }
+
+    .rm-stat-col {
+        margin-bottom: 30px;
+    }
+
+    .rm-features-title, .governance-title, .scope-title, .benchmarks-title, .value-title, .industries-title, .heartbeat-title {
+        font-size: 2rem;
+    }
+
+    .governance-img-box {
+        margin-bottom: 40px;
+    }
+
+    .value-img-box {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .service-details-title {
+        font-size: 2.25rem;
+    }
+
+    .rm-audit-cta-text {
+        font-size: 1.5rem;
+    }
+
+    .heartbeat-title {
+        font-size: 1.75rem;
+    }
+}

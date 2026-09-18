@@ -1,0 +1,8 @@
+
+2026-02-15_01:09:31_C:\wamp64\www\projects\MyFinalsetupforanyproject\api\zeltohealth_login.php_35
+ {
+     "Email": "rohit@zeltohealth.com",
+     "Password": "1234"
+   }
+2026-02-15_01:09:31_C:\wamp64\www\projects\MyFinalsetupforanyproject\api\zeltohealth_login.php_223
+{"error":false,"message":"Login successful.","token":"(redacted)","refresh_token":"(redacted)","expires_in":3600,"role":"System Admin","user":{"user_id":1,"name":"Rohit Kushwaha","email":"rohit@zeltohealth.com","mobile":"8948975967","user_type":"System Admin"}}

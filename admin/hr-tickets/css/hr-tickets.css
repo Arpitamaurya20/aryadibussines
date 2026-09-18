@@ -1,0 +1,58 @@
+/* HR Tickets module */
+.hr-module {
+  --hr-navy: #1e3a5f;
+  --hr-accent: #7c3aed;
+  --hr-accent-light: #a78bfa;
+  --hr-border: #e2e8f0;
+  --hr-surface: #ffffff;
+  --hr-muted: #64748b;
+  --hr-radius: 12px;
+}
+.hr-page-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 1rem; margin-bottom: 1.5rem; }
+.hr-page-header h1 { font-size: 1.6rem; font-weight: 700; color: var(--hr-navy); margin: 0 0 .25rem; }
+.hr-subtitle { color: var(--hr-muted); font-size: .9rem; margin: 0; }
+.hr-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+.hr-stat-card { background: var(--hr-surface); border: 1px solid var(--hr-border); border-radius: var(--hr-radius); padding: 1rem; border-left: 4px solid var(--hr-accent); }
+.hr-stat-value { font-size: 1.4rem; font-weight: 700; color: var(--hr-navy); }
+.hr-stat-label { font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; color: var(--hr-muted); font-weight: 600; }
+.hr-card { background: var(--hr-surface); border: 1px solid var(--hr-border); border-radius: var(--hr-radius); overflow: hidden; box-shadow: 0 1px 3px rgba(15,23,42,.06); }
+.hr-card-header { padding: 1rem 1.25rem; border-bottom: 1px solid var(--hr-border); background: #fafbfc; }
+.hr-card-body.flush { padding: 0; }
+.hr-module table.dataTable thead th { background: var(--hr-navy) !important; color: #fff !important; font-size: .72rem; text-transform: uppercase; }
+.hr-badge { display: inline-flex; padding: .25rem .6rem; font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; border-radius: 999px; border: 1px solid transparent; }
+.hr-badge--open { background: #eff6ff; color: #1d4ed8; border-color: #bfdbfe; }
+.hr-badge--in_progress { background: #fff7ed; color: #c2410c; border-color: #fed7aa; }
+.hr-badge--pending_employee_response { background: #fef3c7; color: #b45309; border-color: #fde68a; }
+.hr-badge--on_hold { background: #f1f5f9; color: #475569; border-color: #cbd5e1; }
+.hr-badge--resolved { background: #f0fdf4; color: #15803d; border-color: #bbf7d0; }
+.hr-badge--closed { background: #f8fafc; color: #334155; border-color: #cbd5e1; }
+.hr-badge--cat-general { background: #f1f5f9; color: #475569; }
+.hr-badge--cat-payment_related { background: #fef2f2; color: #b91c1c; }
+.hr-badge--cat-benefits { background: #f5f3ff; color: #6d28d9; }
+.hr-detail-hero { background: linear-gradient(135deg, #1e3a5f, #4c1d95); color: #fff; border-radius: var(--hr-radius); padding: 1.5rem; margin-bottom: 1.5rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+.hr-detail-hero h1 { font-size: 1.45rem; font-weight: 700; margin: 0 0 .35rem; }
+.hr-hero-meta { font-size: .85rem; opacity: .9; }
+.hr-back-link { color: rgba(255,255,255,.9); font-size: .85rem; }
+.hr-tabs { border-bottom: 2px solid var(--hr-border); }
+.hr-tabs .nav-link { font-weight: 600; color: var(--hr-muted) !important; border: none !important; }
+.hr-tabs .nav-link.active { color: var(--hr-navy) !important; border-bottom: 2px solid var(--hr-accent) !important; }
+.hr-tab-panel { padding: 1.5rem; border: 1px solid var(--hr-border); border-top: none; border-radius: 0 0 var(--hr-radius) var(--hr-radius); }
+.hr-info-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
+.hr-info-item { background: #f8fafc; border: 1px solid var(--hr-border); border-radius: 8px; padding: .9rem 1rem; }
+.hr-info-item.full-width { grid-column: 1 / -1; }
+.hr-info-label { font-size: .68rem; font-weight: 700; text-transform: uppercase; color: var(--hr-muted); margin-bottom: .3rem; }
+.hr-info-value { font-size: .9rem; font-weight: 500; }
+.hr-comment-list { max-width: 800px; }
+.hr-comment-item { border: 1px solid var(--hr-border); border-radius: 8px; padding: 1rem; margin-bottom: .75rem; background: #fff; }
+.hr-comment-item.hr-internal { background: #fffbeb; border-color: #fde68a; }
+.hr-comment-meta { font-size: .78rem; color: var(--hr-muted); margin-bottom: .5rem; display: flex; justify-content: space-between; gap: .5rem; flex-wrap: wrap; }
+.hr-comment-body { font-size: .9rem; white-space: pre-wrap; }
+.hr-timeline { padding-left: 1.5rem; position: relative; max-width: 720px; }
+.hr-timeline::before { content: ''; position: absolute; left: 5px; top: 0; bottom: 0; width: 2px; background: var(--hr-border); }
+.hr-timeline-item { position: relative; margin-bottom: 1rem; }
+.hr-timeline-item::before { content: ''; position: absolute; left: -1.5rem; top: .5rem; width: 10px; height: 10px; border-radius: 50%; background: var(--hr-accent); }
+.hr-modal .modal-header { background: linear-gradient(135deg, #1e3a5f, #4c1d95); color: #fff; }
+.hr-payment-note { background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px; padding: .75rem 1rem; font-size: .85rem; color: #991b1b; margin-bottom: 1rem; }
+.hr-attach-list { list-style: none; padding: 0; margin: 0; }
+.hr-attach-list li { padding: .5rem 0; border-bottom: 1px solid var(--hr-border); }
+.hr-attach-list li:last-child { border-bottom: none; }

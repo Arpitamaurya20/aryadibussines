@@ -1,0 +1,16 @@
+[30-Jan-2023 01:15:31 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking-status/view-booking-status.php on line 10
+[30-Jan-2023 01:15:31 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 248
+[30-Jan-2023 01:15:31 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 251
+[30-Jan-2023 01:15:31 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[30-Jan-2023 01:15:31 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[30-Jan-2023 01:15:31 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1177
+[30-Jan-2023 01:15:31 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1201
+[30-Jan-2023 01:15:31 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1203
+[12-May-2023 06:59:38 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/techxper/public_html/techxpertindia-app/admin/booking-status/view-booking-status.php on line 10
+[12-May-2023 06:59:38 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 292
+[12-May-2023 06:59:38 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 296
+[12-May-2023 06:59:38 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/techxper/public_html/techxpertindia-app/admin/navigation/admin_navigation.php on line 58
+[12-May-2023 06:59:38 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/techxper/public_html/techxpertindia-app/admin/navigation/admin_navigation.php on line 61
+[12-May-2023 06:59:38 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/techxper/public_html/techxpertindia-app/admin/includes/common_header.php on line 600
+[12-May-2023 06:59:38 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/techxper/public_html/techxpertindia-app/admin/includes/common_header.php on line 612
+[12-May-2023 06:59:38 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/techxper/public_html/techxpertindia-app/admin/includes/common_header.php on line 613

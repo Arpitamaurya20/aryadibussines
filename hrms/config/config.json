@@ -1,0 +1,24 @@
+{
+  "product": {
+    "_ProductName": "Techxpert",
+    "_ProductLogo": "https://techxpertindia.in/admin/img/tech-logo.jpg",
+    "_ProductIcon": "https://techxpertindia.in/admin/img/tech-logo.jpg",
+    "_MailName": "Techxpert",
+    "_WebsiteLink": "https://techxpertindia.in",
+    "_MailLogo": " ",
+    "_MailSignature": "Team TechXpert",
+    "_DomainName": " ",
+    "_LeadName": "PR-L-",
+    "_Telecaller_LeadName": "PR-TL-"
+  },
+  "whatsapp": {
+    "_GatewayProvider": "chatmybot",
+    "_BatchEndpoint": "https://wa.chatmybot.in/gateway/wabuissness/v1/message/batchapi",
+    "_AuthScheme": "accessToken",
+    "_ApiToken": "586c48de-e869-45af-984c-c6c319ea5XXX",
+    "_DefaultCountryCode": "91",
+    "_Templates": {
+      "salary_payslip": "3dab037d-01ab-4152-86bd-c16fd137b190"
+    }
+  }
+}

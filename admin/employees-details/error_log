@@ -1,0 +1,26 @@
+[12-May-2023 01:11:56 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function getEmployeeName() in /home2/techxper/public_html/techxpertindia-app/admin/employees-details/view_employee_detail.php:63
+Stack trace:
+#0 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/employees-details/view_employee_detail.php on line 63
+[12-May-2023 01:11:59 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function getEmployeeName() in /home2/techxper/public_html/techxpertindia-app/admin/employees-details/view_employee_detail.php:63
+Stack trace:
+#0 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/employees-details/view_employee_detail.php on line 63
+[12-May-2023 01:12:03 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function getEmployeeName() in /home2/techxper/public_html/techxpertindia-app/admin/employees-details/view_employee_detail.php:63
+Stack trace:
+#0 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/employees-details/view_employee_detail.php on line 63
+[12-May-2023 06:04:25 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function getEmployeeName() in /home2/techxper/public_html/techxpertindia-app/admin/employees-details/view_employee_detail.php:63
+Stack trace:
+#0 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/employees-details/view_employee_detail.php on line 63
+[13-May-2023 00:14:02 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/techxper/public_html/techxpertindia-app/admin/employees-details/view-employees-detail.php on line 10
+[13-May-2023 00:14:02 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 292
+[13-May-2023 00:14:02 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 296
+[13-May-2023 00:14:02 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/techxper/public_html/techxpertindia-app/admin/employees-details/view-employees-detail.php on line 26
+[13-May-2023 00:14:02 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/techxper/public_html/techxpertindia-app/admin/employees-details/view-employees-detail.php on line 36
+[13-May-2023 00:14:02 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/techxper/public_html/techxpertindia-app/admin/navigation/admin_navigation.php on line 58
+[13-May-2023 00:14:02 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/techxper/public_html/techxpertindia-app/admin/navigation/admin_navigation.php on line 61
+[13-May-2023 00:14:02 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/techxper/public_html/techxpertindia-app/admin/includes/common_header.php on line 600
+[13-May-2023 00:14:02 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/techxper/public_html/techxpertindia-app/admin/includes/common_header.php on line 612
+[13-May-2023 00:14:02 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/techxper/public_html/techxpertindia-app/admin/includes/common_header.php on line 613

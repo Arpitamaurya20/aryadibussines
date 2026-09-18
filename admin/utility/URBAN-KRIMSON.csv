@@ -1,0 +1,54 @@
+Branch,Equipment Name,Equipment Number,Make,Model,Serial No,Capacity,Qty,UOM Name,UOM Number,Unit Rate,Amount,Manufacturing Year,Equipment Age,Service Type,Category,CategoryNumber,Sub Category,Sub Category Number,TAT,AMC Start Date,AMC End Date,Floor Number,Equipment Location,Description,
+Urban - Bangalore Krimson,Casset AC-3TR-1,9341,Daikin,,,3,1,TR,53,,,2023,2,CAMC,HVAC,,CASSETTE AC,,2,01-01-2026,31-12-2026,Ground Floor,Back Office Meeting Room,,Quterly
+Urban - Bangalore Krimson,Audible CCTV-1,9351,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,Audible DVR,9360,CP PLUS,8 Channel,,,1,NOS,30,"2,625.00","2,625.00",2023,2,CAMC,CCTV,8,DVR,1,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,CCTV-1,9380,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,DVR,9413,CP PLUS,16 Channel,,,1,NOS,30,"2,100.00",2100,2023,2,CAMC,CCTV,8,DVR,1,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,FAS-ABC-4KG-1,9447,AGNI,4 KG,,4,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,FAS-CO2-4.5KG-1,9468,AGNI,4.5 KG,,4.5,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,UPS,9553,Legrand,15 KVA,,15,1,KVA,28,"15,750.00",15750,2023,2,NCAMC,Electrical,23,UPS,25,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,FAS-CO2-4.5KG-2,14504,AGNI,4.5 KG,,4.5,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,FAS-CO2-4.5KG-3,14505,AGNI,4.5 KG,,4.5,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,FAS-ABC-4KG-2,14506,AGNI,4 KG,,4,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,Audible CCTV-2,14507,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,Audible CCTV-3,14508,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,Audible CCTV-4,14509,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,Audible CCTV-5,14510,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,Audible CCTV-6,14511,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,FAS-ABC-4KG-3,14512,AGNI,4 KG,,4,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,FAS-ABC-4KG-4,14513,AGNI,4 KG,,4,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,FAS-ABC-4KG-5,14514,AGNI,4 KG,,4,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,FAS-ABC-4KG-6,14515,AGNI,4 KG,,4,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,FAS-ABC-4KG-7,14516,AGNI,4 KG,,4,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,FAS-ABC-4KG-8,14517,AGNI,4 KG,,4,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,FAS-ABC-4KG-9,14518,AGNI,4 KG,,4,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,FAS-ABC-4KG-10,14519,AGNI,4 KG,,4,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,FAS-ABC-4KG-11,14520,AGNI,4 KG,,4,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,FAS-ABC-4KG-12,14521,AGNI,4 KG,,4,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,FAS-ABC-4KG-13,14522,AGNI,4 KG,,4,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,FAS-ABC-4KG-14,14523,AGNI,4 KG,,4,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,FAS-ABC-4KG-15,14524,AGNI,4 KG,,4,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,FAS-ABC-4KG-16,14525,AGNI,4 KG,,4,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,Casset AC-3TR-2,14526,Diakin,,,3,1,TR,53,,,2023,2,CAMC,HVAC,,CASSETTE AC,,2,01-01-2026,31-12-2026,Ground Floor,Back Office Meeting Room,,Quterly
+Urban - Bangalore Krimson,Split AC-2TR-1,14527,Blue Star,FDI30DSV16,,2,1,TR,53,,,2023,2,CAMC,HVAC,,SPLIT AC,,2,01-01-2026,31-12-2026,Ground Floor,Server Room,,Quterly
+Urban - Bangalore Krimson,Split AC-2TR-2,14528,Blue Star,FDI30DSV16,,2,1,TR,53,,,2023,2,CAMC,HVAC,,SPLIT AC,,2,01-01-2026,31-12-2026,Ground Floor,UPS Room,,Quterly
+Urban - Bangalore Krimson,Ductable AC-11TR-1,14529,Blue Star,DS91B21R3-1A,,11,1,TR,53,,,2023,2,CAMC,HVAC,,DUCTABLE AC,,2,01-01-2026,31-12-2026,Ground Floor,Staff Area,,Quterly
+Urban - Bangalore Krimson,Ductable AC-11TR-2,14530,Blue Star,DSA2642R3-1A,,11,1,TR,53,,,2023,2,CAMC,HVAC,,DUCTABLE AC,,2,01-01-2026,31-12-2026,Ground Floor,Back Office Meeting Room,,Quterly
+Urban - Bangalore Krimson,Ductable AC-5.5TR-1,14531,Blue Star,DSA2642R3-1A,,5.5,1,TR,53,,,2023,2,CAMC,HVAC,,DUCTABLE AC,,2,01-01-2026,31-12-2026,Ground Floor,Back Office Meeting Room,,Quterly
+Urban - Bangalore Krimson,Ductable AC-11TR-3,14532,Blue Star,DSA1982R3-1A,,11,1,TR,53,,,2023,2,CAMC,HVAC,,DUCTABLE AC,,2,01-01-2026,31-12-2026,Ground Floor,Meeting Room,,Quterly
+Urban - Bangalore Krimson,Ductable AC-11TR-4,14533,Blue Star,DSA1982R3-1A,,11,1,TR,53,,,2023,2,CAMC,HVAC,,DUCTABLE AC,,2,01-01-2026,31-12-2026,Ground Floor,Meeting Room,,Quterly
+Urban - Bangalore Krimson,CCTV-2,14534,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,CCTV-3,14535,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,CCTV-4,14536,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,CCTV-5,14537,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,CCTV-6,14538,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,CCTV-7,14539,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,CCTV-8,14540,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,CCTV-9,14541,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,CCTV-10,14542,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,CCTV-11,14543,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,CCTV-12,14544,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,CCTV-13,14545,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,CCTV-14,14546,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,CCTV-15,14547,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Bangalore Krimson,CCTV-16,14548,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly

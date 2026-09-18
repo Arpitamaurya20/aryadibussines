@@ -1,0 +1,20 @@
+[09-Mar-2023 03:03:15 America/Boise] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home2/cypherte/public_html/techxpert/ed/admin/manage-equipment/controller/equipment_controller.php:11
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/manage-equipment/action/delete_equipment.php(13): deleteEquipment(Object(mysqli), '1')
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-equipment/controller/equipment_controller.php on line 11
+[09-Mar-2023 04:26:01 America/Boise] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home2/cypherte/public_html/techxpert/ed/admin/manage-equipment/controller/equipment_controller.php:11
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/manage-equipment/action/delete_equipment.php(13): deleteEquipment(Object(mysqli), '1')
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-equipment/controller/equipment_controller.php on line 11
+[09-Apr-2023 07:16:33 America/Boise] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home2/cypherte/public_html/techxpert/ed/admin/manage-equipment/controller/equipment_controller.php:11
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/manage-equipment/action/delete_equipment.php(13): deleteEquipment(Object(mysqli), '1')
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-equipment/controller/equipment_controller.php on line 11
+[09-Apr-2023 07:16:42 America/Boise] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home2/cypherte/public_html/techxpert/ed/admin/manage-equipment/controller/equipment_controller.php:11
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/manage-equipment/action/delete_equipment.php(13): deleteEquipment(Object(mysqli), '1')
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/manage-equipment/controller/equipment_controller.php on line 11

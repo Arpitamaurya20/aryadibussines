@@ -1,0 +1,887 @@
+"Branch
+Should match the list",Name of Equipment,Make,Model,Sno.,Capacity,Qty,"UoM
+Should match the list",Unit Rate,Amount,Manufacturing Year,Age of Equipment,"Service Type
+Should match the list","Category
+Should match the list","Sub Category
+Should match the list","TAT 
+In Days","AMC Start Date 
+Format : YYYY-mm-dd","AMC End Date 
+Format : YYYY-mm-dd",Floor Number,Equipment Location,Description
+VI Store (Anandnagar - Ahmedabad),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Anandnagar - Ahmedabad),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Anandnagar - Ahmedabad),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Anandnagar - Ahmedabad),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Anandnagar - Ahmedabad),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Anandnagar - Ahmedabad),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Anandnagar - Ahmedabad),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Anandnagar - Ahmedabad),Below SD5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Anandnagar - Ahmedabad),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Anandnagar - Ahmedabad),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Anandnagar - Ahmedabad),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Anandnagar - Ahmedabad),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Anandnagar - Ahmedabad),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Above SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Above SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Above SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Above SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Above SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Below SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Below SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Below SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Below SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Below SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),RI-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),RI-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),RI-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),RI-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),RI-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naranpura - Ahmedabad),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Above SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Above SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Above SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Above SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Above SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Above SD-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Above SD-13,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Above SD-14,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Above SD-15,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Above SD-16,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Below SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Below SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Below SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Below SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Below SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Below SD-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Below SD-13,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Below SD-14,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Below SD-15,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Below SD-16,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),RI-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),RI-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),RI-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),RI-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),RI-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),RI-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),RI-13,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),RI-14,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),RI-15,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),RI-16,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Shivranjani -Ahmedabad),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vastrapur -Ahmedabad),Fire Panel-1,Ravel,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vastrapur -Ahmedabad),Below SD-1,Ravel,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vastrapur -Ahmedabad),Below SD-2,Ravel,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vastrapur -Ahmedabad),Below SD-3,Ravel,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vastrapur -Ahmedabad),Below SD-4,Ravel,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vastrapur -Ahmedabad),Below SD-5,Ravel,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vastrapur -Ahmedabad),Below SD-6,Ravel,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vastrapur -Ahmedabad),Below SD-7,Ravel,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vastrapur -Ahmedabad),Below SD-8,Ravel,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vastrapur -Ahmedabad),Below SD-9,Ravel,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vastrapur -Ahmedabad),Below SD-10,Ravel,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vastrapur -Ahmedabad),Hooter-1,Ravel,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ashram road  - Ahmedabad),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ashram road  - Ahmedabad),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ashram road  - Ahmedabad),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ashram road  - Ahmedabad),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ashram road  - Ahmedabad),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ashram road  - Ahmedabad),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ashram road  - Ahmedabad),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ashram road  - Ahmedabad),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ashram road  - Ahmedabad),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ashram road  - Ahmedabad),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ashram road  - Ahmedabad),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ashram road  - Ahmedabad),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ashram road  - Ahmedabad),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ashram road  - Ahmedabad),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ashram road  - Ahmedabad),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ashram road  - Ahmedabad),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ashram road  - Ahmedabad),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ashram road  - Ahmedabad),Hooter-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),Above SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),Below SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),Below SD-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),Below SD-13,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),Below SD-13,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),RI-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Bopal -Ahmedabad),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Above SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Above SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Above SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Above SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Above SD-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Above SD-13,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Above SD-14,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Above SD-15,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Above SD-16,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Above SD-17,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Above SD-18,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Above SD-19,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),RI-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),RI-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),RI-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Chandkheda -Ahmedabad),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),Below SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),Below SD-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Naroda -Ahmedabad),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),Above SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),Above SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),Below SD-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),Below SD-13,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),Below SD-14,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),Below SD-15,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),Below SD-16,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),Below SD-17,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),RI-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),RI-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Ghodasar - Ahmedabad),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),Above SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),Above SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),Below SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),Below SD-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),Below SD-13,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),Below SD-14,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),Below SD-15,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),Below SD-16,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),RI-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),RI-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (New Cloth Market - Ahmedabad),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Paldi - Ahmedabad),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Paldi - Ahmedabad),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Paldi - Ahmedabad),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Paldi - Ahmedabad),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Paldi - Ahmedabad),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Paldi - Ahmedabad),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Paldi - Ahmedabad),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Paldi - Ahmedabad),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Paldi - Ahmedabad),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Paldi - Ahmedabad),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Paldi - Ahmedabad),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Paldi - Ahmedabad),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Paldi - Ahmedabad),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Paldi - Ahmedabad),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Paldi - Ahmedabad),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Paldi - Ahmedabad),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Paldi - Ahmedabad),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Paldi - Ahmedabad),Hooter-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Fire Panel-1,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-1,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-2,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-3,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-4,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-5,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-6,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-7,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-8,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-9,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-10,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-11,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-12,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-13,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-14,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-15,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-16,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-17,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-18,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-19,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Stadium Road - Ahmedabad),Below SD-20,Assemble,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Maninagar - Ahmedabad),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Maninagar - Ahmedabad),Below SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Maninagar - Ahmedabad),Below SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Maninagar - Ahmedabad),Below SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Maninagar - Ahmedabad),Below SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Maninagar - Ahmedabad),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Maninagar - Ahmedabad),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Maninagar - Ahmedabad),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Shahibaug - Ahmedabad),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Shahibaug - Ahmedabad),Below SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Shahibaug - Ahmedabad),Below SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Shahibaug - Ahmedabad),Below SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Shahibaug - Ahmedabad),Below SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Shahibaug - Ahmedabad),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Shahibaug - Ahmedabad),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Shahibaug - Ahmedabad),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Shahibaug - Ahmedabad),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Relief Road - Ahmedabad),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Relief Road - Ahmedabad),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Relief Road - Ahmedabad),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Relief Road - Ahmedabad),Below SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Relief Road - Ahmedabad),Below SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Relief Road - Ahmedabad),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Relief Road - Ahmedabad),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Relief Road - Ahmedabad),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Relief Road - Ahmedabad),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Relief Road - Ahmedabad),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Relief Road - Ahmedabad),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),Below SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),Below SD-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Navrangpura - Ahmedabad),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),Below SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),Below SD-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhinagar - Ahmedabad),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),Below SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),Below SD-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Thaltej-Ahmedabad),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Karelibag - Baroda),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Karelibag - Baroda),Below SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Karelibag - Baroda),Below SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Karelibag - Baroda),Below SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Karelibag - Baroda),Below SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Karelibag - Baroda),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Karelibag - Baroda),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Karelibag - Baroda),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Karelibag - Baroda),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Karelibag - Baroda),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Karelibag - Baroda),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Karelibag - Baroda),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Karelibag - Baroda),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Karelibag - Baroda),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Karelibag - Baroda),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Karelibag - Baroda),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Karelibag - Baroda),RI-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Karelibag - Baroda),RI-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Karelibag - Baroda),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),Above SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),Below SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),Below SD-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),Below SD-13,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),Below SD-14,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),RI-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Makarpura - Baroda),Hooter1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),Above SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),Below SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),Below SD-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),Below SD-13,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),Below SD-14,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),RI-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Nizampura - Baroda),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),Fire Panel-1,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),Below SD-1,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),Below SD-2,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),Below SD-3,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),Below SD-4,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),Below SD-5,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),Below SD-6,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),Below SD-7,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),Below SD-8,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),Below SD-9,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),Below SD-10,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),MCP-1,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),RI-1,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),RI-2,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),RI-3,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),RI-4,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),RI-5,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),RI-6,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),RI-7,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),RI-8,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),RI-9,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),RI-10,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gotri Road - Baroda),Hooter-1,Honeywell,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Above SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Above SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Above SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Above SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Below SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Below SD-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Below SD-13,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Below SD-14,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Below SD-15,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Below SD-16,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Below SD-17,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Below SD-18,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Below SD-19,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Below SD-20,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),RI-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),RI-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),RI-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),RI-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (OP Road - Baroda),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Above SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Above SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Above SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Above SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Above SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Above SD-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Below SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Below SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Below SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Below SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Below SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Below SD-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),RI-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),RI-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),RI-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),RI-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),RI-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),RI-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Raopura - Baroda),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Race Course - Baroda),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Race Course - Baroda),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Race Course - Baroda),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Race Course - Baroda),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Race Course - Baroda),Below SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Race Course - Baroda),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Race Course - Baroda),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Race Course - Baroda),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Race Course - Baroda),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Race Course - Baroda),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Race Course - Baroda),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Race Course - Baroda),Below SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Race Course - Baroda),Below SD-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Race Course - Baroda),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Race Course - Baroda),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Race Course - Baroda),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Race Course - Baroda),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Race Course - Baroda),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),Below SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),Below SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),Below SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),Below SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),RI-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),RI-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Mehsana - COCO),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),Below SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),Below SD-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Gandhidham),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),Below SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),Below SD-12,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Jamnagar),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),Below SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),Below SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),Below SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),Below SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Yagnik Road - Rajkot),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Above SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Above SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Above SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Above SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Above SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Below SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Below SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Below SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Below SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Below SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),RI-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),RI-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),RI-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),RI-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),RI-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Parvatpatiya - Surat),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Above SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Above SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Above SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Below SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Below SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Below SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Below SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),RI-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),RI-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),RI-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Randher - Surat),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),Above SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),Above SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),Below SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),Below SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),Below SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),Below SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),RI-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),RI-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Vesu - Surat),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Above SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Above SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Above SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Below SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Below SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Below SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Below SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),RI-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),RI-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),RI-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Sarthana - Surat),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Above SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Above SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Above SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Below SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Below SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Below SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Below SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),RI-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),RI-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),RI-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha - Surat),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Above SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Above SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Above SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Above SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Above SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Below SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Below SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Below SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Below SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Below SD-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Below SD-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),RI-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),RI-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),RI-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),RI-10,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),RI-11,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store (Varachha 2 - Surat),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Ring Road - Surat),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Ring Road - Surat),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Ring Road - Surat),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Ring Road - Surat),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Ring Road - Surat),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Ring Road - Surat),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Ring Road - Surat),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Ring Road - Surat),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Ring Road - Surat),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+Idea CRS (Ring Road - Surat),Below SD-9,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),Fire Panel-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),Above SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),Above SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),Above SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),Above SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),Above SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),Above SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),Above SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),Above SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),Below SD-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),Below SD-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),Below SD-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),Below SD-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),Below SD-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),Below SD-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),Below SD-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),Below SD-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),MCP-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),RI-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),RI-2,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),RI-3,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),RI-4,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),RI-5,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),RI-6,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),RI-7,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),RI-8,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA
+VI Store(Adajan- Surat),Hooter-1,Agni,NA,NA,NA,1,NO,1,1,2017,5,NCAMC,ELV Automation,Fire Panel,2,4/1/2023,3/31/2024,GF,GF,NA

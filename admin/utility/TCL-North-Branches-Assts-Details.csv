@@ -1,0 +1,5 @@
+Branch ,Name of Equipment,Make,Model,SNo,Capacity,Qty,UoM,Unit Rate,Amount,Manufacturing Year,Age of Equipment(years),Types of Services,Categorie,Sub Categorie,TAT,AMC Start Date,AMC End Date,Floor Number,Equipment Location,Description,Unique ID
+noida,Ductable AC unit,Carrier ,PU25VAKD,NA,2.5,1,TR,1950,4875,NA,NA,AMC,Air-Conditioning System,Window AC,2,1/1/2023,12/31/2023,Ground Floor,1-Lift room,,May23-01
+noida,Ductable AC unit,Carrier ,PU25VAKD,NA,2.5,1,TR,1950,4875,NA,NA,AMC,Air-Conditioning System,Window AC,2,1/1/2023,12/31/2023,Ground Floor,2-Lift room,,May23-02
+noida,Ductable AC unit,Carrier ,PU25VAKD,NA,2.5,1,TR,1950,4875,NA,NA,AMC,Air-Conditioning System,Window AC,2,1/1/2023,12/31/2023,Ground Floor,1-Lift room,,May23-03
+noida,Ductable AC unit,Carrier ,PU25VAKD,NA,2.5,1,TR,1950,4875,NA,NA,AMC,Air-Conditioning System,Window AC,2,1/1/2023,12/31/2023,Ground Floor,2-Lift room,,May23-04

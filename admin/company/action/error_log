@@ -1,0 +1,38 @@
+[17-Feb-2023 16:17:20 Asia/Kolkata] PHP Warning:  Array to string conversion in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 57
+[20-Feb-2023 10:27:05 Asia/Kolkata] PHP Warning:  Undefined array key "amc_start_date" in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 18
+[20-Feb-2023 10:27:05 Asia/Kolkata] PHP Warning:  Undefined array key "amc_end_date" in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 19
+[04-Mar-2023 14:54:25 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/company/action/add_update_company.php on line 11
+[05-Mar-2023 12:25:49 Asia/Kolkata] PHP Warning:  Array to string conversion in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 88
+[05-Mar-2023 14:04:39 Asia/Kolkata] PHP Warning:  Array to string conversion in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 88
+[05-Mar-2023 18:05:19 Asia/Kolkata] PHP Warning:  Array to string conversion in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 88
+[05-Mar-2023 18:08:28 Asia/Kolkata] PHP Warning:  Array to string conversion in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 88
+[05-Mar-2023 18:09:00 Asia/Kolkata] PHP Warning:  Array to string conversion in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 88
+[05-Mar-2023 18:10:01 Asia/Kolkata] PHP Warning:  Undefined array key "amc_start_date" in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 71
+[05-Mar-2023 18:10:01 Asia/Kolkata] PHP Warning:  Undefined array key "amc_end_date" in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 72
+[05-Mar-2023 18:10:01 Asia/Kolkata] PHP Warning:  Array to string conversion in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 88
+[05-Mar-2023 18:10:22 Asia/Kolkata] PHP Warning:  Array to string conversion in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 88
+[05-Mar-2023 18:21:09 Asia/Kolkata] PHP Warning:  Undefined array key "amc_start_date" in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 71
+[05-Mar-2023 18:21:09 Asia/Kolkata] PHP Warning:  Undefined array key "amc_end_date" in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 72
+[05-Mar-2023 18:21:09 Asia/Kolkata] PHP Warning:  Array to string conversion in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 88
+[06-Mar-2023 10:07:58 Asia/Kolkata] PHP Warning:  Undefined array key "amc_start_date" in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 94
+[06-Mar-2023 10:07:58 Asia/Kolkata] PHP Warning:  Undefined array key "amc_end_date" in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 95
+[06-Mar-2023 10:07:58 Asia/Kolkata] PHP Warning:  Array to string conversion in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 111
+[06-Mar-2023 10:25:44 Asia/Kolkata] PHP Warning:  Array to string conversion in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 111
+[06-Mar-2023 11:41:42 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/company/action/add_update_company.php on line 11
+[06-Mar-2023 11:41:42 Asia/Kolkata] PHP Warning:  Array to string conversion in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 111
+[06-Mar-2023 11:52:44 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/company/action/add_update_company.php on line 11
+[06-Mar-2023 12:09:54 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/company/action/add_update_company.php on line 11
+[06-Mar-2023 12:09:54 Asia/Kolkata] PHP Warning:  Array to string conversion in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 111
+[25-Mar-2023 16:45:15 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/company/action/add_update_company.php on line 11
+[27-Mar-2023 11:35:10 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/company/action/add_update_company.php on line 11
+[04-Apr-2023 10:32:06 Asia/Kolkata] PHP Warning:  Undefined array key "amc_start_date" in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 287
+[04-Apr-2023 10:32:06 Asia/Kolkata] PHP Warning:  Undefined array key "amc_end_date" in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 289
+[06-Apr-2023 15:07:04 Asia/Kolkata] PHP Warning:  Undefined variable $CompanyEmail in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 66
+[06-Apr-2023 15:07:04 Asia/Kolkata] PHP Warning:  Undefined variable $CompanyName in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 67
+[06-Apr-2023 15:10:46 Asia/Kolkata] PHP Warning:  Undefined variable $CompanyEmail in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 66
+[06-Apr-2023 15:10:46 Asia/Kolkata] PHP Warning:  Undefined variable $CompanyName in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 67
+[06-Apr-2023 15:18:02 Asia/Kolkata] PHP Warning:  Undefined variable $CompanyEmail in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 66
+[06-Apr-2023 15:18:02 Asia/Kolkata] PHP Warning:  Undefined variable $CompanyName in /home2/cypherte/public_html/techxpert/ed/admin/company/controller/company_controller.php on line 67
+[07-Apr-2023 12:59:55 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/company/action/add_update_company.php on line 11
+[29-Apr-2023 12:59:00 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/company/action/add_update_company.php on line 11
+[02-May-2023 13:43:46 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/company/action/add_update_company.php on line 11

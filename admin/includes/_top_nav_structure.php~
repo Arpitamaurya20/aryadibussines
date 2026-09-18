@@ -1,0 +1,198 @@
+<style type="text/css">.navdata li.active {   color: #fff!important;   background:#bdafd1;   padding:8px;}.navdata li.active a span {    color: #fff!important;}.navdata li {    list-style: none;    margin-right: 15px;}.top_nav #nav_view_users {    padding-top: 12%;}.top_nav {    padding-top: 5%;}</style>
+<?php
+$current_url = $_SERVER['REQUEST_URI'];
+$current_page = substr($current_url, strrpos($current_url, '/') + 1);
+switch($current_page)
+{
+	case 'enterprise_workspace.php':
+	{
+		?>
+		<ol class="navbar navbar-expand-lg navbar-light bg-light  top_nav navdata">
+			<li class="nav-item active">
+				<i class="fal fa-clipboard-list"></i> 
+				<a onclick="URLRouter('../enterprises/enterprise_workspace.php');">
+				<span>Dashboard</span></a>
+			</li>
+			<li class="nav-item " id="enterprise_details">
+				<i class="fal fa-list"></i> <a onclick="URLRouter('../enterprises/enterprise_details.php');" >
+				<span>View Details</span></a>
+			</li>
+			<li class="nav-item">
+				<i class="fal fa-plus"></i> <a  onclick="URLRouter('../projects/create_project.php');" ><span>
+				Create Project</span></a>
+			</li>
+			<li class="nav-item ">
+			<i class="fal fa-list-alt"></i> <a onclick="URLRouter('../projects/view_projects.php');" ><span>
+			View Projects</span></a>
+			</li>
+			
+		</ol>
+		<?php
+		break;
+	}
+	case 'enterprise_details.php' :
+	{
+		?>
+		<ol class="navbar navbar-expand-lg navbar-light bg-light  top_nav navdata">
+			<li class="nav-item ">
+				<i class="fal fa-clipboard-list"></i> 
+				<a onclick="URLRouter('../enterprises/enterprise_workspace.php');">
+				<span>Dashboard</span></a>
+			</li>
+			<li class="nav-item active" id="enterprise_details">
+				<i class="fal fa-list"></i> <a onclick="URLRouter('../enterprises/enterprise_details.php');" >
+				<span>View Details</span></a>
+			</li>
+			<li class="nav-item">
+				<i class="fal fa-plus"></i> <a  onclick="URLRouter('../projects/create_project.php');" ><span>
+				Create Project</span></a>
+			</li>
+			<li class="nav-item ">
+			<i class="fal fa-list-alt"></i> <a onclick="URLRouter('../projects/create_project.php');" ><span>
+			View Projects</span></a>
+			</li>
+			
+		</ol>
+		<?php
+		break;
+	}
+	case 'update_enterprise.php':
+	{
+		?>
+		<ol class="navbar navbar-expand-lg navbar-light bg-light  top_nav navdata">
+			<li class="nav-item">
+				<i class="fal fa-clipboard-list"></i> 
+				<a onclick="URLRouter('../enterprises/enterprise_workspace.php');">
+				<span>Dashboard</span></a>
+			</li>
+			<li class="nav-item " id="enterprise_details">
+				<i class="fal fa-list"></i> <a onclick="URLRouter('../enterprises/enterprise_details.php');" >
+				<span>View Details</span></a>
+			</li>
+			<li class="nav-item active">
+				<i class="fal fa-plus"></i> <a  onclick="URLRouter('../projects/create_project.php');" ><span>
+				Create Project</span></a>
+			</li>
+			<li class="nav-item ">
+			<i class="fal fa-list-alt"></i> <a onclick="URLRouter('../projects/create_project.php');" ><span>
+			View Projects</span></a>
+			</li>
+			
+		</ol>
+		<?php
+		break;
+	}
+	case 'create_project.php':
+	{
+		?>
+		<ol class="navbar navbar-expand-lg navbar-light bg-light  top_nav navdata">
+			<li class="nav-item">
+				<i class="fal fa-clipboard-list"></i> 
+				<a onclick="URLRouter('../enterprises/enterprise_workspace.php');">
+				<span>Dashboard</span></a>
+			</li>
+			<li class="nav-item " id="enterprise_details">
+				<i class="fal fa-list"></i> <a onclick="URLRouter('../enterprises/enterprise_details.php');" >
+				<span>View Details</span></a>
+			</li>
+			<li class="nav-item active">
+				<i class="fal fa-plus"></i> <a  onclick="URLRouter('../projects/create_project.php');" ><span>
+				Create Project</span></a>
+			</li>
+			<li class="nav-item ">
+			<i class="fal fa-list-alt"></i> <a onclick="URLRouter('../projects/create_project.php');" ><span>
+			View Projects</span></a>
+			</li>
+			
+		</ol>
+		<?php
+		break;
+	}
+	case 'view_projects.php':
+	
+	
+	{
+	?><ol class="navbar navbar-expand-lg navbar-light bg-light  top_nav navdata">
+			<li class="nav-item">
+				<i class="fal fa-clipboard-list"></i> 
+				<a onclick="URLRouter('../enterprises/enterprise_workspace.php');">
+				<span>Dashboard</span></a>
+			</li>
+			<li class="nav-item " id="enterprise_details">
+				<i class="fal fa-list"></i> <a onclick="URLRouter('../enterprises/enterprise_details.php');" >
+				<span>View Details</span></a>
+			</li>
+			<li class="nav-item">
+				<i class="fal fa-plus"></i> <a  onclick="URLRouter('../projects/create_project.php');" ><span>
+				Create Project</span></a>
+			</li>
+			<li class="nav-item active">
+			<i class="fal fa-list-alt"></i> <a onclick="URLRouter('../projects/create_project.php');" ><span>
+			View Projects</span></a>
+			</li>
+			
+		</ol>
+	<?php
+		break;
+	}
+
+	case 'project_details.php':
+		{
+	?><ol class="navbar navbar-expand-lg navbar-light bg-light top_nav navdata ">
+			<li class="nav-item active">
+				<a onclick="URLRouter('../projects/project_workpace.php');"><i class="fal fa-clipboard-list"></i><span>Workspace</span></a>
+			</li>
+			<li class="nav-item " >
+				<a onclick="URLRouter('../projects/project_details.php');"><i class="fal fa-list"></i><span>  Project Details</span></a>
+			</li>
+			<li class="nav-item " >
+				<a onclick="URLRouter('../projects/add_project_members.php');"><i class="fal fa-plus"></i><span>  Add Members</span></a>
+			</li>
+			
+			
+		</ol>
+	<?php
+		break;
+	}
+	case 'update_project.php':
+	{
+	?><ol class="navbar navbar-expand-lg navbar-light bg-light top_nav navdata ">
+			<li class="nav-item ">
+				<a onclick="URLRouter('../projects/project_workpace.php');"><i class="fal fa-clipboard-list"></i><span>Workspace</span></a>
+			</li>
+			<li class="nav-item" >
+				<a onclick="URLRouter('../projects/project_details.php');"><i class="fal fa-list"></i><span>  Project Details</span></a>
+			</li>
+			<li class="nav-item " >
+				<a onclick="URLRouter('../projects/add_project_members.php');"><i class="fal fa-plus"></i><span>  Add Members</span></a>
+			</li>
+			
+			
+		</ol>
+	<?php
+		break;
+	}
+	case 'project_workpace.php':
+	{
+	?><ol class="navbar navbar-expand-lg navbar-light bg-light top_nav navdata ">
+			<li class="nav-item">
+				<a onclick="URLRouter('../projects/project_workpace.php');"><i class="fal fa-clipboard-list"></i><span>Workspace</span></a>
+			</li>
+			<li class="nav-item active" >
+				<a onclick="URLRouter('../projects/project_details.php');"><i class="fal fa-list"></i><span>  Project Details</span></a>
+			</li>
+			<li class="nav-item " >
+				<a onclick="URLRouter('../projects/add_project_members.php');"><i class="fal fa-plus"></i><span>  Add Members</span></a>
+			</li>
+			
+			
+		</ol>
+	<?php
+		break;
+	}	case 'view_users.php':	{	?>		<ol class="navbar navbar-expand-lg navbar-light bg-light top_nav navdata ">		  			 <li class="nav-item " id="nav_view_users">					<a href="../users/view_users.php" title="View Users" data-filter-tags="package info documentation">					<span class="nav-link-text" data-i18n="nav.package_info_documentation"><i class="fal fa-user"></i> View Users</span>												</a>			 </li>		</ol>	<?php		break;	}	case 'view_enterprises.php':	case 'create_enterprise.php':	{	?>		<ol class="navbar navbar-expand-lg navbar-light bg-light  top_nav navdata ">			<li class="nav-item  " id="nav_view_enterprises">			  <a href="../enterprises/view_enterprises.php" title="View Enterprises" data-filter-tags="View Enterprises ">					<span class="nav-link-text" data-i18n="nav.theme_settings_how_it_works"><i class="fal fa-clipboard-list"></i> View Enterprises</span>			  </a>			 </li>			 <li class="nav-item " id="nav_create_enterprise">				 <a href="../enterprises/create_enterprise.php" title="Create Enterprise" data-filter-tags="create enterprise">				  <span class="nav-link-text" data-i18n="nav.theme_settings_layout_options"><i class="fal fa-plus-square"></i> Create Enterprise</span>				 </a>			 </li>		</ol>		<?php				break;			}
+	
+	default:
+	{
+	}
+}
+?>

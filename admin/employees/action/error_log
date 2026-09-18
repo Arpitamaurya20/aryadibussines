@@ -1,0 +1,321 @@
+[05-Jan-2023 10:25:07 Asia/Kolkata] PHP Notice:  Undefined index: employee_site in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 97
+[07-Jan-2023 16:14:21 Asia/Kolkata] PHP Warning:  Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 455
+[12-Jan-2023 11:28:20 Asia/Kolkata] PHP Warning:  Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 455
+[12-Jan-2023 17:24:02 Asia/Kolkata] PHP Notice:  Undefined index: pb_username in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php on line 6
+[12-Jan-2023 17:25:10 Asia/Kolkata] PHP Notice:  Undefined index: pb_username in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/reset_password.php on line 6
+[14-Jan-2023 15:12:40 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/add_employee_action.php on line 6
+[14-Jan-2023 15:15:31 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/add_employee_action.php on line 6
+[14-Jan-2023 15:16:46 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/add_employee_action.php on line 6
+[14-Jan-2023 15:17:31 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/add_employee_action.php on line 6
+[14-Jan-2023 15:18:30 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/add_employee_action.php on line 6
+[14-Jan-2023 15:20:13 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/add_employee_action.php on line 6
+[14-Jan-2023 15:21:00 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/add_employee_action.php on line 6
+[14-Jan-2023 15:22:48 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/add_employee_action.php on line 6
+[14-Jan-2023 15:24:09 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/add_employee_action.php on line 6
+[14-Jan-2023 15:24:55 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/add_employee_action.php on line 6
+[14-Jan-2023 15:25:51 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/add_employee_action.php on line 6
+[13-Mar-2023 18:30:41 Asia/Kolkata] PHP Warning:  Undefined array key "employee_city" in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 97
+[14-Mar-2023 12:52:00 Asia/Kolkata] PHP Warning:  Undefined array key "employee_city" in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 97
+[18-Mar-2023 15:06:45 Asia/Kolkata] PHP Warning:  Undefined array key "employee_city" in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 97
+[18-Mar-2023 15:07:21 Asia/Kolkata] PHP Warning:  Undefined array key "employee_city" in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 97
+[18-Mar-2023 15:08:05 Asia/Kolkata] PHP Warning:  Undefined array key "employee_city" in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 97
+[18-Mar-2023 15:09:47 Asia/Kolkata] PHP Warning:  Undefined array key "employee_city" in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 97
+[18-Mar-2023 17:55:30 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:455
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 455
+[20-Mar-2023 10:04:11 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:455
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 455
+[20-Mar-2023 10:42:09 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:455
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 455
+[24-Mar-2023 12:38:31 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:455
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 455
+[24-Mar-2023 12:39:32 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:455
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 455
+[24-Mar-2023 12:39:36 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:455
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 455
+[24-Mar-2023 13:54:27 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:455
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 455
+[24-Mar-2023 13:55:06 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:455
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 455
+[25-Mar-2023 14:56:34 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:455
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 455
+[27-Mar-2023 14:31:40 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:455
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 455
+[27-Mar-2023 14:31:51 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:455
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 455
+[28-Mar-2023 10:35:40 Asia/Kolkata] PHP Warning:  Undefined array key "employee_city" in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 97
+[15-Apr-2023 13:35:22 Asia/Kolkata] PHP Warning:  Undefined array key "employee_city" in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 97
+[15-Apr-2023 16:54:13 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:455
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 455
+[15-Apr-2023 16:54:44 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:455
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 455
+[15-Apr-2023 19:54:03 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:455
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 455
+[15-Apr-2023 20:18:36 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:455
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 455
+[15-Apr-2023 22:05:18 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:455
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 455
+[20-Apr-2023 13:55:01 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:473
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 473
+[20-Apr-2023 13:57:11 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:473
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 473
+[20-Apr-2023 13:58:13 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:473
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 473
+[20-Apr-2023 14:22:11 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:473
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 473
+[20-Apr-2023 14:23:11 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:473
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 473
+[21-Apr-2023 12:07:29 Asia/Kolkata] PHP Warning:  Undefined array key "employee_city" in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 114
+[21-Apr-2023 12:28:59 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:473
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 473
+[21-Apr-2023 15:06:15 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php on line 6
+[21-Apr-2023 15:06:15 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php on line 6
+[21-Apr-2023 15:21:55 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_password.php on line 6
+[21-Apr-2023 15:28:51 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php on line 6
+[21-Apr-2023 15:29:33 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_password.php on line 6
+[21-Apr-2023 15:37:23 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php on line 6
+[21-Apr-2023 15:37:42 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_password.php on line 6
+[21-Apr-2023 15:37:58 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/reset_password.php on line 6
+[21-Apr-2023 15:45:15 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php on line 6
+[21-Apr-2023 15:45:27 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_password.php on line 6
+[21-Apr-2023 15:45:44 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/reset_password.php on line 6
+[21-Apr-2023 15:49:25 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php on line 6
+[21-Apr-2023 15:49:52 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_password.php on line 6
+[21-Apr-2023 15:57:08 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php on line 6
+[21-Apr-2023 15:57:26 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/reset_password.php on line 6
+[21-Apr-2023 16:34:04 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:473
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 473
+[21-Apr-2023 17:02:55 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:473
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 473
+[21-Apr-2023 17:13:50 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:473
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 473
+[21-Apr-2023 17:30:39 Asia/Kolkata] PHP Warning:  Undefined array key "employee_city" in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 114
+[02-May-2023 12:48:13 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:492
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 492
+[02-May-2023 13:06:45 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php:492
+Stack trace:
+#0 /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/cypherte/public_html/techxpert/ed/admin/employees/controller/employee_controller.php on line 492
+[02-May-2023 13:49:57 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php on line 6
+[02-May-2023 13:51:26 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php on line 6
+[02-May-2023 13:53:17 Asia/Kolkata] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/employees/action/change_role_supervisor.php on line 6
+[12-May-2023 16:46:58 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php:492
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 492
+[12-May-2023 16:49:50 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php:492
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 492
+[12-May-2023 16:50:08 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php:492
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 492
+[12-May-2023 17:11:02 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php:494
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 494
+[12-May-2023 18:13:52 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php:494
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 494
+[12-May-2023 18:31:50 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php:494
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 494
+[13-May-2023 11:38:33 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php:494
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/employees/action/change_role_supervisor.php(14): ManageRole_Supervisor(Object(mysqli), Array)
+#1 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 494
+[15-May-2023 12:39:06 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Too many connections in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php:61
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php(61): mysqli->__construct('localhost', 'techxper_techxp...', 'TechXpert@123!', 'techxper_techxp...')
+#1 /home2/techxper/public_html/techxpertindia-app/admin/employees/action/change_role_supervisor.php(13): _connectodb()
+#2 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 61
+[15-May-2023 12:39:06 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Too many connections in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php:61
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php(61): mysqli->__construct('localhost', 'techxper_techxp...', 'TechXpert@123!', 'techxper_techxp...')
+#1 /home2/techxper/public_html/techxpertindia-app/admin/employees/action/change_role_supervisor.php(13): _connectodb()
+#2 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 61
+[15-May-2023 12:39:13 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Too many connections in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php:61
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php(61): mysqli->__construct('localhost', 'techxper_techxp...', 'TechXpert@123!', 'techxper_techxp...')
+#1 /home2/techxper/public_html/techxpertindia-app/admin/employees/action/change_role_supervisor.php(13): _connectodb()
+#2 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 61
+[15-May-2023 12:50:35 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Too many connections in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php:61
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php(61): mysqli->__construct('localhost', 'techxper_techxp...', 'TechXpert@123!', 'techxper_techxp...')
+#1 /home2/techxper/public_html/techxpertindia-app/admin/employees/action/change_role_supervisor.php(13): _connectodb()
+#2 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 61
+[16-May-2023 01:06:19 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370
+[16-May-2023 01:06:19 Asia/Kolkata] PHP Warning:  Undefined variable $sql in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 396
+[16-May-2023 01:06:19 Asia/Kolkata] PHP Deprecated:  mysqli_query(): Passing null to parameter #2 ($query) of type string is deprecated in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 108
+[16-May-2023 01:06:19 Asia/Kolkata] PHP Fatal error:  Uncaught ValueError: mysqli_query(): Argument #2 ($query) cannot be empty in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php:108
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php(108): mysqli_query(Object(mysqli), '')
+#1 /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php(396): _InsertTableRecords(Object(mysqli), NULL)
+#2 /home2/techxper/public_html/techxpertindia-app/admin/employees/action/change_password.php(15): ManageAccess(Object(mysqli), Array)
+#3 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 108
+[16-May-2023 01:06:20 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370
+[16-May-2023 01:06:29 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370
+[16-May-2023 01:06:29 Asia/Kolkata] PHP Warning:  Undefined variable $sql in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 396
+[16-May-2023 01:06:29 Asia/Kolkata] PHP Deprecated:  mysqli_query(): Passing null to parameter #2 ($query) of type string is deprecated in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 108
+[16-May-2023 01:06:29 Asia/Kolkata] PHP Fatal error:  Uncaught ValueError: mysqli_query(): Argument #2 ($query) cannot be empty in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php:108
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php(108): mysqli_query(Object(mysqli), '')
+#1 /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php(396): _InsertTableRecords(Object(mysqli), NULL)
+#2 /home2/techxper/public_html/techxpertindia-app/admin/employees/action/change_password.php(15): ManageAccess(Object(mysqli), Array)
+#3 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 108
+[16-May-2023 01:06:33 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370
+[16-May-2023 01:06:38 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370
+[16-May-2023 01:06:38 Asia/Kolkata] PHP Warning:  Undefined variable $sql in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 396
+[16-May-2023 01:06:38 Asia/Kolkata] PHP Deprecated:  mysqli_query(): Passing null to parameter #2 ($query) of type string is deprecated in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 108
+[16-May-2023 01:06:38 Asia/Kolkata] PHP Fatal error:  Uncaught ValueError: mysqli_query(): Argument #2 ($query) cannot be empty in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php:108
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php(108): mysqli_query(Object(mysqli), '')
+#1 /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php(396): _InsertTableRecords(Object(mysqli), NULL)
+#2 /home2/techxper/public_html/techxpertindia-app/admin/employees/action/change_password.php(15): ManageAccess(Object(mysqli), Array)
+#3 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 108
+[16-May-2023 01:06:41 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370
+[16-May-2023 01:06:46 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370
+[16-May-2023 01:06:46 Asia/Kolkata] PHP Warning:  Undefined variable $sql in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 396
+[16-May-2023 01:06:46 Asia/Kolkata] PHP Deprecated:  mysqli_query(): Passing null to parameter #2 ($query) of type string is deprecated in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 108
+[16-May-2023 01:06:46 Asia/Kolkata] PHP Fatal error:  Uncaught ValueError: mysqli_query(): Argument #2 ($query) cannot be empty in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php:108
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php(108): mysqli_query(Object(mysqli), '')
+#1 /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php(396): _InsertTableRecords(Object(mysqli), NULL)
+#2 /home2/techxper/public_html/techxpertindia-app/admin/employees/action/change_password.php(15): ManageAccess(Object(mysqli), Array)
+#3 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 108
+[16-May-2023 01:06:49 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370
+[16-May-2023 01:07:01 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370
+[16-May-2023 01:07:01 Asia/Kolkata] PHP Warning:  Undefined variable $sql in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 396
+[16-May-2023 01:07:01 Asia/Kolkata] PHP Deprecated:  mysqli_query(): Passing null to parameter #2 ($query) of type string is deprecated in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 108
+[16-May-2023 01:07:01 Asia/Kolkata] PHP Fatal error:  Uncaught ValueError: mysqli_query(): Argument #2 ($query) cannot be empty in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php:108
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php(108): mysqli_query(Object(mysqli), '')
+#1 /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php(396): _InsertTableRecords(Object(mysqli), NULL)
+#2 /home2/techxper/public_html/techxpertindia-app/admin/employees/action/change_password.php(15): ManageAccess(Object(mysqli), Array)
+#3 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 108
+[16-May-2023 01:07:07 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370
+[16-May-2023 01:08:16 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370
+[16-May-2023 01:08:16 Asia/Kolkata] PHP Warning:  Undefined variable $sql in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 396
+[16-May-2023 01:08:16 Asia/Kolkata] PHP Deprecated:  mysqli_query(): Passing null to parameter #2 ($query) of type string is deprecated in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 108
+[16-May-2023 01:08:16 Asia/Kolkata] PHP Fatal error:  Uncaught ValueError: mysqli_query(): Argument #2 ($query) cannot be empty in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php:108
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php(108): mysqli_query(Object(mysqli), '')
+#1 /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php(396): _InsertTableRecords(Object(mysqli), NULL)
+#2 /home2/techxper/public_html/techxpertindia-app/admin/employees/action/change_password.php(15): ManageAccess(Object(mysqli), Array)
+#3 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 108
+[16-May-2023 01:08:26 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370
+[16-May-2023 01:11:23 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370
+[16-May-2023 01:11:23 Asia/Kolkata] PHP Warning:  Undefined variable $sql in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 396
+[16-May-2023 01:11:23 Asia/Kolkata] PHP Deprecated:  mysqli_query(): Passing null to parameter #2 ($query) of type string is deprecated in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 108
+[16-May-2023 01:11:23 Asia/Kolkata] PHP Fatal error:  Uncaught ValueError: mysqli_query(): Argument #2 ($query) cannot be empty in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php:108
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php(108): mysqli_query(Object(mysqli), '')
+#1 /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php(396): _InsertTableRecords(Object(mysqli), NULL)
+#2 /home2/techxper/public_html/techxpertindia-app/admin/employees/action/change_password.php(15): ManageAccess(Object(mysqli), Array)
+#3 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 108
+[16-May-2023 01:31:53 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370
+[16-May-2023 01:31:56 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370
+[16-May-2023 01:32:17 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370
+[16-May-2023 01:32:32 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370
+[16-May-2023 01:33:09 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370
+[16-May-2023 01:38:20 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370
+[16-May-2023 01:38:22 Asia/Kolkata] PHP Warning:  Undefined array key "password" in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 370

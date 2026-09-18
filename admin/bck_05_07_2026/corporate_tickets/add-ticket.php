@@ -1,0 +1,342 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <?php
+    require_once('../includes/autoloader.inc.php');
+    include('../controllers/common_controllers.php');
+    include('../company/controller/company_controller.php');
+    include('../branch/controller/branch_controller.php');
+    include('../Services/controller/service_controller.php');
+    $UserType = SessionCheck();
+    setNavigation($_SESSION['Roles']);
+    $conn = _connectodb();
+    ?>
+    <meta charset="utf-8">
+    
+    <meta name="description" content="Add Corporate Ticket">
+    <?php
+    include('../includes/common_head_content.php');
+    ?>
+    <link rel="stylesheet" media="screen, print"
+        href="../css/formplugins/bootstrap-datepicker/bootstrap-datepicker.css">
+    <style type="text/css">
+    .select2-container
+    {
+        z-index: 1;
+    }
+    </style>
+    <?php
+    //print_r($_SESSION);
+    $AllCompany = getAllCompanies($conn);
+    $AllBranch = getAllBranchesWithName($conn);
+    $categories_obj = new Categories($conn);
+    $categories_array = $categories_obj->getAllCategories();
+    $CorporateID = -1;
+    $BranchID = -1;
+    $TicketManager = false;
+    if($UserType == "Corporate Admin")
+    {
+        $corporate_user = true;
+        $CorporateID = (int)$_SESSION['Roles']['CorporateID'];
+    }
+    if($UserType == "Corporate Branch User")
+    {
+        $corporate_user = true;
+        $CorporateID = (int)$_SESSION['Roles']['CorporateID'];
+        $BranchID = (int)$_SESSION['Roles']['BranchID'];
+    }
+    if(isset($_SESSION['Roles']['EmployeeRoles']))
+    {
+        $EmployeeRoles = $_SESSION['Roles']['EmployeeRoles'];
+        foreach($EmployeeRoles as $E_Role)
+        {
+            if($E_Role == "Ticket Manager" || $UserType == "Admin" || $UserType == "Branch Account Manager" || $E_Role == "Branch Account Manager")
+            {
+                $TicketManager = true;
+            }
+        }
+    }
+    $ProductName = "TechXpert";
+    if ($CorporateID == 183) 
+    {
+        $_product = "innov";
+        $conf = new Config($conn);
+        $product_configuration = $conf->GetConfigParametersfromURL($_product);
+        $ProductName = $product_configuration['ProductName'];
+    } 
+    $logoImg = "tech-logo.jpg";
+    if(isset($product_configuration['logo']))
+    {
+        $logoImg = $product_configuration['logo'];
+    }  
+
+    ?>
+    <link rel="stylesheet" media="screen, print" href="../css/formplugins/bootstrap-datepicker/bootstrap-datepicker.css">
+    <title>
+         Raise Ticket -  <?=$ProductName;?>
+    </title>
+    <?php 
+    if(isset($product_configuration['favicon']))
+    {
+        ?>
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/<?=$product_configuration['favicon'];?>">
+        <?php
+    }
+    if($ProductName != "TechXpert")
+    {
+        include("../css/client_generated_css.php");
+    }
+    ?>
+</head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6496901533964255"
+     crossorigin="anonymous"></script>
+
+
+<body class="mod-bg-1 desktop chrome webkit pace-done nav-function-fixed blur">
+    <?php include('../js/theme_settings.js'); ?>
+
+    <!-- BEGIN Page Wrapper -->
+    <div class="page-wrapper">
+        <div class="page-inner">
+            <?php
+            include('../navigation/admin_navigation.php');
+            ?>
+            <div class="page-content-wrapper">
+                <!-- BEGIN Page Header -->
+                <?php
+                include('../includes/common_header.php');
+                ?>
+                <!-- END Page Header -->
+                <!-- BEGIN Page Content -->
+                <!-- the #js-page-content id is needed for some plugins to initialize -->
+                <main id="js-page-content" role="main" class="page-content">
+                    <ol class="breadcrumb page-breadcrumb">
+                        <li class="breadcrumb-item"><a href="../dashboard/admin_dashboard"> <?=$ProductName;?></a></li>
+                        <li class="breadcrumb-item active">Raise Ticket</li>
+
+                    </ol>
+
+                    <!-- Main Creation Form -->
+                    <div id="panel-5" class="panel">
+                        <div class="panel-hdr">
+                            <h2>
+                                Add <span class="fw-300"><i>Ticket</i></span>
+                            </h2>
+
+                        </div>
+                        <div class="panel-container show">
+                            <div class="panel-content">
+                                <form method="post" id="raise_ticket_form" >
+                                    <div class="row">
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="number">Corporate <span
+                                                        class="text-danger">*</span></label>
+                                                <select onchange="SelectCorporate()" name="corporate_name" class="select2 form-control"
+                                                    id="corporate_name">
+                                                    <option value="">Please Select Corporate</option>
+                                                    <?php
+                                                          foreach($AllCompany as $CompanyValue)
+                                                          {
+                                                            $companyId = (int)$CompanyValue['ID'];
+
+                                                            if(!$TicketManager && $companyId !== $CorporateID)
+                                                            {
+                                                                continue;
+                                                            }
+                                                    ?>
+
+                                                    <option value="<?php echo $companyId; ?>" <?php if(!$TicketManager && $companyId === $CorporateID){ echo "selected"; } ?>>
+                                                        <?php echo $CompanyValue['CompanyName']; ?></option>
+                                                    <?php
+                                                         }
+                                                     ?>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-lg-6" id="branch_div" style="display:none;">
+                                            <div class="form-group">
+                                                <label class="form-label" for="number">Branch <span
+                                                        class="text-danger">*</span></label>
+                                                <select name="branch_name" class="select2 form-control"
+                                                    id="branch_name">
+                                                    <option value="">Please Select Branch</option>
+                                                    <?php
+                                                          foreach($AllBranch as $BranchValue)
+                                                          {
+                                                            $branchCompanyId = (int)$BranchValue['CompanyID'];
+                                                            $branchValueId = (int)$BranchValue['ID'];
+                                                            if(!$TicketManager && $BranchID == -1)
+                                                            {
+                                                                if($branchCompanyId !== $CorporateID)
+                                                                {
+                                                                    continue;
+                                                                }
+                                                            }
+                                                            else
+                                                            {
+                                                                if(!$TicketManager && $BranchID !== $branchValueId)
+                                                                {
+                                                                    continue;
+                                                                }
+                                                            }
+                                                    ?>
+
+                                                    <option value="<?php echo $branchValueId; ?>">
+                                                        <?php echo $BranchValue['BranchSite']; ?></option>
+                                                    <?php
+                                                         }
+                                                     ?>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="name">Service Type <span
+                                                        class="text-danger">*</span></label>
+                                                <select class="form-control w-100" name="service_type" id="service_type">
+                                                    <option value="">Please Select Service Type</option>
+                                                    <option value="R&M">R&M</option>
+                                                    <option value="Projects">Projects</option>
+                                                    <option value="Supply">Supply</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="number">Service <span class="text-danger">*</span></label>
+                                                    <select onchange="GetSubCategories()" class="form-control w-100" name="service_name" class="select2"
+                                                    id="service_name">
+                                                    <option value="">Please Select Service</option>
+                                                    <?php
+                                                          foreach($categories_array as $category)
+                                                          {
+                                                    ?>
+                                                            <option value="<?php echo $category['CategoriesName']; ?>" data-id="<?php echo $category['ID']; ?>"><?php echo $category['CategoriesName']; ?></option>
+                                                            <?php
+                                                            }
+                                                        ?>
+                                                    </select>
+                                             </div>
+                                                
+                                        </div>
+
+                                        <div class="col-lg-6" id="sub_services_div" style="display: none;">
+                                            <div class="form-group">
+                                                <label class="form-label" for="number">Sub Service <span
+                                                        class="text-danger">*</span></label>
+                                                        <select class="form-control w-100" name="sub_service_name" class="select2" id="sub_service_name" onchange="displayOthersSubserviceTextBox(this.value)">
+                                                    <option value="">Please Select Sub Service</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6" id="sub_services_others_div" style="display: none;">
+                                            <div class="form-group">
+                                                <label class="form-label">Sub Service (Others) <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" name="sub_services_others" value="" id="sub_service_others" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="ClientID">Client Ticket ID</label> 
+                                                <input type="text" class="form-control" name="ClientTicketID" id="ClientTicketID" Placeholder="Please Enter Client Ticket ID">
+                                            </div>
+                                                        
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <label class="form-label" for="number">Priority<span
+                                                        class="text-danger">*</span></label>
+                                                        <select class="form-control w-100" name="priority" class="select2"
+                                                    id="priority">
+                                                    <option value="-1">Please Select Priority</option>
+                                                    <option value="Low">Low</option>
+                                                    <option value="Medium">Medium</option>
+                                                    <option value="High">High</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <div class="form-group mb-0">
+                                                <label class="form-label">Ticket Attachment</label>
+                                                <div class="custom-file">
+                                                    <input type="file" id="ticket_attachment" name="ticket_attachment"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="name"> Message </label>
+                                                <textarea class="form-control w-100" name="message" id="message" cols="30" rows="3" placeholder="Type Your Message"></textarea>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="configurable-fields" class="row">
+                                    </div>
+
+                                    <div class="row mt-2">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <a onclick="return RaiseTicket()" id="raise_ticket_btn" class="btn btn-info text-white" id="RaiseTicketButton"
+                                                   >Raise</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <!-- this overlay is activated only when mobile menu is triggered -->
+                <div class="page-content-overlay" data-action="toggle" data-class="mobile-nav-on"></div>
+                <!-- END Page Content -->
+                <!-- BEGIN Page Footer -->
+                <?php
+                include('../includes/common_footer.php')
+                ?>
+                <!-- END Page Footer -->
+
+            </div>
+        </div>
+    </div>
+    <!-- END Page Wrapper -->
+
+    <?php
+    include('../includes/common_modules.php');
+    include('../includes/common_scripts.php');
+    ?>
+
+</body>
+<script src="../js/formplugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+<script src="../js/modules/raise-ticket.js"></script>
+<script>
+$(document).ready(function() {
+    var corporateValue = $("#corporate_name").val();
+    if (corporateValue) {
+        SelectCorporate();
+    }
+});
+
+</script>
+
+</html>

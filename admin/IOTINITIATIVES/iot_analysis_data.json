@@ -1,0 +1,616 @@
+{
+    "generated_at": "2026-06-07 07:32:14",
+    "total_tickets": 58434,
+    "top_services": {
+        "Carpentry": 11654,
+        "Electrical": 9370,
+        "Painting": 4581,
+        "(Blank)": 4306,
+        "Electrician": 4001,
+        "Civil & Interiors": 3947,
+        "OTHER": 2447,
+        "Supply": 2208,
+        "Plumbing": 2034,
+        "Facilities - Carpentry": 1862,
+        "Facilities - Electrical": 1657,
+        "Facilities - Plumbing": 1086
+    },
+    "top_subservices": {
+        "Others": 5786,
+        "(Blank)": 5310,
+        "Electrician Required": 2619,
+        "Carpenter Required": 2432,
+        "MEP - Consumables": 2107,
+        "OTHER": 2003,
+        "Book An Electrician": 1746,
+        "Celling Lights Not Working": 1699,
+        "Paint Required": 1557,
+        "Carpenter visit": 1525,
+        "Oil Paint": 1317,
+        "Chair Repair": 1108,
+        "Chair Cushion Changed": 1038,
+        "Ceiling Light Installation": 811,
+        "Plumbing": 791
+    },
+    "top_service_subservice": {
+        "→": 4306,
+        "Electrical → Electrician Required": 2586,
+        "Supply → MEP - Consumables": 2107,
+        "OTHER → OTHER": 1965,
+        "Carpentry  → Carpenter Required": 1956,
+        "Electrician → Book An Electrician": 1746,
+        "Electrical → Celling Lights Not Working": 1670,
+        "Carpentry → Carpenter visit": 1525,
+        "Painting → Paint Required": 1462,
+        "Carpentry  → Others": 1429,
+        "Painting → Oil Paint": 1314,
+        "Civil & Interiors → Others": 992,
+        "Carpentry  → Chair Repair": 982,
+        "Civil & Interiors → Chair Cushion Changed": 894,
+        "Electrical → Others": 811
+    },
+    "top_industries": {
+        "Telecom & Media": 29335,
+        "Corporate \/ Other": 9784,
+        "Real Estate & FM": 9459,
+        "IT & Technology": 6993,
+        "Banking & Financial Services": 2423,
+        "Consulting & Professional Services": 280,
+        "Food & Retail": 66,
+        "Manufacturing & Automotive": 49,
+        "Healthcare & Pharma": 36,
+        "Government & Embassy": 8
+    },
+    "top_issue_categories": {
+        "Civil \/ Carpentry": 27282,
+        "Electrical \/ Power": 16336,
+        "General \/ Other": 14680,
+        "Plumbing \/ Leakage": 6939,
+        "AC \/ Cooling Failure": 2842,
+        "Network \/ IT Infra": 2687,
+        "Pest \/ Hygiene": 1499,
+        "CCTV \/ Security": 1289,
+        "UPS \/ Power Backup": 1009,
+        "Fire & Safety": 845,
+        "Lift \/ Elevator": 81
+    },
+    "top_corporates": [
+        {
+            "id": 8,
+            "name": "Urban Company",
+            "tickets": 29032,
+            "industry": "Telecom & Media",
+            "share": "49.7%"
+        },
+        {
+            "id": 152,
+            "name": "TS - JONES LANG LASALLE PROPERTY CONSULTANTS (INDIA) PRIVATE LIMITED",
+            "tickets": 5497,
+            "industry": "Real Estate & FM",
+            "share": "9.4%"
+        },
+        {
+            "id": 3,
+            "name": "Techxpert Facilities India Private Limited",
+            "tickets": 3512,
+            "industry": "IT & Technology",
+            "share": "6%"
+        },
+        {
+            "id": 47,
+            "name": "F1 INFO SOLUTIONS AND SERVICES PVT.LTD",
+            "tickets": 2293,
+            "industry": "IT & Technology",
+            "share": "3.9%"
+        },
+        {
+            "id": 21,
+            "name": "DMI Finance Private Limited",
+            "tickets": 1895,
+            "industry": "Banking & Financial Services",
+            "share": "3.2%"
+        },
+        {
+            "id": 18,
+            "name": "SMARTWORK COWORKING SPACE PVT. LTD",
+            "tickets": 1215,
+            "industry": "Real Estate & FM",
+            "share": "2.1%"
+        },
+        {
+            "id": 311,
+            "name": "Corporate #311",
+            "tickets": 1098,
+            "industry": "Corporate \/ Other",
+            "share": "1.9%"
+        },
+        {
+            "id": 183,
+            "name": "IKEA INDIA PVT. LTD.",
+            "tickets": 876,
+            "industry": "Corporate \/ Other",
+            "share": "1.5%"
+        },
+        {
+            "id": 278,
+            "name": "Walson-ICRA",
+            "tickets": 710,
+            "industry": "Corporate \/ Other",
+            "share": "1.2%"
+        },
+        {
+            "id": 49,
+            "name": "SKOOTR GLOBAL PRIVATE LIMITED",
+            "tickets": 650,
+            "industry": "IT & Technology",
+            "share": "1.1%"
+        }
+    ],
+    "focus_fm_vertical": {
+        "name": "Carpentry",
+        "tickets": 11654,
+        "share": "19.9%"
+    },
+    "iot_roadmap": [
+        {
+            "service_vertical": "Carpentry",
+            "ticket_count": 11654,
+            "share": "19.9%",
+            "iot_solutions": [
+                {
+                    "technology": "Smart HVAC IoT Sensors + BMS Gateway",
+                    "sensors": "Supply\/Return temp, humidity, CO2, filter pressure, compressor runtime",
+                    "platform": "MQTT\/Modbus to TechXpert ERP; predictive PM alerts",
+                    "benefit": "30-40% reduction in breakdown tickets; auto ticket before user complaint"
+                },
+                {
+                    "technology": "Smart Energy & Power Quality Monitoring",
+                    "sensors": "Smart MCB\/energy meters, voltage\/current sensors, circuit branch monitoring",
+                    "platform": "Real-time load dashboard; trip\/root-cause alerts to ERP ticket",
+                    "benefit": "Prevent outages; optimize energy; reduce electrician reactive calls"
+                },
+                {
+                    "technology": "Water Leak & Flow IoT System",
+                    "sensors": "Acoustic\/leak rope sensors, flow meters, water level, pressure transducers",
+                    "platform": "Zone-based alerts mapped to branch\/floor in ERP",
+                    "benefit": "Early leak detection avoids ceiling damage & multi-floor incidents"
+                },
+                {
+                    "technology": "Connected Fire & Life Safety Monitoring",
+                    "sensors": "Smart smoke\/heat, panel health, extinguisher pressure tags (NFC\/LoRa)",
+                    "platform": "Compliance dashboard + auto PPM ticket scheduling",
+                    "benefit": "Audit-ready logs; reduced compliance failures"
+                },
+                {
+                    "technology": "UPS\/DG Remote Monitoring",
+                    "sensors": "Battery health, load %, fuel level, runtime, temperature",
+                    "platform": "Critical alert escalation in ERP with SLA",
+                    "benefit": "Avoid downtime in banking\/IT clients"
+                },
+                {
+                    "technology": "Smart Security & Video Analytics",
+                    "sensors": "Camera health ping, edge AI analytics, door access logs",
+                    "platform": "Unified FM dashboard; auto ticket on device offline",
+                    "benefit": "Proactive NVR\/camera uptime monitoring"
+                },
+                {
+                    "technology": "Elevator IoT Condition Monitoring",
+                    "sensors": "Vibration, door cycle count, ride quality, fault code API",
+                    "platform": "OEM API + ERP integration for predictive maintenance",
+                    "benefit": "Reduce trapped-passenger incidents"
+                },
+                {
+                    "technology": "Environmental & Occupancy IoT",
+                    "sensors": "Air quality (VOC\/CO2), occupancy, smart trap monitoring",
+                    "platform": "Scheduled service triggers based on usage\/IAQ thresholds",
+                    "benefit": "Data-driven housekeeping & pest control routing"
+                }
+            ]
+        },
+        {
+            "service_vertical": "Electrical",
+            "ticket_count": 9370,
+            "share": "16%",
+            "iot_solutions": [
+                {
+                    "technology": "Smart HVAC IoT Sensors + BMS Gateway",
+                    "sensors": "Supply\/Return temp, humidity, CO2, filter pressure, compressor runtime",
+                    "platform": "MQTT\/Modbus to TechXpert ERP; predictive PM alerts",
+                    "benefit": "30-40% reduction in breakdown tickets; auto ticket before user complaint"
+                },
+                {
+                    "technology": "Smart Energy & Power Quality Monitoring",
+                    "sensors": "Smart MCB\/energy meters, voltage\/current sensors, circuit branch monitoring",
+                    "platform": "Real-time load dashboard; trip\/root-cause alerts to ERP ticket",
+                    "benefit": "Prevent outages; optimize energy; reduce electrician reactive calls"
+                },
+                {
+                    "technology": "Water Leak & Flow IoT System",
+                    "sensors": "Acoustic\/leak rope sensors, flow meters, water level, pressure transducers",
+                    "platform": "Zone-based alerts mapped to branch\/floor in ERP",
+                    "benefit": "Early leak detection avoids ceiling damage & multi-floor incidents"
+                },
+                {
+                    "technology": "Connected Fire & Life Safety Monitoring",
+                    "sensors": "Smart smoke\/heat, panel health, extinguisher pressure tags (NFC\/LoRa)",
+                    "platform": "Compliance dashboard + auto PPM ticket scheduling",
+                    "benefit": "Audit-ready logs; reduced compliance failures"
+                },
+                {
+                    "technology": "UPS\/DG Remote Monitoring",
+                    "sensors": "Battery health, load %, fuel level, runtime, temperature",
+                    "platform": "Critical alert escalation in ERP with SLA",
+                    "benefit": "Avoid downtime in banking\/IT clients"
+                },
+                {
+                    "technology": "Smart Security & Video Analytics",
+                    "sensors": "Camera health ping, edge AI analytics, door access logs",
+                    "platform": "Unified FM dashboard; auto ticket on device offline",
+                    "benefit": "Proactive NVR\/camera uptime monitoring"
+                },
+                {
+                    "technology": "Elevator IoT Condition Monitoring",
+                    "sensors": "Vibration, door cycle count, ride quality, fault code API",
+                    "platform": "OEM API + ERP integration for predictive maintenance",
+                    "benefit": "Reduce trapped-passenger incidents"
+                },
+                {
+                    "technology": "Environmental & Occupancy IoT",
+                    "sensors": "Air quality (VOC\/CO2), occupancy, smart trap monitoring",
+                    "platform": "Scheduled service triggers based on usage\/IAQ thresholds",
+                    "benefit": "Data-driven housekeeping & pest control routing"
+                }
+            ]
+        },
+        {
+            "service_vertical": "Painting",
+            "ticket_count": 4581,
+            "share": "7.8%",
+            "iot_solutions": [
+                {
+                    "technology": "Smart HVAC IoT Sensors + BMS Gateway",
+                    "sensors": "Supply\/Return temp, humidity, CO2, filter pressure, compressor runtime",
+                    "platform": "MQTT\/Modbus to TechXpert ERP; predictive PM alerts",
+                    "benefit": "30-40% reduction in breakdown tickets; auto ticket before user complaint"
+                },
+                {
+                    "technology": "Smart Energy & Power Quality Monitoring",
+                    "sensors": "Smart MCB\/energy meters, voltage\/current sensors, circuit branch monitoring",
+                    "platform": "Real-time load dashboard; trip\/root-cause alerts to ERP ticket",
+                    "benefit": "Prevent outages; optimize energy; reduce electrician reactive calls"
+                },
+                {
+                    "technology": "Water Leak & Flow IoT System",
+                    "sensors": "Acoustic\/leak rope sensors, flow meters, water level, pressure transducers",
+                    "platform": "Zone-based alerts mapped to branch\/floor in ERP",
+                    "benefit": "Early leak detection avoids ceiling damage & multi-floor incidents"
+                },
+                {
+                    "technology": "Connected Fire & Life Safety Monitoring",
+                    "sensors": "Smart smoke\/heat, panel health, extinguisher pressure tags (NFC\/LoRa)",
+                    "platform": "Compliance dashboard + auto PPM ticket scheduling",
+                    "benefit": "Audit-ready logs; reduced compliance failures"
+                },
+                {
+                    "technology": "UPS\/DG Remote Monitoring",
+                    "sensors": "Battery health, load %, fuel level, runtime, temperature",
+                    "platform": "Critical alert escalation in ERP with SLA",
+                    "benefit": "Avoid downtime in banking\/IT clients"
+                },
+                {
+                    "technology": "Smart Security & Video Analytics",
+                    "sensors": "Camera health ping, edge AI analytics, door access logs",
+                    "platform": "Unified FM dashboard; auto ticket on device offline",
+                    "benefit": "Proactive NVR\/camera uptime monitoring"
+                },
+                {
+                    "technology": "Elevator IoT Condition Monitoring",
+                    "sensors": "Vibration, door cycle count, ride quality, fault code API",
+                    "platform": "OEM API + ERP integration for predictive maintenance",
+                    "benefit": "Reduce trapped-passenger incidents"
+                },
+                {
+                    "technology": "Environmental & Occupancy IoT",
+                    "sensors": "Air quality (VOC\/CO2), occupancy, smart trap monitoring",
+                    "platform": "Scheduled service triggers based on usage\/IAQ thresholds",
+                    "benefit": "Data-driven housekeeping & pest control routing"
+                }
+            ]
+        },
+        {
+            "service_vertical": "(Blank)",
+            "ticket_count": 4306,
+            "share": "7.4%",
+            "iot_solutions": [
+                {
+                    "technology": "Smart HVAC IoT Sensors + BMS Gateway",
+                    "sensors": "Supply\/Return temp, humidity, CO2, filter pressure, compressor runtime",
+                    "platform": "MQTT\/Modbus to TechXpert ERP; predictive PM alerts",
+                    "benefit": "30-40% reduction in breakdown tickets; auto ticket before user complaint"
+                },
+                {
+                    "technology": "Smart Energy & Power Quality Monitoring",
+                    "sensors": "Smart MCB\/energy meters, voltage\/current sensors, circuit branch monitoring",
+                    "platform": "Real-time load dashboard; trip\/root-cause alerts to ERP ticket",
+                    "benefit": "Prevent outages; optimize energy; reduce electrician reactive calls"
+                },
+                {
+                    "technology": "Water Leak & Flow IoT System",
+                    "sensors": "Acoustic\/leak rope sensors, flow meters, water level, pressure transducers",
+                    "platform": "Zone-based alerts mapped to branch\/floor in ERP",
+                    "benefit": "Early leak detection avoids ceiling damage & multi-floor incidents"
+                },
+                {
+                    "technology": "Connected Fire & Life Safety Monitoring",
+                    "sensors": "Smart smoke\/heat, panel health, extinguisher pressure tags (NFC\/LoRa)",
+                    "platform": "Compliance dashboard + auto PPM ticket scheduling",
+                    "benefit": "Audit-ready logs; reduced compliance failures"
+                },
+                {
+                    "technology": "UPS\/DG Remote Monitoring",
+                    "sensors": "Battery health, load %, fuel level, runtime, temperature",
+                    "platform": "Critical alert escalation in ERP with SLA",
+                    "benefit": "Avoid downtime in banking\/IT clients"
+                },
+                {
+                    "technology": "Smart Security & Video Analytics",
+                    "sensors": "Camera health ping, edge AI analytics, door access logs",
+                    "platform": "Unified FM dashboard; auto ticket on device offline",
+                    "benefit": "Proactive NVR\/camera uptime monitoring"
+                },
+                {
+                    "technology": "Elevator IoT Condition Monitoring",
+                    "sensors": "Vibration, door cycle count, ride quality, fault code API",
+                    "platform": "OEM API + ERP integration for predictive maintenance",
+                    "benefit": "Reduce trapped-passenger incidents"
+                },
+                {
+                    "technology": "Environmental & Occupancy IoT",
+                    "sensors": "Air quality (VOC\/CO2), occupancy, smart trap monitoring",
+                    "platform": "Scheduled service triggers based on usage\/IAQ thresholds",
+                    "benefit": "Data-driven housekeeping & pest control routing"
+                }
+            ]
+        },
+        {
+            "service_vertical": "Electrician",
+            "ticket_count": 4001,
+            "share": "6.8%",
+            "iot_solutions": [
+                {
+                    "technology": "Smart HVAC IoT Sensors + BMS Gateway",
+                    "sensors": "Supply\/Return temp, humidity, CO2, filter pressure, compressor runtime",
+                    "platform": "MQTT\/Modbus to TechXpert ERP; predictive PM alerts",
+                    "benefit": "30-40% reduction in breakdown tickets; auto ticket before user complaint"
+                },
+                {
+                    "technology": "Smart Energy & Power Quality Monitoring",
+                    "sensors": "Smart MCB\/energy meters, voltage\/current sensors, circuit branch monitoring",
+                    "platform": "Real-time load dashboard; trip\/root-cause alerts to ERP ticket",
+                    "benefit": "Prevent outages; optimize energy; reduce electrician reactive calls"
+                },
+                {
+                    "technology": "Water Leak & Flow IoT System",
+                    "sensors": "Acoustic\/leak rope sensors, flow meters, water level, pressure transducers",
+                    "platform": "Zone-based alerts mapped to branch\/floor in ERP",
+                    "benefit": "Early leak detection avoids ceiling damage & multi-floor incidents"
+                },
+                {
+                    "technology": "Connected Fire & Life Safety Monitoring",
+                    "sensors": "Smart smoke\/heat, panel health, extinguisher pressure tags (NFC\/LoRa)",
+                    "platform": "Compliance dashboard + auto PPM ticket scheduling",
+                    "benefit": "Audit-ready logs; reduced compliance failures"
+                },
+                {
+                    "technology": "UPS\/DG Remote Monitoring",
+                    "sensors": "Battery health, load %, fuel level, runtime, temperature",
+                    "platform": "Critical alert escalation in ERP with SLA",
+                    "benefit": "Avoid downtime in banking\/IT clients"
+                },
+                {
+                    "technology": "Smart Security & Video Analytics",
+                    "sensors": "Camera health ping, edge AI analytics, door access logs",
+                    "platform": "Unified FM dashboard; auto ticket on device offline",
+                    "benefit": "Proactive NVR\/camera uptime monitoring"
+                },
+                {
+                    "technology": "Elevator IoT Condition Monitoring",
+                    "sensors": "Vibration, door cycle count, ride quality, fault code API",
+                    "platform": "OEM API + ERP integration for predictive maintenance",
+                    "benefit": "Reduce trapped-passenger incidents"
+                },
+                {
+                    "technology": "Environmental & Occupancy IoT",
+                    "sensors": "Air quality (VOC\/CO2), occupancy, smart trap monitoring",
+                    "platform": "Scheduled service triggers based on usage\/IAQ thresholds",
+                    "benefit": "Data-driven housekeeping & pest control routing"
+                }
+            ]
+        }
+    ],
+    "sample_messages": [
+        {
+            "service": "`Service`",
+            "subservice": "`Subservice`",
+            "message": "`Message`",
+            "corporate": "Corporate #0",
+            "categories": [
+                "General \/ Other"
+            ]
+        },
+        {
+            "service": "Electrician",
+            "subservice": "Festive Lights Installation",
+            "message": "1phase Only Working",
+            "corporate": "Urban Company",
+            "categories": [
+                "Electrical \/ Power"
+            ]
+        },
+        {
+            "service": "Electrician",
+            "subservice": "Festive Lights Installation",
+            "message": "Ceiling Light Not Working",
+            "corporate": "Urban Company",
+            "categories": [
+                "Electrical \/ Power",
+                "Civil \/ Carpentry"
+            ]
+        },
+        {
+            "service": "Electrician",
+            "subservice": "Festive Lights Installation",
+            "message": "Power Issue",
+            "corporate": "Urban Company",
+            "categories": [
+                "Electrical \/ Power"
+            ]
+        },
+        {
+            "service": "Carpentry",
+            "subservice": "Table \/ Chair Wheels Fitting",
+            "message": "CHAIR REPAIR",
+            "corporate": "Urban Company",
+            "categories": [
+                "Civil \/ Carpentry"
+            ]
+        },
+        {
+            "service": "Plumber",
+            "subservice": "Waste Pipe Leakage",
+            "message": "3rd floor cabin to 2nd floor water leakage",
+            "corporate": "EFS-YES BANK",
+            "categories": [
+                "Plumbing \/ Leakage"
+            ]
+        },
+        {
+            "service": "Electrician",
+            "subservice": "Festive Lights Installation",
+            "message": "22 Lights Not Working",
+            "corporate": "Urban Company",
+            "categories": [
+                "Electrical \/ Power"
+            ]
+        },
+        {
+            "service": "OTHER",
+            "subservice": "OTHER",
+            "message": "Rat Is Dead On The Pop  Near Entrance, It Is Smelling Very Badly",
+            "corporate": "Urban Company",
+            "categories": [
+                "Pest \/ Hygiene"
+            ]
+        },
+        {
+            "service": "Electrician",
+            "subservice": "Book An Electrician",
+            "message": "wynk music panel Removed",
+            "corporate": "Urban Company",
+            "categories": [
+                "Electrical \/ Power"
+            ]
+        },
+        {
+            "service": "Electrician",
+            "subservice": "Book An Electrician",
+            "message": "electric Meter need to cover",
+            "corporate": "Urban Company",
+            "categories": [
+                "Electrical \/ Power"
+            ]
+        },
+        {
+            "service": "Painting",
+            "subservice": "Oil Paint",
+            "message": "paint work required for pillar for front side.",
+            "corporate": "Urban Company",
+            "categories": [
+                "Civil \/ Carpentry"
+            ]
+        },
+        {
+            "service": "OTHER",
+            "subservice": "OTHER",
+            "message": "Backoffice Wall",
+            "corporate": "Urban Company",
+            "categories": [
+                "Civil \/ Carpentry"
+            ]
+        },
+        {
+            "service": "OTHER",
+            "subservice": "OTHER",
+            "message": "Back Office Wall",
+            "corporate": "Urban Company",
+            "categories": [
+                "Civil \/ Carpentry"
+            ]
+        },
+        {
+            "service": "Electrician",
+            "subservice": "Exhaust Fan Installation",
+            "message": "Exhaust fan Not Working",
+            "corporate": "Urban Company",
+            "categories": [
+                "Electrical \/ Power"
+            ]
+        },
+        {
+            "service": "Plumber",
+            "subservice": "Waste Pipe Leakage",
+            "message": "Washroom Pipe Leakage",
+            "corporate": "Urban Company",
+            "categories": [
+                "Plumbing \/ Leakage"
+            ]
+        },
+        {
+            "service": "Civil Work",
+            "subservice": "FLOOR REPAIR",
+            "message": "False Ceiling To Be Closed",
+            "corporate": "Urban Company",
+            "categories": [
+                "Civil \/ Carpentry"
+            ]
+        },
+        {
+            "service": "OTHER",
+            "subservice": "OTHER",
+            "message": "Again Pop Cracked Need To Correct",
+            "corporate": "Urban Company",
+            "categories": [
+                "Network \/ IT Infra"
+            ]
+        },
+        {
+            "service": "Electrician",
+            "subservice": "False Ceiling Light Installation",
+            "message": "Sealing Light",
+            "corporate": "Urban Company",
+            "categories": [
+                "Electrical \/ Power",
+                "Civil \/ Carpentry"
+            ]
+        },
+        {
+            "service": "1",
+            "subservice": "",
+            "message": "Split AC unit - GEUST HOUSE  Room No.105 - Carrier - (  Compress & Gas leakage  )",
+            "corporate": "CBRE South Asia Private Limited",
+            "categories": [
+                "AC \/ Cooling Failure",
+                "Plumbing \/ Leakage"
+            ]
+        },
+        {
+            "service": "1",
+            "subservice": "",
+            "message": "Split AC unit - New GEUST HOUSE  Room No.110 - Carrier - CAC518DN3RS ( Guest is occupies but Outdoor having less gas )",
+            "corporate": "CBRE South Asia Private Limited",
+            "categories": [
+                "Civil \/ Carpentry"
+            ]
+        }
+    ]
+}

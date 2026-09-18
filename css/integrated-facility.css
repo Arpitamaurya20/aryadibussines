@@ -1,0 +1,845 @@
+/* ==========================================================================
+   INTEGRATED FACILITY MANAGEMENT SPECIFIC STYLES
+   Theme: Charcoal Slate (#0F172A), Sky Blue (#3D8ECF), Gold Accent (#C29D5D)
+   ========================================================================== */
+
+:root {
+    --primary-ifm: #0F172A;
+    --primary-dark: #0b0f19;
+    --accent-ifm: #3d8ecf;
+    --accent-hover: #2975b3;
+    --accent-gold: #C29D5D;
+    --accent-gold-light: #F7F4EB;
+    --bg-light: #F8FAFC;
+    --bg-white: #ffffff;
+    --border-color: #E2E8F0;
+    --border-light: rgba(255, 255, 255, 0.08);
+    --text-dark: #1E293B;
+    --text-muted: #475569;
+    --text-light: #94a3b8;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 8px 10px -6px rgba(15, 23, 42, 0.02);
+    --shadow-premium: 0 20px 40px -10px rgba(61, 142, 207, 0.12);
+    --shadow-gold: 0 20px 40px -10px rgba(194, 157, 93, 0.15);
+    --transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* ==========================================================================
+   BREADCRUMBS
+   ========================================================================== */
+.breadcrumbs-section {
+    background-color: var(--bg-white);
+    padding: 20px 0 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.breadcrumbs-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.breadcrumbs-list a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.breadcrumbs-list a:hover {
+    color: var(--accent-ifm);
+}
+
+.breadcrumbs-list .separator {
+    color: var(--text-light);
+}
+
+.breadcrumbs-list .active-crumb {
+    color: var(--primary-ifm);
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.ifm-hero-section {
+    background-color: var(--bg-white);
+    padding: 100px 0 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Gradient mesh background effect */
+.ifm-hero-section::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -10%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(61, 142, 207, 0.04) 0%, rgba(255, 255, 255, 0) 70%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.ifm-subtitle {
+    color: var(--accent-ifm);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.ifm-title {
+    font-size: 3.25rem;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--primary-ifm);
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+}
+
+.ifm-desc {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+}
+
+.ifm-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-ifm-proposal {
+    display: inline-block;
+    background-color: var(--primary-ifm);
+    color: var(--bg-white);
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    border: 2px solid var(--primary-ifm);
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
+
+.btn-ifm-proposal:hover {
+    background-color: var(--accent-ifm);
+    border-color: var(--accent-ifm);
+    color: var(--bg-white);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(61, 142, 207, 0.25);
+}
+
+.btn-ifm-outline {
+    display: inline-block;
+    border: 2px solid var(--primary-ifm);
+    color: var(--primary-ifm);
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: transparent;
+    transition: var(--transition);
+}
+
+.btn-ifm-outline:hover {
+    background-color: var(--primary-ifm);
+    color: var(--bg-white);
+    transform: translateY(-2px);
+}
+
+.ifm-hero-img-box {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.15);
+    border: 1px solid var(--border-color);
+    position: relative;
+    z-index: 2;
+}
+
+.ifm-hero-img-box img {
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.ifm-hero-img-box:hover img {
+    transform: scale(1.03);
+}
+
+/* ==========================================================================
+   STATS BANNER (Floating Style)
+   ========================================================================== */
+.ifm-stats-banner {
+    background-color: var(--primary-ifm);
+    padding: 60px 0;
+    position: relative;
+    z-index: 10;
+    margin-top: -60px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.3);
+}
+
+.ifm-stat-col {
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ifm-stat-col:last-child {
+    border-right: none;
+}
+
+.ifm-stat-item {
+    text-align: center;
+    padding: 0 15px;
+    transition: var(--transition);
+}
+
+.ifm-stat-item:hover {
+    transform: translateY(-4px);
+}
+
+.ifm-stat-icon-wrapper {
+    margin-bottom: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ifm-stat-icon-wrapper i {
+    font-size: 26px;
+    color: var(--accent-ifm);
+}
+
+.ifm-stat-number {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: var(--bg-white);
+    margin-bottom: 8px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.ifm-stat-label {
+    font-size: 11px;
+    color: var(--text-light);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+   THE IFM ADVANTAGE
+   ========================================================================== */
+.ifm-advantage-section {
+    padding: 140px 0 100px;
+    background-color: var(--bg-light);
+}
+
+.ifm-advantage-card {
+    background-color: var(--bg-white);
+    border-radius: 20px;
+    padding: 40px;
+    height: 100%;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.ifm-advantage-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-ifm);
+    box-shadow: var(--shadow-premium);
+}
+
+.ifm-advantage-card-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primary-ifm);
+    margin-bottom: 18px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+/* Decorative line under card titles */
+.ifm-advantage-card-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: var(--accent-ifm);
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+.ifm-advantage-card:hover .ifm-advantage-card-title::after {
+    width: 60px;
+    background-color: var(--accent-gold);
+}
+
+.ifm-advantage-card-desc {
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* ==========================================================================
+   HARD SERVICES (ENGINEERING)
+   ========================================================================== */
+.ifm-engineering-section {
+    padding: 100px 0;
+    background-color: var(--bg-white);
+}
+
+.ifm-engineering-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-ifm);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.ifm-engineering-lead {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--accent-ifm);
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.ifm-engineering-desc {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--text-muted);
+    margin-bottom: 36px;
+}
+
+.ifm-engineering-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ifm-engineering-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.ifm-engineering-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: rgba(61, 142, 207, 0.08);
+    color: var(--accent-ifm);
+    font-size: 16px;
+    flex-shrink: 0;
+    transition: var(--transition);
+}
+
+.ifm-engineering-item:hover .ifm-engineering-icon {
+    background-color: var(--accent-ifm);
+    color: var(--bg-white);
+}
+
+.ifm-engineering-text {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.ifm-engineering-text strong {
+    color: var(--primary-ifm);
+    font-weight: 700;
+}
+
+.ifm-img-box-styled {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+}
+
+.ifm-img-box-styled img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.ifm-img-box-styled:hover img {
+    transform: scale(1.04);
+}
+
+/* ==========================================================================
+   SOFT SERVICES
+   ========================================================================== */
+.ifm-soft-services-section {
+    padding: 100px 0;
+    background-color: var(--bg-light);
+    border-top: 1px solid var(--border-color);
+}
+
+.ifm-soft-services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ifm-soft-services-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.ifm-soft-services-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: rgba(194, 157, 93, 0.1);
+    color: var(--accent-gold);
+    font-size: 16px;
+    flex-shrink: 0;
+    transition: var(--transition);
+}
+
+.ifm-soft-services-item:hover .ifm-soft-services-icon {
+    background-color: var(--accent-gold);
+    color: var(--bg-white);
+}
+
+.ifm-soft-services-text {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.ifm-soft-services-text strong {
+    color: var(--primary-ifm);
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   INTEGRATED GOVERNANCE
+   ========================================================================== */
+.ifm-governance-section {
+    padding: 100px 0;
+    background-color: var(--bg-white);
+    border-top: 1px solid var(--border-color);
+}
+
+.ifm-governance-card {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 40px 30px;
+    height: 100%;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Accent top-bar for governance cards */
+.ifm-governance-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--border-color);
+    transition: var(--transition);
+}
+
+.ifm-governance-card:hover::before {
+    background-color: var(--accent-gold);
+}
+
+.ifm-governance-card:hover {
+    transform: translateY(-6px);
+    background-color: var(--bg-white);
+    border-color: var(--accent-gold);
+    box-shadow: var(--shadow-gold);
+}
+
+.ifm-governance-icon-box {
+    width: 48px;
+    height: 48px;
+    background-color: var(--accent-gold-light);
+    color: var(--accent-gold);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    font-size: 20px;
+    transition: var(--transition);
+}
+
+.ifm-governance-card:hover .ifm-governance-icon-box {
+    background-color: var(--accent-gold);
+    color: var(--bg-white);
+}
+
+.ifm-governance-card-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--primary-ifm);
+    margin-bottom: 20px;
+}
+
+.ifm-governance-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ifm-governance-item {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    position: relative;
+    padding-left: 20px;
+}
+
+.ifm-governance-item::before {
+    content: "•";
+    color: var(--accent-gold);
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* ==========================================================================
+   PERFORMANCE OUTCOMES (Dark Dashboard Section)
+   ========================================================================== */
+.ifm-outcomes-section {
+    padding: 100px 0;
+    background-color: var(--primary-ifm);
+    color: var(--bg-white);
+    position: relative;
+    overflow: hidden;
+}
+
+.ifm-outcomes-section::before {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(194, 157, 93, 0.04) 0%, rgba(0, 0, 0, 0) 70%);
+    pointer-events: none;
+}
+
+.ifm-outcome-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    padding: 40px 30px;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    transition: var(--transition);
+}
+
+.ifm-outcome-card:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: var(--accent-gold);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(194, 157, 93, 0.1);
+}
+
+.ifm-outcome-value {
+    font-size: 3.25rem;
+    font-weight: 800;
+    color: var(--accent-gold);
+    margin-bottom: 16px;
+    line-height: 1;
+    letter-spacing: -1.5px;
+}
+
+.ifm-outcome-title {
+    font-size: 1.15rem;
+    font-weight: 750;
+    color: var(--bg-white);
+    margin-bottom: 12px;
+}
+
+.ifm-outcome-desc {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ==========================================================================
+   ENERGY & TECHNOLOGY
+   ========================================================================== */
+.ifm-tech-section {
+    padding: 100px 0;
+    background-color: var(--bg-white);
+}
+
+/* ==========================================================================
+   CHAOS TO CLARITY SECTION
+   ========================================================================== */
+.ifm-chaos-section {
+    padding: 100px 0;
+    background-color: var(--bg-light);
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    position: relative;
+}
+
+.ifm-chaos-text {
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 1.6;
+    color: var(--primary-ifm);
+    max-width: 900px;
+    margin: 0 auto 40px;
+    letter-spacing: -0.5px;
+}
+
+.ifm-chaos-section .btn-ifm-outline {
+    border-color: var(--primary-ifm);
+    color: var(--primary-ifm);
+}
+
+.ifm-chaos-section .btn-ifm-outline:hover {
+    background-color: var(--primary-ifm);
+    color: var(--bg-white);
+}
+
+/* ==========================================================================
+   INDUSTRIES WE SERVE
+   ========================================================================== */
+.ifm-industries-section {
+    padding: 100px 0;
+    background-color: var(--bg-white);
+}
+
+.ifm-industry-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 40px;
+}
+
+.ifm-industry-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-light);
+    border-radius: 50px;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--text-muted);
+    transition: var(--transition);
+}
+
+.ifm-industry-badge i {
+    color: var(--accent-ifm);
+    font-size: 16px;
+}
+
+.ifm-industry-badge:hover {
+    border-color: var(--accent-ifm);
+    color: var(--accent-ifm);
+    background-color: rgba(61, 142, 207, 0.05);
+    transform: translateY(-2px);
+    cursor: default;
+}
+
+/* ==========================================================================
+   FINAL CALL TO ACTION
+   ========================================================================== */
+.ifm-final-banner {
+    padding: 100px 0;
+    background-color: var(--primary-dark);
+    color: var(--bg-white);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.ifm-final-banner::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(61, 142, 207, 0.03) 0%, rgba(0, 0, 0, 0) 70%);
+    pointer-events: none;
+}
+
+.ifm-final-title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    color: var(--bg-white);
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+}
+
+.ifm-final-desc {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 750px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+.ifm-final-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-final-white {
+    display: inline-block;
+    background-color: var(--bg-white);
+    color: var(--primary-dark);
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    border: 2px solid var(--bg-white);
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-final-white:hover {
+    background-color: var(--accent-gold);
+    border-color: var(--accent-gold);
+    color: var(--bg-white);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(194, 157, 93, 0.3);
+}
+
+.btn-final-blue {
+    display: inline-block;
+    border: 2px solid var(--accent-ifm);
+    color: var(--accent-ifm);
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: transparent;
+    transition: var(--transition);
+}
+
+.btn-final-blue:hover {
+    background-color: var(--accent-ifm);
+    color: var(--bg-white);
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   RESPONSIVENESS MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 991.98px) {
+    .ifm-hero-section {
+        padding: 60px 0 80px;
+    }
+
+    .ifm-title {
+        font-size: 2.5rem;
+    }
+
+    .ifm-stats-banner {
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    .ifm-stat-col {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding-bottom: 24px;
+    }
+
+    .ifm-stat-col:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .ifm-advantage-section {
+        padding: 80px 0 60px;
+    }
+
+    .ifm-engineering-section,
+    .ifm-soft-services-section,
+    .ifm-governance-section,
+    .ifm-outcomes-section,
+    .ifm-tech-section,
+    .ifm-chaos-section,
+    .ifm-industries-section,
+    .ifm-final-banner {
+        padding: 70px 0;
+    }
+
+    .ifm-engineering-title {
+        font-size: 2rem;
+    }
+
+    .ifm-final-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .ifm-title {
+        font-size: 2.25rem;
+    }
+
+    .ifm-chaos-text {
+        font-size: 1.35rem;
+    }
+
+    .ifm-actions,
+    .ifm-final-actions {
+        flex-direction: column;
+    }
+
+    .btn-ifm-proposal,
+    .btn-ifm-outline,
+    .btn-final-white,
+    .btn-final-blue {
+        width: 100%;
+        text-align: center;
+    }
+}

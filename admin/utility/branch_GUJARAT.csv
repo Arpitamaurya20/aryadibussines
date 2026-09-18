@@ -1,0 +1,331 @@
+ID,CompanyID,BranchSite,BranchCode,BranchEmail,Branch Account Manager 
+7,3,VI Store(Adajan- Surat),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+8,3,VI Store (Anandnagar - Ahmedabad),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+9,3,VI Store (Ankleshwar - Baroda),FOCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+10,3,VI Store (Ashram road - Ahmedabad),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+11,3,VI Store (Bapunagar2 -Ahmedabad),FOCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+12,3,Vi CRS (Race Course - Baroda),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+13,3,VI Store (Bharuch - Baroda),FOCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+14,3,VI Store (Bhavnagar),FOCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+15,3,VI Store (Bhuj),FOCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+16,3,Vi Store (Bopal - Ahmedabad),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+17,3,Vi Store (Chandkheda - Ahmedabad),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+18,3,VI Store (Dhaber Road - Rajkot),FOCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+19,3,VI Store (Gandhidham),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+20,3,VI Store (Gandhinagar - Ahmedabad),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+21,3,VI Store (Ghodasar - Ahmedabad),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+22,3,VI Store (Godhra - Baroda),FOCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+23,3,VI Store (Gotri Road - Baroda),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+24,3,VI Store (Gurukul - Ahmedabad),FOCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+25,3,VI Store (Himmatnagar),FOCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+27,3,VI Store (Jamnagar),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+28,3,VI Store (Junagadh),FOCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+29,3,VI Store (Kalawad - Rajkot),FOCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+30,3,VI Store (Karelibag - Baroda),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+31,3,VI Store (Makarpura - Baroda),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+32,3,Vi CRS (Maninagar - Ahmedabad),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+48,3,VI Store (Nadiad - Ahmedabad),FOCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+49,3,VI Store (Naranpura - Ahmedabad),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+50,3,VI Store (Naroda - Ahmedabad),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+51,3,Vi CRS (Navrangpura - Ahmedabad),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+52,3,VI Store (Navsari - Surat),FOCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+53,3,VI Store (New Cloth Market - Ahmedabad),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+54,3,VI Store (Nizampura - Baroda),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+55,3,VI Store (OP Road - Baroda),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+56,3,VI Store (Paldi - Ahmedabad),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+57,3,VI Store (Parvatpatiya - Surat),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+58,3,VI Store (Raopura - Baroda),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+59,3,Vi CRS (Relief Road - Ahmedabad),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+60,3,VI Store (Ring Road - Surat),FOCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+61,3,Vi CRS (Ring Road - Surat),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+62,3,VI Store (Sarthana - Surat),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+63,3,Vi CRS (Shahibaug - Ahmedabad),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+64,3,VI Store (Shivranjani - Ahmedabad),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+65,3,VI Store (Stadium Road - Ahmedabad),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+66,3,VI Store (Surendranagar - Rajkot),FOCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+67,3,VI Store (Vapi),FOCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+68,3,VI Store (Varachha - Surat),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+69,3,VI Store (Vastrapur - Ahmedabad),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+70,3,VI Store (Veraval),FOCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+71,3,VI Store (Yagnik Road - Rajkot),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+72,3,VI Store (Yogi Chowk - Surat),FOCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+76,3,VI Store (Mehsana - COCO),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+77,3,VI Store (Randher - Surat),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+78,3,VI Store (Vesu - Surat),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+79,3,VI Store (Varachha 2 - Surat),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+80,3,VI Store (Thaltej - Ahmedabad),COCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+81,3,VI Store (Morbi - Rajkot),FOCO,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+87,8,JLL-AIRTEL-R&M-Nextgen Karelibaug-GUJ,11200-Nextgen Karelibaug,AORfacilities.gujarat@airtel.com,HELI PATEL
+94,8,JLL-AIRTEL-R&M-Nextgen Anand-GUJ,11337-Nextgen Anand,AORfacilities.gujarat@airtel.com,HELI PATEL
+104,8,JLL-AIRTEL-R&M-Nextgen Kalavad-GUJ,11458-Nextgen Kalavad,AORfacilities.gujarat@airtel.com,HELI PATEL
+109,8,JLL-AIRTEL-R&M-Nextgen Sciencecity-GUJ,11493-Nextgen Sciencecity,AORfacilities.gujarat@airtel.com,HELI PATEL
+112,8,JLL-AIRTEL-R&M-Nextgen Anandmahel-GUJ,11557-Nextgen Anandmahel,AORfacilities.gujarat@airtel.com,HELI PATEL
+130,8,JLL-AIRTEL-R&M-Maninagar AHD-GUJ,11884-Maninagar AHD,AORfacilities.gujarat@airtel.com,HELI PATEL
+137,8,JLL-AIRTEL-R&M-Natucircle VAD-GUJ,11990-Natucircle VAD,AORfacilities.gujarat@airtel.com,HELI PATEL
+242,8,JLL-AIRTEL-R&M-Shivranjani AHD-GUJ,16598-Shivranjani AHD,AORfacilities.gujarat@airtel.com,HELI PATEL
+259,8,JLL-AIRTEL-R&M-Shahibaug AHD-GUJ,16899-Shahibaug AHD,AORfacilities.gujarat@airtel.com,HELI PATEL
+273,8,JLL-AIRTEL-R&M-Suman Tower AHD-GUJ,17186-Suman Tower AHD,AORfacilities.gujarat@airtel.com,HELI PATEL
+299,8,JLL-AIRTEL-R&M-Chandkheda AHD-GUJ,17886-Chandkheda AHD,AORfacilities.gujarat@airtel.com,HELI PATEL
+318,8,JLL-AIRTEL-R&M-Anand ANA-GUJ,18417-Anand ANA,AORfacilities.gujarat@airtel.com,HELI PATEL
+319,8,JLL-AIRTEL-R&M-Gandhidham GDD-GUJ,18419-Gandhidham GDD,AORfacilities.gujarat@airtel.com,HELI PATEL
+338,8,JLL-AIRTEL-R&M-Sankalp Square Drive in AHD-GUJ,18802-Sankalp Square Drive in AHD,AORfacilities.gujarat@airtel.com,HELI PATEL
+339,8,JLL-AIRTEL-R&M-Balaji Chowk RJK-GUJ,18803-Balaji Chowk RJK,AORfacilities.gujarat@airtel.com,HELI PATEL
+344,8,JLL-AIRTEL-R&M-Jamnagar JNG-GUJ,18966-Jamnagar JNG,AORfacilities.gujarat@airtel.com,HELI PATEL
+366,8,JLL-AIRTEL-R&M-Vapi VAP-GUJ,19283-Vapi VAP,AORfacilities.gujarat@airtel.com,HELI PATEL
+369,8,JLL-AIRTEL-R&M-Ramnagar SUR-GUJ,19480-Ramnagar SUR,AORfacilities.gujarat@airtel.com,HELI PATEL
+386,8,JLL-AIRTEL-R&M-Vesu Road SUR-GUJ,19751-Vesu Road SUR,AORfacilities.gujarat@airtel.com,HELI PATEL
+387,8,JLL-AIRTEL-R&M-Ambawadi AHD-GUJ,19752-Ambawadi AHD,AORfacilities.gujarat@airtel.com,HELI PATEL
+396,8,JLL-AIRTEL-R&M-Dairy Road VAD-GUJ,19973-Dairy Road VAD,AORfacilities.gujarat@airtel.com,HELI PATEL
+397,8,JLL-AIRTEL-R&M-Chaukhandi VAD-GUJ,19974-Chaukhandi VAD,AORfacilities.gujarat@airtel.com,HELI PATEL
+398,8,JLL-AIRTEL-R&M-Ghatlodia AHD-GUJ,19976-Ghatlodia AHD,AORfacilities.gujarat@airtel.com,HELI PATEL
+401,8,JLL-AIRTEL-R&M-Nextgen Hirabaug-GUJ,21664-Nextgen Hirabaug,AORfacilities.gujarat@airtel.com,HELI PATEL
+402,8,JLL-AIRTEL-R&M-Nextgen Naranpura-GUJ,21674-Nextgen Naranpura,AORfacilities.gujarat@airtel.com,HELI PATEL
+403,8,JLL-AIRTEL-R&M-Nextgen Paldi-GUJ,21675-Nextgen Paldi,AORfacilities.gujarat@airtel.com,HELI PATEL
+404,8,JLL-AIRTEL-R&M-Nextgen Bapunagar-GUJ,21676-Nextgen Bapunagar,AORfacilities.gujarat@airtel.com,HELI PATEL
+405,8,JLL-AIRTEL-R&M-Nextgen Nizampura-GUJ,21677-Nextgen Nizampura,AORfacilities.gujarat@airtel.com,HELI PATEL
+406,8,JLL-AIRTEL-R&M-Nextgen Althan AOR-GUJ,21679-Nextgen Althan AOR,AORfacilities.gujarat@airtel.com,HELI PATEL
+421,8,JLL-AIRTEL-R&M-Adajan SUR-GUJ,0265-Adajan SUR,AORfacilities.gujarat@airtel.com,HELI PATEL
+431,8,JLL-AIRTEL-R&M-Prahladnagar AHD-GUJ,1200-Prahladnagar AHD,AORfacilities.gujarat@airtel.com,HELI PATEL
+432,8,JLL-AIRTEL-R&M-Sarthana SUR-GUJ,1207-Sarthana SUR,AORfacilities.gujarat@airtel.com,HELI PATEL
+433,8,JLL-AIRTEL-R&M-OP Road VAD-GUJ,1428-OP Road VAD,AORfacilities.gujarat@airtel.com,HELI PATEL
+480,8,JLL-AIRTEL-R&M-C G Road AHD-GUJ,4749-C G Road AHD,AORfacilities.gujarat@airtel.com,HELI PATEL
+518,8,JLL-AIRTEL-R&M-Zodiac Square AHD-GUJ,760-Zodiac Square AHD,AORfacilities.gujarat@airtel.com,HELI PATEL
+521,8,JLL-AIRTEL-R&M-Bharti House AHD-GUJ,828-Bharti House AHD,AORfacilities.gujarat@airtel.com,HELI PATEL
+543,8,JLL-AIRTEL-R&M-Rajkot lobby RJK-GUJ,961-Rajkot lobby RJK,AORfacilities.gujarat@airtel.com,HELI PATEL
+551,8,JLL-AIRTEL-R&M-Ghod Dod Road SUR-GUJ,064-Ghod Dod Road SUR,AORfacilities.gujarat@airtel.com,HELI PATEL
+562,8,JLL-AIRTEL-R&M-Race Course VAD-GUJ,287-Race Course VAD,AORfacilities.gujarat@airtel.com,HELI PATEL
+585,8,JLL-AIRTEL-R&M-Ring Road Surat SUR-GUJ,565-Ring Road Surat SUR,AORfacilities.gujarat@airtel.com,HELI PATEL
+644,8,JLL-AIRTEL-R&M-Fatehganj VAD-GUJ,101-Fatehganj VAD,AORfacilities.gujarat@airtel.com,HELI PATEL
+650,8,JLL-AIRTEL-R&M-Isanpur AHD-GUJ,184-Isanpur AHD,AORfacilities.gujarat@airtel.com,HELI PATEL
+685,8,JLL-AIRTEL-R&M-Godhra-GUJ,7891-Godhra,AORfacilities.gujarat@airtel.com,HELI PATEL
+686,8,JLL-AIRTEL-R&M-Bharuch-GUJ,7892-Bharuch,AORfacilities.gujarat@airtel.com,HELI PATEL
+690,8,JLL-AIRTEL-R&M-Surendranagar-GUJ,7895-Surendranagar,AORfacilities.gujarat@airtel.com,HELI PATEL
+696,8,JLL-AIRTEL-R&M-New Ankleshwar-GUJ,7889-New Ankleshwar,AORfacilities.gujarat@airtel.com,HELI PATEL
+712,10,EFS-YES BANK-Baroda,0009-Baroda,Vengad.Eswaran@efsme.com,AMAN KUMAR SINGH
+1625,10,EFS-YES BANK-Sadhu Vaswani Road – Rajkot,1177-Sadhu Vaswani Road – Rajkot,Vengad.Eswaran@efsme.com,AMAN KUMAR SINGH
+1780,13,Nike - AH_Ahmedabad One Mall,32-Ahmedabad One Mall--Vastrapur,brajeshkumar.pandey@cbre.com,AMAN KUMAR SINGH
+1781,13,"Nike - AH_CG Road, New Ahmedabad","33-CG Road, New Ahmedabad--C.G. Road",brajeshkumar.pandey@cbre.com,AMAN KUMAR SINGH
+1800,2,Techxpert-Ahmedabad,13,ceo@techxpertindia.in,AMAN KUMAR SINGH
+1926,8,JLL-AIRTEL-R&M NEXTGEN SCI CITY NGS- AOR,-11493,AORFacilities.gujarat@airtel.com,HELI PATEL
+1927,8,JLL-AIRTEL-R&M DAIRY ROAD - AOR,19973,AORFacilities.gujarat@airtel.com,HELI PATEL
+1929,8,JLL-AIRTEL-R&M BILLIMORA - AOR,-10440,AORFacilities.gujarat@airtel.com,HELI PATEL
+1930,8,JLL-AIRTEL-R&M HIRABAG NGS - AOR,-21664,AORFacilities.gujarat@airtel.com,HELI PATEL
+1931,8,JLL-AIRTEL-R&M BORSAD NGS - AOR ,-7876,AORFacilities.gujarat@airtel.com,HELI PATEL
+1932,8,JLL-AIRTEL-R&M MOTA VARACHA NGS - AOR ,-4651,AORFacilities.gujarat@airtel.com,HELI PATEL
+1933,8,JLL-AIRTEL-R&M SLIVER PLAZA - AOR,-11557`,AORFacilities.gujarat@airtel.com,HELI PATEL
+1934,8,JLL-AIRTEL-R&M BALAJI CHAWK - AOR,-18803,AORFacilities.gujarat@airtel.com,HELI PATEL
+1935,8,JLL-AIRTEL-R&M YOGI CHOWK NGS - AOR ,-7884,AORFacilities.gujarat@airtel.com,HELI PATEL
+1936,8,JLL-AIRTEL-R&M GURUKUL - AOR,-18802,AORFacilities.gujarat@airtel.com,HELI PATEL
+2050,18,BARODA BRANCH - PELICAN : - 13487,13487,sonusharama15698@gmail.com,AMAN KUMAR SINGH
+2055,18,AHMEDABAD BRANCH : - 42440,42440,sonusharama15698@gmail.com,AMAN KUMAR SINGH
+2072,18,HIRANANDANI SIGNATURE : - 62085,382355,sonusharama15698@gmail.com,AMAN KUMAR SINGH
+2141,21,3 - Urban - Vadodara,3,tanishqbhatt@urbancompany.com,AMAN KUMAR SINGH
+2161,21,23 - Urban - Ahmedabad - AMC,23,tanishqbhatt@urbancompany.com,AMAN KUMAR SINGH
+2164,8,JLL-AIRTEL-R&M-PARVATPATIYA- NGS-GUJ,,RAJENDER.JAIN@jll.com,HELI PATEL
+2223,15,VENUS STRATUM - k k ,AMD01,mahesh.jagdale@sworks.co.in,AMAN KUMAR SINGH
+2242,22,CBRE - WIPRO - NAVRANGPURA AHM - GUJ,31000,sonusharama15698@gmail.com,AMAN KUMAR SINGH
+2527,47,HDCF- BANK CHEMBUR C. G. ROAD,1452,hdfcsupport@techxpertgroup.in,AMAN KUMAR SINGH
+2554,39,JLL- SCHINEIDER - ELECTRIC VADODARA GUJ,,sonusharama15698@gmail.com,AMAN KUMAR SINGH
+2588,39,JLL-BLACK -ROCK - AHMEDABAD - GUJ,,sonusharama15698@gmail.com,AMAN KUMAR SINGH
+2679,39,JLL-SCHINEIDER-ELECTRIC- AHMEDABAD,,Babu.KumarA@ap.jll.com,AMAN KUMAR SINGH
+2733,8,JLL-AIRTEL-R&M-Bhavnagar NGS,,AORfacilities.gujarat@airtel.com,HELI PATEL
+2734,8,JLL-AIRTEL-R&M-Poddar Arcade NGS,,AORfacilities.gujarat@airtel.com,HELI PATEL
+2736,8,JLL-AIRTEL-R&M-Morbi NGS,,AORfacilities.gujarat@airtel.com,HELI PATEL
+2739,8,JLL-AIRTEL-R&M-Bopal NGS,,AORfacilities.gujarat@airtel.com,HELI PATEL
+2740,8,JLL-AIRTEL-R&M-Valsad NGS,,AORfacilities.gujarat@airtel.com,HELI PATEL
+2741,8,JLL-AIRTEL-R&M-Anand NGS,,AORfacilities.gujarat@airtel.com,HELI PATEL
+2742,8,JLL-AIRTEL-R&M-South Bopal NGS,,AORfacilities.gujarat@airtel.com,HELI PATEL
+2743,8,JLL-AIRTEL-R&M-Udhana NGS,,AORfacilities.gujarat@airtel.com,HELI PATEL
+2744,8,JLL-AIRTEL-R&M-Gota NGS,,AORfacilities.gujarat@airtel.com,HELI PATEL
+2745,8,JLL-AIRTEL-R&M-Kadi NGS,,AORfacilities.gujarat@airtel.com,HELI PATEL
+2746,8,JLL-AIRTEL-R&M-New Ranip NGS,,AORfacilities.gujarat@airtel.com,HELI PATEL
+2747,8,JLL-AIRTEL-R&M-OP Road VAD,,AORfacilities.gujarat@airtel.com,HELI PATEL
+2785,60,JLL-HBAP-AHMEDABAD-GUJ,,bilal.shaikh@jll.com,AMAN KUMAR SINGH
+2879,67,CBRE-SPG-AHEMDABAD-GJ,,dixita.hirpara@spglobal.com,AMAN KUMAR SINGH
+2944,75,CIIH - CII House-Ahmedabad,,citisupport@techxpertgroup.in,AMAN KUMAR SINGH
+2945,75,SUR - Rajmal Lakhichand Jewellers Building-Surat,,citisupport@techxpertgroup.in,AMAN KUMAR SINGH
+2962,75,GIF - Gift City - Ahmedabad,,citisupport@techxpertgroup.in,AMAN KUMAR SINGH
+2972,8,JLL - Airtel Store-Odhav NGS AHM - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+2977,8,JLL - Airtel Store-Vastral NGS - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+2979,8,JLL - Airtel Store-Nextgen Navsari Surat - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+2984,8,JLL - Airtel Store-Anjar NGS - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+2988,8,JLL - Airtel Store-Palanpur NGS - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+3018,8,JLL - Airtel Store-Kothi NGS Vadodara - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+3030,8,JLL - Airtel Store-VIP Road NGS - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+3064,8,JLL - Airtel Store-Bhuj NGS,,gujratoperations@techxpertindia.in,HELI PATEL
+3209,98,PFL-Ahmedabad,PFL-081,ajay.mehra@cbre.com,AMAN KUMAR SINGH
+3210,98,PFL-Rajkot,PFL-082,ajay.mehra@cbre.com,AMAN KUMAR SINGH
+3211,98,PFL-Surat,PFL-083,ajay.mehra@cbre.com,AMAN KUMAR SINGH
+3212,98,PFL-Vadodara,PFL-084,ajay.mehra@cbre.com,AMAN KUMAR SINGH
+3213,98,PFL-Vapi,PFL-085,ajay.mehra@cbre.com,AMAN KUMAR SINGH
+3221,98,PFL-Bhavnagar,PFL-093,ajay.mehra@cbre.com,AMAN KUMAR SINGH
+3222,98,PFL-Jamnagar,PFL-094,ajay.mehra@cbre.com,AMAN KUMAR SINGH
+3232,8,JLL - Airtel Store-Mundra NGS - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+3233,8,JLL - Airtel Store-Nikol NGS - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+3239,8,JLL - Airtel Store-Himmatnagar NGS - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+3240,8,JLL - Airtel Store-Sadhuvaswani NGS - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+3261,99,JLL - BA Continuum - Gandhinagar - GJ,,gujratoperations@techxpertindia.in,AMAN KUMAR SINGH
+3264,33,CBRE - CAPGEMINI - Ahmedabad - GJ,,gujratoperations@techxpertindia.in,AMAN KUMAR SINGH
+3272,8,JLL - Airtel Store-Patan NGS - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+3274,71,TVS - RAJKOT - GJ,,gujratoperations@techxpertindia.in,AMAN KUMAR SINGH
+3275,71,TVS - AHMEDABAD - GJ,,gujratoperations@techxpertindia.in,AMAN KUMAR SINGH
+3276,21,37 - Urban - Surat,,gujratoperations@techxpertindia.in,AMAN KUMAR SINGH
+3280,3,VI Store (L P Savani - Surat),,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+3281,8,JLL - Airtel Store-Junagadh NGS - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+3312,8,JLL - Airtel Store-Porbandar NGS - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+3327,8,JLL - Airtel Store-Subhanpura NGS - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+3339,8,JLL - Airtel Store-Mehsana NGS - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+3393,42,DMI - Surat,,gujratoperations@techxpertindia.in,RAJESH DAVE
+3413,8,JLL - Airtel Store-Krishnanagar NGS - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+3425,8,JLL - Airtel Store-Katargam NGS - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+3443,3,VI Store Old Padra - Baroda,,yaswant.kumar@vodafoneidea.com,AMAN KUMAR SINGH
+3450,79,Capgemini - Gandhinagar - GJ,,gujratoperations@techxpertindia.in,AMAN KUMAR SINGH
+3458,49,HSBC - Ahmedabad,,gujratoperations@techxpertindia.in,AMAN KUMAR SINGH
+3643,132,JCI - Ahmedabad,,gujratoperations@techxpertindia.in,AMAN KUMAR SINGH
+3651,135,Flipkart - SaroliMPHub_STV - 7495,7495,manish.pawar@flipkart.com,RAJESH DAVE
+3678,8,JLL - Airtel Store-Nadiad NGS - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+3746,135,Flipkart - SatelliteHub_AMD - 9993,9993,vishal.parmar@flipkart.com,RAJESH DAVE
+3750,135,Flipkart - Chandkheda Cross Dock - 7478,7478,vishal.parmar@flipkart.com,RAJESH DAVE
+3751,135,Flipkart - Maninagar Cross Dock - 5197_GRC,5197,vishal.parmar@flipkart.com,RAJESH DAVE
+3752,135,Flipkart - Satellite Cross Dock - 7479,7479,vishal.parmar@flipkart.com,RAJESH DAVE
+3779,143,Mahindra - Ahmedabad Block-A,,techxpertjaipur@techxpertindia.in,AMAN KUMAR SINGH
+3780,143,Mahindra - Ahmedabad Block-B,,techxpertjaipur@techxpertindia.in,AMAN KUMAR SINGH
+3909,8,JLL - Airtel Store-Sargasan Mini - GJ,,aman.singh@techxpertgroup.in,HELI PATEL
+3910,8,JLL - Airtel Store-Dheber Road NGS - GJ,,aman.singh@techxpertgroup.in,HELI PATEL
+3926,8,JLL - Airtel Store-Kuvadava Mini - GJ,,aman.singh@techxpertgroup.in,HELI PATEL
+3953,8,JLL - Airtel Mini Store-Raj Harmony - GJ,,aman.singh@techxpertgroup.in,HELI PATEL
+5795,152,IDFC - AHMEDABAD C.G. ROAD BRANCH,40301,patel.mahipatlal@jll.com ,RAJESH DAVE
+5796,152,IDFC - PRAHLAD NAGAR BRANCH,40302,patel.mahipatlal@jll.com ,RAJESH DAVE
+5797,152,IDFC - MANINAGAR BRANCH,40303,patel.mahipatlal@jll.com ,RAJESH DAVE
+5798,152,IDFC - AHMEDABAD- RATNAAKAR SQUARE,40304,patel.mahipatlal@jll.com ,RAJESH DAVE
+5799,152,IDFC - CHANDKHEDA BRANCH,40308,patel.mahipatlal@jll.com ,RAJESH DAVE
+5800,152,IDFC - VATVA BRANCH,40309,patel.mahipatlal@jll.com ,RAJESH DAVE
+5801,152,IDFC - PALDI BRANCH,40311,patel.mahipatlal@jll.com ,RAJESH DAVE
+5802,152,IDFC - SHAHIBAUG BRANCH,40312,patel.mahipatlal@jll.com ,RAJESH DAVE
+5803,152,IDFC - DRIVE  IN ROAD BRANCH,40313,patel.mahipatlal@jll.com ,RAJESH DAVE
+5804,152,IDFC - NARODA BRANCH,40314,patel.mahipatlal@jll.com ,RAJESH DAVE
+5805,152,IDFC - BOPAL BRANCH,40315,patel.mahipatlal@jll.com ,RAJESH DAVE
+5806,152,IDFC - JODHPUR ROAD - SATELLITEBRANCH,40316,patel.mahipatlal@jll.com ,RAJESH DAVE
+5808,152,IDFC - RAKHIAL BRANCH,40317,patel.mahipatlal@jll.com ,RAJESH DAVE
+5809,152,IDFC - KALUPUR BRANCH,40318,patel.mahipatlal@jll.com ,RAJESH DAVE
+5810,152,IDFC - SCIENCE CITY BRANCH,40319,patel.mahipatlal@jll.com ,RAJESH DAVE
+5811,152,IDFC - NARANPURA BRANCH,40321,patel.mahipatlal@jll.com ,RAJESH DAVE
+5812,152,IDFC - DHOLKA BRANCH,40322,patel.mahipatlal@jll.com ,RAJESH DAVE
+5813,152,IDFC - VIRAMGAM BRANCH,40323,patel.mahipatlal@jll.com ,RAJESH DAVE
+5814,152,IDFC - SANAND BRANCH,40324,patel.mahipatlal@jll.com ,RAJESH DAVE
+5815,152,IDFC - AHMEDABAD - BAPUNAGAR BRANCH,40327,patel.mahipatlal@jll.com ,RAJESH DAVE
+5816,152,IDFC - MBL- BAPUNAGAR,40328,patel.mahipatlal@jll.com ,RAJESH DAVE
+5817,152,IDFC - MBL - AHMEDAHAD-MANINAGAR,40329,patel.mahipatlal@jll.com ,RAJESH DAVE
+5818,152,IDFC - MBL - AHMEDABAD-SHAHIBAUG,40331,patel.mahipatlal@jll.com ,RAJESH DAVE
+5819,152,IDFC - AHMEDABAD  NIKOL BRANCH,40332,patel.mahipatlal@jll.com ,RAJESH DAVE
+5820,152,IDFC - AHMEDABAD  ASHRAMROAD BRANCH,40333,patel.mahipatlal@jll.com ,RAJESH DAVE
+5821,152,IDFC - AHMEDABAD  SINDHUBHAVAN BRANCH,40334,patel.mahipatlal@jll.com ,RAJESH DAVE
+5822,152,IDFC - AHMEDABAD  SHYAMAL BRANCH,40335,patel.mahipatlal@jll.com ,RAJESH DAVE
+5823,152,IDFC - AMBAWADI BRANCH,40336,patel.mahipatlal@jll.com ,RAJESH DAVE
+5824,152,"IDFC - Ahmedabad, GOTA",40337,patel.mahipatlal@jll.com ,RAJESH DAVE
+5825,152,IDFC - MBL - ODHAV,40338,patel.mahipatlal@jll.com ,RAJESH DAVE
+5826,152,IDFC - MBL - AHMEDABAD,40339,patel.mahipatlal@jll.com ,RAJESH DAVE
+5827,152,"IDFC - Ahmedabad, Thaltej",40342,patel.mahipatlal@jll.com ,RAJESH DAVE
+5828,152,IDFC - AHMEDABAD - MAKARBA BRANCH,40346,patel.mahipatlal@jll.com ,RAJESH DAVE
+5829,152,IDFC - KATHWADA BRANCH,42162,patel.mahipatlal@jll.com ,RAJESH DAVE
+5830,152,IDFC - AHMEDABAD RO- RATNAKAR NINE SQUARE,49105,patel.mahipatlal@jll.com ,RAJESH DAVE
+5855,152,IDFC - Amreli,43851,patel.mahipatlal@jll.com ,RAJESH DAVE
+5860,152,IDFC - PETLAD BRANCH,40351,patel.mahipatlal@jll.com ,RAJESH DAVE
+5861,152,IDFC - ANAND BRANCH,40352,patel.mahipatlal@jll.com ,RAJESH DAVE
+5862,152,IDFC - MBL-PURUSHOTTAM NAGAR,40353,patel.mahipatlal@jll.com ,RAJESH DAVE
+5864,152,IDFC - BAYAD BRANCH,40374,patel.mahipatlal@jll.com ,RAJESH DAVE
+5865,152,IDFC - MODASA BRANCH,42761,patel.mahipatlal@jll.com ,RAJESH DAVE
+5877,152,IDFC - PALANPUR BRANCH,40421,patel.mahipatlal@jll.com ,RAJESH DAVE
+5878,152,IDFC - MBL - PALANPUR,40422,patel.mahipatlal@jll.com ,RAJESH DAVE
+5894,152,IDFC - ANKLESHWAR BRANCH,42461,patel.mahipatlal@jll.com ,RAJESH DAVE
+5896,152,IDFC - BHAVNAGAR BRANCH,42622,patel.mahipatlal@jll.com ,RAJESH DAVE
+5897,152,IDFC - MAHUVA BRANCH,42624,patel.mahipatlal@jll.com ,RAJESH DAVE
+5898,152,IDFC - MBL - BHAVNAGAR,42625,patel.mahipatlal@jll.com ,RAJESH DAVE
+5927,152,IDFC - BODELI BRANCH,43261,patel.mahipatlal@jll.com ,RAJESH DAVE
+6038,152,IDFC - MANSA BRANCH,42341,patel.mahipatlal@jll.com ,RAJESH DAVE
+6039,152,IDFC - KALOL BRANCH,42342,patel.mahipatlal@jll.com ,RAJESH DAVE
+6040,152,IDFC - GANDHINAGAR BRANCH,42343,patel.mahipatlal@jll.com ,RAJESH DAVE
+6041,152,IDFC - DAHEGAM BRANCH,42344,patel.mahipatlal@jll.com ,RAJESH DAVE
+6144,152,IDFC - JAMNAGAR BRANCH,42642,patel.mahipatlal@jll.com ,RAJESH DAVE
+6145,152,IDFC - MBL - JAMNAGAR,42643,patel.mahipatlal@jll.com ,RAJESH DAVE
+6156,152,IDFC - MBL - JUNAGADH,43651,patel.mahipatlal@jll.com ,RAJESH DAVE
+6157,152,IDFC - DOLATPARA BRANCH,43652,patel.mahipatlal@jll.com ,RAJESH DAVE
+6235,152,IDFC - KHERALU BRANCH,40375,patel.mahipatlal@jll.com ,RAJESH DAVE
+6236,152,IDFC - MEHSANA BRANCH,40401,patel.mahipatlal@jll.com ,RAJESH DAVE
+6237,152,IDFC - MBL - MEHSANA,40402,patel.mahipatlal@jll.com ,RAJESH DAVE
+6240,152,IDFC - LALPAR BRANCH,40443,patel.mahipatlal@jll.com ,RAJESH DAVE
+6241,152,IDFC - MBL - MORBI,40444,patel.mahipatlal@jll.com ,RAJESH DAVE
+6242,152,IDFC - MORBI BRANCH,40445,patel.mahipatlal@jll.com ,RAJESH DAVE
+6265,152,IDFC - BILIMORA BRANCH,43181,patel.mahipatlal@jll.com ,RAJESH DAVE
+6266,152,IDFC - NAVASARI,43183,patel.mahipatlal@jll.com ,RAJESH DAVE
+6372,152,IDFC - RAJKOT BRANCH,42421,patel.mahipatlal@jll.com ,RAJESH DAVE
+6373,152,IDFC - RAJKOT-IMPERIAL HEIGHTS,42423,patel.mahipatlal@jll.com ,RAJESH DAVE
+6374,152,IDFC - MBL - RAJKOT -  GONDAL ROAD,42424,patel.mahipatlal@jll.com ,RAJESH DAVE
+6375,152,IDFC - RAJKOT  BHAKTI NAGAR BRANCH,42425,patel.mahipatlal@jll.com ,RAJESH DAVE
+6376,152,IDFC - GONDAL BRANCH,42427,patel.mahipatlal@jll.com ,RAJESH DAVE
+6377,152,IDFC - SHAPAR VERAVAL BRANCH,42429,patel.mahipatlal@jll.com ,RAJESH DAVE
+6378,152,IDFC - MBL - JETPUR,42432,patel.mahipatlal@jll.com ,RAJESH DAVE
+6379,152,IDFC - MBL - Rajkot Pedak Road,42433,patel.mahipatlal@jll.com ,RAJESH DAVE
+6428,152,IDFC - SURAT BRANCH,42261,patel.mahipatlal@jll.com ,RAJESH DAVE
+6429,152,IDFC - RING ROAD BRANCH,42262,patel.mahipatlal@jll.com ,RAJESH DAVE
+6430,152,IDFC - SURAT- INTERNATIONAL BUSINESS CENTRE,42264,patel.mahipatlal@jll.com ,RAJESH DAVE
+6431,152,IDFC - KAMREJ BRANCH,42267,patel.mahipatlal@jll.com ,RAJESH DAVE
+6432,152,IDFC - SURAT - VESU BRANCH,42268,patel.mahipatlal@jll.com ,RAJESH DAVE
+6433,152,IDFC - SURAT  ADAJAN BRANCH,42269,patel.mahipatlal@jll.com ,RAJESH DAVE
+6434,152,IDFC - KIM BRANCH,42271,patel.mahipatlal@jll.com ,RAJESH DAVE
+6435,152,IDFC - VARACHHA  BRANCH,42272,patel.mahipatlal@jll.com ,RAJESH DAVE
+6436,152,IDFC - MBL- ADAJAN,42273,patel.mahipatlal@jll.com ,RAJESH DAVE
+6437,152,IDFC - MBL - KAMREJ,42275,patel.mahipatlal@jll.com ,RAJESH DAVE
+6438,152,IDFC - SACHIN BRANCH,42276,patel.mahipatlal@jll.com ,RAJESH DAVE
+6439,152,IDFC - Katagram,42279,patel.mahipatlal@jll.com ,RAJESH DAVE
+6440,152,IDFC - Udhana,43841,patel.mahipatlal@jll.com ,RAJESH DAVE
+6441,152,IDFC - VIP Road Surat CPC,43843,patel.mahipatlal@jll.com ,RAJESH DAVE
+6442,152,IDFC - DHRANGADHRA BRANCH,43371,patel.mahipatlal@jll.com ,RAJESH DAVE
+6477,152,IDFC - VADODARA BRANCH,42381,patel.mahipatlal@jll.com ,RAJESH DAVE
+6478,152,IDFC - PADRA BRANCH,42382,patel.mahipatlal@jll.com ,RAJESH DAVE
+6479,152,IDFC - MAKARPURA BRANCH,42383,patel.mahipatlal@jll.com ,RAJESH DAVE
+6480,152,IDFC - KARELIBAUGH BRANCH,42385,patel.mahipatlal@jll.com ,RAJESH DAVE
+6481,152,IDFC - VADODARA  VASNA BHAYLIBRANCH,42386,patel.mahipatlal@jll.com ,RAJESH DAVE
+6482,152,IDFC - DABHOI BRANCH,42387,patel.mahipatlal@jll.com ,RAJESH DAVE
+6483,152,IDFC - MBL- WAGHODIA ROAD,42388,patel.mahipatlal@jll.com ,RAJESH DAVE
+6484,152,IDFC - VADODARA- SALES HUB,42389,patel.mahipatlal@jll.com ,RAJESH DAVE
+6485,152,IDFC - KANHA CAPITAL,42391,patel.mahipatlal@jll.com ,RAJESH DAVE
+6486,152,IDFC - Nizampura,42393,patel.mahipatlal@jll.com ,RAJESH DAVE
+6487,152,IDFC - SAHYOG ATRIUM  VADODARA,42394,patel.mahipatlal@jll.com ,RAJESH DAVE
+6488,152,IDFC - VAPI BRANCH,42441,patel.mahipatlal@jll.com ,RAJESH DAVE
+6489,152,IDFC - KILLA-PARDI BRANCH,42443,patel.mahipatlal@jll.com ,RAJESH DAVE
+6490,152,IDFC - MBL - VAPI - SILVASSA ROAD,42444,patel.mahipatlal@jll.com ,RAJESH DAVE
+6531,152,IDFC - Shela Ahmedabad,40343,patel.mahipatlal@jll.com ,RAJESH DAVE
+6532,152,IDFC - Sattadhar Ahmedabad,40345,patel.mahipatlal@jll.com ,RAJESH DAVE
+6536,152,IDFC - Magob,42277,patel.mahipatlal@jll.com ,RAJESH DAVE
+6539,152,IDFC - Kudasan,42346,kishore.sawant@jll.com,RAJESH DAVE
+6547,152,IDFC - Ved Road,43844,patel.mahipatlal@jll.com ,RAJESH DAVE
+6576,152,IDFC - Gift City,WIP-5,kishore.sawant@jll.com,RAJESH DAVE
+6583,152,IDFC - BOTAD BRANCH,43661,patel.mahipatlal@jll.com ,RAJESH DAVE
+6597,152,IDFC - MBL - VERAVAL,43581,patel.mahipatlal@jll.com ,RAJESH DAVE
+6598,152,IDFC - Veraval,43582,patel.mahipatlal@jll.com ,RAJESH DAVE
+6608,152,IDFC - MBL - BHUJ,43501,patel.mahipatlal@jll.com ,RAJESH DAVE
+6609,152,IDFC - MBL - GANDHIDHAM,43502,patel.mahipatlal@jll.com ,RAJESH DAVE
+6610,152,IDFC - GANDHIDHAM BRANCH,43505,patel.mahipatlal@jll.com ,RAJESH DAVE
+6614,152,IDFC - NADIAD BRANCH,42161,patel.mahipatlal@jll.com ,RAJESH DAVE
+6625,152,IDFC - LUNAWADA  BRANCH,42801,patel.mahipatlal@jll.com ,RAJESH DAVE
+6627,152,IDFC - MBL- VARACHA,42274,patel.mahipatlal@jll.com ,RAJESH DAVE
+6628,152,IDFC - RAJPIPLA BRANCH,43291,patel.mahipatlal@jll.com ,RAJESH DAVE
+6639,152,IDFC - GODHRA BRANCH,42241,patel.mahipatlal@jll.com ,RAJESH DAVE
+6640,152,IDFC - HALOL BRANCH,42242,patel.mahipatlal@jll.com ,RAJESH DAVE
+6641,152,IDFC - MBL-Patan,40423,patel.mahipatlal@jll.com ,RAJESH DAVE
+6642,152,IDFC - PATAN BRANCH,42361,patel.mahipatlal@jll.com ,RAJESH DAVE
+6650,152,IDFC - HIMMATNAGAR BRANCH,40371,patel.mahipatlal@jll.com ,RAJESH DAVE
+6651,152,IDFC - IDAR BRANCH,40372,patel.mahipatlal@jll.com ,RAJESH DAVE
+6658,152,IDFC - VYARA BRANCH,42841,patel.mahipatlal@jll.com ,RAJESH DAVE
+6669,135,Flipkart - Ahmedabad BTS - 3385,3385,malekvasimmahm.vc@flipkart.com,RAJESH DAVE
+6670,135,Flipkart - Ahmedabad Large,,malekvasimmahm.vc@flipkart.com,RAJESH DAVE
+6673,8,JLL - Airtel Store-Nana Chiloda - GJ,,aman.singh@techxpertgroup.in,HELI PATEL
+6676,155,Bajaj - Ahmedabad,,aman.singh@techxpertgroup.in,AMAN KUMAR SINGH
+6695,152,IDFC - Vadodara Manjalpur,42395,patel.mahipatlal@jll.com ,RAJESH DAVE
+6696,152,IDFC - Gotri - Sewasi,42392,patel.mahipatlal@jll.com ,RAJESH DAVE
+6725,152,IDFC - Rajkot-Nana Mauva Branch,42434,Kishore.Sawant@jll.com,RAJESH DAVE
+6739,135,Flipkart - Surat_BTS - 3466,,vishal.parmar@flipkart.com,RAJESH DAVE
+6740,152,IDFC - Surat-Ring Road Branch,42262,patel.mahipatlal@jll.com ,RAJESH DAVE
+7089,8,JLL - Airtel Ministore Nirnaynagar - GJ,,gujratoperations@techxpertindia.in,HELI PATEL
+7131,60,JLL-HBAP-GANDHI NAGAR-GUJ,,aman.singh@techxpertgroup.in,AMAN KUMAR SINGH

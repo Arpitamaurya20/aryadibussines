@@ -1,0 +1,73 @@
+Branch,Equipment Name,Equipment Number,Make,Model,Serial No,Capacity,Qty,UOM Name,UOM Number,Unit Rate,Amount,Manufacturing Year,Equipment Age,Service Type,Category,CategoryNumber,Sub Category,Sub Category Number,TAT,AMC Start Date,AMC End Date,Floor Number,Equipment Location,Description,Interval
+Urban - Chennai,CCTV-35,9038,CP PLUS,,,,,NOS,30,525,525,2023,2,CAMC,CCTV,8,DVR,1,2,01-01-2026,31-12-2026,Second Floor,1,,Quterly
+Urban - Chennai,Ductable AC-5.5TR-1,9040,voltas,,,5.5,1,TR,53,20212.5,20212.5,2020,5,CAMC,HVAC,34,DUCTABLE AC,21,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,Ductable AC-5.5TR-1,9324,voltas,,,5.5,1,TR,53,20212.5,20212.5,2020,5,CAMC,HVAC,34,DUCTABLE AC,21,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,Audible DVR,9353,CP PLUS,8 Channel DVR,,8,1,NOS,30,2625,2625,2023,2,CAMC,CCTV,8,DVR,1,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,CCTV-36,9362,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Second Floor,1,,Quterly
+Urban - Chennai,DG,9383,,200 KVA,,200,1,KVA,28,36750,36750,2022,3,NCAMC,Electrical,23,DG Problem,56,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,DVR-4,9404,CP PLUS,16 Channel,,16,1,NOS,30,2100,2100,2023,2,CAMC,CCTV,8,DVR,1,2,01-01-2026,31-12-2026,Second Floor,,,Quterly
+Urban - Chennai,DVR-3,9416,CP PLUS,4 Channel,,4,1,NOS,30,2100,2100,2023,2,CAMC,CCTV,8,DVR,1,2,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,DVR-1,9418,CP PLUS,8 Channel,,8,1,NOS,30,2100,2100,2023,2,CAMC,CCTV,8,DVR,1,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,FAS-ABC-6KG-1,9429,AGNI,6 KG,,6,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,UPS,9535,Eaton,10 KVA,,10,1,KVA,28,15750,15750,2020,5,NCAMC,Electrical,23,UPS,25,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,Audible CCTV-1,13251,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,Front office,,Quterly
+Urban - Chennai,Audible CCTV-2,13252,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,First Floor,Back office,,Quterly
+Urban - Chennai,Audible CCTV-3,13253,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Second Floor,Back office,,Quterly
+Urban - Chennai,CCTV-33,13254,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Second Floor,,,Quterly
+Urban - Chennai,CCTV-34,13255,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Second Floor,,,Quterly
+Urban - Chennai,CCTV-1,13458,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,CCTV-2,13459,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,CCTV-3,13460,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,CCTV-4,13461,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,CCTV-5,13462,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,CCTV-6,13463,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,CCTV-7,13464,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,CCTV-8,13465,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,CCTV-9,13466,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,CCTV-10,13467,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,CCTV-11,13468,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,CCTV-12,13469,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,CCTV-13,13470,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,CCTV-14,13471,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,CCTV-15,13472,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,CCTV-16,13473,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,CCTV-17,13474,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,CCTV-18,13475,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,CCTV-19,13476,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,CCTV-20,13477,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,CCTV-21,13478,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,CCTV-22,13479,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,CCTV-23,13480,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,CCTV-24,13481,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,CCTV-25,13482,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,CCTV-26,13483,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,CCTV-27,13484,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,CCTV-28,13485,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,,01-01-2026,31-12-2026,Second Floor,,,Quterly
+Urban - Chennai,CCTV-29,13486,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,,01-01-2026,31-12-2026,Second Floor,,,Quterly
+Urban - Chennai,CCTV-30,13487,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,,01-01-2026,31-12-2026,Second Floor,,,Quterly
+Urban - Chennai,CCTV-31,13488,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,,01-01-2026,31-12-2026,Second Floor,,,Quterly
+Urban - Chennai,CCTV-32,13489,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,,01-01-2026,31-12-2026,Second Floor,,,Quterly
+Urban - Chennai,FAS-ABC-6KG-1,13490,AGNI,6 KG,,6,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,,Second Floor,,Quterly
+Urban - Chennai,FAS-ABC-6KG-2,13491,AGNI,6 KG,,6,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,FAS-ABC-6KG-3,13492,AGNI,6 KG,,6,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,FAS-ABC-6KG-4,13493,AGNI,6 KG,,6,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,FAS-ABC-6KG-5,13494,AGNI,6 KG,,6,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,FAS-ABC-6KG-6,13495,AGNI,6 KG,,6,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,FAS-ABC-6KG-7,13496,AGNI,6 KG,,6,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,FAS-ABC-6KG-8,13497,AGNI,6 KG,,6,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,FAS-ABC-6KG-9,13498,AGNI,6 KG,,6,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,FAS-ABC-6KG-10,13499,AGNI,6 KG,,6,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,FAS-ABC-6KG-11,13500,AGNI,6 KG,,6,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,FAS-ABC-6KG-12,13501,AGNI,6 KG,,6,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Second Floor,,,Quterly
+Urban - Chennai,FAS-ABC-6KG-13,13502,AGNI,6 KG,,6,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Second Floor,,,Quterly
+Urban - Chennai,FAS-ABC-6KG-14,13503,AGNI,6 KG,,6,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Second Floor,,,Quterly
+Urban - Chennai,FAS-ABC-6KG-15,13504,AGNI,6 KG,,6,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Second Floor,,,Quterly
+Urban - Chennai,FAS-ABC-6KG-16,13505,AGNI,6 KG,,6,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Second Floor,,,Quterly
+Urban - Chennai,FAS-ABC-6KG-17,13506,AGNI,6 KG,,6,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Second Floor,,,Quterly
+Urban - Chennai,FAS-CO2-4.5KG-2,13508,AGNI,4.5 KG,,4.5,1,KG,36,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,Split AC-1.5TR-1,13621,voltas,,,1.5,1,TR,53,5512.5,5512.5,2020,5,CAMC,HVAC,34,SPLIT AC,22,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,Split AC-1.5TR-2,13622,voltas,,,1.5,1,TR,53,5512.5,5512.5,2020,5,CAMC,HVAC,34,SPLIT AC,22,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,Split AC-1.5TR-1,13623,voltas,,,1.5,1,TR,53,5512.5,5512.5,2020,5,CAMC,HVAC,34,SPLIT AC,22,2,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,FAS-ABC-9KG-1,13624,Agni,9 KG,,9,1,KGS,36,1260,1260,2020,5,CAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Ground Floor,,,Quterly
+Urban - Chennai,FAS-ABC-9KG-2,13625,Agni,9 KG,,9,1,KGS,36,1260,1260,2020,5,CAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,First Floor,,,Quterly
+Urban - Chennai,FAS-ABC-9KG-3,13626,Agni,9 KG,,9,1,KGS,36,1260,1260,2020,5,CAMC,Fire Safety,43,FAS,188,2,01-01-2026,31-12-2026,Second Floor,,,Quterly

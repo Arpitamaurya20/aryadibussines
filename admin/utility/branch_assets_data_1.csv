@@ -1,0 +1,501 @@
+ID,BranchID,EquipmentName,Make,Model,SNo,Capacity,Qty,UoM,UnitRate,Amount,ManufacturingYear,EquipmentAge,ServiceType,Category,SubCategory,Tat,AMCStartDate,AMCEndDate,SOW,FloorNumber,EquipmentLocation,Description,PPMInterval,UniqueID,CreatedBy,CreatedDate,UpdatedDate,IsActive
+12331,18443,Air Blower Motor,Siemens,"415V,50Hz,","2.2Kw,1449RPM",2.2,2,30,,0,2019,5,CAMC,23,85,2,01-01-2025,31-12-2025,,STP-25KLD - Lower Basement,Lower Basement,,Monthly,,Shivani,27-12-2024,NULL,1
+12332,18443,Air Blower Motor,Siemens,"415V,50Hz,2.2Kw,1449RPM",25KLD,1,1,30,,0,,2019,CAMC,-1,-1,,01-01-2025,31-12-2025,,STP-25KLD,Lower Basment,,Monthly,,Shivani,27-12-2024,NULL,0
+12345,18443,Filter press feed motor,Crompton,"415v,50hz,","0.75kw,1hp,1390 rpm",1,2,30,,0,2019,7,CAMC,23,12,2,01-01-2025,31-12-2025,,Lower Basement,Lower Basement,,Monthly,,Shivani,31-12-2024,NULL,1
+12346,18443,Filter press feed motor,Crompton,"415v,50hz,0.75kw,1hp,1390 rpm",,1,1,30,,0,,2019,CAMC,23,12,,01-01-2025,31-12-2025,,STP-25KLD,Lower Basment,,Monthly,,Shivani,31-12-2024,NULL,0
+12347,18443,Filter Feed Motor,Ebara,"415v,50hz,","1.3Kw/1.8 hp,2875rpm",1,2,30,,0,2019,6,CAMC,23,12,2,01-01-2025,31-12-2025,,Lower Basement,Lower Basement,,Monthly,,Shivani,31-12-2024,NULL,1
+12348,18443,Filter Feed Motor,Ebara,"415v,50hz,1.3Kw/1.8 hp,2875rpm",,1,1,30,,0,,2019,CAMC,23,12,,,,,STP-25KLD,Lower Basment,,Monthly,,Shivani,31-12-2024,NULL,0
+12349,18443,Sludge motor,Crompton Greaves,"415v,50hz",",0.75Kw,1hp,2820rpm",1,1,30,,0,2019,6,CAMC,23,12,2,01-01-2025,31-12-2025,,Lower Basement,Lower Basment,,Monthly,,Shivani,31-12-2024,NULL,1
+12350,18443,Treated motor,Ebara,"415v,50hz,","0.9Kw,1.2Hp,2850rpm",1,1,30,,0,2019,6,CAMC,23,12,2,01-01-2025,31-12-2025,,Lower Basment,Lower Basment,,Monthly,,Shivani,31-12-2024,NULL,1
+12351,18443,Treated motor,Ebara,"415v,50hz,0.9Kw,1.2Hp,2850rpm",,1,1,30,,0,,2019,CAMC,23,12,,01-01-2025,31-12-2025,,STP-25KLD,Lower Basment,,Monthly,,Shivani,31-12-2024,NULL,0
+12352,18443,Waste water motor,Crompton Greaves,"415v,50hz","0.75Kw,1.Hp,2850rpm",1,1,30,,0,2019,2019,CAMC,23,12,2,01-01-2025,31-12-2025,,Basment ,Lower Basment,,Monthly,,Shivani,31-12-2024,NULL,1
+12353,18443,FMR,Siemens,"415v,50hz,2.2Kw,2885rpm",,1,2,30,,0,2019,6,CAMC,23,12,2,01-01-2025,31-12-2025,,Lower Basement,Lower Basement,,Monthly,,Shivani,31-12-2024,NULL,1
+12354,18443,FMR,Siemens,"415v,50hz,2.2Kw,2885rpm",,1,1,30,,0,,2019,CAMC,-1,-1,,01-01-2025,31-12-2025,,STP-25KLD,Lower Basment,,Monthly,,Shivani,31-12-2024,NULL,0
+12355,18443,UF motor,Groundfos,Type-CM-10,,1,1,30,,0,2019,6,CAMC,23,85,2,01-01-2025,31-12-2025,,Lower Basement,Lower Basement,,Monthly,,Shivani,31-12-2024,NULL,1
+12357,18443,Filter Feed Motor,Ebara,"415v,50hz,1.3Kw,1.8Hp,2875rpm",,1,2,30,,0,2019,6,CAMC,23,85,2,,31-12-2025,,Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12358,18443,Filter Feed Motor,Ebara,"415v,50hz,1.3Kw,1.8Hp,2875rpm",,1,1,30,,0,,2019,CAMC,23,127,,01-01-2025,31-12-2025,,STP-25KLD,Lower Basment,,Monthly,,Shivani,01-01-2025,NULL,0
+12359,18443,Treated Motor,Ebara,0.75KW,"1.0 hp,2875 rpm,415V,50Hz,3A",1,1,30,,0,2019,6,CAMC,23,338,2,01-01-2025,31-12-2025,,ETP-8KLD - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12360,18443,Treated Motor,Ebara,"0.75KW,1.0 hp,2875 rpm,415V,50Hz,3A",,1,1,30,,0,2019,6,CAMC,23,127,2,01-01-2025,31-12-2025,,ETP-8KLD  - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12361,18443,Untreated Motor,Ebara,"1.5KW,2.0hp,2850 rpm415V,1A",,1,1,30,,0,2019,6,CAMC,23,85,2,01-01-2025,31-12-2025,,ETP-8KLD  - Lower Basements, Lower Basements,,Monthly,,Shivani,01-01-2025,NULL,1
+12362,18443,Untreated Motor,Ebara,"1.5KW,2.0hp,2850 rpm415V,1A",,1,1,30,,0,2019,6,CAMC,23,85,2,01-01-2025,31-12-2025,,ETP-8KLD  - Lower Basement, Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12363,18443,Flocculation motor,Crompton Greaves,"0.75KW,1.0hp, 415V,",,1,1,30,,0,2019,2019,CAMC,23,334,,01-01-2025,31-12-2025,,ETP-8KLD-   Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12364,18443,Flocculation motor,Crompton,"0.75KW,1.0hp, 415V,",,1,1,30,,0,2019,6,CAMC,23,85,2,01-01-2025,31-12-2025,,ETP-8KLD - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12365,18443,Flocculation motor,Crompton Greaves,"0.75KW,1.0hp, 415V,",,1,1,30,,0,2019,2019,CAMC,23,85,2,01-01-2025,31-12-2025,,ETP-8KLD  -Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12366,18443,Flocculation motor,Crompton Greaves,"0.75KW,1.0hp, 415V,",,1,1,30,,0,2019,6,CAMC,23,85,2,01-01-2025,31-12-2025,,ETP-8KLD  - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12367,18443,Flocculation motor,Crompton Greaves,"0.75KW,1.0hp, 415V,",,1,1,30,,0,2019,2019,CAMC,23,127,2,01-01-2025,31-12-2025,,ETP-8KLD  - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12368,18443,Flocculation motor,Crompton Greaves,"0.75KW,1.0hp, 415V,",,1,1,30,,0,2019,6,CAMC,23,85,2,01-01-2025,31-12-2025,,ETP-8KLD- Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12369,18443,Sludge transfer motor,Bhartbijli,"0.75 Kw,1.0hp,1410rpm,50Hz,415V,4A",,1,1,30,,0,2019,6,CAMC,23,85,2,01-01-2025,31-12-2025,,ETP-8KLD - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12370,18443,Sludge transfer motor,Bhartbijli,"0.75 Kw,1.0hp,1410rpm,50Hz,415V,4A",,1,1,30,,0,2019,6,CAMC,23,85,2,01-01-2025,31-12-2025,,Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12371,18443,Filter press feed motor,Bhartbijli,"0.37KW,0.5hp,50Hz,415V,1400rpm",,1,1,30,,0,2019,2019,CAMC,23,85,2,01-01-2025,31-12-2025,,ETP-8KLD  - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12372,18443,Filter press feed motor,Bhartbijli,"0.37KW,0.5hp,50Hz,415V,1400rpm",,1,1,30,,0,2019,6,CAMC,23,127,2,01-01-2025,31-12-2025,,ETP-8KLD- Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12373,18443,Sump Pump Motors,Groundfos,"1.5KW,2.0hp,50Hz,415V",,1,1,30,,0,2019,6,CAMC,23,85,2,01-01-2025,31-12-2025,,Sump Pump- Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12374,18443,Sump Pump Motors,Groundfos,"1.5KW,2.0hp,50Hz,415V",,1,1,30,,0,2019,6,CAMC,23,85,2,01-01-2025,31-12-2025,,Sump Pump  -  Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12375,18443,Sump Pump Motors,Groundfos,"1.5KW,2.0hp,50Hz,415V",,1,1,30,,0,2019,6,CAMC,23,85,2,01-01-2025,31-12-2025,,Sump Pump - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12376,18443,Sump Pump Motors,Groundfos,"1.5KW,2.0hp,50Hz,415V",,1,1,30,,0,2019,6,CAMC,23,85,2,01-01-2025,31-12-2025,,Sump Pump - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12377,18443,Sump Pump Motors,Groundfos,"1.5KW,2.0hp,50Hz,415V",,1,1,30,,0,2019,2019,CAMC,23,85,2,01-01-2025,31-12-2025,,Sump Pump  - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12378,18443,Sump Pump Motors,Groundfos,"1.5KW,2.0hp,50Hz,415V",,1,1,30,,0,2019,6,CAMC,23,85,2,01-01-2025,31-12-2025,,Sump Pump-Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12379,18443,Sump Pump Motors,Groundfos,"1.5KW,2.0hp,50Hz,415V",,1,1,30,,0,2019,6,CAMC,23,85,2,01-01-2025,31-12-2025,,Sump Pump - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12380,18443,Sump Pump Motors,Groundfos,"1.5KW,2.0hp,50Hz,415V",,1,1,30,,0,2019,6,CAMC,23,85,2,01-01-2025,31-12-2025,,Sump Pump - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12381,18443,Axial Fan,Nicotra,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,2019,2019,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12382,18443,Axial Fan,Nicotra,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,2019,6,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12383,18443,Axial Fan,Nicotra,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,2019,6,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12384,18443,Axial Fan,Nicotra,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,2019,2019,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12385,18443,Axial Fan,Nicotra,"1.5HP,415V,50Hz",,1,1,30,,0,2019,6,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan  - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12386,18443,Axial Fan,Nicotra,"1.5HP,415V,50Hz",,1,1,30,,0,2019,6,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12387,18443,Axial Fan,Nicotra,"1.5HP,415V,50Hz",,1,1,30,,0,2019,6,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12388,18443,Axial Fan,Nicotra,"1.5HP,415V,50Hz",,1,1,30,,0,2019,6,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12389,18443,Axial Fan,Nicotra,"1.5HP,415V,50Hz",,1,1,30,,0,2019,6,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12390,18443,Treated water pump,Ebara,"2.2 Kw,2850rpm,50Hz,415V,4A",,1,1,30,,0,2019,6,CAMC,23,85,2,01-01-2025,31-12-2025,,Water Treatment Plant - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12391,18443,Treated water pump,Ebara,"2.2 Kw,2850rpm,50Hz,415V,4A",,1,1,30,,0,2019,6,CAMC,41,92,2,01-01-2025,31-12-2025,,Water Treatment Plant-Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12392,18443,Portable water motor,Wilo,"2.2 Kw2900rpm,,50Hz,415V,4A",,1,1,30,,0,2019,2019,CAMC,23,85,2,01-01-2025,31-12-2025,,Water Treatment Plant-Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12393,18443,Portable water motor,Wilo,"2.2 Kw2900rpm,,50Hz,415V,4A",,1,1,30,,0,2019,6,CAMC,23,85,2,01-01-2025,31-12-2025,,Water Treatment Plant- Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12394,18443,Jockey Fire Pump ,Wilo,"4Kw,50hz,415v,13.7A",,1,1,30,,0,2019,2019,CAMC,23,,2,01-01-2025,31-12-2025,,Fire Fighting System - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12395,18443,Hydrant Fire Pump ,Crompton Greaves,"75hp,55kw,50hz,415v,",,1,1,30,,0,2019,6,CAMC,43,85,2,01-01-2026,31-12-2026,,Fire Fighting System- Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12396,18443,Sprinkler Fire Pump ,Crompton Greaves,"75hp,55kw,50hz,415v,",,1,1,30,,0,2019,6,CAMC,33,,2,01-01-2025,31-12-2025,,Fire Fighting System  - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12397,18443,Fire engine,Greaves,"53kw,2200rpm",,1,1,30,,0,2019,6,CAMC,43,,2,01-01-2025,31-12-2025,,Fire Fighting System  - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12398,18443,Air Compressor-1,Atlas Copco,"12.75 Bar,,415v,50hz",,1,1,30,,0,2019,6,CAMC,23,,2,01-01-2025,31-12-2025,,Compressor - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12399,18443,Air Compressor-2,Atlas Copco,"12.75 Bar,,415v,50hz",,1,1,30,,0,2019,6,CAMC,23,,2,01-01-2025,31-12-2025,,Compressor - Lower Basement,Lower Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12400,18443,Air washer,Waves,"1500CFM,11KW/5HP",,1,1,30,,0,2019,6,CAMC,34,19,2,01-01-2025,31-12-2025,,Air Washer -Upper Basement,Upper Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12401,18443,Air washer water motor,Groundfos,"0.6KW/1HP,415Volt,50Hz",,1,1,30,,0,2019,6,CAMC,23,85,2,01-01-2025,31-12-2025,,Air Washer - Upper Basement,Upper Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12402,18443,Air washer water motor,Groundfos,"0.6KW/1HP,415Volt,50Hz",,1,1,30,,0,2019,6,CAMC,23,85,2,01-01-2025,31-12-2025,,Air Washer -Upper Basement,Upper Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12403,18443,Axial Fan,Nicotra,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,2019,6,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan - Upper Basement,Upper Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12404,18443,Axial Fan,Nicotra,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,2019,6,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan - Upper Basement,Upper Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12405,18443,Axial Fan,Nicotra,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,2019,6,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan - Upper Basement,Upper Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12406,18443,Axial Fan,Nicotra,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,2019,6,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan - Upper Basement,Upper Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12407,18443,Axial Fan,Nicotra,"1.5HP,415V,50Hz",,1,1,30,,0,2019,6,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan - Upper Basement,Upper Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12408,18443,Axial Fan,Nicotra,"1.5HP,415V,50Hz",,1,1,30,,0,2019,6,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan - Upper Basement,Upper Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12409,18443,Axial Fan,Nicotra,"1.5HP,415V,50Hz",,1,1,30,,0,2019,6,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan - Upper Basement,Upper Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12410,18443,Axial Fan,Nicotra,"1.5HP,415V,50Hz",,1,1,30,,0,2019,6,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan - Upper Basement,Upper Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12411,18443,Axial Fan,Nicotra,"1.5HP,415V,50Hz",,1,1,30,,0,2019,2019,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan- Upper Basement,Upper Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12412,18443,Smoke Extration Fan,Siemens,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,2019,6,CAMC,43,186,2,01-01-2025,31-12-2025,,Axial Fan - Upper Basement,Upper Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12413,18443,Smoke Extration Fan,Siemens,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,2019,6,CAMC,43,186,2,01-01-2025,31-12-2025,,Axial Fan- Upper Basement,Upper Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12414,18443,CASSETTE AC - 2 TR -1,DAIKIN,SINGLE PHESE 230V 2TON,,2,1,57,,0,2019,6,CAMC,34,23,2,01-01-2026,31-12-2026,,Upper Basement,CCTV Room  - Upper Basement,,Quterly,,Shivani,01-01-2025,NULL,1
+12415,18443,CASSETTE AC - 2 TR - 2,DAIKIN,SINGLE PHESE 230V 2TON,,2,1,57,,0,2019,6,CAMC,34,23,2,01-01-2025,31-12-2025,,CCTV Room-Upper Basement,Upper Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12416,18443,UPS,VERTIVE,"80KVA,415v,50hz,111A",,1,1,30,,0,2019,6,CAMC,23,25,2,01-01-2025,31-12-2025,,Upper Basement,UPS -Upper Basement,,Monthly,,Shivani,01-01-2025,NULL,1
+12417,18443,Sterling & Generator - 500 KVA,Sterling & Generator,"500KVA,1500RPM,415V,",,1,1,30,,0,,2019,CAMC,23,56,,01-01-2025,31-12-2025,,DG,Ground Floor,,Monthly,,Shivani,01-01-2025,NULL,1
+12418,18443,Sterling & Generator - 250 KVA,Sterling & Generator,"250KVA,1500RPM,415V,",,1,1,30,,0,2019,6,CAMC,23,56,2,01-01-2025,31-12-2025,,Ground Floor,DG Room-Ground Floor,,Monthly,,Shivani,01-01-2025,NULL,1
+12419,18443,Axial Fan,Nicotra,"1.5HP,415V,50Hz",,1,1,30,,0,2019,6,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan -Ground Floor,Ground Floor,,Monthly,,Shivani,01-01-2025,NULL,1
+12420,18443,Axial Fan,Nicotra,"1.5HP,415V,50Hz",,1,1,30,,0,2019,6,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan - Ground Floor,Ground Floor,,Monthly,,Shivani,01-01-2025,NULL,1
+12421,18443,Axial Fan,Nicotra,"1.5HP,415V,50Hz",,1,1,30,,0,2019,6,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan-Ground Floor,Ground Floor,,Monthly,,Shivani,01-01-2025,NULL,1
+12422,18443,Axial Fan,Nicotra,"1.5HP,415V,50Hz",,1,1,30,,0,2019,1,CAMC,34,19,2,01-01-2025,31-12-2025,,Axial Fan-Ground Floor,Ground Floor,,Monthly,,Shivani,01-01-2025,NULL,1
+12423,18443,Axial Fan,Nicotra,"1.5HP,415V,50Hz",,1,1,30,,0,,2019,CAMC,34,32,,02-01-2025,31-12-2025,,Axial Fan,Ground Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12424,18443,Axial Fan,Nicotra,"1.5HP,415V,50Hz",,1,1,30,,0,2019,6,CAMC,34,32,2,02-01-2025,31-12-2025,,Axial Fan -Ground Floor,Ground Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12425,18443,FCU - 1,DAIKIN,"2TR,230Volt",,2,1,57,,0,2019,6,CAMC,34,82,2,01-01-2026,31-12-2026,, First Floor,FCU  -First Floor,,Quterly,,Shivani,02-01-2025,NULL,1
+12426,18443,FCU - 2,DAIKIN,"2TR,230Volt",,2,1,57,,0,2019,6,CAMC,34,82,2,01-01-2026,31-12-2026,,FCU  -First Floor,First Floor,,Quterly,,Shivani,02-01-2025,NULL,1
+12427,18443,FCU - 3,DAIKIN,"2TR,230Volt",,2,1,30,,0,2019,6,CAMC,34,82,2,01-01-2026,31-12-2026,,FCU-First Floor,First Floor,,Quterly,,Shivani,02-01-2025,NULL,1
+12428,18443,FCU - 4,DAIKIN,"2TR,230Volt",,2,1,57,,0,2019,6,CAMC,34,82,2,01-01-2026,31-12-2026,,FCU - First Floor,First Floor,,Quterly,,Shivani,02-01-2025,NULL,1
+12429,18443,FCU - 5,DAIKIN,"2TR,230Volt",,2,1,57,,0,2019,6,CAMC,34,82,2,01-01-2026,31-12-2026,,FCU - First Floor,First Floor,,Quterly,,Shivani,02-01-2025,NULL,1
+12430,18443,Smoke Extration Fan,Nicotra,"1.5HP,415V,",,1,1,30,,0,,2019,CAMC,34,82,,02-01-2025,31-12-2025,,FCU,First Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12431,18443,Smoke Extration Fan,Nicotra,"1.5HP,415V,",,1,1,30,,0,,2019,CAMC,34,82,,02-01-2025,31-12-2025,,FCU,First Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12432,18443,CASSETTE AC - 2 TR - 3,DAIKIN,"1Ph,2TR,230V,50Hz",,2,1,57,,0,,2019,CAMC,34,23,,02-01-2025,31-12-2025,,Cassette AC,First Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12433,18443,CASSETTE AC - 2 TR - 4,DAIKIN,"1Ph,2TR,230V,50Hz",,2,1,57,,0,,2019,CAMC,34,23,,02-01-2025,31-12-2025,,Cassette AC,First Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12434,18443,CASSETTE AC - 2 TR - 5,DAIKIN,"1Ph,2TR,230V,50Hz",,2,1,57,,0,,2019,CAMC,34,23,,02-01-2025,31-12-2025,,Cassette AC,First Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12435,18443,CASSETTE AC - 2 TR - 6,DAIKIN,"1Ph,2TR,230V,50Hz",,2,1,57,,0,,2019,CAMC,34,23,,02-01-2025,31-12-2025,,Cassette AC,First Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12436,18443,CASSETTE AC - 2 TR - 7,DAIKIN,"1Ph,2TR,230V,50Hz",,2,1,57,,0,,2019,CAMC,34,23,,02-01-2025,31-12-2025,,Cassette AC,First Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12437,18443,CASSETTE AC - 2 TR - 8,DAIKIN,"1Ph,2TR,230V,50Hz",,2,1,57,,0,,2019,CAMC,34,23,,02-01-2025,31-12-2025,,Cassette AC,First Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12438,18443,CASSETTE AC - 2 TR - 9,DAIKIN,"1Ph,2TR,230V,50Hz",,2,1,57,,0,,2019,CAMC,34,23,,02-01-2025,31-12-2025,,Cassette AC,First Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12439,18443,SPLIT AC - 2 TR - 1,DAIKIN,"1Ph,2TR,230V,50Hz",,2,1,57,,0,2022,5,CAMC,34,23,,02-01-2025,31-12-2025,,GROUND FLOOR ,First Floor,,Quterly,,Shivani,02-01-2025,NULL,1
+12440,18443,SPLIT AC - 2 TR  - 2,DAIKIN,"1Ph,2TR,230V,50Hz",,2,1,57,,0,2019,7,CAMC,34,23,,02-01-2025,31-12-2025,,Cassette AC,First Floor,,Quterly,,Shivani,02-01-2025,NULL,1
+12441,18443,SPLIT  AC - 2 TR - 3,DAIKIN,"1Ph,2TR,230V,50Hz",,2,1,57,,0,2019,7,CAMC,34,23,2,01-01-2026,31-12-2026,,1ST FLOOR,First Floor,,Quterly,,Shivani,02-01-2025,NULL,1
+12442,18443,SPLIT- 2 TR - 4,DAIKIN,"1Ph,2TR,230V,50Hz",,2,1,57,,0,,2019,CAMC,34,23,,02-01-2025,31-12-2025,,Cassette AC,First Floor,,Quterly,,Shivani,02-01-2025,NULL,1
+12443,18443,CASSETTE AC - 2 TR - 10,DAIKIN,"1Ph,2TR,230V,50Hz",,2,1,57,,0,,2019,CAMC,34,23,,02-01-2025,31-12-2025,,Cassette AC,First Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12444,18443,Split - 2 TR - 5,DAIKIN,"1Ph,2TR,230V,50Hz",,2,1,57,,0,,2019,CAMC,34,23,,02-01-2025,31-12-2025,,Cassette AC,First Floor,,Quterly,,Shivani,02-01-2025,NULL,1
+12445,18443,Split AC - 1 TR - 6,DAIKIN,SINGLE PHESE 230V 1TON,,1,1,57,,0,,2019,CAMC,34,22,,02-01-2025,31-12-2025,,Server Room AC,First Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12446,18443,Split AC - 1 TR - 7,DAIKIN,SINGLE PHESE 230V 1TON,,1,1,57,,0,,2019,CAMC,34,22,,02-01-2025,31-12-2025,,Server Room AC,First Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12447,18443,AHU,Nicotra,"1500CFM,1300RPM,415Volt ,50Hz",,1,1,57,,0,,2019,CAMC,34,47,,02-01-2025,31-12-2025,,AHU,Second Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12448,18443,Air Washer Water Motor,Groundfos,"0.6KW/1HP,415Volt,50Hz",,1,1,30,,0,,2019,CAMC,34,23,,02-01-2025,31-12-2025,,AHU,Second Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12449,18443,Air Washer Water Motor,Groundfos,"0.6KW/1HP,415Volt,50Hz",,1,1,30,,0,,2019,CAMC,34,19,,02-01-2025,31-12-2025,,AHU,Second Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12450,18443,TFA,ZECO,"1458RPM/50Hz,415V",,1,1,30,,0,,2022,CAMC,34,19,,02-01-2025,31-12-2025,,TFA,Second Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12451,18443,Smoke Extration Fan,Nicotra,"5HP,415V,11A",,1,1,30,,0,,2019,CAMC,34,106,,02-01-2025,31-12-2025,,TFA,Second Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12452,18443,Smoke Extration Fan,Nicotra,"5HP,415V,11A",,1,1,30,,0,,2019,CAMC,34,106,,02-01-2025,31-12-2025,,TFA,Second Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12453,18443,Smoke Extration Fan,Nicotra,"5HP,415V,11A",,1,1,30,,0,,2019,CAMC,34,106,,02-01-2025,31-12-2025,,TFA,Second Floor,,Monthly,,Shivani,02-01-2025,NULL,1
+12454,18443,Solar Plant,TATA,"16.5kw,415v,50hz",,1,1,30,,0,,2019,CAMC,23,12,,02-01-2025,31-12-2025,,Solar Panel,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12455,18443,Axial Fan,Nicotra,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,,2019,CAMC,34,106,,02-01-2025,31-12-2025,,Lift Pressurisation Fans,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12456,18443,Axial Fan,Nicotra,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,,2019,CAMC,34,106,,02-01-2025,31-12-2025,,Lift Pressurisation Fans,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12457,18443,Axial Fan,Nicotra,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,,2019,CAMC,34,32,,02-01-2025,31-12-2025,,Lift Pressurisation Fans,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12458,18443,Axial Fan,Nicotra,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,,2019,CAMC,34,32,,02-01-2025,31-12-2025,,Lift Pressurisation Fans,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12459,18443,Axial Fan,Nicotra,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,,2019,CAMC,34,32,,02-01-2025,31-12-2025,,Lift Pressurisation Fans,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12460,18443,Axial Fan,Nicotra,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,,2019,CAMC,34,32,,02-01-2025,31-12-2025,,Lift Pressurisation Fans,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12461,18443,Axial Fan,Nicotra,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,,2019,CAMC,34,32,,02-01-2025,31-12-2025,,Lift Pressurisation Fans,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12462,18443,Axial Fan,Nicotra,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,,2019,CAMC,34,32,,02-01-2025,31-12-2025,,Lift Pressurisation Fans,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12463,18443,Axial Fan,Nicotra,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,,2019,CAMC,34,32,,02-01-2025,31-12-2025,,Lift Pressurisation Fans,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12464,18443,Axial Fan,Nicotra,"7.5HP,5.5Kw,10Amp,415V,50Hz,1460 RPM",,1,1,30,,0,,2019,CAMC,34,32,,02-01-2025,31-12-2025,,Lift Pressurisation Fans,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12465,18443,Exhaust Fans for Toilet,Nicotra,"440V, CFM-1500/  RPM-721",,1,1,30,,0,,2019,CAMC,34,32,,02-01-2025,31-12-2025,,Exhaust Fan,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12466,18443,Exhaust Fans for Toilet,Nicotra,"440V, CFM-1500/  RPM-721",,1,1,30,,0,,2019,CAMC,34,32,,02-01-2025,31-12-2025,,Exhaust Fan,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12467,18443,VRV - 12 HP,DAIKIN,"12 hp,380 V-415 V",,1,1,30,,0,,2022,CAMC,34,19,,02-01-2025,31-12-2025,,Terrace,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12468,18443,VRV - 12 HP,DAIKIN,"12 hp,380 V-415 V",,1,1,30,,0,,2022,CAMC,34,19,,02-01-2025,31-12-2025,,VRV,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12469,18443,VRV - 12 HP,DAIKIN,"12 hp,380 V-415 V",,1,1,30,,0,,2022,CAMC,34,19,,02-01-2025,31-12-2025,,VRV,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12470,18443,VRV - 12 HP,DAIKIN,"12 hp,380 V-415 V",,1,1,30,,0,,2022,CAMC,34,19,,02-01-2025,31-12-2025,,VRV,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12471,18443,VRV - 10 HP,DAIKIN,"10 hp,380 V-415 V",,1,1,30,,0,,2022,CAMC,34,19,,02-01-2025,31-12-2025,,VRV,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12472,18443,VRV - 10 HP,DAIKIN,"10 hp,380 V-415 V",,1,1,30,,0,,2022,CAMC,34,19,,02-01-2025,31-12-2025,,VRV,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12473,18443,VRV - 10 HP,DAIKIN,"10 hp,380 V-415 V",,1,1,30,,0,,2022,CAMC,34,19,,02-01-2025,31-12-2025,,VRV,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12474,18443,VRV - 10 HP,DAIKIN,"10 hp,380 V-415 V",,1,1,30,,0,,2022,CAMC,34,19,,02-01-2025,31-12-2025,,VRV,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12475,18443,VRV - 8 HP,DAIKIN,"8 hp,380 V-415 V",,1,1,30,,0,,2022,CAMC,34,19,,02-01-2025,31-12-2025,,VRV,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12476,18443,VRV - 4 HP,DAIKIN,"4hp,240V,50Hz",,1,1,30,,0,,2022,CAMC,34,19,,02-01-2025,31-12-2025,,VRV,Terrace,,Monthly,,Shivani,02-01-2025,NULL,1
+12477,18443,Fire Extinguisher (1-10 NOS) ,Minimax,4kg,,4,10,23,,0,2021,5,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12478,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12479,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12480,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,30,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12481,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12482,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12483,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12484,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12485,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12486,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12487,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12488,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12489,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12490,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12491,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12492,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12493,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12494,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12495,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12496,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12497,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12498,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12499,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12500,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12501,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12502,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12503,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12504,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12505,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12506,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12507,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12508,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12509,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12510,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12511,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12512,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12513,18443,Fire Extinguser CO2,Minimax,9 LTR  MFG - 2021,,9,1,25,,0,,2021,NCAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12514,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,NCAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12515,18443,Fire Extinguser CO2,Minimax,4.5KG   MFG - 2021,,4.5,1,23,,0,,2021,NCAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12516,18443,Fire Extinguser CO2,Minimax,4 LTR   MFG - 2021,,4,1,25,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12517,18443,Fire Extinguser CO2,Minimax,9 LTR  MFG - 2021,,9,1,25,,0,,2021,NCAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12518,18443,Fire Extinguser CO2,Minimax,9 LTR  MFG - 2021,,9,1,25,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12519,18443,Fire Extinguser CO2,Minimax,22.5 KG   MFG - 2021,,22.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12520,18443,Fire Extinguser CO2,Minimax,22.5 KG   MFG - 2021,,22.5,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12521,18443,Fire Extinguser ABC,Minimax,9 KG   MFG - 2021,,9,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12522,18443,Fire Extinguser ABC,Minimax,9 KG   MFG - 2021,,9,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12523,18443,Fire Extinguser ABC,Minimax,9 KG   MFG - 2021,,9,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12524,18443,Fire Extinguser ABC,Minimax,9 KG   MFG - 2021,,9,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12525,18443,Fire Extinguser ABC,Minimax,9 KG   MFG - 2021,,9,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12526,18443,Fire Extinguser ABC,Minimax,9 KG   MFG - 2021,,9,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12527,18443,Fire Extinguser ABC,Minimax,9 KG   MFG - 2021,,9,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12528,18443,Fire Extinguser ABC,Minimax,9 KG   MFG - 2021,,9,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12529,18443,Fire Extinguser ABC,Minimax,9 KG   MFG - 2021,,9,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12530,18443,Fire Extinguser ABC,Minimax,9 KG   MFG - 2021,,9,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12531,18443,Fire Extinguser ABC,Minimax,9 KG   MFG - 2021,,9,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12532,18443,Fire Extinguser ABC,Minimax,9 KG   MFG - 2021,,9,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12533,18443,Fire Extinguser ABC,Minimax,9 KG   MFG - 2021,,9,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12534,18443,Fire Extinguser ABC,Minimax,9 KG   MFG - 2021,,9,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12535,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12536,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12537,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12538,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12539,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12540,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12541,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12542,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12543,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12544,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12545,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12546,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12547,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12548,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12549,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12550,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12551,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12552,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12553,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12554,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12555,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12556,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12557,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12558,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12559,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12560,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12561,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12562,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12563,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12564,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12565,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12566,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12567,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12568,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12569,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12570,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12571,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12572,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12573,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12574,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12575,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12576,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12577,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12578,18443,Fire Extinguser ABC,Minimax,4 KG   MFG - 2021,,4,1,23,,0,,2021,CAMC,43,91,,02-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,02-01-2025,NULL,1
+12579,18443,Fire Extinguser ABC,Minimax,2 kg MFG-2019,,2,1,23,,0,,2019,CAMC,43,91,,04-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12580,18443,Fire Extinguser ABC,Minimax,2 kg MFG-2019,,2,1,23,,0,,2019,CAMC,43,91,,04-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12581,18443,Fire Extinguser ABC,Minimax,2 kg MFG-2019,,2,1,23,,0,,2019,CAMC,43,91,,04-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12582,18443,Fire Extinguser ABC,Minimax,2 kg MFG-2019,,2,1,23,,0,,2019,CAMC,43,91,,04-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12583,18443,Fire Extinguser ABC,Minimax,2 kg MFG-2019,,2,1,23,,0,,2019,CAMC,43,91,,04-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12584,18443,Fire Extinguser ABC,Minimax,2 kg MFG-2019,,2,1,23,,0,,2019,CAMC,43,91,,04-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12585,18443,Fire Extinguser ABC,Minimax,2 kg MFG-2019,,2,1,23,,0,,2019,CAMC,43,91,,04-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12586,18443,Fire Extinguser ABC,Minimax,2 kg MFG-2019,,2,1,23,,0,,2019,CAMC,43,91,,04-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12587,18443,Fire Extinguser ABC,Minimax,2 kg MFG-2019,,2,1,23,,0,,2019,CAMC,43,91,,04-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12588,18443,Fire Extinguser ABC,Minimax,2 kg MFG-2019,,2,1,23,,0,,2019,CAMC,43,91,,04-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12589,18443,Fire Extinguser ABC,Minimax,2 kg MFG-2019,,2,1,23,,0,,2019,CAMC,43,91,,04-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12590,18443,Fire Extinguser ABC,Minimax,2 kg MFG-2019,,2,1,23,,0,,2019,CAMC,43,91,,04-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12591,18443,Fire Extinguser ABC,Minimax,2 kg MFG-2019,,2,1,23,,0,,2019,CAMC,43,91,,04-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12592,18443,Fire Extinguser ABC,Minimax,2 kg MFG-2019,,2,1,23,,0,,2019,CAMC,43,91,,04-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12593,18443,Fire Extinguser ABC,Minimax,2 kg MFG-2019,,2,1,23,,0,,2019,CAMC,43,91,,04-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12594,18443,Fire Extinguser ABC,Minimax,2 kg MFG-2019,,2,1,23,,0,,2019,CAMC,43,91,,04-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12595,18443,Fire Extinguser ABC,Minimax,2 kg MFG-2019,,2,1,23,,0,,2019,CAMC,43,91,,04-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12596,18443,Dome Camera,TVS,HSD : 303,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,2023,2,CAMC,8,4,,04-01-2025,31-12-2027,,Lower Basment,LB Lobby -02,,Monthly,,Shivani,04-01-2025,NULL,1
+12597,18443,Dome Camera,TVS,HSD : 303,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,2023,2023,CAMC,8,4,2,04-01-2025,31-12-2025,,Lower Basment,LB Staircase -1,,Monthly,,Shivani,04-01-2025,NULL,1
+12598,18443,Dome Camera,TVS,HSD : 303,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,2023,6,CAMC,8,4,2,04-01-2025,31-12-2025,,Lower Basment,LB Staircase -1,,Monthly,,Shivani,04-01-2025,NULL,1
+12599,18443,Dome Camera,TVS,HSD : 303,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.35,371.35,2023,3,CAMC,8,4,2,04-01-2025,31-12-2027,,Lower Basment,LB Staircase -2,,Monthly,,Shivani,04-01-2025,NULL,1
+12600,18443,Bullet Camera,TVS,HSB : 362,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,2023,3,CAMC,8,4,2,01-01-2026,01-02-2027,,Lower Basment,LB Driveway Near RTC Parking 1,,Monthly,,Shivani,04-01-2025,NULL,1
+12601,18443,Bullet Camera,TVS,HSB : 362,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,2023,3,CAMC,8,4,2,01-01-2026,31-12-2027,,Lower Basement ,Lower Basement RTC Parking 1,,Monthly,,Shivani,04-01-2025,NULL,1
+12602,18443,Bullet Camera,TVS,HSB : 362,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,2023,3,CAMC,8,4,2,01-01-2026,01-02-2027,,Lower Basement ,Lower Basement RTC Parking 2,,Monthly,,Shivani,04-01-2025,NULL,1
+12603,18443,Bullet Camera,TVS,HSB : 362,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,2023,3,CAMC,8,4,,01-01-2026,01-01-2027,,Lower Basment,LB Driveway Near RTC Parking 2,,Monthly,,Shivani,04-01-2025,NULL,1
+12604,18443,Bullet Camera,TVS,HSB : 362,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,2023,3,CAMC,8,4,2,01-01-2026,01-02-2027,,Lower Basement,LB Exit Ramp,,Monthly,,Shivani,04-01-2025,NULL,1
+12605,18443,Bullet Camera,TVS,HSB : 362,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,2023,2023,CAMC,8,4,2,01-01-2026,01-02-2027,,Lower Basment,LB Entry Ramp -2,,Monthly,,Shivani,04-01-2025,NULL,1
+12606,18443,Bullet Camera,TVS,HSB : 362,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,,2023,CAMC,8,4,2,01-01-2026,01-02-2027,,Lower Basment,LB Fire Pump Room - Front,,Monthly,,Shivani,04-01-2025,NULL,1
+12607,18443,Bullet Camera,TVS,HSB : 362,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,2023,3,CAMC,8,4,2,01-01-2026,01-02-2027,,Lower Basment,LB STP Room - Front Side,,Monthly,,Shivani,04-01-2025,NULL,1
+12608,18443,Dome Camera,TVS,HSD : 303,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,2023,3,CAMC,8,4,,01-01-2026,01-02-2027,,Upper Basement ,UB Lobby - 1,,Monthly,,Shivani,04-01-2025,NULL,1
+12609,18443,TVS,TVS,HSD : 303,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,2023,3,CAMC,8,4,2,01-01-2026,01-02-2027,,Upper Basement ,UB Lobby - 2,,Monthly,,Shivani,04-01-2025,NULL,1
+12610,18443,Dome Camera,TVS,HSD : 303,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,2023,3,CAMC,8,4,,01-01-2026,01-02-2027,,Upper Basement ,UB Lobby - 2,,Monthly,,Shivani,04-01-2025,NULL,1
+12611,18443,Dome Camera,TVS,HSD : 303,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,2023,3,CAMC,8,4,2,01-01-2026,01-02-2027,,Upper Basement ,UB Staircase - 1,,Monthly,,Shivani,04-01-2025,NULL,1
+12612,18443,Dome Camera,TVS,HSD : 303,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,2023,3,CAMC,8,4,2,01-01-2026,01-02-2027,,Upper Basement ,UB Staircase - 2,,Monthly,,Shivani,04-01-2025,NULL,1
+12613,18443,Dome Camera,TVS,HSD : 303,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,2023,3,CAMC,8,4,2,01-01-2026,01-02-2027,,Upper Basement,UB CCTV Room Inside,,Monthly,,Shivani,04-01-2025,NULL,1
+12614,18443,Bullet Camera,TVS,HSB : 362,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,2023,3,CAMC,8,4,2,01-01-2026,01-02-2027,,Upper Basement,UB Driveway Near CCTV,,Monthly,,Shivani,04-01-2025,NULL,1
+12615,18443,Bullet Camera,TVS,HSB : 362,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,2023,1,CAMC,8,4,2,01-01-2026,01-02-2027,,Upper Basement ,UB Exit Ramp to Scrap Room,,Monthly,,Shivani,04-01-2025,NULL,1
+12616,18443,Bullet Camera,TVS,HSB : 362,"12V-DC, 3.6MM - 2.4 MP",2.4,1,30,371.34,371.34,2023,2,CAMC,8,4,2,01-01-2026,01-02-2027,,Upper Basement,UB Exit Ramp to Ground Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12617,18443,CCTV -1,TVS,BULLET,,1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12618,18443,CCTV - 2,TVS,BULLET,,1,1,30,,0,,2023,CAMC,8,4,,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12619,18443,CCTV -3,TVS,BULLET,,1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12620,18443,CCTV - 4,TVS,BULLET,"DC 12Volt,2.4MP,LENS3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12621,18443,CCTV - 5,TVS,BULLET,"DC 12Volt,2.4MP,LENS3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Quterly,,Shivani,04-01-2025,NULL,1
+12622,18443,CCTV - 6,TVS,BULLET,"DC 12Volt,2.4MP,LENS3.6MM",1,1,30,,0,,2023,CAMC,8,4,,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Quterly,,Shivani,04-01-2025,NULL,1
+12623,18443,CCTV - 7,TVS,BULLET,"DC 12Volt,2.4MP,LENS3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12624,18443,CCTV - 8,TVS,BULLET,"DC 12Volt,2.4MP,LENS3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12625,18443,CCTV - 9,TVS,BULLET,"DC 12Volt,2.4MP,LENS3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12626,18443,CCTV - 10,TVS,BULLET,"DC 12Volt,2.4MP,LENS3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Quterly,,Shivani,04-01-2025,NULL,1
+12627,18443,CCTV - 11,TVS,BULLET,"DC 12Volt,2.4MP,LENS3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Quterly,,Shivani,04-01-2025,NULL,1
+12628,18443,CCTV - 12,TVS,BULLET,"DC 12Volt,2.4MP,LENS3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12629,18443,CCTV - 13,TVS,BULLET,"DC 12Volt,2.4MP,LENS3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12630,18443,CCTV - 14,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12631,18443,CCTV - 15,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12632,18443,CCTV - 16,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12633,18443,CCTV - 17,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12634,18443,CCTV - 18,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12635,18443,CCTV - 19,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12636,18443,CCTV - 20,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12637,18443,CCTV - 21,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12638,18443,CCTV - 22,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12639,18443,CCTV - 23,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12640,18443,CCTV - 24,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12641,18443,CCTV - 25,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12642,18443,CCTV - 26,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12643,18443,CCTV - 27,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12644,18443,CCTV - 28,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12645,18443,CCTV - 29,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12646,18443,CCTV - 30,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12647,18443,CCTV - 31,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Quterly,,Shivani,04-01-2025,NULL,1
+12648,18443,CCTV - 32,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12649,18443,CCTV - 33,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12650,18443,CCTV - 34,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12651,18443,CCTV - 35,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12652,18443,CCTV - 36,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12653,18443,CCTV - 37,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12654,18443,CCTV - 38,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12655,18443,CCTV - 39,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12656,18443,CCTV - 40 ,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12657,18443,CCTV - 41,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12658,18443,CCTV - 42,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12659,18443,CCTV - 43 ,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12660,18443,CCTV - 44,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12661,18443,CCTV - 45,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12662,18443,CCTV - 46,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12663,18443,CCTV - 47,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12664,18443,CCTV - 48,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12665,18443,CCTV - 49,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12666,18443,CCTV - 50 ,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12667,18443,CCTV - 51,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12668,18443,CCTV - 52 ,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12669,18443,CCTV - 53 ,TVS,DOME,"DC 12Volt ,2.4 MP,LENS:3.6MM",1,1,30,,0,,2023,CAMC,8,4,2,01-01-2026,31-12-2026,,CCTV Camera,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12670,18443,FIRE ALARM SYSTEM,HONEYWELL,,,1,1,30,,0,,2022,CAMC,43,91,,04-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12671,18443,FIRE ALARM SYSTEM,HONEYWELL,,,1,1,30,,0,,2022,CAMC,43,91,,04-01-2025,31-12-2025,,Fire Extinguisher,Common Facilities,,Monthly,,Shivani,04-01-2025,NULL,1
+12672,18443,Wall Fan,Marathon,160W/RPM-1400,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Industrial wall fan ,All floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12673,18443,Industrial Wall Fan,Marathon,160W/RPM-1400,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Industrial wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12674,18443,Industrial Wall Fan,Marathon,160W/RPM-1400,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Industrial wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12675,18443,Industrial Wall Fan,Marathon,160W/RPM-1400,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Industrial wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12676,18443,Industrial Wall Fan,Marathon,160W/RPM-1400,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Industrial wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12677,18443,Industrial Wall Fan,Marathon,160W/RPM-1400,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Industrial wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12678,18443,Industrial Wall Fan,Marathon,160W/RPM-1400,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Industrial wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12679,18443,Industrial Wall Fan,Marathon,160W/RPM-1400,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Industrial wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12680,18443,Industrial Wall Fan,Marathon,160W/RPM-1400,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Industrial wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12681,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12682,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12683,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12684,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12685,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12686,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12687,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12688,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12689,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12690,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12691,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12692,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12693,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12694,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12695,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12696,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12697,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12698,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12699,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12700,18443,Domestic Wall Fan,Crompton,60W/RPM-1330,,1,1,30,,0,,2022,CAMC,23,83,,04-01-2025,31-12-2025,,Domestic wall fan,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12701,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,129,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12702,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,129,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12703,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,129,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12704,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,129,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12705,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,129,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12706,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,129,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12707,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,129,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12708,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,129,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12709,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12710,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12711,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12712,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12713,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12714,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12715,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12716,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12717,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12718,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12719,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12720,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12721,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12722,18443,LED Ceiling Lights,Philips,30W,,1,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12723,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12724,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12725,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12726,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12727,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12728,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12729,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12730,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12731,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12732,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12733,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12734,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12735,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12736,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12737,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12738,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12739,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12740,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12741,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12742,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12743,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12744,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12745,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12746,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12747,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12748,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12749,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12750,18443,LED Ceiling Lights,Philips,30W,,30,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12751,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12752,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12753,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12754,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12755,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12756,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12757,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12758,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12759,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12760,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12761,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12762,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12763,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12764,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12765,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12766,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12767,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12768,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12769,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12770,18443,LED Ceiling Lights,Philips,10W,,10,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12771,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12772,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12773,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12774,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12775,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12776,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12777,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12778,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12779,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12780,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12781,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12782,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12783,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12784,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12785,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12786,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12787,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12788,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12789,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12790,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12791,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12792,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12793,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12794,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12795,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12796,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12797,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12798,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12799,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12800,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12801,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12802,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12803,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12804,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12805,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12806,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12807,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12808,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12809,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12810,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12811,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12812,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12813,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12814,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12815,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12816,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12817,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12818,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12819,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12820,18443,LED Tube Lights,Philips,"13W, 240 Volt",,13,1,30,,0,,2022,CAMC,23,67,,04-01-2025,31-12-2025,,LED Lights,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12821,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12822,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12823,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12824,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12825,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12826,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12827,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12828,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12829,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12830,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12831,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12832,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12833,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12834,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12835,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12836,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12837,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12838,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12839,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12840,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12841,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+12842,18443,MCB,ANCHOR,"10Amp,C type",,10,1,30,,0,,2022,CAMC,23,14,,04-01-2025,31-12-2025,,MCB,1st Floor,,Monthly,,Shivani,04-01-2025,NULL,1
+14761,18443,Heavy duty fan,,160W/RPM-1400,,,1,-1,,0,,1,-1,-1,-1,2,,,,,1st floor,,Monthly,,Saniya,31-03-2025,NULL,1

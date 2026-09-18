@@ -1,0 +1,51 @@
+Branch,Equipment Name,Equipment Number,Make,Model,Serial No,Capacity,Qty,UOM Name,UOM Number,Unit Rate,Amount,Manufacturing Year,Equipment Age,Service Type,Category,CategoryNumber,Sub Category,Sub Category Number,TAT,AMC Start Date,AMC End Date,Floor Number,Equipment Location,Description,Interval
+Urban - Vikhroli,CCTV-1,9044,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-2,9364,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,Audible CCTV-1,9346,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,Audible DVR,9355,CP PLUS,,8 Channel,8,1,NOS,30,2625,2625,2023,2,CAMC,CCTV,8,DVR,1,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,DVR,9414,CP PLUS,,32 Channel,32,1,NOS,30,2100,2100,2023,2,CAMC,CCTV,8,DVR,1,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-CO2-4.5KG-1,9452,LIGHTER,4.5 KG,,4.5,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,EMPLOYEE SECTION ENTRY POINT,,Quterly
+Urban - Vikhroli,UPS,9537,Buton,X-IN-3K,20US202018,2700,1,KVA,28,15750,15750,2023,2,NCAMC,Electrical,23,UPS,25,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,Audible CCTV-2,14062,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,Audible CCTV-3,14063,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,Audible CCTV-4,14064,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-CO2-4.5KG-2,14065,LIGHTER,4.5 KG,,4.5,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-CO2-4.5KG-3,14066,LIGHTER,4.5 KG,,4.5,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-CO2-4.5KG-4,14067,AGNI SHIELD,4.5 KG,,4.5,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-CO2-4.5KG-5,14068,AGNI SHIELD,4.5 KG,,4.5,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-CO2-4.5KG-6,14069,AGNI SHIELD,4.5 KG,,4.5,1,KG,23,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-ABC-4KG-1,14070,UNIVERSAL,,,4,1,NOS,30,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-ABC-4KG-2,14071,UNIVERSAL,,,4,1,NOS,30,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-ABC-4KG-3,14072,UNIVERSAL,,,4,1,NOS,30,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-ABC-4KG-4,14073,UNIVERSAL,,,4,1,NOS,30,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-ABC-4KG-5,14074,UNIVERSAL,,,4,1,NOS,30,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-ABC-4KG-6,14075,LIGHTER,,,4,1,NOS,30,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-ABC-4KG-7,14076,LIGHTER,,,4,1,NOS,30,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-ABC-4KG-8,14077,LIGHTER,,,4,1,NOS,30,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-ABC-4KG-9,14078,LIGHTER,,,4,1,NOS,30,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-ABC-4KG-10,14079,LIGHTER,,,4,1,NOS,30,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-ABC-4KG-11,14080,LIGHTER,,,4,1,NOS,30,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-ABC-4KG-12,14081,LIGHTER,,,4,4,NOS,30,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-ABC-4KG-13,14082,AGNI SHIELD,,,4,4,NOS,30,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,FAS-ABC-4KG-14,14083,AGNI SHIELD,,,4,1,NOS,30,1260,1260,2023,2,NCAMC,Fire Safety,43,FAS,188,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-3,14084,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-4,14085,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-5,14086,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-6,14087,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-7,14088,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-8,14089,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-9,14090,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-10,14091,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-11,14092,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-12,14093,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-13,14094,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-14,14095,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-15,14096,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-16,14097,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-17,14098,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-18,14099,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-19,14100,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-20,14101,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-21,14102,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-22,14103,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly
+Urban - Vikhroli,CCTV-23,14104,CP PLUS,,,1,1,NOS,30,525,525,2023,2,CAMC,CCTV,8,Camera,4,2,2026-01-01,2026-12-31,Second Floor,,,Quterly

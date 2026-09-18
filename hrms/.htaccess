@@ -1,0 +1,2 @@
+Options -Indexes
+ErrorDocument 403 /admin/error-pages/403.html

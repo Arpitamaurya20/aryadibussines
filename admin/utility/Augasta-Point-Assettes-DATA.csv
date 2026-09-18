@@ -1,0 +1,360 @@
+Branch Name ,Name Of Equipment ,Make,Model,SNo,Capicity ,QTY,UOM,Unit Rate,Amount,Manufacturing Year,Age of Equipment ( years )*,Type of Services ,Category,Subcatagory ,TAT,AMC Start Date,AMC End Date,Floor Number,Equipment Location,Description,UniqueID
+001-Augusta Point Gurugram,FS-EST ,N/A,N/A,1,1,1,Nos,2000,2000,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,1-GF,1-GF,N/A,0
+001-Augusta Point Gurugram,LOOP,N/A,N/A,4,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,4-GF,4-GF,N/A,0
+001-Augusta Point Gurugram,LOOP,N/A,N/A,5,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,5-GF,5-GF,N/A,0
+001-Augusta Point Gurugram,MCP,N/A,N/A,6,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,6-GF,6-GF,N/A,0
+001-Augusta Point Gurugram,MCP,N/A,N/A,7,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,7-GF,7-GF,N/A,0
+001-Augusta Point Gurugram,MCP,N/A,N/A,8,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,8-GF,8-GF,N/A,0
+001-Augusta Point Gurugram,MCP,N/A,N/A,9,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,9-GF,9-GF,N/A,0
+001-Augusta Point Gurugram,MCP,N/A,N/A,10,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,10-GF,10-GF,N/A,0
+001-Augusta Point Gurugram,MCP,N/A,N/A,11,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,11-GF,11-GF,N/A,0
+001-Augusta Point Gurugram,MCP,N/A,N/A,12,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,12-GF,12-GF,N/A,0
+001-Augusta Point Gurugram,MCP,N/A,N/A,13,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,13-GF,13-GF,N/A,0
+001-Augusta Point Gurugram,MCP,N/A,N/A,14,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,14-GF,14-GF,N/A,0
+001-Augusta Point Gurugram,HOOTER ,N/A,N/A,15,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,15-GF,15-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,16,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,16-GF,16-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,17,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,17-GF,17-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,18,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,18-GF,18-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,19,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,19-GF,19-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,20,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,20-GF,20-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,21,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,21-GF,21-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,22,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,22-GF,22-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,23,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,23-GF,23-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,24,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,24-GF,24-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,25,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,25-GF,25-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,26,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,26-GF,26-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,27,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,27-GF,27-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,28,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,28-GF,28-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,29,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,29-GF,29-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,30,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,30-GF,30-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,31,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,31-GF,31-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,32,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,32-GF,32-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,33,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,33-GF,33-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,34,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,34-GF,34-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,35,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,35-GF,35-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,36,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,36-GF,36-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,37,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,37-GF,37-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,38,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,38-GF,38-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,39,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,39-GF,39-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,40,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,40-GF,40-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,41,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,41-GF,41-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,42,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,42-GF,42-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,43,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,43-GF,43-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,44,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,44-GF,44-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,45,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,45-GF,45-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,46,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,46-GF,46-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,47,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,47-GF,47-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,48,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,48-GF,48-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,49,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,49-GF,49-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,50,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,50-GF,50-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,51,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,51-GF,51-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,52,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,52-GF,52-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,53,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,53-GF,53-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,54,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,54-GF,54-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,55,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,55-GF,55-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,56,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,56-GF,56-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,57,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,57-GF,57-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,58,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,58-GF,58-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,59,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,59-GF,59-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,60,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,60-GF,60-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,61,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,61-GF,61-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,62,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,62-GF,62-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,63,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,63-GF,63-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,64,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,64-GF,64-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,65,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,65-GF,65-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,66,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,66-GF,66-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,67,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,67-GF,67-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,68,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,68-GF,68-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,69,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,69-GF,69-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,70,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,70-GF,70-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,71,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,71-GF,71-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,72,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,72-GF,72-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,73,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,73-GF,73-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,74,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,74-GF,74-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,75,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,75-GF,75-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,76,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,76-GF,76-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,77,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,77-GF,77-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,78,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,78-GF,78-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,79,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,79-GF,79-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,80,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,80-GF,80-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,81,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,81-GF,81-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,82,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,82-GF,82-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,83,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,83-GF,83-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,84,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,84-GF,84-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,85,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,85-GF,85-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,86,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,86-GF,86-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,87,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,87-GF,87-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,88,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,88-GF,88-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,89,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,89-GF,89-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,90,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,90-GF,90-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,91,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,91-GF,91-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,92,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,92-GF,92-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,93,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,93-GF,93-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,94,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,94-GF,94-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,95,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,95-GF,95-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,96,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,96-GF,96-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,97,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,97-GF,97-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,98,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,98-GF,98-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,99,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,99-GF,99-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,100,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,100-GF,100-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,101,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,101-GF,101-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,102,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,102-GF,102-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,103,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,103-GF,103-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,104,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,104-GF,104-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,105,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,105-GF,105-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,106,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,106-GF,106-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,107,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,107-GF,107-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,108,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,108-GF,108-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,109,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,109-GF,109-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,110,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,110-GF,110-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,111,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,111-GF,111-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,112,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,112-GF,112-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,113,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,113-GF,113-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,114,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,114-GF,114-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,115,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,115-GF,115-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,116,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,116-GF,116-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,117,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,117-GF,117-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,118,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,118-GF,118-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,119,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,119-GF,119-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,120,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,120-GF,120-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,121,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,121-GF,121-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,122,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,122-GF,122-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,123,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,123-GF,123-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,124,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,124-GF,124-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,125,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,125-GF,125-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,126,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,126-GF,126-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,127,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,127-GF,127-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,128,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,128-GF,128-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,129,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,129-GF,129-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,130,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,130-GF,130-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,131,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,131-GF,131-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,132,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,132-GF,132-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,133,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,133-GF,133-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,134,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,134-GF,134-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,135,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,135-GF,135-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,136,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,136-GF,136-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,137,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,137-GF,137-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,138,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,138-GF,138-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,139,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,139-GF,139-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,140,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,140-GF,140-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,141,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,141-GF,141-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,142,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,142-GF,142-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,143,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,143-GF,143-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,144,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,144-GF,144-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,145,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,145-GF,145-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,146,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,146-GF,146-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,147,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,147-GF,147-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,148,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,148-GF,148-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,149,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,149-GF,149-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,150,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,150-GF,150-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,151,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,151-GF,151-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,152,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,152-GF,152-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,153,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,153-GF,153-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,154,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,154-GF,154-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,155,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,155-GF,155-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,156,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,156-GF,156-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,157,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,157-GF,157-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,158,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,158-GF,158-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,159,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,159-GF,159-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,160,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,160-GF,160-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,161,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,161-GF,161-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,162,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,162-GF,162-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,163,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,163-GF,163-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,164,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,164-GF,164-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,165,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,165-GF,165-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,166,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,166-GF,166-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,167,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,167-GF,167-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,168,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,168-GF,168-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,169,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,169-GF,169-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,170,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,170-GF,170-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,171,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,171-GF,171-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,172,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,172-GF,172-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,173,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,173-GF,173-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,174,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,174-GF,174-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,175,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,175-GF,175-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,176,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,176-GF,176-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,177,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,177-GF,177-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,178,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,178-GF,178-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,179,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,179-GF,179-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,180,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,180-GF,180-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,181,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,181-GF,181-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,182,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,182-GF,182-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,183,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,183-GF,183-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,184,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,184-GF,184-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,185,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,185-GF,185-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,186,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,186-GF,186-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,187,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,187-GF,187-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,188,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,188-GF,188-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,189,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,189-GF,189-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,190,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,190-GF,190-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,191,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,191-GF,191-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,192,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,192-GF,192-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,193,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,193-GF,193-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,194,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,194-GF,194-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,195,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,195-GF,195-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,196,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,196-GF,196-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,197,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,197-GF,197-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,198,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,198-GF,198-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,199,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,199-GF,199-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,200,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,200-GF,200-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,201,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,201-GF,201-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,202,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,202-GF,202-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,203,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,203-GF,203-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,204,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,204-GF,204-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,205,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,205-GF,205-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,206,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,206-GF,206-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,207,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,207-GF,207-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,208,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,208-GF,208-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,209,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,209-GF,209-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,210,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,210-GF,210-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,211,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,211-GF,211-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,212,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,212-GF,212-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,213,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,213-GF,213-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,214,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,214-GF,214-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,215,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,215-GF,215-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,216,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,216-GF,216-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,217,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,217-GF,217-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,218,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,218-GF,218-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,219,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,219-GF,219-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,220,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,220-GF,220-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,221,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,221-GF,221-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,222,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,222-GF,222-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,223,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,223-GF,223-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,224,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,224-GF,224-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,225,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,225-GF,225-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,226,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,226-GF,226-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,227,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,227-GF,227-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,228,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,228-GF,228-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,229,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,229-GF,229-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,230,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,230-GF,230-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,231,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,231-GF,231-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,232,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,232-GF,232-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,233,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,233-GF,233-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,234,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,234-GF,234-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,235,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,235-GF,235-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,236,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,236-GF,236-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,237,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,237-GF,237-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,238,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,238-GF,238-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,239,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,239-GF,239-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,240,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,240-GF,240-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,241,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,241-GF,241-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,242,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,242-GF,242-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,243,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,243-GF,243-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,244,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,244-GF,244-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,245,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,245-GF,245-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,246,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,246-GF,246-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,247,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,247-GF,247-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,248,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,248-GF,248-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,249,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,249-GF,249-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,250,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,250-GF,250-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,251,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,251-GF,251-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,252,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,252-GF,252-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,253,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,253-GF,253-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,254,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,254-GF,254-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,255,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,255-GF,255-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,256,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,256-GF,256-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,257,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,257-GF,257-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,258,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,258-GF,258-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,259,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,259-GF,259-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,260,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,260-GF,260-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,261,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,261-GF,261-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,262,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,262-GF,262-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,263,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,263-GF,263-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,264,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,264-GF,264-GF,N/A,0
+001-Augusta Point Gurugram,DETECTOR ,N/A,N/A,265,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,265-GF,265-GF,N/A,0
+001-Augusta Point Gurugram,CCTV,N/A,N/A,266,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,266-GF,266-GF,N/A,0
+001-Augusta Point Gurugram,CCTV,N/A,N/A,267,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,267-GF,267-GF,N/A,0
+001-Augusta Point Gurugram,CCTV,N/A,N/A,268,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,268-GF,268-GF,N/A,0
+001-Augusta Point Gurugram,CCTV,N/A,N/A,269,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,269-GF,269-GF,N/A,0
+001-Augusta Point Gurugram,CCTV,N/A,N/A,270,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,270-GF,270-GF,N/A,0
+001-Augusta Point Gurugram,CCTV,N/A,N/A,271,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,271-GF,271-GF,N/A,0
+001-Augusta Point Gurugram,CCTV,N/A,N/A,272,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,272-GF,272-GF,N/A,0
+001-Augusta Point Gurugram,CCTV,N/A,N/A,273,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,273-GF,273-GF,N/A,0
+001-Augusta Point Gurugram,CCTV,N/A,N/A,274,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,274-GF,274-GF,N/A,0
+001-Augusta Point Gurugram,CCTV,N/A,N/A,275,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,275-GF,275-GF,N/A,0
+001-Augusta Point Gurugram,CCTV,N/A,N/A,276,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,276-GF,276-GF,N/A,0
+001-Augusta Point Gurugram,CCTV,N/A,N/A,277,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,277-GF,277-GF,N/A,0
+001-Augusta Point Gurugram,CCTV,N/A,N/A,278,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,278-GF,278-GF,N/A,0
+001-Augusta Point Gurugram,CCTV,N/A,N/A,279,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,279-GF,279-GF,N/A,0
+001-Augusta Point Gurugram,CCTV,N/A,N/A,280,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,280-GF,280-GF,N/A,0
+001-Augusta Point Gurugram,CCTV,N/A,N/A,281,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,281-GF,281-GF,N/A,0
+001-Augusta Point Gurugram,DVR,N/A,N/A,282,1,1,Nos,1000,1000,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,282-GF,282-GF,N/A,0
+001-Augusta Point Gurugram,HDD,N/A,N/A,298,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,298-GF,298-GF,N/A,0
+001-Augusta Point Gurugram,AMLY FIRE ,N/A,N/A,299,1,1,Nos,1000,1000,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,299-GF,299-GF,N/A,0
+001-Augusta Point Gurugram,AMLY FIRE ,N/A,N/A,300,1,1,Nos,1000,1000,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,300-GF,300-GF,N/A,0
+001-Augusta Point Gurugram,AMLY FIRE ,N/A,N/A,301,1,1,Nos,1000,1000,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,301-GF,301-GF,N/A,0
+001-Augusta Point Gurugram,AMLY FIRE ,N/A,N/A,302,1,1,Nos,1000,1000,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,302-GF,302-GF,N/A,0
+001-Augusta Point Gurugram,AMLY FIRE ,N/A,N/A,303,1,1,Nos,1000,1000,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,303-GF,303-GF,N/A,0
+001-Augusta Point Gurugram,AMLY FIRE ,N/A,N/A,304,1,1,Nos,1000,1000,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,304-GF,304-GF,N/A,0
+001-Augusta Point Gurugram,MIC,N/A,N/A,305,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,305-GF,305-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,306,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,306-GF,306-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,307,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,307-GF,307-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,308,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,308-GF,308-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,309,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,309-GF,309-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,310,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,310-GF,310-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,311,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,311-GF,311-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,312,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,312-GF,312-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,313,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,313-GF,313-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,314,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,314-GF,314-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,315,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,315-GF,315-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,316,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,316-GF,316-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,317,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,317-GF,317-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,318,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,318-GF,318-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,319,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,319-GF,319-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,320,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,320-GF,320-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,321,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,321-GF,321-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,322,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,322-GF,322-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,323,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,323-GF,323-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,324,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,324-GF,324-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,325,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,325-GF,325-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,326,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,326-GF,326-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,327,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,327-GF,327-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,328,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,328-GF,328-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,329,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,329-GF,329-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,330,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,330-GF,330-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,331,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,331-GF,331-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,332,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,332-GF,332-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,333,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,333-GF,333-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,334,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,334-GF,334-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,335,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,335-GF,335-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,336,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,336-GF,336-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,337,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,337-GF,337-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,338,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,338-GF,338-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,339,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,339-GF,339-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,340,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,340-GF,340-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,341,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,341-GF,341-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,342,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,342-GF,342-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,343,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,343-GF,343-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,344,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,344-GF,344-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,345,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,345-GF,345-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,346,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,346-GF,346-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,347,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,347-GF,347-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,348,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,348-GF,348-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,349,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,349-GF,349-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,350,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,350-GF,350-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,351,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,351-GF,351-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,352,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,352-GF,352-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,353,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,353-GF,353-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,354,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,354-GF,354-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,355,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,355-GF,355-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,356,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,356-GF,356-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,357,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,357-GF,357-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,358,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,358-GF,358-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,359,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,359-GF,359-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,360,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,360-GF,360-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,361,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,361-GF,361-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,362,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,362-GF,362-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,363,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,363-GF,363-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,364,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,364-GF,364-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,365,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,365-GF,365-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,366,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,366-GF,366-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,367,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,367-GF,367-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,368,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,368-GF,368-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,369,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,369-GF,369-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,370,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,370-GF,370-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,371,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,371-GF,371-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,372,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,372-GF,372-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,373,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,373-GF,373-GF,N/A,0
+001-Augusta Point Gurugram,SPEAKAR,N/A,N/A,374,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,374-GF,374-GF,N/A,0
+001-Augusta Point Gurugram,VOLUME CONTROLAR,N/A,N/A,375,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,375-GF,375-GF,N/A,0
+001-Augusta Point Gurugram,MP3 PLATER ,N/A,N/A,376,1,1,Nos,42,42,2015,8,NCMC,ELV Automation,Fire Panel ,2,4/1/2023,3/31/2024,376-GF,376-GF,N/A,0

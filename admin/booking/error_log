@@ -1,0 +1,617 @@
+[22-Dec-2022 02:32:53 America/Boise] PHP Notice:  Undefined variable: resumevalue in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 178
+[22-Dec-2022 02:32:53 America/Boise] PHP Notice:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 178
+[22-Dec-2022 02:32:53 America/Boise] PHP Notice:  Undefined index: current_date in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 186
+[22-Dec-2022 02:32:53 America/Boise] PHP Notice:  Undefined index: current_date in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 187
+[22-Dec-2022 02:32:53 America/Boise] PHP Notice:  Undefined variable: resumevalue in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 178
+[22-Dec-2022 02:32:53 America/Boise] PHP Notice:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 178
+[22-Dec-2022 02:32:53 America/Boise] PHP Notice:  Undefined index: current_date in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 186
+[22-Dec-2022 02:32:53 America/Boise] PHP Notice:  Undefined index: current_date in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 187
+[24-Dec-2022 06:49:00 America/Boise] PHP Notice:  Undefined variable: resumevalue in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 178
+[24-Dec-2022 06:49:00 America/Boise] PHP Notice:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 178
+[24-Dec-2022 06:49:00 America/Boise] PHP Notice:  Undefined index: current_date in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 186
+[24-Dec-2022 06:49:00 America/Boise] PHP Notice:  Undefined index: current_date in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 187
+[24-Dec-2022 06:49:00 America/Boise] PHP Notice:  Undefined variable: resumevalue in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 178
+[24-Dec-2022 06:49:00 America/Boise] PHP Notice:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 178
+[24-Dec-2022 06:49:00 America/Boise] PHP Notice:  Undefined index: current_date in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 186
+[24-Dec-2022 06:49:00 America/Boise] PHP Notice:  Undefined index: current_date in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 187
+[30-Jan-2023 04:12:43 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 8
+[30-Jan-2023 04:12:43 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 248
+[30-Jan-2023 04:12:43 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 251
+[30-Jan-2023 04:12:43 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[30-Jan-2023 04:12:43 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[30-Jan-2023 04:12:43 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1177
+[30-Jan-2023 04:12:43 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1201
+[30-Jan-2023 04:12:43 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1203
+[08-Feb-2023 01:59:03 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 8
+[08-Feb-2023 01:59:03 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 248
+[08-Feb-2023 01:59:03 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 251
+[08-Feb-2023 01:59:03 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[08-Feb-2023 01:59:03 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[08-Feb-2023 01:59:03 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1177
+[08-Feb-2023 01:59:03 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1201
+[08-Feb-2023 01:59:03 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1203
+[08-Feb-2023 22:09:06 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 8
+[08-Feb-2023 22:09:06 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 248
+[08-Feb-2023 22:09:06 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 251
+[08-Feb-2023 22:09:06 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[08-Feb-2023 22:09:06 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[08-Feb-2023 22:09:06 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1177
+[08-Feb-2023 22:09:06 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1201
+[08-Feb-2023 22:09:06 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1203
+[09-Feb-2023 05:51:02 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 8
+[09-Feb-2023 05:51:02 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 248
+[09-Feb-2023 05:51:02 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 251
+[09-Feb-2023 05:51:02 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[09-Feb-2023 05:51:02 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[09-Feb-2023 05:51:02 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1177
+[09-Feb-2023 05:51:02 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1201
+[09-Feb-2023 05:51:02 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1203
+[09-Feb-2023 09:45:16 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 8
+[09-Feb-2023 09:45:16 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 248
+[09-Feb-2023 09:45:16 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 251
+[09-Feb-2023 09:45:16 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[09-Feb-2023 09:45:16 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[09-Feb-2023 09:45:16 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1177
+[09-Feb-2023 09:45:16 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1201
+[09-Feb-2023 09:45:16 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1203
+[09-Feb-2023 21:59:47 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 8
+[09-Feb-2023 21:59:47 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 248
+[09-Feb-2023 21:59:47 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 251
+[09-Feb-2023 21:59:47 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[09-Feb-2023 21:59:47 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[09-Feb-2023 21:59:47 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1177
+[09-Feb-2023 21:59:47 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1201
+[09-Feb-2023 21:59:47 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1203
+[10-Feb-2023 06:33:37 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 8
+[10-Feb-2023 06:33:37 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 248
+[10-Feb-2023 06:33:37 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 251
+[10-Feb-2023 06:33:37 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[10-Feb-2023 06:33:37 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[10-Feb-2023 06:33:37 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1177
+[10-Feb-2023 06:33:37 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1201
+[10-Feb-2023 06:33:37 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1203
+[20-Feb-2023 01:36:06 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 8
+[20-Feb-2023 01:36:06 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 254
+[20-Feb-2023 01:36:06 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 257
+[20-Feb-2023 01:36:06 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[20-Feb-2023 01:36:06 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[20-Feb-2023 01:36:06 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1177
+[20-Feb-2023 01:36:06 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1201
+[20-Feb-2023 01:36:06 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1203
+[20-Feb-2023 02:30:50 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 8
+[20-Feb-2023 02:30:50 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 254
+[20-Feb-2023 02:30:50 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 257
+[20-Feb-2023 02:30:50 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[20-Feb-2023 02:30:50 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[20-Feb-2023 02:30:50 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1177
+[20-Feb-2023 02:30:50 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1201
+[20-Feb-2023 02:30:50 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1203
+[20-Feb-2023 02:41:51 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 8
+[20-Feb-2023 02:41:51 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 254
+[20-Feb-2023 02:41:51 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 257
+[20-Feb-2023 02:41:51 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[20-Feb-2023 02:41:51 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[20-Feb-2023 02:41:51 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1177
+[20-Feb-2023 02:41:51 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1201
+[20-Feb-2023 02:41:51 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1203
+[04-Mar-2023 01:34:49 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 162
+[04-Mar-2023 01:34:49 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 24
+[05-Mar-2023 03:01:43 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 162
+[05-Mar-2023 03:01:43 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 24
+[06-Mar-2023 22:22:26 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 162
+[06-Mar-2023 22:22:26 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 24
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view-booking-details.php on line 8
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 265
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 268
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 162
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 13
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 19
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 24
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 28
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 33
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 37
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 42
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 46
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 50
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 54
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 59
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 64
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 5
+[07-Mar-2023 02:45:01 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 6
+[15-Mar-2023 02:19:18 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 8
+[15-Mar-2023 02:19:18 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 273
+[15-Mar-2023 02:19:18 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 276
+[15-Mar-2023 02:19:18 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[15-Mar-2023 02:19:18 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[15-Mar-2023 02:19:18 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[15-Mar-2023 02:19:18 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[15-Mar-2023 02:19:18 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[15-Mar-2023 02:19:21 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view-booking-details.php on line 8
+[15-Mar-2023 02:19:21 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 273
+[15-Mar-2023 02:19:21 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 276
+[15-Mar-2023 02:19:21 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[15-Mar-2023 02:19:21 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[15-Mar-2023 02:19:21 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[15-Mar-2023 02:19:21 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[15-Mar-2023 02:19:21 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[15-Mar-2023 02:19:21 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 170
+[15-Mar-2023 02:19:21 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 24
+[15-Mar-2023 02:19:35 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 8
+[15-Mar-2023 02:19:35 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 273
+[15-Mar-2023 02:19:35 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 276
+[15-Mar-2023 02:19:35 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[15-Mar-2023 02:19:35 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[15-Mar-2023 02:19:35 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[15-Mar-2023 02:19:35 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[15-Mar-2023 02:19:35 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[15-Mar-2023 02:19:38 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view-booking-details.php on line 8
+[15-Mar-2023 02:19:38 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 273
+[15-Mar-2023 02:19:38 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 276
+[15-Mar-2023 02:19:38 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[15-Mar-2023 02:19:38 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[15-Mar-2023 02:19:38 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[15-Mar-2023 02:19:38 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[15-Mar-2023 02:19:38 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[15-Mar-2023 02:19:38 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 170
+[15-Mar-2023 02:19:38 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 24
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view-booking-details.php on line 8
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 173
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 13
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 19
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 24
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 28
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 33
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 37
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 42
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 46
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 50
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 54
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 59
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 64
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 5
+[29-Mar-2023 02:34:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 6
+[30-Mar-2023 04:16:10 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 04:16:43 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 04:16:45 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 04:16:52 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 04:16:55 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 04:16:57 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 04:17:07 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 04:17:34 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 04:17:38 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 04:17:39 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 04:18:40 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[30-Mar-2023 04:18:51 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home2/cypherte/public_html/techxpert/ed/admin/booking/controller/booking_controller.php on line 144
+[12-Apr-2023 23:13:30 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 8
+[12-Apr-2023 23:13:30 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[12-Apr-2023 23:13:30 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[12-Apr-2023 23:13:30 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[12-Apr-2023 23:13:30 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[12-Apr-2023 23:13:30 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[12-Apr-2023 23:13:30 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[12-Apr-2023 23:13:30 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view-booking-details.php on line 8
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 173
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 13
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 19
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 24
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 28
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 33
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 38
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 42
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 47
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 51
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 55
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 59
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 64
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 69
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 5
+[13-Apr-2023 03:58:45 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 6
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view-booking-details.php on line 8
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 173
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 13
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 19
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 24
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 28
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 33
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 38
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 42
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 47
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 51
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 55
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 59
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 64
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 69
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 5
+[13-Apr-2023 04:17:11 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 6
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view-booking-details.php on line 8
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 173
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 13
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 19
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 24
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 28
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 33
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 38
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 42
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 47
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 51
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 55
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 59
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 64
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 69
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 5
+[13-Apr-2023 07:47:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 6
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view-booking-details.php on line 8
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 173
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 13
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 19
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 24
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 28
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 33
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 38
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 42
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 47
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 51
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 55
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 59
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 64
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 69
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 5
+[13-Apr-2023 22:56:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 6
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view-booking-details.php on line 8
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 173
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 13
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 19
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 24
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 28
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 33
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 38
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 42
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 47
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 51
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 55
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 59
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 64
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 69
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 5
+[13-Apr-2023 23:01:47 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 6
+[13-Apr-2023 23:31:15 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 8
+[13-Apr-2023 23:31:15 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[13-Apr-2023 23:31:15 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[13-Apr-2023 23:31:15 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[13-Apr-2023 23:31:15 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[13-Apr-2023 23:31:15 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[13-Apr-2023 23:31:15 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[13-Apr-2023 23:31:15 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[13-Apr-2023 23:56:38 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 8
+[13-Apr-2023 23:56:38 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[13-Apr-2023 23:56:38 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[13-Apr-2023 23:56:38 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[13-Apr-2023 23:56:38 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[13-Apr-2023 23:56:38 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[13-Apr-2023 23:56:38 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[13-Apr-2023 23:56:38 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view-booking-details.php on line 8
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 173
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 13
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 19
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 24
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 28
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 33
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 38
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 42
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 47
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 51
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 55
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 59
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 64
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 69
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 5
+[14-Apr-2023 04:23:18 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 6
+[14-Apr-2023 06:11:42 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 8
+[14-Apr-2023 06:11:42 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[14-Apr-2023 06:11:42 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[14-Apr-2023 06:11:42 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[14-Apr-2023 06:11:42 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[14-Apr-2023 06:11:42 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[14-Apr-2023 06:11:42 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[14-Apr-2023 06:11:42 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view-booking-details.php on line 8
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 173
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 13
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 19
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 24
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 28
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 33
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 38
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 42
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 47
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 51
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 55
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 59
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 64
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 69
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 5
+[14-Apr-2023 22:43:52 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 6
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view-booking-details.php on line 8
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 173
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 13
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 19
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 24
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 28
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 33
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 38
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 42
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 47
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 51
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 55
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 59
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 64
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 69
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 5
+[14-Apr-2023 22:49:54 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 6
+[14-Apr-2023 23:04:40 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 8
+[14-Apr-2023 23:04:40 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[14-Apr-2023 23:04:40 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[14-Apr-2023 23:04:40 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[14-Apr-2023 23:04:40 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[14-Apr-2023 23:04:40 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[14-Apr-2023 23:04:40 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[14-Apr-2023 23:04:40 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[15-Apr-2023 08:34:36 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view-booking-details.php on line 8
+[15-Apr-2023 08:34:36 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[15-Apr-2023 08:34:36 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[15-Apr-2023 08:34:36 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[15-Apr-2023 08:34:36 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[15-Apr-2023 08:34:36 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[15-Apr-2023 08:34:36 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[15-Apr-2023 08:34:36 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[15-Apr-2023 10:08:29 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 173
+[15-Apr-2023 10:08:29 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 13
+[15-Apr-2023 10:08:29 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 19
+[15-Apr-2023 10:08:29 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 24
+[15-Apr-2023 10:08:29 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 28
+[15-Apr-2023 10:08:29 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 33
+[15-Apr-2023 10:08:29 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 38
+[15-Apr-2023 10:08:29 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 42
+[15-Apr-2023 10:08:29 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 47
+[15-Apr-2023 10:08:29 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 51
+[15-Apr-2023 10:08:29 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 55
+[15-Apr-2023 10:08:29 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 59
+[15-Apr-2023 10:08:29 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 64
+[15-Apr-2023 10:08:29 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 69
+[15-Apr-2023 10:08:29 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 5
+[15-Apr-2023 10:08:29 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 6
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view-booking-details.php on line 8
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 173
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 13
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 19
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 24
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 28
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 33
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 38
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 42
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 47
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 51
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 55
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 59
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 64
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 69
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 5
+[16-Apr-2023 22:47:25 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 6
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view-booking-details.php on line 8
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 173
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 13
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 19
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 24
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 28
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 33
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 38
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 42
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 47
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 51
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 55
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 59
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 64
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 69
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 5
+[18-Apr-2023 01:09:19 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 6
+[19-Apr-2023 04:04:56 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 173
+[19-Apr-2023 04:04:56 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 13
+[19-Apr-2023 04:04:56 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 19
+[19-Apr-2023 04:04:56 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 24
+[19-Apr-2023 04:04:56 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 28
+[19-Apr-2023 04:04:56 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 33
+[19-Apr-2023 04:04:56 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 38
+[19-Apr-2023 04:04:56 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 42
+[19-Apr-2023 04:04:56 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 47
+[19-Apr-2023 04:04:56 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 51
+[19-Apr-2023 04:04:56 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 55
+[19-Apr-2023 04:04:56 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 59
+[19-Apr-2023 04:04:56 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 64
+[19-Apr-2023 04:04:56 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 69
+[19-Apr-2023 04:04:56 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 5
+[19-Apr-2023 04:04:56 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 6
+[19-Apr-2023 04:05:07 America/Boise] PHP Warning:  Undefined variable $row in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 173
+[19-Apr-2023 04:05:07 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 13
+[19-Apr-2023 04:05:07 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 19
+[19-Apr-2023 04:05:07 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 24
+[19-Apr-2023 04:05:07 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 28
+[19-Apr-2023 04:05:07 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 33
+[19-Apr-2023 04:05:07 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 38
+[19-Apr-2023 04:05:07 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 42
+[19-Apr-2023 04:05:07 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 47
+[19-Apr-2023 04:05:07 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 51
+[19-Apr-2023 04:05:07 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 55
+[19-Apr-2023 04:05:07 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 59
+[19-Apr-2023 04:05:07 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 64
+[19-Apr-2023 04:05:07 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_details_tab.php on line 69
+[19-Apr-2023 04:05:07 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 5
+[19-Apr-2023 04:05:07 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/booking/includes/booking_assignment_tab.php on line 6
+[24-Apr-2023 03:26:17 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 8
+[24-Apr-2023 03:26:17 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 285
+[24-Apr-2023 03:26:17 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 288
+[24-Apr-2023 03:26:17 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[24-Apr-2023 03:26:17 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[24-Apr-2023 03:26:17 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[24-Apr-2023 03:26:17 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[24-Apr-2023 03:26:17 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[26-Apr-2023 02:21:14 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 10
+[26-Apr-2023 02:21:14 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 285
+[26-Apr-2023 02:21:14 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 288
+[26-Apr-2023 02:21:14 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[26-Apr-2023 02:21:14 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[26-Apr-2023 02:21:14 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[26-Apr-2023 02:21:14 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[26-Apr-2023 02:21:14 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[26-Apr-2023 02:21:22 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 10
+[26-Apr-2023 02:21:22 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 285
+[26-Apr-2023 02:21:22 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 288
+[26-Apr-2023 02:21:22 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[26-Apr-2023 02:21:22 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[26-Apr-2023 02:21:22 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[26-Apr-2023 02:21:22 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[26-Apr-2023 02:21:22 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[08-May-2023 04:09:48 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/booking/view_booking.php on line 10
+[08-May-2023 04:09:48 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 285
+[08-May-2023 04:09:48 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 288
+[08-May-2023 04:09:48 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[08-May-2023 04:09:48 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[08-May-2023 04:09:48 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[08-May-2023 04:09:48 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[08-May-2023 04:09:48 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[12-May-2023 01:14:35 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php on line 24
+[12-May-2023 13:20:05 America/Boise] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function getAssignedList(), 1 passed in /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php on line 3 and exactly 2 expected in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php:296
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php(3): getAssignedList(Object(mysqli))
+#1 /home2/techxper/public_html/techxpertindia-app/admin/booking/view-booking-details.php(133): include('/home2/techxper...')
+#2 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 296
+[12-May-2023 13:20:23 America/Boise] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function getAssignedList(), 1 passed in /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php on line 3 and exactly 2 expected in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php:296
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php(3): getAssignedList(Object(mysqli))
+#1 /home2/techxper/public_html/techxpertindia-app/admin/booking/view-booking-details.php(133): include('/home2/techxper...')
+#2 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 296
+[12-May-2023 13:20:27 America/Boise] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function getAssignedList(), 1 passed in /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php on line 3 and exactly 2 expected in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php:296
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php(3): getAssignedList(Object(mysqli))
+#1 /home2/techxper/public_html/techxpertindia-app/admin/booking/view-booking-details.php(133): include('/home2/techxper...')
+#2 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 296
+[12-May-2023 13:20:55 America/Boise] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function getAssignedList(), 1 passed in /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php on line 3 and exactly 2 expected in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php:296
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php(3): getAssignedList(Object(mysqli))
+#1 /home2/techxper/public_html/techxpertindia-app/admin/booking/view-booking-details.php(133): include('/home2/techxper...')
+#2 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 296
+[12-May-2023 13:22:15 America/Boise] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function getAssignedList(), 1 passed in /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php on line 3 and exactly 2 expected in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php:296
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php(3): getAssignedList(Object(mysqli))
+#1 /home2/techxper/public_html/techxpertindia-app/admin/booking/view-booking-details.php(133): include('/home2/techxper...')
+#2 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 296
+[12-May-2023 13:37:00 America/Boise] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function getAssignedList(), 1 passed in /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php on line 3 and exactly 2 expected in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php:296
+Stack trace:
+#0 /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php(3): getAssignedList(Object(mysqli))
+#1 /home2/techxper/public_html/techxpertindia-app/admin/booking/view-booking-details.php(133): include('/home2/techxper...')
+#2 {main}
+  thrown in /home2/techxper/public_html/techxpertindia-app/admin/employees/controller/employee_controller.php on line 296
+[12-May-2023 23:26:32 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/techxper/public_html/techxpertindia-app/admin/booking/view_booking.php on line 10
+[12-May-2023 23:26:32 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 292
+[12-May-2023 23:26:32 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/techxper/public_html/techxpertindia-app/admin/controllers/common_controllers.php on line 296
+[12-May-2023 23:26:32 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/techxper/public_html/techxpertindia-app/admin/navigation/admin_navigation.php on line 58
+[12-May-2023 23:26:32 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/techxper/public_html/techxpertindia-app/admin/navigation/admin_navigation.php on line 61
+[12-May-2023 23:26:32 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/techxper/public_html/techxpertindia-app/admin/includes/common_header.php on line 600
+[12-May-2023 23:26:32 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/techxper/public_html/techxpertindia-app/admin/includes/common_header.php on line 612
+[12-May-2023 23:26:32 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/techxper/public_html/techxpertindia-app/admin/includes/common_header.php on line 613
+[13-May-2023 04:00:28 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php on line 24
+[13-May-2023 04:00:38 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php on line 24
+[13-May-2023 04:01:09 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php on line 24
+[13-May-2023 04:01:09 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php on line 24
+[13-May-2023 04:01:50 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php on line 24
+[16-May-2023 02:22:43 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php on line 24
+[17-May-2023 01:30:21 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php on line 24
+[17-May-2023 04:51:21 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/techxper/public_html/techxpertindia-app/admin/booking/includes/booking_assignment_tab.php on line 24

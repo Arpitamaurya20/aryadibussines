@@ -1,0 +1,285 @@
+﻿Sno,Type,Category,SubCategory,Line Item,Make,HSN,ARC Code,UoM,Price,Tax
+1,Product,Electrical,Round LED,Halogen Bulb (12 V / 50 W),PHILIPS /Wipro/Crompton/Osram/Thorn /Orchid/Bajaj,9405,IDFC - 0001,1No,180,18%
+2,Product,Electrical,Round LED,9W PL Lamp,PHILIPS /Wipro/Crompton/Osram/Thorn /Orchid/Bajaj,9405,IDFC - 0002,1No,132,18%
+3,Product,Electrical,Round LED,18W PL Lamp,PHILIPS /Wipro/Crompton/Osram/Thorn /Orchid/Bajaj,9405,IDFC - 0003,1No,192,18%
+4,Product,Electrical,Round LED,PL lamp choke,PHILIPS /Wipro/Crompton/Osram/Thorn /Orchid/Bajaj,9405,IDFC - 0004,1No,234,18%
+5,Product,Electrical,Round LED,CFL with adopter lamp (18W/20W),PHILIPS /Wipro/Crompton/Osram/Thorn /Orchid/Bajaj,9405,IDFC - 0005,1No,228,18%
+6,Product,Electrical,Round LED,2X36 W CFL Mirror optic fixture with tube light,PHILIPS /Wipro/Crompton/Osram/Thorn /Orchid/Bajaj,9405,IDFC - 0006,1No,"2,940",18%
+7,Product,Electrical,Round LED,1X18 W CFL recessed mounted fixture with CFL ,PHILIPS /Wipro/Crompton/Osram/Thorn /Orchid/Bajaj,9405,IDFC - 0007,1No,"1,319",18%
+8,Product,Electrical,Round LED,2X18 W Circular CFL surface mounted fixture (Spot light),PHILIPS /Wipro/Crompton/Osram/Thorn /Orchid/Bajaj,9405,IDFC - 0008,1No,"1,680",18%
+9,Product,Electrical,Transformer,Electronic transformer (12V / 50 W),PHILIPS /Wipro/Crompton/Osram/Thorn /Orchid/Bajaj,9405,IDFC - 0009,1No,252,18%
+10,Product,Electrical,MCCB,20 A SP Metal clad AC box (STANDARD) Indo Korp,Roma/Wipro/MK/LEGRAND/Siemens,8536,IDFC - 0010,1No,"1,414",18%
+11,Product,Electrical,Panel,Switches modular 10 A One Way,Roma/Wipro/MK/LEGRAND/Siemens,8536,IDFC - 0011,1No,108,18%
+12,Product,Electrical,Panel,Switches modular 20 A one way SP,Roma/Wipro/MK/LEGRAND/Siemens,8536,IDFC - 0012,1No,180,18%
+13,Product,Electrical,Panel,Switches modular 32 A DP Switch,Roma/Wipro/MK/LEGRAND/Siemens,8536,IDFC - 0013,1No,270,18%
+14,Product,Electrical,Panel,Sockets modular 6 A  3  pin shutter socket,Roma/Wipro/MK/LEGRAND/Siemens,8536,IDFC - 0014,1No,150,18%
+15,Product,Electrical,Panel,Sockets modular 20 A 3 pin shuttered socket ,Roma/Wipro/MK/LEGRAND/Siemens,8536,IDFC - 0015,1No,240,18%
+16,Product,Electrical,Sequence Controller,Electronic regulator – Dimmer,Roma/Wipro/MK/LEGRAND/Siemens,8536,IDFC - 0016,1No,378,18%
+17,Product,Electrical,Electrical -Fans, Fan step regulator ,Roma/Wipro/MK/LEGRAND/Siemens,8536,IDFC - 0017,1No,360,18%
+18,Product,Electrical,Exhaust Fan,"12"" Exhaust Fan",Orient/ Bajaj/Khaitan/Cromption,8414,IDFC - 0018,1No,"1,980",18%
+19,Product,Electrical,Electrical -Fans,"Wall mounted fan – 12"" ",Orient/ Bajaj/Khaitan/Cromption,8414,IDFC - 0019,1No,"2,520",18%
+20,Product,Electrical,Electrical -Fans,"Pedestal fan – 12"" ",Orient/ Bajaj/Khaitan/Cromption,8414,IDFC - 0020,1No,"2,800",18%
+21,Product,Electrical,Electrical -Fans,Ceiling Fan,Orient/Bajaj/USHA/Cromption,8414,IDFC - 0021,1No,"2,508",18%
+22,Product,Electrical,Round LED,LED 4 ft Tubelight,WIPRO/Crompton/Orient,9405,IDFC - 0022,1No,450,18%
+23,Product,Electrical,Round LED,LED 2 Ft Tubelight,WIPRO/Crompton/Orient,9405,IDFC - 0023,1No,280,18%
+24,Product,Electrical,Round LED,LED Bulbs (10 W),WIPRO/Crompton/Orient,9405,IDFC - 0024,1No,228,18%
+25,Product,Electrical,Round LED,LED round light,WIPRO/Crompton/Orient,9405,IDFC - 0025,1No,780,18%
+26,Product,Electrical,2x2 LED Light,2 X 2 LED Lights,WIPRO/Crompton/Orient,9405,IDFC - 0026,1No,"2,750",18%
+27,Product,Electrical,Electrical -Panel / Boards,15Amps power point ,Roma/Wipro/MK/LEGRAND/Siemens,8536,IDFC - 0027,1No,"1,020",18%
+28,Product,Electrical,Electrical -Panel / Boards,5Amps power point ,Roma/Wipro/MK/LEGRAND/Siemens,8504,IDFC - 0028,1No,936,18%
+29,Service,Electrical,Electrical -Panel / Boards,Circuit for Board to Board  ,,8538,IDFC - 0029,Rft,102,18%
+,,,,Miniature Circuit Breaker (MCB) ,,,,,,
+30,Product,Electrical,MCCB,6 A to 32 A MCB - SP,Legrand/Havells/L&T/INDOASIAN,8536,IDFC- 0030,1No,252,18%
+31,Product,Electrical,MCCB,6 A to 32 A MCB – DP,Legrand/Havells/L&T/INDOASIAN,8536,IDFC- 0031,1No,780,18%
+32,Product,Electrical,MCCB,6 A to 32 A MCB – TP ,Legrand/Havells/L&T/INDOASIAN,8536,IDFC- 0032,1No,"1,140",18%
+33,Product,Electrical,MCCB,6 A to 32 A MCB – FP,Legrand/Havells/L&T/INDOASIAN,8536,IDFC- 0033,1No,"1,848",18%
+34,Product,Electrical,MCCB,40 A - 63 A MCB – SP,Legrand/Havells/L&T/INDOASIAN,8536,IDFC- 0034,1No,540,18%
+35,Product,Electrical,MCCB,40 A - 63 A MCB – DP,Legrand/Havells/L&T/INDOASIAN,8536,IDFC- 0035,1No,"1,176",18%
+36,Product,Electrical,MCCB,40 A - 63 A MCB– TP,Legrand/Havells/L&T/INDOASIAN,8536,IDFC- 0036,1No,"1,980",18%
+37,Product,Electrical,MCCB,40 A - 63 A MCB – FP ,Legrand/Havells/L&T/INDOASIAN,8536,IDFC- 0037,1No,"2,496",18%
+,,,, Moulded Case Circuit Breaker (MCCB) ,,,,,,
+38,Product,Electrical,MCCB,"30A , 63 A ,  100A MCCB– FP ",Legrand/Havells/L&T/SIEMENS/SCHNEIDER/GE/ABB,8536,IDFC- 0038,1No,"7,500",18%
+39,Product,Electrical,MCCB,125 A-(25 kA ) - FP ,Legrand/Havells/L&T/SIEMENS/SCHNEIDER/GE/ABB,8536,IDFC- 0039,1No,"9,600",18%
+40,Product,Electrical,MCCB,160A - (50 - 65 kA ) / FP,Legrand/Havells/L&T/SIEMENS/SCHNEIDER/GE/ABB,8536,IDFC- 0040,1No,"14,220",18%
+,,,,Earth Leakage Miniature Circuit Breaker (ELCB) ,,,,,,
+41,Product,Electrical,MCCB,25 A ELCB Four pole – FP - ,Datar/MDS Legrand,8536,IDFC- 0041,1No,"3,468",18%
+42,Product,Electrical,MCCB,40 A ELCB Four pole – FP ,Datar/MDS Legrand,8536,IDFC- 0042,1No,"3,907",18%
+43,Product,Electrical,MCCB,63 A ELCB Four pole – FP ,Datar/MDS Legrand,8536,IDFC- 0043,1No,"4,656",18%
+,,,,Armoured Power Cables – COPPER,,,,,,
+44,Product,Electrical,Electrical -Wiring,2.5 sq.mm / Single core,Polycab/Finolex/KEI/RR/AVIOCAB,8547,IDFC- 0044,Mtr,37,18%
+45,Product,Electrical,Electrical -Wiring,2.5 SQ.MM /2 core,Polycab/Finolex/KEI/RR/AVIOCAB,8544,IDFC- 0045,Mtr,92,18%
+46,Product,Electrical,Electrical -Wiring,2.5 SQ.MM /4 core,Polycab/Finolex/KEI/RR/AVIOCAB,8311,IDFC- 0046,Mtr,210,18%
+47,Product,Electrical,Electrical -Wiring,4.0 SQ.MM / single core,Polycab/Finolex/KEI/RR/AVIOCAB,8544,IDFC- 0047,Mts,65,18%
+48,Product,Electrical,Electrical -Wiring,4.0 SQ.MM / 2 core ,Polycab/Finolex/KEI/RR/AVIOCAB,8544,IDFC- 0048,Mtr,152,18%
+49,Product,Electrical,Electrical -Wiring,4.0 SQ.MM / 4 core ,Polycab/Finolex/KEI/RR/AVIOCAB,8311,IDFC- 0049,Mtr,252,18%
+50,Product,Electrical,Electrical -Wiring,6.0SQ.MM / Single core ,Polycab/Finolex/KEI/RR/AVIOCAB,7413,IDFC- 0050,Mts,98,18%
+51,Product,Electrical,Electrical -Wiring,6.0 SQ.MM / 2 core ,Polycab/Finolex/KEI/RR/AVIOCAB,8544,IDFC- 0051,Mtr,187,18%
+52,Product,Electrical,Electrical -Wiring,6.0 SQ.MM / 4 core ,Polycab/Finolex/KEI/RR/AVIOCAB,7413,IDFC- 0052,Mtr,360,18%
+53,Product,Electrical,Electrical -Wiring,10SQ.MM / Single core ,Polycab/Finolex/KEI/RR/AVIOCAB,8544,IDFC- 0053,Mts,120,18%
+54,Product,Electrical,Electrical -Wiring,10.0 SQ.MM / 2 core ,Polycab/Finolex/KEI/RR/AVIOCAB,8544,IDFC- 0054,Mtr,320,18%
+55,Product,Electrical,Electrical -Wiring,10.0SQ.MM / 4core ,Polycab/Finolex/KEI/RR/AVIOCAB,8544,IDFC- 0055,Mtr,507,18%
+56,Product,Electrical,Electrical -Wiring,16.0 SQ.MM / Single core ,Polycab/Finolex/KEI/RR/AVIOCAB,8544,IDFC- 0056,Mtr,193,18%
+57,Product,Electrical,Electrical -Wiring,16.0 SQ.MM / 2 core ,Polycab/Finolex/KEI/RR/AVIOCAB,8544,IDFC- 0057,Mtr,470,18%
+58,Product,Electrical,Electrical -Wiring,16 SQ.MM / 4core ,Polycab/Finolex/KEI/RR/AVIOCAB,8544,IDFC- 0058,Mtr,680,18%
+59,Product,Electrical,Electrical -Wiring,Carefully Disc. & removing of wiring for Reparing Work,Polycab/Finolex/KEI/RR/AVIOCAB,8544,IDFC- 0059,Rft,58,18%
+60,Product,Electrical,Electrical -Wiring,Old wiring  in new casing caping ,Polycab/Finolex/KEI/RR/AVIOCAB,8544,IDFC- 0060,Rft,62,18%
+61,Product,Electrical,Electrical -Wiring,Electrical Junction with trenching & Installation,Polycab/Finolex/KEI/RR/AVIOCAB,8544,IDFC- 0061,1No,"1,080",18%
+62,Product,Electrical,Electrical -Wiring,S.S Junction plate for Electrical Junction ,Polycab/Finolex/KEI/RR/AVIOCAB,8544,IDFC- 0062,1No,750,18%
+63,Service,Carpentry,Carpentry-Doors,Dismentaling & Removing of partition / Tables / Cupboard /Ceiling / glass etc,,8544,IDFC- 0063,Sqft,48,18%
+64,Product,Carpentry,Carpentry-Doors,8 mm Glass Door with Aluminum Channels ,Jindal / Modi / Saint Goabin,8544,IDFC- 0064,Sft,449,18%
+65,Product,Carpentry,Carpentry-Doors,12 mm glass door with aluminium channel,Jindal / Modi / Saint Goabin,8544,IDFC- 0065,sft,750,18%
+66,Product,Carpentry,Carpentry-Workstation,12mm thk fully glazed partition in Aluminum,Jindal / Modi / Saint Goabin,8544,IDFC- 0066,Sft,576,18%
+67,Product,Carpentry,Carpentry-Doors,Glass door handle SS 304,Jindal / Modi / Saint Goabin,8544,IDFC- 0067,1No.,"1,980",18%
+68,Product,Carpentry,Carpentry-Workstation,Gypsum board partition,GYPSUM INDIA.,8544,IDFC- 0068,Sft,300,18%
+69,Product,Carpentry,Carpentry-Workstation,Low ht both side laminate partition ,CENTURY- Sainik / GREEN PLY – Ecotec / KITPLY – Swastik,8544,IDFC- 0069,Sft,336,18%
+70,Product,Carpentry,Carpentry-Workstation,Waterproof panneling with Aluminum sheet/laminate finished,CENTURY- Sainik / GREEN PLY – Ecotec / KITPLY – Swastik,8544,IDFC- 0070,Sft,300,18%
+71,Product,Carpentry,Carpentry-Workstation,Commercial Panneling with laminate finished,CENTURY- Sainik / GREEN PLY – Ecotec / KITPLY – Swastik,8544,IDFC- 0071,Sft,250,18%
+72,Product,Carpentry,Carpentry-shutter,Shutter boxing / pourch ceiling,CENTURY- Sainik / GREEN PLY – Ecotec / KITPLY – Swastik,8544,IDFC- 0072,Sft,260,18%
+73,Product,Carpentry,Carpentry-Doors,Door Closer heavy duty - Open,HEMCO / GODREJ / HYPER / DORSET,8544,IDFC- 0073,1No.,"2,850",18%
+74,Product,Carpentry,Carpentry-Doors,Door Closer heavy duty - Open,GEZE / OZONE,8544,IDFC- 0074,,"3,200",18%
+75,Product,Carpentry,Carpentry-Doors,Door Closer heavy duty - Open,DORMA  ,8544,IDFC- 0075,,"3,200",18%
+76,Product,Carpentry,Carpentry-Doors,Door Closer heavy duty - Concealed,HEMCO / GODREJ / HYPER / DORSET,8544,IDFC- 0076,,"7,860",18%
+77,Product,Carpentry,Carpentry-Doors,Door Closer heavy duty - Concealed,GEZE / OZONE,8544,IDFC- 0077,,"7,860",18%
+78,Product,Carpentry,Carpentry-Doors,Door Closer heavy duty - Concealed,DORMA  ,8544,IDFC- 0078,,"7,860",18%
+79,Product,Carpentry,Carpentry-Workstation,"Providing & fixing storage cabinate using 19mm commercial plywood / 6mm plywood with I.S.I. Mark & all the hardware fitting, polish work, etc. complete (12'' deep)",CENTURY- Sainik / GREEN PLY – Ecotec / KITPLY – Swastik,8544,IDFC- 0079,Sft,"1,230",18%
+80,Product,Carpentry,Carpentry-Workstation,"Providing & fixing storage cabinate using 19mm commercial plywood / 6mm plywood with I.S.I. Mark & all the hardware fitting, sun mica, polish work, etc. complete (16'' deep)",CENTURY- Sainik / GREEN PLY – Ecotec / KITPLY – Swastik,8544,IDFC- 0080,Sft,"1,350",18%
+81,Product,Carpentry,Carpentry-Workstation,"Providing & fixing storage cabinate using 19mm commercial plywood / 6mm plywood with I.S.I. Mark & all the hardware fitting, polish work, etc.complete (18'' deep)",CENTURY- Sainik / GREEN PLY – Ecotec / KITPLY – Swastik,8544,IDFC- 0081,Sft,"1,260",18%
+82,Product,Carpentry,Carpentry-Workstation,"Providing & fixing storage cabinate using 19mm commercial plywood / 6mm plywood with I.S.I. Mark & all the hardware fitting, polish work, etc.complete (24'' deep)",CENTURY- Sainik / GREEN PLY – Ecotec / KITPLY – Swastik,8544,IDFC- 0082,Sft,"1,380",18%
+83,Product,Carpentry,Carpentry-Workstation,PVC lipping,HUALI / 3M / AIYAN /  EM / RISHI / STAR OR EQUIVALENT,8544,IDFC- 0083,Rft,34,18%
+84,Product,Carpentry,Carpentry-Workstation,Post forming table top,CENTURY- Sainik / GREEN PLY – Ecotec / KITPLY – Swastik,8544,IDFC- 0084,1Sft,720,18%
+85,Product,Carpentry,Carpentry-Doors,3.5 Ø Meeting table glass top(Modular round),MODI GUARD/ SAINT GOBAIN/,8544,IDFC- 0085,1No.,"8,400",18%
+86,Product,Carpentry,Carpentry-Workstation,3.5 Ø Dining table wooden top (Modular round),CENTURY- Sainik / GREEN PLY – Ecotec / KITPLY – Swastik,8544,IDFC- 0086,1No.,"6,600",18%
+87,Product,Carpentry,Carpentry-Workstation,"Storage unit (30"" Height 32"" Width 16''*Length)",CENTURY- Sainik / GREEN PLY – Ecotec / KITPLY – Swastik,8544,IDFC- 0087,1No.,"13,800",18%
+88,Product,Carpentry,Carpentry-Workstation,"Storage unit (48"" Height 32"" Width 16''*Length)",CENTURY- Sainik / GREEN PLY – Ecotec / KITPLY – Swastik,8544,IDFC- 0088,1No.,"16,200",18%
+89,Product,Carpentry,Carpentry-Workstation,Service counter storage unit (Slide Unit 3'*2.5''),CENTURY- Sainik / GREEN PLY – Ecotec / KITPLY – Swastik,8544,IDFC- 0089,1No.,"12,600",18%
+90,Product,Carpentry,Carpentry-Workstation,Floor spring ,HEMCO / GODREJ / HYPER / DORSET,8544,IDFC- 0090,1No,"6,500",18%
+91,Product,Carpentry,Carpentry-Workstation,Floor spring ,OZONE / GEZE,8544,IDFC- 0091,,"7,200",18%
+92,Product,Carpentry,Carpentry-Workstation,Floor spring heavy weight,DORMA  ,8544,IDFC- 0092,1No.,"16,800",18%
+93,Product,Carpentry,Carpentry-Doors,Door frame wooden,CENTURY- Sainik / GREEN PLY – Ecotec / KITPLY – Swastik,8544,IDFC- 0093,Rft,330,18%
+94,Product,Carpentry,Carpentry-Workstation,Teak wood moulding ,TEAK,8544,IDFC- 0094,Rft,114,18%
+95,Product,Carpentry,Carpentry-Workstation,Boxing  for AC Installation ,CENTURY- Sainik / GREEN PLY – Ecotec / KITPLY – Swastik,8544,IDFC- 0095,Sqft,354,18%
+96,Product,Carpentry,Carpentry-Doors,12 mm corner glass with round Edge,MODI GUARD/ SAINT GOBAIN/ASAHI - FLOAT GLASS INDIA.,8544,IDFC- 0096,1No,360,18%
+97,Product,Carpentry,Carpentry-Workstation,Metal  key board tray,NILKAMAL /  EBCO / OR EQUIVALENT,8544,IDFC- 0097,1No.,950,18%
+98,,,Carpentry-Workstation,  Lock,,,,,,18%
+99,Product,Carpentry,Carpentry-Lock / Key,Dead lock for main door with 3 keys (Godrej),GODREJ/ EBCO / DOORSET / OZONE,8544,IDFC- 0098,1No.,"2,650",18%
+100,Product,Carpentry,Carpentry-Lock / Key,Cylindrical lock (round lock ) Godrej with key,GODREJ/ EBCO / DOORSET / OZONE,8544,IDFC- 0099,1No.,"1,440",18%
+101,Product,Carpentry,Carpentry-Lock / Key,Multipurpose Lock,GODREJ/ EBCO / DOORSET / OZONE,8544,IDFC- 0100,1No.,230,18%
+102,Product,Carpentry,Carpentry-Workstation,7 Liver godrej Navtal ,GODREJ/ EBCO / DOORSET / OZONE,8544,IDFC- 0101,1No.,"1,850",18%
+103,Product,Carpentry,Carpentry-Lock / Key,Cylindrical lock for cash counter Godrej,GODREJ/ EBCO / DOORSET / OZONE,8544,IDFC- 0102,1No,"1,440",18%
+,,,Carpentry-Workstation, Blinds,,,,,,18%
+104,Product,Carpentry,Air Curtain,A Vertical Blinds,VISTA LEVOLOR/ AEROLUX/ MAC,8544,IDFC- 0103,Sft,170,18%
+105,Product,Carpentry,Carpentry-Workstation,Roller blinds  Branded,VISTA LEVOLOR/ AEROLUX/ MAC,8544,IDFC- 0104,Sft,220,18%
+106,,Carpentry,Carpentry-Workstation,Replacement Including labour & Material ,,,,,,18%
+107,Product,Carpentry,Carpentry-Doors,a.Plain toughen Glass 12mm ,MODI GUARD/ SAINT GOBAIN/ASAHI - FLOAT GLASS INDIA.,8544,IDFC- 0105,Sft,462,18%
+108,Product,Carpentry,Carpentry-Doors,b.Plain toughen Glass 8mm,MODI GUARD/ SAINT GOBAIN/ASAHI - FLOAT GLASS INDIA.,8544,IDFC- 0106,Sft,342,18%
+109,Product,Carpentry,Carpentry-Doors,c.Plain toughen Glass 6mm,MODI GUARD/ SAINT GOBAIN/ASAHI - FLOAT GLASS INDIA.,8544,IDFC- 0107,Sft,320,18%
+110,Product,Carpentry,Carpentry-Workstation,Soft board including cloth &Aluminum powder coating border,JOLLY BOARDS or approved equivalent.,8544,IDFC- 0108,Sft,450,18%
+111,Product,Carpentry,Carpentry-Workstation,Magnetic White board ,JOLLY BOARDS or approved equivalent.,8544,IDFC- 0109,Sft,540,18%
+112,Product,Carpentry,Carpentry-Workstation,Non Magnetic white board,JOLLY BOARDS or approved equivalent.,8544,IDFC- 0110,Sft,325,18%
+113,Product,Carpentry,Carpentry-Doors,D- Bracket for 12mm glass shelf ,MODI GUARD/ SAINT GOBAIN/ASAHI - FLOAT GLASS INDIA.,8544,IDFC- 0111,Nos,90,18%
+114,Product,Carpentry,Carpentry-Workstation,Carpet tile flooring,PRIDE/ SHALIMAR/ ARMSTRONG or approved equivalent.,8544,IDFC- 0112,Sft,168,18%
+115,Product,Carpentry,Carpentry-Workstation,Sun-Control film (Garware),3M / GARWARE or approved equivalent.,8544,IDFC- 0113,Sft,114,18%
+116,Product,Carpentry,Carpentry-Workstation,Frosted film ,3M / GARWARE or approved equivalent.,8544,IDFC- 0114,Sft,170,18%
+117,Product,Carpentry,Carpentry-Workstation,French Polish,ASIAN/ SOLVOSOL/ MRF.,8544,IDFC- 0115,Sft,42,18%
+118,Product,Carpentry,Carpentry-Workstation,Mallamine Polish to moulding ,ASIAN/ SOLVOSOL/ MRF.,8544,IDFC- 0116,Rft,84,18%
+119,Service,Carpentry,Carpentry-Workstation,Duco Paint,ASIAN/ ICI/ NEROLAC/ BURGER.,8544,IDFC- 0117,Sft,220,18%
+120,Product,Carpentry,Carpentry-Workstation,Sliding window with powder coating,JINDAL,8544,IDFC- 0118,Sft,540,18%
+121,Product,Carpentry,Carpentry-Workstation,Both side laminate finishing partition in the ATM with Grill,JINDAL,8544,IDFC- 0119,Sft,540,18%
+122,Product,Carpentry,Chair Repair,Chair Repair (Handle),,8544,IDFC- 0120,1No.,"1,950",18%
+123,Product,Carpentry,Chair Repair,Chair Casters,,8544,IDFC- 0121,1No.,150,18%
+124,Product,Carpentry,Chair Repair,Chair Repair (New Stand),,8544,IDFC- 0122,1No.,"1,340",18%
+125,Product,Carpentry,Chair Repair,Chair Upholstry,,8544,IDFC- 0123,1No.,"2,300",18%
+126,Product,Carpentry,Chair Repair,Servicing & repairing chairs with castor,,8544,IDFC- 0124,1No.,540,18%
+127,Product,Carpentry,Carpentry-Doors,Alignment of door (Including remove. & re fixing if necessary),,8544,IDFC- 0125,1No.,"2,000",18%
+128,Product,Carpentry,Carpentry-Workstation,Curtain rod Brackets,SS MAKE ,8544,IDFC- 0126,1No,454,18%
+129,Product,Carpentry,Carpentry-Workstation,Curtain rod  (SS),SS MAKE ,8544,IDFC- 0127,Rft,162,18%
+130,Product,Carpentry,Carpentry-Workstation,Poster frame / Hanging Signage/ TV stand / Photo frame only fixing ,,8544,IDFC- 0128,1No,300,18%
+131,Product,Carpentry,Carpentry-Doors,Door Removing / Alteration & fixing,,8544,IDFC- 0129,1No,"1,440",18%
+,,,,PAINTING AND FALSE CEILING WORK,,,,,,18%
+132,Service,Carpentry,Civil-work,Luster – Three Coat (Water based paint),ASIAN/ ICI/ NEROLAC/ BURGER.,8544,IDFC- 0130,Sft,35,18%
+133,Service,Carpentry,Civil-work,Oil bound distemper - two coat (Water based paint),ASIAN/ ICI/ NEROLAC/ BURGER.,8544,IDFC- 0131,Sft,20,18%
+134,Service,Carpentry,Civil-work,Enamel Oil Paint - two coat (Water based paint),ASIAN/ ICI/ NEROLAC/ BURGER.,8544,IDFC- 0132,Sft,21,18%
+135,Service,Carpentry,Civil-work,Snowcem exterior paint  2 coat,ASIAN/ ICI/ NEROLAC/ BURGER.,8544,IDFC- 0133,Sft,21,18%
+136,Service,Carpentry,Civil-work,Exterior Paint (Apex) - two coat(Asian),ASIAN/ ICI/ NEROLAC/ BURGER.,8544,IDFC- 0134,Sft,21,18%
+137,Service,Carpentry,Civil-work,Texture paint - Spectrum or equivalent,HERITAGE/SPECTRUM,8544,IDFC- 0135,Sft,35,18%
+138,Service,Carpentry,Civil-work,Plastic Paint,ASIAN/ ICI/ NEROLAC/ BURGER.,8544,IDFC- 0136,Sft,20,18%
+139,Product,Carpentry,Civil-work,Melamine Polish ,ASIAN/ SOLVOSOL/ MRF.,8544,IDFC- 0137,Sft,84,18%
+140,Product,Carpentry,Civil-work,Hand Polish,ASIAN/ SOLVOSOL/ MRF.,8544,IDFC- 0138,Sft,66,18%
+141,Product,Carpentry,Civil-work,POP Punning 20 / 25 mm thick,GYPSUM INDIA / SAKARNI,8544,IDFC- 0139,Sft,20,18%
+142,Product,Carpentry,Civil-work,Gypsum false ceiling ,GYPSUM INDIA / GYPROC,8544,IDFC- 0140,Sft,110,18%
+143,Product,Carpentry,Civil-work,New spot light gala for gypsum ceiling,GYPSUM INDIA / SAKARNI,8544,IDFC- 0141,1No,101,18%
+144,Product,Carpentry,Civil-work,New tube light gala for gypsum ceiling,GYPSUM INDIA / SAKARNI,8544,IDFC- 0142,1No,83,18%
+145,Product,Carpentry,Civil-work,"POP Moulding  4""",GYPSUM INDIA / SAKARNI,8544,IDFC- 0143,Rft,125,18%
+146,Product,Carpentry,Civil-work,"POP Moulding  6""",GYPSUM INDIA / SAKARNI,8544,IDFC- 0144,Rft,180,18%
+147,Product,Carpentry,Civil-work,"POP Moulding  8""",GYPSUM INDIA / SAKARNI,8544,IDFC- 0145,Rft,210,18%
+148,Product,Carpentry,Civil-work,Call for POP cutting ,,8544,IDFC- 0146,Lumsum,480,18%
+149,Product,Carpentry,Civil-work,Perforated Aluminum ceiling ,Armstrong / DEXUNE/ ARMSTRONG/ HUNTER-DOUGLAS.,8544,IDFC- 0147,Sft,124,18%
+150,Product,Carpentry,Carpentry-Doors,2x2 Glass wool Ceiling (NRC 0.5) including hanging support & grid channels,Armstrong / DEXUNE/ ARMSTRONG/ HUNTER-DOUGLAS.,8544,IDFC- 0148,Sft,145,18%
+151,Product,Carpentry,Carpentry-Doors,2x2 Glass wool Ceiling (NRC 0.7) including hanging support & grid channels,Armstrong / DEXUNE/ ARMSTRONG/ HUNTER-DOUGLAS.,8544,IDFC- 0149,Sft,180,18%
+152,Product,Carpentry,Carpentry-Doors,2x2 Glass wool Ceiling (NRC 0.9) including hanging support & grid channels,Armstrong / DEXUNE/ ARMSTRONG/ HUNTER-DOUGLAS.,8544,IDFC- 0150,Sft,210,18%
+153,Product,Carpentry,Civil-work,Aluminum composite pannel up to 100 Sqft,INDIBOND / DURAPLAST /  ALSTRONG / VIVA /  EUROBOND / ALSTORM,8544,IDFC- 0151,Sft,354,18%
+154,Product,Carpentry,Civil-work,Aluminum composite pannel above 1000 Sqft,INDIBOND / DURAPLAST /  ALSTRONG / VIVA /  EUROBOND / ALSTORM,8544,IDFC- 0152,Sft,320,18%
+155,Product,Plumbing,Plumbing,Providing & fixing PVC 110mm soil west pipe ,C’ CLASS TATA / JINDAL / ASTRAL / PRINCE / NECO / SULEKHA,8544,IDFC- 0153,Rmt,310,18%
+156,Product,Plumbing,Plumbing,Providing & fixing PVC 75mm soil west pipe ,C’ CLASS TATA / JINDAL / ASTRAL / PRINCE / NECO / SULEKHA,8544,IDFC- 0154,Rmt,210,18%
+157,Product,Plumbing,Plumbing,Providing & fixing PVC 110mm rain water pipe ,C’ CLASS TATA / JINDAL / ASTRAL / PRINCE / NECO / SULEKHA,8544,IDFC- 0155,Rmt,300,18%
+158,Product,Plumbing,Plumbing,Providing & fixing PVC 150mm rain water pipe ,C’ CLASS TATA / JINDAL / ASTRAL / PRINCE / NECO / SULEKHA,8544,IDFC- 0156,Rmt,360,18%
+159,Product,Plumbing,Plumbing,Soil & Waste pipe work – Providing & laying 100 mm,C’ CLASS TATA / JINDAL / ASTRAL / PRINCE / NECO / SULEKHA,8544,IDFC- 0157,Rmt,348,18%
+160,Product,Plumbing,Plumbing,Soil & Waste pipe work – Providing & laying 80 mm,C’ CLASS TATA / JINDAL / ASTRAL / PRINCE / NECO / SULEKHA,8544,IDFC- 0158,Rmt,186,18%
+161,Product,Plumbing,Plumbing, Providing & fixing 40 mm internal Dia heavy PVC pipe in chasis including clamp & necessary fitings.,C’ CLASS TATA / JINDAL / ASTRAL / PRINCE / NECO / SULEKHA,8544,IDFC- 0159,Rmt,180,18%
+162,Product,Plumbing,Plumbing, Providing & fixing 40 mm internal Dia heavy PVC pipe in chasis including clamp & necessary fitings.,C’ CLASS TATA / JINDAL / ASTRAL / PRINCE / NECO / SULEKHA,8544,IDFC- 0160,Rmt,180,18%
+163,Product,Plumbing,Plumbing,"Wash Basin -  20""x16""( White / Ivory)",Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0161,1No,"5,200",18%
+164,Product,Plumbing,Plumbing,Urinal Hindware or equivalent/Flatback,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0162,1No,"4,500",18%
+165,Product,Plumbing,Plumbing,EWC Wall mounted - Hindware / Parryware / Ivory,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0163,1No,"12,200",18%
+166,Product,Plumbing,Plumbing,Slim line - flush tank,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0164,1No,"1,920",18%
+167,Product,Plumbing,Plumbing,Bib cock - Jaguar / Angular Cock,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0165,1No,"1,650",18%
+168,Product,Plumbing,Plumbing,2 in 1 bib cock,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0166,1No,"1,830",18%
+169,Product,Plumbing,Plumbing,Bottle trap C.P - Jaguar,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0167,1No,"1,650",18%
+170,Product,Plumbing,Plumbing,C.P waste coupling / urinal capling,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0168,1No,520,18%
+171,Product,Plumbing,Plumbing,Liquid soap dispenser,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0169,1No,"1,320",18%
+172,Product,Plumbing,Plumbing,Urinal large Hindware  / Parryware,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0170,1No,"5,000",18%
+173,Product,Plumbing,Plumbing,"Jet Spray / 1 mtr, P.V.C. ( with all assembly) pipe H/D",Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0171,1No,"1,650",18%
+174,Product,Plumbing,Plumbing,Spreder,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0172,1No,780,18%
+175,Product,Plumbing,Plumbing,C.P. Elbow,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0173,1No,300,18%
+176,Product,Plumbing,Plumbing,Auto flush Electronic sensor,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0174,1No,"9,230",18%
+177,Product,Plumbing,Plumbing,Tissue paper Houlder,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0175,1No,"1,500",18%
+,,,, Pipe line for fresh water,,,,,,
+178,Product,Plumbing,Plumbing,a. 50 mm ,C’ CLASS TATA / JINDAL / ASTRAL / PRINCE / NECO / SULEKHA,8544,IDFC- 0176,Rmt,330,18%
+179,Product,Plumbing,Plumbing,b. 40 mm,C’ CLASS TATA / JINDAL / ASTRAL / PRINCE / NECO / SULEKHA,8544,IDFC- 0177,Rmt,274,18%
+180,Product,Plumbing,Plumbing,c. 32 mm,C’ CLASS TATA / JINDAL / ASTRAL / PRINCE / NECO / SULEKHA,8544,IDFC- 0178,Rmt,228,18%
+181,Product,Plumbing,Plumbing,d. 25 mm,C’ CLASS TATA / JINDAL / ASTRAL / PRINCE / NECO / SULEKHA,8544,IDFC- 0179,Rmt,187,18%
+182,Product,Plumbing,Plumbing,e. 20 mm,C’ CLASS TATA / JINDAL / ASTRAL / PRINCE / NECO / SULEKHA,8544,IDFC- 0180,Rmt,152,18%
+183,Product,Plumbing,Plumbing,f. 15 mm,C’ CLASS TATA / JINDAL / ASTRAL / PRINCE / NECO / SULEKHA,8544,IDFC- 0181,Rmt,130,18%
+184,Product,Plumbing,Plumbing,Copper pipe upto 1.5rf,C’ CLASS TATA / JINDAL / ASTRAL / PRINCE / NECO / SULEKHA,8544,IDFC- 0182,1No,564,18%
+185,Product,Plumbing,Plumbing,a. 25 mm pvc  drain pipe line ,C’ CLASS TATA / JINDAL / ASTRAL / PRINCE / NECO / SULEKHA,8544,IDFC- 0183,Rmt,110,18%
+186,Product,Plumbing,Plumbing,b. 32 mm pvc drain pipe line,C’ CLASS TATA / JINDAL / ASTRAL / PRINCE / NECO / SULEKHA,8544,IDFC- 0184,Rmt,132,18%
+187,Product,Plumbing,Plumbing,c. 40 mm pvc drain pipe line,C’ CLASS TATA / JINDAL / ASTRAL / PRINCE / NECO / SULEKHA,8544,IDFC- 0185,Rmt,168,18%
+188,Product,Plumbing,Plumbing,Flush Valve – Jaguar,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0186,1No,"4,800",18%
+189,Product,Plumbing,Plumbing,Flush Valve Elbow Set,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0187,1No,"2,520",18%
+190,Product,Plumbing,Plumbing,Water tank Installation  ,,8544,IDFC- 0188,1No,"3,000",18%
+191,Product,Plumbing,Plumbing,Water tank for loft or Terrace,SINTEX ,8544,IDFC- 0189,1000 Liter,"13,200",18%
+192,Product,Plumbing,Plumbing,Gate value / Stop value / Ball value,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0190,1No,"1,650",18%
+193,Product,Plumbing,Plumbing,W.C Seat Cover,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0191,1No,"1,440",18%
+194,Product,Plumbing,Plumbing,W.C ' S ' trap,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0192,1No,"1,372",18%
+195,Product,Plumbing,Plumbing,W.C Chair bracket,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0193,1No,"1,020",18%
+196,Product,Plumbing,Plumbing,C.P Piller cock / Angle Cock with flange,Jaquar / Parryware / Hindware / Cera / Hindustan,8544,IDFC- 0194,1No,"1,690",18%
+197,Service,CIVIL,Civil-work,"Breaking 6""/9""thk brick wall /plaster/tiles/skirting",,8544,IDFC- 0195,Sft,36,18%
+198,Service,CIVIL,Civil-work,"Breaking 6""/9""thk RCC wall (Manual) including still",,8544,IDFC- 0196,Cft,102,18%
+199,Service,CIVIL,Civil-work,Construction of  brick wall with plastering on both sides,,8544,IDFC- 0197,Sft,198,18%
+200,Service,CIVIL,Civil-work,Plaster for interior,"ACC / JK/ BINANI / ACC, ULTRATECH, AMBUJA OR EQUIVALENT",8544,IDFC- 0198,Sft,66,18%
+201,Service,CIVIL,Civil-work,Plaster for exterior up to 25mm thick,"ACC / JK/ BINANI / ACC, ULTRATECH, AMBUJA OR EQUIVALENT",8544,IDFC- 0199,Sft,72,18%
+202,Service,CIVIL,Civil-work,Construction of Pantry counter,"ACC / JK/ BINANI / ACC, ULTRATECH, AMBUJA OR EQUIVALENT",8544,IDFC- 0200,Rft,"1,920",18%
+203,Service,CIVIL,Civil-work,"Granite for Steps, ",,8544,IDFC- 0201,Sft,420,18%
+204,Product,CIVIL,Civil-work,Vitrified Tile flooring (for urban branches),Kajaria Cairo Cotto / Nitco Bianco Beige,8544,IDFC- 0202,,210,18%
+205,Product,CIVIL,Civil-work,"Vitrified Tile skirting - 4"" ht (for Urban Branches)",Kajaria Cairo Cotto / Nitco Bianco Beige,8544,,,,
+206,Product,CIVIL,Civil-work,Vitrified Tile flooring,HR JOHNSON/ NAVEEN/ NITCO/ CITY / SOMANY/ASIAN/VARMORA,8544,IDFC- 0203,Sft,145,18%
+207,Product,CIVIL,Civil-work,"Vitrified Tile skirting - 4"" ht",HR JOHNSON/ NAVEEN/ NITCO/ CITY / SOMANY/ASIAN/VARMORA,8544,,,,
+208,Product,CIVIL,Civil-work,Ceramic Tle flooring ,HR JOHNSON/ NAVEEN/ NITCO/ CITY / SOMANY/ASIAN/VARMORA,8544,IDFC- 0204,Sft,160,18%
+209,Product,CIVIL,Civil-work,"Ceramic Tile Skirting - 4"" ht",HR JOHNSON/ NAVEEN/ NITCO/ CITY / SOMANY/ASIAN/VARMORA,8544,,,,
+210,Product,CIVIL,Civil-work,Designer Tiles,HR JOHNSON/ NAVEEN/ NITCO/ CITY / SOMANY/ASIAN/VARMORA,8544,IDFC- 0205,Sft,192,18%
+211,Product,CIVIL,Civil-work,Checkered tiles 25mm thick –,HR JOHNSON/ NAVEEN/ NITCO/ CITY / SOMANY/ASIAN/VARMORA,8544,IDFC- 0206,Sft,114,18%
+212,Product,CIVIL,Civil-work,Wooden flooring (Pergo tiles),PERGO/QUICK STEPS/ HARO TRITY,8544,IDFC- 0207,Sft,204,18%
+213,Product,CIVIL,Civil-work,Water proofing epoxy coating,"PIDILITE / IMPERMO/ ACCOPROOF/ SUPERSEAL, LEAKPROOF/ NINA.",8544,IDFC- 0208,Sft,78,18%
+214,Product,CIVIL,Civil-work,Leveling floor with PCC (1:3:5) Up to 3'' thick,"PIDILITE / IMPERMO/ ACCOPROOF/ SUPERSEAL, LEAKPROOF/ NINA.",8544,IDFC- 0209,Sft,78,18%
+215,Product,CIVIL,Civil-work,Paver Block (63 mm),EUROCON or approved equivalent.,8544,IDFC- 0210,Sft,104,18%
+216,Product,CIVIL,Civil-work,3 mm Vinyl flooring,ARMSTRONG/ KRISHNA VINYL,8544,IDFC- 0211,Sft,114,18%
+217,Product,CIVIL,Civil-work,2 MM Vinyl flooring,ARMSTRONG/ KRISHNA VINYL,8544,IDFC- 0212,Sft,102,18%
+218,Product,CIVIL,Civil-work,Grunting Injection for water Leakage ,"PIDILITE / IMPERMO/ ACCOPROOF/ SUPERSEAL, LEAKPROOF/ NINA.",8544,IDFC- 0213,Per Nipal,420,18%
+219,Product,CIVIL,Civil-work,Brick bat coba + coating,"PIDILITE / IMPERMO/ ACCOPROOF/ SUPERSEAL, LEAKPROOF/ NINA.",8544,IDFC- 0214,Sft,154,18%
+220,Product,CIVIL,Civil-work,"S.S. Sink for platform (21"" x 18"")",NIRALI / PEACKOCK / NILKANTH L / APPOLO /  TROPICAL / BLANCO / ANUPAM/ MARK,8544,IDFC- 0215,1No,"5,400",18%
+221,Product,CIVIL,Civil-work,providing & fixing Italian marble ,DYNA / SAMSUNG / LG /  EM / NAMCOCO / SANTUCCI / RK MARBLES OR EQUIVALENT,8544,IDFC- 0216,Sft,600,18%
+222,Product,CIVIL,Civil-work,Internal wall chemical coating (2 Coats),,8544,IDFC- 0217,Sft,42,18%
+223,Product,CIVIL,Civil-work,Scaffolding Bamboo,,8544,IDFC- 0218,Sft,16,18%
+224,Product,CIVIL,Civil-work,Scaffolding Metal,,8544,IDFC- 0219,Sft,25,18%
+225,Product,CIVIL,Civil-work,External & Internal crack opening & filling.,,8544,IDFC- 0220,Rft,14,18%
+226,Product,CIVIL,Civil-work,Debris Truck 1Trip,,8544,IDFC- 0221,1,"5,200",18%
+227,Product,CIVIL,Civil-work,Local material shifting  with laboue through TATA Ace tempo,,8544,IDFC- 0222,1,"3,500",18%
+228,Product,CIVIL,Civil-work,Granite moulding,,8544,IDFC- 0223,Rft,80,18%
+229,Product,CIVIL,Civil-work,Flooring cutting for flooring machine ,,8544,IDFC- 0224,Lumsum,600,18%
+230,Product,CIVIL,Civil-work,"Marble, Kotta, Polishing work",DYNA / SAMSUNG / LG /  EM / NAMCOCO / SANTUCCI / RK MARBLES OR EQUIVALENT,8544,IDFC- 0225,Sft,52,18%
+231,Product,CIVIL,Civil-work,Granite polishing work,,8544,IDFC- 0226,Sft,50,18%
+232,Product,CIVIL,Civil-work,Italian polishing work,,8544,IDFC- 0227,Sft,84,18%
+,,,,FABRICATION WORK,,,,,,
+233,Service,CIVIL,Civil-work,Window grill with painting 20 mm*5mm thick brick spic 4'*5'',JINDAL / TATA / RATHI,8544,IDFC- 0228,Sft,288,18%
+234,Product,Carpentry,Carpentry-shutter,New shutter M.S.,JINDAL / TATA / RATHI,8544,IDFC- 0229,Sft,285,18%
+235,Product,CIVIL,Civil-work,Collapsible gate,JINDAL / TATA / RATHI,8544,IDFC- 0230,Sft,510,18%
+236,Product,CIVIL,Civil-work,Steel Railing / Brass,JINDAL / TATA / RATHI,8544,IDFC- 0231,Rft,"1,020",18%
+237,Product,CIVIL,Civil-work,Fold able Canopy (Awning),JINDAL / TATA / RATHI,8544,IDFC- 0232,Sft,540,18%
+238,Services,Carpentry,Carpentry-shutter,Shutter servicing,JINDAL / TATA / RATHI,8544,IDFC- 0233,Sft,240,18%
+239,Product,Carpentry,Carpentry-shutter,Shutter Spring,JINDAL / TATA / RATHI,8544,IDFC- 0234,1No,"2,000",18%
+,,,,MISCELENEOUS ITEMS,,,,,,
+240,Product,CIVIL,Civil-work,Synthetic foot matt ( door matt ),,8544,IDFC- 0235,Sft,170,18%
+241,Product,CIVIL,Civil-work,Mirror with fixing accessories ,MODI GUARD/ SAINT GOBAIN/,8544,IDFC- 0236,Sqft,260,18%
+242,Product,Carpentry,Carpentry-Lock / Key,Pad Lock (7 Lever),Godrej,8544,IDFC- 0237,Nos,850,18%
+243,Services,,Civil-work,Core Cutting (1' -6' Inches) ,,8544,IDFC- 0238,Nos,"1,000",18%
+244,Product,Electrical,Electrical -Panel / Boards,Plug top (2 Pin) ,Havells/ Anchor/Legard,8544,IDFC- 0239,Nos,120,18%
+245,Product,Electrical,Electrical -Panel / Boards,Plug top (3 Pin) ,Havells/ Anchor/Legard,8544,IDFC- 0240,Nos,140,18%
+246,Services,Electrical,Electrical -Panel / Boards,Chemical Earthing,,8544,IDFC- 0241,Nos,"12,300",18%
+247,Services,Fire Safety,Civil-work,Sprinklers repair,,8544,IDFC- 0242,Nos,"1,710",18%
+248,Product,Electrical,MCCB,Phase reversal,,8544,IDFC- 0243,Nos,"3,500",18%
+249,Product,ELV Automation,Civil-work,Coaxial Cable (for dish tv),,8544,IDFC- 0244,RMT,22,18%
+250,Product,,Civil-work,VGA Cable (1 Mtrs),,8544,IDFC- 0245,Nos,420,18%
+251,Product,Office Equipment,Civil-work,Plastic chair (without handle),Nilkamal/ Supreme/Equivalent,8544,IDFC- 0246,Nos,630,18%
+252,Product,Office Equipment,Civil-work,Plastic chair (with handle),Nilkamal/ Supreme/Equivalent,8544,IDFC- 0247,Nos,780,18%
+253,Product,Office Equipment,Civil-work,Plastic stool (For pantry),Nilkamal/ Supreme/Equivalent,8544,IDFC- 0248,Nos,510,18%
+254,Services,Carpentry,Carpentry-shutter,Shutter greasing,,8544,IDFC- 0249,LS,"2,000",18%
+255,Product,Electrical,MCCB,Change over ,,8544,IDFC- 0250,,"1,480",18%
+256,Product,Electrical,MCCB,63 Amps,Havells/ Anchor/Legard,8544,IDFC- 0251,Nos,"4,000",18%
+257,Product,Electrical,MCCB,100 Amps,Havells/ Anchor/Legard,8544,IDFC- 0252,Nos,"9,800",18%
+258,Product,Electrical,MCCB,125 Amps,Havells/ Anchor/Legard,8544,IDFC- 0253,Nos,"12,200",18%
+259,Product,Electrical,MCCB,160 Amps,Havells/ Anchor/Legard,8544,IDFC- 0254,Nos,"15,400",18%
+260,Product,Electrical,MCCB,200 Amps,Havells/ Anchor/Legard,8544,IDFC- 0255,Nos,"17,950",18%
+261,Product,Electrical,MCCB,Kit Kat Fuse,,8544,IDFC- 0256,Nos,500,18%
+262,Product,Carpentry,Chair Repair,Chair hydrolic,,8544,IDFC- 0257,Nos,900,18%
+263,Services,Carpentry,Chair Repair,Chair Dry cleaning,,8544,IDFC- 0258,Nos,150,18%
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,`,,,,,,

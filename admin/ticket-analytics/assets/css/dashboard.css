@@ -1,0 +1,219 @@
+.ta-analytics-page {
+    background: #f5f7fb;
+}
+
+.ta-topbar {
+    border: 1px solid #e7ebf3;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ta-topbar-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.ta-kpi-card {
+    border: 1px solid #e7ebf3;
+    border-radius: 12px;
+    padding: 14px;
+    background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+    box-shadow: 0 1px 2px rgba(26, 36, 74, 0.08);
+}
+
+.ta-kpi-label {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 4px;
+}
+
+.ta-kpi-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2a44;
+}
+
+.ta-chart-card {
+    border: 1px solid #e7ebf3;
+    border-radius: 12px;
+    padding: 16px;
+    background: #fff;
+    margin-top: 14px;
+    box-shadow: 0 1px 2px rgba(26, 36, 74, 0.08);
+}
+
+.ta-page-title {
+    font-weight: 700;
+    margin: 0;
+    color: #1f2a44;
+}
+
+.ta-muted {
+    color: #69758b;
+}
+
+.ta-table-wrap {
+    max-height: 65vh;
+    overflow: auto;
+}
+
+.ta-filter-box {
+    border: 1px solid #dfe6f4;
+    border-radius: 10px;
+    padding: 10px 12px;
+    background: #fff;
+}
+
+.ta-filter-panel {
+    padding: 14px;
+}
+
+.ta-filter-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ta-panel-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1f2a44;
+}
+
+.ta-check-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ta-check-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #334155;
+    border: 1px solid #d9e3f5;
+    border-radius: 999px;
+    padding: 4px 10px;
+    background: #f8fbff;
+}
+
+.ta-mini-list {
+    margin: 8px 0 0;
+    padding-left: 18px;
+    color: #4b5563;
+    font-size: 13px;
+}
+
+.ta-chart-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1f2a44;
+    margin-bottom: 10px;
+}
+
+.ta-chart-box {
+    position: relative;
+    height: 260px;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .ta-chart-box {
+        height: 240px;
+    }
+}
+
+.ta-check-actions {
+    display: flex;
+    gap: 8px;
+}
+
+/* Executive per-type dashboards — full-color KPI cards */
+.ta-executive-dashboard .ta-kpi-grid > [class*="col-"],
+.ta-rm-dashboard .ta-kpi-grid > [class*="col-"] {
+    margin-bottom: 10px;
+}
+
+.ta-executive-dashboard .ta-kpi-card[class*="ta-kpi--"],
+.ta-rm-dashboard .ta-kpi-card[class*="ta-kpi--"] {
+    border: none;
+    color: #fff;
+    min-height: 88px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.18);
+}
+
+.ta-executive-dashboard .ta-kpi-card[class*="ta-kpi--"] .ta-kpi-label,
+.ta-rm-dashboard .ta-kpi-card[class*="ta-kpi--"] .ta-kpi-label {
+    color: rgba(255, 255, 255, 0.92);
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.ta-executive-dashboard .ta-kpi-card[class*="ta-kpi--"] .ta-kpi-value,
+.ta-rm-dashboard .ta-kpi-card[class*="ta-kpi--"] .ta-kpi-value {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.ta-executive-dashboard .ta-kpi--total,
+.ta-rm-dashboard .ta-kpi--total {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+}
+
+.ta-executive-dashboard .ta-kpi--open,
+.ta-rm-dashboard .ta-kpi--open {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.ta-executive-dashboard .ta-kpi--closed,
+.ta-rm-dashboard .ta-kpi--closed {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+}
+
+.ta-executive-dashboard .ta-kpi--closure,
+.ta-rm-dashboard .ta-kpi--closure {
+    background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+}
+
+.ta-executive-dashboard .ta-kpi--tat,
+.ta-rm-dashboard .ta-kpi--tat {
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+}
+
+.ta-executive-dashboard .ta-kpi--sla,
+.ta-rm-dashboard .ta-kpi--sla {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.ta-executive-dashboard .ta-kpi--backlog,
+.ta-rm-dashboard .ta-kpi--backlog {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+}
+
+.ta-executive-dashboard .ta-kpi--expense,
+.ta-rm-dashboard .ta-kpi--expense {
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+}
+
+.ta-executive-dashboard .ta-kpi--customer,
+.ta-rm-dashboard .ta-kpi--customer {
+    background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+}
+
+.ta-executive-dashboard .ta-kpi--margin,
+.ta-rm-dashboard .ta-kpi--margin {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.ta-executive-dashboard .ta-kpi--cpt,
+.ta-rm-dashboard .ta-kpi--cpt {
+    background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+}

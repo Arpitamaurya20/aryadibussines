@@ -1,0 +1,384 @@
+[18-Feb-2023 06:52:04 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[18-Feb-2023 06:52:04 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 254
+[18-Feb-2023 06:52:04 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 257
+[18-Feb-2023 06:52:04 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[18-Feb-2023 06:52:04 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[18-Feb-2023 06:52:04 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1177
+[18-Feb-2023 06:52:04 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1201
+[18-Feb-2023 06:52:04 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1203
+[19-Feb-2023 22:05:34 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[19-Feb-2023 22:05:34 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 254
+[19-Feb-2023 22:05:34 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 257
+[19-Feb-2023 22:05:34 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[19-Feb-2023 22:05:34 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[19-Feb-2023 22:05:34 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1177
+[19-Feb-2023 22:05:34 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1201
+[19-Feb-2023 22:05:34 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1203
+[20-Feb-2023 02:19:51 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[20-Feb-2023 02:19:51 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 254
+[20-Feb-2023 02:19:51 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 257
+[20-Feb-2023 02:19:51 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[20-Feb-2023 02:19:51 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[20-Feb-2023 02:19:51 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1177
+[20-Feb-2023 02:19:51 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1201
+[20-Feb-2023 02:19:51 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1203
+[20-Feb-2023 07:07:52 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[20-Feb-2023 07:07:52 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 262
+[20-Feb-2023 07:07:52 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 265
+[20-Feb-2023 07:07:52 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[20-Feb-2023 07:07:52 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[20-Feb-2023 07:07:52 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1177
+[20-Feb-2023 07:07:52 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1201
+[20-Feb-2023 07:07:52 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1203
+[20-Feb-2023 21:49:33 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[20-Feb-2023 21:49:33 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 262
+[20-Feb-2023 21:49:33 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 265
+[20-Feb-2023 21:49:33 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[20-Feb-2023 21:49:33 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[20-Feb-2023 21:49:33 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1177
+[20-Feb-2023 21:49:33 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1201
+[20-Feb-2023 21:49:33 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1203
+[21-Feb-2023 00:33:04 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[21-Feb-2023 00:33:04 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 262
+[21-Feb-2023 00:33:04 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 265
+[21-Feb-2023 00:33:04 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[21-Feb-2023 00:33:04 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[21-Feb-2023 00:33:04 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1177
+[21-Feb-2023 00:33:04 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1201
+[21-Feb-2023 00:33:04 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 1203
+[04-Mar-2023 00:16:06 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[04-Mar-2023 00:16:06 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 265
+[04-Mar-2023 00:16:06 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 268
+[04-Mar-2023 00:16:06 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[04-Mar-2023 00:16:06 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[04-Mar-2023 00:16:06 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[04-Mar-2023 00:16:06 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[04-Mar-2023 00:16:06 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[04-Mar-2023 00:16:26 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[04-Mar-2023 00:16:26 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 265
+[04-Mar-2023 00:16:26 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 268
+[04-Mar-2023 00:16:26 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[04-Mar-2023 00:16:26 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[04-Mar-2023 00:16:26 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[04-Mar-2023 00:16:26 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[04-Mar-2023 00:16:26 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[04-Mar-2023 02:24:27 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[04-Mar-2023 02:24:27 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 265
+[04-Mar-2023 02:24:27 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 268
+[04-Mar-2023 02:24:27 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[04-Mar-2023 02:24:27 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[04-Mar-2023 02:24:27 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[04-Mar-2023 02:24:27 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[04-Mar-2023 02:24:27 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[04-Mar-2023 04:47:06 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[04-Mar-2023 04:47:06 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 265
+[04-Mar-2023 04:47:06 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 268
+[04-Mar-2023 04:47:06 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[04-Mar-2023 04:47:06 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[04-Mar-2023 04:47:06 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[04-Mar-2023 04:47:06 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[04-Mar-2023 04:47:06 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[05-Mar-2023 23:05:53 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[05-Mar-2023 23:05:53 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 265
+[05-Mar-2023 23:05:53 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 268
+[05-Mar-2023 23:05:53 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[05-Mar-2023 23:05:53 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[05-Mar-2023 23:05:53 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[05-Mar-2023 23:05:53 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[05-Mar-2023 23:05:53 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[05-Mar-2023 23:11:44 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[05-Mar-2023 23:11:44 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 265
+[05-Mar-2023 23:11:44 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 268
+[05-Mar-2023 23:11:44 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[05-Mar-2023 23:11:44 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[05-Mar-2023 23:11:44 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[05-Mar-2023 23:11:44 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[05-Mar-2023 23:11:44 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[05-Mar-2023 23:23:39 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[05-Mar-2023 23:23:39 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 265
+[05-Mar-2023 23:23:39 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 268
+[05-Mar-2023 23:23:39 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[05-Mar-2023 23:23:39 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[05-Mar-2023 23:23:39 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[05-Mar-2023 23:23:39 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[05-Mar-2023 23:23:39 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[05-Mar-2023 23:39:34 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[05-Mar-2023 23:39:34 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 265
+[05-Mar-2023 23:39:34 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 268
+[05-Mar-2023 23:39:34 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[05-Mar-2023 23:39:34 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[05-Mar-2023 23:39:34 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[05-Mar-2023 23:39:34 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[05-Mar-2023 23:39:34 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[05-Mar-2023 23:39:57 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[05-Mar-2023 23:39:57 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 265
+[05-Mar-2023 23:39:57 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 268
+[05-Mar-2023 23:39:57 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[05-Mar-2023 23:39:57 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[05-Mar-2023 23:39:57 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[05-Mar-2023 23:39:57 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[05-Mar-2023 23:39:57 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[06-Mar-2023 00:07:05 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[06-Mar-2023 00:07:05 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 265
+[06-Mar-2023 00:07:05 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 268
+[06-Mar-2023 00:07:05 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[06-Mar-2023 00:07:05 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[06-Mar-2023 00:07:05 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[06-Mar-2023 00:07:05 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[06-Mar-2023 00:07:05 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[06-Mar-2023 04:39:36 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[06-Mar-2023 04:39:36 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 265
+[06-Mar-2023 04:39:36 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 268
+[06-Mar-2023 04:39:36 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[06-Mar-2023 04:39:36 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[06-Mar-2023 04:39:36 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[06-Mar-2023 04:39:36 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[06-Mar-2023 04:39:36 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[06-Mar-2023 04:39:46 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[06-Mar-2023 04:39:46 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 265
+[06-Mar-2023 04:39:46 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 268
+[06-Mar-2023 04:39:46 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[06-Mar-2023 04:39:46 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[06-Mar-2023 04:39:46 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[06-Mar-2023 04:39:46 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[06-Mar-2023 04:39:46 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[13-Mar-2023 02:28:22 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[13-Mar-2023 02:28:22 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 265
+[13-Mar-2023 02:28:22 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 268
+[13-Mar-2023 02:28:22 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[13-Mar-2023 02:28:22 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[13-Mar-2023 02:28:22 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[13-Mar-2023 02:28:22 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[13-Mar-2023 02:28:22 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[25-Mar-2023 05:14:51 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[25-Mar-2023 05:14:51 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 273
+[25-Mar-2023 05:14:51 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 276
+[25-Mar-2023 05:14:51 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[25-Mar-2023 05:14:51 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[25-Mar-2023 05:14:51 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[25-Mar-2023 05:14:51 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[25-Mar-2023 05:14:51 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[25-Mar-2023 05:15:17 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[25-Mar-2023 05:15:18 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 273
+[25-Mar-2023 05:15:18 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 276
+[25-Mar-2023 05:15:18 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[25-Mar-2023 05:15:18 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[25-Mar-2023 05:15:18 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[25-Mar-2023 05:15:18 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[25-Mar-2023 05:15:18 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[25-Mar-2023 05:27:45 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[25-Mar-2023 05:27:45 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 273
+[25-Mar-2023 05:27:45 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 276
+[25-Mar-2023 05:27:45 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[25-Mar-2023 05:27:45 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[25-Mar-2023 05:27:45 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[25-Mar-2023 05:27:45 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[25-Mar-2023 05:27:45 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[27-Mar-2023 00:03:57 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[27-Mar-2023 00:03:57 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 273
+[27-Mar-2023 00:03:57 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 276
+[27-Mar-2023 00:03:57 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[27-Mar-2023 00:03:57 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[27-Mar-2023 00:03:57 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[27-Mar-2023 00:03:57 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[27-Mar-2023 00:03:57 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[27-Mar-2023 00:05:32 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[27-Mar-2023 00:05:32 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 273
+[27-Mar-2023 00:05:32 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 276
+[27-Mar-2023 00:05:32 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[27-Mar-2023 00:05:32 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[27-Mar-2023 00:05:32 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[27-Mar-2023 00:05:32 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[27-Mar-2023 00:05:32 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[29-Mar-2023 02:34:04 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 10
+[29-Mar-2023 02:34:04 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[29-Mar-2023 02:34:04 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[29-Mar-2023 02:34:04 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[29-Mar-2023 02:34:04 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[29-Mar-2023 02:34:04 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[29-Mar-2023 02:34:04 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[29-Mar-2023 02:34:04 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[06-Apr-2023 05:46:42 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 11
+[06-Apr-2023 05:46:42 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[06-Apr-2023 05:46:42 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[06-Apr-2023 05:46:42 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[06-Apr-2023 05:46:42 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[06-Apr-2023 05:46:42 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[06-Apr-2023 05:46:42 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[06-Apr-2023 05:46:42 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[07-Apr-2023 01:28:41 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 11
+[07-Apr-2023 01:28:41 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[07-Apr-2023 01:28:41 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[07-Apr-2023 01:28:41 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[07-Apr-2023 01:28:41 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[07-Apr-2023 01:28:41 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[07-Apr-2023 01:28:41 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[07-Apr-2023 01:28:41 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[07-Apr-2023 01:29:59 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 11
+[07-Apr-2023 01:29:59 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[07-Apr-2023 01:29:59 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[07-Apr-2023 01:29:59 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[07-Apr-2023 01:29:59 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[07-Apr-2023 01:29:59 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[07-Apr-2023 01:29:59 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[07-Apr-2023 01:29:59 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[07-Apr-2023 02:29:38 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 11
+[07-Apr-2023 02:29:38 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[07-Apr-2023 02:29:38 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[07-Apr-2023 02:29:38 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[07-Apr-2023 02:29:38 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[07-Apr-2023 02:29:38 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[07-Apr-2023 02:29:38 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[07-Apr-2023 02:29:38 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[08-Apr-2023 01:42:03 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 11
+[08-Apr-2023 01:42:03 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[08-Apr-2023 01:42:03 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[08-Apr-2023 01:42:03 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[08-Apr-2023 01:42:03 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[08-Apr-2023 01:42:03 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[08-Apr-2023 01:42:03 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[08-Apr-2023 01:42:03 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[10-Apr-2023 05:26:22 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 11
+[10-Apr-2023 05:26:22 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[10-Apr-2023 05:26:22 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[10-Apr-2023 05:26:22 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[10-Apr-2023 05:26:22 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[10-Apr-2023 05:26:22 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[10-Apr-2023 05:26:22 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[10-Apr-2023 05:26:22 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[16-Apr-2023 08:53:55 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 11
+[16-Apr-2023 08:53:55 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[16-Apr-2023 08:53:55 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[16-Apr-2023 08:53:55 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[16-Apr-2023 08:53:55 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[16-Apr-2023 08:53:55 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[16-Apr-2023 08:53:55 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[16-Apr-2023 08:53:55 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[16-Apr-2023 08:54:57 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 11
+[16-Apr-2023 08:54:57 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[16-Apr-2023 08:54:57 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[16-Apr-2023 08:54:57 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[16-Apr-2023 08:54:57 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[16-Apr-2023 08:54:57 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[16-Apr-2023 08:54:57 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[16-Apr-2023 08:54:57 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[16-Apr-2023 09:13:27 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 11
+[16-Apr-2023 09:13:27 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[16-Apr-2023 09:13:27 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[16-Apr-2023 09:13:27 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 58
+[16-Apr-2023 09:13:27 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 61
+[16-Apr-2023 09:13:27 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[16-Apr-2023 09:13:27 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[16-Apr-2023 09:13:27 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[19-Apr-2023 01:15:45 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 11
+[19-Apr-2023 01:15:45 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[19-Apr-2023 01:15:45 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[19-Apr-2023 01:15:45 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[19-Apr-2023 01:15:45 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[19-Apr-2023 01:15:45 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[19-Apr-2023 01:15:45 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[19-Apr-2023 01:15:45 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[19-Apr-2023 01:39:51 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 11
+[19-Apr-2023 01:39:51 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[19-Apr-2023 01:39:51 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[19-Apr-2023 01:39:51 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[19-Apr-2023 01:39:51 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[19-Apr-2023 01:39:51 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[19-Apr-2023 01:39:51 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[19-Apr-2023 01:39:51 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[19-Apr-2023 02:16:12 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 11
+[19-Apr-2023 02:16:12 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 278
+[19-Apr-2023 02:16:12 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 281
+[19-Apr-2023 02:16:12 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[19-Apr-2023 02:16:12 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[19-Apr-2023 02:16:12 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[19-Apr-2023 02:16:12 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[19-Apr-2023 02:16:12 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[28-Apr-2023 03:44:22 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 12
+[28-Apr-2023 03:44:22 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 285
+[28-Apr-2023 03:44:22 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 288
+[28-Apr-2023 03:44:22 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[28-Apr-2023 03:44:22 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[28-Apr-2023 03:44:22 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[28-Apr-2023 03:44:22 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[28-Apr-2023 03:44:22 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[29-Apr-2023 01:29:05 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 12
+[29-Apr-2023 01:29:05 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 285
+[29-Apr-2023 01:29:05 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 288
+[29-Apr-2023 01:29:05 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[29-Apr-2023 01:29:05 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[29-Apr-2023 01:29:05 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[29-Apr-2023 01:29:05 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[29-Apr-2023 01:29:05 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[29-Apr-2023 01:41:06 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 12
+[29-Apr-2023 01:41:06 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 285
+[29-Apr-2023 01:41:06 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 288
+[29-Apr-2023 01:41:06 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[29-Apr-2023 01:41:06 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[29-Apr-2023 01:41:06 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[29-Apr-2023 01:41:06 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[29-Apr-2023 01:41:06 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[29-Apr-2023 02:42:53 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 12
+[29-Apr-2023 02:42:53 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 285
+[29-Apr-2023 02:42:53 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 288
+[29-Apr-2023 02:42:53 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[29-Apr-2023 02:42:53 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[29-Apr-2023 02:42:53 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[29-Apr-2023 02:42:53 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[29-Apr-2023 02:42:53 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[29-Apr-2023 03:09:13 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 12
+[29-Apr-2023 03:09:13 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 285
+[29-Apr-2023 03:09:13 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 288
+[29-Apr-2023 03:09:13 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[29-Apr-2023 03:09:13 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[29-Apr-2023 03:09:13 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[29-Apr-2023 03:09:13 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[29-Apr-2023 03:09:13 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[02-May-2023 02:13:20 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 12
+[02-May-2023 02:13:20 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 285
+[02-May-2023 02:13:20 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 288
+[02-May-2023 02:13:20 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[02-May-2023 02:13:20 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[02-May-2023 02:13:20 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[02-May-2023 02:13:20 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[02-May-2023 02:13:20 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[02-May-2023 02:13:49 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 12
+[02-May-2023 02:13:49 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 285
+[02-May-2023 02:13:49 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 288
+[02-May-2023 02:13:49 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[02-May-2023 02:13:49 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[02-May-2023 02:13:49 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[02-May-2023 02:13:49 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[02-May-2023 02:13:49 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[02-May-2023 06:16:31 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 12
+[02-May-2023 06:16:31 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 285
+[02-May-2023 06:16:31 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 288
+[02-May-2023 06:16:31 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[02-May-2023 06:16:31 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[02-May-2023 06:16:31 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[02-May-2023 06:16:31 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[02-May-2023 06:16:31 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[08-May-2023 03:05:56 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 12
+[08-May-2023 03:05:56 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 285
+[08-May-2023 03:05:56 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 288
+[08-May-2023 03:05:56 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[08-May-2023 03:05:56 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[08-May-2023 03:05:56 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[08-May-2023 03:05:56 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[08-May-2023 03:05:56 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[08-May-2023 04:01:09 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 12
+[08-May-2023 04:01:09 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 285
+[08-May-2023 04:01:09 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 288
+[08-May-2023 04:01:09 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[08-May-2023 04:01:09 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[08-May-2023 04:01:09 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[08-May-2023 04:01:09 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[08-May-2023 04:01:09 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613
+[08-May-2023 05:13:07 America/Boise] PHP Warning:  Undefined array key "Roles" in /home2/cypherte/public_html/techxpert/ed/admin/company/view-company.php on line 12
+[08-May-2023 05:13:08 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 285
+[08-May-2023 05:13:08 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home2/cypherte/public_html/techxpert/ed/admin/controllers/common_controllers.php on line 288
+[08-May-2023 05:13:08 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 115
+[08-May-2023 05:13:08 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/navigation/admin_navigation.php on line 121
+[08-May-2023 05:13:08 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 600
+[08-May-2023 05:13:08 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 612
+[08-May-2023 05:13:08 America/Boise] PHP Warning:  Undefined array key "UserType" in /home2/cypherte/public_html/techxpert/ed/admin/includes/common_header.php on line 613

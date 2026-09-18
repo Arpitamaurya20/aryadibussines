@@ -1,0 +1,14 @@
+[04-Mar-2023 04:49:14 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/branch-assets/action/add_update_branch_assets.php on line 9
+[29-Apr-2023 02:47:50 America/Boise] PHP Warning:  Undefined array key "sub_categories" in /home2/cypherte/public_html/techxpert/ed/admin/branch-assets/controller/branch_assets_controller.php on line 92
+[29-Apr-2023 02:47:50 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/branch-assets/controller/branch_assets_controller.php on line 104
+[29-Apr-2023 02:48:40 America/Boise] PHP Warning:  Undefined array key "sub_categories" in /home2/cypherte/public_html/techxpert/ed/admin/branch-assets/controller/branch_assets_controller.php on line 92
+[29-Apr-2023 02:48:40 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/branch-assets/controller/branch_assets_controller.php on line 104
+[29-Apr-2023 02:49:16 America/Boise] PHP Warning:  Undefined array key "sub_categories" in /home2/cypherte/public_html/techxpert/ed/admin/branch-assets/controller/branch_assets_controller.php on line 92
+[29-Apr-2023 02:49:16 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home2/cypherte/public_html/techxpert/ed/admin/branch-assets/controller/branch_assets_controller.php on line 104
+[02-May-2023 02:14:25 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/branch-assets/action/add_update_branch_assets.php on line 9
+[02-May-2023 02:14:38 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/branch-assets/action/add_update_branch_assets.php on line 9
+[02-May-2023 02:14:54 America/Boise] PHP Warning:  Undefined array key "pb_username" in /home2/cypherte/public_html/techxpert/ed/admin/branch-assets/action/add_update_branch_assets.php on line 9
+[02-May-2023 02:26:56 America/Boise] PHP Warning:  Undefined array key "sub_categories" in /home2/cypherte/public_html/techxpert/ed/admin/branch-assets/controller/branch_assets_controller.php on line 47
+[12-May-2023 13:53:34 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home2/techxper/public_html/techxpertindia-app/admin/corporate-tickets/controller/corporate_tickets_controller.php on line 269
+[18-May-2023 00:40:33 America/Boise] PHP Warning:  Undefined array key "uom" in /home2/techxper/public_html/techxpertindia-app/admin/branch-assets/controller/branch_assets_controller.php on line 85
+[18-May-2023 12:14:28 Asia/Kolkata] PHP Warning:  Undefined array key "CreatedTime" in /home2/techxper/public_html/techxpertindia-app/admin/branch-assets/action/export_branch_assets.php on line 66
