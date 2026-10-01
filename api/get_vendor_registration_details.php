@@ -12,7 +12,11 @@ header('Content-Type: application/json; charset=utf-8');
 $data_raw = file_get_contents('php://input');
 $data = json_decode($data_raw, true);
 
-$base_url = 'https://techxpertindia.in/admin/media/vendor_registration/';
+$host = $_SERVER['HTTP_HOST'] ?? '';
+$isLocal = stripos($host, 'localhost') !== false || strpos($host, '127.0.0.1') !== false;
+$base_url = $isLocal
+    ? 'http://' . $host . '/Projects/aryadibussines/admin/media/vendor_registration/'
+    : 'https://techxpertindia.in/admin/media/vendor_registration/';
 
 try {
 

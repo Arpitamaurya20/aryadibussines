@@ -9,7 +9,7 @@ $data_raw = file_get_contents('php://input');
 $data = json_decode($data_raw, true);
 $response = [];
 
-if (!isset($data['EmployeeID']) || $data['EmployeeID'] === '') {
+if (!is_array($data) || !isset($data['EmployeeID']) || $data['EmployeeID'] === '') {
     $response['error'] = true;
     $response['message'] = 'Missing User Fields!';
     echo json_encode($response);
@@ -36,6 +36,13 @@ $checkoutCheck = getEmployeeCheckoutEligibility($conn, $EmployeeID);
 if (!$checkoutCheck['canCheckout']) {
     $response['error'] = true;
     $response['message'] = $checkoutCheck['message'];
+    $response['data'] = [
+        'hoursWorked' => $checkoutCheck['hoursWorked'] ?? 0,
+        'minutesWorked' => $checkoutCheck['minutesWorked'] ?? 0,
+        'remainingMinutes' => $checkoutCheck['remainingMinutes'] ?? 0,
+        'minHoursRequired' => $checkoutCheck['minHoursRequired'] ?? 2,
+        'checkInTime' => $checkoutCheck['checkInTime'] ?? null,
+    ];
     echo json_encode($response);
     exit;
 }
@@ -50,11 +57,39 @@ if (!$geofence['allowed']) {
 
 $filename = '';
 if (isset($data['imageData']) && $data['imageData'] !== '') {
-    $imageData = base64_decode($data['imageData']);
+    $rawImage = $data['imageData'];
+    if (preg_match('/^data:image\/[a-zA-Z0-9.+-]+;base64,/', $rawImage)) {
+        $rawImage = preg_replace('/^data:image\/[a-zA-Z0-9.+-]+;base64,/', '', $rawImage);
+    }
+    $rawImage = preg_replace('/\s+/', '', $rawImage);
+    $imageBinary = base64_decode($rawImage, true);
+    if ($imageBinary === false || strlen($imageBinary) < 100) {
+        $response['error'] = true;
+        $response['message'] = 'Invalid check-out image data';
+        echo json_encode($response);
+        exit;
+    }
+
     $var_name = "checkout_{$EmployeeID}_{$current_date}";
     $filename = 'ea_' . $var_name . uniqid() . '.jpg';
-    $storageDirectory = '../../admin/media/employee_attendance/';
-    file_put_contents($storageDirectory . $filename, $imageData);
+    $storageDirectory = __DIR__ . '/../../admin/media/employee_attendance/';
+    if (!is_dir($storageDirectory)) {
+        mkdir($storageDirectory, 0775, true);
+    }
+    $saved = file_put_contents($storageDirectory . $filename, $imageBinary);
+    if ($saved === false || $saved < 100) {
+        $response['error'] = true;
+        $response['message'] = 'Could not save check-out image';
+        echo json_encode($response);
+        exit;
+    }
+}
+
+if ($filename === '') {
+    $response['error'] = true;
+    $response['message'] = 'Check-out selfie (imageData) is required';
+    echo json_encode($response);
+    exit;
 }
 
 $LatitudeSql = mysqli_real_escape_string($conn, (string) $Latitude);
@@ -68,6 +103,7 @@ $result = _UpdateTableRecords($conn, 'employee_attendance', $query_parameter);
 if ($result['error'] == false) {
     $response['error'] = false;
     $response['message'] = 'Attendance punched out';
+    $response['CheckoutImage'] = $filename;
     if (!empty($geofence['matchedLocation'])) {
         $response['data'] = ['matchedLocation' => $geofence['matchedLocation']];
     }

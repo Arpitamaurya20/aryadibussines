@@ -20,9 +20,9 @@ if(isset($data['TicketID']))
 	if($Type == "CT")
 	{
 		$response = getCorporateTicketDetail($conn,$data);
-		if($response['Type']=="AMC")
+		if(($response['data']['Type'] ?? '') == "AMC")
 		{
-			 $spareStatus=getSparePartStatus($conn,$TicketID);
+			 $spareStatus=getSparePartStatus($conn,$data['TicketID']);
 			 $response['SparePartStatus'] = $spareStatus; 
 		}
 	}

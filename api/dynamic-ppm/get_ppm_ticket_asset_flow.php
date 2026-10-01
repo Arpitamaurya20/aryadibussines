@@ -13,10 +13,10 @@ if ($ticketID <= 0) {
     dynamic_ppm_response(true, 'TicketID is required.');
 }
 
-$payload = buildDynamicPPMChecklistFormPayload($conn, $ticketID, 'company');
-if (!empty($payload['error'])) {
-    dynamic_ppm_response(true, $payload['message']);
+$flow = getDynamicPPMTicketFlowInfoByAsset($conn, $ticketID);
+if (!empty($flow['error'])) {
+    dynamic_ppm_response(true, $flow['message']);
 }
 
-dynamic_ppm_response(false, isset($payload['message']) ? $payload['message'] : 'Dynamic PPM checklist loaded.', $payload);
+dynamic_ppm_response(false, $flow['message'], $flow);
 ?>

@@ -1,7 +1,6 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
 require_once('../common_api_header.php');
 require_once('../../admin/includes/autoloader.inc.php');
 $data_raw = file_get_contents('php://input');
@@ -18,14 +17,17 @@ if(isset($data['Summary']) && isset($data['CreatedBy']) && isset($data['SiteVisi
 	$response = $site_visits_obj->CompleteSiteVisit($data);
 	if($response['error'] == false)
 	{
-		$core = new Core();
-		$url = "https://techxpertindia.in/admin/site_visits/action/generate_site_visit_pdf.php";
-		// Define the POST data
-		$postData = [
-		    'SiteVisitID' => $SiteVisitID,
-		    'Action' => 'Send'
-		];
-		$response_generate_pdf = $core->sendCurlRequest($postData,$url);
+		$host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '';
+		$isLocal = stripos($host, 'localhost') !== false || stripos($host, '127.0.0.1') !== false;
+		if(!$isLocal)
+		{
+			$url = "https://techxpertindia.in/admin/site_visits/action/generate_site_visit_pdf.php";
+			$postData = [
+			    'SiteVisitID' => $SiteVisitID,
+			    'Action' => 'Send'
+			];
+			$core->sendCurlRequest($postData, $url, 8);
+		}
 		$response['message'] = "Site Visit Completed";
 	}
 }

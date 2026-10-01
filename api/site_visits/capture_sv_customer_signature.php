@@ -1,7 +1,6 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
 require_once('../common_api_header.php');
 require_once('../../admin/includes/autoloader.inc.php');
 $data_raw = file_get_contents('php://input');
@@ -15,8 +14,16 @@ if(isset($data['imageData']) && isset($data['SiteVisitID']))
 	$filename = "cs_".$SiteVisitID."_".uniqid().'.jpg';
 	// Define the storage directory where the image will be saved
 	$storageDirectory = '../../admin/media/signature/';
+	if (!is_dir($storageDirectory)) {
+		mkdir($storageDirectory, 0777, true);
+	}
 
-	file_put_contents($storageDirectory.$filename, $imageData);
+	if (file_put_contents($storageDirectory.$filename, $imageData) === false) {
+		$response['error'] = true;
+		$response['message'] = "Unable to store the signature.";
+		echo json_encode($response);
+		exit;
+	}
 	$dbh = new Dbh();
 	$conn = $dbh->_connectodb();
 	$site_visits_obj = new Sitevisits($conn);

@@ -1,6 +1,6 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
+ini_set('display_errors', '0');
+ini_set('display_startup_errors', '0');
 error_reporting(E_ALL);
 @session_start();
 require_once('common_api_header.php');
@@ -18,8 +18,11 @@ $response = array();
 
 if(isset($data['TicketID']))
 {
-	$TicketID = $data['TicketID'];
+	$TicketID = (int)$data['TicketID'];
 	$conn = _connectodb();
+	$host = $_SERVER['HTTP_HOST'] ?? '';
+	$isLocal = stripos($host, 'localhost') !== false || strpos($host, '127.0.0.1') !== false || preg_match('/^(192\.168|10\.)\./', $host);
+	$pdf_base_url = $isLocal ? 'http://localhost/Projects/aryadibussines/admin/corporate-tickets/action/' : 'https://techxpertindia.in/admin/corporate-tickets/action/';
 	$ppm_ticket_obj = new Ppmtickets($conn);
 	$where = " where ID = $TicketID";
 	$ticket_data = _getTableDetails($conn,'ppm_tickets', $where);
@@ -32,16 +35,16 @@ if(isset($data['TicketID']))
 	{
 		$ServiceReportID = $service_report_details['ID'];
 		$ppm_hvac_service_report_details = _getTableDetails($conn,'ppm_hvac_service_report','where ServiceReportID = '.$ServiceReportID);
-		$url = 'https://techxpertindia.in/admin/corporate-tickets/action/generate_ppm_service_report_pdf.php';
+		$url = $pdf_base_url . 'generate_ppm_service_report_pdf.php';
 		if($ppm_hvac_service_report_details != null)
 		{
-			$url = 'https://techxpertindia.in/admin/corporate-tickets/action/generate_ppm_hvac_service_report_pdf.php';
+			$url = $pdf_base_url . 'generate_ppm_hvac_service_report_pdf.php';
 		}
 		$core = new Core();
 		// Define the POST data
 		$postData = [
 		    'ServiceReportID' => $ServiceReportID,
-		    'Action' => 'Send'
+		    'Action' => $isLocal ? 'Download' : 'Send'
 		];
 		$response_generate_pdf = $core->sendCurlRequest($postData,$url);
 		//var_dump($response_generate_pdf);

@@ -1,5 +1,8 @@
 <?php
 
+ini_set('display_errors', '0');
+ini_set('display_startup_errors', '0');
+
 require_once('common_api_header.php');
 
 require_once('../admin/controllers/common_controllers.php');
@@ -16,6 +19,8 @@ $response = array();
 if(isset($data['TicketID']))
 
 {
+
+	$data['TicketID'] = (int)$data['TicketID'];
 
 	$conn = _connectodb();
 	$categories_obj = new Categories($conn);

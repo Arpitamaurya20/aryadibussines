@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', '0');
 require_once('../common_api_header.php');
 require_once('../../admin/controllers/common_controllers.php');
 require_once('../../admin/dynamic-ppm/controller/dynamic_ppm_controller.php');

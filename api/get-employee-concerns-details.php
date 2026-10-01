@@ -23,7 +23,11 @@ try {
 
     $id = (int)$data['Id'];
 
-    $base_url = "https://techxpertindia.in/admin/media/employee_concern/";
+    $host = $_SERVER['HTTP_HOST'] ?? '';
+    $isLocal = stripos($host, 'localhost') !== false || strpos($host, '127.0.0.1') !== false;
+    $base_url = $isLocal
+        ? 'http://' . $host . '/Projects/aryadibussines/admin/media/employee_concern/'
+        : 'https://techxpertindia.in/admin/media/employee_concern/';
 
     $sql = "SELECT * FROM employee_concerns WHERE Id = $id LIMIT 1";
     $result = mysqli_query($conn, $sql);

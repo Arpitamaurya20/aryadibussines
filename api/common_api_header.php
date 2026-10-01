@@ -24,7 +24,9 @@ $whitelist_endpoints = [
     'verify_otp.php',
     'attendance_login.php',
     'corporate_login.php',
-    'get_ppm_billing_status.php'
+    'get_ppm_billing_status.php',
+    'get_employee_info.php',
+    'get_employee_attendance_status.php'
 ];
 
 $current_script = basename($_SERVER['SCRIPT_NAME']);

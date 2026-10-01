@@ -1,5 +1,5 @@
 <?php
-ini_set('display_errors', 1);
+ini_set('display_errors', 0);
 error_reporting(E_ALL);
 
 require_once('common_api_header.php');
@@ -10,11 +10,22 @@ $data = json_decode($data_raw, true);
 
 $response = [];
 
-// 🔹 Base Upload Path
 $upload_dir = "../admin/media/employee_concern/";
-$base_url   = "https://techxpertindia.in/admin/media/employee_concern/";
+$host = $_SERVER['HTTP_HOST'] ?? '';
+$isLocal = stripos($host, 'localhost') !== false || strpos($host, '127.0.0.1') !== false;
+$base_url = $isLocal
+    ? 'http://' . $host . '/Projects/aryadibussines/admin/media/employee_concern/'
+    : 'https://techxpertindia.in/admin/media/employee_concern/';
 
 try {
+
+    if (!is_array($data)) {
+        echo json_encode([
+            'error' => true,
+            'message' => 'Invalid request.'
+        ]);
+        exit;
+    }
 
     if (empty($data['Issue']) || empty($data['Mobile'])) {
         echo json_encode([
@@ -27,7 +38,6 @@ try {
     $dbh  = new Dbh();
     $conn = $dbh->_connectodb();
 
-    // 🔹 Sanitize Inputs
     $name        = $conn->real_escape_string($data['Name'] ?? '');
     $mobile      = $conn->real_escape_string($data['Mobile']);
     $issue       = $conn->real_escape_string($data['Issue']);
@@ -36,33 +46,48 @@ try {
 
     $attachmentFileName = "";
 
-    /* =========================
-       🔥 HANDLE BASE64 FILE
-    ========================= */
-
     if (!empty($data['Attachment'])) {
 
         $fileData = $data['Attachment'];
 
-        // Example: data:image/png;base64,xxxxx
         if (strpos($fileData, 'base64,') !== false) {
 
             $fileParts = explode(";base64,", $fileData);
             $fileTypeAux = explode("image/", $fileParts[0]);
+            $rawExtension = isset($fileTypeAux[1]) ? $fileTypeAux[1] : "jpg";
+            $fileExtension = strtolower(preg_replace('/[^a-z0-9]/i', '', $rawExtension));
+            if ($fileExtension === '' || $fileExtension === 'jpeg') {
+                $fileExtension = 'jpg';
+            }
 
-            $fileExtension = isset($fileTypeAux[1]) ? $fileTypeAux[1] : "png";
+            $fileBase64 = base64_decode(end($fileParts));
+            if ($fileBase64 === false || $fileBase64 === '') {
+                echo json_encode([
+                    'error' => true,
+                    'message' => 'Unable to read the selected image.'
+                ]);
+                exit;
+            }
 
-            $fileBase64 = base64_decode($fileParts[1]);
+            if (!is_dir($upload_dir) && !mkdir($upload_dir, 0777, true) && !is_dir($upload_dir)) {
+                echo json_encode([
+                    'error' => true,
+                    'message' => 'Unable to save the image.'
+                ]);
+                exit;
+            }
 
             $attachmentFileName = "concern_" . time() . rand(1000,9999) . "." . $fileExtension;
 
-            file_put_contents($upload_dir . $attachmentFileName, $fileBase64);
+            if (file_put_contents($upload_dir . $attachmentFileName, $fileBase64) === false) {
+                echo json_encode([
+                    'error' => true,
+                    'message' => 'Unable to save the image.'
+                ]);
+                exit;
+            }
         }
     }
-
-    /* =========================
-       🔥 INSERT QUERY
-    ========================= */
 
     $sql = "INSERT INTO employee_concerns 
             (Name, Mobile, Issue, Attachment, IsAnonymous, CreatedBy, Status, CreatedAt) 

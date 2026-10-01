@@ -1,6 +1,6 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
+ini_set('display_errors', '0');
+ini_set('display_startup_errors', '0');
 error_reporting(E_ALL);
 @session_start();
 require_once('common_api_header.php');
@@ -15,7 +15,13 @@ if(isset($data['ProblemReportedByClient']) && isset($data['Observation']) && iss
     
 	$conn = _connectodb();
 	extract($data);
-    $ActionTaken = mysqli_real_escape_string($conn, $ActionTaken);
+    $Latitude = isset($Latitude) ? $Latitude : '';
+    $Longitude = isset($Longitude) ? $Longitude : '';
+    foreach (array('ProblemReportedByClient','Observation','ActionTaken','Remarks','ClientRepresentative','ClientRepresentativeContact','ClientRepresentativeEmails','ClientRepresentativeDesignation','Latitude','Longitude','CreatedBy') as $escapeField) {
+        $$escapeField = mysqli_real_escape_string($conn, (string)$$escapeField);
+    }
+    $ServiceReportID = (int)$ServiceReportID;
+    $ServiceReportTicketID = (int)$ServiceReportTicketID;
 	$CreatedDate = date('Y-m-d');
 	$CreatedTime = date('H:i:s');
 	$CreatedBy = $data['CreatedBy'];

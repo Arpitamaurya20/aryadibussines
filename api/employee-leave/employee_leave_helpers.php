@@ -217,6 +217,14 @@ function elm_api_bootstrap()
     header('Content-Type: application/json; charset=utf-8');
     require_once dirname(__DIR__) . '/common_api_header.php';
     require_once dirname(__DIR__, 2) . '/admin/controllers/common_controllers.php';
+    // common_controllers sets $servername etc. in this function scope — expose for _connectodb()
+    $GLOBALS['servername'] = $servername ?? '';
+    $GLOBALS['dbusername'] = $dbusername ?? '';
+    $GLOBALS['password'] = $password ?? '';
+    $GLOBALS['dbname'] = $dbname ?? '';
+    if (isset($_URL)) {
+        $GLOBALS['_URL'] = $_URL;
+    }
     setTimeZone();
     return _connectodb();
 }

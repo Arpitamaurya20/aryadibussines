@@ -6,8 +6,11 @@ require_once('../common_api_header.php');
 // Retrieve the image data sent from the Ionic app
 require_once('../../admin/controllers/common_controllers.php');
 $data_raw = file_get_contents('php://input');
-$myfile = fopen("../logs/site_visit_logs.txt", "a") or die("Unable to open file!");
-fwrite($myfile, "\n". $data_raw);
+$myfile = @fopen("../logs/site_visit_logs.txt", "a");
+if ($myfile) {
+	fwrite($myfile, "\n". $data_raw);
+	fclose($myfile);
+}
 $conn = _connectodb();
 setTimeZone();
 $response = array();
@@ -30,6 +33,9 @@ $filename = "sv_".$SiteVisitID."_".uniqid().'.jpg';
 
 // Define the storage directory where the image will be saved
 $storageDirectory = '../../admin/media/site_visits/';
+if (!is_dir($storageDirectory)) {
+	mkdir($storageDirectory, 0777, true);
+}
 file_put_contents($storageDirectory . $filename, $imageData);
 $TempObservationID = -1;
 if($ObservationID == -1)

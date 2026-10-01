@@ -14,9 +14,16 @@ if(isset($data['BranchID']))
 	$TicketID = $data['TicketID'];
     // Get City ID from Branch ID
 	$where = "where ID  = $BranchID";
-	$BranchMobile = _getTableDetails($conn, 'branch', $where)['BranchMobile'];
+	$BranchMobile = trim((string) (_getTableDetails($conn, 'branch', $where)['BranchMobile'] ?? ''));
+	if(strlen(preg_replace('/\D/', '', $BranchMobile)) < 10)
+	{
+		$response["error"] = true;
+		$response["message"] = "Branch mobile number is not set. Please ask the admin to update it.";
+		echo json_encode($response);
+		exit;
+	}
 	$otp = generateOTP($BranchMobile);
-	InsertTempTicketOTP($conn,$TicketID,$BranchMobile,$otp);
+	InsertTempTicketOTP($conn,$TicketID,$otp);
 	$message = "Please use OTP $otp to login into TechXpert App";
 	$BranchMobile = "+91".$BranchMobile;
 	sendWhatsAppMessage($BranchMobile,$message);

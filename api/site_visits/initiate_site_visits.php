@@ -1,7 +1,5 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+ini_set('display_errors', 0);
 require_once('../common_api_header.php');
 require_once('../../admin/includes/autoloader.inc.php');
 $data_raw = file_get_contents('php://input');
@@ -14,6 +12,12 @@ if(isset($data['ReportNumber']) && isset($data['CreatedBy']) && isset($data['Bra
 
 	$branch_obj = new Branch($conn);
 	$branch_details = $branch_obj->getBranchDetailsbyID($data);
+	if (!is_array($branch_details) || empty($branch_details['CompanyID'])) {
+		$response["error"] = true;
+		$response["message"] = "Branch not found.";
+		echo json_encode($response);
+		exit();
+	}
 	$data['CorporateID'] = $branch_details['CompanyID'];
 
 	$site_visits_obj = new Sitevisits($conn);

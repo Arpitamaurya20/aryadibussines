@@ -23,7 +23,11 @@ try {
 
     $employeeId = (int)$data['EmployeeID'];
 
-    $base_url = "https://techxpertindia.in/admin/media/employee_concern/";
+    $host = $_SERVER['HTTP_HOST'] ?? '';
+    $isLocal = stripos($host, 'localhost') !== false || strpos($host, '127.0.0.1') !== false;
+    $base_url = $isLocal
+        ? 'http://' . $host . '/Projects/aryadibussines/admin/media/employee_concern/'
+        : 'https://techxpertindia.in/admin/media/employee_concern/';
 
     $sql = "SELECT Id, Name, Mobile, Issue, Attachment, IsAnonymous, Status, CreatedAt 
             FROM employee_concerns 

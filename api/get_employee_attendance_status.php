@@ -4,9 +4,18 @@ require_once('../admin/controllers/common_controllers.php');
 require_once('../admin/employees/controller/employee_controller.php');
 setTimeZone();
 $data_raw = file_get_contents('php://input');
-$data = json_decode($data_raw,true);
+$data = json_decode($data_raw, true);
+if (!is_array($data)) {
+   $data = array();
+}
+if (empty($data['EmployeeID']) && !empty($_POST['EmployeeID'])) {
+   $data['EmployeeID'] = $_POST['EmployeeID'];
+}
+if (empty($data['EmployeeID']) && !empty($_GET['EmployeeID'])) {
+   $data['EmployeeID'] = $_GET['EmployeeID'];
+}
 $response = array();
-if(isset($data['EmployeeID']))
+if(isset($data['EmployeeID']) && $data['EmployeeID'] !== '')
 {
    $InTimeStatus = 0;
    $OutTimeStatus = 0;

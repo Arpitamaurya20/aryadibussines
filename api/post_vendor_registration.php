@@ -1,7 +1,7 @@
 <?php
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
 error_reporting(E_ALL);
 
 require_once('common_api_header.php');
@@ -15,7 +15,11 @@ $data = json_decode($data_raw, true);
 $response = array();
 
 $upload_dir = '../admin/media/vendor_registration/';
-$base_url   = 'https://techxpertindia.in/admin/media/vendor_registration/';
+$host = $_SERVER['HTTP_HOST'] ?? '';
+$isLocal = stripos($host, 'localhost') !== false || strpos($host, '127.0.0.1') !== false;
+$base_url = $isLocal
+    ? 'http://' . $host . '/Projects/aryadibussines/admin/media/vendor_registration/'
+    : 'https://techxpertindia.in/admin/media/vendor_registration/';
 
 /**
  * Save base64 image/document (raw base64 or data URI).

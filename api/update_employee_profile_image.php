@@ -13,27 +13,52 @@ if (
     $conn = _connectodb();
     setTimeZone();
 
-    $EmployeeID = $data['EmployeeID'];
-    $UpdatedBy = $data['EmployeeID']; ?? null;
+    $EmployeeID = (int) $data['EmployeeID'];
+    $UpdatedBy = (string) $EmployeeID;
+
+    if ($EmployeeID <= 0) {
+        $response['error'] = true;
+        $response['message'] = "EmployeeID is required";
+        echo json_encode($response);
+        exit;
+    }
 
     /* ---------- IMAGE HANDLING ---------- */
 
-    $imageData = base64_decode($data['imageData']);
+    $rawImage = $data['imageData'];
+    if (!is_string($rawImage) || $rawImage === '') {
+        $response['error'] = true;
+        $response['message'] = "Invalid image data";
+        echo json_encode($response);
+        exit;
+    }
+    $comma = strpos($rawImage, ',');
+    if ($comma !== false && stripos(substr($rawImage, 0, $comma), 'base64') !== false) {
+        $rawImage = substr($rawImage, $comma + 1);
+    }
+    $rawImage = preg_replace('/\s+/', '', $rawImage);
+    $imageData = base64_decode($rawImage, true);
 
-    if ($imageData === false) {
+    if ($imageData === false || $imageData === '') {
         $response['error'] = true;
         $response['message'] = "Invalid image data";
         echo json_encode($response);
         exit;
     }
 
-    $uploadDir = "../admin/employee/media/";
+    $uploadDir = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'employees' . DIRECTORY_SEPARATOR . 'media' . DIRECTORY_SEPARATOR;
     if (!is_dir($uploadDir)) {
         mkdir($uploadDir, 0777, true);
     }
 
     $fileName = "emp_profile_" . $EmployeeID . "_" . uniqid() . ".jpg";
-    file_put_contents($uploadDir . $fileName, $imageData);
+    $written = file_put_contents($uploadDir . $fileName, $imageData);
+    if ($written === false) {
+        $response['error'] = true;
+        $response['message'] = "Unable to save profile image";
+        echo json_encode($response);
+        exit;
+    }
 
     /* ---------- UPDATE EMPLOYEE TABLE ---------- */
 
@@ -52,10 +77,14 @@ if (
 
     $result = mysqli_query($conn, $sql);
 
-    if ($result) {
+    if ($result && mysqli_affected_rows($conn) > 0) {
         $response['error'] = false;
         $response['message'] = "Profile image updated successfully";
         $response['ProfileImage'] = $fileName;
+    } else if ($result) {
+        $response['error'] = true;
+        $response['message'] = "Employee was not updated. Check EmployeeID.";
+        @unlink($uploadDir . $fileName);
     } else {
         $response['error'] = true;
         $response['message'] = mysqli_error($conn);

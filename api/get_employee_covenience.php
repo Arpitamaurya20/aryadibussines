@@ -1,5 +1,6 @@
 <?php
-
+ini_set('display_errors', '0');
+ini_set('display_startup_errors', '0');
 require_once('common_api_header.php');
 require_once('../admin/controllers/common_controllers.php');
 require_once('../admin/booking/controller/booking_controller.php');
@@ -9,19 +10,19 @@ $response = array();
 function getEmployeeConvenience($conn,$data)
 
 {
-	$EmployeeID = $data['EmployeeID'];
-	$ConvenienceDate = $data['ConvenienceDate'];
+	$EmployeeID = (int)$data['EmployeeID'];
 	$response = array();
 	$response['data'] = array();
 	$where = " where EmployeeID = $EmployeeID ORDER BY ID DESC";
-	$response['data'] = _getTableRecords($conn,'employee_convenience', $where);
+	$rows = _getTableRecords($conn,'employee_convenience', $where);
+	$response['data'] = is_array($rows) ? $rows : array();
 
 	$response['error'] = false;
 	$response['message'] = "Convienience Fetched";
 	return $response;
 }
 
-if(isset($data['EmployeeID']))
+if(isset($data['EmployeeID']) && (int)$data['EmployeeID'] > 0)
 {
     $conn = _connectodb();
 	$response = getEmployeeConvenience($conn,$data);

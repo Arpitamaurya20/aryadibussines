@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', '0');
+ini_set('display_startup_errors', '0');
 require_once('common_api_header.php');
 require_once('../admin/controllers/common_controllers.php');
 require_once('../admin/corporate-tickets/controller/corporate_tickets_controller.php');
