@@ -20,7 +20,7 @@
     ));
     ?>
     <meta charset="utf-8">
-    <title>Dynamic PPM Checklists - Aryadibusiness</title>
+    <title>Dynamic PPM Checklists - TechXpert</title>
     <?php include('../includes/common_head_content.php'); ?>
 </head>
 <body class="mod-bg-1 desktop chrome webkit pace-done nav-function-fixed blur">

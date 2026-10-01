@@ -1,13 +1,29 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
 error_reporting(E_ALL);
 require_once('../../includes/autoloader.inc.php');
-require_once '../../vendor/autoload.php'; 
-include '../../controllers/common_controllers.php'; 
-// Start MPDF
-$html = "Test HTML";
-$mpdf = new \Mpdf\Mpdf();
+$mpdfLoaded = false;
+foreach (array(
+    __DIR__ . '/../../vendor/autoload.php',
+    __DIR__ . '/../../../hrms/vendor/autoload.php',
+) as $autoloadFile) {
+    if (is_file($autoloadFile)) {
+        require_once $autoloadFile;
+        if (class_exists('\\Mpdf\\Mpdf')) {
+            $mpdfLoaded = true;
+            break;
+        }
+    }
+}
+if (!$mpdfLoaded) {
+    echo json_encode(array(
+        'error' => true,
+        'message' => 'PDF library (mPDF) is not installed.'
+    ));
+    exit;
+}
+include '../../controllers/common_controllers.php';
 $conn = _connectodb();
 $core = new Core();
 $category_obj = new Categories($conn);
@@ -15,15 +31,16 @@ $categories_array = $category_obj->setCategoriesArray();
 $ppm_tickets_obj = new Ppmtickets($conn);
 $BranchAccountManagerEmail='';
 
-if(isset($_POST))
+if(isset($_POST['ServiceReportID']))
 {
-    $Action = $_POST['Action'];
+    $Action = isset($_POST['Action']) ? $_POST['Action'] : 'Download';
     $ServicereportID = $_POST['ServiceReportID'];
-    // var_dump($ServicereportID);
-    $Action = "Send";
-    $ServicereportID = $ServicereportID;
     $service_report_obj = new Servicereport($conn);
     $service_reports_details = $service_report_obj->GetPPMServiceReportDetailsbyID($ServicereportID);
+    if (!is_array($service_reports_details) || empty($service_reports_details['TicketID'])) {
+        echo json_encode(array('error' => true, 'message' => 'Service report not found'));
+        exit;
+    }
     $ProblemReportedByClient = $service_reports_details['ProblemReportedByClient'];
     $Observation = $service_reports_details['Observation'];
     $ActionTaken = $service_reports_details['ActionTaken'];
@@ -160,11 +177,14 @@ if(isset($_POST))
 
     $employee_obj = new Employee($conn);
     $employee_array = $employee_obj->setEmployeeArray('All');
+    if (!is_array($employee_array)) {
+        $employee_array = array();
+    }
     $AssignedTo = $ticket_overview['AssignedTo'];
-    $TechnicianName = $employee_array[$AssignedTo]['Name']; 
-    $TechnicianPhoneNumber = $employee_array[$AssignedTo]['ContactNumber'];
+    $TechnicianName = isset($employee_array[$AssignedTo]['Name']) ? $employee_array[$AssignedTo]['Name'] : 'N.A.';
+    $TechnicianPhoneNumber = isset($employee_array[$AssignedTo]['ContactNumber']) ? $employee_array[$AssignedTo]['ContactNumber'] : '';
 
-    if($BranchAccountManager != -1 && $BranchAccountManager != "")
+    if($BranchAccountManager != -1 && $BranchAccountManager != "" && isset($employee_array[$BranchAccountManager]['Email']))
     {
         $BranchAccountManagerEmail = $employee_array[$BranchAccountManager]['Email']; 
     } 
@@ -246,8 +266,11 @@ if($ClientSignature == ""){
 }
 $image_pre_td=[];
 $image_post_td=[];
+$image_service_report=[];
 
-
+if (!is_array($report_images)) {
+    $report_images = array();
+}
 
 foreach ($report_images as $report_image) 
 {
@@ -255,10 +278,10 @@ foreach ($report_images as $report_image)
     $compressed_image_path = '../../media/ppm_ticket_media/compressed_' . $report_image['Image'];
     $imageDate=$report_image['CreatedDate'];
     $imageTime=$report_image['CreatedTime'];
-  
-    
-    // Compress the image
-    $core->compressImage($original_image_path, $compressed_image_path, 50); // 75 is the quality percentage
+
+    if (is_file($original_image_path)) {
+        $core->compressImage($original_image_path, $compressed_image_path, 50);
+    }
 
     if($report_image['Action'] == "pre_img")
     {
@@ -499,7 +522,7 @@ if($Category == 23)
     
 }
 
-$media_asset = "techx-1.png";
+$media_asset = "aryadi-sr.png";
 if($CorporateID == 183)
 {
     $media_asset = "innov-sr.jpg";
@@ -958,10 +981,10 @@ $html = '
  //     $html .= generateEPReportHTML($service_hvac_reports_details);
  // }
 
- $default_logo = "https://techxpertindia.in/images/techx-14.png"; // default logo
+ $default_logo = __DIR__ . '/../../img/aryadi.png';
 
 if ($CorporateID == 183) {
-    $default_logo = "https://techxpertindia.in/admin/img/innov_logo.jpg"; // new logo for ID 183
+    $default_logo = __DIR__ . '/../../img/innov_logo.jpg';
 }
 $defaultConfig = (new Mpdf\Config\ConfigVariables())->getDefaults();
 $fontDirs = $defaultConfig['fontDir'];
@@ -980,26 +1003,24 @@ $mpdf = new \Mpdf\Mpdf([
     ],
     'default_font' => 'poppins'
 ]);
-$mpdf->WriteHTML("");
 $mpdf->SetWatermarkImage(
     $default_logo,
-    0.08,         // opacity (keep subtle)
-    [50, 20],    // size (width x height in mm) - adjust as needed
-    'F',          // behind content (background)
-    true,         // keep aspect ratio
-    45            // rotation angle (45 = diagonal)
+    0.08,
+    [50, 20],
+    'F'
 );
 $mpdf->showWatermarkImage = true;
 $mpdf->SetFooter('<div style="font-size:9px; text-align:right; color:#555;">Page {PAGENO} of {nbpg}</div>');
-
-
-$mpdf->WriteHTML("");
-$fullHTML = $html;
 $mpdf->WriteHTML($html);
 $pdf_name = "service-report-".$TicketID.".pdf";
-$pdfFilePath = '../reports/'.$pdf_name.'';
+$reportsDir = __DIR__ . '/../reports';
+if (!is_dir($reportsDir)) {
+    mkdir($reportsDir, 0777, true);
+}
+$pdfFilePath = $reportsDir . '/' . $pdf_name;
 $mpdf->Output($pdfFilePath, 'F');
 //$mpdf->Output();
+$response = array();
 $response['pdfname'] = $pdf_name;
 if($Action == "Send")
 {

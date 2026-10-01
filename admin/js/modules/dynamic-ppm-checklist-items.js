@@ -65,3 +65,46 @@ function dppmInitBulkItemForm(formSelector, inputTypes) {
         $form.find('.dppm-items-json').val(JSON.stringify(items));
     });
 }
+
+function dppmEnsureInputTypeOption($select, inputType) {
+    if (!inputType) {
+        return;
+    }
+    if ($select.find('option[value="' + inputType + '"]').length === 0) {
+        $select.append($('<option></option>').attr('value', inputType).text(inputType));
+    }
+    $select.val(inputType);
+}
+
+function dppmInitEditItemModal(modalSelector, inputTypes) {
+    var $modal = $(modalSelector);
+    if (!$modal.length) {
+        return;
+    }
+
+    $(document).on('click', '.dppm-edit-item-btn', function () {
+        var raw = $(this).attr('data-item');
+        if (!raw) {
+            return;
+        }
+        var item;
+        try {
+            item = JSON.parse(raw);
+        } catch (e) {
+            return;
+        }
+
+        $('#dppm_edit_item_id').val(item.ID || 0);
+        $('#dppm_edit_item_name').val(item.ItemName || '');
+        $('#dppm_edit_item_code').val(item.ItemCode || '');
+        dppmEnsureInputTypeOption($('#dppm_edit_input_type'), item.InputType || 'text');
+        $('#dppm_edit_unit').val(item.UnitName || '');
+        $('#dppm_edit_default_value').val(item.DefaultValue || '');
+        $('#dppm_edit_mandatory').val(String(item.IsMandatory === 1 ? 1 : 0));
+        $('#dppm_edit_options').val(item.OptionsJson || '');
+        $('#dppm_edit_sort').val(item.SortOrder || 1);
+        $('#dppm_edit_help_text').val(item.HelpText || '');
+
+        $modal.modal('show');
+    });
+}

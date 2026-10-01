@@ -351,7 +351,7 @@ function getEmployeeDivisionArray($conn)
 function getAssignedList($conn)
 {
 	$response = array();
-	$sql = "SELECT DISTINCT(a.Name),a.ID from employees a,user_roles b WHERE a.ID = b.EmployeeID and (b.Role = 'Vendor' or b.Role = 'Technician')";
+	$sql = "SELECT DISTINCT(a.Name),a.ID from employees a,user_roles b WHERE a.ID = b.EmployeeID and a.IsActive = 1 and (b.Role = 'Vendor' or b.Role = 'Technician')";
 	$result = mysqli_query($conn, $sql);
 	if ($result) {
 		if ($result->num_rows > 0) {
@@ -1960,11 +1960,15 @@ function getEmployeeAttendanceLocationPolicyApiData($conn, $EmployeeID)
 function getEmployeeCheckoutEligibility($conn, $EmployeeID)
 {
 	$EmployeeID = (int) $EmployeeID;
+	/** Minimum gap between punch-in and punch-out (hours). */
+	$minHoursBeforeCheckout = 2;
 
 	$response = [
 		'canCheckout' => false,
 		'hoursWorked' => 0,
 		'minutesWorked' => 0,
+		'remainingMinutes' => 0,
+		'minHoursRequired' => $minHoursBeforeCheckout,
 		'message' => '',
 		'checkedIn' => false,
 		'alreadyCheckedOut' => false,
@@ -1991,11 +1995,24 @@ function getEmployeeCheckoutEligibility($conn, $EmployeeID)
 
 	$inDateTime = $current_date . ' ' . $attendance['InTime'];
 	$secondsWorked = max(0, time() - strtotime($inDateTime));
+	$minSeconds = $minHoursBeforeCheckout * 3600;
 
 	$response['hoursWorked'] = round($secondsWorked / 3600, 2);
 	$response['minutesWorked'] = (int) floor($secondsWorked / 60);
+
+	if ($secondsWorked < $minSeconds) {
+		$remaining = $minSeconds - $secondsWorked;
+		$response['remainingMinutes'] = (int) ceil($remaining / 60);
+		$response['canCheckout'] = false;
+		$response['message'] = 'Punch-out allowed only after ' . $minHoursBeforeCheckout
+			. ' hours from punch-in. Please wait '
+			. $response['remainingMinutes'] . ' more minute(s).';
+		return $response;
+	}
+
+	$response['remainingMinutes'] = 0;
 	$response['canCheckout'] = true;
-	$response['message'] = 'You can check out (half-day or full-day). Hours so far: ' . $response['hoursWorked'];
+	$response['message'] = 'You can check out. Hours so far: ' . $response['hoursWorked'];
 
 	return $response;
 }

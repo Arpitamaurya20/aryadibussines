@@ -112,7 +112,7 @@ if($employee_data['Supervisor'] == "")
         </div>
 
         <div class="text-right mt-4 mb-3 mr-3">
-            <a href="#" class="btn-premium" onclick="openrolemodal()">
+            <a href="javascript:void(0)" class="btn-premium" onclick="return openrolemodal();">
                 <i class="fal fa-edit"></i> Edit Roles
             </a>
         </div>
@@ -127,11 +127,9 @@ if($employee_data['Supervisor'] == "")
     aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-            <div class="modal-header pb-0 edit_header">
-                <div class="tab_modal_heading">
-                    <h2>Edit Role</h2>
-                </div>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <div class="modal-header edit_header">
+                <h2 class="mb-0 text-white" style="font-size:18px;font-weight:500;">Edit Role</h2>
+                <button type="button" class="close" id="editrole_close_btn" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -247,16 +245,9 @@ if($employee_data['Supervisor'] == "")
 
 
                         </section>
-
-
-
-                        <section>
-                            <div class="row justify-content-center mt-3">
-
-                                <a class="form_btn form_submit pl-4 pr-4 pt-2 pb-2 text-white cursor-pointer" id="save_roll_btn" onclick="ChangeRole_Supervisor()">Save</a>
-
-                            </div>
-                        </section>
+                    </div>
+                    <div class="text-center mt-3">
+                        <button type="button" class="form_btn form_submit pl-4 pr-4 pt-2 pb-2 text-white cursor-pointer" id="save_roll_btn">Save</button>
                     </div>
                 </form>
             </div>

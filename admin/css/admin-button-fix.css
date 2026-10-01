@@ -56,11 +56,8 @@ input.btn,
   -webkit-text-fill-color: #ffffff !important;
 }
 
-.hc-btn-ghost,
-.btn.hc-btn-ghost,
-.hc-modal .modal-footer .hc-btn-ghost {
-  color: #334155 !important;
-  -webkit-text-fill-color: #334155 !important;
-  background-color: #ffffff !important;
-  border: 1px solid #cbd5e1 !important;
+.alertify,
+.alertify .ajs-modal,
+.alertify .ajs-dialog {
+  z-index: 20000 !important;
 }

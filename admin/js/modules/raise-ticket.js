@@ -21,6 +21,50 @@ function convertToUpperCase(inputElement) {
   inputElement.value = uppercaseValue;
 }
 
+function showRaiseTicketProgress(message) {
+  hideRaiseTicketProgress();
+
+  var overlay = document.createElement("div");
+  overlay.id = "raise-ticket-progress-overlay";
+  overlay.style.cssText =
+    "position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(15,23,42,0.45);display:flex;align-items:center;justify-content:center;z-index:10000;";
+
+  overlay.innerHTML =
+    '<div style="background:#fff;border-radius:12px;padding:28px 32px;min-width:320px;max-width:90%;box-shadow:0 20px 45px rgba(0,0,0,0.18);text-align:center;">' +
+    '<div class="spinner-border text-primary mb-3" role="status" style="width:3rem;height:3rem;"></div>' +
+    '<div style="font-size:18px;font-weight:600;color:#111827;margin-bottom:8px;">Processing Ticket</div>' +
+    '<div style="font-size:14px;color:#4b5563;line-height:1.5;">' +
+    (message || "Please wait while your ticket is being raised...") +
+    "</div></div>";
+
+  document.body.appendChild(overlay);
+}
+
+function hideRaiseTicketProgress() {
+  var overlay = document.getElementById("raise-ticket-progress-overlay");
+  if (overlay) {
+    overlay.remove();
+  }
+}
+
+function resetRaiseTicketButton() {
+  var button = document.getElementById("raise_ticket_btn");
+  if (button) {
+    button.innerHTML = "Raise";
+    button.style.pointerEvents = "";
+    button.classList.remove("disabled");
+  }
+}
+
+function disableRaiseTicketButton() {
+  var button = document.getElementById("raise_ticket_btn");
+  if (button) {
+    button.innerHTML = "Submitting...";
+    button.style.pointerEvents = "none";
+    button.classList.add("disabled");
+  }
+}
+
 function RaiseTicket() {
   // corporate validation
   var Corporate = document.getElementById("corporate_name").value;
@@ -75,33 +119,48 @@ function RaiseTicket() {
   }
 
 
-    document.getElementById("raise_ticket_btn").innerHTML ="Submiting....";
-    let myForm = document.getElementById("raise_ticket_form"); 
-    var formData = new FormData(myForm);
-    $.ajax({
-        url: "action/add-ticket-action.php",
-        type: "POST",
-        data: formData,
-        success: function (data) {
-            var response = JSON.parse(data);
-            TechXAlert(response.message);
-            if (response.error == false) {
-                setInterval(function() {
-                    location.reload();
-                }, 2000);
-            }
-            else
-            {
-              document.getElementById("raise_ticket_btn").innerHTML ="Raise";
-            }
-        },
-        cache: false,
-        contentType: false,
-        processData: false,
-    });
-    return false;
+  disableRaiseTicketButton();
+  showRaiseTicketProgress("Raising ticket and sending approval mail if required...");
 
+  let myForm = document.getElementById("raise_ticket_form");
+  var formData = new FormData(myForm);
+  $.ajax({
+    url: "action/add-ticket-action.php",
+    type: "POST",
+    data: formData,
+    success: function (data) {
+      hideRaiseTicketProgress();
 
+      var response = {};
+      try {
+        response = typeof data === "object" ? data : JSON.parse(data);
+      } catch (e) {
+        response = {
+          error: true,
+          message: "Unexpected server response. Please try again.",
+        };
+      }
+
+      TechXAlert(response.message || "Unable to raise ticket.");
+
+      if (response.error == false) {
+        setTimeout(function () {
+          location.reload();
+        }, 2000);
+      } else {
+        resetRaiseTicketButton();
+      }
+    },
+    error: function () {
+      hideRaiseTicketProgress();
+      resetRaiseTicketButton();
+      TechXAlert("Unable to raise ticket. Please check your connection and try again.");
+    },
+    cache: false,
+    contentType: false,
+    processData: false,
+  });
+  return false;
 }
 
 

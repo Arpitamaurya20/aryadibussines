@@ -8,6 +8,17 @@ function dynamicPPMClean($value)
     return trim((string) $value);
 }
 
+function dynamicPPMGetSessionUser()
+{
+    if (!empty($_SESSION['pb_username'])) {
+        return dynamicPPMClean($_SESSION['pb_username']);
+    }
+    if (!empty($_SESSION['Name'])) {
+        return dynamicPPMClean($_SESSION['Name']);
+    }
+    return 'System';
+}
+
 function getDynamicPPMChecklistById($conn, $checklistID)
 {
     $checklistID = (int) $checklistID;
@@ -93,6 +104,338 @@ function getDynamicPPMChecklistForTicket($conn, $ticketID)
     $categoryID = (int) $branchAsset['Category'];
     $corporateID = (int) $ticket['CorporateID'];
     return getDynamicPPMChecklistForCompanyCategory($conn, $corporateID, $categoryID);
+}
+
+function ensureDynamicPPMAssetChecklistMapTable($conn)
+{
+    static $ready = false;
+    if ($ready) {
+        return true;
+    }
+    $sql = "CREATE TABLE IF NOT EXISTS `ppm_dynamic_asset_checklist_map` (
+        `ID` int(11) NOT NULL AUTO_INCREMENT,
+        `BranchAssetID` int(11) NOT NULL,
+        `CategoryID` int(11) NOT NULL DEFAULT 0,
+        `ChecklistID` int(11) NOT NULL,
+        `CreatedBy` varchar(100) DEFAULT NULL,
+        `CreatedDate` date DEFAULT NULL,
+        `CreatedTime` time DEFAULT NULL,
+        `UpdatedBy` varchar(100) DEFAULT NULL,
+        `UpdatedDate` date DEFAULT NULL,
+        `UpdatedTime` time DEFAULT NULL,
+        `IsActive` tinyint(1) NOT NULL DEFAULT 1,
+        PRIMARY KEY (`ID`),
+        KEY `idx_pdacm_asset` (`BranchAssetID`, `IsActive`),
+        KEY `idx_pdacm_checklist` (`ChecklistID`)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4";
+    mysqli_query($conn, $sql);
+    $ready = true;
+    return true;
+}
+
+function getDynamicPPMChecklistsByCategory($conn, $categoryID)
+{
+    $categoryID = (int) $categoryID;
+    if ($categoryID <= 0) {
+        return array();
+    }
+    $sql = "SELECT ID, ChecklistCode, ChecklistName, VersionNo
+            FROM ppm_dynamic_checklist_master
+            WHERE CategoryID = $categoryID AND IsActive = 1
+            ORDER BY ChecklistName ASC, ID DESC";
+    $result = mysqli_query($conn, $sql);
+    $rows = array();
+    if ($result) {
+        while ($row = mysqli_fetch_assoc($result)) {
+            $rows[] = $row;
+        }
+    }
+    return $rows;
+}
+
+function getDynamicPPMAssetChecklistMapping($conn, $branchAssetID)
+{
+    ensureDynamicPPMAssetChecklistMapTable($conn);
+    $branchAssetID = (int) $branchAssetID;
+    if ($branchAssetID <= 0) {
+        return null;
+    }
+    return _getTableDetails($conn, 'ppm_dynamic_asset_checklist_map', "WHERE BranchAssetID = $branchAssetID AND IsActive = 1 ORDER BY ID DESC");
+}
+
+function getDynamicPPMChecklistForAsset($conn, $branchAssetID)
+{
+    $map = getDynamicPPMAssetChecklistMapping($conn, $branchAssetID);
+    if (!$map) {
+        return null;
+    }
+    return getDynamicPPMChecklistById($conn, (int) $map['ChecklistID']);
+}
+
+function getDynamicPPMChecklistForTicketByAsset($conn, $ticketID)
+{
+    $ticketID = (int) $ticketID;
+    if ($ticketID <= 0) {
+        return null;
+    }
+    $ticket = _getTableDetails($conn, 'ppm_tickets', "WHERE ID = $ticketID AND IsActive = 1");
+    if (!$ticket) {
+        return null;
+    }
+    $branchAssetID = (int) $ticket['BranchAssetID'];
+    if ($branchAssetID <= 0) {
+        return null;
+    }
+    return getDynamicPPMChecklistForAsset($conn, $branchAssetID);
+}
+
+function getDynamicPPMMappedChecklistForTicket($conn, $ticketID)
+{
+    $checklist = getDynamicPPMChecklistForTicketByAsset($conn, $ticketID);
+    if ($checklist) {
+        $checklist['_mapping_mode'] = 'asset';
+        return $checklist;
+    }
+    $checklist = getDynamicPPMChecklistForTicket($conn, $ticketID);
+    if ($checklist) {
+        $checklist['_mapping_mode'] = 'company';
+        return $checklist;
+    }
+    return null;
+}
+
+function dynamicPPMFormatChecklistResponseValue($item)
+{
+    $value = trim((string) (isset($item['response_value']) ? $item['response_value'] : ''));
+    $type = strtolower(trim((string) (isset($item['input_type']) ? $item['input_type'] : '')));
+    if ($value === '') {
+        return '';
+    }
+    if ($type === 'boolean' || $type === 'checkbox') {
+        $lower = strtolower($value);
+        if (in_array($lower, array('1', 'true', 'yes', 'ok', 'pass', 'y'), true)) {
+            $value = 'Yes';
+        } elseif (in_array($lower, array('0', 'false', 'no', 'fail', 'n'), true)) {
+            $value = 'No';
+        }
+    }
+    $unit = trim((string) (isset($item['unit_name']) ? $item['unit_name'] : ''));
+    if ($unit !== '') {
+        return $value . ' ' . $unit;
+    }
+    return $value;
+}
+
+function mapDynamicPPMAssetChecklist($conn, $branchAssetID, $categoryID, $checklistID, $createdBy = '')
+{
+    ensureDynamicPPMAssetChecklistMapTable($conn);
+    $branchAssetID = (int) $branchAssetID;
+    $categoryID = (int) $categoryID;
+    $checklistID = (int) $checklistID;
+    $createdBy = dynamicPPMClean($createdBy);
+    $response = array('error' => false, 'changed' => false, 'message' => 'Asset checklist mapping unchanged.');
+
+    if ($branchAssetID <= 0) {
+        return array('error' => true, 'changed' => false, 'message' => 'Asset ID is required for checklist mapping.');
+    }
+
+    $existing = getDynamicPPMAssetChecklistMapping($conn, $branchAssetID);
+    $existingChecklistID = $existing ? (int) $existing['ChecklistID'] : 0;
+
+    if ($checklistID <= 0) {
+        if ($existingChecklistID > 0) {
+            _UpdateTableRecords(
+                $conn,
+                'ppm_dynamic_asset_checklist_map',
+                "IsActive = 0 WHERE BranchAssetID = $branchAssetID AND IsActive = 1"
+            );
+            $response['changed'] = true;
+            $response['message'] = 'Asset checklist mapping removed.';
+        }
+        return $response;
+    }
+
+    $checklist = getDynamicPPMChecklistById($conn, $checklistID);
+    if (!$checklist) {
+        return array('error' => true, 'changed' => false, 'message' => 'Selected checklist was not found.');
+    }
+
+    if ($existingChecklistID === $checklistID) {
+        return $response;
+    }
+
+    _UpdateTableRecords(
+        $conn,
+        'ppm_dynamic_asset_checklist_map',
+        "IsActive = 0 WHERE BranchAssetID = $branchAssetID AND IsActive = 1"
+    );
+
+    $createdDate = date('Y-m-d');
+    $createdTime = date('H:i:s');
+    $createdByEsc = mysqli_real_escape_string($conn, $createdBy);
+    $sql = "INSERT INTO ppm_dynamic_asset_checklist_map
+        (BranchAssetID, CategoryID, ChecklistID, CreatedBy, CreatedDate, CreatedTime, IsActive)
+        VALUES
+        ($branchAssetID, $categoryID, $checklistID, '$createdByEsc', '$createdDate', '$createdTime', 1)";
+    $insert = _InsertTableRecords($conn, $sql);
+    if (isset($insert['error']) && $insert['error']) {
+        return $insert;
+    }
+    $insert['changed'] = true;
+    $insert['message'] = 'Asset checklist mapping saved.';
+    return $insert;
+}
+
+function getDynamicPPMTicketFlowInfoByAsset($conn, $ticketID)
+{
+    $context = getDynamicPPMTicketContext($conn, $ticketID);
+    if (!$context['ticket']) {
+        return array(
+            'error' => true,
+            'message' => 'PPM ticket not found.',
+        );
+    }
+
+    $branchAssetID = isset($context['branch_asset']['ID']) ? (int) $context['branch_asset']['ID'] : 0;
+    $checklist = $branchAssetID > 0 ? getDynamicPPMChecklistForAsset($conn, $branchAssetID) : null;
+    $useDynamic = $checklist ? 1 : 0;
+    $legacyConfig = getLegacyPPMFlowConfig($context['category_name'], $context['category_id']);
+
+    $response = array(
+        'error' => false,
+        'message' => $useDynamic
+            ? 'Dynamic PPM checklist is mapped for this asset.'
+            : 'No asset checklist mapped. Continue with legacy PPM flow or company mapping API.',
+        'mapping_mode' => 'asset',
+        'ticket_id' => (int) $ticketID,
+        'ticket_number' => $context['ticket']['TicketID'],
+        'branch_asset_id' => $branchAssetID,
+        'corporate_id' => $context['corporate_id'],
+        'category_id' => $context['category_id'],
+        'category_name' => $context['category_name'],
+        'use_dynamic_ppm' => $useDynamic,
+        'use_legacy_ppm' => $useDynamic ? 0 : 1,
+        'dynamic_checklist' => null,
+        'legacy_flow' => $useDynamic ? null : $legacyConfig,
+        'api_instructions' => $useDynamic
+            ? 'Call api/dynamic-ppm/get_dynamic_ppm_asset_checklist_form.php and submit via api/dynamic-ppm/submit_dynamic_ppm_asset_service_report.php'
+            : 'No asset mapping found. Use company APIs (get_dynamic_ppm_checklist_form.php) or legacy category APIs.',
+        'pdf_generator_hint' => $useDynamic
+            ? 'admin/dynamic-ppm/action/generate_dynamic_ppm_service_report_pdf.php'
+            : (isset($legacyConfig['pdf_generator_hint']) ? $legacyConfig['pdf_generator_hint'] : ''),
+    );
+
+    if ($checklist) {
+        $response['dynamic_checklist'] = array(
+            'checklist_id' => (int) $checklist['ID'],
+            'checklist_code' => $checklist['ChecklistCode'],
+            'checklist_name' => $checklist['ChecklistName'],
+            'version_no' => (int) $checklist['VersionNo'],
+        );
+    }
+
+    return $response;
+}
+
+function buildDynamicPPMChecklistFormPayload($conn, $ticketID, $mappingMode = 'company')
+{
+    $mappingMode = ($mappingMode === 'asset') ? 'asset' : 'company';
+    $flow = ($mappingMode === 'asset')
+        ? getDynamicPPMTicketFlowInfoByAsset($conn, $ticketID)
+        : getDynamicPPMTicketFlowInfo($conn, $ticketID);
+
+    if (!empty($flow['error'])) {
+        return $flow;
+    }
+
+    if (empty($flow['use_dynamic_ppm'])) {
+        return array_merge($flow, array(
+            'items' => array(),
+            'checklist' => null,
+            'service_report_id' => -1,
+            'common_fields' => array('AssetCondition' => ''),
+            'general_details' => array(),
+        ));
+    }
+
+    $checklist = ($mappingMode === 'asset')
+        ? getDynamicPPMChecklistForTicketByAsset($conn, $ticketID)
+        : getDynamicPPMChecklistForTicket($conn, $ticketID);
+
+    if (!$checklist) {
+        return array_merge($flow, array(
+            'items' => array(),
+            'checklist' => null,
+            'service_report_id' => -1,
+            'common_fields' => array('AssetCondition' => ''),
+            'general_details' => array(),
+        ));
+    }
+
+    $checklistID = (int) $checklist['ID'];
+    $items = getDynamicPPMChecklistItems($conn, $checklistID);
+    $existingReport = getDynamicPPMServiceReportByTicket($conn, $ticketID);
+    $generalReport = getPPMGeneralServiceReportByTicket($conn, $ticketID);
+    $existingItemsMap = array();
+    $generalDetails = getDynamicPPMGeneralDetailsForTicket($conn, $ticketID);
+    $assetCondition = '';
+    $serviceReportID = -1;
+    $generalServiceReportID = $generalReport ? (int) $generalReport['ID'] : -1;
+    if ($existingReport) {
+        $serviceReportID = (int) $existingReport['ID'];
+        $assetCondition = (string) $existingReport['AssetCondition'];
+        $existingItems = getDynamicPPMServiceReportItems($conn, $serviceReportID);
+        foreach ($existingItems as $row) {
+            $existingItemsMap[(int) $row['ChecklistItemID']] = $row;
+        }
+    }
+
+    $formItems = array();
+    foreach ($items as $item) {
+        $itemID = (int) $item['ID'];
+        $saved = isset($existingItemsMap[$itemID]) ? $existingItemsMap[$itemID] : null;
+        $options = array();
+        if (isset($item['OptionsJson']) && trim((string) $item['OptionsJson']) !== '') {
+            $decoded = json_decode($item['OptionsJson'], true);
+            if (is_array($decoded)) {
+                $options = $decoded;
+            }
+        }
+
+        $formItems[] = array(
+            'checklist_item_id' => $itemID,
+            'item_code' => $item['ItemCode'],
+            'item_name' => $item['ItemName'],
+            'input_type' => $item['InputType'],
+            'unit_name' => $item['UnitName'],
+            'default_value' => isset($item['DefaultValue']) ? $item['DefaultValue'] : '',
+            'is_mandatory' => (int) $item['IsMandatory'],
+            'sort_order' => (int) $item['SortOrder'],
+            'help_text' => $item['HelpText'],
+            'options' => $options,
+            'response' => array(
+                'value' => $saved ? $saved['ResponseValue'] : (isset($item['DefaultValue']) ? $item['DefaultValue'] : ''),
+                'status' => $saved ? $saved['ResponseStatus'] : '',
+                'remarks' => $saved ? $saved['Remarks'] : ''
+            )
+        );
+    }
+
+    return array_merge($flow, array(
+        'checklist' => array(
+            'checklist_id' => $checklistID,
+            'checklist_code' => $checklist['ChecklistCode'],
+            'checklist_name' => $checklist['ChecklistName'],
+            'version_no' => (int) $checklist['VersionNo']
+        ),
+        'service_report_id' => $serviceReportID,
+        'general_service_report_id' => $generalServiceReportID,
+        'common_fields' => array(
+            'AssetCondition' => $assetCondition
+        ),
+        'general_details' => $generalDetails,
+        'items' => $formItems
+    ));
 }
 
 function getDynamicPPMTicketContext($conn, $ticketID)
@@ -482,27 +825,52 @@ function getDynamicPPMChecklistResponsesForTicket($conn, $ticketID)
     $ticketID = (int) $ticketID;
     $result = array(
         'has_report' => false,
+        'has_checklist' => false,
+        'mapping_mode' => '',
         'checklist' => null,
         'asset_condition' => '',
         'items' => array(),
     );
 
     $dynamicReport = getDynamicPPMServiceReportByTicket($conn, $ticketID);
-    if (!$dynamicReport) {
+    $mappedChecklist = getDynamicPPMMappedChecklistForTicket($conn, $ticketID);
+    $savedItems = array();
+    $checklist = null;
+
+    if ($dynamicReport) {
+        $result['has_report'] = true;
+        $result['asset_condition'] = isset($dynamicReport['AssetCondition']) ? (string) $dynamicReport['AssetCondition'] : '';
+        $checklistID = (int) $dynamicReport['ChecklistID'];
+        $checklist = getDynamicPPMChecklistMasterById($conn, $checklistID);
+        if (!$checklist) {
+            $checklist = getDynamicPPMChecklistById($conn, $checklistID);
+        }
+        $savedItems = getDynamicPPMServiceReportItems($conn, (int) $dynamicReport['ID']);
+        if (!is_array($savedItems)) {
+            $savedItems = array();
+        }
+    }
+
+    if (!$checklist) {
+        $checklist = $mappedChecklist;
+    }
+
+    if (!$checklist) {
         return $result;
     }
 
-    $result['has_report'] = true;
-    $result['asset_condition'] = isset($dynamicReport['AssetCondition']) ? (string) $dynamicReport['AssetCondition'] : '';
-    $checklistID = (int) $dynamicReport['ChecklistID'];
-    $checklist = getDynamicPPMChecklistMasterById($conn, $checklistID);
-    if (!$checklist) {
-        $checklist = getDynamicPPMChecklistById($conn, $checklistID);
-    }
+    $result['has_checklist'] = true;
     $result['checklist'] = $checklist;
+    $result['mapping_mode'] = isset($mappedChecklist['_mapping_mode']) ? $mappedChecklist['_mapping_mode'] : '';
 
-    $masterItems = getDynamicPPMChecklistItemsForReport($conn, $checklistID);
-    $savedItems = getDynamicPPMServiceReportItems($conn, (int) $dynamicReport['ID']);
+    $checklistID = (int) $checklist['ID'];
+    $masterItems = $result['has_report']
+        ? getDynamicPPMChecklistItemsForReport($conn, $checklistID)
+        : getDynamicPPMChecklistItems($conn, $checklistID);
+    if (!is_array($masterItems)) {
+        $masterItems = array();
+    }
+
     $savedMap = array();
     foreach ($savedItems as $row) {
         $savedMap[(int) $row['ChecklistItemID']] = $row;
@@ -543,14 +911,60 @@ function getDynamicPPMChecklistResponsesForTicket($conn, $ticketID)
     return $result;
 }
 
+function dynamicPPMBuildChecklistPdfHtmlFromAssetApi($conn, $ticketID)
+{
+    $payload = buildDynamicPPMChecklistFormPayload($conn, $ticketID, 'asset');
+    if (!empty($payload['error']) || empty($payload['use_dynamic_ppm']) || empty($payload['items'])) {
+        return '';
+    }
+
+    $bundle = array(
+        'has_checklist' => true,
+        'asset_condition' => '',
+        'checklist' => array(
+            'ChecklistName' => isset($payload['checklist']['checklist_name']) ? $payload['checklist']['checklist_name'] : 'Checklist',
+            'ChecklistCode' => isset($payload['checklist']['checklist_code']) ? $payload['checklist']['checklist_code'] : '',
+        ),
+        'items' => array(),
+    );
+    if (!empty($payload['common_fields']['AssetCondition'])) {
+        $bundle['asset_condition'] = (string) $payload['common_fields']['AssetCondition'];
+    }
+
+    foreach ($payload['items'] as $item) {
+        $response = (isset($item['response']) && is_array($item['response'])) ? $item['response'] : array();
+        $bundle['items'][] = array(
+            'item_name' => isset($item['item_name']) ? $item['item_name'] : '',
+            'item_code' => isset($item['item_code']) ? $item['item_code'] : '',
+            'input_type' => isset($item['input_type']) ? $item['input_type'] : '',
+            'unit_name' => isset($item['unit_name']) ? $item['unit_name'] : '',
+            'response_value' => isset($response['value']) ? $response['value'] : '',
+            'response_status' => isset($response['status']) ? $response['status'] : '',
+            'remarks' => isset($response['remarks']) ? $response['remarks'] : '',
+        );
+    }
+
+    return dynamicPPMRenderChecklistPdfHtml($bundle);
+}
+
 function dynamicPPMBuildChecklistPdfHtml($conn, $ticketID)
 {
     $bundle = getDynamicPPMChecklistResponsesForTicket($conn, $ticketID);
-    if (!$bundle['has_report']) {
+    return dynamicPPMRenderChecklistPdfHtml($bundle);
+}
+
+function dynamicPPMRenderChecklistPdfHtml($bundle)
+{
+    if (empty($bundle['has_checklist']) || empty($bundle['items'])) {
         return '';
     }
-    if (empty($bundle['items'])) {
-        return '';
+
+    $heading = 'Checklist';
+    if (!empty($bundle['checklist']['ChecklistName'])) {
+        $heading = (string) $bundle['checklist']['ChecklistName'];
+        if (!empty($bundle['checklist']['ChecklistCode'])) {
+            $heading .= ' (' . $bundle['checklist']['ChecklistCode'] . ')';
+        }
     }
 
     $assetCondition = htmlspecialchars((string) $bundle['asset_condition']);
@@ -558,14 +972,8 @@ function dynamicPPMBuildChecklistPdfHtml($conn, $ticketID)
     $rows = '';
     $index = 1;
     foreach ($bundle['items'] as $item) {
-        $value = htmlspecialchars((string) $item['response_value']);
-        $unit = trim((string) $item['unit_name']);
-        if ($unit !== '' && $value !== '') {
-            $value .= ' ' . htmlspecialchars($unit);
-        }
-        if ($value === '') {
-            $value = 'N/A';
-        }
+        $value = dynamicPPMFormatChecklistResponseValue($item);
+        $value = $value !== '' ? htmlspecialchars($value) : 'N/A';
 
         $status = htmlspecialchars((string) $item['response_status']);
         if ($status === '') {
@@ -592,7 +1000,7 @@ function dynamicPPMBuildChecklistPdfHtml($conn, $ticketID)
     }
 
     return '<div class="attacment_div">
-        <div class="attacment">Checklist</div>
+        <div class="attacment">' . htmlspecialchars($heading) . '</div>
         <div class="product_attachment_box">
             <table class="bottom_signature_table" style="border-top:none;">
                 <tbody>
@@ -624,10 +1032,20 @@ function saveDynamicPPMServiceReport($conn, $payload)
         return $response;
     }
 
-    $checklist = getDynamicPPMChecklistForTicket($conn, $ticketID);
-    if (!$checklist) {
-        $response['message'] = 'No active dynamic checklist mapped for ticket company/category.';
-        return $response;
+    $checklist = null;
+    $mappingMode = isset($payload['MappingMode']) ? strtolower(trim((string) $payload['MappingMode'])) : 'company';
+    if ($mappingMode === 'asset') {
+        $checklist = getDynamicPPMChecklistForTicketByAsset($conn, $ticketID);
+        if (!$checklist) {
+            $response['message'] = 'No active dynamic checklist mapped for this ticket asset.';
+            return $response;
+        }
+    } else {
+        $checklist = getDynamicPPMChecklistForTicket($conn, $ticketID);
+        if (!$checklist) {
+            $response['message'] = 'No active dynamic checklist mapped for ticket company/category.';
+            return $response;
+        }
     }
     $checklistID = (int) $checklist['ID'];
 
@@ -900,6 +1318,11 @@ function parseDynamicPPMChecklistNames($raw)
 
 function bulkCreateDynamicPPMChecklistMasters($conn, $data)
 {
+    // Prefer single checklist with user-provided code.
+    if (!empty($data['ChecklistCode']) || (isset($data['ChecklistName']) && trim((string) $data['ChecklistName']) !== '')) {
+        return createDynamicPPMChecklistMaster($conn, $data);
+    }
+
     $categoryID = isset($data['CategoryID']) ? (int) $data['CategoryID'] : 0;
     $versionNo = isset($data['VersionNo']) ? (int) $data['VersionNo'] : 1;
     $description = isset($data['Description']) ? dynamicPPMClean($data['Description']) : '';
@@ -909,53 +1332,15 @@ function bulkCreateDynamicPPMChecklistMasters($conn, $data)
     if (isset($data['ChecklistNames'])) {
         $names = parseDynamicPPMChecklistNames($data['ChecklistNames']);
     }
-    if (empty($names) && isset($data['ChecklistName']) && trim((string) $data['ChecklistName']) !== '') {
-        $names = array(trim((string) $data['ChecklistName']));
-    }
 
     if ($categoryID <= 0) {
         return array('error' => true, 'message' => 'Category is required.');
     }
     if (empty($names)) {
-        return array('error' => true, 'message' => 'Add at least one checklist name.');
+        return array('error' => true, 'message' => 'Checklist code and checklist name are required.');
     }
 
-    $created = array();
-    $errors = array();
-    foreach ($names as $name) {
-        $row = array(
-            'CategoryID' => $categoryID,
-            'ChecklistName' => $name,
-            'VersionNo' => $versionNo,
-            'Description' => $description,
-            'CreatedBy' => $createdBy,
-        );
-        $res = createDynamicPPMChecklistMaster($conn, $row);
-        if (isset($res['error']) && $res['error'] === false) {
-            $created[] = isset($res['ChecklistCode']) ? $res['ChecklistCode'] : $name;
-        } else {
-            $errors[] = $name . ': ' . (isset($res['message']) ? $res['message'] : 'Failed');
-        }
-    }
-
-    if (empty($created)) {
-        return array(
-            'error' => true,
-            'message' => !empty($errors) ? implode('; ', $errors) : 'No checklist created.',
-            'created_count' => 0,
-        );
-    }
-
-    $message = count($created) . ' checklist(s) created: ' . implode(', ', $created);
-    if (!empty($errors)) {
-        $message .= '. Failed: ' . implode('; ', $errors);
-    }
-    return array(
-        'error' => false,
-        'message' => $message,
-        'created_count' => count($created),
-        'created_codes' => $created,
-    );
+    return array('error' => true, 'message' => 'Please enter Checklist Code and Checklist Name.');
 }
 
 function createDynamicPPMChecklistMaster($conn, $data)
@@ -965,17 +1350,29 @@ function createDynamicPPMChecklistMaster($conn, $data)
     $versionNo = isset($data['VersionNo']) ? (int) $data['VersionNo'] : 1;
     $description = isset($data['Description']) ? dynamicPPMClean($data['Description']) : '';
     $createdBy = isset($data['CreatedBy']) ? dynamicPPMClean($data['CreatedBy']) : '';
+    $checklistCode = isset($data['ChecklistCode']) ? strtoupper(trim((string) $data['ChecklistCode'])) : '';
+    $checklistCode = preg_replace('/\s+/', '', $checklistCode);
 
     if ($categoryID <= 0 || $checklistName === '') {
         return array('error' => true, 'message' => 'Category and checklist name are required.');
     }
-
-    $checklistCode = getNextDynamicPPMChecklistCode($conn, $categoryID);
     if ($checklistCode === '') {
-        return array('error' => true, 'message' => 'Unable to generate checklist code.');
+        return array('error' => true, 'message' => 'Checklist code is required.');
+    }
+    if (!preg_match('/^[A-Z0-9_\-]{2,50}$/', $checklistCode)) {
+        return array('error' => true, 'message' => 'Checklist code must be 2-50 characters (A-Z, 0-9, _ or -).');
     }
 
-    $checklistCodeEsc = mysqli_real_escape_string($conn, strtoupper($checklistCode));
+    $checklistCodeEsc = mysqli_real_escape_string($conn, $checklistCode);
+    $exists = _getTableDetails(
+        $conn,
+        'ppm_dynamic_checklist_master',
+        "WHERE ChecklistCode = '$checklistCodeEsc' AND IFNULL(IsActive, 1) = 1"
+    );
+    if ($exists) {
+        return array('error' => true, 'message' => 'Checklist code already exists: ' . $checklistCode);
+    }
+
     $checklistNameEsc = mysqli_real_escape_string($conn, $checklistName);
     $descriptionEsc = mysqli_real_escape_string($conn, $description);
     $createdByEsc = mysqli_real_escape_string($conn, $createdBy);
@@ -1048,7 +1445,85 @@ function addDynamicPPMChecklistItem($conn, $data)
 
 function dynamicPPMInputTypes()
 {
-    return array('text', 'number', 'dropdown', 'boolean', 'textarea', 'date');
+    return array('text', 'number', 'dropdown', 'boolean', 'checkbox', 'textarea', 'date', 'time');
+}
+
+function getDynamicPPMChecklistItemById($conn, $itemID)
+{
+    $itemID = (int) $itemID;
+    if ($itemID <= 0) {
+        return null;
+    }
+    return _getTableDetails($conn, 'ppm_dynamic_checklist_items', "WHERE ID = $itemID AND IsActive = 1");
+}
+
+function updateDynamicPPMChecklistItem($conn, $data)
+{
+    $itemID = isset($data['ItemID']) ? (int) $data['ItemID'] : 0;
+    $itemCode = isset($data['ItemCode']) ? dynamicPPMClean($data['ItemCode']) : '';
+    $itemName = isset($data['ItemName']) ? dynamicPPMClean($data['ItemName']) : '';
+    $inputType = isset($data['InputType']) ? dynamicPPMClean($data['InputType']) : 'text';
+    $unitName = isset($data['UnitName']) ? dynamicPPMClean($data['UnitName']) : '';
+    $optionsJson = parseDynamicPPMOptionsJson(isset($data['OptionsJson']) ? $data['OptionsJson'] : '');
+    $defaultValue = isset($data['DefaultValue']) ? dynamicPPMClean($data['DefaultValue']) : '';
+    $isMandatory = isset($data['IsMandatory']) ? (int) $data['IsMandatory'] : 0;
+    $sortOrder = isset($data['SortOrder']) ? (int) $data['SortOrder'] : 0;
+    $helpText = isset($data['HelpText']) ? dynamicPPMClean($data['HelpText']) : '';
+    $updatedBy = isset($data['UpdatedBy']) ? dynamicPPMClean($data['UpdatedBy']) : '';
+    if ($updatedBy === '') {
+        $updatedBy = dynamicPPMGetSessionUser();
+    }
+
+    if ($itemID <= 0) {
+        return array('error' => true, 'message' => 'Invalid checklist item.');
+    }
+    if ($itemName === '') {
+        return array('error' => true, 'message' => 'Item name is required.');
+    }
+
+    $existing = getDynamicPPMChecklistItemById($conn, $itemID);
+    if (!$existing) {
+        return array('error' => true, 'message' => 'Checklist item not found.');
+    }
+
+    if ($sortOrder <= 0) {
+        $sortOrder = (int) $existing['SortOrder'];
+        if ($sortOrder <= 0) {
+            $sortOrder = 1;
+        }
+    }
+
+    $updatedDate = date('Y-m-d');
+    $updatedTime = date('H:i:s');
+
+    $itemCodeEsc = mysqli_real_escape_string($conn, $itemCode);
+    $itemNameEsc = mysqli_real_escape_string($conn, $itemName);
+    $inputTypeEsc = mysqli_real_escape_string($conn, $inputType);
+    $unitNameEsc = mysqli_real_escape_string($conn, $unitName);
+    $optionsJsonEsc = mysqli_real_escape_string($conn, $optionsJson);
+    $defaultValueEsc = mysqli_real_escape_string($conn, $defaultValue);
+    $helpTextEsc = mysqli_real_escape_string($conn, $helpText);
+    $updatedByEsc = mysqli_real_escape_string($conn, $updatedBy);
+
+    $updateSql = "ItemCode = '$itemCodeEsc',
+                  ItemName = '$itemNameEsc',
+                  InputType = '$inputTypeEsc',
+                  UnitName = '$unitNameEsc',
+                  OptionsJson = '$optionsJsonEsc',
+                  DefaultValue = '$defaultValueEsc',
+                  IsMandatory = $isMandatory,
+                  SortOrder = $sortOrder,
+                  HelpText = '$helpTextEsc',
+                  UpdatedBy = '$updatedByEsc',
+                  UpdatedDate = '$updatedDate',
+                  UpdatedTime = '$updatedTime'
+                  WHERE ID = $itemID";
+
+    $res = _UpdateTableRecords($conn, 'ppm_dynamic_checklist_items', $updateSql);
+    if (isset($res['error']) && $res['error'] === false) {
+        $res['message'] = 'Checklist item updated successfully.';
+    }
+    return $res;
 }
 
 function bulkAddDynamicPPMChecklistItems($conn, $data)
@@ -1231,9 +1706,30 @@ function dynamicPPMGetBaseUrl()
 {
     if (!empty($_SERVER['HTTP_HOST'])) {
         $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
-        return $scheme . '://' . $_SERVER['HTTP_HOST'];
+        $scriptName = isset($_SERVER['SCRIPT_NAME']) ? $_SERVER['SCRIPT_NAME'] : '';
+        $projectRoot = rtrim(preg_replace('#/(api|admin)(/.*)?$#', '', $scriptName), '/');
+        return $scheme . '://' . $_SERVER['HTTP_HOST'] . $projectRoot;
     }
     return 'https://techxpertindia.in';
+}
+
+function dynamicPPMDecodePdfGeneratorResponse($body)
+{
+    if (!is_string($body) || trim($body) === '') {
+        return null;
+    }
+    $decoded = json_decode(trim($body), true);
+    if (is_array($decoded)) {
+        return $decoded;
+    }
+    // The generator may print PHP warnings before its JSON result.
+    if (preg_match_all('/\{[^{}]*"pdfname"[^{}]*\}/', $body, $matches)) {
+        $decoded = json_decode(end($matches[0]), true);
+        if (is_array($decoded)) {
+            return $decoded;
+        }
+    }
+    return null;
 }
 
 function dynamicPPMBuildReportPdfPublicUrl($pdfName)
@@ -1300,8 +1796,8 @@ function dynamicPPMRequestReportPdfGeneration($serviceReportID, $action = 'Downl
         $httpCode = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
         curl_close($ch);
 
-        if ($httpCode === 200 && is_string($body) && trim($body) !== '') {
-            $decoded = json_decode($body, true);
+        if ($httpCode === 200) {
+            $decoded = dynamicPPMDecodePdfGeneratorResponse($body);
             if (is_array($decoded) && !empty($decoded['pdfname'])) {
                 return $decoded;
             }
@@ -1318,11 +1814,9 @@ function dynamicPPMRequestReportPdfGeneration($serviceReportID, $action = 'Downl
         ),
     ));
     $body = @file_get_contents($url, false, $context);
-    if (is_string($body) && trim($body) !== '') {
-        $decoded = json_decode($body, true);
-        if (is_array($decoded) && !empty($decoded['pdfname'])) {
-            return $decoded;
-        }
+    $decoded = dynamicPPMDecodePdfGeneratorResponse($body);
+    if (is_array($decoded) && !empty($decoded['pdfname'])) {
+        return $decoded;
     }
 
     return array('error' => true, 'message' => 'Unable to generate PDF via HTTP request.');

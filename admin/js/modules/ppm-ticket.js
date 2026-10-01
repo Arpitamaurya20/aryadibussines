@@ -43,7 +43,7 @@ function openPPMTicketAssignmodal() {
   }
   else
   {
-    $("#due_date").attr("readonly", true);
+    $("#due_date").attr("readonly",false);
   }
   
 }
@@ -326,63 +326,97 @@ function UploadTicketMediaAction()
 
 function GeneratePPMServiceReportPDF(ServiceReportID,Action)
 {
-  var service_type = $("#report_service_type").val();
+  var $dlBtn = $("#donwload_report_pdf");
+  var $sendBtn = $("#send_report_pdf");
+  var $busyBtn = (Action == "Download") ? $dlBtn : $sendBtn;
+  if ($busyBtn.data("busy")) {
+    return false;
+  }
+  $busyBtn.data("busy", true);
   if(Action == "Download")
   {
-    $("#donwload_report_pdf").text("Downloading...");
+    $dlBtn.text("Downloading...");
   }
   else
   {
-    $("#send_report_pdf").text("Sending...");
+    $sendBtn.text("Sending...");
   }
-  //var url = "action/generate_amc_service_report_pdf.php";
   var url = "../corporate-tickets/action/generate_ppm_service_report_pdf.php";
-  var useDynamicPpm = $("#UseDynamicPPM").length ? $("#UseDynamicPPM").val() : "0";
-  var hasDynamicReport = $("#HasDynamicReport").length ? $("#HasDynamicReport").val() : "0";
-  if (useDynamicPpm == "1" || hasDynamicReport == "1") {
-    url = "../dynamic-ppm/action/generate_dynamic_ppm_service_report_pdf.php";
-  } else {
   var BranchAssetCategoryID = $("#BranchAssetCategoryID").val();
   if(BranchAssetCategoryID == 34)
   {
-    url = "../corporate-tickets/action/generate_ppm_hvac_service_report_pdf.php"
+    url = "../corporate-tickets/action/generate_ppm_hvac_service_report_pdf.php";
   }
   if(BranchAssetCategoryID == 8)
   {
-    url = "../corporate-tickets/action/generate_ppm_cctv_service_report_pdf.php"
+    url = "../corporate-tickets/action/generate_ppm_cctv_service_report_pdf.php";
   }
-
   if(BranchAssetCategoryID == 23)
   {
-    url = "../corporate-tickets/action/generate_ppm_ep_service_report_pdf.php"
+    url = "../corporate-tickets/action/generate_ppm_ep_service_report_pdf.php";
+  }
+  if(BranchAssetCategoryID == 43)
+  {
+    url = "../corporate-tickets/action/generate_ppm_fas_service_report_pdf.php";
   }
 
-   if(BranchAssetCategoryID == 43)
-  {
-    url = "../corporate-tickets/action/generate_ppm_fas_service_report_pdf.php"
-  }
-  }
- 
-  
-  $.post(url,
-  {
-    "ServiceReportID": ServiceReportID,
-    "Action":Action
-  },
-  function (data, status) 
-  { 
-    data_response = JSON.parse(data);
-    console.log(data_response);
+  $.ajax({
+    type: "POST",
+    url: url,
+    data: {
+      "ServiceReportID": ServiceReportID,
+      "Action": Action
+    },
+    timeout: 90000
+  }).done(function (data) {
+    var data_response;
+    try {
+      data_response = typeof data === "object" ? data : JSON.parse(data);
+    } catch (e) {
+      TechXAlert("Unable to generate PDF. Please try again.");
+      return;
+    }
+    if (data_response && data_response.error) {
+      TechXAlert(data_response.message || "Unable to generate PDF");
+      return;
+    }
     if(Action == "Download")
     {
-      $("#donwload_report_pdf").text("Download Report");
-      window.open("../corporate-tickets/reports/"+data_response.pdfname, '_blank');
+      if (data_response && data_response.pdfname) {
+        window.open("../corporate-tickets/reports/"+data_response.pdfname, '_blank');
+      }
     }
     else
     {
       TechXAlert("Report Sent to Client");
-      $("#send_report_pdf").text("Send");
     }
+  }).fail(function () {
+    TechXAlert("PDF generation is taking too long or failed. Please try again.");
+  }).always(function () {
+    $busyBtn.data("busy", false);
+    $dlBtn.text("Download");
+    $sendBtn.text("Send");
+  });
+}
 
-  })
+function GeneratePPMDynamicServiceReportPDF(ServiceReportID)
+{
+  var $btn = $("#download_report_pdf_new");
+  $btn.text("Downloading...");
+  $.post("../dynamic-ppm/action/generate_dynamic_ppm_asset_service_report_pdf.php",
+  {
+    "ServiceReportID": ServiceReportID,
+    "Action": "Download",
+    "MappingMode": "asset"
+  },
+  function (data, status)
+  {
+    var data_response = JSON.parse(data);
+    $btn.text("Download 2");
+    if (data_response && data_response.pdfname) {
+      window.open("../corporate-tickets/reports/"+data_response.pdfname, '_blank');
+    }
+  }).fail(function () {
+    $btn.text("Download 2");
+  });
 }

@@ -16,7 +16,7 @@
 		?>
     <meta charset="utf-8">
     <title>
-        Manage Branch Assets - Aryadibusiness
+        Manage Branch Assets - TechXpert
     </title>
     <meta name="description" content="View Schema">
     <?php
@@ -93,7 +93,7 @@
                 <main id="js-page-content" role="main" class="page-content">
                     <div class="d-flex justify-content-between mb-3 align-items-center">
                         <ol class="breadcrumb page-breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0);">Aryadibusiness</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0);">TechXpert</a></li>
                             <li class="breadcrumb-item"><a href="../company/view-company">Manage Corporate</a></li>
                             <li class="breadcrumb-item"><a href="../branch/view-branch">Manage Branch</a></li>
                             <li class="breadcrumb-item active">Manage Branch Assets</li>

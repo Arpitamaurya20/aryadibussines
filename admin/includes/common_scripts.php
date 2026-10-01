@@ -1,6 +1,6 @@
 <script src="../js/vendors.bundle.js"></script>
 <script src="../js/app.bundle.js"></script>
-<script src="../js/commonjs.js"></script>
+<script src="../js/commonjs.js?v=<?php echo @filemtime(__DIR__ . '/../js/commonjs.js'); ?>"></script>
 <script src="../js/modules/portal-notifications.js"></script>
 <script src="../js/modules/employee-asset-ack-block.js"></script>
 
@@ -9,6 +9,15 @@
 <!-- 3rd Party plugins by Prateek -->
 
 <script src="../plugins/alertifyjs/alertify.min.js"></script>
+<script type="text/javascript">
+(function () {
+    if (!window.alertify || !alertify.defaults || !alertify.defaults.glossary) {
+        return;
+    }
+    var host = (window.location.hostname || '').split('.')[0];
+    alertify.defaults.glossary.title = host.indexOf('innov') !== -1 ? 'Innov' : 'Aryadibusiness';
+})();
+</script>
 <script type="text/javascript">
 $(document).ready(function() {
     $('.navdata li span a').click(function() {
@@ -41,7 +50,17 @@ $(document).ready(function() {
   }
 
   document.addEventListener("click", function (event) {
-    if (!preloader || preloader.style.display === "none") {
+    if (!preloader) {
+      return;
+    }
+    var isVisible = window.getComputedStyle(preloader).display !== "none";
+    if (!isVisible) {
+      return;
+    }
+    if (document.body.classList.contains("modal-open")) {
+      return;
+    }
+    if (event.target.closest && event.target.closest(".modal, .modal-backdrop, .alertify, .ajs-modal")) {
       return;
     }
     event.preventDefault();
@@ -66,6 +85,9 @@ $(document).ready(function() {
       hidePageLoader();
     }
   });
+  if (document.readyState === "complete") {
+    hidePageLoader();
+  }
 })();
 
 /* Load after theme CSS so button labels stay visible */
@@ -76,7 +98,7 @@ $(document).ready(function() {
   var link = document.createElement('link');
   link.id = 'admin-button-fix-css';
   link.rel = 'stylesheet';
-  link.href = '../css/admin-button-fix.css?v=1';
+  link.href = '../css/admin-button-fix.css?v=2';
   document.head.appendChild(link);
 })();
 

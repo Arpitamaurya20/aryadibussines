@@ -42,6 +42,22 @@ error_reporting(E_ALL);
     {
         z-index: 1;
     }
+    .branch-assets-modal-body {
+        position: relative;
+        min-height: 180px;
+    }
+    #branch_assets_modal_loader {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.85);
+        z-index: 20;
+        text-align: center;
+        padding-top: 80px;
+    }
     </style>
     <?php
     $UserType = SessionCheck();
@@ -81,9 +97,6 @@ error_reporting(E_ALL);
     }
     
     
-    $branch_array = getAllBranchesWithName($conn,"branch");
-    $branch_array_key = generateArraywithKey($branch_array);
-
     $company_object = new Company($conn);
     $company_array = $company_object->setCompanyArray('All');
 
@@ -97,7 +110,7 @@ error_reporting(E_ALL);
     $filter_param = "?CorporateID=".$CorporateID."&BranchID=".$BranchID;
     
 
-    $ProductName = "Aryadibusiness";
+    $ProductName = "TechXpert";
     if ($CorporateID == 183) 
     {
         $_product = "innov";
@@ -121,7 +134,7 @@ error_reporting(E_ALL);
         <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/<?=$product_configuration['favicon'];?>">
         <?php
     }
-    if($ProductName != "Aryadibusiness")
+    if($ProductName != "TechXpert")
     {
         include("../css/client_generated_css.php");
     }
@@ -328,7 +341,11 @@ error_reporting(E_ALL);
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body branch-assets-modal-body">
+                                    <div id="branch_assets_modal_loader">
+                                        <div class="spinner-border text-primary" role="status"></div>
+                                        <div class="mt-2">Loading asset details...</div>
+                                    </div>
                                     <form METHOD="POST" id="add_update_branch_assets_form">
                                         <div class="form-group">
                                             <div class="row">
@@ -337,23 +354,6 @@ error_reporting(E_ALL);
                                                     <select class="select2 form-control w-100" id="branch_id"
                                                         name="branch_id">
                                                         <option value="-1">Search & Select</option>
-                                                        <?php
-
-                                                        foreach($branch_array as $branch)
-                                                        {
-                                                            $selected = "";
-                                                            /*if($BranchID == $branch['ID'])
-                                                                $selected = "selected";
-                                                            else
-                                                                continue;*/
-                                                        ?>
-                                                        <option value="<?php echo $branch['ID'];?>"
-                                                            <?php echo $selected; ?>>
-                                                            <?php echo $branch['BranchSite'];?>
-                                                        </option>
-                                                        <?php
-                                                        }
-                                                        ?>
                                                     </select>
                                                 </div>
                                                 <div class="col-4 mt-3">
@@ -549,6 +549,15 @@ error_reporting(E_ALL);
                                                     </select>
                                                 </div>
 
+                                                <div class="col-8 mt-3">
+                                                    <label>PPM Checklist (Category wise)</label>
+                                                    <select class="select2 form-control w-100" id="asset_checklist_id"
+                                                        name="asset_checklist_id">
+                                                        <option value="-1">Select category first</option>
+                                                    </select>
+                                                    <small class="text-muted">Maps this asset to a dynamic PPM checklist. Company mapping remains unchanged.</small>
+                                                </div>
+
 
                                             </div>
 
@@ -655,7 +664,7 @@ error_reporting(E_ALL);
         include('../includes/common_scripts.php');
        ?>
     <script src="../js/datagrid/datatables/datatables.bundle.js"></script>
-    <script src="../js/modules/branch-assets.js"></script>
+    <script src="../js/modules/branch-assets.js?v=20260924"></script>
     <script src="../js/formplugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
    <!--   <script>
         $(document).ready(function() {
@@ -809,24 +818,41 @@ error_reporting(E_ALL);
         }*/
 
         // Initialize DataTable with dynamic columns
-        $('#view-branch-assets').dataTable({
-            responsive: true,
-            'processing': true,
-            'serverSide': true,
-            'ordering': false,
-            'serverMethod': 'post',
-            'ajax': {
-                'url': 'include/branch-assets-list-post.php<?php echo $filter_param; ?>'
-            },
-            'columnDefs': [{
-                "targets": [0],
-                "className": "text-center"
-            }],
-            "order": [
-                [1, 'asc']
-            ],
-            'columns': columns // Set dynamic columns here
-        });
+        window.initBranchAssetsTable = function(tableSelector, isActive, extraQuery) {
+            extraQuery = extraQuery || '';
+            extraQuery = String(extraQuery).replace(/^\?/, '');
+            if ($.fn.DataTable.isDataTable(tableSelector)) {
+                $(tableSelector).DataTable().clear().destroy();
+            }
+            var ajaxUrl = 'include/branch-assets-list-post.php';
+            var query = extraQuery;
+            if (query) {
+                query += '&';
+            }
+            query += 'IsActive=' + isActive;
+            $(tableSelector).dataTable({
+                responsive: true,
+                'processing': true,
+                'serverSide': true,
+                'ordering': false,
+                'serverMethod': 'post',
+                'ajax': {
+                    'url': ajaxUrl + '?' + query
+                },
+                'columnDefs': [{
+                    "targets": [0],
+                    "className": "text-center"
+                }],
+                "order": [
+                    [1, 'asc']
+                ],
+                'columns': columns
+            });
+        };
+
+        var defaultQuery = '<?php echo ltrim($filter_param, "?"); ?>';
+        window.initBranchAssetsTable('#view-branch-assets-active', 1, defaultQuery);
+        window.initBranchAssetsTable('#view-branch-assets-inactive', 0, defaultQuery);
 
         $("#nav_company_assets").addClass("active");
         if($("#branch_name").length)
@@ -848,34 +874,29 @@ error_reporting(E_ALL);
 </script>
 
 
+    <div class="modal fade" id="bulk_ticket_modal" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal_header">
+            <h5 class="modal-title">Raise Bulk PPM Ticket for All Assets</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="bulk_ticket_form" method="POST" onsubmit="return false;">
+              <div class="form-group">
+                <label for="bulk_ticket_date">Select Date <span class="text-danger">*</span></label>
+                <input type="date" class="form-control" id="bulk_ticket_date" name="bulk_ticket_date" placeholder="Pick Date">
+              </div>
+              <input type="text" id="bulk_ticket_branch_id" name="branch_id" value="<?=$BranchID;?>" readonly>
+              <button type="button" class="btn btn-primary" onclick="RaiseBulkTickets()">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 
 
 </html>
-
-
-<script src="../js/jquery.min.js"></script>
-<script src="../js/bootstrap.bundle.min.js"></script>
-
-<div class="modal fade" id="bulk_ticket_modal" role="dialog" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header modal_header">
-        <h5 class="modal-title">Raise Bulk PPM Ticket for All Assets</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form id="bulk_ticket_form" method="POST" onsubmit="return false;">
-          <div class="form-group">
-            <label for="bulk_ticket_date">Select Date <span class="text-danger">*</span></label>
-            <input type="date" class="form-control" id="bulk_ticket_date" name="bulk_ticket_date" placeholder="Pick Date">
-          </div>
-          <input type="text" id="bulk_ticket_branch_id" name="branch_id" value="<?=$BranchID;?>" readonly>
-          <button type="button" class="btn btn-primary" onclick="RaiseBulkTickets()">Submit</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>

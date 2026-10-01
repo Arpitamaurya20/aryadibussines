@@ -88,12 +88,11 @@ function teManualEscalate() {
         $('#te_manual_escalate_btn').prop('disabled', false).text('Escalate Now');
         return;
       }
-      TechXAlert(res.message);
       $('#te_manual_escalate_btn').prop('disabled', false).text('Escalate Now');
       if (!res.error) {
-        setTimeout(function () {
-          location.reload();
-        }, 1500);
+        TechXAlertThenReload(res.message);
+      } else {
+        TechXAlert(res.message);
       }
     },
     error: function () {
@@ -111,33 +110,80 @@ function teInitReassignTechnicianSelect2() {
   if ($el.data('select2')) {
     $el.select2('destroy');
   }
+  var $dropdownParent = $('#claim-assign');
+  if (!$dropdownParent.length) {
+    $dropdownParent = $('#assignment');
+  }
+  if (!$dropdownParent.length) {
+    $dropdownParent = $(document.body);
+  }
   $el.select2({
     width: '100%',
     placeholder: 'Search technician...',
     allowClear: true,
     minimumResultsForSearch: 0,
-    dropdownParent: $('#assignment').length ? $('#assignment') : $(document.body)
+    dropdownParent: $dropdownParent
   });
 }
 
-function teReassignTechnician() {
-  var technicianId = $('#te_reassign_technician_id').val();
-  if (!technicianId || technicianId === '') {
-    TechXAlert('Please select a technician');
+function teInitClaimAssignDueDatePicker() {
+  var $due = $('#te_assign_due_date');
+  if (!$due.length || typeof $due.datepicker !== 'function') {
     return;
   }
-  if (!validateDifferentTechnician(technicianId)) {
+  if ($due.data('datepicker')) {
+    $due.datepicker('destroy');
+  }
+  $due.datepicker({
+    format: 'yyyy-mm-dd',
+    autoclose: true,
+    todayHighlight: true
+  });
+}
+
+function teInitClaimQuotationOwnerSelect2() {
+  var $el = $('#te_claim_quotation_owner_id');
+  if (!$el.length || $el.is(':hidden') || $el.prop('tagName') !== 'SELECT') {
     return;
   }
-  var remarks = $('#te_reassign_remarks').val() || '';
-  $('#te_reassign_btn').prop('disabled', true).text('Please wait...');
+  if ($el.data('select2')) {
+    $el.select2('destroy');
+  }
+  var $dropdownParent = $('#claim-assign');
+  if (!$dropdownParent.length) {
+    $dropdownParent = $(document.body);
+  }
+  $el.select2({
+    width: '100%',
+    placeholder: 'Select owner (self / Branch AM / Sales)...',
+    allowClear: true,
+    minimumResultsForSearch: 0,
+    dropdownParent: $dropdownParent
+  });
+}
+
+function teInitClaimAssignTab() {
+  teInitReassignTechnicianSelect2();
+  teInitClaimAssignDueDatePicker();
+  teInitClaimQuotationOwnerSelect2();
+}
+
+function teClaimTicket() {
+  var remarks = $('#te_claim_remarks').val() || '';
+  var ownerField = $('#te_claim_quotation_owner_id');
+  var quotationOwnerId = ownerField.length ? String(ownerField.val() || '').trim() : '';
+  if (ownerField.length && ownerField.prop('tagName') === 'SELECT' && quotationOwnerId === '') {
+    TechXAlert('Please select quotation owner (yourself, Branch AM, or Sales).');
+    return;
+  }
+  $('#te_claim_btn').prop('disabled', true).text('Please wait...');
   $.ajax({
-    url: 'action/reassign_ticket_technician.php',
+    url: 'action/claim_corporate_ticket.php',
     type: 'POST',
     data: {
       TicketPK: teTicketPK,
-      AssignedTo: technicianId,
-      Remarks: remarks
+      Remarks: remarks,
+      QuotationOwnerId: quotationOwnerId
     },
     success: function (data) {
       var res;
@@ -145,20 +191,84 @@ function teReassignTechnician() {
         res = typeof data === 'string' ? JSON.parse(data) : data;
       } catch (e) {
         TechXAlert('Unexpected server response');
-        $('#te_reassign_btn').prop('disabled', false).text('Reassign');
+        $('#te_claim_btn').prop('disabled', false).text('Claim');
         return;
       }
-      TechXAlert(res.message);
-      $('#te_reassign_btn').prop('disabled', false).text('Reassign');
+      $('#te_claim_btn').prop('disabled', false).text('Claim');
       if (!res.error) {
-        setTimeout(function () {
-          location.reload();
-        }, 1500);
+        TechXAlertThenReload(res.message);
+      } else {
+        TechXAlert(res.message);
+      }
+    },
+    error: function () {
+      TechXAlert('Failed to claim ticket');
+      $('#te_claim_btn').prop('disabled', false).text('Claim');
+    }
+  });
+}
+
+function teReassignTechnicianWithDueDate() {
+  teReassignTechnician(true);
+}
+
+function teReassignTechnician(includeDueDate) {
+  var technicianId = $('#te_reassign_technician_id').val();
+  if (!technicianId || technicianId === '') {
+    TechXAlert('Please select a technician');
+    return;
+  }
+  var currentTechId = '';
+  if ($('#te_claim_tab_current_technician').length) {
+    currentTechId = String($('#te_claim_tab_current_technician').val() || '');
+  } else if (typeof getCurrentAssignedTechnicianId === 'function') {
+    currentTechId = getCurrentAssignedTechnicianId();
+  }
+  if (currentTechId !== '' && String(technicianId) === currentTechId) {
+    TechXAlert('Please select a different technician than the one currently assigned.');
+    return;
+  }
+  var remarks = $('#te_reassign_remarks').val() || '';
+  if (includeDueDate) {
+    var dueDate = String($('#te_assign_due_date').val() || '').trim();
+    if (dueDate === '') {
+      TechXAlert('Kindly provide Ticket Due Date before assigning a technician.');
+      return;
+    }
+  }
+  var postData = {
+    TicketPK: teTicketPK,
+    AssignedTo: technicianId,
+    Remarks: remarks
+  };
+  if (includeDueDate) {
+    postData.DueDate = $('#te_assign_due_date').val() || '';
+  }
+  var waitLabel = includeDueDate ? 'Assign' : 'Reassign';
+  $('#te_reassign_btn').prop('disabled', true).text('Please wait...');
+  $.ajax({
+    url: 'action/reassign_ticket_technician.php',
+    type: 'POST',
+    data: postData,
+    success: function (data) {
+      var res;
+      try {
+        res = typeof data === 'string' ? JSON.parse(data) : data;
+      } catch (e) {
+        TechXAlert('Unexpected server response');
+        $('#te_reassign_btn').prop('disabled', false).text(waitLabel);
+        return;
+      }
+      $('#te_reassign_btn').prop('disabled', false).text(waitLabel);
+      if (!res.error) {
+        TechXAlertThenReload(res.message);
+      } else {
+        TechXAlert(res.message);
       }
     },
     error: function () {
       TechXAlert('Failed to reassign ticket');
-      $('#te_reassign_btn').prop('disabled', false).text('Reassign');
+      $('#te_reassign_btn').prop('disabled', false).text(waitLabel);
     }
   });
 }
@@ -187,9 +297,5 @@ function teAcknowledgeEscalation() {
 
 $(document).ready(function () {
   teLoadEscalationPanel();
-  teInitReassignTechnicianSelect2();
-
-  $('a[href="#assignment"]').on('shown.bs.tab', function () {
-    teInitReassignTechnicianSelect2();
-  });
+  teInitClaimAssignTab();
 });

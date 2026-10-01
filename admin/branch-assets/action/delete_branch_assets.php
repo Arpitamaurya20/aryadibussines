@@ -6,7 +6,7 @@ $response['error'] = true;
 if(isset($_POST))
 {
     $conn = _connectodb();
-    $result = DeleteBranchAssets($conn,$_POST);
+    // $result = DeleteBranchAssets($conn,$_POST);
     if($result == true)
     {
         $response['message'] = "Branch Assets Deleted";

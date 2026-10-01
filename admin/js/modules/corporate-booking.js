@@ -25,6 +25,12 @@ $(document).ready(function () {
     initTicketStatusSelect2();
   });
 
+  $(document).on("click", "#ticket_type_change_btn", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    ChangeTicketType();
+  });
+
 });
 
 function openBookingAssignmodal() {
@@ -113,24 +119,45 @@ function validateDifferentTechnician(selectedId) {
   return true;
 }
 
-function ChangeTicketStatus_Assignment() {
-  var assignemployee = $('#assignemployee_dropdown').val();
-  if (!assignemployee || assignemployee === '-1') {
-    TechXAlert("Please Assign Employee");
+function validateDueDateBeforeTechnicianAssign(dueDateFieldId) {
+  var fieldId = dueDateFieldId || 'due_date';
+  var dueDateEl = document.getElementById(fieldId);
+  var dueDate = dueDateEl ? String(dueDateEl.value || '').trim() : '';
+  if (dueDate === '') {
+    TechXAlert('Kindly provide Ticket Due Date before assigning a technician.');
     return false;
+  }
+  return true;
+}
+
+function ChangeTicketStatus_Assignment() {
+  var dropdownVal = $('#assignemployee_dropdown').val();
+  if ($.isArray(dropdownVal)) {
+    dropdownVal = dropdownVal.length ? dropdownVal[0] : '';
+  }
+  var currentAssigned = getCurrentAssignedTechnicianId();
+  var canAssignTechnician = $('#ticket_can_assign_technician').length === 0
+    || $('#ticket_can_assign_technician').val() === '1';
+  var assignemployee = dropdownVal;
+  if (!assignemployee || assignemployee === '-1' || assignemployee === '0') {
+    assignemployee = currentAssigned;
   }
 
   var remarks = document.getElementById("ticket_remarks").value;
   var status = document.getElementById("ticket_status").value;
   var isReassignOption = (status === "__REASSIGN__");
-  var currentAssigned = getCurrentAssignedTechnicianId();
   var currentStatus = $('#ticket_current_status').val() || '';
   var canReassign = $('#ticket_can_reassign').val() === '1';
-  var assigneeChanged = currentAssigned !== '' && String(assignemployee) !== currentAssigned;
+  var assigneeChanged = String(assignemployee || '') !== '' && String(assignemployee) !== String(currentAssigned || '');
   var statusIntentionallyChanged = status !== '' && status !== '__REASSIGN__' && status !== currentStatus;
   var shouldReassign = isReassignOption || (canReassign && assigneeChanged && !statusIntentionallyChanged);
 
   if (shouldReassign && !validateDifferentTechnician(assignemployee)) {
+    return false;
+  }
+
+  if ((shouldReassign || (canAssignTechnician && assigneeChanged && assignemployee))
+    && !validateDueDateBeforeTechnicianAssign('due_date')) {
     return false;
   }
 
@@ -149,15 +176,28 @@ function ChangeTicketStatus_Assignment() {
       url: "action/change_ticket_status.php",
       type: "POST",
       data: postData,
+      timeout: 20000,
       success: function (data) {
-        var response = JSON.parse(data);
-        TechXAlert(response.message);
+        var response;
+        try {
+          response = typeof data === "object" ? data : JSON.parse(data);
+        } catch (e) {
+          $("#assignment_change_btn").html("Save & Change");
+          TechXAlert("Could not update ticket status. Please try again.");
+          return;
+        }
         if (response.error == false) {
-          setTimeout(function () { location.reload(); }, 2000);
+          $("#editassign_booking").modal("hide");
+          TechXAlertThenReload(response.message);
         } else {
+          TechXAlert(response.message);
           $("#assignment_change_btn").html("Save & Change");
         }
       },
+      error: function () {
+        $("#assignment_change_btn").html("Save & Change");
+        TechXAlert("The request took too long. Please try again.");
+      }
     });
     return false;
   }
@@ -178,18 +218,28 @@ function ChangeTicketStatus_Assignment() {
     url: "action/change_ticket_status.php",
     type: "POST",
     data: postData,
+    timeout: 20000,
     success: function (data) {
-      var response = JSON.parse(data);
-      TechXAlert(response.message);
-      if (response.error == false) {
-        setTimeout(function () {
-          location.reload();
-        }, 2000);
+      var response;
+      try {
+        response = typeof data === "object" ? data : JSON.parse(data);
+      } catch (e) {
+        $("#assignment_change_btn").html("Save & Change");
+        TechXAlert("Could not update ticket status. Please try again.");
+        return;
       }
-      else {
+      if (response.error == false) {
+        $("#editassign_booking").modal("hide");
+        TechXAlertThenReload(response.message);
+      } else {
+        TechXAlert(response.message);
         $("#assignment_change_btn").html("Save & Change");
       }
     },
+    error: function () {
+      $("#assignment_change_btn").html("Save & Change");
+      TechXAlert("The request took too long. Please try again.");
+    }
   });
 }
 
@@ -198,8 +248,42 @@ function OpenClientIDModal() {
 }
 
 function EditTicketType(TicketType) {
-  $("#service_type").val(TicketType);
-  $("#edit_ticket_type").modal();
+  $("#ticket_service_type").val(TicketType);
+  $("#edit_ticket_type").modal("show");
+}
+
+function ChangeTicketType() {
+  var $btn = $("#ticket_type_change_btn");
+  var ticketId = $("#ticket_type_ticket_id").val();
+  var serviceType = $("#ticket_service_type").val();
+  if (!ticketId || !serviceType) {
+    TechXAlert("Please select a service type.");
+    return false;
+  }
+  $btn.prop("disabled", true).text("Please Wait....");
+  $.ajax({
+    url: "action/change_ticket_type_action.php",
+    type: "POST",
+    dataType: "json",
+    data: {
+      TicketID: ticketId,
+      service_type: serviceType
+    },
+    success: function (response) {
+      if (response && response.error == false) {
+        $("#edit_ticket_type").modal("hide");
+        TechXAlertThenReload(response.message || "Ticket Type has been Updated");
+      } else {
+        $btn.prop("disabled", false).text("Save & Change");
+        TechXAlert((response && response.message) ? response.message : "Could not update ticket type.");
+      }
+    },
+    error: function () {
+      $btn.prop("disabled", false).text("Save & Change");
+      TechXAlert("Could not update ticket type. Please try again.");
+    }
+  });
+  return false;
 }
 function EditCorporateTicketStatus(TicketType) {
   $("#service_type").val(TicketType);
@@ -213,13 +297,10 @@ function Corporate_ChangeTicketStatus()
     data: $("#corporate_ticket_status_modal_form").serialize(),
     success: function (data) {
       var response = JSON.parse(data);
-      TechXAlert(response.message);
       if (response.error == false) {
-        setInterval(function () {
-          location.reload();
-        }, 2000);
-      }
-      else {
+        TechXAlertThenReload(response.message);
+      } else {
+        TechXAlert(response.message);
         $("#assignment_change_btn").html("Save & Change");
       }
     },
@@ -285,33 +366,15 @@ function ChangeTicketClientID() {
     data: $("#ticket_clientid_form").serialize(),
     success: function (data) {
       var response = JSON.parse(data);
-      TechXAlert(response.message);
-      if (response.error == false)
-        setInterval(function () {
-          location.reload();
-        }, 2000);
+      if (response.error == false) {
+        TechXAlertThenReload(response.message);
+      } else {
+        TechXAlert(response.message);
+      }
     },
   });
 }
 
-function ChangeTicketType() {
-
-  $("#clientid_change_btn").html("Please Wait....");
-  // Then, get the selected value
-  $.ajax({
-    url: "action/change_ticket_type_action.php",
-    type: "POST",
-    data: $("#ticket_type_modal_form").serialize(),
-    success: function (data) {
-      var response = JSON.parse(data);
-      TechXAlert(response.message);
-      if (response.error == false)
-        setInterval(function () {
-          location.reload();
-        }, 2000);
-    },
-  });
-}
 function ChangeTicketService() {
   $("#change_service_btn").html("Please Wait....");
   // Then, get the selected value
@@ -321,11 +384,11 @@ function ChangeTicketService() {
     data: $("#ticket_service_form").serialize(),
     success: function (data) {
       var response = JSON.parse(data);
-      TechXAlert(response.message);
-      if (response.error == false)
-        setInterval(function () {
-          location.reload();
-        }, 2000);
+      if (response.error == false) {
+        TechXAlertThenReload(response.message);
+      } else {
+        TechXAlert(response.message);
+      }
     },
   });
 }
@@ -338,11 +401,11 @@ function ChangeTicketBranchAction() {
     data: $("#modal_ticket_branch_form").serialize(),
     success: function (data) {
       var response = JSON.parse(data);
-      TechXAlert(response.message);
-      if (response.error == false)
-        setInterval(function () {
-          location.reload();
-        }, 2000);
+      if (response.error == false) {
+        TechXAlertThenReload(response.message);
+      } else {
+        TechXAlert(response.message);
+      }
     },
   });
 }
@@ -364,11 +427,11 @@ function ChangeTicketSparePart() {
     data: $("#ticket_sparepart_form").serialize(),
     success: function (data) {
       var response = JSON.parse(data);
-      TechXAlert(response.message);
-      if (response.error == false)
-        setInterval(function () {
-          location.reload();
-        }, 2000);
+      if (response.error == false) {
+        TechXAlertThenReload(response.message);
+      } else {
+        TechXAlert(response.message);
+      }
     },
   });
 }
@@ -421,11 +484,11 @@ function UpdateTicketFinance() {
     data: formData,
     success: function (data) {
       var response = JSON.parse(data);
-      TechXAlert(response.message);
-      if (response.error == false)
-        setInterval(function () {
-          location.reload();
-        }, 2000);
+      if (response.error == false) {
+        TechXAlertThenReload(response.message);
+      } else {
+        TechXAlert(response.message);
+      }
     },
     cache: false,
     contentType: false,
@@ -457,11 +520,11 @@ function UploadQuotationAction() {
     data: formData,
     success: function (data) {
       var response = JSON.parse(data);
-      TechXAlert(response.message);
-      if (response.error == false)
-        setInterval(function () {
-          location.reload();
-        }, 2000);
+      if (response.error == false) {
+        TechXAlertThenReload(response.message);
+      } else {
+        TechXAlert(response.message);
+      }
     },
     cache: false,
     contentType: false,
@@ -483,11 +546,11 @@ function AddTicketConversation() {
     data: $("#ticket_conversation_form").serialize(),
     success: function (data) {
       var response = JSON.parse(data);
-      TechXAlert(response.message);
-      if (response.error == false)
-        setInterval(function () {
-          location.reload();
-        }, 2000);
+      if (response.error == false) {
+        TechXAlertThenReload(response.message);
+      } else {
+        TechXAlert(response.message);
+      }
     },
   });
 }
@@ -504,11 +567,10 @@ function ApproveQoutation(TicketID) {
         },
         function (data, status) {
           var response = JSON.parse(data);
-          TechXAlert(response.message);
           if (response.error == false) {
-            setInterval(function () {
-              location.reload();
-            }, 2000);
+            TechXAlertThenReload(response.message);
+          } else {
+            TechXAlert(response.message);
           }
         }
       );
@@ -531,11 +593,10 @@ function RejectedQuotation(TicketID) {
         },
         function (data, status) {
           var response = JSON.parse(data);
-          TechXAlert(response.message);
           if (response.error == false) {
-            setInterval(function () {
-              location.reload();
-            }, 2000);
+            TechXAlertThenReload(response.message);
+          } else {
+            TechXAlert(response.message);
           }
         }
       );
@@ -592,11 +653,11 @@ function SaveTicketFinances() {
     data: formData,
     success: function (data) {
       var response = JSON.parse(data);
-      TechXAlert(response.message);
-      if (response.error == false)
-        setInterval(function () {
-          location.reload();
-        }, 2000);
+      if (response.error == false) {
+        TechXAlertThenReload(response.message);
+      } else {
+        TechXAlert(response.message);
+      }
     },
     cache: false,
     contentType: false,
@@ -625,11 +686,11 @@ function ApproveTicketFinanceStatus(action) {
     data: formData,
     success: function (data) {
       var response = JSON.parse(data);
-      TechXAlert(response.message);
-      if (response.error == false)
-        setInterval(function () {
-          location.reload();
-        }, 2000);
+      if (response.error == false) {
+        TechXAlertThenReload(response.message);
+      } else {
+        TechXAlert(response.message);
+      }
     },
     cache: false,
     contentType: false,
@@ -699,12 +760,11 @@ function UploadTicketMediaAction() {
         TechXAlert("Unexpected server response. Please try again.");
         return;
       }
-      TechXAlert(response.message || "");
       if (response.error === false) {
         $("#upload_media").modal("hide");
-        setTimeout(function () {
-          location.reload();
-        }, 1500);
+        TechXAlertThenReload(response.message || "Media uploaded.");
+      } else {
+        TechXAlert(response.message || "");
       }
     },
     error: function (xhr) {
@@ -909,6 +969,28 @@ function DeleteLineItemFromQuotation(QuotationLineItemID, QuotationID) {
     })
 }
 
+function ensureEditSelectOption($select, value) {
+  if (value === null || value === undefined || value === "") {
+    return;
+  }
+  var stringValue = String(value);
+  if ($select.find('option').filter(function() { return $(this).val() === stringValue; }).length === 0) {
+    $select.append($("<option></option>").val(stringValue).text(stringValue));
+  }
+  $select.val(stringValue);
+}
+
+function getEditLineItemFieldValue(selector, originalKey, originalData) {
+  var value = $(selector).val();
+  if (value !== null && value !== undefined && String(value).trim() !== "") {
+    return value;
+  }
+  if (originalData && originalData[originalKey] !== undefined && originalData[originalKey] !== null) {
+    return originalData[originalKey];
+  }
+  return value;
+}
+
 function EditLineItemFromQuotation(lineItemID, quotationID) {
   $.ajax({
     url: "ajax/get_line_item.php",
@@ -916,36 +998,50 @@ function EditLineItemFromQuotation(lineItemID, quotationID) {
     data: { line_item_id: lineItemID, quotation_id: quotationID },
     success: function(response) {
       var data = JSON.parse(response);
+      if (!data || !data.RateCardID) {
+        TechXAlert("Unable to load line item details.");
+        return;
+      }
+
+      $("#editLineItemModal").data("originalLineItem", data);
 
       $("#editLineItemID").val(data.RateCardID);
       $("#editQuotationID").val(data.QuotationID);
       $("#editQuotationItems").val(lineItemID);
-      $("#editType").val(data.Type);
-      $("#editCategory").val(data.Category);
 
-      // Load subcategories for this category and select the current one
-      var category_id = $("#editCategory option:selected").data('id');
+      ensureEditSelectOption($("#editType"), data.Type);
+      ensureEditSelectOption($("#editCategory"), data.Category);
+      ensureEditSelectOption($("#editUOM"), data.UoM);
+
+      var category_id = $("#editCategory option:selected").data("id");
       var subcategoryDropdown = $("#editSubCategory");
       subcategoryDropdown.empty();
       subcategoryDropdown.append('<option value="">Please Select</option>');
 
-      $.post("../company/action/get_subcategories_rate_card.php", {
+      var populateSubcategoryAndShow = function() {
+        ensureEditSelectOption(subcategoryDropdown, data.SubCategory);
+        $("#editLineItemName").val(data.LineItemName);
+        $("#editMake").val(data.Make);
+        $("#editHSN").val(data.HSN);
+        $("#editPrice").val(data.Price);
+        $("#editTax").val(data.Tax);
+        $("#editQty").val(data.Qty);
+        $("#editLineItemModal").modal("show");
+      };
+
+      if (category_id) {
+        $.post("../company/action/get_subcategories_rate_card.php", {
           CategoryID: category_id
-      }, function(subData) {
+        }, function(subData) {
           subcategoryDropdown.append(subData);
           subcategoryDropdown.append('<option value="Others">Others</option>');
-          subcategoryDropdown.val(data.SubCategory); // select current subcategory
-      });
-
-      $("#editLineItemName").val(data.LineItemName);
-      $("#editMake").val(data.Make);
-      $("#editHSN").val(data.HSN);
-      $("#editUOM").val(data.UoM);
-      $("#editPrice").val(data.Price);
-      $("#editTax").val(data.Tax);
-      $("#editQty").val(data.Qty);
-
-      $("#editLineItemModal").modal("show");
+          populateSubcategoryAndShow();
+        }).fail(function() {
+          populateSubcategoryAndShow();
+        });
+      } else {
+        populateSubcategoryAndShow();
+      }
     }
   });
 }
@@ -953,22 +1049,24 @@ function EditLineItemFromQuotation(lineItemID, quotationID) {
 // handle update — delegated so it still works after quotation_view AJAX refresh
 function updateLineItem() {
   var quotationId = $("#editQuotationID").val();
+  var originalData = $("#editLineItemModal").data("originalLineItem") || {};
+
   $.ajax({
     url: "action/update_line_item.php",
     type: "POST",
     data: {
       line_item_id: $("#editLineItemID").val(),
       quotation_id: quotationId,
-      type: $("#editType").val(),
-      category: $("#editCategory").val(),
-      subcategory: $("#editSubCategory").val(),
-      lineItemName: $("#editLineItemName").val(),
-      make: $("#editMake").val(),
-      hsn: $("#editHSN").val(),
-      uom: $("#editUOM").val(),
-      price: $("#editPrice").val(),
-      tax: $("#editTax").val(),
-      qty: $("#editQty").val(),
+      type: getEditLineItemFieldValue("#editType", "Type", originalData),
+      category: getEditLineItemFieldValue("#editCategory", "Category", originalData),
+      subcategory: getEditLineItemFieldValue("#editSubCategory", "SubCategory", originalData),
+      lineItemName: getEditLineItemFieldValue("#editLineItemName", "LineItemName", originalData),
+      make: getEditLineItemFieldValue("#editMake", "Make", originalData),
+      hsn: getEditLineItemFieldValue("#editHSN", "HSN", originalData),
+      uom: getEditLineItemFieldValue("#editUOM", "UoM", originalData),
+      price: getEditLineItemFieldValue("#editPrice", "Price", originalData),
+      tax: getEditLineItemFieldValue("#editTax", "Tax", originalData),
+      qty: getEditLineItemFieldValue("#editQty", "Qty", originalData),
       RateCardID: $("#editLineItemID").val(),
       QuotationItemID: $("#editQuotationItems").val()
     },
@@ -1294,16 +1392,11 @@ function AddUpdateServiceReport(Action)
     success: function (data) 
     {
       data_response = JSON.parse(data);
-      if(data_response.error == false)
-      {
-        /*if(Action == "Submit")
-        {
-          GenerateServiceReportPDF(data_response.ServiceReportID);
-        }*/
+      if (data_response.error == false) {
+        TechXAlertThenReload(data_response.message || 'Service report saved.');
+      } else {
+        TechXAlert(data_response.message || 'Unable to save service report.');
       }
-      setInterval(function () {
-          location.reload();
-        }, 1000);
       // var response = JSON.parse(data);
       // TechXAlert(response.message);
       // if (response.error == false) {

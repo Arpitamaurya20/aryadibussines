@@ -20,16 +20,45 @@ $(document).ready(function () {
   });
 });
 
+function getCompanyModalSelect2Options() {
+  return {
+    dropdownParent: $("#add_edit_company_modal"),
+    width: "100%",
+  };
+}
+
+function safeInitCompanySelect2($el, opts) {
+  if (!$el || !$el.length || typeof $.fn.select2 !== "function") {
+    return;
+  }
+  try {
+    if ($el.hasClass("select2-hidden-accessible") || $el.data("select2")) {
+      $el.select2("destroy");
+    }
+  } catch (e) {
+    // ignore destroy errors from stale Select2 instances
+  }
+  try {
+    $el.select2(opts);
+  } catch (e) {
+    console.error("Select2 init failed", e);
+  }
+}
+
+function initCompanyModalSelect2() {
+  var opts = getCompanyModalSelect2Options();
+  safeInitCompanySelect2($("#corporate_name"), opts);
+  safeInitCompanySelect2($("#account_manager"), opts);
+  safeInitCompanySelect2($("#corporate_industry"), opts);
+  safeInitCompanySelect2($("#company_tendor"), opts);
+}
+
 function openCompany_modal() {
   $("#company_modal_title").html("Add Company Account Details");
   $("#add_update_company_form")[0].reset();
   $("#form_action").val("add");
   
-  $("#account_manager").select2();
-$("#corporate_industry").select2({ dropdownParent: $("#add_edit_company_modal") });
-  $("#company_tendor").select2();
-  $("#priority").select2();
-  $("#corporate_name").select2();
+  initCompanyModalSelect2();
   $("#corporate_password").css("display", "block");
   $("#company_po_wo_date").datepicker({
     format: "yyyy-mm-dd",
@@ -39,105 +68,93 @@ $("#corporate_industry").select2({ dropdownParent: $("#add_edit_company_modal") 
     autoclose: true,
     startDate:'+0d',
   });
-  $("#add_edit_company_modal").modal();
-  // $("#amc_start_date").datepicker({
-  //   format: "yyyy-mm-dd",
-  //   todayBtn: "linked",
-  //   clearBtn: true,
-  //   todayHighlight: true,
-  //   autoclose: true,
-  // });
-  // $("#amc_end_date").datepicker({
-  //   format: "yyyy-mm-dd",
-  //   todayBtn: "linked",
-  //   clearBtn: true,
-  //   todayHighlight: true,
-  //   autoclose: true,
-  // });
+  $("#add_edit_company_modal").modal("show");
 }
 
 function UpdateCompany_modal(company_id) {
   $("#company_modal_title").html("Update Company Account Details");
   $("#corporate_password").css("display", "none");
-  $.post("action/get_company_details.php",
+  $.post(
+    "action/get_company_details.php",
     {
       ID: company_id,
     },
     function (data, status) {
-      var response = JSON.parse(data);
-      if (response.error == false) {
-        var corporate_name = response.data.CorporateName;
-        var company_name = response.data.CompanyName;
-        var company_email = response.data.CompanyEmail;
-        var company_phone = response.data.CompanyPhone;
-        var company_mobile = response.data.CompanyMobile;
-        var  priority=       response.data.Priority;
-        var  corporate_industry= response.data.IndustryTypeName;
-        //var company_branches = response.data.CompanyBranches;
-        var company_tendor = response.data.CompanyTendor;
-        let company_tendor_array = company_tendor.split(",");
+      try {
+        var response = typeof data === "object" ? data : JSON.parse(data);
+        if (response.error == false) {
+          var d = response.data || {};
+          var corporate_name = d.CorporateName;
+          var company_name = d.CompanyName;
+          var company_email = d.CompanyEmail;
+          var company_phone = d.CompanyPhone;
+          var company_mobile = d.CompanyMobile;
+          var corporate_industry = d.CompanyIndustryType;
+          var company_tendor = d.CompanyTendor || "";
+          var company_tendor_array =
+            company_tendor === "" ? [] : String(company_tendor).split(",");
 
-        $("#company_tendor").val(company_tendor_array);
-        $("#company_tendor").select2();
-        //var company_tendor = response.data.CompanyTendor;
-        // var company_sow = response.data.CompanySOW;
-        var company_tat = response.data.CompanyTAT;
-        var company_po_wo = response.data.CompanyPOWO;
-        var company_po_wo_date = response.data.CompanyPOWODate;
-        var admin_username = response.data.UserName;
-        var TicketsNeedApproval = response.data.TicketsNeedApproval;
-        var TicketNeedsWAMessage = response.data.TicketNeedsWAMessage;
-        var AccountManager = response.data.AccountManager;
-        $("#corporate_name").val(corporate_name);
-        $("#company_name").val(company_name);
-        $("#company_email").val(company_email);
-        $("#company_phone").val(company_phone);
-        $("#company_mobile").val(company_mobile);
-        //$("#company_branches").val(company_branches);
-        // $("#company_sow").val(company_sow);
-        $("#company_tat").val(company_tat);
-        $("#company_po_wo").val(company_po_wo);
-        $("#company_po_wo_date").val(company_po_wo_date);
-        $("#admin_username").val(admin_username);
-        $("#form_action").val("Update");
-        $("#form_id").val(company_id);
-        $("#account_manager").val(AccountManager);
-        $("#account_manager").select2();
-        $("#corporate_name").select2();
-        $("#priority").val(priority);
-        $("#priority").select2();
-        $("#corporate_industry").select2({ dropdownParent: $("#add_edit_company_modal") });
-        $("#corporate_industry").val(corporate_industry);
+          var company_tat = d.CompanyTAT;
+          var company_po_wo = d.CompanyPOWO;
+          var company_po_wo_date = d.CompanyPOWODate;
+          var admin_username = d.UserName;
+          var TicketsNeedApproval = d.TicketsNeedApproval;
+          var TicketNeedsWAMessage = d.TicketNeedsWAMessage;
+          var AccountManager = d.AccountManager;
 
-       
-        if(TicketsNeedApproval == 1)
-        {
-           $("#need_approval_by_company_admin").prop("checked", true);
+          $("#corporate_name").val(corporate_name);
+          $("#company_name").val(company_name);
+          $("#company_email").val(company_email);
+          $("#company_phone").val(company_phone);
+          $("#company_mobile").val(company_mobile);
+          $("#company_tendor").val(company_tendor_array);
+          $("#company_tat").val(company_tat);
+          $("#company_po_wo").val(company_po_wo);
+          $("#company_po_wo_date").val(company_po_wo_date);
+          $("#admin_username").val(admin_username);
+          $("#form_action").val("Update");
+          $("#form_id").val(company_id);
+          $("#account_manager").val(AccountManager);
+          $("#corporate_industry").val(corporate_industry);
+          $("#additional_priorities").val(d.AdditionalPriorities);
+
+          if (TicketsNeedApproval == 1) {
+            $("#need_approval_by_company_admin").prop("checked", true);
+          } else {
+            $("#need_approval_by_company_admin").prop("checked", false);
+          }
+          if (TicketNeedsWAMessage == 1) {
+            $("#need_wa_message").prop("checked", true);
+          } else {
+            $("#need_wa_message").prop("checked", false);
+          }
+
+          $("#company_po_wo_date").datepicker({
+            format: "yyyy-mm-dd",
+            todayBtn: "linked",
+            clearBtn: true,
+            todayHighlight: true,
+            autoclose: true,
+          });
+
+          $("#add_edit_company_modal").modal("show");
+          initCompanyModalSelect2();
+          // Use change.select2 so native onchange="AMCSelecte()" is not fired
+          $("#corporate_name, #account_manager, #corporate_industry, #company_tendor").trigger(
+            "change.select2"
+          );
+        } else {
+          TechXAlert(response.message || "Unable to load company details");
         }
-        else
-        {
-           $("#need_approval_by_company_admin").prop("checked", false);
-        }
-        if(TicketNeedsWAMessage == 1)
-        {
-           $("#need_wa_message").prop("checked", true);
-        }
-        else
-        {
-           $("#need_wa_message").prop("checked", false);
-        }
-        $("#additional_priorities").val(response.data.AdditionalPriorities);
-        $("#company_po_wo_date").datepicker({
-          format: "yyyy-mm-dd",
-          todayBtn: "linked",
-          clearBtn: true,
-          todayHighlight: true,
-          autoclose: true,
-        });
-         $("#add_edit_company_modal").modal();
+      } catch (e) {
+        console.error("UpdateCompany_modal error", e, data);
+        TechXAlert("Unable to open company details. Please try again.");
       }
     }
-  );
+  ).fail(function (xhr, status, error) {
+    console.error("get_company_details failed", status, error);
+    TechXAlert("Unable to load company details. Please try again.");
+  });
 }
 function DeleteCompany(company_id) {
   alertify.confirm(
@@ -242,19 +259,10 @@ function AddUpdateCompany() {
   return false;
 }
 
-// function AMCSelecte() {
-//   // let AMCselect = document.getElementById("company_tendor");
-//   let AMCdate = document.getElementById("amc_start_date");
-//   let Enddate = document.getElementById("amc_end_date");
-//   let selectedOption = $("#company_tendor").val();
-//   if (!selectedOption.includes("AMC")) {
-//     AMCdate.disabled = true;
-//     Enddate.disabled = true;
-//   } else {
-//     AMCdate.disabled = false;
-//     Enddate.disabled = false;
-//   }
-// }
+// Kept as no-op because some environments still call onchange="AMCSelecte()" on tendor
+function AMCSelecte() {
+  return;
+}
 
 function ViewBranches(CompanyID)
 {

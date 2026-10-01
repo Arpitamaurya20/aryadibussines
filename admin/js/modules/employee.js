@@ -1,5 +1,114 @@
 
 
+function initEmployeeSearchSelects(container, modalSelector) {
+  if (typeof $.fn.select2 !== "function") {
+    return;
+  }
+
+  var $scope = container ? $(container) : $(document);
+  var $selects = $scope.find("select.emp-search-select");
+  if ($scope.is("select.emp-search-select")) {
+    $selects = $selects.add($scope);
+  }
+
+  $selects.each(function () {
+    var $el = $(this);
+    if ($el.hasClass("select2-hidden-accessible")) {
+      return;
+    }
+
+    if (!modalSelector && $el.closest(".modal").length) {
+      return;
+    }
+
+    var opts = {
+      width: "100%",
+      minimumResultsForSearch: 0,
+      dropdownAutoWidth: false,
+      placeholder: $el.data("placeholder") || "Search...",
+      allowClear: $el.data("allowClear") === 1 || $el.data("allowClear") === "1",
+    };
+
+    var $modal = modalSelector ? $(modalSelector) : $el.closest(".modal");
+    if ($modal.length) {
+      opts.dropdownParent = $modal;
+    }
+
+    $el.select2(opts);
+  });
+}
+
+function bindEmployeeStateCityFilter(stateSelector, citySelector) {
+  var $state = $(stateSelector);
+  var $city = $(citySelector);
+
+  if (!$state.length || !$city.length) {
+    return;
+  }
+
+  if (!$city.data("allOptions")) {
+    $city.data("allOptions", $city.find("option").clone());
+  }
+
+  function rebuildCityOptions() {
+    var selectedState = ($state.val() || "").trim();
+    var allOptions = $city.data("allOptions");
+    var currentCity = $city.val();
+    var wasSelect2 = $city.hasClass("select2-hidden-accessible");
+    var $modal = $city.closest(".modal");
+
+    if (wasSelect2) {
+      $city.select2("destroy");
+    }
+
+    $city.empty();
+
+    if (!selectedState) {
+      $city.append('<option value="">Please Select State First</option>');
+    } else {
+      $city.append('<option value="">Please Select</option>');
+      allOptions.each(function () {
+        var $opt = $(this);
+        var val = ($opt.val() || "").trim();
+        if (!val) {
+          return;
+        }
+        var optState = ($opt.data("state") || "").toString().trim();
+        if (optState === selectedState) {
+          $city.append($opt.clone());
+        }
+      });
+    }
+
+    if (currentCity && $city.find('option[value="' + currentCity.replace(/"/g, '\\"') + '"]').length) {
+      $city.val(currentCity);
+    } else {
+      $city.val("");
+    }
+
+    if (wasSelect2) {
+      initEmployeeSearchSelects($city.parent(), $modal.length ? $modal : null);
+    }
+
+    $city.trigger("change");
+  }
+
+  $state.off("change.empStateCity").on("change.empStateCity", rebuildCityOptions);
+  rebuildCityOptions();
+}
+
+function initEmployeeStateCityLinks(scope) {
+  var $scope = scope ? $(scope) : $(document);
+  $scope.find("#statedata, select[name='employee_state']").each(function () {
+    var $state = $(this);
+    var $form = $state.closest("form, .panel-content, .modal-body, #js-page-content");
+    var $city = $form.find("#citydata, select[name='employee_city']").first();
+    if ($city.length) {
+      bindEmployeeStateCityFilter($state, $city);
+    }
+  });
+}
+
 function checkDates() 
 {
       const dateFrom = document.getElementById('from_date');
@@ -45,6 +154,11 @@ function AddEmployee() {
   if (check_work_type == "Employee") {
     if (EmployeeDepartment == "") {
       TechXAlert("Please Select Employee Department");
+      return false;
+    }
+    var companyId = document.getElementById("company_id").value;
+    if (companyId == "") {
+      TechXAlert("Please Select Company");
       return false;
     }
   }
@@ -191,29 +305,21 @@ function UpdateEmployee() {
 }
 
 $(document).ready(function () {
+    initEmployeeSearchSelects("#js-page-content");
+    initEmployeeStateCityLinks("#js-page-content");
 
     $('#editdetails').on('shown.bs.modal', function () {
-
-        // City Select2
-        $('#citydata').select2({
-            dropdownParent: $('#editdetails'),
-            width: '100%'
-        });
-
-        // State Select2
-        $('#statedata').select2({
-            dropdownParent: $('#editdetails'),
-            width: '100%'
-        });
-
-        // Weekly Off Select2
-        $('#weekly_off').select2({
-            dropdownParent: $('#editdetails'),
-            width: '100%'
-        });
-
+        initEmployeeSearchSelects(this, '#editdetails');
+        initEmployeeStateCityLinks(this);
     });
 
+    $('#editrole').on('shown.bs.modal', function () {
+        initEmployeeSearchSelects(this, '#editrole');
+    });
+
+    $('#exportEmployeeModal').on('shown.bs.modal', function () {
+        initEmployeeSearchSelects(this, '#exportEmployeeModal');
+    });
 });
 
 function UpdateEmployeeSalary() {
@@ -244,15 +350,13 @@ function UpdateEmployeeSalary() {
 
 
 function ViewEmployee(EmployeeID) {
-  $.post(
-    "../controllers/setSession.php",
-    {
-      EmployeeID: EmployeeID,
-    },
-    function (data, status) {
-      BasicURLRouter("view_employee");
-    }
-  );
+  EmployeeID = parseInt(EmployeeID, 10);
+  if (!EmployeeID || EmployeeID <= 0) {
+    TechXAlert("Unable to open employee profile.");
+    return false;
+  }
+  window.location.href = "view_employee.php?ID=" + EmployeeID;
+  return false;
 }
 
 
@@ -406,9 +510,7 @@ function ChangeRole_Supervisor() {
 //  multiple select js
 
 function openrolemodal() {
-  $("#supervisor_dropdown").select2();
-  $("#role_dropdown").select2();
-  $("#division_dropdown").select2();
+  initEmployeeSearchSelects("#editrole", "#editrole");
   $("#editrole").modal();
 }
 
@@ -436,16 +538,26 @@ function opendetailmodal() {
     todayHighlight: true,
     autoclose: true,
   });
-  var city_value = $("#city_Select_value").val();
-  var mySelect2 = $("#citydata");
-  mySelect2.val(city_value).trigger("change");
+  $("#edit_dob").datepicker({
+    format: "yyyy-mm-dd",
+    todayBtn: "linked",
+    clearBtn: true,
+    todayHighlight: true,
+    autoclose: true,
+    endDate: new Date(),
+  });
   var weekly_off = $("#temp_weekly_off").val();
-  mySelect2 = $("#weekly_off");
-  mySelect2.val(weekly_off).trigger("change");
+  $("#weekly_off").val(weekly_off).trigger("change");
 
   $("#editdetails").modal();
-  $("#citydata").select2();
-  $("#weekly_off").select2();
+  initEmployeeSearchSelects("#editdetails", "#editdetails");
+  initEmployeeStateCityLinks("#editdetails");
+
+  var city_value = $("#city_Select_value").val();
+  if (city_value) {
+    $("#citydata").val(city_value).trigger("change");
+  }
+
   var vendorcheck = document.getElementById("division");
   var selectedOption = vendorcheck.options[vendorcheck.selectedIndex];
   var divisionvalue = selectedOption.value;
@@ -466,25 +578,28 @@ function opensalarymodal() {
 
 function EnableDisableDivision(work_type) {
   if (work_type == "Vendor") {
-    // document.getElementById("division").disabled = true;
-    // document.getElementById("division_textbox").disabled = false;
-    // document.getElementById("division").style.display = "none";
-    // document.getElementById("division_textbox").style.display = "";
-
     document.getElementById("employee_department").disabled = true;
     document.getElementById("department_textbox").disabled = false;
     document.getElementById("employee_department").style.display = "none";
     document.getElementById("department_textbox").style.display = "";
+    if (document.getElementById("company_field_wrap")) {
+      document.getElementById("company_field_wrap").style.display = "none";
+    }
+    if (document.getElementById("company_id")) {
+      document.getElementById("company_id").required = false;
+      document.getElementById("company_id").value = "";
+    }
   } else {
-    // document.getElementById("division").disabled = false;
-    // document.getElementById("division_textbox").disabled = true;
-    // document.getElementById("division").style.display = "";
-    // document.getElementById("division_textbox").style.display = "none";
-
     document.getElementById("employee_department").disabled = false;
     document.getElementById("department_textbox").disabled = true;
     document.getElementById("employee_department").style.display = "";
     document.getElementById("department_textbox").style.display = "none";
+    if (document.getElementById("company_field_wrap")) {
+      document.getElementById("company_field_wrap").style.display = "";
+    }
+    if (document.getElementById("company_id")) {
+      document.getElementById("company_id").required = true;
+    }
   }
 }
 
@@ -575,15 +690,19 @@ function validISNumber(basic) {
 
 
 function ExportEmployeeData() {
-  $.ajax({
-      url: "action/export_employee.php",
-      type: "POST",
-      data: $("#import_form").serialize(),
-      success: function (data) {
-          window.location.href = "report.xls";
-      },
-  });
+  var form = document.getElementById('export_employee_form');
+  if (!form) {
+    return false;
+  }
+  var formData = new FormData(form);
+  var params = new URLSearchParams(formData).toString();
+  window.location.href = 'action/export_employee.php?' + params;
+  $('#exportEmployeeModal').modal('hide');
   return false;
+}
+
+function openExportEmployeeModal() {
+  $('#exportEmployeeModal').modal('show');
 }
 
 function DownloadEmployeeDataAssetsFileFormat() {
@@ -638,9 +757,7 @@ function OpenLeave_modal() {
             autoclose: true,
       });
 
-    $("#type_of_leave").select2();
-    $("#reason_of_leave").select2();
-
+    initEmployeeSearchSelects("#add_edit_leave_modal", "#add_edit_leave_modal");
 }
 
 function UpdateLeave_modal(leave_id)
@@ -662,8 +779,7 @@ function UpdateLeave_modal(leave_id)
             $("#to_date").val(ToDate);
             $("#form_action").val("Update");
             $("#form_id").val(leave_id);
-            $("#type_of_leave").select2();
-            $("#reason_of_leave").select2();
+            initEmployeeSearchSelects("#add_edit_leave_modal", "#add_edit_leave_modal");
 
         }
     });
@@ -771,12 +887,80 @@ function GenerateEmployeeAttendanceDetails(EmployeeID)
   },
   function(data, status) 
   {
-      $("#employee_attendance_table").html(data);
+      var summaryMatch = data.match(/<!--ATT_SUMMARY:(.*?)-->/);
+      var tableHtml = data.replace(/<!--ATT_SUMMARY:.*?-->/, '');
+      $("#employee_attendance_table").html(tableHtml);
       var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
       var monthIndex = parseInt(current_month, 10) - 1;
       if (monthIndex >= 0 && monthIndex < 12) {
         $(".att-report-subtitle").first().html(monthNames[monthIndex] + " " + current_year + " &mdash; For Employee Acknowledgment");
       }
+      if (summaryMatch && summaryMatch[1]) {
+        try {
+          updateEmployeeAttendancePieChart(JSON.parse(summaryMatch[1]));
+        } catch (e) {}
+      }
+  });
+}
+
+var employeeAttendancePieChart = null;
+
+function updateEmployeeAttendancePieChart(summary) {
+  var canvas = document.getElementById('employeeAttendancePieChart');
+  if (!canvas || typeof Chart === 'undefined') {
+    return;
+  }
+  var present = parseInt(summary.present, 10) || 0;
+  var absent = parseInt(summary.absent, 10) || 0;
+  var halfDay = parseInt(summary.half_day, 10) || 0;
+  var holiday = parseInt(summary.holiday, 10) || 0;
+  var weeklyOff = parseInt(summary.weekly_off, 10) || 0;
+  var leave = parseInt(summary.leave, 10) || 0;
+  var pendingLeave = parseInt(summary.pending_leave, 10) || 0;
+  var labels = ['Present', 'Absent', 'Half Day'];
+  var data = [present, absent, halfDay];
+  var colors = ['#28a745', '#dc3545', '#ffc107'];
+  if (weeklyOff > 0) {
+    labels.push('Weekly Off');
+    data.push(weeklyOff);
+    colors.push('#17a2b8');
+  }
+  if (holiday > 0) {
+    labels.push('Public Holiday');
+    data.push(holiday);
+    colors.push('#9b59b6');
+  }
+  if (leave > 0) {
+    labels.push('Leave');
+    data.push(leave);
+    colors.push('#1d4ed8');
+  }
+  if (pendingLeave > 0) {
+    labels.push('Pending Leave');
+    data.push(pendingLeave);
+    colors.push('#f97316');
+  }
+  if (employeeAttendancePieChart) {
+    employeeAttendancePieChart.destroy();
+  }
+  employeeAttendancePieChart = new Chart(canvas.getContext('2d'), {
+    type: 'doughnut',
+    data: {
+      labels: labels,
+      datasets: [{
+        data: data,
+        backgroundColor: colors,
+        borderWidth: 2,
+        borderColor: '#fff'
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: true,
+      plugins: {
+        legend: { position: 'bottom', labels: { font: { size: 12 } } }
+      }
+    }
   });
 }
 

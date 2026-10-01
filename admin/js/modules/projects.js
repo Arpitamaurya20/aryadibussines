@@ -369,31 +369,42 @@ function DownloadDprReport(TicketID) {
     return false;
   }
 
-  window.location.href = './action/generate-dpr-report.php?TicketID=' + encodeURIComponent(TicketID) + '&Action=Download';
+  window.location.href = './action/generate-dpr-report-pro.php?TicketID=' + encodeURIComponent(TicketID) + '&Action=Download';
 }
 
 
 function SendDprReport(TicketID) {
-  // Use form submission for automatic download (works better than AJAX for file downloads)
-  var form = $('<form>', {
-    'method': 'POST',
-    'action': './action/generate-dpr-report.php',
-    'target': '_blank'
+  if (!TicketID) {
+    TechXAlert("Ticket ID not found.");
+    return false;
+  }
+
+  if (!confirm("Send professional DPR mail for THIS ticket only?")) {
+    return false;
+  }
+
+  TechXAlert("Sending DPR mail for this ticket...");
+
+  $.ajax({
+    url: "./action/send-dpr-progression-mail-now.php",
+    type: "POST",
+    dataType: "json",
+    data: { TicketID: TicketID },
+    success: function (response) {
+      if (response && response.error) {
+        TechXAlert(response.message || "Unable to send DPR mail.");
+        return;
+      }
+      var count = response.recipient_count || ((response.recipients || []).length) || 0;
+      TechXAlert(
+        (response.message || "DPR mail sent for this ticket only.") +
+        (count ? (" Recipients: " + count) : "")
+      );
+    },
+    error: function () {
+      TechXAlert("Unable to send DPR mail. Please try again.");
+    }
   });
-  
-  form.append($('<input>', {
-    'type': 'hidden',
-    'name': 'TicketID',
-    'value': TicketID
-  }));
-  
-  form.append($('<input>', {
-    'type': 'hidden',
-    'name': 'Action',
-    'value': 'Send'
-  }));
-  
-  $('body').append(form);
-  form.submit();
-  form.remove();
+
+  return false;
 }

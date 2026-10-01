@@ -43,7 +43,6 @@ function initEmployeeConvenienceTable(param) {
             { data: 'Department' },
             { data: 'Designation' },
             { data: 'Status' },
-            { data: 'PaymentStatus' },
             { data: 'ApprovalInfo' }
         ]
     });

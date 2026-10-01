@@ -23,14 +23,29 @@ function validatePassword(userpassword) {
 }
 function TechXAlert(message)
 {
-	// Get the subdomain
-    var subdomain = window.location.hostname.split('.')[0];
-
-    // Check if the subdomain contains 'innov'
-    var alertTitle = subdomain.includes('innov') ? "Innov" : "TechXpert";
-
-    // Show the alert with the correct title
+    var hostname = (window.location.hostname || '').toLowerCase();
+    var alertTitle = hostname.indexOf('innov') !== -1 ? 'Innov' : 'Aryadibusiness';
+    if (window.alertify && alertify.defaults && alertify.defaults.glossary) {
+        alertify.defaults.glossary.title = alertTitle;
+    }
     alertify.alert(alertTitle, message);
+}
+function TechXAlertThenReload(message)
+{
+    var hostname = (window.location.hostname || '').toLowerCase();
+    var alertTitle = hostname.indexOf('innov') !== -1 ? 'Innov' : 'Aryadibusiness';
+    function reloadPage() {
+        window.location.reload();
+    }
+    if (window.alertify && typeof alertify.alert === "function") {
+        if (alertify.defaults && alertify.defaults.glossary) {
+            alertify.defaults.glossary.title = alertTitle;
+        }
+        alertify.alert(alertTitle, message, reloadPage);
+        return;
+    }
+    window.alert(message);
+    reloadPage();
 }
 function URLRouter(url)
 {

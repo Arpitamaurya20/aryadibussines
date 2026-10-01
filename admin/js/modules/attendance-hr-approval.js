@@ -144,6 +144,119 @@ function showHrAttendanceActionToast(message) {
     TechXAlert(message);
 }
 
+var ATTENDANCE_HR_BULK_CHUNK_SIZE = 10;
+
+function hideAttendanceHrBulkProgress() {
+    var overlay = document.getElementById('attendance-hr-bulk-progress-overlay');
+    if (overlay) {
+        overlay.remove();
+    }
+}
+
+function showAttendanceHrBulkProgress(title, processed, total, statusText) {
+    var safeTotal = Math.max(1, parseInt(total, 10) || 1);
+    var safeProcessed = Math.max(0, Math.min(safeTotal, parseInt(processed, 10) || 0));
+    var pct = Math.round((safeProcessed / safeTotal) * 100);
+    var overlay = document.getElementById('attendance-hr-bulk-progress-overlay');
+
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'attendance-hr-bulk-progress-overlay';
+        overlay.style.cssText = 'position:fixed;inset:0;z-index:99999;background:rgba(15,23,42,.55);display:flex;align-items:center;justify-content:center;';
+        overlay.innerHTML =
+            '<div style="width:min(420px,92vw);background:#fff;border-radius:12px;box-shadow:0 20px 50px rgba(0,0,0,.25);padding:22px;font-family:Poppins,Segoe UI,sans-serif;">' +
+            '  <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">' +
+            '    <div style="width:38px;height:38px;border-radius:50%;border:3px solid #dbeafe;border-top-color:#027dc1;animation:attHrBulkSpin .9s linear infinite;"></div>' +
+            '    <div>' +
+            '      <div id="attendance-hr-bulk-progress-title" style="font-size:15px;font-weight:700;color:#0f172a;"></div>' +
+            '      <div id="attendance-hr-bulk-progress-sub" style="font-size:12px;color:#64748b;margin-top:2px;"></div>' +
+            '    </div>' +
+            '  </div>' +
+            '  <div style="height:10px;background:#e2e8f0;border-radius:999px;overflow:hidden;">' +
+            '    <div id="attendance-hr-bulk-progress-bar" style="height:100%;width:0%;background:linear-gradient(90deg,#027dc1,#0ea5e9);transition:width .25s ease;"></div>' +
+            '  </div>' +
+            '  <div style="display:flex;justify-content:space-between;margin-top:8px;font-size:11px;color:#64748b;">' +
+            '    <span id="attendance-hr-bulk-progress-label">Starting…</span>' +
+            '    <span id="attendance-hr-bulk-progress-pct">0%</span>' +
+            '  </div>' +
+            '</div>' +
+            '<style>@keyframes attHrBulkSpin{to{transform:rotate(360deg)}}</style>';
+        document.body.appendChild(overlay);
+    }
+
+    document.getElementById('attendance-hr-bulk-progress-title').textContent = title || 'Processing…';
+    document.getElementById('attendance-hr-bulk-progress-sub').textContent =
+        (statusText || ('Processed ' + safeProcessed + ' of ' + safeTotal + ' record(s)'));
+    document.getElementById('attendance-hr-bulk-progress-bar').style.width = pct + '%';
+    document.getElementById('attendance-hr-bulk-progress-label').textContent = safeProcessed + ' / ' + safeTotal;
+    document.getElementById('attendance-hr-bulk-progress-pct').textContent = pct + '%';
+}
+
+function runAttendanceHrBulkInChunks(options) {
+    var ids = (options.ids || []).slice();
+    var url = options.url;
+    var title = options.title || 'Processing selected records';
+    var buildPayload = options.buildPayload || function (chunk) { return { IDs: chunk }; };
+    var parseResponse = options.parseResponse || parseHrAttendanceActionResponse;
+    var onDone = options.onDone || function () {};
+    var total = ids.length;
+    var processed = 0;
+    var success = 0;
+    var failed = 0;
+
+    if (total === 0) {
+        onDone({ success: 0, failed: 0, total: 0 });
+        return;
+    }
+
+    showAttendanceHrBulkProgress(title, 0, total, 'Preparing…');
+
+    function nextChunk() {
+        if (ids.length === 0) {
+            showAttendanceHrBulkProgress(title, total, total, 'Finishing…');
+            setTimeout(function () {
+                hideAttendanceHrBulkProgress();
+                onDone({ success: success, failed: failed, total: total });
+            }, 250);
+            return;
+        }
+
+        var chunk = ids.splice(0, ATTENDANCE_HR_BULK_CHUNK_SIZE);
+        showAttendanceHrBulkProgress(title, processed, total);
+
+        $.ajax({
+            url: url,
+            method: 'POST',
+            dataType: 'json',
+            data: buildPayload(chunk),
+            timeout: 120000
+        }).done(function (data) {
+            var response = parseResponse(data);
+            var chunkSuccess = parseInt((response.summary && response.summary.success) || 0, 10);
+            var chunkFailed = parseInt((response.summary && response.summary.failed) || 0, 10);
+            if (!chunkSuccess && !chunkFailed) {
+                if (!response.error) {
+                    chunkSuccess = chunk.length;
+                } else {
+                    chunkFailed = chunk.length;
+                }
+            }
+            success += chunkSuccess;
+            failed += chunkFailed;
+            processed += chunk.length;
+            showAttendanceHrBulkProgress(title, processed, total);
+            setTimeout(nextChunk, 40);
+        }).fail(function () {
+            failed += chunk.length;
+            processed += chunk.length;
+            showAttendanceHrBulkProgress(title, processed, total, 'Network issue on a batch — continuing…');
+            setTimeout(nextChunk, 80);
+        });
+    }
+
+    nextChunk();
+}
+
 function RefreshHrAttendanceApproval(filterDateValue, afterActionId) {
     var selector = '#view-attendance-hr-approval-records';
     var filterState = captureHrAttendanceFilters();
@@ -282,6 +395,8 @@ function initHrAttendanceApprovalTable(param) {
             { data: 'CheckInTime' },
             { data: 'CheckOutTime' },
             { data: 'Duration' },
+            { data: 'AttendanceType', orderable: false, searchable: false },
+            { data: 'AttendanceReason', orderable: false, searchable: false },
             { data: 'ApprovalStatus' },
             { data: 'ApprovalInfo' },
             { data: 'Actions', orderable: false, searchable: false },
@@ -342,17 +457,23 @@ function submitAttendanceHrBulkApprove() {
         return;
     }
     attendanceHrFilterSnapshot = captureHrAttendanceFilters();
-    $.post('action/hr_bulk_approve_attendance.php', { IDs: selected }, function (data) {
-        var response = parseHrAttendanceActionResponse(data);
-        if (!response.error) {
+    $('#btn_attendance_hr_bulk_approve, #btn_attendance_hr_bulk_reject').prop('disabled', true);
+
+    runAttendanceHrBulkInChunks({
+        ids: selected,
+        url: 'action/hr_bulk_approve_attendance.php',
+        title: 'Approving attendance (HR)',
+        onDone: function (result) {
             RefreshHrAttendanceApproval(undefined, selected[0]);
             attendanceHrFilterSnapshot = null;
-            showHrAttendanceActionToast(response.message);
-            return;
+            var message = result.success + ' record(s) approved by HR. ' + result.failed + ' record(s) could not be updated.';
+            if (result.success <= 0) {
+                TechXAlert(message);
+            } else {
+                showHrAttendanceActionToast(message);
+            }
+            updateAttendanceHrSelectionUi();
         }
-        TechXAlert(response.message);
-    }, 'json').fail(function () {
-        TechXAlert('Unable to approve selected records.');
     });
 }
 
@@ -360,34 +481,54 @@ function submitHrAttendanceReject() {
     var mode = document.getElementById('attendance_hr_reject_mode').value;
     var reason = document.getElementById('attendance_hr_reject_reason').value;
     var filterState = attendanceHrFilterSnapshot || captureHrAttendanceFilters();
-    var url = 'action/reject_attendance.php';
-    var payload = { RejectionReason: reason };
 
-    if (mode === 'bulk') {
-        payload.IDs = getSelectedAttendanceHrIds();
-        url = 'action/hr_bulk_reject_attendance.php';
-        if (!payload.IDs.length) {
-            TechXAlert('Please select at least one attendance record.');
-            return;
-        }
-    } else {
-        payload.ID = document.getElementById('attendance_hr_reject_id').value;
+    if (mode !== 'bulk') {
+        var id = document.getElementById('attendance_hr_reject_id').value;
+        $.post('action/reject_attendance.php', { RejectionReason: reason, ID: id }, function (data) {
+            var response = parseHrAttendanceActionResponse(data);
+            if (!response.error) {
+                $('#attendance_hr_reject_modal').modal('hide');
+                var param = buildHrAttendanceFilterParam(filterState);
+                reloadHrAttendanceTableKeepingPosition('#view-attendance-hr-approval-records', 'action/view-attendance-hr-approval-post.php' + param, id, filterState);
+                attendanceHrFilterSnapshot = null;
+                showHrAttendanceActionToast(response.message || 'Attendance rejected by HR.');
+                return;
+            }
+            TechXAlert(response.message || 'Unable to reject attendance.');
+        }, 'json').fail(function () {
+            TechXAlert('Unable to reject attendance. Please try again.');
+        });
+        return;
     }
 
-    $.post(url, payload, function (data) {
-        var response = parseHrAttendanceActionResponse(data);
-        if (!response.error) {
-            $('#attendance_hr_reject_modal').modal('hide');
-            var afterId = mode === 'bulk' ? payload.IDs[0] : payload.ID;
+    var selected = getSelectedAttendanceHrIds();
+    if (!selected.length) {
+        TechXAlert('Please select at least one attendance record.');
+        return;
+    }
+
+    $('#attendance_hr_reject_modal').modal('hide');
+    $('#btn_attendance_hr_bulk_approve, #btn_attendance_hr_bulk_reject').prop('disabled', true);
+
+    runAttendanceHrBulkInChunks({
+        ids: selected,
+        url: 'action/hr_bulk_reject_attendance.php',
+        title: 'Rejecting attendance (HR)',
+        buildPayload: function (chunk) {
+            return { IDs: chunk, RejectionReason: reason };
+        },
+        onDone: function (result) {
             var param = buildHrAttendanceFilterParam(filterState);
-            reloadHrAttendanceTableKeepingPosition('#view-attendance-hr-approval-records', 'action/view-attendance-hr-approval-post.php' + param, afterId, filterState);
+            reloadHrAttendanceTableKeepingPosition('#view-attendance-hr-approval-records', 'action/view-attendance-hr-approval-post.php' + param, selected[0], filterState);
             attendanceHrFilterSnapshot = null;
-            showHrAttendanceActionToast(response.message || 'Attendance rejected by HR.');
-            return;
+            var message = result.success + ' record(s) rejected by HR. ' + result.failed + ' record(s) could not be updated.';
+            if (result.success <= 0) {
+                TechXAlert(message);
+            } else {
+                showHrAttendanceActionToast(message);
+            }
+            updateAttendanceHrSelectionUi();
         }
-        TechXAlert(response.message || 'Unable to reject attendance.');
-    }, 'json').fail(function () {
-        TechXAlert('Unable to reject attendance. Please try again.');
     });
 }
 

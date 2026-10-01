@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/../../includes/media_url.inc.php';
 
 function normalizePhone($number) {
     if (empty($number)) return null;
@@ -17,6 +18,8 @@ function normalizePhone($number) {
     curl_setopt_array($curl, array(
         CURLOPT_URL => 'https://api.interakt.ai/v1/public/message/',
         CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_CONNECTTIMEOUT => 3,
+        CURLOPT_TIMEOUT => 5,
         CURLOPT_CUSTOMREQUEST => 'POST',
         CURLOPT_POSTFIELDS => json_encode([
             "countryCode" => "+91",
@@ -53,6 +56,8 @@ function normalizePhone($number) {
     curl_setopt_array($curl, array(
         CURLOPT_URL => 'https://api.interakt.ai/v1/public/message/',
         CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_CONNECTTIMEOUT => 3,
+        CURLOPT_TIMEOUT => 5,
         CURLOPT_CUSTOMREQUEST => 'POST',
         CURLOPT_POSTFIELDS => json_encode([
             "countryCode" => "+91",
@@ -118,7 +123,10 @@ function getCorporateTicketDetail($conn,$data)
 			$ID = $category['ID'];
 			$categories_array[$ID] = $category['CategoriesName'];
 		}
-		$sql = "SELECT a.*,b.CompanyName,b.ID AS CompanyID,c.BranchSite,c.BranchState,c.BranchAddress1,d.EquipmentName,d.Category,d.SubCategory,d.Make,d.Model,d.SNo from `corporate_tickets` a,company b,branch c,branch_assets d WHERE a.CorporateID = b.ID AND a.BranchID = c.ID and a.BranchAssetID = d.ID and a.ID = $TicketID";
+		$sql = "SELECT a.*,b.CompanyName,b.ID AS CompanyID,c.BranchSite,c.BranchState,c.BranchAddress1,d.EquipmentName,d.Category,d.SubCategory,d.Make,d.Model,d.SNo,
+			(SELECT Name FROM employees WHERE ID = a.AssignedTo LIMIT 1) AS AssignedEmployeeName,
+			(SELECT ContactNumber FROM employees WHERE ID = a.AssignedTo LIMIT 1) AS AssignedEmployeePhone
+			from `corporate_tickets` a,company b,branch c,branch_assets d WHERE a.CorporateID = b.ID AND a.BranchID = c.ID and a.BranchAssetID = d.ID and a.ID = $TicketID";
 
 		$result=mysqli_query($conn,$sql);
 		if($result)
@@ -167,7 +175,10 @@ function getCorporateTicketDetail($conn,$data)
 			    }
 			}
 
-		$sql = "SELECT a.*,b.CompanyName,b.ID as CompanyID,c.BranchSite,c.BranchState,c.BranchAddress1,c.BranchCode from `corporate_tickets` a,company b,branch c WHERE a.CorporateID = b.ID AND a.BranchID = c.ID and a.ID = $TicketID";
+		$sql = "SELECT a.*,b.CompanyName,b.ID as CompanyID,c.BranchSite,c.BranchState,c.BranchAddress1,c.BranchCode,
+			(SELECT Name FROM employees WHERE ID = a.AssignedTo LIMIT 1) AS AssignedEmployeeName,
+			(SELECT ContactNumber FROM employees WHERE ID = a.AssignedTo LIMIT 1) AS AssignedEmployeePhone
+			from `corporate_tickets` a,company b,branch c WHERE a.CorporateID = b.ID AND a.BranchID = c.ID and a.ID = $TicketID";
 		//echo $sql;
 		$result=mysqli_query($conn,$sql);
 		if($result)
@@ -268,7 +279,7 @@ function getGeneralServiceReportDetails($conn,$data)
 	{
 		if($general_service_report_details['ClientSignature'] != "")
 		{
-			$general_service_report_details['ClientSignature'] = "https://techxpertindia.in/admin/media/signature/".$general_service_report_details['ClientSignature'];
+			$general_service_report_details['ClientSignature'] = signatureMediaUrl($general_service_report_details['ClientSignature']);
 		}
 		$response = $general_service_report_details;
 	}
@@ -563,7 +574,12 @@ function ManageTicketAssignmentStatus($conn,$data)
 		$Old_TicketStatus = $old_ticket_data['Status'];
 		$Remarks = $old_ticket_data['Remarks'];
 		$TicketStatus = $data['TicketStatus'];
-		$AssignedTo = $AssignedTo_raw = $data['AssignedTo'];	
+		$AssignedTo = $AssignedTo_raw = isset($data['AssignedTo']) ? $data['AssignedTo'] : 0;
+		if ((int) $AssignedTo <= 0 && isset($old_ticket_data['AssignedTo']) && (int) $old_ticket_data['AssignedTo'] > 0) {
+			$AssignedTo = $AssignedTo_raw = $old_ticket_data['AssignedTo'];
+		}
+		$AssignedTo = (int) $AssignedTo;
+		$AssignedTo_raw = $AssignedTo;
 		$DueDate = $data['DueDate'];
 		if(isset($data['Remarks']))
 		{
@@ -690,6 +706,9 @@ function ManageTicketAssignmentStatus($conn,$data)
 		// get employee details
 		$where = " where ID = $AssignedTo";
 		$employee_details = _getTableDetails($conn,'employees',$where);
+		if (!is_array($employee_details) || empty($employee_details['Name'])) {
+			$employee_details = array('Name' => '', 'ContactNumber' => '', 'Email' => '');
+		}
 		$EmployeeName = $employee_details['Name'];
 		$EmployeePhone = $employee_details['ContactNumber'];
 		$EmployeeEmail = $employee_details['Email'];
@@ -1044,6 +1063,11 @@ function ManageTicketAssignmentStatus($conn,$data)
 				}
 				sendWhatsAppMessage($ABM_PhoneNumber,$message);
 
+			}
+			else if ($TicketStatus == "Quote Approved" || $TicketStatus == "Quote Sent Approval Pending" || $TicketStatus == "Quote Pending Company Admin Approval" || $TicketStatus == "Escalated")
+			{
+				$response['error'] = false;
+				$response['message'] = "Ticket Updated!";
 			}
 			else
 			{
@@ -1550,9 +1574,9 @@ function getMediaTicketImage($conn,$TicketID)
 }
 
 function InserTicketConversation($conn,$data){
-	$TicketID = $data['TicketID'];
-	$Message = $data['message'];
-	$CreatedBy = $data['CreatedBy'];
+	$TicketID = (int)$data['TicketID'];
+	$Message = mysqli_real_escape_string($conn, $data['message']);
+	$CreatedBy = mysqli_real_escape_string($conn, $data['CreatedBy']);
    $CreatedDate = date('Y-m-d');
    $CreatedTime = date('H:i:s');
 
@@ -1853,7 +1877,7 @@ function gethvacServiceReportDetails($conn,$data)
 	{
 		if($general_service_report_details['ClientSignature'] != "")
 		{
-			$general_service_report_details['ClientSignature'] = "https://techxpertindia.in/admin/media/signature/".$general_service_report_details['ClientSignature'];
+			$general_service_report_details['ClientSignature'] = signatureMediaUrl($general_service_report_details['ClientSignature']);
 		}
 		$response = $general_service_report_details;
 	}
@@ -1892,7 +1916,7 @@ function getCCtvServiceReportDetails($conn,$data)
 	{
 		if($general_service_report_details['ClientSignature'] != "")
 		{
-			$general_service_report_details['ClientSignature'] = "https://techxpertindia.in/admin/media/signature/".$general_service_report_details['ClientSignature'];
+			$general_service_report_details['ClientSignature'] = signatureMediaUrl($general_service_report_details['ClientSignature']);
 		}
 		$response = $general_service_report_details;
 	}
@@ -1930,7 +1954,7 @@ function getFASServiceReportDetails($conn,$data)
 	{
 		if($general_service_report_details['ClientSignature'] != "")
 		{
-			$general_service_report_details['ClientSignature'] = "https://techxpertindia.in/admin/media/signature/".$general_service_report_details['ClientSignature'];
+			$general_service_report_details['ClientSignature'] = signatureMediaUrl($general_service_report_details['ClientSignature']);
 		}
 		$response = $general_service_report_details;
 	}
@@ -1968,7 +1992,7 @@ function getUPSServiceReportDetails($conn,$data)
 	{
 		if($general_service_report_details['ClientSignature'] != "")
 		{
-			$general_service_report_details['ClientSignature'] = "https://techxpertindia.in/admin/media/signature/".$general_service_report_details['ClientSignature'];
+			$general_service_report_details['ClientSignature'] = signatureMediaUrl($general_service_report_details['ClientSignature']);
 		}
 		$response = $general_service_report_details;
 	}
@@ -2006,7 +2030,7 @@ function getEpServiceReportDetails($conn,$data)
 	{
 		if($general_service_report_details['ClientSignature'] != "")
 		{
-			$general_service_report_details['ClientSignature'] = "https://techxpertindia.in/admin/media/signature/".$general_service_report_details['ClientSignature'];
+			$general_service_report_details['ClientSignature'] = signatureMediaUrl($general_service_report_details['ClientSignature']);
 		}
 		$response = $general_service_report_details;
 	}

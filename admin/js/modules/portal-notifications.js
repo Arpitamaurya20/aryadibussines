@@ -1,19 +1,5 @@
 var portalNotificationPollTimer = null;
 
-function portalNotificationsListUrl() {
-    if (window.TechXpertPortalNotifications && window.TechXpertPortalNotifications.listUrl) {
-        return window.TechXpertPortalNotifications.listUrl;
-    }
-    return '../notifications/action/get_portal_notifications.php';
-}
-
-function portalNotificationsSeenUrl() {
-    if (window.TechXpertPortalNotifications && window.TechXpertPortalNotifications.seenUrl) {
-        return window.TechXpertPortalNotifications.seenUrl;
-    }
-    return '../notifications/action/mark_notification_seen.php';
-}
-
 function loadPortalHeaderNotifications() {
     var $badge = $('#portal-notification-count');
     var $list = $('#portal-notification-list');
@@ -21,7 +7,7 @@ function loadPortalHeaderNotifications() {
         return;
     }
 
-    $.getJSON(portalNotificationsListUrl(), function (response) {
+    $.getJSON('../notifications/action/get_portal_notifications.php', function (response) {
         if (!response || response.error) {
             return;
         }
@@ -73,7 +59,7 @@ function escapePortalHtml(value) {
 }
 
 function markPortalNotificationSeen(notificationId) {
-    $.post(portalNotificationsSeenUrl(), {
+    $.post('../notifications/action/mark_notification_seen.php', {
         notification_id: notificationId
     }, function () {
         loadPortalHeaderNotifications();

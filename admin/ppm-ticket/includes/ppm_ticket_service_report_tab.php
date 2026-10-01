@@ -1,6 +1,13 @@
 <?php
 $service_report_obj = new Servicereport($conn);
 $service_report_details = $service_report_obj->GetPPMServiceReportDetails($ID);
+$corporate_ticket_data = is_array($corporate_ticket_data ?? null) ? $corporate_ticket_data : array();
+$ticketType = $corporate_ticket_data['Type'] ?? ($corporate_ticket_data['TicketType'] ?? '');
+$clientTicketRef = $corporate_ticket_data['ClientTicketID']
+    ?? ($corporate_ticket_data['ClientTicket'] ?? '');
+$ticketIdDisplay = $corporate_ticket_data['TicketID'] ?? '';
+$categoryName = $corporate_ticket_data['CategoryName']
+    ?? ($corporate_ticket_data['Category'] ?? '');
 $edit_service_report = 0;
 if($UserType == "Admin"|| $Accounts_Manager ||  $TicketManager || $CityLead)
 {
@@ -59,7 +66,7 @@ if($UserType == "Admin"|| $Accounts_Manager ||  $TicketManager || $CityLead)
                       if($service_report_details != null)
                       {
                         ?>
-                        <input type="hidden" id="report_service_type" value="<?php echo $corporate_ticket_data['Type']; ?>" />
+                        <input type="hidden" id="report_service_type" value="<?php echo htmlspecialchars($ticketType); ?>" />
                         <input type="hidden" id="UseDynamicPPM" value="<?php echo isset($useDynamicPpm) ? (int) $useDynamicPpm : 0; ?>" />
                         <input type="hidden" id="HasDynamicReport" value="<?php echo (!empty($dynamicPpmReportBundle) && !empty($dynamicPpmReportBundle['has_report'])) ? '1' : '0'; ?>" />
                         <input type="hidden" id="PpmTicketDbId" value="<?php echo (int) $ID; ?>" />
@@ -75,14 +82,14 @@ if($UserType == "Admin"|| $Accounts_Manager ||  $TicketManager || $CityLead)
                                     <tr>
                                         <th>Ticket ID </th>
                                         <td>
-                                            <?php echo $corporate_ticket_data['TicketID']; ?>
+                                            <?php echo htmlspecialchars($ticketIdDisplay); ?>
                                         </td>
                                     </tr>
 
                                     <tr>
                                         <th>Client Ticket Reference </th>
                                         <td>
-                                            <?php echo $corporate_ticket_data['ClientTicketID']; ?>
+                                            <?php echo $clientTicketRef !== '' ? htmlspecialchars($clientTicketRef) : 'N/A'; ?>
                                         </td>
                                     </tr>
 
@@ -175,9 +182,9 @@ if($UserType == "Admin"|| $Accounts_Manager ||  $TicketManager || $CityLead)
 
                                     <!-- Service Report Details -->
                                     <?php
-                                    if($corporate_ticket_data['Type'] == "AMC") 
+                                    if($ticketType == "AMC") 
                                     {
-                                        if($corporate_ticket_data['CategoryName'] == "HVAC")
+                                        if($categoryName == "HVAC")
                                         {
                                             $ServiceReportID = $service_report_details['ID'];
                                             $where = " where ServiceReportID = $ServiceReportID";

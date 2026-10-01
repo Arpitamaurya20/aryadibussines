@@ -26,6 +26,6 @@ function LoadAccountDashboard()
           sql_in_state_string:sql_in_state_string
 	  },
 	  function(data, status) {
-	      document.getElementById("daily_tracker_status_html").innerHTML = data;
+	      document.getElementById("daily_tracker_html").innerHTML = data;
 	  });
 }

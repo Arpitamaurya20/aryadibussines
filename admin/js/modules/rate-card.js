@@ -124,6 +124,54 @@ function FilterRateCard()
     });
 }
 
+function findRateCardCategoryOption(selectEl, categoryName) {
+    var name = (categoryName || '').toString().trim().toLowerCase();
+    if (!selectEl || !name) {
+        return null;
+    }
+    for (var i = 0; i < selectEl.options.length; i++) {
+        var opt = selectEl.options[i];
+        var val = (opt.value || '').toString().trim().toLowerCase();
+        var text = (opt.text || '').toString().trim().toLowerCase();
+        var id = (opt.getAttribute('data-id') || '').toString().trim().toLowerCase();
+        if (val === name || text === name || id === name) {
+            return opt;
+        }
+    }
+    return null;
+}
+
+function setEditSubCategoryOptions(html, selectedSubCategory) {
+    var subSelect = document.getElementById('editSubCategory');
+    if (!subSelect) {
+        return;
+    }
+    var optionsHtml = html || '<option value="">Please Select</option>';
+    var $parsed = $('<div>').html(html);
+    if ($parsed.find('select').length) {
+        optionsHtml = $parsed.find('select').html();
+    }
+    subSelect.innerHTML = optionsHtml;
+    if (selectedSubCategory) {
+        var matched = false;
+        var want = selectedSubCategory.toString().trim().toLowerCase();
+        $('#editSubCategory option').each(function () {
+            if (($(this).val() || '').toString().trim().toLowerCase() === want) {
+                $('#editSubCategory').val($(this).val());
+                matched = true;
+                return false;
+            }
+        });
+        if (!matched) {
+            $('#editSubCategory').append($('<option>', {
+                value: selectedSubCategory,
+                text: selectedSubCategory,
+                selected: true
+            }));
+        }
+    }
+}
+
 function UpdateRateCard(ID){
     $.ajax({
         url: './action/fetch_rate_card.php',
@@ -131,13 +179,13 @@ function UpdateRateCard(ID){
         data: {ID: ID},
         dataType: 'json',
         success: function(res){
+            if (!res || res.error) {
+                TechXAlert((res && res.error) ? res.error : 'Unable to load rate card.');
+                return;
+            }
+
             $('#editID').val(res.ID);
             $('#editType').val(res.Type);
-            $('#editCategory').val(res.Category);
-
-            // Load subcategories for this category
-            GetEditSubCategories(res.Category, res.SubCategory);
-
             $('#editLineItemName').val(res.LineItemName);
             $('#editMake').val(res.Make);
             $('#editHSN').val(res.HSN);
@@ -146,30 +194,54 @@ function UpdateRateCard(ID){
             $('#editPrice').val(res.Price);
             $('#editTax').val(res.Tax);
 
+            GetEditSubCategories(res.Category, res.SubCategory);
             $('#editRateCardModal').modal('show');
+        },
+        error: function () {
+            TechXAlert('Unable to load rate card.');
         }
     });
 }
 
 
-function GetEditSubCategories(categoryName, selectedSubCategory = ''){
+function GetEditSubCategories(categoryName, selectedSubCategory){
+    selectedSubCategory = selectedSubCategory || '';
     var selectElement = document.getElementById('editCategory');
-    var selectedOption = selectElement.options[selectElement.selectedIndex];
-    var categoryId = selectedOption.getAttribute('data-id'); // note: in your PHP you already set data-id
+    if (!selectElement) {
+        return;
+    }
+
+    var selectedOption = findRateCardCategoryOption(selectElement, categoryName);
+    if (!selectedOption && categoryName) {
+        selectedOption = new Option(categoryName, categoryName, true, true);
+        selectElement.add(selectedOption);
+    }
+
+    if (selectedOption) {
+        selectedOption.selected = true;
+        $('#editCategory').val(selectedOption.value);
+    } else {
+        selectElement.selectedIndex = 0;
+    }
+
+    var categoryId = selectedOption ? (selectedOption.getAttribute('data-id') || '') : '';
+    if (!categoryId) {
+        setEditSubCategoryOptions(
+            '<option value="">Please Select</option><option value="Others">Others</option>',
+            selectedSubCategory
+        );
+        return;
+    }
 
     $.post("action/get_subcategories_filter.php", {
         "CategoryID": categoryId
-    }, function(data, status){
-        document.getElementById("editSubCategory").innerHTML = data;
-        $("#editSubCategory").select2(); // if you want select2 also in edit modal
-        if(selectedSubCategory){
-            $("#editSubCategory").val(selectedSubCategory).trigger('change');
-        }
+    }, function(data){
+        setEditSubCategoryOptions(data, selectedSubCategory);
     });
 }
 
 
-$('#editCategory').on('change', function(){
+$(document).on('change', '#editCategory', function(){
     GetEditSubCategories($(this).val());
 });
 

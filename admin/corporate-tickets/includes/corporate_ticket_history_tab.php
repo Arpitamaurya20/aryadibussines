@@ -54,12 +54,19 @@ $ticket_history_array = $core->_getTableRecords($conn,'corporate_ticket_status_h
             <div class="col-md-12">
                 <div class="timeline">
                     <?php 
+                    if (!is_array($ticket_history_array)) {
+                        $ticket_history_array = array();
+                    }
                     foreach($ticket_history_array as $ticket_history)
                     {
                         $EmployeeName = "";
-                        if($ticket_history['AssignedTo'] != "" && $ticket_history['AssignedTo'] != -1)
+                        $assignedTo = isset($ticket_history['AssignedTo']) ? $ticket_history['AssignedTo'] : '';
+                        if ($assignedTo !== '' && (int) $assignedTo > 0)
                         {
-                            $EmployeeName = getEmployeeDetailsfromID($conn,$ticket_history['AssignedTo'])['Name'];
+                            $assigned_employee = getEmployeeDetailsfromID($conn, (int) $assignedTo);
+                            if (is_array($assigned_employee) && !empty($assigned_employee['Name'])) {
+                                $EmployeeName = $assigned_employee['Name'];
+                            }
                         }
                     ?>
                         <!-- Example timeline item -->

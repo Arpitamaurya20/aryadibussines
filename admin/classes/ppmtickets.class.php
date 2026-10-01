@@ -294,7 +294,8 @@ class Ppmtickets extends Core
 		{
 			if($general_service_report_details['ClientSignature'] != "")
 			{
-				$general_service_report_details['ClientSignature'] = "https://techxpertindia.in/admin/media/signature/".$general_service_report_details['ClientSignature'];
+				require_once __DIR__ . '/../includes/media_url.inc.php';
+				$general_service_report_details['ClientSignature'] = signatureMediaUrl($general_service_report_details['ClientSignature']);
 			}
 			if($category_id == 34)
 			{

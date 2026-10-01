@@ -25,23 +25,29 @@ function te_closedStatuses()
     return array('Closed', 'Cancel', 'Cancelled');
 }
 
+function te_employeeName($emp)
+{
+    return (is_array($emp) && isset($emp['Name']) && $emp['Name'] !== '') ? $emp['Name'] : '';
+}
+
 function te_resolveEmployeeIdFromSession($conn, $session)
 {
-    if (isset($session['Roles']['EmployeeID']) && (int) $session['Roles']['EmployeeID'] > 0) {
-        return (int) $session['Roles']['EmployeeID'];
+    $roles = (isset($session['Roles']) && is_array($session['Roles'])) ? $session['Roles'] : array();
+    if (isset($roles['EmployeeID']) && (int) $roles['EmployeeID'] > 0) {
+        return (int) $roles['EmployeeID'];
     }
     if (empty($session['pb_username'])) {
         return 0;
     }
     $stateObj = new State($conn);
-    return $stateObj->resolveEmployeeIdFromSession($session);
+    return (int) $stateObj->resolveEmployeeIdFromSession($session);
 }
 
 function te_getCeoEmployeeId($conn)
 {
     $sql = "SELECT ID FROM employees WHERE Designation = 'CEO' AND IsActive = 1 ORDER BY ID ASC LIMIT 1";
     $row = _getSQLDetails($conn, $sql);
-    if (is_array($row) && (int) $row['ID'] > 0) {
+    if (is_array($row) && isset($row['ID']) && (int) $row['ID'] > 0) {
         return (int) $row['ID'];
     }
     return 0;
@@ -100,7 +106,7 @@ function te_getActiveEscalation($conn, $ticketPK)
             WHERE TicketPK = $ticketPK AND IsActive = 1 AND Status = 'Pending'
             ORDER BY ID DESC LIMIT 1";
     $row = _getSQLDetails($conn, $sql);
-    return is_array($row) ? $row : null;
+    return (is_array($row) && isset($row['ID'])) ? $row : null;
 }
 
 function te_getOpenEscalation($conn, $ticketPK)
@@ -113,7 +119,7 @@ function te_getOpenEscalation($conn, $ticketPK)
             WHERE TicketPK = $ticketPK AND IsActive = 1 AND Status IN ('Pending', 'Acknowledged')
             ORDER BY ID DESC LIMIT 1";
     $row = _getSQLDetails($conn, $sql);
-    return is_array($row) ? $row : null;
+    return (is_array($row) && isset($row['ID'])) ? $row : null;
 }
 
 function te_buildEscalatedStatusFilterSql($ticketAlias = 'a')
@@ -203,14 +209,14 @@ function te_isTicketEligibleForEscalation($ticket)
 
 function te_isTicketOpenForEscalation($ticket)
 {
-    if (!is_array($ticket) || (int) $ticket['IsActive'] !== 1) {
+    if (!is_array($ticket) || (int) ($ticket['IsActive'] ?? 0) !== 1) {
         return false;
     }
-    $status = trim((string) $ticket['Status']);
+    $status = trim((string) ($ticket['Status'] ?? ''));
     if (in_array($status, te_closedStatuses(), true)) {
         return false;
     }
-    return ((int) $ticket['AssignedTo'] > 0);
+    return ((int) ($ticket['AssignedTo'] ?? 0) > 0);
 }
 
 function te_supersedeActiveEscalation($conn, $ticketPK, $remarks, $createdBy, $action = 'AutoEscalated')
@@ -239,7 +245,8 @@ function te_sendEscalationNotification($conn, $ticket, $level, $employeeId, $isM
         return;
     }
     $employee = getEmployeeDetailsfromID($conn, $employeeId);
-    if (!is_array($employee) || empty($employee['ContactNumber'])) {
+    $employeeName = te_employeeName($employee);
+    if ($employeeName === '' || empty($employee['ContactNumber'])) {
         return;
     }
     $phone = '+91' . $employee['ContactNumber'];
@@ -248,9 +255,9 @@ function te_sendEscalationNotification($conn, $ticket, $level, $employeeId, $isM
     $dueDate = trim((string) $ticket['DueDate']);
     $dueLine = ($dueDate !== '' && $dueDate !== '0000-00-00') ? " (Due date: $dueDate)" : '';
     if ($isManual) {
-        $message = "Hello {$employee['Name']},\n\nTicket $ticketCode has been manually escalated to you as $levelLabel$dueLine.\n\nPlease review and acknowledge the escalation in the Assignment tab of the ticket.";
+        $message = "Hello $employeeName,\n\nTicket $ticketCode has been manually escalated to you as $levelLabel$dueLine.\n\nPlease review and acknowledge the escalation in the Assignment tab of the ticket.";
     } else {
-        $message = "Hello {$employee['Name']},\n\nTicket $ticketCode has passed its due date ($dueDate) and has been escalated to you as $levelLabel.\n\nPlease review and acknowledge the escalation in the Assignment tab of the ticket.";
+        $message = "Hello $employeeName,\n\nTicket $ticketCode has passed its due date ($dueDate) and has been escalated to you as $levelLabel.\n\nPlease review and acknowledge the escalation in the Assignment tab of the ticket.";
     }
     sendWhatsAppMessage($phone, $message);
 }
@@ -318,7 +325,7 @@ function te_wasRecentlyReassignedToTechnician($conn, $ticketPK)
          ORDER BY ID DESC
          LIMIT 1"
     );
-    return is_array($row) && !empty($row['ID']);
+    return is_array($row) && isset($row['ID']) && (int) $row['ID'] > 0;
 }
 
 function te_resolveDueDateAfterReassign($ticket, $data)
@@ -536,7 +543,7 @@ function te_getManualEscalationOptions($conn, $ticket)
                 'level' => $level,
                 'level_label' => te_levelLabel($level),
                 'employee_id' => $empId,
-                'employee_name' => is_array($emp) ? $emp['Name'] : '',
+                'employee_name' => te_employeeName($emp),
             );
         }
     }
@@ -656,7 +663,17 @@ function te_resolveEscalationsOnClose($conn, $ticketPK, $createdBy = 'system')
 function te_getEscalationSummary($conn, $ticketPK, $session = array())
 {
     $ticketPK = (int) $ticketPK;
-    $ticket = _getTableDetails($conn, 'corporate_tickets', " WHERE ID = $ticketPK");
+    $ticket = ($ticketPK > 0) ? _getTableDetails($conn, 'corporate_tickets', " WHERE ID = $ticketPK") : null;
+    if (!is_array($ticket) || !isset($ticket['ID'])) {
+        return array(
+            'active' => null,
+            'history' => array(),
+            'response_hours' => TE_ESCALATION_RESPONSE_HOURS,
+            'can_manual_escalate' => false,
+            'can_reassign_technician' => false,
+            'manual_options' => array(),
+        );
+    }
     $active = te_getActiveEscalation($conn, $ticketPK);
     $history = te_getEscalationHistory($conn, $ticketPK);
     $employeeId = te_resolveEmployeeIdFromSession($conn, $session);
@@ -672,7 +689,7 @@ function te_getEscalationSummary($conn, $ticketPK, $session = array())
             'level' => (int) $active['EscalationLevel'],
             'level_label' => te_levelLabel($active['EscalationLevel']),
             'escalated_to_id' => (int) $active['EscalatedToEmployeeID'],
-            'escalated_to_name' => is_array($emp) ? $emp['Name'] : '',
+            'escalated_to_name' => te_employeeName($emp),
             'status' => $active['Status'],
             'trigger_reason' => $active['TriggerReason'],
             'due_date_at_trigger' => $active['DueDateAtTrigger'],
@@ -687,7 +704,7 @@ function te_getEscalationSummary($conn, $ticketPK, $session = array())
         $empName = '';
         if ((int) $row['EscalatedToEmployeeID'] > 0) {
             $emp = getEmployeeDetailsfromID($conn, (int) $row['EscalatedToEmployeeID']);
-            $empName = is_array($emp) ? $emp['Name'] : '';
+            $empName = te_employeeName($emp);
         }
         $historyRows[] = array(
             'level' => (int) $row['EscalationLevel'],

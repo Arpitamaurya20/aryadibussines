@@ -18,14 +18,37 @@ $(document).ready(function () {
     $("#dt-basic-example").removeClassPrefix("bg-").addClass(theadColor);
   });
 });
+
+let branchModalSelect2Init = false;
+
+$('#add_edit_branch_modal').on('shown.bs.modal', function () {
+
+  if (!branchModalSelect2Init) {
+
+    $('#branch_company, #branch_city, #branch_state, #account_branch_manager').select2({
+      dropdownParent: $('#add_edit_branch_modal'),
+      width: '100%',
+      placeholder: 'Search & Select'
+    });
+
+    branchModalSelect2Init = true;
+  }
+});
+
+$('#add_edit_branch_modal').on('hidden.bs.modal', function () {
+  $('#branch_company, #branch_city, #branch_state, #account_branch_manager').each(function () {
+    var $el = $(this);
+    if ($el.hasClass("select2-hidden-accessible")) {
+      $el.select2("destroy");
+    }
+  });
+  branchModalSelect2Init = false;
+});
+
 function openBranch_modal() {
   $("#branch_modal_title").html("Add Branch Account");
   $("#add_update_branch_form")[0].reset();
   $("#form_action").val("add");
-  $("#branch_company").select2();
-  $("#branch_city").select2();
-  $("#branch_state").select2();
-  $("#account_branch_manager").select2();
   document.getElementById("city_div").style.display = "none";
   $("#add_edit_branch_modal").modal();
   $("#site_password").css("display", "block");
@@ -78,18 +101,29 @@ function UpdateBranch_modal(branch_id,Access) {
         $("#branch_username").val(branch_username);
         $("#form_action").val("Update");
         $("#form_id").val(branch_id);
-        $("#add_edit_branch_modal").modal();
-        $("#branch_company").select2();
-        $("#branch_city").select2();
-        $("#branch_state").select2();
         $("#account_branch_manager").val(AccountBranchManager);
-        if(true)
+        $("#add_edit_branch_modal").modal();
+
+        // Re-init with dropdownParent so search works inside the Bootstrap modal
+        $('#branch_company, #branch_city, #branch_state, #account_branch_manager').each(function () {
+          var $el = $(this);
+          if ($el.hasClass("select2-hidden-accessible")) {
+            $el.select2("destroy");
+          }
+        });
+        branchModalSelect2Init = false;
+
+        $('#branch_company, #branch_city, #branch_state, #account_branch_manager').select2({
+          dropdownParent: $('#add_edit_branch_modal'),
+          width: '100%',
+          placeholder: 'Search & Select'
+        });
+        branchModalSelect2Init = true;
+        $('#branch_company, #branch_city, #branch_state, #account_branch_manager').trigger('change');
+
+        if(!(user_access == "Admin" || user_access == "Ticket Manager"))
         {
-          $("#account_branch_manager").select2();
-        }
-        else
-        {
-              $("#account_branch_manager").select2();
+              $('#account_branch_manager').off('select2:opening select2:closing select2:selecting select2:unselecting');
               $('#account_branch_manager').on('select2:opening select2:closing select2:selecting select2:unselecting', function(e) {
                 e.preventDefault();
               });
@@ -101,31 +135,45 @@ function UpdateBranch_modal(branch_id,Access) {
     }
   );
 }
-function DeleteBranch(branch_id) {
+function ToggleBranchStatus(branch_id, is_active) {
+  var actionLabel = is_active === 1 ? "activate" : "inactivate";
   alertify.confirm(
-    "TechXpert ",
-    "Do you really want to delete Branch?<br><br> Deleting Branch will delete all the branches Assets and all the data associated with the Branch.",
+    "TechXpert",
+    "Do you really want to " + actionLabel + " this branch? Branch assets and tickets status will also be updated.",
     function () {
       $.post(
-        "action/delete_branch.php",
+        "action/toggle_branch_status.php",
         {
           ID: branch_id,
+          IsActive: is_active,
         },
         function (data, status) {
           var response = JSON.parse(data);
           TechXAlert(response.message);
           if (response.error == false) {
-            setInterval(function () {
-              location.reload();
-            }, 2000);
+            setTimeout(function () {
+              if (typeof FilterBranches === "function") {
+                FilterBranches();
+              } else {
+                location.reload();
+              }
+            }, 800);
           }
         }
       );
     },
     function () {
-      alertify.error("Deletion Cancelled");
+      alertify.error("Action Cancelled");
     }
   );
+}
+
+function DeactivateBranch(branch_id) {
+  ToggleBranchStatus(branch_id, 0);
+}
+
+function ActivateBranch(branch_id) {
+  ToggleBranchStatus(branch_id, 1);
 }
 
 function MergeBranch()
@@ -138,7 +186,11 @@ function MergeBranch()
       function(data, status) 
       {
           document.getElementById("company_branch_select_div").innerHTML = data;
-          $("#to_be_merged_branch").select2();
+          $("#to_be_merged_branch").select2({
+            dropdownParent: $("#merge_branch_modal"),
+            width: "100%",
+            placeholder: "Search & Select"
+          });
           $("#merge_branch_modal").modal();
       }
   );
@@ -396,19 +448,6 @@ function ExportBranchData()
   return false;
 }
 
-function ExportBranchData_2() 
-{
-  alert('Hello');
-  $.ajax({
-      url: "action/export_corporate_branch_assets.php",
-      type: "POST",
-      data: $("#import_form").serialize(),
-      success: function (data) {
-          window.location.href = "report.xls";
-      },
-  });
-  return false;
-}
 function SelectState() 
 {
         var state_selected = $("#branch_state").val();
@@ -482,9 +521,6 @@ function UploadBranch_CSV() {
 
 function FilterBranches()
 {
-    
-    var table = $('#view-branch').DataTable();
-    table.destroy();
     var param = "";
     var nav = document.getElementById("nav").value;
     var CorporateID = document.getElementById("CorporateID").value;
@@ -513,68 +549,10 @@ function FilterBranches()
         param = param+"&filter_company_id="+filter_company_id;
     }
 
-    var i = 1;
-    $('#view-branch').dataTable({
-         responsive: true,
-        'processing': true,
-        'serverSide': true,
-        'ordering': false,
-        'serverMethod': 'post',
-        'ajax': {
-            'url': 'include/branch-list-post.php?'+param
-        },
-        'columnDefs': [{
-            "targets": [0],
-            "className": "text-center"
-        }],
-        "order": [
-            [1, 'asc']
-        ],
-        'columns': [{
-                "data": "id",
-                render: function(data, type, row, meta) {
-                    return meta.row + meta.settings._iDisplayStart + 1;
-                }
-            },
-            {
-                data: 'CompanyName'
-            },
-            {
-                data: 'BranchName'
-            },
-            {
-                data: 'Mobile_Alternate'
-            },
-            {
-                data: 'City_State'
-            },
-            {
-                data: 'Branch_Assets'
-            },
-            // {
-            //     data: 'ViewARC'
-            // },
-            {
-                data: 'ViewSparePart'
-            },
-            {
-                data: 'Access'
-            },
-            {
-                data: 'Update'
-            },
-            {
-                data: 'Action'
-            },
-            {
-                data: 'SiteIncharge'
-            }
-
-
-        ]
-
-
-    });
+    if (typeof window.initBranchTable === "function") {
+      window.initBranchTable('#view-branch-active', 1, param);
+      window.initBranchTable('#view-branch-inactive', 0, param);
+    }
 }
 function GetCitiesfromState(selection)
 {

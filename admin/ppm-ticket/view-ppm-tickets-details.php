@@ -294,7 +294,7 @@
     include('../includes/common_scripts.php');
     ?>
     <script src="../js/datagrid/datatables/datatables.bundle.js"></script>
-    <script src="../js/modules/ppm-ticket.js"></script>
+    <script src="../js/modules/ppm-ticket.js?v=<?php echo @filemtime(__DIR__ . '/../js/modules/ppm-ticket.js'); ?>"></script>
     <script src="../js/formplugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
 
     <script type="text/javascript">

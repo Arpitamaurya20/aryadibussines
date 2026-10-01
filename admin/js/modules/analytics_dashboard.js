@@ -219,9 +219,6 @@ function GenerateStatusButtons(CorporateID,state_filter,region_filter,filter_dat
         });
     });
     bindAnalyticsStatusTicketLinks();
-    if (window.lucide) {
-        lucide.createIcons();
-    }
   });
 }
 function GenerateCorporateBranchStats(CorporateID,state_filter,region_filter,ticket_type_filter,ticket_status_filter,filter_date)
@@ -384,23 +381,12 @@ function GenerateTicketStatusBarGraph(CorporateID,state_filter,region_filter,tic
           datasets: [{
             label: 'Status Count',
             data: response_data.chart_data.data,
-            backgroundColor: '#045891',
-            hoverBackgroundColor: '#003f88',
-            borderRadius: 6,
-            borderWidth: 0,
-            barPercentage: 0.6
+            borderWidth: 1
           }]
         },
         options: {
             indexAxis: 'y',
-            plugins: {
-                legend: { display: false }
-            },
-            scales: {
-                x: { grid: { display: false } },
-                y: { grid: { display: false } }
-            }
-        }
+          }
       });
            
   });
@@ -438,17 +424,8 @@ function GenerateRegionDoughnutGraph(CorporateID,state_filter,region_filter,tick
           datasets: [{
             label: 'Status Count',
             data: response_data.chart_data.data,
-            backgroundColor: response_data.chart_data.data_bg,
-            borderWidth: 2,
-            borderColor: '#ffffff',
-            hoverOffset: 4
+            backgroundColor: response_data.chart_data.data_bg
           }]
-        },
-        options: {
-            cutout: '75%',
-            plugins: {
-                legend: { position: 'bottom', labels: { usePointStyle: true, padding: 20 } }
-            }
         }
       });
            
@@ -490,23 +467,12 @@ function GenerateStateWiseTicketBarGraph(CorporateID,state_filter,region_filter,
           datasets: [{
             label: 'States',
             data: response_data.chart_data.data,
-            backgroundColor: '#5BB6E9',
-            hoverBackgroundColor: '#045891',
-            borderRadius: 6,
-            borderWidth: 0,
-            barPercentage: 0.6
+            borderWidth: 1
           }]
         },
         options: {
             indexAxis: 'x',
-            plugins: {
-                legend: { display: false }
-            },
-            scales: {
-                x: { grid: { display: false } },
-                y: { grid: { color: '#F1F5F9', borderDash: [5, 5] } }
-            }
-        }
+          }
       });
            
   });

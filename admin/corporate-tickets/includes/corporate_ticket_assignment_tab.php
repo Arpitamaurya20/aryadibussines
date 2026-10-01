@@ -1,12 +1,11 @@
 <?php
 include_once(__DIR__ . '/../controller/ticket_escalation_controller.php');
-$te_createdBy = isset($_SESSION['pb_username']) ? $_SESSION['pb_username'] : 'system';
-te_processTicketEscalation($conn, (int) $ID, $te_createdBy);
-$te_escalation_summary = te_getEscalationSummary($conn, (int) $ID, $_SESSION);
+$teTicketPk = isset($PrimaryID) ? (int) $PrimaryID : (int) $ID;
+$te_escalation_summary = te_getEscalationSummary($conn, $teTicketPk, $_SESSION);
 $te_can_manual = te_userCanManualEscalate($_SESSION);
-$te_can_reassign = te_userCanReassignTechnician($conn, $_SESSION, (int) $ID);
+$te_can_reassign = !empty($te_escalation_summary['can_reassign_technician']);
 $te_ticket_open = te_isTicketOpenForEscalation($corporate_ticket_data);
-$te_manual_options = te_getManualEscalationOptions($conn, $corporate_ticket_data);
+$te_manual_options = !empty($te_escalation_summary['manual_options']) ? $te_escalation_summary['manual_options'] : array();
 $te_show_escalation = te_userCanViewEscalation($_SESSION)
     || $te_can_manual
     || $te_can_reassign
@@ -18,6 +17,36 @@ $BookingStatus = $corporate_ticket_data['Status'];
 
 $employee_array = getAssignedList($conn);
 $AssignedTo = $corporate_ticket_data['AssignedTo'];
+$assigned_display_name = '';
+$assigned_display_phone = '';
+$assigned_lookup_id = (int) $AssignedTo;
+if ($assigned_lookup_id <= 0 && isset($corporate_ticket_data['Technician']) && ctype_digit((string) $corporate_ticket_data['Technician'])) {
+    $assigned_lookup_id = (int) $corporate_ticket_data['Technician'];
+}
+if (!empty($corporate_ticket_data['AssignedEmployeeName'])) {
+    $assigned_display_name = $corporate_ticket_data['AssignedEmployeeName'];
+    $assigned_display_phone = isset($corporate_ticket_data['AssignedEmployeePhone']) ? $corporate_ticket_data['AssignedEmployeePhone'] : '';
+} elseif ($assigned_lookup_id > 0) {
+    $assigned_employee = getEmployeeDetailsfromID($conn, $assigned_lookup_id);
+    if (is_array($assigned_employee) && !empty($assigned_employee['Name'])) {
+        $assigned_display_name = $assigned_employee['Name'];
+        $assigned_display_phone = isset($assigned_employee['ContactNumber']) ? $assigned_employee['ContactNumber'] : '';
+    }
+} elseif (!empty($corporate_ticket_data['Technician']) && $corporate_ticket_data['Technician'] !== '-1') {
+    $assigned_display_name = $corporate_ticket_data['Technician'];
+}
+if ($assigned_lookup_id > 0 && $assigned_display_name !== '' && is_array($employee_array)) {
+    $already_in_list = false;
+    foreach ($employee_array as $employee_row) {
+        if ((int) $employee_row['ID'] === $assigned_lookup_id) {
+            $already_in_list = true;
+            break;
+        }
+    }
+    if (!$already_in_list) {
+        array_unshift($employee_array, array('ID' => $assigned_lookup_id, 'Name' => $assigned_display_name));
+    }
+}
 // var_dump($employee_array);
 
 $status_array = _getTableRecords($conn,'corporate_tickets_status','where AccountBranchManager = 1'); 
@@ -47,14 +76,13 @@ if (is_array($status_array)) {
                     <th> Employee Assigned</th>
                     <td>
                         <?php
-                        if($AssignedTo == "" || $AssignedTo == -1)
-                        {
+                        if ($assigned_display_name !== '') {
+                            echo htmlspecialchars($assigned_display_name);
+                            if ($assigned_display_phone !== '') {
+                                echo "</br>" . htmlspecialchars($assigned_display_phone);
+                            }
+                        } else {
                             echo "<b>Not Set</b>";
-                        }
-                        else
-                        {
-                            echo getEmployeeDetailsfromID($conn, $AssignedTo)['Name'] . "</br>" . getEmployeeDetailsfromID($conn, $AssignedTo)['ContactNumber'];
-
                         }
                         ?>
                     </td>
@@ -351,6 +379,7 @@ if (is_array($status_array)) {
                                 <input type="hidden" id="ticket_current_assigned_to" value="<?php echo (int) $AssignedTo; ?>" />
                                 <input type="hidden" id="ticket_current_status" value="<?php echo htmlspecialchars($BookingStatus, ENT_QUOTES, 'UTF-8'); ?>" />
                                 <input type="hidden" id="ticket_can_reassign" value="<?php echo ($te_can_reassign && $te_ticket_open) ? '1' : '0'; ?>" />
+                                <input type="hidden" id="ticket_can_assign_technician" value="1" />
 
 
                             </div>

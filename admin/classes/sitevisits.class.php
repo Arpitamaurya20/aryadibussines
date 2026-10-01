@@ -15,7 +15,7 @@ class Sitevisits extends Core
 		extract($data);
 		$Summary = "";
 		 $rowData = [
-		 	    'TicketID'= $TicketID,
+		 	    'TicketID' => $TicketID,
                 'BranchID' => $BranchID,
                 'CorporateID' => $CorporateID,
                 'VisitTitle' => $VisitTitle,
@@ -47,7 +47,7 @@ class Sitevisits extends Core
 	{
 		$response = array();
 		$CreatedBy = $data['CreatedBy'];
-		$sql = "SELECT a.*,b.BranchSite,c.CorporateName FROM `site_visits` a INNER JOIN branch b on a.BranchID = b.ID INNER JOIN company c ON a.CorporateID = c.ID WHERE a.CreatedBy = '$CreatedBy' ORDER BY ID DESC";
+		$sql = "SELECT a.*,b.BranchSite,c.CompanyName,c.CorporateName FROM `site_visits` a INNER JOIN branch b on a.BranchID = b.ID INNER JOIN company c ON a.CorporateID = c.ID WHERE a.CreatedBy = '$CreatedBy' ORDER BY a.ID DESC";
 		if(isset($data['filter_limit']))
 		{
 			$filter_limit = $data['filter_limit'];
@@ -128,21 +128,25 @@ class Sitevisits extends Core
 
 	public function UpdateSVSignature($file_name,$data)
 	{
-		$SiteVisitID = $data['SiteVisitID'];
-		$update_sql = " ClientSignature = '$file_name' where ID = $SiteVisitID";
-		$response = $this->_UpdateTableRecords($this->conn,'site_visits',$update_sql);
-		return $response;
+		$SiteVisitID = intval($data['SiteVisitID']);
+		return $this->_UpdateTableRecords_prepare($this->conn, 'site_visits', [
+			'ClientSignature' => $file_name,
+		], [
+			'ID' => $SiteVisitID,
+		]);
 	}
 
 	public function CompleteSiteVisit($data)
 	{
-		$CompletedDate = date("Y-m-d");
-		$CompletedTime = date("H:i:s");
-		extract($data);
-		$Status = 'Completed';
-		$update_sql = " Status = '$Status',Summary='$Summary',CompletedDate='$CompletedDate',CompletedTime='$CompletedTime' where ID = $SiteVisitID";
-		$response = $this->_UpdateTableRecords($this->conn,'site_visits',$update_sql);
-		return $response;
+		$SiteVisitID = intval($data['SiteVisitID']);
+		return $this->_UpdateTableRecords_prepare($this->conn, 'site_visits', [
+			'Status' => 'Completed',
+			'Summary' => $data['Summary'],
+			'CompletedDate' => date('Y-m-d'),
+			'CompletedTime' => date('H:i:s'),
+		], [
+			'ID' => $SiteVisitID,
+		]);
 	}
 	public function GetSiteObservations($SiteVisitID)
 	{

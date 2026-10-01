@@ -41,7 +41,7 @@ error_reporting(E_ALL);?>
 
 	    }
         
-        $ProductName = "Aryadibusiness";
+        $ProductName = "TechXpert";
         if ($CorporateID == 183) 
         {
             $_product = "innov";
@@ -65,7 +65,7 @@ error_reporting(E_ALL);?>
             <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/<?=$product_configuration['favicon'];?>">
             <?php
         }
-        if($ProductName != "Aryadibusiness")
+        if($ProductName != "TechXpert")
         {
             include("../css/client_generated_css.php");
         }

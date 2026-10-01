@@ -148,6 +148,119 @@ function showAttendanceActionToast(message) {
     TechXAlert(message);
 }
 
+var ATTENDANCE_BULK_CHUNK_SIZE = 10;
+
+function hideAttendanceBulkProgress() {
+    var overlay = document.getElementById('attendance-bulk-progress-overlay');
+    if (overlay) {
+        overlay.remove();
+    }
+}
+
+function showAttendanceBulkProgress(title, processed, total, statusText) {
+    var safeTotal = Math.max(1, parseInt(total, 10) || 1);
+    var safeProcessed = Math.max(0, Math.min(safeTotal, parseInt(processed, 10) || 0));
+    var pct = Math.round((safeProcessed / safeTotal) * 100);
+    var overlay = document.getElementById('attendance-bulk-progress-overlay');
+
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'attendance-bulk-progress-overlay';
+        overlay.style.cssText = 'position:fixed;inset:0;z-index:99999;background:rgba(15,23,42,.55);display:flex;align-items:center;justify-content:center;';
+        overlay.innerHTML =
+            '<div style="width:min(420px,92vw);background:#fff;border-radius:12px;box-shadow:0 20px 50px rgba(0,0,0,.25);padding:22px;font-family:Poppins,Segoe UI,sans-serif;">' +
+            '  <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">' +
+            '    <div style="width:38px;height:38px;border-radius:50%;border:3px solid #dbeafe;border-top-color:#027dc1;animation:attBulkSpin .9s linear infinite;"></div>' +
+            '    <div>' +
+            '      <div id="attendance-bulk-progress-title" style="font-size:15px;font-weight:700;color:#0f172a;"></div>' +
+            '      <div id="attendance-bulk-progress-sub" style="font-size:12px;color:#64748b;margin-top:2px;"></div>' +
+            '    </div>' +
+            '  </div>' +
+            '  <div style="height:10px;background:#e2e8f0;border-radius:999px;overflow:hidden;">' +
+            '    <div id="attendance-bulk-progress-bar" style="height:100%;width:0%;background:linear-gradient(90deg,#027dc1,#0ea5e9);transition:width .25s ease;"></div>' +
+            '  </div>' +
+            '  <div style="display:flex;justify-content:space-between;margin-top:8px;font-size:11px;color:#64748b;">' +
+            '    <span id="attendance-bulk-progress-label">Starting…</span>' +
+            '    <span id="attendance-bulk-progress-pct">0%</span>' +
+            '  </div>' +
+            '</div>' +
+            '<style>@keyframes attBulkSpin{to{transform:rotate(360deg)}}</style>';
+        document.body.appendChild(overlay);
+    }
+
+    document.getElementById('attendance-bulk-progress-title').textContent = title || 'Processing…';
+    document.getElementById('attendance-bulk-progress-sub').textContent =
+        (statusText || ('Processed ' + safeProcessed + ' of ' + safeTotal + ' record(s)'));
+    document.getElementById('attendance-bulk-progress-bar').style.width = pct + '%';
+    document.getElementById('attendance-bulk-progress-label').textContent = safeProcessed + ' / ' + safeTotal;
+    document.getElementById('attendance-bulk-progress-pct').textContent = pct + '%';
+}
+
+function runAttendanceBulkInChunks(options) {
+    var ids = (options.ids || []).slice();
+    var url = options.url;
+    var title = options.title || 'Processing selected records';
+    var buildPayload = options.buildPayload || function (chunk) { return { IDs: chunk }; };
+    var parseResponse = options.parseResponse || parseAttendanceActionResponse;
+    var onDone = options.onDone || function () {};
+    var total = ids.length;
+    var processed = 0;
+    var success = 0;
+    var failed = 0;
+
+    if (total === 0) {
+        onDone({ success: 0, failed: 0, total: 0 });
+        return;
+    }
+
+    showAttendanceBulkProgress(title, 0, total, 'Preparing…');
+
+    function nextChunk() {
+        if (ids.length === 0) {
+            showAttendanceBulkProgress(title, total, total, 'Finishing…');
+            setTimeout(function () {
+                hideAttendanceBulkProgress();
+                onDone({ success: success, failed: failed, total: total });
+            }, 250);
+            return;
+        }
+
+        var chunk = ids.splice(0, ATTENDANCE_BULK_CHUNK_SIZE);
+        showAttendanceBulkProgress(title, processed, total);
+
+        $.ajax({
+            url: url,
+            method: 'POST',
+            dataType: 'json',
+            data: buildPayload(chunk),
+            timeout: 120000
+        }).done(function (data) {
+            var response = parseResponse(data);
+            var chunkSuccess = parseInt((response.summary && response.summary.success) || 0, 10);
+            var chunkFailed = parseInt((response.summary && response.summary.failed) || 0, 10);
+            if (!chunkSuccess && !chunkFailed) {
+                if (!response.error) {
+                    chunkSuccess = chunk.length;
+                } else {
+                    chunkFailed = chunk.length;
+                }
+            }
+            success += chunkSuccess;
+            failed += chunkFailed;
+            processed += chunk.length;
+            showAttendanceBulkProgress(title, processed, total);
+            setTimeout(nextChunk, 40);
+        }).fail(function () {
+            failed += chunk.length;
+            processed += chunk.length;
+            showAttendanceBulkProgress(title, processed, total, 'Network issue on a batch — continuing…');
+            setTimeout(nextChunk, 80);
+        });
+    }
+
+    nextChunk();
+}
+
 function RefreshAttendanceApproval(filterDateValue, afterActionId) {
     var selector = '#view-attendance-approval-records';
     var filterState = captureAttendanceApprovalFilters();
@@ -298,6 +411,8 @@ function initAttendanceApprovalTable(param) {
             { data: 'CheckInTime' },
             { data: 'CheckOutTime' },
             { data: 'Duration' },
+            { data: 'AttendanceType', orderable: false, searchable: false },
+            { data: 'AttendanceReason', orderable: false, searchable: false },
             { data: 'ApprovalStatus' },
             { data: 'ApprovalInfo' },
             { data: 'Actions', orderable: false, searchable: false },
@@ -355,17 +470,23 @@ function submitAttendanceSupervisorBulkApprove() {
         return;
     }
     attendanceApprovalFilterSnapshot = captureAttendanceApprovalFilters();
-    $.post('action/supervisor_bulk_approve_attendance.php', { IDs: selected }, function (data) {
-        var response = parseAttendanceActionResponse(data);
-        if (!response.error) {
+    $('#btn_attendance_supervisor_bulk_approve, #btn_attendance_supervisor_bulk_reject').prop('disabled', true);
+
+    runAttendanceBulkInChunks({
+        ids: selected,
+        url: 'action/supervisor_bulk_approve_attendance.php',
+        title: 'Approving attendance',
+        onDone: function (result) {
             RefreshAttendanceApproval(undefined, selected[0]);
             attendanceApprovalFilterSnapshot = null;
-            showAttendanceActionToast(response.message);
-            return;
+            var message = result.success + ' record(s) approved by supervisor. ' + result.failed + ' record(s) could not be updated.';
+            if (result.success <= 0) {
+                TechXAlert(message);
+            } else {
+                showAttendanceActionToast(message);
+            }
+            updateAttendanceSupervisorSelectionUi();
         }
-        TechXAlert(response.message);
-    }, 'json').fail(function () {
-        TechXAlert('Unable to approve selected records.');
     });
 }
 
@@ -373,35 +494,54 @@ function submitAttendanceReject() {
     var mode = document.getElementById('attendance_reject_mode').value;
     var reason = document.getElementById('attendance_reject_reason').value;
     var filterState = attendanceApprovalFilterSnapshot || captureAttendanceApprovalFilters();
-    var url = 'action/reject_attendance.php';
-    var payload = { RejectionReason: reason };
 
-    if (mode === 'bulk') {
-        payload.IDs = getSelectedAttendanceSupervisorIds();
-        url = 'action/supervisor_bulk_reject_attendance.php';
-        if (!payload.IDs.length) {
-            TechXAlert('Please select at least one attendance record.');
-            return;
-        }
-    } else {
-        payload.ID = document.getElementById('attendance_reject_id').value;
+    if (mode !== 'bulk') {
+        var id = document.getElementById('attendance_reject_id').value;
+        $.post('action/reject_attendance.php', { RejectionReason: reason, ID: id }, function (data) {
+            var response = parseAttendanceActionResponse(data);
+            if (!response.error) {
+                $('#attendance_reject_modal').modal('hide');
+                var param = buildAttendanceFilterParam(filterState);
+                reloadAttendanceTableKeepingPosition('#view-attendance-approval-records', 'action/view-attendance-approval-post.php' + param, id, filterState);
+                attendanceApprovalFilterSnapshot = null;
+                showAttendanceActionToast(response.message || 'Attendance rejected.');
+                return;
+            }
+            TechXAlert(response.message || 'Unable to reject attendance.');
+        }, 'json').fail(function () {
+            TechXAlert('Unable to reject attendance. Please try again.');
+        });
+        return;
     }
 
-    $.post(url, payload, function (data) {
-        var response = parseAttendanceActionResponse(data);
-        if (!response.error) {
-            $('#attendance_reject_modal').modal('hide');
-            var afterId = mode === 'bulk' ? payload.IDs[0] : payload.ID;
-            var filterDateVal = filterState.filter_date === 'All Time' ? 'all' : filterState.filter_date;
+    var selected = getSelectedAttendanceSupervisorIds();
+    if (!selected.length) {
+        TechXAlert('Please select at least one attendance record.');
+        return;
+    }
+
+    $('#attendance_reject_modal').modal('hide');
+    $('#btn_attendance_supervisor_bulk_approve, #btn_attendance_supervisor_bulk_reject').prop('disabled', true);
+
+    runAttendanceBulkInChunks({
+        ids: selected,
+        url: 'action/supervisor_bulk_reject_attendance.php',
+        title: 'Rejecting attendance',
+        buildPayload: function (chunk) {
+            return { IDs: chunk, RejectionReason: reason };
+        },
+        onDone: function (result) {
             var param = buildAttendanceFilterParam(filterState);
-            reloadAttendanceTableKeepingPosition('#view-attendance-approval-records', 'action/view-attendance-approval-post.php' + param, afterId, filterState);
+            reloadAttendanceTableKeepingPosition('#view-attendance-approval-records', 'action/view-attendance-approval-post.php' + param, selected[0], filterState);
             attendanceApprovalFilterSnapshot = null;
-            showAttendanceActionToast(response.message || 'Attendance rejected.');
-            return;
+            var message = result.success + ' record(s) rejected by supervisor. ' + result.failed + ' record(s) could not be updated.';
+            if (result.success <= 0) {
+                TechXAlert(message);
+            } else {
+                showAttendanceActionToast(message);
+            }
+            updateAttendanceSupervisorSelectionUi();
         }
-        TechXAlert(response.message || 'Unable to reject attendance.');
-    }, 'json').fail(function () {
-        TechXAlert('Unable to reject attendance. Please try again.');
     });
 }
 

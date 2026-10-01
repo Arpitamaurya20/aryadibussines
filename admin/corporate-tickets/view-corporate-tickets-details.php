@@ -28,9 +28,6 @@
      <link rel="stylesheet" media="screen, print"
         href="../css/formplugins/bootstrap-datepicker/bootstrap-datepicker.css">
     <?php
-    include('../includes/common_modules.php');
-    include('../includes/common_scripts.php');
-
     $ID = "N.A.";
     if(!isset($_SESSION['TicketID']))
     {
@@ -538,10 +535,13 @@
 
     <!-- END Page Wrapper -->
 
-    
+    <?php
+    include('../includes/common_modules.php');
+    include('../includes/common_scripts.php');
+    ?>
     <script src="../js/datagrid/datatables/datatables.bundle.js"></script>
      <script src="../js/formplugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
-    <script src="../js/modules/corporate-booking.js?v=20260624g"></script>
+    <script src="../js/modules/corporate-booking.js?v=20260930e"></script>
     <script src="../js/modules/corporate-quotation-revised-date.js?v=20260619b"></script>
     <script src="../js/modules/corporate-quotation-expected-budget.js?v=20260708a"></script>
     <script src="../js/modules/corporate-quotation-pending-line-items.js?v=20260624d"></script>

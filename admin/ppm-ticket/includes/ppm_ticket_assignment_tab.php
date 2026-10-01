@@ -7,10 +7,11 @@ if($UserType == "Admin" || $TicketManager)
 }
 
 //$status_array = $ppmticket->getPPMTicketStatusArray("All");
-$BookingStatus = $corporate_ticket_data['Status'];
+$corporate_ticket_data = is_array($corporate_ticket_data) ? $corporate_ticket_data : array();
+$BookingStatus = isset($corporate_ticket_data['Status']) ? $corporate_ticket_data['Status'] : '';
 
 $employee_array = getAssignedList($conn);
-$AssignedTo = $corporate_ticket_data['AssignedTo'];
+$AssignedTo = isset($corporate_ticket_data['AssignedTo']) ? $corporate_ticket_data['AssignedTo'] : '';
 //var_dump($employee_array);
 
 ?>
@@ -30,7 +31,12 @@ $AssignedTo = $corporate_ticket_data['AssignedTo'];
                         }
                         else
                         {
-                            echo getEmployeeDetailsfromID($conn,$AssignedTo)['Name'];
+                            $assignedEmployee = getEmployeeDetailsfromID($conn, $AssignedTo);
+                            if (is_array($assignedEmployee) && !empty($assignedEmployee['Name'])) {
+                                echo htmlspecialchars($assignedEmployee['Name']);
+                            } else {
+                                echo "<b>Not Set</b>";
+                            }
                         }
                         ?>
                     </td>
@@ -52,13 +58,13 @@ $AssignedTo = $corporate_ticket_data['AssignedTo'];
 
                         <?php 
                              
-                         if($corporate_ticket_data['DueDate'] == "")
+                         if(empty($corporate_ticket_data['DueDate']))
                         {
                             echo "<b>Not Set</b>";
                         }
                         else
                         {
-                            echo $corporate_ticket_data['DueDate'];
+                            echo htmlspecialchars($corporate_ticket_data['DueDate']);
                         }
 
                          ?>
@@ -175,13 +181,13 @@ $AssignedTo = $corporate_ticket_data['AssignedTo'];
                                         </label>
                                         <input type="text" class="form-control" name="DueDate"
                                                         id="due_date" placeholder="<?php
-                                                        if($corporate_ticket_data['DueDate'] == ""){
+                                                        if(empty($corporate_ticket_data['DueDate'])){
                                                             echo "Select Due Date";
                                                         }else{
-                                                            echo $corporate_ticket_data['DueDate'];
+                                                            echo htmlspecialchars($corporate_ticket_data['DueDate']);
                                                         }
                                                         ?>"
-                                                        value = "<?php echo $corporate_ticket_data['DueDate'];?>"
+                                                        value = "<?php echo htmlspecialchars($corporate_ticket_data['DueDate'] ?? '');?>"
                                                         />
 
                                     </div>

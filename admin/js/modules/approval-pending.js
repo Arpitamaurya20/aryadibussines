@@ -45,6 +45,45 @@ $(document).ready(function() {
 
 });
 
+function SendTicketApprovalMail(ticketId, buttonEl) {
+    if (buttonEl) {
+        buttonEl.disabled = true;
+        buttonEl.innerHTML = "Sending...";
+    }
+
+    $.post("../corporate-tickets/action/send-ticket-approval-mail.php", {
+        TicketID: ticketId
+    }, function(data) {
+        var response = {};
+        try {
+            response = typeof data === "object" ? data : JSON.parse(data);
+        } catch (e) {
+            response = {
+                error: true,
+                message: "Unexpected response while sending approval mail."
+            };
+        }
+
+        if (buttonEl) {
+            buttonEl.disabled = false;
+            buttonEl.innerHTML = '<i class="fal fa-paper-plane mr-1"></i> Send Mail';
+        }
+
+        ShowApprovalPendingAlert(response.message || "Unable to send approval mail.");
+        if (response.error === false) {
+            setTimeout(function() {
+                location.reload();
+            }, 1200);
+        }
+    }).fail(function() {
+        if (buttonEl) {
+            buttonEl.disabled = false;
+            buttonEl.innerHTML = '<i class="fal fa-paper-plane mr-1"></i> Send Mail';
+        }
+        ShowApprovalPendingAlert("Unable to send approval mail. Please try again.");
+    });
+}
+
 function ChangeApproval(ticketid) {
 
     // alert(ticketid);

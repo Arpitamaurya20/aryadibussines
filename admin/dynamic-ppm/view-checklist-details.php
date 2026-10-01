@@ -18,6 +18,7 @@
     }
     $items = getDynamicPPMChecklistItemsByChecklist($conn, $checklistID);
     $mappings = getDynamicPPMMappingsByChecklist($conn, $checklistID);
+    $inputTypes = dynamicPPMInputTypes();
     ?>
     <meta charset="utf-8">
     <title><?php echo htmlspecialchars($checklist['ChecklistCode']); ?> - Checklist Details</title>
@@ -32,7 +33,7 @@
             <?php include('../includes/common_header.php'); ?>
             <main id="js-page-content" role="main" class="page-content">
                 <ol class="breadcrumb page-breadcrumb">
-                    <li class="breadcrumb-item"><a href="../dashboard/admin_dashboard">Aryadibusiness</a></li>
+                    <li class="breadcrumb-item"><a href="../dashboard/admin_dashboard">TechXpert</a></li>
                     <li class="breadcrumb-item"><a href="view-checklists.php">View Checklists</a></li>
                     <li class="breadcrumb-item active"><?php echo htmlspecialchars($checklist['ChecklistCode']); ?></li>
                 </ol>
@@ -116,11 +117,14 @@
                                                     <th>Mandatory</th>
                                                     <th>Options</th>
                                                     <th>Help Text</th>
+                                                    <th>Updated By</th>
+                                                    <th>Updated On</th>
+                                                    <th style="width:70px;">Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                             <?php if (empty($items)) { ?>
-                                                <tr><td colspan="9" class="text-center text-muted">No checklist items added yet.</td></tr>
+                                                <tr><td colspan="12" class="text-center text-muted">No checklist items added yet.</td></tr>
                                             <?php } ?>
                                             <?php foreach ($items as $idx => $item) {
                                                 $options = '';
@@ -130,6 +134,27 @@
                                                         $options = implode(', ', $decoded);
                                                     }
                                                 }
+                                                $updatedBy = trim((string) (isset($item['UpdatedBy']) ? $item['UpdatedBy'] : ''));
+                                                $updatedDate = trim((string) (isset($item['UpdatedDate']) ? $item['UpdatedDate'] : ''));
+                                                $updatedTime = trim((string) (isset($item['UpdatedTime']) ? $item['UpdatedTime'] : ''));
+                                                if ($updatedBy === '') {
+                                                    $updatedBy = trim((string) (isset($item['CreatedBy']) ? $item['CreatedBy'] : ''));
+                                                    $updatedDate = trim((string) (isset($item['CreatedDate']) ? $item['CreatedDate'] : ''));
+                                                    $updatedTime = trim((string) (isset($item['CreatedTime']) ? $item['CreatedTime'] : ''));
+                                                }
+                                                $updatedOn = ($updatedDate !== '') ? trim($updatedDate . ' ' . $updatedTime) : '-';
+                                                $itemPayload = array(
+                                                    'ID' => (int) $item['ID'],
+                                                    'ItemCode' => $item['ItemCode'],
+                                                    'ItemName' => $item['ItemName'],
+                                                    'InputType' => $item['InputType'],
+                                                    'UnitName' => $item['UnitName'],
+                                                    'DefaultValue' => $item['DefaultValue'],
+                                                    'IsMandatory' => (int) $item['IsMandatory'],
+                                                    'OptionsJson' => $options,
+                                                    'SortOrder' => (int) $item['SortOrder'] ?: ($idx + 1),
+                                                    'HelpText' => $item['HelpText'],
+                                                );
                                             ?>
                                                 <tr>
                                                     <td><?php echo (int) $item['SortOrder'] ?: ($idx + 1); ?></td>
@@ -141,6 +166,16 @@
                                                     <td><?php echo (int) $item['IsMandatory'] === 1 ? 'Yes' : 'No'; ?></td>
                                                     <td><?php echo htmlspecialchars($options); ?></td>
                                                     <td><?php echo htmlspecialchars($item['HelpText']); ?></td>
+                                                    <td><?php echo htmlspecialchars($updatedBy !== '' ? $updatedBy : '-'); ?></td>
+                                                    <td><?php echo htmlspecialchars($updatedOn); ?></td>
+                                                    <td>
+                                                        <button type="button"
+                                                                class="btn btn-xs btn-outline-primary dppm-edit-item-btn"
+                                                                data-item="<?php echo htmlspecialchars(json_encode($itemPayload), ENT_QUOTES, 'UTF-8'); ?>"
+                                                                title="Edit item">
+                                                            <i class="fal fa-edit"></i>
+                                                        </button>
+                                                    </td>
                                                 </tr>
                                             <?php } ?>
                                             </tbody>
@@ -193,6 +228,78 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="dppmEditItemModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <form method="post" action="action/update_checklist_item.php" id="dppm_edit_item_form">
+                <input type="hidden" name="ItemID" id="dppm_edit_item_id" value="0">
+                <input type="hidden" name="ChecklistID" value="<?php echo (int) $checklistID; ?>">
+                <input type="hidden" name="redirect_to" value="view-checklist-details.php?id=<?php echo (int) $checklistID; ?>">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Edit Checklist Item</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <label>Item Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="ItemName" id="dppm_edit_item_name" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Item Code</label>
+                            <input type="text" class="form-control" name="ItemCode" id="dppm_edit_item_code" placeholder="P-001">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label>Input Type</label>
+                            <select class="form-control" name="InputType" id="dppm_edit_input_type">
+                                <?php foreach ($inputTypes as $type) { ?>
+                                    <option value="<?php echo htmlspecialchars($type); ?>"><?php echo htmlspecialchars($type); ?></option>
+                                <?php } ?>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Unit</label>
+                            <input type="text" class="form-control" name="UnitName" id="dppm_edit_unit">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Sort Order</label>
+                            <input type="number" class="form-control" name="SortOrder" id="dppm_edit_sort" min="1">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label>Default Value</label>
+                            <input type="text" class="form-control" name="DefaultValue" id="dppm_edit_default_value">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Mandatory</label>
+                            <select class="form-control" name="IsMandatory" id="dppm_edit_mandatory">
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Options (for dropdown)</label>
+                            <input type="text" class="form-control" name="OptionsJson" id="dppm_edit_options" placeholder="OK,Not OK,N/A">
+                        </div>
+                    </div>
+                    <div class="form-group mb-0">
+                        <label>Help Text</label>
+                        <input type="text" class="form-control" name="HelpText" id="dppm_edit_help_text">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 <?php include('../includes/common_modules.php'); include('../includes/common_scripts.php'); ?>
 <script src="../js/modules/dynamic-ppm-checklist-items.js"></script>
 <script>
@@ -202,6 +309,9 @@ $(document).ready(function () {
     }
     if (typeof dppmInitBulkItemForm === 'function') {
         dppmInitBulkItemForm('#details_bulk_items_form', <?php echo json_encode(dynamicPPMInputTypes()); ?>);
+    }
+    if (typeof dppmInitEditItemModal === 'function') {
+        dppmInitEditItemModal('#dppmEditItemModal', <?php echo json_encode($inputTypes); ?>);
     }
 });
 </script>

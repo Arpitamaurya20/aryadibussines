@@ -16,7 +16,7 @@
     $mappings = getDynamicPPMCompanyChecklistMappings($conn);
     ?>
     <meta charset="utf-8">
-    <title>Dynamic PPM Master Setup - Aryadibusiness</title>
+    <title>Dynamic PPM Master Setup - TechXpert</title>
     <?php include('../includes/common_head_content.php'); ?>
 </head>
 <body class="mod-bg-1 desktop chrome webkit pace-done nav-function-fixed blur">
@@ -28,7 +28,7 @@
             <?php include('../includes/common_header.php'); ?>
             <main id="js-page-content" role="main" class="page-content">
                 <ol class="breadcrumb page-breadcrumb">
-                    <li class="breadcrumb-item"><a href="../dashboard/admin_dashboard">Aryadibusiness</a></li>
+                    <li class="breadcrumb-item"><a href="../dashboard/admin_dashboard">TechXpert</a></li>
                     <li class="breadcrumb-item">PPM</li>
                     <li class="breadcrumb-item active">Dynamic PPM Master Setup</li>
                 </ol>
@@ -41,7 +41,7 @@
                             </div>
                         <?php } ?>
                         <div class="alert alert-info">
-                            <strong>Setup Order:</strong> 1) Create Checklist Master, 2) Add Checklist Items, 3) Map Company to Checklist.
+                            <strong>Setup Order:</strong> 1) Create Checklist Master, 2) Add Checklist Items, 3) Map Company to Checklist (old flow) and/or map checklist on the asset update form (new asset-wise flow).
                             <a href="view-checklists.php" class="btn btn-sm btn-outline-primary ml-2">View All Checklists</a>
                         </div>
                     </div>
@@ -63,14 +63,13 @@
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label>Checklist Code</label>
-                                        <input type="text" id="checklist_code_preview" class="form-control" placeholder="Next code preview" readonly>
-                                        <small class="text-muted">Preview of next code for selected category. Each saved checklist gets the next code automatically.</small>
+                                        <label>Checklist Code *</label>
+                                        <input type="text" name="ChecklistCode" id="checklist_code" class="form-control" placeholder="e.g. CHPLUMBING01" maxlength="50" required>
+                                        <small class="text-muted">Enter your own checklist code. Must be unique.</small>
                                     </div>
                                     <div class="form-group">
-                                        <label>Checklist Name(s) *</label>
-                                        <textarea name="ChecklistNames" class="form-control" rows="5" placeholder="Enter one checklist name per line&#10;Plumbing Preventive Checklist V1&#10;Plumbing Monthly Checklist&#10;Plumbing Quarterly Checklist" required></textarea>
-                                        <small class="text-muted">You can add multiple checklist names at once (one per line). Each gets its own auto-generated code.</small>
+                                        <label>Checklist Name *</label>
+                                        <input type="text" name="ChecklistName" class="form-control" placeholder="Plumbing Preventive Checklist V1" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Version</label>
@@ -80,8 +79,8 @@
                                         <label>Description</label>
                                         <textarea name="Description" class="form-control" rows="2"></textarea>
                                     </div>
-                                    <input type="hidden" name="CreatedBy" value="<?php echo isset($_SESSION['Name']) ? htmlspecialchars($_SESSION['Name']) : ''; ?>">
-                                    <button type="submit" class="btn btn-primary">Save Checklist Master(s)</button>
+                                    <input type="hidden" name="CreatedBy" value="<?php echo htmlspecialchars(dynamicPPMGetSessionUser()); ?>">
+                                    <button type="submit" class="btn btn-primary">Save Checklist Master</button>
                                 </form>
                             </div></div>
                         </div>
@@ -192,7 +191,7 @@
                                             <small class="text-muted">Leave blank to start immediately.</small>
                                         </div>
                                     </div>
-                                    <input type="hidden" name="CreatedBy" value="<?php echo isset($_SESSION['Name']) ? htmlspecialchars($_SESSION['Name']) : ''; ?>">
+                                    <input type="hidden" name="CreatedBy" value="<?php echo htmlspecialchars(dynamicPPMGetSessionUser()); ?>">
                                     <button type="submit" class="btn btn-info">Save Mapping</button>
                                 </form>
 
@@ -229,24 +228,6 @@ $(document).ready(function () {
     if ($.fn.select2) {
         $('.dppm-select2').select2({ width: '100%' });
     }
-
-    function loadNextChecklistCode() {
-        var categoryID = $('#master_category_id').val();
-        if (!categoryID) {
-            $('#checklist_code_preview').val('');
-            return;
-        }
-        $.post('action/get_next_checklist_code.php', { CategoryID: categoryID }, function (res) {
-            if (res && !res.error && res.ChecklistCode) {
-                $('#checklist_code_preview').val(res.ChecklistCode);
-            } else {
-                $('#checklist_code_preview').val('');
-            }
-        }, 'json');
-    }
-
-    $('#master_category_id').on('change', loadNextChecklistCode);
-    loadNextChecklistCode();
 
     if (typeof dppmInitBulkItemForm === 'function') {
         dppmInitBulkItemForm('#master_bulk_items_form', <?php echo json_encode(dynamicPPMInputTypes()); ?>);

@@ -493,7 +493,7 @@ if ($ppmTicketDbId > 0) {
     }
 }
 
-$media_asset = "techx-1.png";
+$media_asset = "aryadi-sr.png";
 if($CorporateID == 183)
 {
     $media_asset = "innov-sr.jpg";
@@ -959,10 +959,10 @@ $html = '
 //     $html .= generateHVACReportHTML($service_hvac_reports_details);
 // }
 
-$default_logo = "https://techxpertindia.in/images/techx-14.png"; // default logo
+$default_logo = __DIR__ . '/../../img/aryadi.png';
 
 if ($CorporateID == 183) {
-    $default_logo = "https://techxpertindia.in/admin/img/innov_logo.jpg"; // new logo for ID 183
+    $default_logo = __DIR__ . '/../../img/innov_logo.jpg';
 }
 $defaultConfig = (new Mpdf\Config\ConfigVariables())->getDefaults();
 $fontDirs = $defaultConfig['fontDir'];

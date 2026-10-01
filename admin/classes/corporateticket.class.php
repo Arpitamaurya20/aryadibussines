@@ -38,11 +38,13 @@ class Corporateticket extends Core
 
 	public function UpdateTicketType($data)
 	{
-		$service_type = $data['service_type'];
-		$TicketID = $data['TicketID'];
+		$service_type = mysqli_real_escape_string($this->conn, (string) ($data['service_type'] ?? ''));
+		$TicketID = (int) ($data['TicketID'] ?? 0);
+		if ($TicketID <= 0 || $service_type === '') {
+			return array('error' => true, 'message' => 'Invalid ticket type');
+		}
 		$where = " Type = '$service_type' where ID = $TicketID";
-		$response = $this->_UpdateTableRecords($this->conn, 'corporate_tickets', $where);
-		return $response;
+		return $this->_UpdateTableRecords($this->conn, 'corporate_tickets', $where);
 	}
 
 	public function UpdateTicketService($data)

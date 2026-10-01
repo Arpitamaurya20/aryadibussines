@@ -1,5 +1,5 @@
-
 <?php
+
 function getAllBranchAssets($conn,$BranchID)
 {
 	if($BranchID == -1)
@@ -14,31 +14,26 @@ function getAllBranchAssets($conn,$BranchID)
 	return $response;
 }
 
-function getAllBranchAssetsList($conn, $BranchID, $CorporateID)
+function getAllBranchAssetsList($conn,$BranchID,$CorporateID)
 {
-    if($BranchID == -1)
-    {
-        if($CorporateID != -1)
-        {
-            return _getAllBranchAssets(
-                $conn,
-                $CorporateID,
-                -1,
-                "",
-                ""
-            );
+	// print_r($CorporateID);
+	if($BranchID == -1)
+	{
+        if($CorporateID != -1){
+        	 $response = _getAllBranchAssets($conn,$CorporateID);
+        	 return $response;
         }
-        else
-        {
-            $where = "WHERE IsActive = 1";
-        }
-    }
-    else
-    {
-        $where = "WHERE BranchID = $BranchID AND IsActive = 1";
-    }
+        else{
 
-    return _getTableRecords($conn, 'branch_assets', $where);
+		 $where = " where IsActive = 1";
+		}
+	}
+	else
+	{
+		$where = " where BranchID = $BranchID AND IsActive = 1";
+	}
+	$response = _getTableRecords($conn,'branch_assets', $where);
+	return $response;
 }
 
 function InsertBranchAssets($conn,$data)
@@ -206,6 +201,28 @@ function _getAllBranchAssets($conn,$CorporateID,$BranchID,$searchQuery,$filter){
 		//echo $sql;
 	}
 	return $response;
+}
+
+function _countAllBranchAssets($conn,$CorporateID,$BranchID,$filter){
+	$where_corporate = "";
+	if($CorporateID != -1)
+	{
+		$where_corporate = " AND b.CompanyID = $CorporateID";
+	}
+	$where_branch = "";
+	if($BranchID != -1)
+	{
+		$where_branch = " AND b.ID = $BranchID";
+	}
+	$where = " where 1 ".$where_corporate.$where_branch.$filter;
+
+	$sql = "SELECT COUNT(*) as cnt FROM branch_assets ba INNER JOIN branch b ON ba.BranchID = b.ID INNER JOIN company c ON b.CompanyID = c.ID $where";
+	$result = mysqli_query($conn, $sql);
+	if ($result) {
+		$row = $result->fetch_assoc();
+		return intval($row['cnt']);
+	}
+	return 0;
 }
 
 

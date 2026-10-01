@@ -76,6 +76,16 @@ window.onpopstate = function () {
     pointer-events: all;
     cursor: wait;
 }
+#preloader[style*="display: none"],
+#preloader[style*="display:none"] {
+    pointer-events: none !important;
+}
+.alertify,
+.alertify-notifier,
+.ajs-modal,
+.ajs-dimmer {
+    z-index: 20000 !important;
+}
 body.is-page-loading #js-nav-menu a,
 body.is-page-loading .page-sidebar a {
     pointer-events: none;

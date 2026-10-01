@@ -19,132 +19,259 @@ $(document).ready(function () {
     });
 
 });
+var branchAssetsModalReady = false;
+var branchAssetsDetailsXhr = null;
+
+function getBranchAssetsSelect2Options() {
+    return {
+        dropdownParent: $("#add_edit_branch_assets_modal"),
+        width: "100%"
+    };
+}
+
+function initBranchAssetsModalWidgets() {
+    if (branchAssetsModalReady || typeof $.fn.select2 !== "function") {
+        return;
+    }
+
+    var select2Opts = getBranchAssetsSelect2Options();
+    $("#uom, #service_type, #categories, #sub_categories, #PPMInterval, #asset_checklist_id").each(function () {
+        var $el = $(this);
+        if (!$el.hasClass("select2-hidden-accessible")) {
+            $el.select2(select2Opts);
+        }
+    });
+
+    var $branch = $("#branch_id");
+    if ($branch.length && !$branch.hasClass("select2-hidden-accessible")) {
+        $branch.select2($.extend({}, select2Opts, {
+            placeholder: "Search & Select",
+            allowClear: false,
+            ajax: {
+                url: "action/search_branches.php",
+                dataType: "json",
+                delay: 250,
+                data: function (params) {
+                    return { q: params.term || "" };
+                },
+                processResults: function (data) {
+                    return { results: data.results || [] };
+                },
+                cache: true
+            },
+            minimumInputLength: 0
+        }));
+    }
+
+    // No startDate restriction — allow past (back) dates for AMC period
+    var datepickerOpts = {
+        format: "yyyy-mm-dd",
+        todayBtn: "linked",
+        clearBtn: true,
+        todayHighlight: true,
+        autoclose: true
+    };
+    ["#amc_start_date", "#amc_end_date"].forEach(function (selector) {
+        var $el = $(selector);
+        if ($el.data("datepicker")) {
+            $el.datepicker("destroy");
+        }
+        $el.datepicker(datepickerOpts);
+    });
+
+    branchAssetsModalReady = true;
+}
+
+function showBranchAssetsModalLoader(show) {
+    var $loader = $("#branch_assets_modal_loader");
+    if (!$loader.length) {
+        return;
+    }
+    if (show) {
+        $loader.show();
+    } else {
+        $loader.hide();
+    }
+}
+
+function setSelectValueQuiet(selector, value) {
+    var el = $(selector).get(0);
+    var previousOnChange = el ? el.onchange : null;
+    if (el) {
+        el.onchange = null;
+    }
+    var safeValue = (value === null || value === undefined) ? "" : value;
+    $(selector).val(safeValue);
+    if ($(selector).hasClass("select2-hidden-accessible")) {
+        $(selector).trigger("change.select2");
+    }
+    if (el) {
+        el.onchange = previousOnChange;
+    }
+}
+
+function resetBranchSelect() {
+    var $branch = $("#branch_id");
+    $branch.find("option").remove();
+    $branch.append(new Option("Search & Select", "-1", true, true));
+    $branch.val("-1");
+    if ($branch.hasClass("select2-hidden-accessible")) {
+        $branch.trigger("change.select2");
+    }
+}
+
+function setBranchSelect(branchId, branchName) {
+    var $branch = $("#branch_id");
+    if (!branchId || branchId == "-1") {
+        resetBranchSelect();
+        return;
+    }
+    var label = branchName || ("Branch #" + branchId);
+    if ($branch.find("option[value='" + branchId + "']").length === 0) {
+        $branch.append(new Option(label, branchId, true, true));
+    }
+    $branch.val(String(branchId));
+    if ($branch.hasClass("select2-hidden-accessible")) {
+        $branch.trigger("change.select2");
+    }
+}
+
 function openBranch_modal() {
+    if (branchAssetsDetailsXhr && branchAssetsDetailsXhr.readyState !== 4) {
+        branchAssetsDetailsXhr.abort();
+    }
     $("#branch_modal_title").html("Add Branch Assets");
     $("#add_update_branch_assets_form")[0].reset();
     $("#form_action").val("add");
-    $("#branch_id").select2();
-    $("#uom").select2();
-    $("#service_type").select2();
-    $("#categories").select2();
-    $("#sub_categories").select2();
-    // $("#equipment_location").select2();
+    $("#form_id").val("-1");
+    showBranchAssetsModalLoader(false);
+    $("#add_edit_branch_assets_modal").modal("show");
+    initBranchAssetsModalWidgets();
+    resetBranchSelect();
+    setSelectValueQuiet("#uom", "-1");
+    setSelectValueQuiet("#service_type", "-1");
+    setSelectValueQuiet("#categories", "-1");
+    setSelectValueQuiet("#sub_categories", "-1");
+    setSelectValueQuiet("#PPMInterval", "-1");
+    resetAssetChecklistSelect("Select category first");
+    $("#sub_categories_div").css("display", "none");
     const element = document.getElementById('branch_asset_disable_ppm_btn');
     if (element) {
-        // If it exists, set its display style to 'none'
         element.style.display = 'none';
     }
-    $("#add_edit_branch_assets_modal").modal();
-
-    $("#amc_start_date").datepicker({
-        format: "yyyy-mm-dd",
-        todayBtn: "linked",
-        clearBtn: true,
-        todayHighlight: true,
-        autoclose: true,
-        startDate:'+0d',
-    });
-    $("#amc_end_date").datepicker({
-        format: "yyyy-mm-dd",
-        todayBtn: "linked",
-        clearBtn: true,
-        todayHighlight: true,
-        autoclose: true,
-        startDate:'+0d',
-    });
 }
 function UpdateBranch_modal(branch_asset_id) {
     $("#branch_modal_title").html("Update Branch Assets");
-    
-    $.post("action/get_branch_assets_details.php", {
-        ID: branch_asset_id
-    },
-        function (data, status) {
-            var response = JSON.parse(data);
-            if (response.error == false) {
-                var branch_id = response.data.BranchID;
-                var equipment_name = response.data.EquipmentName;
-                var make = response.data.Make;
-                var model = response.data.Model;
-                var serial_no = response.data.SNo;
-                var capacity = response.data.Capacity;
-                var quantity = response.data.Qty;
-                var uom = response.data.UoM;
-                var unit_rate = response.data.UnitRate;
-                var amount = response.data.Amount;
-                var manufacturing_year = response.data.ManufacturingYear;
-                var equipment_age = response.data.EquipmentAge;
-                var service_type = response.data.ServiceType;
-                var categories = response.data.Category ;
-                var sub_categories = response.data.SubCategory;
-                var tat = response.data.Tat;
-                var floor_number = response.data.FloorNumber;
-                var equipment_location = response.data.EquipmentLocation;
-                var description = response.data.Description;
-                var amc_start_date = response.data.AMCStartDate;
-                var amc_end_date = response.data.AMCEndDate;
-                var PPMInterval=response.PPMInterval;
+    $("#add_update_branch_assets_form")[0].reset();
+    $("#form_action").val("Update");
+    $("#form_id").val(branch_asset_id);
+    showBranchAssetsModalLoader(true);
+    $("#add_edit_branch_assets_modal").modal("show");
+    initBranchAssetsModalWidgets();
 
-                $("#branch_id").val(branch_id);
-                $("#equipment_name").val(equipment_name);
-                $("#make").val(make);
-                $("#model").val(model);
-                $("#serial_no").val(serial_no);
-                $("#capacity").val(capacity);
-                $("#quantity").val(quantity);
-                $("#uom").val(uom);
-                $("#unit_rate").val(unit_rate);
-                $("#amount").val(amount);
-                $("#manufacturing_year").val(manufacturing_year);
-                $("#equipment_age").val(equipment_age);
-                $("#service_type").val(service_type);
-                $("#categories").val(categories);
-                $("#sub_categories").val(sub_categories);
-                $("#tat").val(tat);
-                $("#floor_number").val(floor_number);
-                $("#equipment_location").val(equipment_location);
-                $("#description").val(description);
+    if (branchAssetsDetailsXhr && branchAssetsDetailsXhr.readyState !== 4) {
+        branchAssetsDetailsXhr.abort();
+    }
+
+    branchAssetsDetailsXhr = $.ajax({
+        url: "action/get_branch_assets_details.php",
+        type: "POST",
+        data: { ID: branch_asset_id },
+        cache: false,
+        success: function (data) {
+            var response;
+            try {
+                response = typeof data === "object" ? data : JSON.parse(data);
+            } catch (e) {
+                showBranchAssetsModalLoader(false);
+                TechXAlert("Unable to load asset details. Please try again.");
+                return;
+            }
+            if (response.error == false && response.data) {
+                var asset = response.data;
+                setBranchSelect(asset.BranchID, asset.BranchSite);
+                $("#equipment_name").val(asset.EquipmentName);
+                $("#make").val(asset.Make);
+                $("#model").val(asset.Model);
+                $("#serial_no").val(asset.SNo);
+                $("#capacity").val(asset.Capacity);
+                $("#quantity").val(asset.Qty);
+                setSelectValueQuiet("#uom", asset.UoM);
+                $("#unit_rate").val(asset.UnitRate);
+                $("#amount").val(asset.Amount);
+                $("#manufacturing_year").val(asset.ManufacturingYear);
+                $("#equipment_age").val(asset.EquipmentAge);
+                setSelectValueQuiet("#service_type", asset.ServiceType);
+                setSelectValueQuiet("#categories", asset.Category);
+                setSelectValueQuiet("#sub_categories", asset.SubCategory);
+                $("#tat").val(asset.Tat);
+                $("#floor_number").val(asset.FloorNumber);
+                $("#equipment_location").val(asset.EquipmentLocation);
+                $("#description").val(asset.Description);
                 $("#form_action").val("Update");
                 $("#form_id").val(branch_asset_id);
-                $("#amc_start_date").val(amc_start_date);
-                $("#amc_end_date").val(amc_end_date);
-                $("#PPMInterval").val(PPMInterval);
-                $("#add_edit_branch_assets_modal").modal();
-                $("#branch_id").select2();
-                $("#uom").select2();
-                $("#service_type").select2();
-                $("#equipment_type").select2();
-                $("#categories").select2();
-                $("#sub_categories").select2();
-                $("#sub_categories_div").css("display","block");
+                $("#amc_start_date").val(asset.AMCStartDate);
+                $("#amc_end_date").val(asset.AMCEndDate);
+                setSelectValueQuiet("#PPMInterval", asset.PPMInterval);
+                $("#sub_categories_div").css("display", "block");
+                loadAssetCategoryChecklists(asset.Category, asset.AssetChecklistID);
                 const element = document.getElementById('branch_asset_disable_ppm_btn');
                 if (element) {
-                    // If it exists, set its display style to 'none'
                     element.style.display = '';
                 }
-                
-
-                $("#amc_start_date").datepicker({
-                    format: "yyyy-mm-dd",
-                    todayBtn: "linked",
-                    clearBtn: true,
-                    todayHighlight: true,
-                    autoclose: true,
-                    startDate:'+0d',
-                });
-                $("#amc_end_date").datepicker({
-                    format: "yyyy-mm-dd",
-                    todayBtn: "linked",
-                    clearBtn: true,
-                    todayHighlight: true,
-                    autoclose: true,
-                    startDate:'+0d',
-                });
-                // $("#equipment_location").select2();
+            } else {
+                TechXAlert(response.message || "Unable to load asset details.");
             }
-        });
-
+            showBranchAssetsModalLoader(false);
+        },
+        error: function (xhr, status) {
+            if (status !== "abort") {
+                showBranchAssetsModalLoader(false);
+                TechXAlert("Unable to load asset details. Please try again.");
+            }
+        }
+    });
 }
+function ToggleBranchAssetStatus(asset_id, is_active) {
+    var actionLabel = is_active === 1 ? "activate" : "inactivate";
+    alertify.confirm('TechXpert ', 'Do you really want to ' + actionLabel + ' this branch asset? Related corporate/PPM tickets will also be updated.', function () {
+        $.post("action/toggle_branch_asset_status.php", {
+            ID: asset_id,
+            IsActive: is_active
+        },
+            function (data, status) {
+                var response = JSON.parse(data);
+                TechXAlert(response.message);
+                if (response.error == false) {
+                    setTimeout(function () {
+                        reloadBranchAssetsTables();
+                    }, 800);
+                }
+            });
+
+    },
+        function () {
+            alertify.error('Action Cancelled')
+        });
+}
+
+function DeactivateBranchAsset(asset_id) {
+    ToggleBranchAssetStatus(asset_id, 0);
+}
+
+function ActivateBranchAsset(asset_id) {
+    ToggleBranchAssetStatus(asset_id, 1);
+}
+
+function reloadBranchAssetsTables() {
+    if ($.fn.DataTable.isDataTable('#view-branch-assets-active')) {
+        $('#view-branch-assets-active').DataTable().ajax.reload(null, false);
+    }
+    if ($.fn.DataTable.isDataTable('#view-branch-assets-inactive')) {
+        $('#view-branch-assets-inactive').DataTable().ajax.reload(null, false);
+    }
+}
+
 function DeleteBranchAssets(branch_id) {
     alertify.confirm('TechXpert ', 'Do you really want to delete branch assets', function () {
         $.post("action/delete_branch_assets.php", {
@@ -213,9 +340,16 @@ function AddUpdateBranchAssets() {
             TechXAlert(response.message);
             if (response.error == false) {
                 setTimeout(function () {
-                    location.reload();
-                }, 2000);
+                    reloadBranchAssetsTables();
+                    $('#add_edit_branch_assets_modal').modal('hide');
+                    $("#branch_assets_btn").html('Submit').prop("disabled", false);
+                }, 800);
+            } else {
+                $("#branch_assets_btn").html('Submit').prop("disabled", false);
             }
+        },
+        error: function () {
+            $("#branch_assets_btn").html('Submit').prop("disabled", false);
         },
         cache: false,
         contentType: false,
@@ -324,14 +458,85 @@ function DownloadAssetsFileFormat() {
   link.click();
 }
 
+function resetAssetChecklistSelect(placeholder) {
+    var $el = $("#asset_checklist_id");
+    if (!$el.length) {
+        return;
+    }
+    $el.find("option").remove();
+    $el.append(new Option(placeholder || "Select category first", "-1", true, true));
+    if ($el.hasClass("select2-hidden-accessible")) {
+        $el.trigger("change.select2");
+    }
+}
+
+function loadAssetCategoryChecklists(categoryId, selectedId, done) {
+    var $el = $("#asset_checklist_id");
+    if (!$el.length) {
+        if (typeof done === "function") {
+            done();
+        }
+        return;
+    }
+    if (!categoryId || categoryId == "-1") {
+        resetAssetChecklistSelect("Select category first");
+        if (typeof done === "function") {
+            done();
+        }
+        return;
+    }
+    $.post("action/get_checklists_by_category.php", {
+        CategoryID: categoryId
+    }, function (data) {
+        var response;
+        try {
+            response = typeof data === "object" ? data : JSON.parse(data);
+        } catch (e) {
+            response = { results: [] };
+        }
+        var wasSelect2 = $el.hasClass("select2-hidden-accessible");
+        if (wasSelect2) {
+            $el.select2("destroy");
+        }
+        $el.empty().append(new Option("No checklist mapped", "-1", true, true));
+        if (response && response.results) {
+            $.each(response.results, function (_, row) {
+                $el.append(new Option(row.text, String(row.id), false, false));
+            });
+        }
+        if (wasSelect2 || branchAssetsModalReady) {
+            $el.select2(getBranchAssetsSelect2Options());
+        }
+        if (selectedId && selectedId != "-1") {
+            setSelectValueQuiet("#asset_checklist_id", String(selectedId));
+        }
+        if (typeof done === "function") {
+            done();
+        }
+    }).fail(function () {
+        if (typeof done === "function") {
+            done();
+        }
+    });
+}
+
   function SelectBranchAssetsCategories() {
         $.post("action/get_category.php", {
                 CategoryID: $("#categories").val()
             },
             function(data, status) {
+                var $sub = $("#sub_categories");
+                var wasSelect2 = $sub.hasClass("select2-hidden-accessible");
+                if (wasSelect2) {
+                    $sub.select2("destroy");
+                }
                 document.getElementById("sub_categories_div").style.display = "block";
                 document.getElementById("sub_categories").innerHTML = data;
+                if (wasSelect2 || branchAssetsModalReady) {
+                    $sub.select2(getBranchAssetsSelect2Options());
+                }
             });
+        loadAssetCategoryChecklists($("#categories").val(), "-1");
     }
 
 function ViewPPMTickets(BranchAssetsID)
@@ -382,7 +587,7 @@ function UploadBranchassets_CSV() {
 
 function FilterAssets()
 {
-    var param = "?p=1";
+    var param = "p=1";
     var branchObject = document.getElementById("branch_name");
     if(branchObject !== null)
     {
@@ -395,80 +600,11 @@ function FilterAssets()
         var CorporateID = document.getElementById("filter_company_id").value;
         param = param+"&CorporateID="+CorporateID;
     }
-    var table = $('#view-branch-assets').DataTable();
-    table.destroy(); 
-    var columns = [
-            {
-                "data": "id",
-                render: function(data, type, row, meta) {
-                    return meta.row + meta.settings._iDisplayStart + 1;
-                }
-            },
-            {
-                data: 'CompanyBranches'
-            },
-            {
-                data: 'EquipmentName'
-            },
-            {
-                data: 'Make_Model'
-            },
-            {
-                data: 'SNo'
-            },
-            {
-                data: 'Capacity'
-            },
-            {
-                data: 'ManufacturingYear'
-            },
-            {
-                data: 'ServiceType'
-            },
-            {
-                data: 'FloorNumber_EquipmentLocation'
-            },
-            {
-                data: 'PPM'
-            },
-            {
-                data: 'AMCTicket'
-            },
-            {
-                data: 'Update'
-            },
-            {
-                data: 'Action'
-            }
-        ];
-
-       /* // If nav is 1, add 'CompanyBranches' column at the second position
-        if (nav == 1) {
-            columns.splice(1, 0, {
-                data: 'CompanyBranches'
-            });
-        }*/
-
-        // Initialize DataTable with dynamic columns
-        $('#view-branch-assets').dataTable({
-            responsive: true,
-            'processing': true,
-            'serverSide': true,
-            'ordering': false,
-            'serverMethod': 'post',
-            'ajax': {
-                'url': 'include/branch-assets-list-post.php'+param
-            },
-            'columnDefs': [{
-                "targets": [0],
-                "className": "text-center"
-            }],
-            "order": [
-                [1, 'asc']
-            ],
-            'columns': columns // Set dynamic columns here
-        });
-
+    if (typeof window.initBranchAssetsTable === "function") {
+        window.initBranchAssetsTable('#view-branch-assets-active', 1, param);
+        window.initBranchAssetsTable('#view-branch-assets-inactive', 0, param);
+        return;
+    }
 }
 
 function BranchAssetsGetBranchesFromCorporateID(selection)
@@ -539,8 +675,7 @@ function ba_ViewTicketDetails(TicketID) {
             if(response.success) {
                 alert("Bulk tickets raised successfully!");
                 $('#bulk_ticket_modal').modal('hide');
-                // Optionally, reload DataTable or page
-                $('#view-branch-assets').DataTable().ajax.reload();
+                reloadBranchAssetsTables();
             } else {
                 alert("Error: " + response.message);
             }

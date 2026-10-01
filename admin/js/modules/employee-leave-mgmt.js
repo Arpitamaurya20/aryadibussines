@@ -22,10 +22,8 @@
             var days = res.days_to_deduct || (res.calculation && res.calculation.total_days) || 0;
             var avail = res.balance_available;
             var after = res.balance_after;
-            var msg = res.message + ' Days: ' + days;
-            if (res.is_unpaid) {
-                msg += '. No CL/SL balance required.';
-            } else if (typeof avail === 'number') {
+            var msg = res.message + ' Days to deduct: ' + days;
+            if (typeof avail === 'number') {
                 msg += '. ' + ($('#elm_type').val() || 'Leave') + ' balance: ' + avail + ' available';
                 if (typeof after === 'number') {
                     msg += ', ' + after + ' will remain after approval';

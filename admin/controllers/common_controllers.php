@@ -343,8 +343,13 @@ function _getMaxIdentityValue_filter($conn, $table, $column, $where_query)
 
 function getEmployeeDetailsfromID($conn,$EmployeeID)
 {
+	$EmployeeID = (int) $EmployeeID;
+	if ($EmployeeID <= 0) {
+		return array();
+	}
 	$where = " where ID = $EmployeeID";
-	return _getTableDetails($conn,'employees',$where);
+	$row = _getTableDetails($conn,'employees',$where);
+	return is_array($row) ? $row : array();
 }
 
 function generateArraywithKey($data_array)
@@ -728,6 +733,10 @@ function enableLeaveMgmtHrNavForHr($roles)
 
 function sendWhatsAppMessage($phonenumber,$message)
 {
+  $phonenumber = preg_replace('/\D/', '', (string) $phonenumber);
+  if (strlen($phonenumber) < 10) {
+    return;
+  }
   $params=array(
   'token' => '48y5d4l930we57ya',
   'to' => $phonenumber,
@@ -739,8 +748,9 @@ function sendWhatsAppMessage($phonenumber,$message)
     CURLOPT_URL => "https://api.ultramsg.com/instance32275/messages/chat",
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => "",
-    CURLOPT_MAXREDIRS => 10,
-    CURLOPT_TIMEOUT => 30,
+    CURLOPT_MAXREDIRS => 2,
+    CURLOPT_CONNECTTIMEOUT => 3,
+    CURLOPT_TIMEOUT => 5,
     CURLOPT_SSL_VERIFYHOST => 0,
     CURLOPT_SSL_VERIFYPEER => 0,
     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,

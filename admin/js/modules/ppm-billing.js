@@ -45,7 +45,7 @@ function initializeCharts() {
             }
         }
     });
-
+    
     // Billing Status Chart
     var billingCtx = document.getElementById('billingStatusChart').getContext('2d');
     if (billingStatusChart) {
@@ -79,16 +79,16 @@ function initializeCharts() {
 function loadBranches() {
     var CompanyID = $('#filter_company').val();
     $('#filter_branch').html('<option value="">All Branches</option>');
-
+    
     if (CompanyID) {
         $.ajax({
             url: '../PPMBilling/ajax/get_branches_list.php',
             type: 'GET',
             data: { CompanyID: CompanyID },
             dataType: 'json',
-            success: function (response) {
+            success: function(response) {
                 if (response.error == false && response.data) {
-                    $.each(response.data, function (index, branch) {
+                    $.each(response.data, function(index, branch) {
                         $('#filter_branch').append('<option value="' + branch.ID + '">' + branch.BranchSite + '</option>');
                     });
                 }
@@ -103,38 +103,38 @@ function loadBillingData() {
     var BranchID = $('#filter_branch').val() || '';
     var dateRange = $('#date_range').val();
     var TicketIDSearch = $('#search_ticket_id').val() || '';
-
+    
     // Get current month start and end dates
     var today = new Date();
     var firstDay = new Date(today.getFullYear(), today.getMonth(), 1);
     var lastDay = new Date(today.getFullYear(), today.getMonth() + 1, 0);
-
+    
     var StartDate = firstDay.toISOString().split('T')[0];
     var EndDate = lastDay.toISOString().split('T')[0];
-
+    
     // Use moment if available, otherwise use native Date
     if (typeof moment !== 'undefined') {
         StartDate = moment().startOf('month').format('YYYY-MM-DD');
         EndDate = moment().endOf('month').format('YYYY-MM-DD');
     }
-
+    
     if (dateRange && dateRange.trim() !== '') {
         var dates = dateRange.split(' - ');
         if (dates.length === 2) {
             var startDateStr = dates[0].trim();
             var endDateStr = dates[1].trim();
-
+            
             // Try to parse with moment if available
             if (typeof moment !== 'undefined') {
                 var startMoment = moment(startDateStr, ['YYYY-MM-DD', 'MM/DD/YYYY', 'DD/MM/YYYY'], true);
                 var endMoment = moment(endDateStr, ['YYYY-MM-DD', 'MM/DD/YYYY', 'DD/MM/YYYY'], true);
-
+                
                 if (startMoment.isValid()) {
                     StartDate = startMoment.format('YYYY-MM-DD');
                 } else {
                     StartDate = startDateStr;
                 }
-
+                
                 if (endMoment.isValid()) {
                     EndDate = endMoment.format('YYYY-MM-DD');
                 } else {
@@ -147,7 +147,7 @@ function loadBillingData() {
             }
         }
     }
-
+    
     // Validate date format (YYYY-MM-DD)
     var dateRegex = /^\d{4}-\d{2}-\d{2}$/;
     if (!dateRegex.test(StartDate)) {
@@ -162,18 +162,18 @@ function loadBillingData() {
         var lastDay = new Date(today.getFullYear(), today.getMonth() + 1, 0);
         EndDate = lastDay.toISOString().split('T')[0];
     }
-
-    console.log('Loading billing data:', { CompanyID, BranchID, StartDate, EndDate, dateRange: dateRange, TicketIDSearch: TicketIDSearch });
-
+    
+    console.log('Loading billing data:', {CompanyID, BranchID, StartDate, EndDate, dateRange: dateRange, TicketIDSearch: TicketIDSearch});
+    
     // Show loading indicator
     var tbody = $('#billing_tbody');
     tbody.html('<tr><td colspan="15" class="text-center"><i class="fa fa-spinner fa-spin"></i> Loading billing data...</td></tr>');
-
+    
     // Load statistics (skip if searching by TicketID)
     if (!TicketIDSearch) {
         loadBillingStatistics(CompanyID, BranchID, StartDate, EndDate);
     }
-
+    
     // Load tickets
     loadBillingTickets(CompanyID, BranchID, StartDate, EndDate, TicketIDSearch);
 }
@@ -190,25 +190,25 @@ function loadBillingStatistics(CompanyID, BranchID, StartDate, EndDate) {
             EndDate: EndDate
         },
         dataType: 'json',
-        success: function (response) {
+        success: function(response) {
             console.log('Statistics Response:', response);
             if (response.error == false && response.data) {
                 var stats = response.data;
-
+                
                 // Update statistics cards - Amount in big text, ticket count in small text
-                $('#stat_raised_amount').text('₹' + (stats.ticket_amounts.Raised || 0).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+                $('#stat_raised_amount').text('₹' + (stats.ticket_amounts.Raised || 0).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2}));
                 $('#stat_raised').text((stats.ticket_status.Raised || 0) + ' tickets');
-                $('#stat_assigned_amount').text('₹' + (stats.ticket_amounts.Assigned || 0).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+                $('#stat_assigned_amount').text('₹' + (stats.ticket_amounts.Assigned || 0).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2}));
                 $('#stat_assigned').text((stats.ticket_status.Assigned || 0) + ' tickets');
-                $('#stat_closed_amount').text('₹' + (stats.ticket_amounts.Closed || 0).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+                $('#stat_closed_amount').text('₹' + (stats.ticket_amounts.Closed || 0).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2}));
                 $('#stat_closed').text((stats.ticket_status.Closed || 0) + ' tickets');
-                $('#stat_billed_amount').text('₹' + (stats.billing_amounts.Billed || 0).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+                $('#stat_billed_amount').text('₹' + (stats.billing_amounts.Billed || 0).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2}));
                 $('#stat_billed').text((stats.billing_status.Billed || 0) + ' tickets');
-                $('#stat_unbilled_amount').text('₹' + (stats.billing_amounts.Unbilled || 0).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+                $('#stat_unbilled_amount').text('₹' + (stats.billing_amounts.Unbilled || 0).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2}));
                 $('#stat_unbilled').text((stats.billing_status.Unbilled || 0) + ' tickets');
-                $('#stat_pending_amount').text('₹' + (stats.payment_amounts.Pending || 0).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+                $('#stat_pending_amount').text('₹' + (stats.payment_amounts.Pending || 0).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2}));
                 $('#stat_pending').text((stats.payment_status.Pending || 0) + ' tickets');
-
+                
                 // Update charts
                 if (ticketStatusChart) {
                     ticketStatusChart.data.datasets[0].data = [
@@ -218,7 +218,7 @@ function loadBillingStatistics(CompanyID, BranchID, StartDate, EndDate) {
                     ];
                     ticketStatusChart.update();
                 }
-
+                
                 if (billingStatusChart) {
                     billingStatusChart.data.datasets[0].data = [
                         stats.billing_status.Billed || 0,
@@ -230,7 +230,7 @@ function loadBillingStatistics(CompanyID, BranchID, StartDate, EndDate) {
                 console.error('Statistics Error:', response.message || 'Unknown error');
             }
         },
-        error: function (xhr, status, error) {
+        error: function(xhr, status, error) {
             console.error('AJAX Error loading statistics:', error);
             console.error('Response:', xhr.responseText);
         }
@@ -242,31 +242,31 @@ function loadBillingTickets(CompanyID, BranchID, StartDate, EndDate, TicketIDSea
     // Convert empty strings to -1 for proper filtering
     var CorporateID = (CompanyID && CompanyID !== '') ? parseInt(CompanyID) : -1;
     var BranchIDValue = (BranchID && BranchID !== '') ? parseInt(BranchID) : -1;
-
+    
     var ajaxData = {
         CorporateID: CorporateID,
         BranchID: BranchIDValue,
         StartDate: StartDate,
         EndDate: EndDate
     };
-
+    
     // Add TicketID search if provided
     if (TicketIDSearch && TicketIDSearch.trim() !== '') {
         ajaxData.TicketID = TicketIDSearch.trim();
     }
-
+    
     console.log('loadBillingTickets - Filters being sent:', ajaxData);
-
+    
     $.ajax({
         url: '../PPMBilling/action/get_billing_tickets.php',
         type: 'GET',
         data: ajaxData,
         dataType: 'json',
-        success: function (response) {
+        success: function(response) {
             console.log('Tickets Response:', response);
             console.log('Tickets Count:', response.count || (response.data ? response.data.length : 0));
             console.log('Filters received by server:', response.debug_info ? response.debug_info.filters_applied : 'N/A');
-
+            
             if (response.debug_info) {
                 console.log('Debug Info:', response.debug_info);
                 // Show count badge and date range info
@@ -279,27 +279,27 @@ function loadBillingTickets(CompanyID, BranchID, StartDate, EndDate, TicketIDSea
             }
             if (response.error == false && response.data) {
                 var tbody = $('#billing_tbody');
-
+                
                 // Destroy DataTable first to prevent caching issues
                 if ($.fn.DataTable.isDataTable('#billing_table')) {
                     billingTable.clear();
                     billingTable.destroy();
                     billingTable = null;
                 }
-
+                
                 tbody.empty(); // Clear existing data
-
+                
                 console.log('Populating table with', response.data.length, 'tickets');
                 console.log('Filters applied:', ajaxData);
-
+                
                 if (response.data && response.data.length > 0) {
-                    $.each(response.data, function (index, item) {
+                    $.each(response.data, function(index, item) {
                         var billingStatusClass = (item.BillingStatus == 'Billed') ? 'billing-status-billed' : 'billing-status-unbilled';
                         var paymentStatusClass = 'payment-status-' + (item.PaymentStatus || 'pending').toLowerCase();
-
+                        
                         // Store calculated amount for this ticket
                         ticketCalculatedAmounts[item.TicketID] = parseFloat(item.CalculatedAmount || 0);
-
+                        
                         // Handle billed amount display
                         // For Unbilled: show calculated amount (potential billing)
                         // For Billed: show actual billed amount (or calculated if billed is 0)
@@ -314,7 +314,7 @@ function loadBillingTickets(CompanyID, BranchID, StartDate, EndDate, TicketIDSea
                             // For unbilled, show calculated amount
                             billedAmount = parseFloat(item.CalculatedAmount || 0);
                         }
-
+                        
                         var row = '<tr data-ticket-id="' + item.TicketID + '">' +
                             '<td><input type="checkbox" class="ticket-checkbox" value="' + item.TicketID + '" onchange="updateBulkButtons();"></td>' +
                             '<td>' + (item.TicketNumber || item.TicketID) + '</td>' +
@@ -323,11 +323,11 @@ function loadBillingTickets(CompanyID, BranchID, StartDate, EndDate, TicketIDSea
                             '<td>' + (item.EquipmentName || '') + '</td>' +
                             '<td>' + (item.PPMDate || '') + '</td>' +
                             '<td>' + (item.TicketStatus || '') + '</td>' +
-                            '<td>₹' + (parseFloat(item.AssetUnitRate || 0)).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '</td>' +
-                            '<td>₹' + (parseFloat(item.CalculatedAmount || 0)).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '</td>' +
+                            '<td>₹' + (parseFloat(item.AssetUnitRate || 0)).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2}) + '</td>' +
+                            '<td>₹' + (parseFloat(item.CalculatedAmount || 0)).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2}) + '</td>' +
                             '<td><span class="billing-status-badge ' + billingStatusClass + '">' + (item.BillingStatus || 'Unbilled') + '</span></td>' +
                             '<td><span class="billing-status-badge ' + paymentStatusClass + '">' + (item.PaymentStatus || 'Pending') + '</span></td>' +
-                            '<td>₹' + billedAmount.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '</td>' +
+                            '<td>₹' + billedAmount.toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2}) + '</td>' +
                             '<td>' + (item.BillingNumber || '-') + '</td>' +
                             '<td>' + (item.BilledDate || '-') + '</td>' +
                             '<td>' +
@@ -337,16 +337,16 @@ function loadBillingTickets(CompanyID, BranchID, StartDate, EndDate, TicketIDSea
                             '</tr>';
                         tbody.append(row);
                     });
-
+                    
                     // Destroy existing DataTable completely before reinitializing
                     if ($.fn.DataTable.isDataTable('#billing_table')) {
                         billingTable.clear();
                         billingTable.destroy();
                         billingTable = null;
                     }
-
+                    
                     // Small delay to ensure DOM is ready
-                    setTimeout(function () {
+                    setTimeout(function() {
                         billingTable = $('#billing_table').DataTable({
                             "pageLength": 25,
                             "lengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
@@ -357,12 +357,12 @@ function loadBillingTickets(CompanyID, BranchID, StartDate, EndDate, TicketIDSea
                             "destroy": true, // Allow reinitialization
                             "retrieve": false // Don't retrieve existing instance
                         });
-
+                        
                         console.log('DataTable initialized with', billingTable.rows().count(), 'rows');
                     }, 100);
-
+                    
                     // Attach checkbox change event
-                    $(document).off('change', '.ticket-checkbox').on('change', '.ticket-checkbox', function () {
+                    $(document).off('change', '.ticket-checkbox').on('change', '.ticket-checkbox', function() {
                         updateBulkButtons();
                     });
                 } else {
@@ -375,7 +375,7 @@ function loadBillingTickets(CompanyID, BranchID, StartDate, EndDate, TicketIDSea
                     }
                     tbody.append('<tr><td colspan="15" class="text-center">' + noDataMsg + '</td></tr>');
                 }
-            } else {
+                } else {
                 console.error('Tickets Error:', response.message || 'Unknown error');
                 console.error('Debug Info:', response.debug || 'No debug info');
                 var tbody = $('#billing_tbody');
@@ -392,12 +392,12 @@ function loadBillingTickets(CompanyID, BranchID, StartDate, EndDate, TicketIDSea
                 }
                 tbody.append('<tr><td colspan="15" class="text-center text-danger">Error loading data: ' + errorMsg + '</td></tr>');
             }
-
+            
             // Reset selections
             selectedTickets = {};
             updateBulkButtons();
         },
-        error: function (xhr, status, error) {
+        error: function(xhr, status, error) {
             console.error('AJAX Error loading tickets:', error);
             console.error('Response:', xhr.responseText);
         }
@@ -417,7 +417,7 @@ function toggleBillingStatus(TicketID, CurrentStatus, StartDate, EndDate) {
                 BillingEndDate: EndDate
             },
             dataType: 'json',
-            success: function (response) {
+            success: function(response) {
                 if (response.error == false) {
                     alert(response.message);
                     loadBillingData();
@@ -436,11 +436,11 @@ var ticketCalculatedAmounts = {};
 function openBillingDetailsModal(TicketID, BillingStatus, PaymentStatus, BilledAmount, BillingNumber, BilledDate, StartDate, EndDate, Remarks) {
     // Get calculated amount - try from stored data or from the table
     var calculatedAmount = ticketCalculatedAmounts[TicketID] || 0;
-
+    
     // If not found in stored data, try to get from table
     if (calculatedAmount == 0 && $.fn.DataTable.isDataTable('#billing_table')) {
         var table = $('#billing_table').DataTable();
-        table.rows().every(function (rowIdx, tableLoop, rowLoop) {
+        table.rows().every(function(rowIdx, tableLoop, rowLoop) {
             var data = this.data();
             // Check if this row matches the ticket ID
             var rowTicketID = data[0] || '';
@@ -455,34 +455,34 @@ function openBillingDetailsModal(TicketID, BillingStatus, PaymentStatus, BilledA
             }
         });
     }
-
+    
     // If still 0, use BilledAmount as fallback
     if (calculatedAmount == 0) {
         calculatedAmount = parseFloat(BilledAmount) || 0;
     }
-
+    
     $('#modal_ticket_id').val(TicketID);
     $('#modal_billing_status').val(BillingStatus || 'Unbilled');
     $('#modal_payment_status').val(PaymentStatus || 'Pending');
-    $('#modal_calculated_amount').val('₹' + calculatedAmount.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
-
+    $('#modal_calculated_amount').val('₹' + calculatedAmount.toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2}));
+    
     // Set billed amount: if status is Billed and amount is 0, use calculated amount
     var billedAmt = parseFloat(BilledAmount) || 0;
     if (BillingStatus == 'Billed' && billedAmt == 0) {
         billedAmt = calculatedAmount;
     }
     $('#modal_billed_amount').val(billedAmt);
-
+    
     $('#modal_billing_number').val(BillingNumber || '');
     $('#modal_billed_date').val(BilledDate || '');
     $('#modal_billing_start_date').val(StartDate);
     $('#modal_billing_end_date').val(EndDate);
     $('#modal_remarks').val(Remarks || '');
     $('#modal_send_zoho').prop('checked', false);
-
+    
     // Handle billing status change
     handleBillingStatusChange();
-
+    
     $('#billingDetailsModal').modal('show');
 }
 
@@ -491,7 +491,7 @@ function handleBillingStatusChange() {
     var billingStatus = $('#modal_billing_status').val();
     var calculatedAmount = parseFloat($('#modal_calculated_amount').val().replace(/[₹,]/g, '')) || 0;
     var currentBilledAmount = parseFloat($('#modal_billed_amount').val()) || 0;
-
+    
     if (billingStatus == 'Billed') {
         // If billed amount is 0 or empty, set it to calculated amount
         if (currentBilledAmount == 0 || !$('#modal_billed_amount').val()) {
@@ -507,17 +507,17 @@ function handleBillingStatusChange() {
 function saveBillingDetails() {
     var formData = $('#billing_details_form').serializeArray();
     var data = {};
-
-    $.each(formData, function (i, field) {
+    
+    $.each(formData, function(i, field) {
         data[field.name] = field.value;
     });
-
+    
     $.ajax({
         url: '../PPMBilling/action/update_billing_details.php',
         type: 'POST',
         data: data,
         dataType: 'json',
-        success: function (response) {
+        success: function(response) {
             if (response.error == false) {
                 alert(response.message || 'Billing details updated successfully');
                 $('#billingDetailsModal').modal('hide');
@@ -535,7 +535,7 @@ function resetFilters() {
     $('#filter_branch').html('<option value="">All Branches</option>').trigger('change');
     $('#date_range').val('');
     $('#search_ticket_id').val('');
-
+    
     // Reset date range picker if it exists
     if ($('#date_range').data('daterangepicker')) {
         if (typeof moment !== 'undefined') {
@@ -555,7 +555,7 @@ function resetFilters() {
 // Toggle select all
 function toggleSelectAll(checkbox) {
     var isChecked = checkbox.checked;
-    $('.ticket-checkbox').each(function () {
+    $('.ticket-checkbox').each(function() {
         this.checked = isChecked;
         var ticketID = $(this).val();
         if (isChecked) {
@@ -581,10 +581,10 @@ function updateBulkButtons() {
         $('#bulk_bill_btn').text('Mark Selected as Billed');
         $('#bulk_unbill_btn').text('Mark Selected as Unbilled');
     }
-
+    
     // Update selectedTickets object
     selectedTickets = {};
-    $('.ticket-checkbox:checked').each(function () {
+    $('.ticket-checkbox:checked').each(function() {
         selectedTickets[$(this).val()] = true;
     });
 }
@@ -598,73 +598,73 @@ function clearAllSelections() {
 }
 
 // Bulk billing action
-// function bulkBillingActionold(action) {
-//     var selectedIDs = [];
-//     $('.ticket-checkbox:checked').each(function() {
-//         selectedIDs.push($(this).val());
-//     });
+function bulkBillingActionold(action) {
+    var selectedIDs = [];
+    $('.ticket-checkbox:checked').each(function() {
+        selectedIDs.push($(this).val());
+    });
+    
+    if (selectedIDs.length === 0) {
+        alert('Please select at least one ticket');
+        return;
+    }
+    
+    var actionText = action == 'Billed' ? 'mark as Billed' : 'mark as Unbilled';
+    if (!confirm('Are you sure you want to ' + actionText + ' ' + selectedIDs.length + ' ticket(s)?')) {
+        return;
+    }
+    
+    // Get date range
+    var dateRange = $('#date_range').val();
+    var StartDate = '';
+    var EndDate = '';
+    
+    if (dateRange && dateRange.trim() !== '') {
+        var dates = dateRange.split(' - ');
+        if (dates.length === 2) {
+            StartDate = dates[0].trim();
+            EndDate = dates[1].trim();
+        }
+    } else {
+        var today = new Date();
+        var firstDay = new Date(today.getFullYear(), today.getMonth(), 1);
+        var lastDay = new Date(today.getFullYear(), today.getMonth() + 1, 0);
+        StartDate = firstDay.toISOString().split('T')[0];
+        EndDate = lastDay.toISOString().split('T')[0];
+    }
+    
+    // Show loading
+    $('#bulk_bill_btn, #bulk_unbill_btn').prop('disabled', true).html('<i class="fa fa-spinner fa-spin"></i> Processing...');
+    
+    $.ajax({
+        url: '../PPMBilling/action/bulk_billing_action.php',
+        type: 'POST',
+        data: {
+            TicketIDs: selectedIDs,
+            BillingStatus: action,
+            BillingStartDate: StartDate,
+            BillingEndDate: EndDate
+        },
+        dataType: 'json',
+        success: function(response) {
+            if (response.error == false) {
+                alert(response.message || 'Bulk billing action completed successfully');
+                clearAllSelections();
+                loadBillingData();
+            } else {
+                alert('Error: ' + (response.message || 'Unknown error occurred'));
+            }
+            updateBulkButtons();
+        },
+        error: function(xhr, status, error) {
+            console.error('Bulk billing error:', error);
+            alert('Error occurred while processing bulk billing action');
+            updateBulkButtons();
+        }
+    });
+}
 
-//     if (selectedIDs.length === 0) {
-//         alert('Please select at least one ticket');
-//         return;
-//     }
-
-//     var actionText = action == 'Billed' ? 'mark as Billed' : 'mark as Unbilled';
-//     if (!confirm('Are you sure you want to ' + actionText + ' ' + selectedIDs.length + ' ticket(s)?')) {
-//         return;
-//     }
-
-//     // Get date range
-//     var dateRange = $('#date_range').val();
-//     var StartDate = '';
-//     var EndDate = '';
-
-//     if (dateRange && dateRange.trim() !== '') {
-//         var dates = dateRange.split(' - ');
-//         if (dates.length === 2) {
-//             StartDate = dates[0].trim();
-//             EndDate = dates[1].trim();
-//         }
-//     } else {
-//         var today = new Date();
-//         var firstDay = new Date(today.getFullYear(), today.getMonth(), 1);
-//         var lastDay = new Date(today.getFullYear(), today.getMonth() + 1, 0);
-//         StartDate = firstDay.toISOString().split('T')[0];
-//         EndDate = lastDay.toISOString().split('T')[0];
-//     }
-
-//     // Show loading
-//     $('#bulk_bill_btn, #bulk_unbill_btn').prop('disabled', true).html('<i class="fa fa-spinner fa-spin"></i> Processing...');
-
-//     $.ajax({
-//         url: '../PPMBilling/action/bulk_billing_action.php',
-//         type: 'POST',
-//         data: {
-//             TicketIDs: selectedIDs,
-//             BillingStatus: action,
-//             BillingStartDate: StartDate,
-//             BillingEndDate: EndDate
-//         },
-//         dataType: 'json',
-//         success: function(response) {
-//             if (response.error == false) {
-//                 alert(response.message || 'Bulk billing action completed successfully');
-//                 clearAllSelections();
-//                 loadBillingData();
-//             } else {
-//                 alert('Error: ' + (response.message || 'Unknown error occurred'));
-//             }
-//             updateBulkButtons();
-//         },
-//         error: function(xhr, status, error) {
-//             console.error('Bulk billing error:', error);
-//             alert('Error occurred while processing bulk billing action');
-//             updateBulkButtons();
-//         }
-//     });
-// }
-
-function bulkBillingAction(action) {
+   function bulkBillingAction(action) {
 
     var selectedIDs = [];
     var selectedRows = [];
@@ -710,45 +710,43 @@ function bulkBillingAction(action) {
     $('#billingDetailsModal').modal('show');
 }
 
-
-
 // Export billing data to CSV
 function exportBillingToCSV() {
     var CompanyID = $('#filter_company').val() || '';
     var BranchID = $('#filter_branch').val() || '';
     var dateRange = $('#date_range').val();
-
+    
     // Get current month start and end dates as default
     var today = new Date();
     var firstDay = new Date(today.getFullYear(), today.getMonth(), 1);
     var lastDay = new Date(today.getFullYear(), today.getMonth() + 1, 0);
-
+    
     var StartDate = firstDay.toISOString().split('T')[0];
     var EndDate = lastDay.toISOString().split('T')[0];
-
+    
     // Use moment if available, otherwise use native Date
     if (typeof moment !== 'undefined') {
         StartDate = moment().startOf('month').format('YYYY-MM-DD');
         EndDate = moment().endOf('month').format('YYYY-MM-DD');
     }
-
+    
     if (dateRange && dateRange.trim() !== '') {
         var dates = dateRange.split(' - ');
         if (dates.length === 2) {
             var startDateStr = dates[0].trim();
             var endDateStr = dates[1].trim();
-
+            
             // Try to parse with moment if available
             if (typeof moment !== 'undefined') {
                 var startMoment = moment(startDateStr, ['YYYY-MM-DD', 'MM/DD/YYYY', 'DD/MM/YYYY'], true);
                 var endMoment = moment(endDateStr, ['YYYY-MM-DD', 'MM/DD/YYYY', 'DD/MM/YYYY'], true);
-
+                
                 if (startMoment.isValid()) {
                     StartDate = startMoment.format('YYYY-MM-DD');
                 } else {
                     StartDate = startDateStr;
                 }
-
+                
                 if (endMoment.isValid()) {
                     EndDate = endMoment.format('YYYY-MM-DD');
                 } else {
@@ -760,7 +758,7 @@ function exportBillingToCSV() {
             }
         }
     }
-
+    
     // Validate date format (YYYY-MM-DD)
     var dateRegex = /^\d{4}-\d{2}-\d{2}$/;
     if (!dateRegex.test(StartDate)) {
@@ -773,20 +771,20 @@ function exportBillingToCSV() {
         var lastDay = new Date(today.getFullYear(), today.getMonth() + 1, 0);
         EndDate = lastDay.toISOString().split('T')[0];
     }
-
+    
     // Build export URL with filters
     var exportUrl = '../PPMBilling/action/export_billing_csv.php?';
     exportUrl += 'CorporateID=' + (CompanyID || -1);
     exportUrl += '&BranchID=' + (BranchID || -1);
     exportUrl += '&StartDate=' + StartDate;
     exportUrl += '&EndDate=' + EndDate;
-
+    
     // Open in new window to trigger download
     window.open(exportUrl, '_blank');
 }
 
 // Initialize on page load
-$(document).ready(function () {
+$(document).ready(function() {
     initializeCharts();
 });
 
@@ -855,4 +853,3 @@ function saveBillingDetails() {
         }
     });
 }
-

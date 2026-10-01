@@ -1399,7 +1399,8 @@ function loadBillingInvoices() {
                 '<td class="text-right">' + formatINR(row.TotalAmount || 0) + '</td>' +
                 '<td>' +
                 '<button type="button" class="btn btn-sm btn-primary mr-1 btn-view-invoice" data-billing-no="' + escapeHtml(billingNo) + '"><i class="fa fa-eye"></i> View</button>' +
-                '<button type="button" class="btn btn-sm btn-secondary btn-print-invoice" data-billing-no="' + escapeHtml(billingNo) + '"><i class="fa fa-print"></i> Print</button>' +
+                '<button type="button" class="btn btn-sm btn-secondary mr-1 btn-print-invoice" data-billing-no="' + escapeHtml(billingNo) + '"><i class="fa fa-print"></i> Print</button>' +
+                '<a href="view-ticket-billing-mail-scheduler?BillingNumber=' + encodeURIComponent(billingNo) + '" class="btn btn-sm btn-warning btn-mail-schedule" title="Open billing mail schedule for this invoice"><i class="fa fa-envelope"></i> Mail Schedule</a>' +
                 '</td>' +
                 '</tr>';
             tbody.append(tr);

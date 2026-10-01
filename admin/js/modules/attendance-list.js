@@ -292,34 +292,81 @@ function (e) {
 return false;
 }
 
-function ExportAttendanceData() 
+function submitAttendanceListExport(actionUrl, employeeIdOverride, includeApprovalStatus, extraFields)
 {
     var filterState = captureAttendanceListFilters();
     var filter_date = filterState.filter_date === 'All Time' ? 'all' : filterState.filter_date;
     var employeeId = encodeAttendanceListMultiFilterValue(filterState.employee);
-    if (employeeId === '-1' && document.getElementById('employee_name')) {
+    if (employeeIdOverride !== undefined && employeeIdOverride !== null && employeeIdOverride !== '' && employeeIdOverride !== 'N.A.') {
+        employeeId = employeeIdOverride;
+    } else if (employeeId === '-1' && document.getElementById('employee_name')) {
         employeeId = document.getElementById('employee_name').value || '-1';
     }
     if ((!filter_date || filter_date === '') && document.getElementById('filter_date')) {
         filter_date = document.getElementById('filter_date').value;
     }
-    $.ajax({
-        url: "action/export_attendance.php",
-        type: "POST",
-        data: {
-            EmployeeID: employeeId,
-            filter_date: filter_date,
-            ApprovalStatus: encodeAttendanceListMultiFilterValue(filterState.status),
-            state: encodeAttendanceListMultiFilterValue(filterState.state),
-            department: encodeAttendanceListMultiFilterValue(filterState.department),
-            designation: encodeAttendanceListMultiFilterValue(filterState.designation),
-            employee_number: filterState.employee_number || ''
-        },
-        success: function (data) {
-        window.location.href = "report_attendance.xls";
-        },
+
+    var form = document.createElement('form');
+    form.method = 'POST';
+    form.action = actionUrl;
+    form.style.display = 'none';
+    if (extraFields && extraFields.target) {
+        form.target = extraFields.target;
+    }
+
+    var fields = {
+        EmployeeID: employeeId,
+        filter_date: filter_date,
+        state: encodeAttendanceListMultiFilterValue(filterState.state),
+        department: encodeAttendanceListMultiFilterValue(filterState.department),
+        designation: encodeAttendanceListMultiFilterValue(filterState.designation),
+        employee_number: filterState.employee_number || ''
+    };
+
+    if (includeApprovalStatus) {
+        fields.ApprovalStatus = encodeAttendanceListMultiFilterValue(filterState.status);
+    }
+
+    if (extraFields) {
+        Object.keys(extraFields).forEach(function (key) {
+            if (key !== 'target') {
+                fields[key] = extraFields[key];
+            }
+        });
+    }
+
+    Object.keys(fields).forEach(function (key) {
+        var input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = key;
+        input.value = fields[key];
+        form.appendChild(input);
     });
+
+    document.body.appendChild(form);
+    form.submit();
+    document.body.removeChild(form);
     return false;
+}
+
+function ExportAttendanceData(employeeIdOverride)
+{
+    return submitAttendanceListExport('action/export_attendance.php', employeeIdOverride, true);
+}
+
+function ExportAttendanceRegister(employeeIdOverride)
+{
+    return submitAttendanceListExport('action/export_attendance_register.php', employeeIdOverride, false);
+}
+
+function PreviewAttendanceRegister(employeeIdOverride)
+{
+    return submitAttendanceListExport(
+        'action/export_attendance_register.php',
+        employeeIdOverride,
+        false,
+        { preview: '1', target: '_blank' }
+    );
 }
 
 

@@ -187,16 +187,111 @@ function raiseAuditTicket() {
 }
 
 function generateAuditReport(ticketId) {
-  $.post("action/generate_audit_branch_report_pdf.php", { AuditTicketID: ticketId, Action: "Download" }, function (res) {
-    if (res.error) {
-      TechXAlert(res.message || "Unable to generate report");
+  auditTicketGeneratePdfWithProgress(
+    ticketId,
+    "action/generate_audit_branch_report_pdf.php",
+    "Generating Branch Report PDF",
+    "Building cover, checklist sections and charts…"
+  );
+}
+
+function generateAuditReportPdf2(ticketId) {
+  auditTicketGeneratePdfWithProgress(
+    ticketId,
+    "action/generate_audit_esa_report_pdf2.php",
+    "Generating ESA Report PDF2",
+    "Building ESA segments, tables and dashboard…"
+  );
+}
+
+function auditTicketHidePdfProgress() {
+  $("#at-pdf-progress-overlay").remove();
+  if (window._atPdfProgressTimer) {
+    clearInterval(window._atPdfProgressTimer);
+    window._atPdfProgressTimer = null;
+  }
+}
+
+function auditTicketShowPdfProgress(title, subtitle) {
+  auditTicketHidePdfProgress();
+  var html = ''
+    + '<div id="at-pdf-progress-overlay" style="position:fixed;inset:0;z-index:99999;background:rgba(15,23,42,.55);display:flex;align-items:center;justify-content:center;">'
+    + '  <div style="width:min(420px,92vw);background:#fff;border-radius:12px;box-shadow:0 20px 50px rgba(0,0,0,.25);padding:22px 22px 18px;font-family:Poppins,Segoe UI,sans-serif;">'
+    + '    <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">'
+    + '      <div style="width:38px;height:38px;border-radius:50%;border:3px solid #dbeafe;border-top-color:#027dc1;animation:atPdfSpin 0.9s linear infinite;"></div>'
+    + '      <div>'
+    + '        <div style="font-size:15px;font-weight:700;color:#0f172a;">' + title + '</div>'
+    + '        <div id="at-pdf-progress-sub" style="font-size:12px;color:#64748b;margin-top:2px;">' + subtitle + '</div>'
+    + '      </div>'
+    + '    </div>'
+    + '    <div style="height:10px;background:#e2e8f0;border-radius:999px;overflow:hidden;">'
+    + '      <div id="at-pdf-progress-bar" style="height:100%;width:8%;background:linear-gradient(90deg,#027dc1,#0ea5e9);transition:width .35s ease;"></div>'
+    + '    </div>'
+    + '    <div style="display:flex;justify-content:space-between;margin-top:8px;font-size:11px;color:#64748b;">'
+    + '      <span id="at-pdf-progress-label">Preparing…</span>'
+    + '      <span id="at-pdf-progress-pct">8%</span>'
+    + '    </div>'
+    + '  </div>'
+    + '</div>'
+    + '<style>@keyframes atPdfSpin{to{transform:rotate(360deg)}}</style>';
+  $("body").append(html);
+
+  var pct = 8;
+  var steps = [
+    { at: 18, label: "Loading ticket & checklist…" },
+    { at: 35, label: "Rendering report sections…" },
+    { at: 55, label: "Applying charts / tables…" },
+    { at: 72, label: "Adding border & watermark…" },
+    { at: 88, label: "Finalizing PDF file…" }
+  ];
+  var stepIdx = 0;
+  window._atPdfProgressTimer = setInterval(function () {
+    if (pct >= 92) {
       return;
     }
-    if (res.pdfname) {
-      window.open("reports/" + res.pdfname, "_blank");
+    pct += Math.max(1, Math.round((92 - pct) * 0.08));
+    if (pct > 92) {
+      pct = 92;
     }
-  }, "json").fail(function () {
-    TechXAlert("PDF generation failed.");
+    while (stepIdx < steps.length && pct >= steps[stepIdx].at) {
+      $("#at-pdf-progress-label").text(steps[stepIdx].label);
+      stepIdx++;
+    }
+    $("#at-pdf-progress-bar").css("width", pct + "%");
+    $("#at-pdf-progress-pct").text(pct + "%");
+  }, 450);
+}
+
+function auditTicketSetPdfProgressDone() {
+  $("#at-pdf-progress-bar").css("width", "100%");
+  $("#at-pdf-progress-pct").text("100%");
+  $("#at-pdf-progress-label").text("Report ready");
+  $("#at-pdf-progress-sub").text("Opening PDF…");
+}
+
+function auditTicketGeneratePdfWithProgress(ticketId, actionUrl, title, subtitle) {
+  auditTicketShowPdfProgress(title, subtitle);
+  $.ajax({
+    url: actionUrl,
+    method: "POST",
+    dataType: "json",
+    timeout: 600000,
+    data: { AuditTicketID: ticketId, Action: "Download" }
+  }).done(function (res) {
+    auditTicketSetPdfProgressDone();
+    setTimeout(function () {
+      auditTicketHidePdfProgress();
+      if (!res || res.error) {
+        TechXAlert((res && res.message) ? res.message : "Unable to generate report");
+        return;
+      }
+      if (res.pdfname) {
+        window.open("reports/" + res.pdfname, "_blank");
+      }
+    }, 350);
+  }).fail(function () {
+    auditTicketHidePdfProgress();
+    TechXAlert("PDF generation failed. Please try again.");
   });
 }
 

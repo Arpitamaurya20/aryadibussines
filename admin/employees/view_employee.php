@@ -60,7 +60,58 @@ error_reporting(E_ALL);?>
         box-shadow: 0 10px 30px -5px rgba(79, 70, 229, 0.1), inset 0 1px 0 rgba(255, 255, 255, 1);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
-        overflow: hidden;
+        overflow: visible;
+    }
+    /* All employee modals must sit above Select2 (2087) and receive clicks */
+    .alertify,
+    .alertify-notifier,
+    .ajs-modal,
+    .ajs-dimmer {
+        z-index: 20000 !important;
+    }
+    body.modal-open .modal-backdrop {
+        z-index: 10040 !important;
+    }
+    .modal {
+        z-index: 10050 !important;
+        pointer-events: auto !important;
+    }
+    .modal .modal-dialog,
+    .modal .modal-content,
+    .modal .modal-header,
+    .modal .modal-body,
+    .modal .modal-footer,
+    .modal .close,
+    .modal .form_submit {
+        pointer-events: auto !important;
+    }
+    body.modal-open #js-page-content .select2-container,
+    body.modal-open #js-page-content .select2-dropdown {
+        z-index: 1 !important;
+    }
+    .modal .select2-container,
+    .modal .select2-dropdown {
+        z-index: 10060 !important;
+    }
+    .modal .edit_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .modal .edit_header .tab_modal_heading {
+        flex: 1;
+        pointer-events: none;
+    }
+    .modal .edit_header .close {
+        position: relative;
+        z-index: 10070;
+        color: #fff !important;
+        opacity: 1 !important;
+        font-size: 28px;
+        line-height: 1;
+        padding: 0 8px;
+        margin: 0;
+        cursor: pointer;
     }
     
     /* Sleek Animated Glowing Tabs (Light) */
@@ -469,7 +520,7 @@ $StateData=getAllStates($conn);
     include('../includes/common_scripts.php');
     ?>
     <script src="../js/datagrid/datatables/datatables.bundle.js"></script>
-    <script src="../js/modules/employee.js"></script>
+    <script src="../js/modules/employee.js?v=<?php echo filemtime(__DIR__ . '/../js/modules/employee.js'); ?>"></script>
     <script>
     $(document).ready(function() {
         $("#js-nav-menu").addClass("active");

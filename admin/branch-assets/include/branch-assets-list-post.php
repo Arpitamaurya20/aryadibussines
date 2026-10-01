@@ -1,6 +1,6 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
 error_reporting(E_ALL);
 include("../../controllers/common_controllers.php");
 include('../controller/branch_assets_controller.php');
@@ -14,10 +14,13 @@ $categories_array = $categories_obj->setCategoriesArray();
 $sub_categories_array = $categories_obj->setSubCategoriesArray();
 
 ## Read value
-$draw = $_POST['draw'];
-$row = $_POST['start'];
-$rowperpage = $_POST['length']; // Rows display per page
-$searchValue = $_POST['search']['value']; // Search value
+$draw = isset($_POST['draw']) ? $_POST['draw'] : 1;
+$row = isset($_POST['start']) ? intval($_POST['start']) : 0;
+$rowperpage = isset($_POST['length']) ? intval($_POST['length']) : 10; // Rows display per page
+if ($rowperpage < 0) {
+    $rowperpage = 1000000;
+}
+$searchValue = isset($_POST['search']['value']) ? $_POST['search']['value'] : '';
 
 $columnName = "ID";
 $columnSortOrder = "DESC";
@@ -45,24 +48,29 @@ if (isset($_GET['BranchID']))
     $BranchID = $_GET['BranchID'];
 }
 
+session_write_close();
+
 
 $data = array();
 
 $searchQuery = "";
 if ($searchValue != '') {
-    $searchQuery = " and (ba.EquipmentName like '%" . $searchValue . "%' or ba.ServiceType like '%" . $searchValue . "%') ";
+    $searchEscaped = mysqli_real_escape_string($conn, $searchValue);
+    $searchQuery = " and (ba.EquipmentName like '%" . $searchEscaped . "%' or ba.ServiceType like '%" . $searchEscaped . "%' or CAST(ba.ID AS CHAR) like '%" . $searchEscaped . "%') ";
 }
 
-$filter = " AND ba.IsActive = 1";
+$IsActive = 1;
+if (isset($_GET['IsActive'])) {
+    $IsActive = intval($_GET['IsActive']);
+}
+
+$filter = " AND ba.IsActive = " . $IsActive;
 $filter = $filter . $searchQuery;
 
-$branch_assets_details = _getAllBranchAssets($conn, $CorporateID,$BranchID,$searchQuery,$filter);
-$totalRecords = count($branch_assets_details); // Get all records for corporate
-$totalRecordwithFilter = $totalRecords; 
+$totalRecords = _countAllBranchAssets($conn, $CorporateID, $BranchID, $filter);
+$totalRecordwithFilter = $totalRecords;
 
-
-$filter = $filter . " limit " . $row . "," . $rowperpage;
-$branch_assets_details = _getAllBranchAssets($conn, $CorporateID,$BranchID,$searchQuery,$filter);
+$branch_assets_details = _getAllBranchAssets($conn, $CorporateID, $BranchID, $searchQuery, $filter . " limit " . $row . "," . $rowperpage);
 
 
 ## Process and format data for DataTable
@@ -135,6 +143,11 @@ foreach ($branch_assets_details as $branch_asset_data)
 
     $Raise_ticket = "OpenRaiseAMCTicket('$ID','$BranchID','$CreatedBy')";
 
+    if ($IsActive == 1) {
+        $ActionHtml = "<a onclick='DeactivateBranchAsset(" . $branch_asset_data['ID'] . ")' class='cursor-pointer' title='Deactivate'><i class='fal fa-ban' aria-hidden='true' style='color:red'></i></a>";
+    } else {
+        $ActionHtml = "<a onclick='ActivateBranchAsset(" . $branch_asset_data['ID'] . ")' class='cursor-pointer' title='Activate'><i class='fal fa-check-circle' aria-hidden='true' style='color:green'></i></a>";
+    }
 
     $EquipmentName_html = cleantext($branch_asset_data['EquipmentName'])."&nbsp;<a onclick='ViewEquipmentDetails($ID)'><i class='fal fa-external-link'></i></a>";
     $data[] = array(
@@ -151,7 +164,7 @@ foreach ($branch_assets_details as $branch_asset_data)
         "AMCTicket" => "<a onclick=$Raise_ticket><span class='badge badge-primary cursor-pointer'>Raise AMC Ticket</span></a>",
         "QRImage" => $QR_HTML,
         "Update" => "<a onclick='UpdateBranch_modal(" . $branch_asset_data['ID'] . ")' class='cursor-pointer'><i class='fal fa-edit' aria-hidden='true'></i></a>",
-        "Action" => "<a onclick='DeleteBranchAssets(" . $branch_asset_data['ID'] . ")'><i class='fal fa-trash' aria-hidden='true'></i></a>"
+        "Action" => $ActionHtml
     );
 }
     

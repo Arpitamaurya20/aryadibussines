@@ -357,6 +357,9 @@ $isChristmas = ($today === '12-24');
                                     if($UserType != "Admin" && $UserType != 'Corporate Admin' && $UserType != 'Corporate Branch User' && $UserType != 'Vendor')
                                     {
                                     ?>
+                                    <a class="dropdown-item fw-500 pt-3 pb-3" href="../work-zone/">
+                                        <span>My Work Zone</span>
+                                    </a>
                                     <a class="dropdown-item fw-500 pt-3 pb-3" href="../employees/view_profile_details.php">
                                         <span data-i18n="drpdwn.page-logout">My Profile</span>
                                         <!--span class="float-right fw-n">&commat;codexlantern</span-->

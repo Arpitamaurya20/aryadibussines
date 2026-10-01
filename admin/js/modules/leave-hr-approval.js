@@ -12,6 +12,46 @@ function parseLeaveHrActionResponse(data) {
     }
 }
 
+function leaveHrActionSucceeded(response) {
+    if (!response || typeof response !== 'object') {
+        return false;
+    }
+    if (response.success === true || response.success === 1 || response.success === '1') {
+        return true;
+    }
+    if (response.error === false || response.error === 0 || response.error === '0') {
+        return true;
+    }
+    if (response.summary && parseInt(response.summary.success, 10) > 0) {
+        return true;
+    }
+    return false;
+}
+
+function refreshLeaveHrDataTable(filterState, callback) {
+    var state = filterState || captureLeaveHrFilters();
+    var params = buildLeaveHrParams(state);
+    var selector = '#view-leave-hr-approval';
+    var table = leaveHrTable;
+
+    if (!table || !$.fn.DataTable.isDataTable(selector)) {
+        initLeaveHrApprovalTable(params);
+        if (typeof callback === 'function') {
+            callback();
+        }
+        return;
+    }
+
+    table.ajax.url('ajax/view-leave-hr-approval-post.php' + params);
+    table.ajax.reload(function () {
+        restoreLeaveHrFilters(state);
+        resetLeaveHrSelection();
+        if (typeof callback === 'function') {
+            callback();
+        }
+    }, false);
+}
+
 function initLeaveHrMultiSelectFilters() {
     $('.leave-multi-filter').each(function () {
         var $el = $(this);
@@ -62,12 +102,12 @@ function restoreLeaveHrFilters(filterState) {
     if (!filterState) {
         return;
     }
-    $('#employee_filter').val(filterState.employee.length ? filterState.employee : null).trigger('change');
-    $('#status_filter').val(filterState.status.length ? filterState.status : null).trigger('change');
-    $('#state_filter').val(filterState.state.length ? filterState.state : null).trigger('change');
-    $('#department_filter').val(filterState.department.length ? filterState.department : null).trigger('change');
-    $('#designation_filter').val(filterState.designation.length ? filterState.designation : null).trigger('change');
-    $('#leave_type_filter').val(filterState.leave_type.length ? filterState.leave_type : null).trigger('change');
+    $('#employee_filter').val(filterState.employee.length ? filterState.employee : null);
+    $('#status_filter').val(filterState.status.length ? filterState.status : null);
+    $('#state_filter').val(filterState.state.length ? filterState.state : null);
+    $('#department_filter').val(filterState.department.length ? filterState.department : null);
+    $('#designation_filter').val(filterState.designation.length ? filterState.designation : null);
+    $('#leave_type_filter').val(filterState.leave_type.length ? filterState.leave_type : null);
     document.getElementById('filter_date').value = filterState.filter_date || '';
     document.getElementById('employee_number_filter').value = filterState.employee_number || '';
     syncLeaveHrFilterSelect2Ui();
@@ -149,22 +189,15 @@ function buildLeaveHrParams(filterState) {
 }
 
 function reloadLeaveHrApprovalTable(filterState) {
-    var params = buildLeaveHrParams(filterState);
-    var selector = '#view-leave-hr-approval';
-    if ($.fn.DataTable.isDataTable(selector)) {
-        $(selector).DataTable().ajax.url('ajax/view-leave-hr-approval-post.php' + params).load(function () {
-            restoreLeaveHrFilters(filterState);
-            resetLeaveHrSelection();
-        }, false);
-        return;
-    }
-    initLeaveHrApprovalTable(params);
+    refreshLeaveHrDataTable(filterState);
 }
 
 function initLeaveHrApprovalTable(param) {
     var selector = '#view-leave-hr-approval';
     if ($.fn.DataTable.isDataTable(selector)) {
-        $(selector).DataTable().ajax.url('ajax/view-leave-hr-approval-post.php' + param).load(function () {
+        leaveHrTable = $(selector).DataTable();
+        leaveHrTable.ajax.url('ajax/view-leave-hr-approval-post.php' + param);
+        leaveHrTable.ajax.reload(function () {
             resetLeaveHrSelection();
         }, false);
         return;
@@ -265,13 +298,16 @@ function submitLeaveHrApprove() {
 
     $.post(url, payload, function (data) {
         var response = parseLeaveHrActionResponse(data);
-        if (!response.error) {
+        if (leaveHrActionSucceeded(response)) {
             $('#leave_hr_modal').modal('hide');
-            reloadLeaveHrApprovalTable(filterState);
             leaveHrFilterSnapshot = null;
+            refreshLeaveHrDataTable(filterState, function () {
+                TechXAlert(response.message || 'Leave approved.');
+            });
+            return;
         }
-        TechXAlert(response.message);
-    }, 'json').fail(function (xhr) {
+        TechXAlert(response.message || 'Unable to approve leave.');
+    }).fail(function (xhr) {
         TechXAlert('Unable to approve. ' + (xhr.responseText || 'Server error'));
     });
 }
@@ -293,13 +329,75 @@ function submitLeaveHrReject() {
 
     $.post(url, payload, function (data) {
         var response = parseLeaveHrActionResponse(data);
-        if (!response.error) {
+        if (leaveHrActionSucceeded(response)) {
             $('#leave_hr_modal').modal('hide');
-            reloadLeaveHrApprovalTable(filterState);
             leaveHrFilterSnapshot = null;
+            refreshLeaveHrDataTable(filterState, function () {
+                TechXAlert(response.message || 'Leave rejected.');
+            });
+            return;
         }
-        TechXAlert(response.message);
-    }, 'json').fail(function (xhr) {
+        TechXAlert(response.message || 'Unable to reject leave.');
+    }).fail(function (xhr) {
         TechXAlert('Unable to reject. ' + (xhr.responseText || 'Server error'));
     });
+}
+
+function quickHrApproveLeave(leaveId) {
+    if (!window.confirm('Approve this leave request?')) {
+        return;
+    }
+    var filterState = captureLeaveHrFilters();
+    $.post('../employees/action/approve_employee_leave.php', { ID: leaveId }, function (data) {
+        var response = parseLeaveHrActionResponse(data);
+        if (leaveHrActionSucceeded(response)) {
+            refreshLeaveHrDataTable(filterState, function () {
+                TechXAlert(response.message || 'Leave approved.');
+            });
+            return;
+        }
+        TechXAlert(response.message || 'Unable to approve leave.');
+    }).fail(function (xhr) {
+        TechXAlert('Unable to approve. ' + (xhr.responseText || 'Server error'));
+    });
+}
+
+function quickHrRejectLeave(leaveId) {
+    var reason = window.prompt('Rejection reason (optional):', '');
+    if (reason === null) {
+        return;
+    }
+    var filterState = captureLeaveHrFilters();
+    $.post('../employees/action/reject_employee_leave.php', {
+        ID: leaveId,
+        RejectionReason: reason
+    }, function (data) {
+        var response = parseLeaveHrActionResponse(data);
+        if (leaveHrActionSucceeded(response)) {
+            refreshLeaveHrDataTable(filterState, function () {
+                TechXAlert(response.message || 'Leave rejected.');
+            });
+            return;
+        }
+        TechXAlert(response.message || 'Unable to reject leave.');
+    }).fail(function (xhr) {
+        TechXAlert('Unable to reject. ' + (xhr.responseText || 'Server error'));
+    });
+}
+
+// Backward compatibility for older datatable action buttons.
+function HrApproveLeave(leaveId) {
+    quickHrApproveLeave(leaveId);
+}
+
+function HrRejectLeave(leaveId) {
+    quickHrRejectLeave(leaveId);
+}
+
+function SupervisorApproveLeave(leaveId) {
+    quickHrApproveLeave(leaveId);
+}
+
+function SupervisorRejectLeave(leaveId) {
+    quickHrRejectLeave(leaveId);
 }

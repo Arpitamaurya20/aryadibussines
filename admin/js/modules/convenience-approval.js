@@ -12,6 +12,119 @@ function parseConvenienceActionResponse(data) {
     }
 }
 
+var CONVENIENCE_BULK_CHUNK_SIZE = 10;
+
+function hideConvenienceBulkProgress() {
+    var overlay = document.getElementById('convenience-bulk-progress-overlay');
+    if (overlay) {
+        overlay.remove();
+    }
+}
+
+function showConvenienceBulkProgress(title, processed, total, statusText) {
+    var safeTotal = Math.max(1, parseInt(total, 10) || 1);
+    var safeProcessed = Math.max(0, Math.min(safeTotal, parseInt(processed, 10) || 0));
+    var pct = Math.round((safeProcessed / safeTotal) * 100);
+    var overlay = document.getElementById('convenience-bulk-progress-overlay');
+
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'convenience-bulk-progress-overlay';
+        overlay.style.cssText = 'position:fixed;inset:0;z-index:99999;background:rgba(15,23,42,.55);display:flex;align-items:center;justify-content:center;';
+        overlay.innerHTML =
+            '<div style="width:min(420px,92vw);background:#fff;border-radius:12px;box-shadow:0 20px 50px rgba(0,0,0,.25);padding:22px;font-family:Poppins,Segoe UI,sans-serif;">' +
+            '  <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">' +
+            '    <div style="width:38px;height:38px;border-radius:50%;border:3px solid #dbeafe;border-top-color:#027dc1;animation:convBulkSpin .9s linear infinite;"></div>' +
+            '    <div>' +
+            '      <div id="convenience-bulk-progress-title" style="font-size:15px;font-weight:700;color:#0f172a;"></div>' +
+            '      <div id="convenience-bulk-progress-sub" style="font-size:12px;color:#64748b;margin-top:2px;"></div>' +
+            '    </div>' +
+            '  </div>' +
+            '  <div style="height:10px;background:#e2e8f0;border-radius:999px;overflow:hidden;">' +
+            '    <div id="convenience-bulk-progress-bar" style="height:100%;width:0%;background:linear-gradient(90deg,#027dc1,#0ea5e9);transition:width .25s ease;"></div>' +
+            '  </div>' +
+            '  <div style="display:flex;justify-content:space-between;margin-top:8px;font-size:11px;color:#64748b;">' +
+            '    <span id="convenience-bulk-progress-label">Starting…</span>' +
+            '    <span id="convenience-bulk-progress-pct">0%</span>' +
+            '  </div>' +
+            '</div>' +
+            '<style>@keyframes convBulkSpin{to{transform:rotate(360deg)}}</style>';
+        document.body.appendChild(overlay);
+    }
+
+    document.getElementById('convenience-bulk-progress-title').textContent = title || 'Processing…';
+    document.getElementById('convenience-bulk-progress-sub').textContent =
+        (statusText || ('Processed ' + safeProcessed + ' of ' + safeTotal + ' record(s)'));
+    document.getElementById('convenience-bulk-progress-bar').style.width = pct + '%';
+    document.getElementById('convenience-bulk-progress-label').textContent = safeProcessed + ' / ' + safeTotal;
+    document.getElementById('convenience-bulk-progress-pct').textContent = pct + '%';
+}
+
+function runConvenienceBulkInChunks(options) {
+    var ids = (options.ids || []).slice();
+    var url = options.url;
+    var title = options.title || 'Processing selected records';
+    var buildPayload = options.buildPayload || function (chunk) { return { IDs: chunk }; };
+    var parseResponse = options.parseResponse || parseConvenienceActionResponse;
+    var onDone = options.onDone || function () {};
+    var total = ids.length;
+    var processed = 0;
+    var success = 0;
+    var failed = 0;
+
+    if (total === 0) {
+        onDone({ success: 0, failed: 0, total: 0 });
+        return;
+    }
+
+    showConvenienceBulkProgress(title, 0, total, 'Preparing…');
+
+    function nextChunk() {
+        if (ids.length === 0) {
+            showConvenienceBulkProgress(title, total, total, 'Finishing…');
+            setTimeout(function () {
+                hideConvenienceBulkProgress();
+                onDone({ success: success, failed: failed, total: total });
+            }, 250);
+            return;
+        }
+
+        var chunk = ids.splice(0, CONVENIENCE_BULK_CHUNK_SIZE);
+        showConvenienceBulkProgress(title, processed, total);
+
+        $.ajax({
+            url: url,
+            method: 'POST',
+            dataType: 'json',
+            data: buildPayload(chunk),
+            timeout: 120000
+        }).done(function (data) {
+            var response = parseResponse(data);
+            var chunkSuccess = parseInt((response.summary && response.summary.success) || 0, 10);
+            var chunkFailed = parseInt((response.summary && response.summary.failed) || 0, 10);
+            if (!chunkSuccess && !chunkFailed) {
+                if (!response.error) {
+                    chunkSuccess = chunk.length;
+                } else {
+                    chunkFailed = chunk.length;
+                }
+            }
+            success += chunkSuccess;
+            failed += chunkFailed;
+            processed += chunk.length;
+            showConvenienceBulkProgress(title, processed, total);
+            setTimeout(nextChunk, 40);
+        }).fail(function () {
+            failed += chunk.length;
+            processed += chunk.length;
+            showConvenienceBulkProgress(title, processed, total, 'Network issue on a batch — continuing…');
+            setTimeout(nextChunk, 80);
+        });
+    }
+
+    nextChunk();
+}
+
 function getConvenienceMultiFilterValue(selectId) {
     var values = $('#' + selectId).val();
     if (!values || values.length === 0) {
@@ -273,54 +386,94 @@ function openConvenienceSupervisorBulkModal(actionType) {
 function submitConvenienceSupervisorApprove() {
     var filterState = convenienceApprovalFilterSnapshot || captureConvenienceApprovalFilters();
     var mode = document.getElementById('convenience_action_mode').value;
-    var payload = {
-        remarks: document.getElementById('convenience_action_remarks').value
-    };
-    var url = 'action/supervisor_approve_convenience.php';
-    if (mode === 'bulk') {
-        payload.IDs = getSelectedConvenienceSupervisorIds();
-        url = 'action/supervisor_bulk_approve_convenience.php';
-    } else {
-        payload.ID = document.getElementById('convenience_action_id').value;
+    var remarks = document.getElementById('convenience_action_remarks').value;
+
+    if (mode !== 'bulk') {
+        $.post('action/supervisor_approve_convenience.php', {
+            remarks: remarks,
+            ID: document.getElementById('convenience_action_id').value
+        }, function (data) {
+            var response = parseConvenienceActionResponse(data);
+            if (!response.error) {
+                $('#convenience_supervisor_modal').modal('hide');
+                reloadConvenienceApprovalTable(filterState);
+                convenienceApprovalFilterSnapshot = null;
+            }
+            TechXAlert(response.message);
+        }, 'json').fail(function (xhr) {
+            TechXAlert('Unable to approve. ' + (xhr.responseText || 'Server error'));
+        });
+        return;
     }
 
-    $.post(url, payload, function (data) {
-        var response = parseConvenienceActionResponse(data);
-        if (!response.error) {
-            $('#convenience_supervisor_modal').modal('hide');
+    var selected = getSelectedConvenienceSupervisorIds();
+    if (!selected.length) {
+        TechXAlert('Please select at least one pending convenience request.');
+        return;
+    }
+
+    $('#convenience_supervisor_modal').modal('hide');
+    $('#btn_supervisor_bulk_approve, #btn_supervisor_bulk_reject').prop('disabled', true);
+
+    runConvenienceBulkInChunks({
+        ids: selected,
+        url: 'action/supervisor_bulk_approve_convenience.php',
+        title: 'Approving convenience',
+        buildPayload: function (chunk) {
+            return { IDs: chunk, remarks: remarks };
+        },
+        onDone: function (result) {
             reloadConvenienceApprovalTable(filterState);
             convenienceApprovalFilterSnapshot = null;
+            TechXAlert(result.success + ' record(s) approved by supervisor. ' + result.failed + ' record(s) could not be updated.');
         }
-        TechXAlert(response.message);
-    }, 'json').fail(function (xhr) {
-        TechXAlert('Unable to approve. ' + (xhr.responseText || 'Server error'));
     });
 }
 
 function submitConvenienceSupervisorReject() {
     var filterState = convenienceApprovalFilterSnapshot || captureConvenienceApprovalFilters();
     var mode = document.getElementById('convenience_action_mode').value;
-    var payload = {
-        reason: document.getElementById('convenience_action_remarks').value
-    };
-    var url = 'action/supervisor_reject_convenience.php';
-    if (mode === 'bulk') {
-        payload.IDs = getSelectedConvenienceSupervisorIds();
-        url = 'action/supervisor_bulk_reject_convenience.php';
-    } else {
-        payload.ID = document.getElementById('convenience_action_id').value;
+    var reason = document.getElementById('convenience_action_remarks').value;
+
+    if (mode !== 'bulk') {
+        $.post('action/supervisor_reject_convenience.php', {
+            reason: reason,
+            ID: document.getElementById('convenience_action_id').value
+        }, function (data) {
+            var response = parseConvenienceActionResponse(data);
+            if (!response.error) {
+                $('#convenience_supervisor_modal').modal('hide');
+                reloadConvenienceApprovalTable(filterState);
+                convenienceApprovalFilterSnapshot = null;
+            }
+            TechXAlert(response.message);
+        }, 'json').fail(function (xhr) {
+            TechXAlert('Unable to reject. ' + (xhr.responseText || 'Server error'));
+        });
+        return;
     }
 
-    $.post(url, payload, function (data) {
-        var response = parseConvenienceActionResponse(data);
-        if (!response.error) {
-            $('#convenience_supervisor_modal').modal('hide');
+    var selected = getSelectedConvenienceSupervisorIds();
+    if (!selected.length) {
+        TechXAlert('Please select at least one pending convenience request.');
+        return;
+    }
+
+    $('#convenience_supervisor_modal').modal('hide');
+    $('#btn_supervisor_bulk_approve, #btn_supervisor_bulk_reject').prop('disabled', true);
+
+    runConvenienceBulkInChunks({
+        ids: selected,
+        url: 'action/supervisor_bulk_reject_convenience.php',
+        title: 'Rejecting convenience',
+        buildPayload: function (chunk) {
+            return { IDs: chunk, reason: reason };
+        },
+        onDone: function (result) {
             reloadConvenienceApprovalTable(filterState);
             convenienceApprovalFilterSnapshot = null;
+            TechXAlert(result.success + ' record(s) rejected by supervisor. ' + result.failed + ' record(s) could not be updated.');
         }
-        TechXAlert(response.message);
-    }, 'json').fail(function (xhr) {
-        TechXAlert('Unable to reject. ' + (xhr.responseText || 'Server error'));
     });
 }
 

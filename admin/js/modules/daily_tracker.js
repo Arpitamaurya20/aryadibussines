@@ -12,6 +12,6 @@ function LoadDailyTracker(CorporateID)
           CorporateID: CorporateID
 	  },
 	  function(data, status) {
-	      document.getElementById("daily_tracker_status_html").innerHTML = data;
+	      document.getElementById("daily_tracker_html").innerHTML = data;
 	  });
 }

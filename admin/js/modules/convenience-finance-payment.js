@@ -12,6 +12,119 @@ function parseConvenienceFinanceActionResponse(data) {
     }
 }
 
+var CONVENIENCE_FINANCE_BULK_CHUNK_SIZE = 10;
+
+function hideConvenienceFinanceBulkProgress() {
+    var overlay = document.getElementById('convenience-finance-bulk-progress-overlay');
+    if (overlay) {
+        overlay.remove();
+    }
+}
+
+function showConvenienceFinanceBulkProgress(title, processed, total, statusText) {
+    var safeTotal = Math.max(1, parseInt(total, 10) || 1);
+    var safeProcessed = Math.max(0, Math.min(safeTotal, parseInt(processed, 10) || 0));
+    var pct = Math.round((safeProcessed / safeTotal) * 100);
+    var overlay = document.getElementById('convenience-finance-bulk-progress-overlay');
+
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'convenience-finance-bulk-progress-overlay';
+        overlay.style.cssText = 'position:fixed;inset:0;z-index:99999;background:rgba(15,23,42,.55);display:flex;align-items:center;justify-content:center;';
+        overlay.innerHTML =
+            '<div style="width:min(420px,92vw);background:#fff;border-radius:12px;box-shadow:0 20px 50px rgba(0,0,0,.25);padding:22px;font-family:Poppins,Segoe UI,sans-serif;">' +
+            '  <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">' +
+            '    <div style="width:38px;height:38px;border-radius:50%;border:3px solid #dbeafe;border-top-color:#027dc1;animation:convFinBulkSpin .9s linear infinite;"></div>' +
+            '    <div>' +
+            '      <div id="convenience-finance-bulk-progress-title" style="font-size:15px;font-weight:700;color:#0f172a;"></div>' +
+            '      <div id="convenience-finance-bulk-progress-sub" style="font-size:12px;color:#64748b;margin-top:2px;"></div>' +
+            '    </div>' +
+            '  </div>' +
+            '  <div style="height:10px;background:#e2e8f0;border-radius:999px;overflow:hidden;">' +
+            '    <div id="convenience-finance-bulk-progress-bar" style="height:100%;width:0%;background:linear-gradient(90deg,#027dc1,#0ea5e9);transition:width .25s ease;"></div>' +
+            '  </div>' +
+            '  <div style="display:flex;justify-content:space-between;margin-top:8px;font-size:11px;color:#64748b;">' +
+            '    <span id="convenience-finance-bulk-progress-label">Starting…</span>' +
+            '    <span id="convenience-finance-bulk-progress-pct">0%</span>' +
+            '  </div>' +
+            '</div>' +
+            '<style>@keyframes convFinBulkSpin{to{transform:rotate(360deg)}}</style>';
+        document.body.appendChild(overlay);
+    }
+
+    document.getElementById('convenience-finance-bulk-progress-title').textContent = title || 'Processing…';
+    document.getElementById('convenience-finance-bulk-progress-sub').textContent =
+        (statusText || ('Processed ' + safeProcessed + ' of ' + safeTotal + ' record(s)'));
+    document.getElementById('convenience-finance-bulk-progress-bar').style.width = pct + '%';
+    document.getElementById('convenience-finance-bulk-progress-label').textContent = safeProcessed + ' / ' + safeTotal;
+    document.getElementById('convenience-finance-bulk-progress-pct').textContent = pct + '%';
+}
+
+function runConvenienceFinanceBulkInChunks(options) {
+    var ids = (options.ids || []).slice();
+    var url = options.url;
+    var title = options.title || 'Processing selected records';
+    var buildPayload = options.buildPayload || function (chunk) { return { IDs: chunk }; };
+    var parseResponse = options.parseResponse || parseConvenienceFinanceActionResponse;
+    var onDone = options.onDone || function () {};
+    var total = ids.length;
+    var processed = 0;
+    var success = 0;
+    var failed = 0;
+
+    if (total === 0) {
+        onDone({ success: 0, failed: 0, total: 0 });
+        return;
+    }
+
+    showConvenienceFinanceBulkProgress(title, 0, total, 'Preparing…');
+
+    function nextChunk() {
+        if (ids.length === 0) {
+            showConvenienceFinanceBulkProgress(title, total, total, 'Finishing…');
+            setTimeout(function () {
+                hideConvenienceFinanceBulkProgress();
+                onDone({ success: success, failed: failed, total: total });
+            }, 250);
+            return;
+        }
+
+        var chunk = ids.splice(0, CONVENIENCE_FINANCE_BULK_CHUNK_SIZE);
+        showConvenienceFinanceBulkProgress(title, processed, total);
+
+        $.ajax({
+            url: url,
+            method: 'POST',
+            dataType: 'json',
+            data: buildPayload(chunk),
+            timeout: 120000
+        }).done(function (data) {
+            var response = parseResponse(data);
+            var chunkSuccess = parseInt((response.summary && response.summary.success) || 0, 10);
+            var chunkFailed = parseInt((response.summary && response.summary.failed) || 0, 10);
+            if (!chunkSuccess && !chunkFailed) {
+                if (!response.error) {
+                    chunkSuccess = chunk.length;
+                } else {
+                    chunkFailed = chunk.length;
+                }
+            }
+            success += chunkSuccess;
+            failed += chunkFailed;
+            processed += chunk.length;
+            showConvenienceFinanceBulkProgress(title, processed, total);
+            setTimeout(nextChunk, 40);
+        }).fail(function () {
+            failed += chunk.length;
+            processed += chunk.length;
+            showConvenienceFinanceBulkProgress(title, processed, total, 'Network issue on a batch — continuing…');
+            setTimeout(nextChunk, 80);
+        });
+    }
+
+    nextChunk();
+}
+
 function initConvenienceFinanceMultiSelectFilters() {
     $('.convenience-multi-filter').each(function () {
         var $el = $(this);
@@ -288,55 +401,104 @@ function openConvenienceFinanceBulkModal(actionType) {
 function submitConvenienceFinanceMarkPaid() {
     var filterState = convenienceFinanceFilterSnapshot || captureConvenienceFinanceFilters();
     var mode = document.getElementById('convenience_finance_action_mode').value;
-    var payload = {
+    var payloadBase = {
         payment_reference: document.getElementById('convenience_finance_payment_reference').value,
         payment_mode: document.getElementById('convenience_finance_payment_mode').value,
         payment_remarks: document.getElementById('convenience_finance_payment_remarks').value
     };
-    var url = 'action/finance_mark_paid_convenience.php';
-    if (mode === 'bulk') {
-        payload.IDs = getSelectedConvenienceFinanceIds();
-        url = 'action/finance_bulk_mark_paid_convenience.php';
-    } else {
-        payload.ID = document.getElementById('convenience_finance_action_id').value;
+
+    if (mode !== 'bulk') {
+        $.post('action/finance_mark_paid_convenience.php', {
+            payment_reference: payloadBase.payment_reference,
+            payment_mode: payloadBase.payment_mode,
+            payment_remarks: payloadBase.payment_remarks,
+            ID: document.getElementById('convenience_finance_action_id').value
+        }, function (data) {
+            var response = parseConvenienceFinanceActionResponse(data);
+            if (!response.error) {
+                $('#convenience_finance_modal').modal('hide');
+                reloadConvenienceFinancePaymentTable(filterState);
+                convenienceFinanceFilterSnapshot = null;
+            }
+            TechXAlert(response.message);
+        }, 'json').fail(function (xhr) {
+            TechXAlert('Unable to mark payment. ' + (xhr.responseText || 'Server error'));
+        });
+        return;
     }
 
-    $.post(url, payload, function (data) {
-        var response = parseConvenienceFinanceActionResponse(data);
-        if (!response.error) {
-            $('#convenience_finance_modal').modal('hide');
+    var selected = getSelectedConvenienceFinanceIds();
+    if (!selected.length) {
+        TechXAlert('Please select at least one pending payment record.');
+        return;
+    }
+
+    $('#convenience_finance_modal').modal('hide');
+    $('#btn_finance_bulk_paid, #btn_finance_bulk_reject').prop('disabled', true);
+
+    runConvenienceFinanceBulkInChunks({
+        ids: selected,
+        url: 'action/finance_bulk_mark_paid_convenience.php',
+        title: 'Marking payments done',
+        buildPayload: function (chunk) {
+            return {
+                IDs: chunk,
+                payment_reference: payloadBase.payment_reference,
+                payment_mode: payloadBase.payment_mode,
+                payment_remarks: payloadBase.payment_remarks
+            };
+        },
+        onDone: function (result) {
             reloadConvenienceFinancePaymentTable(filterState);
             convenienceFinanceFilterSnapshot = null;
+            TechXAlert(result.success + ' record(s) marked as paid. ' + result.failed + ' record(s) could not be updated.');
         }
-        TechXAlert(response.message);
-    }, 'json').fail(function (xhr) {
-        TechXAlert('Unable to mark payment. ' + (xhr.responseText || 'Server error'));
     });
 }
 
 function submitConvenienceFinanceReject() {
     var filterState = convenienceFinanceFilterSnapshot || captureConvenienceFinanceFilters();
     var mode = document.getElementById('convenience_finance_action_mode').value;
-    var payload = {
-        reason: document.getElementById('convenience_finance_payment_remarks').value
-    };
-    var url = 'action/finance_reject_convenience.php';
-    if (mode === 'bulk') {
-        payload.IDs = getSelectedConvenienceFinanceIds();
-        url = 'action/finance_bulk_reject_convenience.php';
-    } else {
-        payload.ID = document.getElementById('convenience_finance_action_id').value;
+    var reason = document.getElementById('convenience_finance_payment_remarks').value;
+
+    if (mode !== 'bulk') {
+        $.post('action/finance_reject_convenience.php', {
+            reason: reason,
+            ID: document.getElementById('convenience_finance_action_id').value
+        }, function (data) {
+            var response = parseConvenienceFinanceActionResponse(data);
+            if (!response.error) {
+                $('#convenience_finance_modal').modal('hide');
+                reloadConvenienceFinancePaymentTable(filterState);
+                convenienceFinanceFilterSnapshot = null;
+            }
+            TechXAlert(response.message);
+        }, 'json').fail(function (xhr) {
+            TechXAlert('Unable to reject payment. ' + (xhr.responseText || 'Server error'));
+        });
+        return;
     }
 
-    $.post(url, payload, function (data) {
-        var response = parseConvenienceFinanceActionResponse(data);
-        if (!response.error) {
-            $('#convenience_finance_modal').modal('hide');
+    var selected = getSelectedConvenienceFinanceIds();
+    if (!selected.length) {
+        TechXAlert('Please select at least one pending payment record.');
+        return;
+    }
+
+    $('#convenience_finance_modal').modal('hide');
+    $('#btn_finance_bulk_paid, #btn_finance_bulk_reject').prop('disabled', true);
+
+    runConvenienceFinanceBulkInChunks({
+        ids: selected,
+        url: 'action/finance_bulk_reject_convenience.php',
+        title: 'Rejecting payments',
+        buildPayload: function (chunk) {
+            return { IDs: chunk, reason: reason };
+        },
+        onDone: function (result) {
             reloadConvenienceFinancePaymentTable(filterState);
             convenienceFinanceFilterSnapshot = null;
+            TechXAlert(result.success + ' record(s) rejected by finance. ' + result.failed + ' record(s) could not be updated.');
         }
-        TechXAlert(response.message);
-    }, 'json').fail(function (xhr) {
-        TechXAlert('Unable to reject payment. ' + (xhr.responseText || 'Server error'));
     });
 }

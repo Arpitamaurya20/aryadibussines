@@ -633,34 +633,22 @@ $fields_data = $config_obj->getAllConfigurableFields($conf_data);
                 </button>
             </div>
             <div class="modal-body">
-                <form method="post" id="ticket_type_modal_form">
-                    <div id="wizard">
-                        <section>
-                            <div class="row">
-
-                                 <div class="col-md-12 col-12">
-                                    <div class="form-group">
-                                        <label class="form-label" for="name">Service Type <span
-                                                class="text-danger">*</span></label>
-                                            <select class="form-control w-100" name="service_type" id="service_type">
-                                                <option value="R&M">R&M</option>
-                                                <option value="Projects">Projects</option>
-                                                <option value="Supply">Supply</option>
-                                            </select>
-                                    </div>
-                                </div>
-
-                                <input type="hidden" name="TicketID" value="<?php echo $ID;?>" />
-
-
+                <form method="post" id="ticket_type_modal_form" onsubmit="return false;">
+                    <div class="row">
+                        <div class="col-md-12 col-12">
+                            <div class="form-group">
+                                <label class="form-label" for="ticket_service_type">Service Type <span class="text-danger">*</span></label>
+                                <select class="form-control w-100" name="service_type" id="ticket_service_type">
+                                    <option value="R&M">R&M</option>
+                                    <option value="Projects">Projects</option>
+                                    <option value="Supply">Supply</option>
+                                </select>
                             </div>
-                            <section>
-                                <div class="row justify-content-center mt-3">
-                                    <a class="form_btn form_submit pl-4 pr-4 pt-2 pb-2 text-white cursor-pointer" id="clientid_change_btn"
-                                        style="background-color: #2196f3;" onclick="ChangeTicketType()"
-                                        value="Save">Save & Change</a>
-                                </div>
-                            </section>
+                        </div>
+                        <input type="hidden" name="TicketID" id="ticket_type_ticket_id" value="<?php echo isset($PrimaryID) ? (int) $PrimaryID : (int) $ID; ?>" />
+                    </div>
+                    <div class="row justify-content-center mt-3">
+                        <button type="button" class="btn text-white" id="ticket_type_change_btn" style="background-color: #2196f3; border: 0;">Save & Change</button>
                     </div>
                 </form>
             </div>

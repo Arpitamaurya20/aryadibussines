@@ -68,6 +68,10 @@ function initChecklistTable() {
             { data: 'CheckpointName' },
             { data: 'FieldType' },
             { data: 'IdealValue' },
+            { data: 'MinValue' },
+            { data: 'MaxValue' },
+            { data: 'RiskRating' },
+            { data: 'FillMode' },
             { data: 'IsMandatory' },
             { data: 'SortOrder' },
             { data: 'IsActive' },
@@ -160,6 +164,10 @@ function editChecklist(id) {
         $('#unit').val(d.Unit);
         $('#options_json').val(d.options_list || '');
         $('#help_text').val(d.HelpText);
+        $('#assessment_type').val(d.AssessmentType || '');
+        $('#risk_rating').val(d.RiskRating || 3);
+        $('#fill_mode').val(d.FillMode || 'auditor').trigger('change');
+        $('#report_segment').val(d.ReportSegment || '');
         $('#checklist_sort_order').val(d.SortOrder);
         $('#is_mandatory').val(d.IsMandatory).trigger('change');
         $('#checklist_is_active').val(d.IsActive).trigger('change');

@@ -428,7 +428,7 @@ class Core
 		
 	}
 
-	public function sendCurlRequest($postdata,$url)
+	public function sendCurlRequest($postdata,$url,$timeout = 12)
 	{
 		// Initialize cURL
 	    $ch = curl_init($url);
@@ -437,6 +437,8 @@ class Core
 	    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	    curl_setopt($ch, CURLOPT_POST, true);
 	    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($postdata));
+	    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+	    curl_setopt($ch, CURLOPT_TIMEOUT, (int)$timeout);
 
 	    // Execute cURL request and get the response
 	    $response = curl_exec($ch);
@@ -705,7 +707,14 @@ class Core
 
 	public function compressImage($source, $destination, $quality) 
 	{
-	     	$info = getimagesize($source);
+		    if (!is_file($source)) {
+		        return null;
+		    }
+		    if (is_file($destination) && filemtime($destination) >= filemtime($source)) {
+		        return true;
+		    }
+
+	     	$info = @getimagesize($source);
 
 		    if ($info === false) {
 		        // If the image is not valid, return null

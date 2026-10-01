@@ -8,7 +8,7 @@ setTimeZone();
 
 $data = $_POST;
 if (!isset($data['CreatedBy']) || trim((string) $data['CreatedBy']) === '') {
-    $data['CreatedBy'] = isset($_SESSION['Name']) ? $_SESSION['Name'] : '';
+    $data['CreatedBy'] = dynamicPPMGetSessionUser();
 }
 
 $response = bulkAddDynamicPPMChecklistItems($conn, $data);
