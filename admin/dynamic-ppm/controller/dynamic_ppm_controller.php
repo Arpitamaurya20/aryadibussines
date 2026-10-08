@@ -984,38 +984,48 @@ function dynamicPPMRenderChecklistPdfHtml($bundle)
             $remarks = 'N/A';
         }
 
+        $statusKey = strtolower($status);
+        $statusColor = '#0F172A';
+        if (in_array($statusKey, array('ok', 'yes', 'good', 'pass', 'done', 'working', 'normal'))) {
+            $statusColor = '#059669';
+        } elseif (in_array($statusKey, array('not ok', 'no', 'bad', 'fail', 'faulty', 'not working', 'abnormal'))) {
+            $statusColor = '#DC2626';
+        }
+        $rowBg = $index % 2 == 0 ? 'background:#FAFCFE;' : '';
+        $cell = 'font-size:8.5pt; padding:2mm 3mm; border-bottom:0.3mm solid #EEF3F9; vertical-align:top; ' . $rowBg;
+
         $rows .= '<tr>
-            <td style="padding:5px; width:5%;">' . $index . '</td>
-            <td style="padding:5px; width:35%;">' . htmlspecialchars((string) $item['item_name']) . '</td>
-            <td style="padding:5px; width:20%;">' . $value . '</td>
-            <td style="padding:5px; width:15%;">' . $status . '</td>
-            <td style="padding:5px; width:25%;">' . $remarks . '</td>
+            <td style="' . $cell . ' width:6%; color:#64748B;">' . $index . '</td>
+            <td style="' . $cell . ' width:34%; color:#0F172A;">' . htmlspecialchars((string) $item['item_name']) . '</td>
+            <td style="' . $cell . ' width:20%; color:#0F172A;">' . $value . '</td>
+            <td style="' . $cell . ' width:15%; color:' . $statusColor . '; font-weight:bold;">' . $status . '</td>
+            <td style="' . $cell . ' width:25%; color:#0F172A;">' . $remarks . '</td>
         </tr>';
         $index++;
     }
 
     $assetRow = '';
     if ($assetCondition !== '') {
-        $assetRow = '<tr><td colspan="5" style="padding:8px;"><strong>Asset Condition:</strong> ' . $assetCondition . '</td></tr>';
+        $assetRow = '<tr><td colspan="5" style="padding:2.4mm 3mm; font-size:9pt; background:#F3F8FD; border-bottom:0.3mm solid #D6E4F2;"><span style="color:#64748B; font-weight:bold;">Asset Condition:</span> ' . $assetCondition . '</td></tr>';
     }
 
-    return '<div class="attacment_div">
-        <div class="attacment">' . htmlspecialchars($heading) . '</div>
-        <div class="product_attachment_box">
-            <table class="bottom_signature_table" style="border-top:none;">
-                <tbody>
-                    <tr style="background:#f4f4f4;">
-                        <td class="bottom_table_bold" style="width:5%;">#</td>
-                        <td class="bottom_table_bold" style="width:35%;">Checklist Item</td>
-                        <td class="bottom_table_bold" style="width:20%;">Response</td>
-                        <td class="bottom_table_bold" style="width:15%;">Status</td>
-                        <td class="bottom_table_bold" style="width:25%;">Remarks</td>
-                    </tr>
-                    ' . $assetRow . $rows . '
-                </tbody>
-            </table>
-        </div>
-    </div>';
+    $th = 'background:#E8F2FC; color:#0B356E; font-size:8pt; font-weight:bold; text-transform:uppercase; letter-spacing:0.5px; padding:2.2mm 3mm; text-align:left; border-bottom:0.3mm solid #D6E4F2;';
+
+    return '<table style="width:100%; border-collapse:collapse; margin-top:4mm; border:0.3mm solid #D6E4F2;">
+        <thead>
+            <tr><td colspan="5" style="background:#0B356E; color:#FFFFFF; padding:2.4mm 3.5mm; font-size:11pt; font-weight:bold; border-left:1.2mm solid #3AABF2;">' . htmlspecialchars($heading) . '</td></tr>
+            <tr>
+                <th style="' . $th . ' width:6%;">#</th>
+                <th style="' . $th . ' width:34%;">Checklist Item</th>
+                <th style="' . $th . ' width:20%;">Response</th>
+                <th style="' . $th . ' width:15%;">Status</th>
+                <th style="' . $th . ' width:25%;">Remarks</th>
+            </tr>
+        </thead>
+        <tbody>
+            ' . $assetRow . $rows . '
+        </tbody>
+    </table>';
 }
 
 function saveDynamicPPMServiceReport($conn, $payload)

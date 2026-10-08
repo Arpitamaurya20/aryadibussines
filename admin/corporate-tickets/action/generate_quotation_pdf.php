@@ -1,10 +1,11 @@
-    <?php
+<?php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 require_once('../../includes/autoloader.inc.php');
 require_once '../../vendor/autoload.php'; 
-include '../../controllers/common_controllers.php'; 
+include '../../controllers/common_controllers.php';
+require_once __DIR__ . '/../../includes/aryadi_pdf_theme.php'; 
 // Start MPDF
 $html = "";
 $mpdf = new \Mpdf\Mpdf();
@@ -258,473 +259,131 @@ if($CompanyID == 183)
                                     <td style="width:30%;" rowspan="2">
                                     Ceritified that particulars given above are true & correct<br><br><span style="margin-left:10px;">Generates Document, Does not require signature</span></td>';
 }
+$issuer_name = trim(strip_tags($header_company_name));
+$issuer_logo = '../../media/pdf-assets/tech-logo.jpg';
+$issuer_logo_style = 'width:58mm; height:auto;';
+$issuer_iso = true;
+if (stripos($issuer_name, 'aryadi') !== false || stripos($issuer_name, 'arayadi') !== false) {
+    $issuer_logo = '../../media/pdf-assets/aryadi-logo.png';
+    $issuer_logo_style = '';
+}
+if($CompanyID == 183)
+{
+    $issuer_logo = '../../img/innov_logo.jpg';
+    $issuer_logo_style = 'height:18mm; width:auto;';
+    $issuer_iso = false;
+}
+
+$quotation_status = $quotation_detail['QuotationStatus'];
+
 $html = '
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .container{
-            // border:1px solid #000;
-        } 
-        body{
-            font-family: Inter;
-            font-size:12pt;
-        }  
-        table {
-            width: 100%;
-        }
-        .top_header{
-           background:#08475e;
-           border:1px solid #000;
-        }
-        .top_header tr td{
-            width:50%;
-         }
-         .top_header_inside tr td {
-            text-align:center;
-            color:#fff;
-            font-weight:bold;
-            font-family: sans-serif;
-            font-size:15px;
-         }
-         .top_right_border{
-            border-right:1px solid #fff;
-         } 
-
-         
-         .customer_details{
-            border:1px solid #000;
-         }
-         .customer_details tr td{
-            width:50%;
-         }
-         .customer_details_inside tr td{
-             font-size:11px;
-             font-family: sans-serif;
-         }
-         .customer_details_inside tr td{
-            padding:3px 0px;
-         }
-         .costumer_detail_bold{
-            font-weight:bold;
-            width:100px;
-            font-size:12px;
-         }
-         .custumer_right_border{
-            border-right:1px solid #000;
-         }
-         .report_details_inside tr td{
-            font-size:11px;
-            font-family: sans-serif;
-        }
-        .report_details_inside tr td{
-           padding:3px 0px;
-        }
-        
-        .customer_details tr {
-            display: inline-flex !important;
-        }
-        .other_feedback{
-            border-left: 1px solid #000;
-            border-right: 1px solid #000;
-            border-bottom: 1px solid #000;
-            // padding-bottom:50px;
-        }
-        .other_feedback tr .width_30{
-            font-weight:bold;
-            font-size:12px;
-            font-family: sans-serif;
-        }
-        .other_feedback_inside td{
-            font-size:11px;
-            font-family: sans-serif;
-            margin-top:10px;
-        }
-
-        // .bottom_div{
-        //     page-break-inside: avoid;
-        // }
-
-        .attacment{
-            background:#08475e;
-            padding:6px 0px 6px 6px;
-            color:#fff;
-            font-size:14px;
-            font-weight:bold;
-            font-family: sans-serif;
-            
-        }
-        .product_attachment_box{
-            padding:20px;
-        }
-        
-
-        .bottom_signature_table{
-            border:1px solid #000;
-            border-collapse: collapse;
-        }
-
-        .bottom_table_bold{
-            font-weight:bold;
-            font-size:13px;
-            padding-left:10px !important;
-        }
-
-        .bottom_signature_table tbody tr td{
-            font-family: sans-serif;
-            border:1px solid #000;
-            font-size:12px;
-            padding-top:15px;
-            padding-bottom:15px;
-            width:20%;
-        }
-
-
-        .natural_of_call_div{
-            border-left: 1px solid #000;
-            border-right: 1px solid #000;
-            font-weight:bold;
-            font-size:12px;
-            padding:4px 7px;
-            font-family: sans-serif;
-        }
-        .natural_table_bold{
-            font-weight:bold;
-            font-size:11px;
-            padding-left:10px !important;
-        }
-        .natural_call_table{
-            border:1px solid #000;
-            border-collapse: collapse;
-        }
-        .natural_call_table tbody tr td{
-            font-family: sans-serif;
-            border:1px solid #000;
-            padding:10px 5px;
-        }
-        .pdf_header{
-            width:100%;
-        }
-        .pdf_header img {
-            width:100%;
-        }
-
-        .client_signature{
-            width:100px;
-
-        }
-        .client_signature img{
-            width:100%;
-        }
-
-        .tech_value{
-          font-weight:bold;
-        }   
-
-        .tech_bottom_table_bold{
-            font-size:13px;
-            padding-left:5px !important;
-        }
-
-        .page_1 {
-            // border:1px solid #000;
-            // padding:30px;
-            // height:88.8%;
-        }
-        .page_2 {
-            // border:1px solid #000;
-            // padding:30px;
-            // height:100%;
-        }
-        .right-column {
-            width: 20%;
-            vertical-align: top;
-            height: 100px; /* Match the height of the image */
-        }
-        .left-column {
-            width: 80%;
-            text-align: left;
-            vertical-align: top;
-        }
-        .stamp {
-            height: 100px;
-        }
-
+    <title>Quotation '.$Quotation_display_ID.'</title>
+    <style>'.apdf_css().'
+        .terms td { padding: 3mm 3.5mm; font-size: 8.5pt; line-height: 1.5; vertical-align: top; border-bottom: 0.3mm solid #EEF3F9; color: #0F172A; }
+        .terms td.costumer_detail_bold { font-weight: bold; color: #0B356E; }
     </style>
 </head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6496901533964255"
-     crossorigin="anonymous"></script>
 <body>
-    <div class="container">
-        <div class="page_1">
-            <div class="pdf_header">
-                <img src="../../media/pdf-assets/'.$media_asset.'">
-            </div>
-            <div>
-                <table  class="customer_details">
-                    <tr>
-                        <td class="custumer_right_border">
-                            <table class="customer_details_inside">
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">'.$header_company_name.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:40%;">'.$header_company_address.'</td>
-                                </tr>
-                                
-                                
-                               
-                            </table>
-                        </td>
-                        <td>
-                            <table class="report_details_inside">
-                                '.$gst_pan_information.'
-                                
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div style="display:flex;">
-                <table class="top_header">
-                    <tr>
-                        <td class="top_right_border">
-                            <table class="top_header_inside">
-                                <tr>
-                                <td>Quotation Details</td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td>
-                            <table class="top_header_inside">
-                                <tr>
-                                <td>Customer Details</td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <table  class="customer_details">
-                    <tr>
-                        <td class="custumer_right_border">
-                            <table class="customer_details_inside">
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Quotation</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$Quotation_display_ID.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Quotation Date</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$QuotationDate.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Expiry Date</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$QuotationExpiryDate.'</td>
-                                </tr>
-                                
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Ticket Number</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$TicketID.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Client Reference Ticket</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$ClientTicketID.'</td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td>
-                            <table class="report_details_inside">
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Place Of Supply</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$BranchState.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Sales Person</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$sale_person_name.'</td>
-                                </tr>
+    '.apdf_header('QUOTATION', 'ESTIMATE FOR SERVICES', $issuer_logo, $issuer_logo_style, $issuer_iso).'
 
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Customer Name</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$SiteIncharge.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Cust Contact NO</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$BranchMobile.'</td>
-                                </tr>
-                                
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div style="display:flex;">
-                <table class="top_header">
-                    <tr>
-                        <td class="top_right_border">
-                            <table class="top_header_inside">
-                                <tr>
-                                <td> Bill To</td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td>
-                            <table class="top_header_inside">
-                                <tr>
-                                <td>Ship To</td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-             <div>
-                <table  class="customer_details">
-                    <tr>
-                        <td class="custumer_right_border">
-                            <table class="customer_details_inside">
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">.'.$CompanyName.'.</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:40%;">'.$CompanyAddress.'</td>
-                                </tr>
-                                
-                                <tr>
-                                    
-                                    <td style="width:40%;"> GSTIN - '.$CompanyGST.'</td>
-                                </tr>
-                                <tr>
-                                    
-                                    <td style="width:40%;"></td>
-                                </tr>
-                               
-                            </table>
-                        </td>
-                        <td>
-                            <table class="report_details_inside">
-                                <tr>
-                                    <td style="width:40%;">'.$BranchSite.'</td>
-                                </tr>
-                                <tr>
-                                    
-                                    <td style="width:40%;">'.$BranchAddress1.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:40%;"> </td>
-                                </tr>
-                                <tr>
-                                    <td style="width:40%;"></td>
-                                </tr>
-                                
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-
-        <div class="page_2">
-            <div class="bottom_div">   
-                <table class="bottom_signature_table" style="border-top:none;">
-                    <tbody>
-                        <tr style="background:#f4f4f4;">
-                            <td class="bottom_table_bold" style="width:5%;">#</td>
-                            <td class="bottom_table_bold" style="width:25%;">Item & Description</td>
-                             <td class="bottom_table_bold" style="width:10%;">Make/Model</td>
-                            <td class="bottom_table_bold" style="width:7%;">ARC</td>
-                            <td class="bottom_table_bold" style="width:10%;">HSN/SAC</td>
-                            <td class="bottom_table_bold" style="width:5%;">UOM</td>
-                            <td class="bottom_table_bold" style="width:10%;">Qty</td>
-                            <td class="bottom_table_bold" style="width:10%;">Rate</td>
-                            <td class="bottom_table_bold" style="width:8%;">Tax</td>
-                            <td class="bottom_table_bold" style="width:10%;">Amount</td>
-                            
-                        </tr>'.$line_item_html.'
-                    </tbody>
-                </table>
-            </div>
-            <div>
-                <table  class="customer_details">
-                    <tr>
-                        <td class="custumer_right_border">
-                            <table class="customer_details_inside">
-                                <tr>
-                                  <td style="width:40%;"> Total In Words</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Rupees '.ucwords($total_including_tax_in_words).'</td>
-                                </tr>
-                               
-                               
-                            </table>
-                        </td>
-                        <td>
-                            <table class="report_details_inside">
-                                <tr>
-                                    <td style="width:50%; text-align:right;">Total</td>
-                                    <td style="width:10%; text-align:right;"></td>
-                                    <td style="width:40%; text-align:right;">'.$SuperTotal_display.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%; text-align:right;">Tax</td>
-                                    <td style="width:10%; text-align:right;"></td>
-                                    <td style="width:40%; text-align:right;">'.$total_tax_display.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%; text-align:right;" class="costumer_detail_bold">Total(Including Tax)</td>
-                                    <td style="width:10%; text-align:right;"></td>
-                                    <td style="width:40%; text-align:right;">'.$total_including_tax.'</td>
-                                </tr>
-                                
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <table  class="customer_details">
-                    <tr>
-                        <td class="">
-                            <table class="customer_details_inside">
-                               
-                                <tr>
-                                    '.$stamp_information.'
-                                </tr>'.$tc_div.'
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            
-            
-        </div>
-        
-
-        
+    <div class="section keep">
+        <table class="issuer">
+            <tr>
+                <td style="width:60%; border-right:0.3mm solid #D6E4F2;">
+                    <div class="block_label">Issued By</div>
+                    <table><tr><td class="issuer_name">'.$header_company_name.'</td></tr></table>
+                    <div style="font-size:8.5pt; color:#334155; margin-top:1mm; line-height:1.45;">'.$header_company_address.'</div>
+                </td>
+                <td style="width:40%;">
+                    <div class="block_label" style="text-align:right;">Registration</div>
+                    <table class="issuer_meta">'.$gst_pan_information.'</table>
+                </td>
+            </tr>
+        </table>
     </div>
+
+    '.apdf_stats(array(
+        array('Quotation No', $Quotation_display_ID),
+        array('Quotation Date', apdf_text($QuotationDate)),
+        array('Expiry Date', apdf_text($QuotationExpiryDate)),
+        array('Status', apdf_text($quotation_status)),
+    )).'
+
+    '.apdf_two_col(
+        'Quotation Details',
+        array(
+            array('Quotation', apdf_text($Quotation_display_ID)),
+            array('Quotation Date', apdf_text($QuotationDate)),
+            array('Expiry Date', apdf_text($QuotationExpiryDate)),
+            array('Ticket Number', apdf_text($TicketID)),
+            array('Client Reference Ticket', apdf_text($ClientTicketID)),
+        ),
+        'Customer Details',
+        array(
+            array('Place Of Supply', apdf_text($BranchState)),
+            array('Sales Person', apdf_text($sale_person_name)),
+            array('Customer Name', apdf_text($SiteIncharge)),
+            array('Cust Contact No', apdf_text($BranchMobile)),
+        )
+    ).'
+
+    '.apdf_two_col(
+        'Bill To',
+        array(
+            array('Company', apdf_text($CompanyName)),
+            array('Address', apdf_text($CompanyAddress)),
+            array('GSTIN', apdf_text($CompanyGST)),
+        ),
+        'Ship To',
+        array(
+            array('Site', apdf_text($BranchSite)),
+            array('Address', apdf_text($BranchAddress1)),
+        )
+    ).'
+
+    '.apdf_data_box('Line Items', array(
+        array('#', 5),
+        array('Item &amp; Description', 25),
+        array('Make/Model', 10),
+        array('ARC', 7),
+        array('HSN/SAC', 10),
+        array('UOM', 5),
+        array('Qty', 8),
+        array('Rate', 11),
+        array('Tax', 7),
+        array('Amount', 12),
+    ), $line_item_html).'
+
+    <div class="section keep">
+        <table>
+            <tr>
+                <td style="width:55%; vertical-align:top; padding:3mm 3.5mm; border-right:0.3mm solid #D6E4F2;">
+                    <div class="block_label">Total In Words</div>
+                    <div class="block_text" style="font-weight:bold; color:#0B356E;">'.ucwords($total_including_tax_in_words).'</div>
+                </td>
+                <td style="width:45%; vertical-align:top; padding:0;">
+                    <table class="totals">
+                        <tr><td class="t_label">Total</td><td>'.$SuperTotal_display.'</td></tr>
+                        <tr><td class="t_label">Tax</td><td>'.$total_tax_display.'</td></tr>
+                        <tr class="grand"><td>Total (Including Tax)</td><td>'.$total_including_tax_display.'</td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    '.apdf_box('Notes, Terms & Authorisation', '<table class="terms" width="100%"><tr>'.$stamp_information.'</tr>'.$tc_div.'</table>').'
 </body>
 </html>';
 
+$mpdf = apdf_create_mpdf('Quotation '.$Quotation_display_ID, 'Quotation · '.$Quotation_display_ID, array(), $issuer_name,
+    'Head Off. - New Delhi Branch Off. - Noida , Gurgaon , Kolkata , Mumbai , Bangalore , Chennai , Baddi , Patna');
 
 // Add watermark if not approved
-$quotation_status = $quotation_detail['QuotationStatus'];
-
 if($quotation_status != "Quote Approved")
 {
     $mpdf->SetWatermarkText('YET TO BE APPROVED');
@@ -732,9 +391,7 @@ if($quotation_status != "Quote Approved")
     $mpdf->watermarkTextAlpha = 0.1;
 }
 
-$mpdf->WriteHTML("");
 $mpdf->WriteHTML($html);
-$mpdf->SetFooter('<div style="text-align: center; font-size: 10pt;">Head Off. - New Delhi Branch Off. - Noida , Gurgaon , Kolkata , Mumbai , Bangalore , Chennai , Baddi , Patna</div>');
 
 /*$mpdf->SetWatermarkImage('../../media/pdf-assets/tech-logo.jpg');
 $mpdf->showWatermarkImage = true;

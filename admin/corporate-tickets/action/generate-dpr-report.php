@@ -5,6 +5,7 @@ error_reporting(E_ALL);
 require_once('../../includes/autoloader.inc.php');
 require_once '../../vendor/autoload.php'; 
 include '../../controllers/common_controllers.php';
+require_once __DIR__ . '/../../includes/aryadi_pdf_theme.php';
 
 @ini_set('pcre.backtrack_limit', '10000000');
 @ini_set('pcre.recursion_limit', '10000000');
@@ -104,9 +105,9 @@ $ticket_details = $corporateticket_obj->GetTicketDetails($TicketID);
     $employee_obj = new Employee($conn);
     $employee_array = $employee_obj->setEmployeeArray('All');
     $AssignedTo = $ticket_overview['AssignedTo'];
-    $TechnicianName = $employee_array[$AssignedTo]['Name']; 
-    $TechnicianPhoneNumber = $employee_array[$AssignedTo]['ContactNumber'];
-    if($BranchAccountManager != -1 && $BranchAccountManager != "")
+    $TechnicianName = isset($employee_array[$AssignedTo]) ? $employee_array[$AssignedTo]['Name'] : '';
+    $TechnicianPhoneNumber = isset($employee_array[$AssignedTo]) ? $employee_array[$AssignedTo]['ContactNumber'] : '';
+    if($BranchAccountManager != -1 && $BranchAccountManager != "" && isset($employee_array[$BranchAccountManager]))
     {
         $BranchAccountManagerEmail = $employee_array[$BranchAccountManager]['Email']; 
     } 
@@ -144,12 +145,12 @@ if (mysqli_num_rows($p_task_result) > 0) {
 } else {
     $projectstartdate = null;
     $projectenddate   = null;
+    $projectname = null;
 }
 
         
 if(mysqli_num_rows($task_result) > 0) {
-    $tasks_html .= '<div class="task_progress_section">';
-    $tasks_html .= '<h3 style="background:#027dc1; color:#fff; padding:10px; border-radius:4px;">Project Task Progress Summary</h3>';
+    $tasks_html .= apdf_section_head('Project Task Progress Summary');
 
     while($task = mysqli_fetch_assoc($task_result)) {
         $TaskID = $task['ID'];
@@ -161,32 +162,15 @@ if(mysqli_num_rows($task_result) > 0) {
         $Priority = $task['Prioirity'];
         $Weightage = $task['Weightage'];
 
-        $tasks_html .= '
-        <div class="task_box">
-            <div class="task_header">
-                <h4>'.$TaskName.'</h4>
-                <div class="task_meta">
-                    <span><b>Start:</b> '.$StartDate.'</span> | 
-                    <span><b>End:</b> '.$EndDate.'</span> | 
-                    <span><b>Status:</b> '.$TaskStatus.'</span> 
-                </div>
-            </div>';
+        $task_badge = 'Start: '.$StartDate.'  |  End: '.$EndDate.'  |  '.$TaskStatus;
 
         // ---- Fetch task progress ----
         $progress_query = "SELECT * FROM project_task_date_progress WHERE TaskID = '$TaskID' AND IsActive = 1 ORDER BY TaskDate ASC";
         $progress_result = mysqli_query($conn, $progress_query);
 
         if(mysqli_num_rows($progress_result) > 0) {
-            $tasks_html .= '<table class="activity_table" style="margin-top:10px;">
-                <thead>
-                    <tr>
-                        <th width="15%">Date</th>
-                        <th width="20%">Status (In %)</th>
-                        <th width="40%">Remarks</th>
-                        <th width="25%">Images</th>
-                    </tr>
-                </thead>
-                <tbody>';
+            $progress_rows = '';
+            $row_index = 0;
 
             while($progress = mysqli_fetch_assoc($progress_result)) {
                 $ProgressID = $progress['ID'];
@@ -202,30 +186,36 @@ if(mysqli_num_rows($task_result) > 0) {
                 if(mysqli_num_rows($images_result) > 0) {
                     while($img = mysqli_fetch_assoc($images_result)) {
                         $FileName = $img['FileName'];
+                        if (!is_file('../../media/dpr/'.$FileName)) {
+                            continue;
+                        }
                         $img_html .= '<img src="../../media/dpr/'.$FileName.'" alt="Evidence" class="evidence_img">';
                     }
-                } else {
-                    $img_html = '<span style="color:#999;">No Images</span>';
+                }
+                if ($img_html === '') {
+                    $img_html = '<span class="muted">No Images</span>';
                 }
 
-                $tasks_html .= '
-                <tr>
-                    <td>'.$TaskDate.'</td>
-                    <td>'.$Status.'</td>
-                    <td>'.$Remarks.'</td>
+                $progress_rows .= '
+                <tr'.($row_index % 2 ? ' class="alt"' : '').'>
+                    <td>'.apdf_text($TaskDate).'</td>
+                    <td class="num"><b>'.apdf_text($Status).'</b>'.($Status !== '' && $Status !== null ? ' %' : '').'</td>
+                    <td>'.apdf_text($Remarks).'</td>
                     <td>'.$img_html.'</td>
                 </tr>';
+                $row_index++;
             }
 
-            $tasks_html .= '</tbody></table>';
+            $tasks_html .= apdf_data_box($task['Description'], array(
+                array('Date', 15),
+                array('Status (In %)', 15),
+                array('Remarks', 40),
+                array('Images', 30),
+            ), $progress_rows, $task_badge);
         } else {
-            $tasks_html .= '<p style="font-size:11px; color:#777;">No progress updates found for this task.</p>';
+            $tasks_html .= apdf_box($task['Description'], apdf_box_text('No progress updates found for this task.', true), $task_badge);
         }
-
-        $tasks_html .= '</div>';
     }
-
-    $tasks_html .= '</div>';
 }
 
 
@@ -263,20 +253,23 @@ $task_result = mysqli_query($conn, $task_query);
 // Split date columns into groups (10 per table)
 $date_chunks = array_chunk($dates, 10);
 
-$timeline_html = '<div class="project_timeline_section" style="margin-top:20px;">
-    <h3 style="background:#027dc1; color:#fff; padding:10px; border-radius:4px;">Project Task Timeline</h3>';
+$timeline_html = '';
+$timeline_parts = count($date_chunks);
 
 foreach ($date_chunks as $chunk_index => $chunk_dates) {
 
-    $timeline_html .= '<table class="timeline_table" style="margin-bottom:20px;">
+    $date_width = count($chunk_dates) > 0 ? round(68 / count($chunk_dates), 2) : 68;
+    $timeline_title = 'Project Task Timeline'.($timeline_parts > 1 ? '  ·  Part '.($chunk_index + 1).' of '.$timeline_parts : '');
+    $timeline_html .= '<table class="box data timeline" style="margin-top:4mm;">
         <thead>
+            <tr><td class="box_title" colspan="'.(count($chunk_dates) + 2).'">'.htmlspecialchars($timeline_title, ENT_QUOTES, 'UTF-8').'</td></tr>
             <tr>
-                <th style="width:150px;">Task Name</th>';
+                <th style="width:22%;">Task Name</th>';
 
     foreach ($chunk_dates as $d) {
-        $timeline_html .= '<th style="min-width:60px;">'.date("d-M", strtotime($d)).'</th>';
+        $timeline_html .= '<th style="width:'.$date_width.'%; text-align:center;">'.date("d-M", strtotime($d)).'</th>';
     }
-    $timeline_html .= '<th>Total</th></tr></thead><tbody>';
+    $timeline_html .= '<th style="width:10%; text-align:center;">Total</th></tr></thead><tbody>';
 
     mysqli_data_seek($task_result, 0); // reset pointer to loop tasks again
 
@@ -296,12 +289,12 @@ foreach ($date_chunks as $chunk_index => $chunk_dates) {
         foreach ($chunk_dates as $d) {
             if(isset($progress_map[$d])) {
                 $status = $progress_map[$d];
-                $color = "#fff";
-                if(stripos($status, "Pending") !== false) $color = "#f0efecff";
-                if(stripos($status, "Delayed") !== false) $color = "#eee6e5ff";
-                $timeline_html .= '<td style="text-align:center; background:'.$color.'; color:black;">'.$status.' %</td>';
+                $color = "#EAF4FD";
+                if(stripos($status, "Pending") !== false) $color = "#F1F5F9";
+                if(stripos($status, "Delayed") !== false) $color = "#FDECEC";
+                $timeline_html .= '<td style="text-align:center; background:'.$color.'; color:#0B356E; font-weight:bold;">'.$status.' %</td>';
             } else {
-                $timeline_html .= '<td style="text-align:center; color:#999;">–</td>';
+                $timeline_html .= '<td style="text-align:center; color:#94A3B8;">–</td>';
             }
         }
 
@@ -323,7 +316,7 @@ if ($total_status > 100) {
 // Display the sum with %
 $last_status_display = $total_status > 0 ? $total_status . '%' : '-';
 
-$timeline_html .= '<td style="font-weight:bold; text-align:center;">' . $last_status_display . '</td></tr>';
+$timeline_html .= '<td style="font-weight:bold; text-align:center; color:#0B356E; background:#F5F9FD;">' . $last_status_display . '</td></tr>';
 
 
 
@@ -331,7 +324,6 @@ $timeline_html .= '<td style="font-weight:bold; text-align:center;">' . $last_st
     }
     $timeline_html .= '</tbody></table>';
 }
-$timeline_html .= '</div>';
 
 $chart_data = [];
 $task_query = "SELECT * FROM project_tasks WHERE TicketID = '$NumTicketID' AND IsActive = 1";
@@ -448,6 +440,10 @@ $total_tasks = count($chart_data);
 //     imagedestroy($img);
 // }
 
+
+if (!file_exists('../reports/dpr')) {
+    mkdir('../reports/dpr', 0777, true);
+}
 
 $chart_images = []; // array to store all generated chart file paths
 $tasks_per_image = 10; // number of tasks per chart image
@@ -638,495 +634,90 @@ $progress_images_html = '';
 if (!empty($chart_images)) {
     foreach ($chart_images as $index => $chart_file) {
         if (file_exists($chart_file)) {
-            $progress_images_html .= '
-            <div class="chart_section" style="margin-top:20px;">
-                <h3 style="background:#027dc1; color:#fff; padding:10px; border-radius:4px;">Task Progress Chart - Page '.($index+1).'</h3>
-                <img src="'.$chart_file.'" style="width:100%; max-height:650px; object-fit:contain; border:1px solid #000; border-radius:6px; display:block; margin-bottom:10px;">
-            </div>
-            <pagebreak>'; // MPDF page break after each chart
+            $progress_images_html .= '<pagebreak>'.apdf_box(
+                'Task Progress Chart',
+                '<div style="padding:3mm; text-align:center;"><img src="'.$chart_file.'" style="width:100%; max-height:200mm;"></div>',
+                'Page '.($index+1).' of '.count($chart_images)
+            );
         }
     }
 } else {
-    $progress_images_html .= '<p style="color:#999;">No chart images generated.</p>';
+    $progress_images_html .= apdf_box('Task Progress Chart', apdf_box_text('No chart images generated.', true));
 }
 
 
+
+$dpr_logo = ($CorporateID == 183) ? '../../img/innov_logo.jpg' : '../../media/pdf-assets/aryadi-logo.png';
+
+$circle_html = '';
+if (file_exists($circle_filename)) {
+    $circle_html = apdf_box('Overall Project Progress', '
+        <table width="100%">
+            <tr>
+                <td style="width:50%; text-align:center; padding:4mm;">
+                    <img src="'.$circle_filename.'" style="width:55mm;">
+                </td>
+                <td style="width:50%; vertical-align:middle; padding:4mm;">
+                    <div class="block_label">Overall Completion</div>
+                    <div style="font-size:26pt; font-weight:bold; color:#0B356E;">'.$overall_percent.'%</div>
+                    <table style="margin-top:4mm; width:auto;">
+                        <tr>
+                            <td style="width:5mm; height:5mm; background-color:#00A800;"></td>
+                            <td style="padding:0 6mm 0 2mm; font-size:9pt; color:#334155;">Completed ('.$overall_percent.'%)</td>
+                        </tr>
+                        <tr><td colspan="2" style="height:2mm;"></td></tr>
+                        <tr>
+                            <td style="width:5mm; height:5mm; background-color:#DC0000;"></td>
+                            <td style="padding:0 6mm 0 2mm; font-size:9pt; color:#334155;">Pending ('.$overall_remaining.'%)</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>');
+}
 
 $html_prefix = '
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .container{
-            // border:1px solid #000;
-        } 
-        body{
-             font-family: poppins, sans-serif;
-            font-size:12pt;
-        }  
-        table {
-            width: 100%;
-        }
-        .top_header{
-           background:#027dc1;
-           border:1px solid #000;
-        }
-        .top_header tr td{
-            width:50%;
-         }
-         .top_header_inside tr td {
-            text-align:center;
-            color:#fff;
-            font-weight:bold;
-            // font-family: sans-serif;
-            font-size:15px;
-         }
-         .top_right_border{
-            border-right:1px solid #fff;
-         } 
-
-         
-         .customer_details{
-            border:1px solid #000;
-         }
-         .customer_details tr td{
-            width:50%;
-         }
-         .customer_details_inside tr td{
-             font-size:11px;
-            //  font-family: sans-serif;
-         }
-         .customer_details_inside tr td{
-            padding:3px 0px;
-         }
-         .costumer_detail_bold{
-            font-weight:bold;
-            width:100px;
-            font-size:12px;
-         }
-         .custumer_right_border{
-            border-right:1px solid #000;
-         }
-         .report_details_inside tr td{
-            font-size:11px;
-            // font-family: sans-serif;
-        }
-        .report_details_inside tr td{
-           padding:3px 0px;
-        }
-        
-        .customer_details tr {
-            display: inline-flex !important;
-        }
-        .other_feedback{
-            border-left: 1px solid #000;
-            border-right: 1px solid #000;
-            border-bottom: 1px solid #000;
-            // padding-bottom:50px;
-        }
-        .other_feedback tr .width_30{
-            font-weight:bold;
-            font-size:12px;
-            // font-family: sans-serif;
-        }
-        .other_feedback_inside td{
-            font-size:11px;
-            // font-family: sans-serif;
-            margin-top:10px;
-        }
-
-        .attacment_div{
-            border: 1px solid #000;
-            page-break-inside: avoid;
-        }   
-
-        .action_taken_div{
-            page-break-inside: avoid;
-        }
-        .remark_div{
-            page-break-inside: avoid;
-        }
-        .observation_div{
-            page-break-inside: avoid;
-        }
-        .problemreported_div{
-            page-break-inside: avoid;
-        }
-        .quotation_div{
-            page-break-inside: avoid;
-        }
-
-        .bottom_div{
-            page-break-inside: avoid;
-        }
-
-        .attacment{
-            background:#027dc1;
-            padding:6px 0px 6px 6px;
-            color:#fff;
-            font-size:14px;
-            font-weight:bold;
-            // font-family: sans-serif;
-            
-        }
-        .product_attachment_box{
-            padding:20px;
-        }
-        
-
-        .bottom_signature_table{
-            border:1px solid #000;
-            border-collapse: collapse;
-        }
-
-        .bottom_table_bold{
-            font-weight:bold;
-            font-size:13px;
-            padding-left:10px !important;
-        }
-
-        .bottom_signature_table tbody tr td{
-            // font-family: sans-serif;
-            border:1px solid #000;
-            font-size:12px;
-            padding-top:15px;
-            padding-bottom:15px;
-            width:20%;
-        }
-
-
-        .natural_of_call_div{
-            border-left: 1px solid #000;
-            border-right: 1px solid #000;
-            font-weight:bold;
-            font-size:12px;
-            padding:4px 7px;
-            // font-family: sans-serif;
-        }
-        .natural_table_bold{
-            font-weight:bold;
-            font-size:11px;
-            padding-left:10px !important;
-        }
-        .natural_call_table{
-            border:1px solid #000;
-            border-collapse: collapse;
-        }
-        .natural_call_table tbody tr td{
-            // font-family: sans-serif;
-            border:1px solid #000;
-            padding:10px 5px;
-        }
-        .pdf_header{
-            width:100%;
-        }
-        .pdf_header img {
-            width:100%;
-        }
-
-        .client_signature{
-            width:100px;
-
-        }
-        .client_signature img{
-            width:100%;
-        }
-
-        .tech_value{
-          font-weight:bold;
-        }   
-
-        .tech_bottom_table_bold{
-            font-size:13px;
-            padding-left:10px !important;
-        }
-
-        .page_1 {
-            // border:1px solid #000;
-            // padding:30px;
-            // height:88.8%;
-        }
-        .page_2 {
-            // border:1px solid #000;
-            // padding:30px;
-            // height:100%;
-        }
-
-        .activity_table {
-    border-collapse: collapse;
-    width: 100%;
-    font-size: 11px;
-    // font-family: sans-serif;
-}
-
-.activity_table th {
-    background-color: #027dc1;
-    color: #fff;
-    padding: 8px;
-    text-align: left;
-    border: 1px solid #000;
-}
-
-.activity_table td {
-    border: 1px solid #000;
-    padding: 6px;
-}
-
-.activity_table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-.rating-badge {
-   margin-top:10px;
-  display: inline-block;
-  padding: 6px 14px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #fff;
-  border-radius: 25px;
-  letter-spacing: 0.3px;
-  transition: all 0.3s ease;
-  text-align: right;
-}
-
-.rating-badge:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.task_progress_section {
-  margin-top: 30px;
-  page-break-inside: avoid;
-}
-
-.task_box {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  padding: 15px;
-  background: #fdfdfd;
-  page-break-inside: avoid;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-}
-
-.task_header {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 6px;
-  margin-bottom: 8px;
-}
-
-.task_header h4 {
-  color: #027dc1;
-  margin: 0;
-  font-size: 15px;
-}
-
-.task_meta {
-  font-size: 11px;
-  color: #444;
-  margin-top: 4px;
-}
-
-.evidence_img {
-  width: 70px;
-  height: 70px;
-  object-fit: cover;
-  margin-right: 5px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-.project_timeline_section {
-    page-break-inside: avoid;
-}
-.project_timeline_section table {
-    border-collapse: collapse;
-    width: 100%;
-    font-size: 10px;
-}
-.project_timeline_section th, .project_timeline_section td {
-    border: 1px solid #000;
-    padding: 4px;
-}
-.project_timeline_section th {
-    background: #027dc1;
-    color: #fff;
-}
-
-.chart_section img {
-  margin-top:10px;
-  width:100%;
-  border:1px solid #ccc;
-  border-radius:8px;
-}
-
-
+    <title>Daily Progress Report '.$TicketID.'</title>
+    <style>'.apdf_css().'
+        .evidence_img { width: 22mm; height: 22mm; margin: 0.6mm; border: 0.3mm solid #D6E4F2; }
+        table.timeline th, table.timeline td { font-size: 7.5pt; padding: 1.6mm 1mm; }
     </style>
 </head>
 <body>
-    <div class="container">
-           
-        <div class="page_1">
-            <div class="pdf_header">
-                <img src="../../media/pdf-assets/'.$media_asset.'">
-            </div>
-            <div style="display:flex; margin-top:10px;">
-                <table class="top_header">
-                    <tr>
-                        <td class="top_right_border">
-                            <table class="top_header_inside">
-                                <tr>
-                                <td>Project Details</td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <table  class="customer_details">
-                    <tr>
-                        <td class="custumer_right_border">
-                            <table class="customer_details_inside">
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Branch Name</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$BranchSite.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Address</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$BranchAddress1.'</td>
-                                </tr>
-                                
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Mobile No.</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$BranchMobile.'</td>
-                                </tr>
-                               
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold"></td>
-                                    <td style="width:10%;"></td>
-                                    <td style="width:40%;"></td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold"></td>
-                                    <td style="width:10%;"></td>
-                                    <td style="width:40%;"></td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold"></td>
-                                    <td style="width:10%;"></td>
-                                    <td style="width:40%;"></td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold"></td>
-                                    <td style="width:10%;"></td>
-                                    <td style="width:40%;"></td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold"></td>
-                                    <td style="width:10%;"></td>
-                                    <td style="width:40%;"></td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold"></td>
-                                    <td style="width:10%;"></td>
-                                    <td style="width:40%;"></td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold"></td>
-                                    <td style="width:10%;"></td>
-                                    <td style="width:40%;"></td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td>
-                            <table class="report_details_inside">
-                             <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Project Name</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$projectname.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Type</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$Type.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Ticket No</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$TicketID.'</td>
-                                </tr>
+    '.apdf_header('DAILY PROGRESS REPORT', 'PROJECT STATUS SUMMARY', $dpr_logo).'
 
-                                 <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Client Ticket Number</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$ClientTicketID.'</td>
-                                </tr>
-                                
-                                   <tr>
-                                        <td style="width:50%;" class="costumer_detail_bold">Project Start Date</td>
-                                        <td style="width:10%;">:</td>
-                                        <td style="width:40%;">'.$projectstartdate.'</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:50%;" class="costumer_detail_bold">Project End Date</td>
-                                        <td style="width:10%;">:</td>
-                                        <td style="width:40%;">'.$projectenddate.'</td>
-                                    </tr>
+    '.apdf_stats(array(
+        array('Ticket No', apdf_text($TicketID)),
+        array('Project Start', apdf_text($projectstartdate)),
+        array('Project End', apdf_text($projectenddate)),
+        array('Overall Progress', $overall_percent.'%'),
+    )).'
 
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold"> </td>
-                                    <td style="width:10%;"></td>
-                                    <td style="width:40%;"></td>
-                                </tr>
-                                
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="">
- '.(file_exists($circle_filename) ? '
-<div class="chart_section" style="page-break-inside: avoid; margin-top:20px; text-align:center;">
-    <h3 style="background:#027dc1; color:#fff; padding:10px; border-radius:4px; text-align:center;">
-        Overall Project Progress
-    </h3>
+    '.apdf_two_col(
+        'Site Details',
+        array(
+            array('Branch Name', apdf_text($BranchSite)),
+            array('Address', apdf_text($BranchAddress1)),
+            array('Mobile No.', apdf_text($BranchMobile)),
+        ),
+        'Project Details',
+        array(
+            array('Project Name', apdf_text($projectname)),
+            array('Type', apdf_text($Type)),
+            array('Ticket No', apdf_text($TicketID)),
+            array('Client Ticket Number', apdf_text($ClientTicketID)),
+            array('Project Start Date', apdf_text($projectstartdate)),
+            array('Project End Date', apdf_text($projectenddate)),
+        )
+    ).'
 
-
-            <!-- Legend with table for PDF compatibility -->
-            <div style="display:flex; justify-content:center; align-items:center; width:100%; margin-top:1px; margin-left:150px;">
-            <table style="margin: 20px auto 0; border-collapse: separate; border-spacing: 10px 5px; 
-                    font-family: Arial, sans-serif; font-size: 14px; color: #333; ">
-            <tr>
-                <td style="width: 20px; height: 20px; background-color: #00A800; border-radius: 4px; vertical-align: middle;"></td>
-                <td style="padding-left: 5px; vertical-align: middle;">Completed</td>
-
-                <td style="width: 20px; height: 20px; background-color: #DC0000; border-radius: 4px; vertical-align: middle;"></td>
-                <td style="padding-left: 5px; vertical-align: middle;">Pending</td>
-            </tr>
-        </table>
-         </div>
-
-
-    <div style="display:flex; justify-content:center; align-items:center; width:100%; margin-top:10px;">
-        <img src="'.$circle_filename.'" style="width:40%; max-width:280px; margin:auto;">
-    </div>
-
-    
-</div>' : '').'
-
+    '.$circle_html.'
 ';
 $html_suffix = '
-</div>
-    </div>
 </body>
 </html>';
 
@@ -1135,66 +726,13 @@ $html_suffix = '
 
 
 
-$default_logo = "https://techxpertindia.in/images/techx-14.png"; // default logo
-
-if ($CorporateID == 183) {
-    $default_logo = "https://techxpertindia.in/admin/img/innov_logo.jpg"; // new logo for ID 183
-}
-$defaultConfig = (new Mpdf\Config\ConfigVariables())->getDefaults();
-$fontDirs = $defaultConfig['fontDir'];
-
-$defaultFontConfig = (new Mpdf\Config\FontVariables())->getDefaults();
-$fontData = $defaultFontConfig['fontdata'];
-
-$mpdf = new \Mpdf\Mpdf([
-    'fontDir' => array_merge($fontDirs, [__DIR__ . '/../../fonts']),
-    'fontdata' => $fontData + [
-        'poppins' => [
-            'R' => 'Poppins-Regular.ttf',
-            'B' => 'Poppins-Bold.ttf',
-            'I' => 'Poppins-Italic.ttf'
-        ]
-    ],
-    'default_font' => 'poppins'
-]);
-$mpdf->WriteHTML("");
-$mpdf->SetWatermarkImage(
-    $default_logo,
-    0.08,         // opacity (keep subtle)
-    [50, 20],    // size (width x height in mm) - adjust as needed
-    'F',          // behind content (background)
-    true,         // keep aspect ratio
-    45            // rotation angle (45 = diagonal)
-);
-// --- Generate PDF ---
-$mpdf->showWatermarkImage = true;
-$mpdf->SetFooter('
-<div style="font-size:9px; color:#555; border-top:1px solid #999; padding:3px 10px;">
-    <span style="float:left; font-style:italic; color:#333;">
-        System Generated Report | Private & Confidential |
-    </span>
-    <span style="float:right; font-weight:bold; color:#000;">
-        Page {PAGENO} of {nbpg}
-    </span>
-</div>
-');
-
+$mpdf = apdf_create_mpdf('Daily Progress Report '.$TicketID, 'Daily Progress Report · Ticket '.$TicketID, array(), 'Aryadi Business Pvt. Ltd.', 'System Generated Report | Private & Confidential');
 $pdf_name = "service-report-dpr" . $TicketID . ".pdf";
 $pdfFilePath = '../reports/dpr/' . $pdf_name;
 
 // --- Generate PDF only if not already present ---
 if (!file_exists($pdfFilePath)) {
-    $mpdf->showWatermarkImage = true;
-    $mpdf->SetFooter('
-<div style="font-size:9px; color:#555; border-top:1px solid #999; padding:3px 10px;">
-    <span style="float:left; font-style:italic; color:#333;">
-        System Generated Report | Private & Confidential | Generated on: '.date("d-M-Y H:i").'
-    </span>
-    <span style="float:right; font-weight:bold; color:#000;">
-        Page {PAGENO} of {nbpg}
-    </span>
-</div>
-');
+    apdf_footer($mpdf, 'Daily Progress Report · Ticket '.$TicketID, 'Aryadi Business Pvt. Ltd.', 'System Generated Report | Private & Confidential | Generated on: '.date("d-M-Y H:i"));
 
     dprWriteDprReportToMpdf(
         $mpdf,

@@ -4,7 +4,8 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 require_once('../../includes/autoloader.inc.php');
 require_once '../../vendor/autoload.php'; 
-include '../../controllers/common_controllers.php'; 
+include '../../controllers/common_controllers.php';
+require_once __DIR__ . '/../../includes/aryadi_pdf_theme.php'; 
 // Start MPDF
 $html = "Test HTML";
 $mpdf = new \Mpdf\Mpdf();
@@ -248,22 +249,10 @@ if (!function_exists('ppmPdfKv')) {
     }
 }
 
-if($ClientSignature == ""){
-    $ClientSignature = '<div class="sign-placeholder">Signature pending</div>';
-}else{
-      $ClientSignatureDate = $service_reports_details['CreatedDate'];
-      $ClientSignatureTime = $service_reports_details['CreatedTime'];
-    $ClientSignature = '
-<div class="client_signature">
-    <img src="../../media/signature/'.$ClientSignature.'">
-</div>
-<div class="sign-meta">'.ppmPdfText($ClientSignatureDate, '').' '.ppmPdfText($ClientSignatureTime, '').'</div>';
-
-}
+$ClientSignature = apdf_signature_html($ClientSignature, $service_reports_details['CreatedDate'], $service_reports_details['CreatedTime']);
 $image_pre_td=[];
 $image_post_td=[];
 $image_service_report=[];
-
 if (!is_array($report_images)) {
     $report_images = array();
 }
@@ -272,47 +261,30 @@ foreach ($report_images as $report_image)
 {
     $original_image_path = '../../media/ppm_ticket_media/' . $report_image['Image'];
     $compressed_image_path = '../../media/ppm_ticket_media/compressed_' . $report_image['Image'];
-    $imageDate=$report_image['CreatedDate'];
-    $imageTime=$report_image['CreatedTime'];
-  
-    
-    // Compress the image
-    $core->compressImage($original_image_path, $compressed_image_path, 50); // 75 is the quality percentage
+    if (!is_file($original_image_path)) {
+        continue;
+    }
 
-    $imageCell = '<td class="photo-cell">
-                    <div class="photo-frame">
-                        <img src="'.$compressed_image_path.'" alt="">
-                        <div class="photo-meta">'.ppmPdfText($imageDate, '').' '.ppmPdfText($imageTime, '').'</div>
-                    </div>
-                </td>';
+    // Compress the image
+    if ($core->compressImage($original_image_path, $compressed_image_path, 50) === null) {
+        $compressed_image_path = $original_image_path;
+    }
+
+    $image_cell = apdf_image_cell($compressed_image_path, apdf_join(array($report_image['CreatedDate'], $report_image['CreatedTime']), ' '));
     if($report_image['Action'] == "pre_img")
     {
-        $image_pre_td[] = $imageCell;
+        $image_pre_td[] = $image_cell;
     }
     if($report_image['Action'] == "Service_Report")
     {
-        $image_service_report[] = $imageCell;
+        $image_service_report[] = $image_cell;
     }
     if($report_image['Action'] == "post_img")
     {
-        $image_post_td[] = $imageCell;
+        $image_post_td[] = $image_cell;
     }
 }
 
-$service_report_div = "";
-if(!empty($image_service_report))
-{
-
-$service_report_div = '
-<table class="section-card" width="100%" cellpadding="0" cellspacing="0">
-                <tr><td class="section-title">Service Report Images</td></tr>
-                <tr><td class="section-body">
-                    <table class="photo-table" width="100%" cellpadding="0" cellspacing="0"><tr>'.implode("", $image_service_report).'</tr></table>
-                </td></tr>
-            </table>';
-}
-
-// Customer HVAC Code
 $HVACReportHTML = "";
 $HVACChecklistHTML = "";
 $HVACReportHTML_div = "";
@@ -491,18 +463,8 @@ if($Category == 34)
             $AssetCondition_html = ppmPdfKv('Asset Condition', $AssetCondition);
         }
 
-        $HVACReportHTML_div = '<table class="section-card" width="100%" cellpadding="0" cellspacing="0">
-                <tr><td class="section-title">Measured Parameters</td></tr>
-                <tr><td class="section-body" style="padding:0;">
-                    <table class="split-table" width="100%" cellpadding="0" cellspacing="0">'.$HVACReportHTML.'</table>
-                </td></tr>
-            </table>';
-        $HVACReportHTML_div = $HVACReportHTML_div.'<table class="section-card" width="100%" cellpadding="0" cellspacing="0">
-                <tr><td class="section-title">Checklist</td></tr>
-                <tr><td class="section-body" style="padding:0;">
-                    <table class="split-table" width="100%" cellpadding="0" cellspacing="0">'.$HVACChecklistHTML.'</table>
-                </td></tr>
-            </table>';
+        $HVACReportHTML_div = apdf_box('Measured Parameters', '<table class="customer_details">'.$HVACReportHTML.'</table>');
+        $HVACReportHTML_div = $HVACReportHTML_div.apdf_box('Checklist', '<table class="customer_details">'.$HVACChecklistHTML.'</table>');
         $TicketID = $TicketID_old;
     }
 
@@ -530,393 +492,56 @@ if ($ppmTicketDbId > 0) {
     }
 }
 
-$headerLogoPath = '../../img/aryadi.png';
-$headerCompany = 'ARYADI BUSINESS PVT. LTD.';
-$headerTagline = 'Technical Facility Management  |  AMC  |  Engineering Services';
-if ((int) $CorporateID === 183) {
-    $headerLogoPath = '../../img/innov_logo.jpg';
-    $headerCompany = 'INNOV';
-    $headerTagline = 'Your People Partner';
+$header_logo = '../../media/pdf-assets/aryadi-logo.png';
+if($CorporateID == 183)
+{
+    $header_logo = '../../img/innov_logo.jpg';
 }
-$preImagesRow = !empty($image_pre_td) ? implode('', $image_pre_td) : '<td class="empty-note">No pre images uploaded.</td>';
-$postImagesRow = !empty($image_post_td) ? implode('', $image_post_td) : '<td class="empty-note">No post images uploaded.</td>';
 
-$html = '
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Field Service Report - '.ppmPdfText($TicketID).'</title>
-    <style>
-        body {
-            font-family: poppins, sans-serif;
-            color: #334155;
-            font-size: 10pt;
-            background: #ffffff;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .company-name {
-            font-size: 13px;
-            font-weight: bold;
-            color: #2E7AAB;
-            letter-spacing: 0.3px;
-        }
-        .company-tag {
-            font-size: 7.5px;
-            color: #64748B;
-            padding-top: 2px;
-        }
-        .report-badge {
-            background: #3D9FD6;
-            color: #ffffff;
-            text-align: right;
-            padding: 10px 12px;
-        }
-        .report-badge-title {
-            font-size: 12px;
-            font-weight: bold;
-            letter-spacing: 1px;
-            color: #ffffff;
-        }
-        .report-badge-meta {
-            font-size: 8px;
-            color: #E8F4FD;
-            padding-top: 3px;
-        }
-        .accent-line {
-            height: 2px;
-            background: #2E8FC4;
-            font-size: 1px;
-        }
-        .section-card {
-            margin-top: 8px;
-            border: 1px solid #C5D9EA;
-        }
-        .section-title {
-            background: #3D9FD6;
-            color: #ffffff;
-            font-size: 9.5px;
-            font-weight: bold;
-            padding: 6px 10px;
-            letter-spacing: 0.3px;
-        }
-        .section-title-split {
-            background: #3D9FD6;
-            color: #ffffff;
-            font-size: 9.5px;
-            font-weight: bold;
-            padding: 6px 10px;
-            letter-spacing: 0.3px;
-        }
-        .section-body {
-            padding: 8px 10px;
-            background: #ffffff;
-        }
-        .kv-label {
-            width: 42%;
-            font-size: 8.5px;
-            color: #64748B;
-            padding: 3px 6px 3px 0;
-            vertical-align: top;
-        }
-        .kv-value {
-            width: 58%;
-            font-size: 9.5px;
-            color: #334155;
-            font-weight: normal;
-            padding: 3px 0;
-            vertical-align: top;
-        }
-        .split-table td {
-            width: 50%;
-            vertical-align: top;
-        }
-        .col-pad {
-            padding: 8px 10px;
-            background: #ffffff;
-        }
-        .col-divider {
-            border-right: 1px solid #C5D9EA;
-        }
-        .custumer_right_border {
-            border-right: 1px solid #C5D9EA;
-            padding: 8px 10px;
-            vertical-align: top;
-            width: 50%;
-        }
-        .report_details_inside td {
-            font-size: 8.5px;
-            padding: 3px 2px;
-            color: #334155;
-        }
-        .narrative {
-            font-size: 9.5px;
-            color: #334155;
-            line-height: 1.45;
-            min-height: 20px;
-        }
-        .photo-cell {
-            width: 25%;
-            padding: 6px;
-            text-align: center;
-            vertical-align: top;
-        }
-        .photo-frame {
-            border: 1px solid #C5D9EA;
-            padding: 4px;
-            background: #ffffff;
-        }
-        .photo-frame img {
-            width: 118px;
-        }
-        .photo-meta {
-            font-size: 7px;
-            color: #64748B;
-            padding-top: 3px;
-        }
-        .empty-note {
-            font-size: 9px;
-            color: #64748B;
-            padding: 12px 8px;
-        }
-        .sign-head {
-            background: #3D9FD6;
-            color: #ffffff;
-            font-size: 9.5px;
-            font-weight: bold;
-            padding: 6px 10px;
-        }
-        .sign-subhead {
-            background: #D6EEF8;
-            color: #2E7AAB;
-            font-size: 8px;
-            font-weight: bold;
-            padding: 5px 10px;
-            border-bottom: 1px solid #C5D9EA;
-        }
-        .sign-table td {
-            border: 1px solid #C5D9EA;
-            padding: 8px 10px;
-            font-size: 9px;
-            vertical-align: top;
-        }
-        .client_signature img {
-            width: 90px;
-        }
-        .sign-placeholder {
-            font-size: 8px;
-            color: #94A3B8;
-            padding: 16px 0;
-        }
-        .sign-meta {
-            font-size: 7px;
-            color: #64748B;
-            padding-top: 3px;
-        }
-        .tech-label {
-            font-weight: bold;
-            color: #2E7AAB;
-        }
-        .attacment_div {
-            margin-top: 8px;
-            border: 1px solid #C5D9EA;
-            page-break-inside: avoid;
-        }
-        .attacment {
-            background: #3D9FD6;
-            padding: 6px 10px;
-            color: #ffffff;
-            font-size: 9.5px;
-            font-weight: bold;
-            letter-spacing: 0.3px;
-        }
-        .product_attachment_box {
-            padding: 8px 10px;
-        }
-        .problemreported_div,
-        .observation_div,
-        .action_taken_div,
-        .remark_div,
-        .quotation_div,
-        .bottom_div,
-        .section-card {
-            page-break-inside: avoid;
-        }
-        .bottom_signature_table {
-            border-collapse: collapse;
-            margin-top: 8px;
-        }
-        .bottom_signature_table td {
-            border: 1px solid #C5D9EA;
-            font-size: 9px;
-            padding: 8px 10px;
-        }
-        .bottom_table_bold,
-        .tech_bottom_table_bold {
-            font-size: 9px;
-        }
-    </style>
-</head>
-<body>
-    <table class="brand-bar" width="100%" cellpadding="0" cellspacing="0">
-        <tr>
-            <td width="62%" style="padding:6px 8px 8px 0; vertical-align:middle;">
-                <table width="100%" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td width="58" style="vertical-align:middle;">
-                            <img src="'.$headerLogoPath.'" style="height:48px; width:auto;">
-                        </td>
-                        <td style="padding-left:8px; vertical-align:middle;">
-                            <div class="company-name">'.$headerCompany.'</div>
-                            <div class="company-tag">'.$headerTagline.'</div>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td width="38%" class="report-badge" style="vertical-align:middle;">
-                <div class="report-badge-title">FIELD SERVICE REPORT</div>
-                <div class="report-badge-meta">'.ppmPdfText($Type).'  |  '.ppmPdfText($TicketID).'</div>
-            </td>
-        </tr>
-    </table>
-    <div class="accent-line">&nbsp;</div>
+$AssetConditionValue = ($AssetCondition_html !== '' && isset($AssetCondition)) ? $AssetCondition : '';
+$ReportNumber = "ARYADI-PPM-".sprintf("%05d", (int) $ServicereportID);
+$html = apdf_ppm_document(array(
+    'title' => 'PPM SERVICE REPORT',
+    'subtitle' => 'HVAC PREVENTIVE MAINTENANCE',
+    'logo' => $header_logo,
+    'report_number' => $ReportNumber,
+    'ticket_id' => $TicketID,
+    'type' => $Type,
+    'category' => $CategoryName,
+    'subcategory' => $SubCategoryName,
+    'status' => isset($ticket_overview['Status']) ? $ticket_overview['Status'] : '',
+    'asset_condition' => $AssetConditionValue,
+    'registered' => apdf_join(array($RegisteredDate, $RegisteredTime), ' '),
+    'closed' => apdf_join(array($CloseDate, $CloseTime), ' '),
+    'company_name' => $company_name,
+    'branch' => $BranchSite,
+    'address' => $BranchAddress1,
+    'mobile' => $BranchMobile,
+    'client_ticket' => $ClientTicketID,
+    'equipment' => $EquipmentName,
+    'make' => $Make,
+    'model' => $Model,
+    'serial' => $SerialNumber,
+    'asset_location' => $AssetLocation,
+    'problem' => $ProblemReportedByClient,
+    'observation' => $Observation,
+    'action_taken' => $ActionTaken,
+    'remarks' => $Remarks,
+    'before_images_html' => $dynamicChecklistHTML_div.$quotation_html,
+    'after_images_html' => $HVACReportHTML_div,
+    'pre_images' => $image_pre_td,
+    'post_images' => $image_post_td,
+    'service_images' => $image_service_report,
+    'tech_name' => $TechnicianName,
+    'tech_phone' => $TechnicianPhoneNumber,
+    'client_name' => $ClientRepresentative,
+    'client_designation' => $ClientRepresentativeDesignation,
+    'client_contact' => $ClientRepresentativeContact,
+    'signature_html' => $ClientSignature,
+));
 
-    <table class="section-card" width="100%" cellpadding="0" cellspacing="0" style="margin-top:10px;">
-        <tr>
-            <td width="50%" class="section-title-split" style="border-right:1px solid #ffffff;">CUSTOMER DETAILS</td>
-            <td width="50%" class="section-title-split">SERVICE TICKET DETAILS</td>
-        </tr>
-        <tr>
-            <td class="col-pad col-divider" style="vertical-align:top;">
-                <table width="100%" cellpadding="0" cellspacing="0">
-                    '.ppmPdfKv('Customer Name', $company_name).'
-                    '.ppmPdfKv('Branch Name', $BranchSite).'
-                    '.ppmPdfKv('Address', $BranchAddress1).'
-                    '.ppmPdfKv('Mobile No.', $BranchMobile).'
-                    '.ppmPdfKv('Equipment Name', $EquipmentName).'
-                    '.ppmPdfKv('Make', $Make).'
-                    '.ppmPdfKv('Model', $Model).'
-                    '.ppmPdfKv('Serial Number', $SerialNumber).'
-                    '.ppmPdfKv('Asset Location', $AssetLocation).'
-                </table>
-            </td>
-            <td class="col-pad" style="vertical-align:top;">
-                <table width="100%" cellpadding="0" cellspacing="0">
-                    '.ppmPdfKv('Type', $Type).'
-                    '.ppmPdfKv('Ticket No', $TicketID).'
-                    '.ppmPdfKv('Category', $CategoryName).'
-                    '.ppmPdfKv('Sub Category', $SubCategoryName).'
-                    '.ppmPdfKv('Complaint Registered', trim($RegisteredDate.' | '.$RegisteredTime)).'
-                    '.$AssetCondition_html.'
-                    '.ppmPdfKv('Close Date', trim($CloseDate.' | '.$CloseTime)).'
-                    '.ppmPdfKv('Technician', $TechnicianName).'
-                </table>
-            </td>
-        </tr>
-    </table>
-
-    <table class="section-card" width="100%" cellpadding="0" cellspacing="0">
-        <tr><td class="section-title">Problem Statement</td></tr>
-        <tr><td class="section-body"><div class="narrative">'.ppmPdfText($ProblemReportedByClient, '').'</div></td></tr>
-    </table>
-    <table class="section-card" width="100%" cellpadding="0" cellspacing="0">
-        <tr><td class="section-title">Technician / Engineer Observation</td></tr>
-        <tr><td class="section-body"><div class="narrative">'.ppmPdfText($Observation, '').'</div></td></tr>
-    </table>
-    <table class="section-card" width="100%" cellpadding="0" cellspacing="0">
-        <tr><td class="section-title">Action Taken</td></tr>
-        <tr><td class="section-body"><div class="narrative">'.ppmPdfText($ActionTaken, '').'</div></td></tr>
-    </table>
-    <table class="section-card" width="100%" cellpadding="0" cellspacing="0">
-        <tr><td class="section-title">Technician / Engineer Remarks</td></tr>
-        <tr><td class="section-body"><div class="narrative">'.ppmPdfText($Remarks, '').'</div></td></tr>
-    </table>
-    '.$dynamicChecklistHTML_div.'
-    '.$quotation_html.'
-
-    <table class="section-card" width="100%" cellpadding="0" cellspacing="0">
-        <tr><td class="section-title">Pre Image(s)</td></tr>
-        <tr><td class="section-body">
-            <table class="photo-table" width="100%" cellpadding="0" cellspacing="0"><tr>'.$preImagesRow.'</tr></table>
-        </td></tr>
-    </table>
-    <table class="section-card" width="100%" cellpadding="0" cellspacing="0">
-        <tr><td class="section-title">Post Image(s)</td></tr>
-        <tr><td class="section-body">
-            <table class="photo-table" width="100%" cellpadding="0" cellspacing="0"><tr>'.$postImagesRow.'</tr></table>
-        </td></tr>
-    </table>
-    '.$service_report_div.$HVACReportHTML_div.'
-
-    <table class="section-card" width="100%" cellpadding="0" cellspacing="0">
-        <tr><td class="sign-head" colspan="2">Technician</td></tr>
-        <tr>
-            <td class="col-pad col-divider" width="50%"><span class="tech-label">Name: </span>'.ppmPdfText($TechnicianName).'</td>
-            <td class="col-pad" width="50%"><span class="tech-label">Phone: </span>'.ppmPdfText($TechnicianPhoneNumber, '').'</td>
-        </tr>
-    </table>
-    <table class="section-card" width="100%" cellpadding="0" cellspacing="0">
-        <tr><td class="sign-head" colspan="3">Onsite Client Representative (Verified By)</td></tr>
-        <tr>
-            <td class="sign-subhead">Name</td>
-            <td class="sign-subhead">Designation</td>
-            <td class="sign-subhead">Signature</td>
-        </tr>
-        <tr>
-            <td style="padding:10px; border:1px solid #C5D9EA; font-size:9px; vertical-align:top;">'.ppmPdfText($ClientRepresentative, '').'<br>'.ppmPdfText($ClientRepresentativeContact, '').'</td>
-            <td style="padding:10px; border:1px solid #C5D9EA; font-size:9px; vertical-align:top;">'.ppmPdfText($ClientRepresentativeDesignation, '').'</td>
-            <td style="padding:10px; border:1px solid #C5D9EA; font-size:9px; vertical-align:top;">'.$ClientSignature.'</td>
-        </tr>
-    </table>
-</body>
-</html>';
-
-
- // if($Type == "hvac") {
- //     $html .= generateHVACReportHTML($service_hvac_reports_details);
- // }
-
- $default_logo = __DIR__ . '/../../img/aryadi.png';
-
-if ($CorporateID == 183) {
-    $default_logo = __DIR__ . '/../../img/innov_logo.jpg';
-}
-$defaultConfig = (new Mpdf\Config\ConfigVariables())->getDefaults();
-$fontDirs = $defaultConfig['fontDir'];
-
-$defaultFontConfig = (new Mpdf\Config\FontVariables())->getDefaults();
-$fontData = $defaultFontConfig['fontdata'];
-
-$mpdf = new \Mpdf\Mpdf([
-    'fontDir' => array_merge($fontDirs, [__DIR__ . '/../../fonts']),
-    'fontdata' => $fontData + [
-        'poppins' => [
-            'R' => 'Poppins-Regular.ttf',
-            'B' => 'Poppins-Bold.ttf',
-            'I' => 'Poppins-Italic.ttf'
-        ]
-    ],
-    'default_font' => 'poppins',
-    'format' => 'A4',
-    'margin_left' => 12,
-    'margin_right' => 12,
-    'margin_top' => 10,
-    'margin_bottom' => 16,
-    'margin_header' => 0,
-    'margin_footer' => 8,
-]);
-$mpdf->SetTitle('Field Service Report - ' . $TicketID);
-$mpdf->SetAuthor('Aryadi Business Pvt. Ltd.');
-$mpdf->SetCreator('Aryadi Business Pvt. Ltd.');
-$mpdf->SetWatermarkImage($default_logo, 0.04, [42, 38], 'F');
-$mpdf->showWatermarkImage = true;
-$mpdf->SetFooter('<table width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #C5D9EA;"><tr>
-    <td style="font-size:7.5px; color:#64748B; padding-top:4px;">Aryadi Business Pvt. Ltd.  |  info@aryadibusiness.com  |  +91 8800904906</td>
-    <td style="font-size:7.5px; color:#2E7AAB; text-align:right; padding-top:4px;">Page {PAGENO} of {nbpg}</td>
-</tr></table>');
+$mpdf = apdf_create_mpdf('PPM Service Report '.$ReportNumber, 'PPM Service Report · Ticket '.$TicketID);
+$fullHTML = $html;
 $mpdf->WriteHTML($html);
 $pdf_name = "service-report-".$TicketID.".pdf";
 $reportsDir = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'reports' . DIRECTORY_SEPARATOR;
@@ -949,4 +574,6 @@ if($Action == "Send")
     $core->sendMailRequest($mail_data,$url);
 }
 echo json_encode($response);
+?>
+?>
 ?>

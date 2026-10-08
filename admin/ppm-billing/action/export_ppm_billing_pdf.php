@@ -6,6 +6,7 @@ error_reporting(E_ALL);
 require_once('../../includes/autoloader.inc.php');
 require_once '../../vendor/autoload.php';
 include '../../controllers/common_controllers.php';
+require_once __DIR__ . '/../../includes/aryadi_pdf_theme.php';
 
 $conn = _connectodb();
 setTimeZone();
@@ -47,105 +48,83 @@ if ($CorporateID != -1) {
     }
 }
 
-ob_start();
-?>
+$rows_html = '';
+$i = 1;
+foreach ($billing_data as $row) {
+    $status_class = $row['BillingStatus'] == 'Billed' ? 'pill_yes' : 'pill_no';
+    $rows_html .= '
+    <tr'.($i % 2 == 0 ? ' class="alt"' : '').'>
+        <td class="num">'.$i.'</td>
+        <td><b>'.htmlspecialchars($row['TicketNumber']).'</b></td>
+        <td>'.htmlspecialchars($row['CompanyName']).'<br><span style="color:#64748B; font-size:7.5pt;">'.htmlspecialchars($row['BranchSite'].' ('.$row['BranchCity'].')').'</span></td>
+        <td>'.htmlspecialchars($row['EquipmentName']).'<br><span style="color:#64748B; font-size:7.5pt;">'.htmlspecialchars($row['EquipmentLocation']).'</span></td>
+        <td>'.htmlspecialchars($row['PPMDate']).'</td>
+        <td>'.htmlspecialchars($row['IntervalType']).'</td>
+        <td style="text-align:right;">'.number_format($row['AssetContractAmount'],2).'</td>
+        <td style="text-align:right;">'.number_format($row['DisplayBilledAmount'],2).'</td>
+        <td class="'.$status_class.'">'.htmlspecialchars($row['BillingStatus']).'</td>
+    </tr>';
+    $i++;
+}
+if ($i == 1) {
+    $rows_html .= '<tr><td colspan="9" style="text-align:center; color:#94A3B8; padding:4mm;">No PPM tickets found for the selected filters.</td></tr>';
+}
+
+$period_label = $start_date.' to '.$end_date;
+$generated_on = date('Y-m-d H:i');
+
+$html = '
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
-    <style>
-        body{font-family: sans-serif; font-size:11px;}
-        table{width:100%; border-collapse:collapse;}
-        th,td{border:1px solid #ccc; padding:4px 6px;}
-        th{background:#f4f4f4;}
-        .title{font-size:16px; font-weight:bold; margin-bottom:5px;}
-        .subtitle{font-size:12px; margin-bottom:10px;}
-        .text-right{text-align:right;}
-    </style>
     <title>PPM Billing</title>
+    <style>'.apdf_css().'</style>
 </head>
 <body>
-    <div class="title">PPM Billing – Due & Claimed Summary</div>
-    <div class="subtitle">
-        Account: <?php echo htmlspecialchars($company_name); ?><br>
-        Period: <?php echo htmlspecialchars($start_date); ?> to <?php echo htmlspecialchars($end_date); ?><br>
-        Generated On: <?php echo date('Y-m-d H:i'); ?><br>
-        Claimed (Billed): <?php echo number_format($total_billed,2); ?> |
-        Due (Pending): <?php echo number_format($total_pending,2); ?> |
-        Total: <?php echo number_format($total_billed + $total_pending,2); ?>
-    </div>
-    <table>
-        <thead>
-        <tr>
-            <th>#</th>
-            <th>Ticket</th>
-            <th>Corporate / Branch</th>
-            <th>Asset</th>
-            <th>PPM Date</th>
-            <th>Interval</th>
-            <th class="text-right">Contract Amt</th>
-            <th class="text-right">Per Visit / Billed Amt</th>
-            <th>Status</th>
-        </tr>
-        </thead>
-        <tbody>
-        <?php
-        $i = 1;
-        foreach ($billing_data as $row) {
-            ?>
-            <tr>
-                <td><?php echo $i; ?></td>
-                <td><?php echo htmlspecialchars($row['TicketNumber']); ?></td>
-                <td>
-                    <?php echo htmlspecialchars($row['CompanyName']); ?><br>
-                    <small><?php echo htmlspecialchars($row['BranchSite'].' ('.$row['BranchCity'].')'); ?></small>
-                </td>
-                <td>
-                    <?php echo htmlspecialchars($row['EquipmentName']); ?><br>
-                    <small><?php echo htmlspecialchars($row['EquipmentLocation']); ?></small>
-                </td>
-                <td><?php echo htmlspecialchars($row['PPMDate']); ?></td>
-                <td><?php echo htmlspecialchars($row['IntervalType']); ?></td>
-                <td class="text-right"><?php echo number_format($row['AssetContractAmount'],2); ?></td>
-                <td class="text-right"><?php echo number_format($row['DisplayBilledAmount'],2); ?></td>
-                <td><?php echo htmlspecialchars($row['BillingStatus']); ?></td>
-            </tr>
-            <?php
-            $i++;
-        }
-        if ($i == 1) {
-            ?>
-            <tr>
-                <td colspan="9">No PPM tickets found for the selected filters.</td>
-            </tr>
-            <?php
-        }
-        ?>
-        </tbody>
-        <tfoot>
-        <tr>
-            <th colspan="7" class="text-right">Claimed (Billed)</th>
-            <th class="text-right"><?php echo number_format($total_billed,2); ?></th>
-            <th></th>
-        </tr>
-        <tr>
-            <th colspan="7" class="text-right">Due (Pending)</th>
-            <th class="text-right"><?php echo number_format($total_pending,2); ?></th>
-            <th></th>
-        </tr>
-        <tr>
-            <th colspan="7" class="text-right">Total</th>
-            <th class="text-right"><?php echo number_format($total_billed + $total_pending,2); ?></th>
-            <th></th>
-        </tr>
-        </tfoot>
-    </table>
-</body>
-</html>
-<?php
-$html = ob_get_clean();
+    '.apdf_header('PPM BILLING', 'DUE & CLAIMED SUMMARY').'
 
-$mpdf = new \Mpdf\Mpdf();
+    '.apdf_stats(array(
+        array('Account', htmlspecialchars($company_name)),
+        array('Period', htmlspecialchars($period_label)),
+        array('Claimed (Billed)', number_format($total_billed,2)),
+        array('Due (Pending)', number_format($total_pending,2)),
+        array('Total', number_format($total_billed + $total_pending,2)),
+    )).'
+
+    '.apdf_data_box('PPM Tickets', array(
+        array('#', 5),
+        array('Ticket', 12),
+        array('Corporate / Branch', 20),
+        array('Asset', 18),
+        array('PPM Date', 10),
+        array('Interval', 8),
+        array('Contract Amt', 9),
+        array('Per Visit / Billed Amt', 10),
+        array('Status', 8),
+    ), $rows_html, 'Generated On: '.$generated_on).'
+
+    <div class="section keep">
+        <table>
+            <tr>
+                <td style="width:55%; vertical-align:middle; padding:3mm 3.5mm; border-right:0.3mm solid #D6E4F2;">
+                    <div class="block_label">Account</div>
+                    <div class="block_text"><b>'.htmlspecialchars($company_name).'</b><br><span style="color:#64748B;">Period: '.htmlspecialchars($period_label).'</span></div>
+                </td>
+                <td style="width:45%; vertical-align:top; padding:0;">
+                    <table class="totals">
+                        <tr><td class="t_label">Claimed (Billed)</td><td>'.number_format($total_billed,2).'</td></tr>
+                        <tr><td class="t_label">Due (Pending)</td><td>'.number_format($total_pending,2).'</td></tr>
+                        <tr class="grand"><td>Total</td><td>'.number_format($total_billed + $total_pending,2).'</td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>';
+
+$mpdf = apdf_create_mpdf('PPM Billing '.$period_label, 'PPM Billing · '.$period_label, array('format' => 'A4', 'orientation' => 'L'));
 $mpdf->WriteHTML($html);
 $mpdf->Output('ppm-billing-'.date('YmdHis').'.pdf', 'I');
 exit;

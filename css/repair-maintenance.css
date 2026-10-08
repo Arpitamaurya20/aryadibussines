@@ -727,10 +727,16 @@
 }
 
 .industry-badge:hover {
-    background-color: var(--bg-white);
-    border-color: var(--accent-blue);
+    background-color: var(--primary-navy);
+    border-color: var(--primary-navy);
+    color: #ffffff;
     box-shadow: var(--shadow-md);
     transform: translateY(-3px);
+}
+
+.industry-badge:hover span,
+.industry-badge:hover i {
+    color: #ffffff;
 }
 
 /* ==========================================================================

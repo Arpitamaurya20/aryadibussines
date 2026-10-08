@@ -25,6 +25,10 @@
                         <li><a href="contact-us.php">Contact Us</a></li>
                         <li><a href="clients.php">Our Clients</a></li>
                         <li><a href="about-us.php">About Us</a></li>
+                        <li><a href="terms.php">Terms</a></li>
+                        <li><a href="privacy.php">Privacy</a></li>
+                        <li><a href="security.php">Security</a></li>
+                        
                     </ul>
                 </div>
             </div>
@@ -74,15 +78,22 @@ CIN - U74999UP2016PTC085365</span>
         <div class="container">
             <div class="row align-items-center">
                 <!-- Social Links Left -->
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="copyright-bar-social">
                         <a href="https://www.facebook.com/profile.php?id=61592766645081" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
                          <a href="https://www.linkedin.com/in/aryadi-business-57818a426/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
                         <a href="https://www.instagram.com/aryadi_business/?hl=en" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
                     </div>
                 </div>
+                <div class="col-md-4 copyright-legal text-md-center">
+                    <a href="privacy.php">Privacy</a>
+                    <span class="copyright-legal-sep">|</span>
+                    <a href="security.php">Security</a>
+                    <span class="copyright-legal-sep">|</span>
+                    <a href="terms.php">Terms</a>
+                </div>
                 <!-- Copyright Text Right -->
-                <div class="col-md-6 copyright-text">
+                <div class="col-md-4 copyright-text">
                     <span>Copyright &copy; <?php echo date('Y'); ?> Aryadi Business Pvt. Ltd. All Rights Reserved.</span>
                 </div>
             </div>

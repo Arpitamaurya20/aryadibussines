@@ -1593,8 +1593,208 @@ img {
     font-size: 13px;
 }
 
+.copyright-legal {
+    font-size: 13px;
+    margin-top: 0;
+}
+
+.copyright-legal a {
+    color: #a0aec0;
+    text-decoration: none;
+}
+
+.copyright-legal a:hover {
+    color: #3d8ecf;
+}
+
+.copyright-legal-sep {
+    color: rgba(255, 255, 255, 0.25);
+    margin: 0 8px;
+}
+
+.legal-hero {
+    background: #163a5f;
+    padding: 28px 0 26px;
+    text-align: center;
+}
+
+.legal-hero h1 {
+    margin: 0 0 6px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.legal-hero-crumb {
+    color: #93c5e8;
+    font-size: 13px;
+}
+
+.legal-hero-crumb a {
+    color: #93c5e8;
+    text-decoration: none;
+}
+
+.legal-hero-crumb a:hover {
+    color: #fff;
+}
+
+.legal-page-section {
+    padding: 36px 0 80px;
+    background: #f4f6f8;
+}
+
+.legal-page-wrap {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.legal-page-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 44px 48px 28px;
+    border: 1px solid #e8eef3;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 16px 40px rgba(15, 23, 42, 0.05);
+}
+
+.legal-page-card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #1e293b;
+}
+
+.legal-page-card p,
+.legal-page-card li {
+    color: #475569;
+    font-size: 14.5px;
+    line-height: 1.75;
+}
+
+.legal-page-card p {
+    margin-bottom: 12px;
+}
+
+.legal-page-card a {
+    color: #0f766e;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.legal-page-card a:hover {
+    text-decoration: underline;
+}
+
+.terms-page-card h3 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #0f172a;
+    margin: 30px 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e8eef3;
+}
+
+.terms-page-card ul {
+    padding-left: 22px;
+    margin: 0 0 16px;
+}
+
+.terms-page-card li {
+    margin-bottom: 6px;
+}
+
+.terms-updated {
+    font-size: 12.5px;
+    color: #94a3b8 !important;
+    margin-bottom: 22px;
+}
+
+.legal-lead {
+    font-size: 15px !important;
+    color: #334155 !important;
+    margin-bottom: 8px !important;
+}
+
+.legal-contact-box {
+    background: #f8fafc;
+    border: 1px solid #e8eef3;
+    border-radius: 12px;
+    padding: 18px 20px 10px;
+    margin-top: 8px;
+}
+
+.legal-contact-box p {
+    margin-bottom: 6px;
+}
+
+.legal-contact-box a {
+    color: #16a34a;
+}
+
+.legal-contact-officer {
+    font-weight: 600;
+    color: #0f172a !important;
+    margin-top: 14px !important;
+}
+
+.legal-card-foot {
+    text-align: center;
+    font-size: 12px;
+    color: #94a3b8;
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #eef2f6;
+}
+
+.legal-help-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 14px;
+    padding: 14px 20px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e8eef3;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.legal-help-row a {
+    color: #16a34a;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.legal-help-row a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    .legal-page-card {
+        padding: 28px 20px 20px;
+        border-radius: 12px;
+    }
+
+    .legal-hero h1 {
+        font-size: 22px;
+    }
+
+    .legal-help-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 @media (max-width: 767px) {
     .copyright-text {
+        text-align: left;
+        margin-top: 15px;
+    }
+    .copyright-legal {
         text-align: left;
         margin-top: 15px;
     }
@@ -3646,6 +3846,11 @@ img {
 
 .industry-badge i {
     color: #3d8ecf;
+}
+
+.industry-badge:hover span,
+.industry-badge:hover i {
+    color: #ffffff;
 }
 
 /* Value Engineering Image Box (R&M Page) */

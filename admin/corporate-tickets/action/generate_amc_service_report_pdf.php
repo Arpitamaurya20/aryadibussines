@@ -4,7 +4,8 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 require_once('../../includes/autoloader.inc.php');
 require_once '../../vendor/autoload.php'; 
-include '../../controllers/common_controllers.php'; 
+include '../../controllers/common_controllers.php';
+require_once __DIR__ . '/../../includes/aryadi_pdf_theme.php'; 
 // Start MPDF
 $html = "Test HTML";
 $mpdf = new \Mpdf\Mpdf();
@@ -113,38 +114,7 @@ if(isset($_POST))
      $workTime      = getTimeDiff($WorkStartTime, $WorkCompleteTime);
      $verifyTime    = getTimeDiff($WorkCompleteTime, $VerifyTime);
 
-     $time_section_html = '
-     <div style="width:100%; border:1px solid #ccc; border-radius:6px; margin-top:10px; background-color:#027dc1">
-         <table>
-             <tr>
-                 <td style="color:white;">
-                     '.$totalTime.'<br>
-                     <small style="font-size:8px">Total Time<br>(Closed - Raised)</small>
-                 </td>
-                  <td style="color:#d52c27;">=</td>
-                 <td style="color:white;">
-                     '.$workAccept.'<br>
-                     <small style="font-size:8px">Work Accept<br>(Work Start - Raised)</small>
-                 </td>
-                 <td style="color:#d52c27;">+</td>
-                    <td style="color:white;">
-                     '.$quotationTime.'<br>
-                     <small style="font-size:8px">Quotation Time<br>(Approved - Sent)</small>
-                 </td>
-                 <td style="color:#d52c27;">+</td>
-                 <td style="color:white;">
-                     '.$workTime.'<br>
-                     <small style="font-size:8px">Work Time<br>(Closed - Work Start)</small>
-                 </td style="color:white;">
-                 <td style="color:#d52c27;">+</td>
-                 <td style="padding:10px; color:white;">
-                     '.$verifyTime.'<br>
-                     <small style="font-size:8px">Verify Time<br>(OTP - Closed)</small>
-                 </td>
-             </tr>
-         </table>
-         
-     </div>';
+     $time_section_html = apdf_turnaround_box($totalTime, $workAccept, $quotationTime, $workTime, $verifyTime);
      
 
 
@@ -250,10 +220,11 @@ if(isset($_POST))
     $employee_obj = new Employee($conn);
     $employee_array = $employee_obj->setEmployeeArray('All');
     $AssignedTo = $ticket_overview['AssignedTo'];
-    $TechnicianName = $employee_array[$AssignedTo]['Name']; 
-    $TechnicianPhoneNumber = $employee_array[$AssignedTo]['ContactNumber'];
+    $TechnicianName = isset($employee_array[$AssignedTo]['Name']) ? $employee_array[$AssignedTo]['Name'] : '';
+    $TechnicianPhoneNumber = isset($employee_array[$AssignedTo]['ContactNumber']) ? $employee_array[$AssignedTo]['ContactNumber'] : '';
 
-    if($BranchAccountManager != -1 && $BranchAccountManager != "")
+    $BranchAccountManagerEmail = "";
+    if($BranchAccountManager != -1 && $BranchAccountManager != "" && isset($employee_array[$BranchAccountManager]['Email']))
     {
         $BranchAccountManagerEmail = $employee_array[$BranchAccountManager]['Email']; 
     } 
@@ -302,113 +273,54 @@ if(isset($_POST))
                     </tbody>
                 </table>';
         $quotation_html = 
-        '<div class="quotation_div">   
-                <table class="other_feedback">
-                    <tr>
-                        <td class="width_30"> Line Items Used: </td>
-                    </tr>
-                    <tr class="other_feedback_inside">
-                    <td> '.$line_item_table.' </td>
-                    </tr>
-                </table>
-            </div>';
+        apdf_data_box('Line Items Used', array(
+            array('#', 6),
+            array('Item &amp; Description', 44),
+            array('ARC', 14),
+            array('HSN/SAC', 14),
+            array('UOM', 10),
+            array('Qty', 12),
+        ), $line_item_html);
     }
 }
 else
 {
     die();
 }
-if($ClientSignature == ""){
-    $ClientSignature = '';
-}else{
-      $ClientSignatureDate = $service_reports_details['CreatedDate'];
-      $ClientSignatureTime = $service_reports_details['CreatedTime'];
-    $ClientSignature = '
-<div style="width:100px; height:200px;" class="client_signature">
-    <img style="width:100px;" src="../../media/signature/'.$ClientSignature.'">
-</div>
-<div class="mt-2 d-flex" style="font-size:10px">
-    <span class="badge bg-warning">'.$ClientSignatureDate.'</span>
-    <span class="badge bg-info me-3">'.$ClientSignatureTime.'</span>
-</div>';
-
-}
+$ClientSignature = apdf_signature_html($ClientSignature, $service_reports_details['CreatedDate'], $service_reports_details['CreatedTime']);
 $image_pre_td=[];
 $image_post_td=[];
-
-
+$image_service_report=[];
+if (!is_array($report_images)) {
+    $report_images = array();
+}
 
 foreach ($report_images as $report_image) 
 {
     $original_image_path = '../../media/ticket_media/' . $report_image['Image'];
     $compressed_image_path = '../../media/ticket_media/compressed_' . $report_image['Image'];
-    $imageDate=$report_image['CreatedDate'];
-    $imageTime=$report_image['CreatedTime'];
-  
-    
-    // Compress the image
-    $core->compressImage($original_image_path, $compressed_image_path, 50); // 75 is the quality percentage
+    if (!is_file($original_image_path)) {
+        continue;
+    }
 
+    // Compress the image
+    if ($core->compressImage($original_image_path, $compressed_image_path, 50) === null) {
+        $compressed_image_path = $original_image_path;
+    }
+
+    $image_cell = apdf_image_cell($compressed_image_path, apdf_join(array($report_image['CreatedDate'], $report_image['CreatedTime']), ' '));
     if($report_image['Action'] == "pre_img")
     {
-        $image_pre_td[] = '<td style="width:25%; padding:20px;">
-                    <div style="width:100px; height:100px;" class="product_attachment">
-                        <a href="'.$compressed_image_path.'" target="_blank" title="Click to Open..."><img style="width:100px;"  class="mt-3"
-                            src="'.$compressed_image_path.'" alt=""></a>
-                    </div>
-                    <div class="mt-2 d-flex"style="font-size: 10px">
-                        <span class=""style="font-size: 5px;">'.$imageDate.'</span>
-                        <span class=""style="font-size: 5px;">'.$imageTime.'</span>
-                      </div>
-                
-                </td>';
+        $image_pre_td[] = $image_cell;
     }
     if($report_image['Action'] == "Service_Report")
     {
-        $image_service_report[] = '<td style="width:25%; padding:20px">
-                    <div style="width:100px; height:100px;" class="product_attachment">
-                        <a href="'.$compressed_image_path.'" target="_blank" title="Click to Open..."><img style="width:100px;"  class="mt-3"
-                            src="'.$compressed_image_path.'" alt=""></a>
-                    </div>
-                    <div class="mt-2 d-flex" style="font-size: 10px">
-                        <span class=""style="font-size: 5px;">'.$imageDate.'</span>
-                        <span class=""style="font-size: 5px;">'.$imageTime.'</span>
-                      </div>
-                </td>';
+        $image_service_report[] = $image_cell;
     }
     if($report_image['Action'] == "post_img")
     {
-        $image_post_td[] = '<td style="width:25%; padding:20px">
-                    <div style="width:100px; height:100px;" class="product_attachment">
-                        <a href="'.$compressed_image_path.'" target="_blank" title="Click to Open..."><img style="width:100px;"  class="mt-3"
-                            src="'.$compressed_image_path.'" alt=""></a>
-                    </div>
-                     <div class="mt-2 d-flex" style="font-size: 10px">
-                        <span class=""style="font-size: 5px;">'.$imageDate.'</span>
-                        <span class=""style="font-size: 5px;">'.$imageTime.'</span>
-                      </div>
-                </td>';
+        $image_post_td[] = $image_cell;
     }
-}
-
-$service_report_div = "";
-if(!empty($image_service_report))
-{
-
-$service_report_div = '
-<div class="attacment_div">
-                <div class="attacment">
-                    Service Report
-                </div>
-                <div class="product_attachment_box">
-                    <table>
-                    <tr>
-                        '.implode("", $image_service_report).'
-                    </tr>
-
-                    </table>
-                </div>
-            </div>';
 }
 
 // Customer HVAC Code
@@ -516,16 +428,7 @@ if($Category == 34)
             </tr>';
         }
 
-        $HVACReportHTML_div = '<div class="attacment_div">
-                <div class="attacment">
-                    Measured Parameters
-                </div>
-                <div class="product_attachment_box"> 
-                    <table  class="customer_details">
-                    '.$HVACReportHTML.'
-                    </table>
-                </div>
-            </div>';
+        $HVACReportHTML_div = apdf_box('Measured Parameters', '<table class="customer_details">'.$HVACReportHTML.'</table>');
         $TicketID = $TicketID_old;
     }
 
@@ -533,758 +436,154 @@ if($Category == 34)
 }
 
 // Build Ticket History Table
-$ticket_history_html = '
-<div class="attacment_div" style="margin-top:10px;">
-    <div class="attacment">Activity Log</div>
-    <div class="product_attachment_box">
-        <table class="activity_table">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Status</th>
-                    <th>Assigned To</th>
-                    <th>Updated By</th>
-                    <th>Date</th>
-                    <th>Time</th>
-                </tr>
-            </thead>
-            <tbody>';
-            
+if (!is_array($ticket_history_array)) {
+    $ticket_history_array = array();
+}
+$history_rows = '';
 $count = 1;
-
-
 foreach(array_reverse($ticket_history_array) as $ticket_history) {
     $EmployeeName = "";
     if($ticket_history['AssignedTo'] != "" && $ticket_history['AssignedTo'] != -1) {
-        $EmployeeName = getEmployeeDetailsfromID($conn,$ticket_history['AssignedTo'])['Name'];
+        $hist_emp = getEmployeeDetailsfromID($conn,$ticket_history['AssignedTo']);
+        if (is_array($hist_emp) && !empty($hist_emp['Name'])) {
+            $EmployeeName = $hist_emp['Name'];
+        }
     }
 
-    $ticket_history_html .= '
-        <tr>
-            <td>'.$count.'</td>
-            <td>'.$ticket_history['Status'].'</td>
-            <td>'.$EmployeeName.'</td>
-           
-            <td>'.$ticket_history['CreatedBy'].'</td>
-            <td>'.$ticket_history['CreatedDate'].'</td>
-            <td>'.$ticket_history['CreatedTime'].'</td>
-        </tr>';
+    $history_rows .= '
+            <tr'.($count % 2 == 0 ? ' class="alt"' : '').'>
+                <td class="num">'.$count.'</td>
+                <td style="color:#0B356E; font-weight:bold;">'.apdf_text($ticket_history['Status']).'</td>
+                <td>'.apdf_text($EmployeeName).'</td>
+                <td>'.apdf_text($ticket_history['CreatedBy']).'</td>
+                <td>'.apdf_text($ticket_history['CreatedDate']).'</td>
+                <td>'.apdf_text($ticket_history['CreatedTime']).'</td>
+            </tr>';
     $count++;
 }
-
-$ticket_history_html .= '
-            </tbody>
-        </table>
-    </div>
-</div>';
-
-
-
-
-
+if ($history_rows == '') {
+    $history_rows = '<tr><td colspan="6" class="muted">No activity recorded.</td></tr>';
+}
+$ticket_history_html = apdf_data_box('Activity Log', array(
+    array('#', 6),
+    array('Status', 24),
+    array('Assigned To', 20),
+    array('Updated By', 20),
+    array('Date', 16),
+    array('Time', 14),
+), $history_rows);
 
 $Rating = $corporateticket_obj->GetRating($service_reports_details['TicketID']);
-$ratingHtml = '';
+$ratingHtml = apdf_rating_html($Rating);
 
-if (!empty($Rating) && $Rating >= 1 && $Rating <= 5) {
-    $starsHtml = '';
-    for ($i = 0; $i < $Rating; $i++) {
-        $starsHtml .= '<img src="https://techxpertindia.in/emoji/star.png" alt="Star Rating" style="width: 20px; height: 20px; margin-right: 2px;">';
-    }
-
-$ratingHtml = '
-    <div class="rating-badge mt-2">
-        <table style="border-collapse:collapse;">
-            <tr>
-                <td style="color:red; font-weight:600; font-size:16px; padding-right:8px;">
-                    Customer Rating:
-                </td>
-                <td>
-                    ' . $starsHtml . '
-                </td>
-            </tr>
-        </table>
-    </div>';
-
+$header_logo = '../../media/pdf-assets/aryadi-logo.png';
+if($CorporateID == 183)
+{
+    $header_logo = '../../img/innov_logo.jpg';
 }
 
+$AssetConditionValue = ($AssetCondition_html !== '' && isset($AssetCondition)) ? $AssetCondition : '';
+$ReportNumber = "ARYADI-AMC-".sprintf("%05d", (int) $ServicereportID);
+$registered_on = apdf_join(array($RegisteredDate, $RegisteredTime), ' ');
+$closed_on = apdf_join(array($CloseDate, $CloseTime), ' ');
+
+$ticket_rows = array(
+    array('Type', apdf_text($Type)),
+    array('Category', apdf_text($CategoryName)),
+    array('Sub Category', apdf_text($SubCategoryName)),
+    array('Status', apdf_text(isset($ticket_overview['Status']) ? $ticket_overview['Status'] : '')),
+    array('Attended Date', apdf_text($AttendedDate)),
+);
+if ($AssetConditionValue !== '') {
+    $ticket_rows[] = array('Asset Condition', apdf_text($AssetConditionValue));
+}
+
+$images_html =
+    apdf_box('Pre Image(s)', '<div class="block block_first">'.apdf_image_grid($image_pre_td, 'No pre-work images captured.').'</div>', count($image_pre_td).' Photo(s)').
+    apdf_box('Post Image(s)', '<div class="block block_first">'.apdf_image_grid($image_post_td, 'No post-work images captured.').'</div>', count($image_post_td).' Photo(s)');
+if(!empty($image_service_report))
+{
+    $images_html .= apdf_box('Service Report', '<div class="block block_first">'.apdf_image_grid($image_service_report).'</div>', count($image_service_report).' Photo(s)');
+}
 
 $html = '
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .container{
-            // border:1px solid #000;
-        } 
-        body{
-             font-family: poppins, sans-serif;
-            font-size:12pt;
-        }  
-        table {
-            width: 100%;
-        }
-        .top_header{
-           background:#027dc1;
-           border:1px solid #000;
-        }
-        .top_header tr td{
-            width:50%;
-         }
-         .top_header_inside tr td {
-            text-align:center;
-            color:#fff;
-            font-weight:bold;
-            // font-family: sans-serif;
-            font-size:15px;
-         }
-         .top_right_border{
-            border-right:1px solid #fff;
-         } 
-
-         
-         .customer_details{
-            border:1px solid #000;
-         }
-         .customer_details tr td{
-            width:50%;
-         }
-         .customer_details_inside tr td{
-             font-size:11px;
-            //  font-family: sans-serif;
-         }
-         .customer_details_inside tr td{
-            padding:3px 0px;
-         }
-         .costumer_detail_bold{
-            font-weight:bold;
-            width:100px;
-            font-size:12px;
-         }
-         .custumer_right_border{
-            border-right:1px solid #000;
-         }
-         .report_details_inside tr td{
-            font-size:11px;
-            // font-family: sans-serif;
-        }
-        .report_details_inside tr td{
-           padding:3px 0px;
-        }
-        
-        .customer_details tr {
-            display: inline-flex !important;
-        }
-        .other_feedback{
-            border-left: 1px solid #000;
-            border-right: 1px solid #000;
-            border-bottom: 1px solid #000;
-            // padding-bottom:50px;
-        }
-        .other_feedback tr .width_30{
-            font-weight:bold;
-            font-size:12px;
-            // font-family: sans-serif;
-            height:50px;
-        }
-        .other_feedback_inside td{
-            font-size:11px;
-            // font-family: sans-serif;
-            margin-top:10px;
-        }
-
-        .attacment_div{
-            border: 1px solid #000;
-            page-break-inside: avoid;
-        }   
-
-        .action_taken_div{
-            page-break-inside: avoid;
-        }
-        .remark_div{
-            page-break-inside: avoid;
-        }
-        .observation_div{
-            page-break-inside: avoid;
-        }
-        .problemreported_div{
-            page-break-inside: avoid;
-        }
-        .quotation_div{
-            page-break-inside: avoid;
-        }
-
-        .bottom_div{
-            page-break-inside: avoid;
-        }
-
-        .attacment{
-            background:#027dc1;
-            padding:6px 0px 6px 6px;
-            color:#fff;
-            font-size:14px;
-            font-weight:bold;
-            // font-family: sans-serif;
-            
-        }
-        .product_attachment_box{
-            padding:20px;
-        }
-        
-
-        .bottom_signature_table{
-            border:1px solid #000;
-            border-collapse: collapse;
-        }
-
-        .bottom_table_bold{
-            font-weight:bold;
-            font-size:13px;
-            padding-left:10px !important;
-        }
-
-        .bottom_signature_table tbody tr td{
-            // font-family: sans-serif;
-            border:1px solid #000;
-            font-size:12px;
-            padding-top:15px;
-            padding-bottom:15px;
-            width:20%;
-        }
-
-
-        .natural_of_call_div{
-            border-left: 1px solid #000;
-            border-right: 1px solid #000;
-            font-weight:bold;
-            font-size:12px;
-            padding:4px 7px;
-            // font-family: sans-serif;
-        }
-        .natural_table_bold{
-            font-weight:bold;
-            font-size:11px;
-            padding-left:10px !important;
-        }
-        .natural_call_table{
-            border:1px solid #000;
-            border-collapse: collapse;
-        }
-        .natural_call_table tbody tr td{
-            // font-family: sans-serif;
-            border:1px solid #000;
-            padding:10px 5px;
-        }
-        .pdf_header{
-            width:100%;
-        }
-        .pdf_header img {
-            width:100%;
-        }
-
-        .client_signature{
-            width:100px;
-
-        }
-        .client_signature img{
-            width:100%;
-        }
-
-        .tech_value{
-          font-weight:bold;
-        }   
-
-        .tech_bottom_table_bold{
-            font-size:13px;
-            padding-left:10px !important;
-        }
-
-        .page_1 {
-            // border:1px solid #000;
-            // padding:30px;
-            // height:88.8%;
-        }
-        .page_2 {
-            // border:1px solid #000;
-            // padding:30px;
-            // height:100%;
-        }
-
-
-         .other_feedback{
-            border-left: 1px solid #000;
-            border-right: 1px solid #000;
-            border-bottom: 1px solid #000;
-            // padding-bottom:50px;
-        }
-        .other_feedback tr .width_30{
-            font-weight:bold;
-            font-size:12px;
-            // font-family: sans-serif;
-        }
-        .other_feedback_inside td{
-            font-size:11px;
-            // font-family: sans-serif;
-            margin-top:10px;
-        }
-
-        .attacment_div{
-            border: 1px solid #000;
-            page-break-inside: avoid;
-        }   
-
-        .action_taken_div{
-            page-break-inside: avoid;
-        }
-        .remark_div{
-            page-break-inside: avoid;
-        }
-        .observation_div{
-            page-break-inside: avoid;
-        }
-        .problemreported_div{
-            page-break-inside: avoid;
-        }
-        .quotation_div{
-            page-break-inside: avoid;
-        }
-
-        .bottom_div{
-            page-break-inside: avoid;
-        }
-
-        .attacment{
-            background:#027dc1;
-            padding:6px 0px 6px 6px;
-            color:#fff;
-            font-size:14px;
-            font-weight:bold;
-            // font-family: sans-serif;
-            
-        }
-        .product_attachment_box{
-            padding:20px;
-        }
-        
-
-        .bottom_signature_table{
-            border:1px solid #000;
-            border-collapse: collapse;
-        }
-
-        .bottom_table_bold{
-            font-weight:bold;
-            font-size:13px;
-            padding-left:10px !important;
-        }
-
-        .bottom_signature_table tbody tr td{
-            // font-family: sans-serif;
-            border:1px solid #000;
-            font-size:12px;
-            padding-top:15px;
-            padding-bottom:15px;
-            width:20%;
-        }
-
-
-        .natural_of_call_div{
-            border-left: 1px solid #000;
-            border-right: 1px solid #000;
-            font-weight:bold;
-            font-size:12px;
-            padding:4px 7px;
-            // font-family: sans-serif;
-        }
-        .natural_table_bold{
-            font-weight:bold;
-            font-size:11px;
-            padding-left:10px !important;
-        }
-        .natural_call_table{
-            border:1px solid #000;
-            border-collapse: collapse;
-        }
-        .natural_call_table tbody tr td{
-            // font-family: sans-serif;
-            border:1px solid #000;
-            padding:10px 5px;
-        }
-        .pdf_header{
-            width:100%;
-        }
-        .pdf_header img {
-            width:100%;
-        }
-
-        .client_signature{
-            width:100px;
-
-        }
-        .client_signature img{
-            width:100%;
-        }
-
-        .tech_value{
-          font-weight:bold;
-        }   
-
-        .tech_bottom_table_bold{
-            font-size:13px;
-            padding-left:10px !important;
-        }
-
-        .page_1 {
-            // border:1px solid #000;
-            // padding:30px;
-            // height:88.8%;
-        }
-        .page_2 {
-            // border:1px solid #000;
-            // padding:30px;
-            // height:100%;
-        }
-
-        .activity_table {
-    border-collapse: collapse;
-    width: 100%;
-    font-size: 11px;
-    // font-family: sans-serif;
-}
-
-.activity_table th {
-    background-color: #027dc1;
-    color: #fff;
-    padding: 8px;
-    text-align: left;
-    border: 1px solid #000;
-}
-
-.activity_table td {
-    border: 1px solid #000;
-    padding: 6px;
-}
-
-.activity_table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-.rating-badge {
-   margin-top:10px;
-  display: inline-block;
-  padding: 6px 14px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #fff;
-  border-radius: 25px;
-  letter-spacing: 0.3px;
-  transition: all 0.3s ease;
-  text-align: right;
-}
-
-.rating-badge:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-
-
-    </style>
+    <title>AMC Service Report '.$ReportNumber.'</title>
+    <style>'.apdf_css().'</style>
 </head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6496901533964255"
-     crossorigin="anonymous"></script>
 <body>
-    <div class="container">
-        <div class="page_1">
-            <div class="pdf_header">
-                <img src="../../media/pdf-assets/aryadi-sr.png">
-            </div>
-            <div style="display:flex;  margin-top:10px;">
-                <table class="top_header">
-                    <tr>
-                        <td class="top_right_border">
-                            <table class="top_header_inside">
-                                <tr>
-                                <td>Customer Details</td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td>
-                            <table class="top_header_inside">
-                                <tr>
-                                <td>Service Ticket Details</td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <table  class="customer_details">
-                    <tr>
-                        <td class="custumer_right_border">
-                            <table class="customer_details_inside">
-                               <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Customer Name</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$company_name.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Branch Name</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$BranchSite.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Address</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$BranchAddress1.'</td>
-                                </tr>
-                                
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Mobile No.</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$BranchMobile.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Client Ticket Number</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$ClientTicketID.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Equipment Name</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$EquipmentName.'</td>
-                                </tr>
-                                
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Make</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$Make.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Model</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$Model.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Serial Number</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$SerialNumber.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Asset Location</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$AssetLocation.'</td>
-                                </tr>
-                                
-                            </table>
-                        </td>
-                        <td>
-                            <table class="report_details_inside">
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Type</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$Type.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Ticket No</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$TicketID.'</td>
-                                </tr>
+    '.apdf_header('AMC SERVICE REPORT', 'ANNUAL MAINTENANCE CONTRACT', $header_logo).'
 
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Category</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$CategoryName.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Sub Category</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$SubCategoryName.'</td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold"> Complaint Registered</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$RegisteredDate.' | '.$RegisteredTime.'</td>
-                                </tr>'.$AttendedDate_html.$AssetCondition_html.'
-                                <tr>
-                                    <td style="width:50%;" class="costumer_detail_bold">Close Date</td>
-                                    <td style="width:10%;">:</td>
-                                    <td style="width:40%;">'.$CloseDate.' | '.$CloseTime.'</td>
-                                </tr>
-                               
-                                
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="problemreported_div">
-                <table class="other_feedback">
-                    <tr> 
-                        <td class="width_30"> Problem Statement: </td>
-                        
-                    </tr>
-                    <tr class="other_feedback_inside">
-                    <td> '.$ProblemReportedByClient.' </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="observation_div">
-                <table class="other_feedback">
-                    <tr>
-                        <td class="width_30"> Technician/Engineer Observation: </td>
-                        <tr class="other_feedback_inside">
-                        <td> '.$Observation.'</td>
-                        </tr>
-                    </tr>
-                </table>
-            </div>
-            <div class="action_taken_div">
-                <table class="other_feedback" style="">
-                    <tr>
-                        <td class="width_30"> Action Taken: </td>
-                    </tr>
-                    <tr class="other_feedback_inside">
-                    <td> '.$ActionTaken.'</td>
-                    </tr>
-                </table>
-            </div>
+    '.apdf_stats(array(
+        array('Report Number', $ReportNumber),
+        array('Ticket No', apdf_text($TicketID)),
+        array('Registered On', apdf_text($registered_on)),
+        array('Closed On', apdf_text($closed_on)),
+    )).'
 
-            <div class="remark_div">
-                <table class="other_feedback">
-                    <tr>
-                        <td class="width_30"> Technician/Engineer Remarks: </td>
-                    </tr>
-                    <tr class="other_feedback_inside">
-                    <td> '.$Remarks.' </td>
-                    </tr>
-                </table>
-            </div>
-            '.$quotation_html.'
+    '.apdf_two_col(
+        'Customer Details',
+        array(
+            array('Customer Name', apdf_text($company_name)),
+            array('Branch Name', apdf_text($BranchSite)),
+            array('Address', apdf_text($BranchAddress1)),
+            array('Mobile No.', apdf_text($BranchMobile)),
+            array('Client Ticket No.', apdf_text($ClientTicketID)),
+        ),
+        'Service Ticket Details',
+        $ticket_rows
+    ).'
 
-            '.$ticket_history_html.'
+    '.apdf_asset_section($EquipmentName, $Make, $Model, $SerialNumber, $AssetLocation).'
+
+    <div class="section">
+        '.apdf_section_head('Service Details').'
+        <div class="block block_first keep">
+            <div class="block_label">Problem Statement</div>
+            <div class="block_text">'.apdf_text($ProblemReportedByClient).'</div>
         </div>
-
-
-        <div class="page_2">
-            <div class="attacment_div" style="margin-top:10px;">
-                <div class="attacment">
-                    Pre Image(s)
-                </div>
-                <div class="product_attachment_box">
-                    <table>
-                    <tr>
-                        '.implode("", $image_pre_td).'
-                    </tr>
-
-                    </table>
-                     
-                </div>
-            </div>
-
-             <div class="attacment_div">
-                <div class="attacment">
-                    Post Image(s)
-                </div>
-                <div class="product_attachment_box">
-                    <table>
-                    <tr>
-                        '.implode("", $image_post_td).'
-                    </tr>
-
-                    </table>
-                     
-                </div>
-            </div>'.$service_report_div .$HVACReportHTML_div.'
-
-            '.$time_section_html.'
-            
-
-            <div class="bottom_div">
-                <table class="bottom_signature_table" style="border-bottom:none;  margin-top:10px;">
-                    <tbody>
-                        <tr style="background-color:#027dc1; color:white">
-                            <td class="bottom_table_bold" colspan="2">Technician</td>
-                        </tr>
-                        <tr>
-                            <td class="tech_bottom_table_bold"><span class="tech_value">Name:</span> <span>'.$TechnicianName.'</span></td>
-                            <td class="tech_bottom_table_bold"><span class="tech_value">Phone Number:</span> <span>'.$TechnicianPhoneNumber.'</span></td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-                <table class="bottom_signature_table" style="border-top:none; margin-top:10px;">
-                    <tbody>
-                        <tr style="background-color:#027dc1; color:white">
-                            <td class="bottom_table_bold" colspan="3">Onsite Client Representative Name (Verified By)</td>
-                        </tr>
-                        <tr>
-                            <td class="bottom_table_bold">Name:</td>
-                            <td class="bottom_table_bold">Designation:</td>
-                            <td class="bottom_table_bold">Signature:</td>
-                            
-                        </tr>
-                        <tr>
-                            <td style="padding:20px; 10px">'.$ClientRepresentative.'<br>'.$ClientRepresentativeContact.'</td>
-                            <td style="padding:20px; 10px">'.$ClientRepresentativeDesignation.'</td>
-                            <td style="padding:20px; 10px">'.$ClientSignature.'</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            
+        <div class="block keep">
+            <div class="block_label">Technician / Engineer Observation</div>
+            <div class="block_text">'.apdf_text($Observation).'</div>
         </div>
-        
-         '.$ratingHtml.'
-        
+        <div class="block keep">
+            <div class="block_label">Action Taken</div>
+            <div class="block_text">'.apdf_text($ActionTaken).'</div>
+        </div>
+        <div class="block keep">
+            <div class="block_label">Technician / Engineer Remarks</div>
+            <div class="block_text">'.apdf_text($Remarks).'</div>
+        </div>
     </div>
+
+    '.$quotation_html.'
+    '.$time_section_html.'
+    '.$images_html.'
+    '.$HVACReportHTML_div.'
+    '.$ticket_history_html.'
+
+    '.apdf_acknowledgement(
+        'Technician Details',
+        array(
+            array('Name', apdf_text($TechnicianName)),
+            array('Phone Number', apdf_text($TechnicianPhoneNumber)),
+        ),
+        'Onsite Client Representative (Verified By)',
+        array(
+            array('Name', apdf_text($ClientRepresentative)),
+            array('Designation', apdf_text($ClientRepresentativeDesignation)),
+            array('Contact Number', apdf_text($ClientRepresentativeContact)),
+        ),
+        $ClientSignature
+    ).'
+    '.$ratingHtml.'
 </body>
 </html>';
 
-// if($Type == "hvac") {
-//     $html .= generateHVACReportHTML($service_hvac_reports_details);
-// }
-
-$default_logo = __DIR__ . '/../../img/aryadi.png';
-
-if ($CorporateID == 183) {
-    $default_logo = __DIR__ . '/../../img/innov_logo.jpg';
-}
-$defaultConfig = (new Mpdf\Config\ConfigVariables())->getDefaults();
-$fontDirs = $defaultConfig['fontDir'];
-
-$defaultFontConfig = (new Mpdf\Config\FontVariables())->getDefaults();
-$fontData = $defaultFontConfig['fontdata'];
-
-$mpdf = new \Mpdf\Mpdf([
-    'fontDir' => array_merge($fontDirs, [__DIR__ . '/../../fonts']),
-    'fontdata' => $fontData + [
-        'poppins' => [
-            'R' => 'Poppins-Regular.ttf',
-            'B' => 'Poppins-Bold.ttf',
-            'I' => 'Poppins-Italic.ttf'
-        ]
-    ],
-    'default_font' => 'poppins'
-]);
-$mpdf->WriteHTML("");
-$mpdf->SetWatermarkImage(
-    $default_logo,
-    0.08,         // opacity (keep subtle)
-    [50, 20],    // size (width x height in mm) - adjust as needed
-    'F',          // behind content (background)
-    true,         // keep aspect ratio
-    45            // rotation angle (45 = diagonal)
-);
-$mpdf->showWatermarkImage = true;
-$mpdf->SetFooter('<div style="font-size:9px; text-align:right; color:#555;">Page {PAGENO} of {nbpg}</div>');
-
-$mpdf->WriteHTML("");
+$mpdf = apdf_create_mpdf('AMC Service Report '.$ReportNumber, 'AMC Service Report · Ticket '.$TicketID);
 $fullHTML = $html;
 $mpdf->WriteHTML($html);
 $pdf_name = "service-report-".$TicketID.".pdf";
