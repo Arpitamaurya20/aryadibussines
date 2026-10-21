@@ -1,0 +1,5 @@
+Require all denied
+
+<FilesMatch "^process_(escalations|recurring)\.php$">
+    Require all granted
+</FilesMatch>

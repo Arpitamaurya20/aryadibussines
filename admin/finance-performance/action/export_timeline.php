@@ -1,0 +1,17 @@
+<?php
+ob_start();
+session_start();
+require_once('../../controllers/common_controllers.php');
+require_once('../controller/fp_access.php');
+require_once('../controller/fp_audit.php');
+require_once('../controller/fp_requests.php');
+setTimeZone();
+
+try {
+    $conn = fp_db_connect();
+    $actor = fp_require_action($conn, 'export_timeline');
+    fp_timeline_export_csv($conn, $actor, fp_input_int($_GET, 'id'));
+} catch (Throwable $e) {
+    error_log('Finance & Performance export_timeline: ' . $e->getMessage());
+    fp_json_response(array('error' => true, 'message' => 'Technical problem. Please try again.'), 500);
+}

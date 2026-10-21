@@ -93,6 +93,8 @@ $_Nav_Employee_Asset_Acknowledgement=false;
 $_Nav_My_State_Dashboard=false;
 $_Nav_My_Branch_Dashboard=false;
 $_Nav_MIS_Report=false;
+$_Nav_Finance_Performance=false;
+$_Nav_Finance_Performance_Items=array();
 function _connectodb()
 {
 	global $dbname;
@@ -576,6 +578,7 @@ function setNavigation($roles)
 	enableMyHrTicketsNavForEmployee($roles);
 	enableMyEmployeeLeaveNavForEmployee($roles);
 	enableLeaveMgmtHrNavForHr($roles);
+	enableFinancePerformanceNav();
 
 	if (!$_Nav_My_State_Dashboard && isset($roles['EmployeeID']) && (int)$roles['EmployeeID'] > 0) {
 		$conn = _connectodb();
@@ -728,6 +731,24 @@ function enableLeaveMgmtHrNavForHr($roles)
 	require_once __DIR__ . '/../employee-leave-mgmt/controller/employee_leave_mgmt_controller.php';
 	if (hasElmHrAccess($roles)) {
 		$_Nav_Leave_Mgmt_HR = true;
+	}
+}
+
+/** Finance & Performance menu; items come from admin/finance-performance/config/access_matrix.php. */
+function enableFinancePerformanceNav()
+{
+	global $_Nav_Finance_Performance;
+	global $_Nav_Finance_Performance_Items;
+	try {
+		require_once __DIR__ . '/../finance-performance/controller/fp_access.php';
+		$conn = _connectodb();
+		if (!$conn) {
+			return;
+		}
+		$_Nav_Finance_Performance_Items = fp_menu_items(fp_load_actor($conn, true));
+		$_Nav_Finance_Performance = count($_Nav_Finance_Performance_Items) > 0;
+	} catch (Throwable $e) {
+		error_log('Finance & Performance navigation: ' . $e->getMessage());
 	}
 }
 

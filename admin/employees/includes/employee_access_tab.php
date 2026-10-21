@@ -150,7 +150,7 @@ else
                                     <input type="text" name="reset_confirm_passsword" id="reset_confirm_passsword" class="form-control" placeholder="Re-type Password" required>
                                 </div>
                             </div>
-                            <input type="hidden" name="reset_password_username" value="<?php echo $username;?>">
+                            <input type="hidden" name="reset_password_username" value="<?php echo htmlspecialchars($username);?>">
                         </div>
 
                         <div class="row justify-content-center mt-3">

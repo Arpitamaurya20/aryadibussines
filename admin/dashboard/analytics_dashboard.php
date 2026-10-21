@@ -218,22 +218,22 @@
 
         /* Filter Card */
         .ab-filter-card {
-            background: linear-gradient(135deg, var(--ab-lighter) 0%, #fff 100%);
-            padding: 20px 24px;
+            background: #fff;
+            padding: 16px 20px;
         }
         .ab-filter-group label {
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             font-weight: 600;
             color: var(--ab-slate);
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.4px;
             margin-bottom: 6px;
             display: block;
         }
         .ab-filter-group .form-control,
         .ab-filter-group select {
-            border-radius: 8px;
-            border: 1.5px solid #CBD5E1;
+            border-radius: 6px;
+            border: 1px solid #E2E8F0;
             padding: 8px 12px;
             font-size: 0.85rem;
             height: 38px;
@@ -241,138 +241,133 @@
         }
         .ab-filter-group .form-control:focus,
         .ab-filter-group select:focus {
-            border-color: var(--ab-sky);
-            box-shadow: 0 0 0 3px rgba(91, 182, 233, 0.15);
+            border-color: var(--ab-royal);
+            box-shadow: 0 0 0 3px rgba(4, 88, 145, 0.12);
         }
         .btn-ab-search {
-            background: linear-gradient(135deg, var(--ab-navy) 0%, var(--ab-royal) 100%);
+            background: var(--ab-navy);
             color: #fff !important;
             border: none;
-            border-radius: 8px;
-            padding: 8px 24px;
-            font-size: 0.9rem;
+            border-radius: 6px;
+            padding: 8px 18px;
+            font-size: 0.85rem;
             font-weight: 600;
             height: 38px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(0, 63, 136, 0.2);
         }
         .btn-ab-search:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(0, 63, 136, 0.3);
+            background: var(--ab-royal);
         }
-        
-        /* Modern Status Cards */
+
+        .page-content .panel-content {
+            padding: 16px 16px 8px;
+        }
+        .ad-page-title {
+            margin: 0 0 16px;
+        }
+        .ad-page-title h1 {
+            margin: 0;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #0F172A;
+        }
+        .ad-page-title p {
+            margin: 4px 0 0;
+            color: #64748B;
+            font-size: 0.85rem;
+        }
         .status-metric-card {
-            background: #fff;
-            border-radius: 14px;
-            border: 1px solid rgba(0,0,0,0.04);
-            padding: 20px 24px;
             display: flex;
             align-items: center;
-            gap: 20px;
-            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            gap: 14px;
+            background: #fff;
+            border: 1px solid #E8EEF4;
+            border-radius: 16px;
+            padding: 16px 16px 14px;
             height: 100%;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03), 0 1px 3px rgba(0,0,0,0.02);
-            text-decoration: none !important;
-            position: relative;
-            overflow: hidden;
-        }
-        .status-metric-card::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 100%);
-            opacity: 0;
-            transition: all 0.4s ease;
-            z-index: 0;
-        }
-        .status-metric-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 25px rgba(0,0,0,0.08), 0 4px 10px rgba(0,0,0,0.04);
-            border-color: rgba(91, 182, 233, 0.4);
-        }
-        .status-metric-card:hover::before {
-            opacity: 1;
+            min-height: 108px;
+            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
         }
         .status-icon-box {
-            width: 54px;
-            height: 54px;
+            width: 48px;
+            height: 48px;
             border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            background: var(--kpi-soft, #E8F4FD) !important;
             flex-shrink: 0;
-            box-shadow: inset 0 2px 4px rgba(255,255,255,0.3);
             position: relative;
-            z-index: 1;
+            display: block !important;
         }
-        .status-icon-box svg, .status-icon-box i {
-            width: 26px;
-            height: 26px;
-            stroke-width: 2.2;
-            font-size: 1.5rem; /* fallback for fontawesome */
+        .status-icon-box::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 12px;
+            height: 12px;
+            margin: -6px 0 0 -6px;
+            border-radius: 4px;
+            background: var(--kpi, #0369A1);
         }
-        .status-content {
-            flex: 1;
-            min-width: 0;
-            position: relative;
-            z-index: 1;
-        }
+        .status-content { flex: 1; min-width: 0; }
         .status-title {
-            font-size: 0.78rem;
+            font-size: 11px;
             font-weight: 700;
-            color: #64748B;
+            letter-spacing: 0.4px;
             text-transform: uppercase;
-            letter-spacing: 0.8px;
+            color: #64748B;
             margin-bottom: 4px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
         .status-value {
-            font-size: 1.6rem;
+            font-size: 24px;
             font-weight: 800;
-            color: #1E293B;
-            line-height: 1;
+            color: #0F172A;
+            line-height: 1.1;
         }
-        /* Override legacy badge styling from renderAnalyticsStatusCountBadge */
-        .status-value .badge {
-            background: transparent !important;
-            color: inherit !important;
-            font-size: 1.6rem !important;
+        .status-value span {
+            font-size: 24px !important;
             font-weight: 800 !important;
-            padding: 0 !important;
-            width: auto !important;
-            min-width: auto !important;
-            box-shadow: none !important;
-            border-radius: 0 !important;
-            text-align: left !important;
-            display: inline-block !important;
-        }
-        .status-value a:hover {
-            opacity: 0.7;
-            text-decoration: none !important;
+            color: #0F172A !important;
         }
         .status-progress-wrap {
-            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
         }
         .status-progress-bar {
-            height: 6px;
-            background: #F1F5F9;
-            border-radius: 3px;
+            flex: 1;
+            height: 5px;
+            background: #EEF2F7;
+            border-radius: 99px;
             overflow: hidden;
         }
         .status-progress-fill {
             height: 100%;
-            border-radius: 3px;
+            border-radius: 99px;
+            background: var(--kpi, #0369A1) !important;
         }
         .status-percent {
-            font-size: 0.7rem;
-            font-weight: 600;
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--kpi, #0369A1);
+            min-width: 42px;
             text-align: right;
+            display: inline-block;
+            margin: 0;
+        }
+        .status-metric-card:hover {
+            border-color: #D7DEE8;
+            box-shadow: 0 10px 24px rgba(15, 23, 42, 0.1);
+        }
+        #status_buttons_div.row {
             display: block;
-            margin-top: 4px;
+            margin: 0;
+        }
+        #panel-rnm.row {
+            margin-left: 0;
+            margin-right: 0;
         }
 
         /* General Fixes */
@@ -403,8 +398,6 @@
     }
     ?>
 </head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6496901533964255"
-     crossorigin="anonymous"></script>
 
 <body class="mod-bg-1 header-function-fixed nav-function-fixed blur">
     <input type="hidden" id="UserType" value="<?php echo $UserType;?>" />
@@ -430,9 +423,12 @@
                     
                     <ol class="breadcrumb page-breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0);"><?=$ProductName;?></a></li>
-                        <li class="breadcrumb-item"><a href="javascript:void(0);">Analytics Dashboard</a></li>
-
+                        <li class="breadcrumb-item">Analytics Dashboard</li>
                     </ol>
+                    <div class="ad-page-title">
+                        <h1>Analytics Dashboard</h1>
+                        <p>Ticket status overview by corporate, date, and location.</p>
+                    </div>
                     <?php 
                     if($StateManager)
                     {
@@ -495,7 +491,10 @@
                     ?>
                     <input type="hidden" id="sql_in_state_string" value="<?php echo $sql_in_state_string;?>">
                     <input type="hidden" id="sql_in_branch_account_string" value="<?php echo $sql_in_branch_account_string;?>">
-                    <div class="panel mb-4">  
+                    <div class="panel mb-3">  
+                        <div class="panel-hdr">
+                            <h2>Filters</h2>
+                        </div>
                         <div class="panel-content ab-filter-card">
                             <div class="row align-items-end">
                                 <?php if($CorporateID == -1) { ?>
@@ -536,10 +535,7 @@
                     </div>
                     <div id="analytics_corporate_dashboard" >
 
-                        <!-- Status buttons -->
-                        <div class="row" id="status_buttons_div">
-                            
-                        </div>
+                        <div id="status_buttons_div"></div>
                         <div class="spinner-grow rounded-0 text-danger mb-5" role="status" id="status_buttons_div_loader" style="margin-left: 48%;display:none;">
                             <span class="sr-only">Loading...</span>
                         </div>
@@ -641,16 +637,16 @@
     include('../includes/common_modules.php');
     include('../includes/common_scripts.php');
     ?>
-    <!--script src="../js/statistics/chartjs/chartjs.bundle.js"></script-->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src= "https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-   
-    <script src="../js/modules/analytics_dashboard.js"></script>
+    <script src="../js/modules/analytics_dashboard.js?v=<?php echo @filemtime(__DIR__ . '/../js/modules/analytics_dashboard.js'); ?>"></script>
     <script src="../js/dependency/moment/moment.js"></script>
     <script src="../js/formplugins/bootstrap-daterangepicker/bootstrap-daterangepicker.js"></script>
-    <script src="../js/statistics/easypiechart/easypiechart.bundle.js"></script>
     <script>
     $(document).ready(function() {
+        var preloader = document.getElementById("preloader");
+        if (preloader) {
+            preloader.style.display = "none";
+            document.body.classList.remove("is-page-loading");
+        }
         $("#js-nav-menu").addClass("active");
         $("#js-nav-menu").addClass("open");
         $("#nav_analytics_dashboard").addClass("active");
@@ -667,9 +663,8 @@
      $('#ad_branch_name').on('select2:select', function (e) {
             $(this).select2('close');
         });
-    }); 
-    RefreshBranchAnalytics(<?php echo $CorporateID; ?>);
-    
+        RefreshBranchAnalytics(<?php echo $CorporateID; ?>);
+    });
     </script>
     
 </body>

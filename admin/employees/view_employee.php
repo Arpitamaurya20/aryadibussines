@@ -523,6 +523,8 @@ $StateData=getAllStates($conn);
     <script src="../js/modules/employee.js?v=<?php echo filemtime(__DIR__ . '/../js/modules/employee.js'); ?>"></script>
     <script>
     $(document).ready(function() {
+        // #panel-employee uses backdrop-filter, which traps fixed modals below the body-level backdrop
+        $("#js-page-content .modal").appendTo("body");
         $("#js-nav-menu").addClass("active");
         $("#js-nav-menu").addClass("open");
         $("#nav_employees").addClass("active");

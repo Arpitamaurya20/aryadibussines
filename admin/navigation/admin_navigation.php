@@ -207,35 +207,6 @@ if ($isPoonawalla) {
            
             <?php
             }
-            if($_Nav_Analytics_Dashboard)
-            {
-            ?>
-            <li id="nav_analytics_dashboard">
-                <a href="../dashboard/analytics_dashboard" data-filter-tags="Dashboard">
-                    <i class="fal fa-chart-pie"></i>
-                    <span class="nav-link-text" data-i18n="nav.Dashboard">Analytics Dashboard</span>
-                </a>
-            </li>
-            
-            <li id="nav_account_dashboard">
-                <a href="../dashboard/accounts_dashboard" data-filter-tags="Dashboard">
-                    <i class="fa-solid fa-list"></i>
-                    <span class="nav-link-text" data-i18n="nav.Dashboard">Account Dashboard</span>
-                </a>
-            </li>
-            <?php
-            }
-            if($_Nav_Analytics_Daily_Tracker)
-            {
-            ?>
-            <li id="nav_daily_tracker_dashboard">
-                <a href="../dashboard/daily_tracker_dashboard" data-filter-tags="Daily Tracker Dashboard">
-                    <i class="fa-solid fa-list"></i>
-                    <span class="nav-link-text" data-i18n="nav.Dashboard">Daily Tracker</span>
-                </a>
-            </li>
-            <?php
-            }
             $corporateTicketsApprovalCount = 0;
             if($_Nav_Corporate_approval || $_Nav_Corporate_quotation_approval)
             {
@@ -296,121 +267,13 @@ if ($isPoonawalla) {
                     }
                 }
             }
-            if($_Nav_Corporate_Tickets || $_Nav_Corporate || $_Nav_Corporate_approval || $_Nav_Corporate_quotation_approval)
+            if($_Nav_Analytics_Dashboard)
             {
             ?>
-            <li id="nav_corporate_tickets">
-                <a href="../corporate-tickets/view-corporate-tickets"
-                    data-filter-tags="Company">
-                    <i class="fa-solid fa-users"></i>
-                    <span class="nav-link-text" data-i18n="nav.Corporate Tickets">Corporate Tickets</span>
-                    <?php if($corporateTicketsApprovalCount > 0) { ?>
-                    <span class="badge badge-danger ml-auto"><?php echo $corporateTicketsApprovalCount; ?></span>
-                    <?php } ?>
-                </a>
-            </li>
-            <?php
-            }
-            if($_Nav_Tender_RFQ)
-            {
-            ?>
-            <li id="nav_tender_rfq">
-                <a href="../tender-rfq/view-tender-rfq-tickets" data-filter-tags="Tender RFQ">
-                    <i class="fa-solid fa-file-signature"></i>
-                    <span class="nav-link-text" data-i18n="nav.Tender_RFQ">Tender RFQ</span>
-                </a>
-            </li>
-            <?php
-            }
-            if($_Nav_PPM_Tickets)
-            {
-            ?>
-            <li id="nav_ppm_tickets">
-                <a href="../ppm-ticket/view-all-ppm-tickets" data-filter-tags="Company">
-                    <i class="fal fa-warehouse"></i>
-                    <span class="nav-link-text" data-i18n="nav.PPMTickets">PPM Tickets</span>
-                </a>
-            </li>
-            <li id="nav_crm">
-                <a href="#" data-filter-tags="CRM">
-                    <i class="fas fa-handshake"></i>
-                    <span class="nav-link-text" data-i18n="nav.CRM">CRM Modules</span>
-                </a>
-                <ul>
-                    <li><a href="../crm/view-leads.php"><span class="nav-link-text">Manage Leads</span></a></li>
-                    <li><a href="../crm/view-customers.php"><span class="nav-link-text">Manage Customers</span></a></li>
-                    <li><a href="../crm/view-products.php"><span class="nav-link-text">Manage Products</span></a></li>
-                    <li><a href="../crm/view-quotations.php"><span class="nav-link-text">Manage Quotations</span></a></li>
-                </ul>
-            </li>
-            <?php
-            }
-            if($_Nav_PPM_SC)
-            {
-            ?>
-            <li id="nav_ppm_billing">
-                <a href="../PPMBilling/view-ppm-billing" data-filter-tags="Billing PPM Invoice">
-                    <i class="fas fa-file-invoice"></i>
-                    <span class="nav-link-text" data-i18n="nav.PPMBilling">PPM Billing</span>
-                </a>
-            </li>
-
-             <?php
-            }
-            if($_Nav_Mail_SC)
-            {
-            ?>
-           <li id="nav_mail_scheduler">
-                <a href="../mail-scheduler/view-mail-scheduler" data-filter-tags="Mail Scheduler">
-                    <i class="fal fa-clock"></i>
-                    <span class="nav-link-text" data-i18n="nav.MailScheduler">Mail Scheduler</span>
-                </a>
-            </li>
-            <?php
-            }
-            if($_Nav_Corporate_Finance_Tickets)
-            {
-            ?>
-            <li id="nav_finance">
-                <a href="#" data-filter-tags="Fianance">
-                    <i class="fa-solid fa-users"></i>
-                    <span class="nav-link-text" data-i18n="nav.Fianance">Finance</span>
-                </a>
-                <ul class="pl-3">
-                    <li id="nav_corporate_tickets_finance">
-                        <a href="../corporate-tickets/view-corporate-tickets-finance" data-filter-tags="Tickets Finance">
-                            <i class="fa-solid fa-calendar-check"></i>
-                            <span class="nav-link-text" data-i18n="nav.Bookings">Tickets Finance</span>
-                        </a>
-                    </li>
-                    <li id="nav_ticket_quotations">
-                        <a href="../corporate-tickets/view-all-ticket-quotations" data-filter-tags="Quotations">
-                            <i class="fa-solid fa-calendar-check"></i>
-                            <span class="nav-link-text" data-i18n="nav.Quotations">Quotations</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <?php
-            }
-            if($_Nav_Site_Visits)
-            {
-            ?>
-            <li id="nav_site_visits">
-                <a href="../site_visits/view-all-site-visits" data-filter-tags="Company">
-                    <i class="fa-solid fa-users"></i>
-                    <span class="nav-link-text" data-i18n="nav.Site Visits">Site Visits</span>
-                </a>
-            </li>
-            <?php
-            }
-            if($_Nav_Account_Tickets)
-            {
-            ?>
-            <li id="nav_corporate_tickets">
-                <a href="../corporate-tickets/view-account-tickets" data-filter-tags="Company">
-                    <i class="fa-solid fa-users"></i>
-                    <span class="nav-link-text" data-i18n="nav.Account Tickets">Account Tickets</span>
+            <li id="nav_account_dashboard">
+                <a href="../dashboard/accounts_dashboard" data-filter-tags="Dashboard">
+                    <i class="fa-solid fa-list"></i>
+                    <span class="nav-link-text" data-i18n="nav.Dashboard">Account Dashboard</span>
                 </a>
             </li>
             <?php
@@ -427,11 +290,31 @@ if ($isPoonawalla) {
             </li>
             <?php
             }
+            if($_Nav_Account_Tickets)
+            {
+            ?>
+            <li id="nav_account_tickets">
+                <a href="../corporate-tickets/view-account-tickets" data-filter-tags="Company">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="nav-link-text" data-i18n="nav.Account Tickets">Account Tickets</span>
+                </a>
+            </li>
+            <?php
+            }
+            if($_Nav_Analytics_Dashboard)
+            {
+            ?>
+            <li id="nav_analytics_dashboard">
+                <a href="../dashboard/analytics_dashboard" data-filter-tags="Dashboard">
+                    <i class="fal fa-chart-pie"></i>
+                    <span class="nav-link-text" data-i18n="nav.Dashboard">Analytics Dashboard</span>
+                </a>
+            </li>
+            <?php
+            }
             if($_Nav_Bookings)
             {
             ?>
-
-
             <li id="nav_booking">
                 <a href="#" data-filter-tags="Services">
                     <i class="fa-solid fa-calendar-check"></i>
@@ -452,16 +335,47 @@ if ($isPoonawalla) {
                     </li>
                 </ul>
             </li>
-
             <?php
             }
-            if($_Nav_Projects)
+            if($_Nav_Corporate_Tickets || $_Nav_Corporate || $_Nav_Corporate_approval || $_Nav_Corporate_quotation_approval)
             {
             ?>
-            <li id="nav_projects">
-                <a href="../project-management/view-projects" data-filter-tags="Projects">
-                    <i class="fa-solid fa-calendar-check"></i>
-                    <span class="nav-link-text" data-i18n="nav.Projects">Projects</span>
+            <li id="nav_corporate_tickets">
+                <a href="../corporate-tickets/view-corporate-tickets"
+                    data-filter-tags="Company">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="nav-link-text" data-i18n="nav.Corporate Tickets">Corporate Tickets</span>
+                    <?php if($corporateTicketsApprovalCount > 0) { ?>
+                    <span class="badge badge-danger ml-auto"><?php echo $corporateTicketsApprovalCount; ?></span>
+                    <?php } ?>
+                </a>
+            </li>
+            <?php
+            }
+            if($_Nav_PPM_Tickets)
+            {
+            ?>
+            <li id="nav_crm">
+                <a href="#" data-filter-tags="CRM">
+                    <i class="fas fa-handshake"></i>
+                    <span class="nav-link-text" data-i18n="nav.CRM">CRM Modules</span>
+                </a>
+                <ul>
+                    <li><a href="../crm/view-customers.php"><span class="nav-link-text">Manage Customers</span></a></li>
+                    <li><a href="../crm/view-leads.php"><span class="nav-link-text">Manage Leads</span></a></li>
+                    <li><a href="../crm/view-products.php"><span class="nav-link-text">Manage Products</span></a></li>
+                    <li><a href="../crm/view-quotations.php"><span class="nav-link-text">Manage Quotations</span></a></li>
+                </ul>
+            </li>
+            <?php
+            }
+            if($_Nav_Analytics_Daily_Tracker)
+            {
+            ?>
+            <li id="nav_daily_tracker_dashboard">
+                <a href="../dashboard/daily_tracker_dashboard" data-filter-tags="Daily Tracker Dashboard">
+                    <i class="fa-solid fa-list"></i>
+                    <span class="nav-link-text" data-i18n="nav.Dashboard">Daily Tracker</span>
                 </a>
             </li>
             <?php
@@ -489,6 +403,30 @@ if ($isPoonawalla) {
             </li>
             <?php
             }
+            if($_Nav_Leave_Mgmt_HR)
+            {
+            ?>
+            <li id="nav_comp_off_approval">
+                <a href="../employee-leave-mgmt/view-comp-off-approval"
+                    data-filter-tags="comp off leave">
+                    <i class="fa-solid fa-business-time"></i>
+                    <span class="nav-link-text">Comp-off Approval</span>
+                </a>
+            </li>
+            <?php
+            }
+            if($_Nav_Convenience_Finance_Payment)
+            {
+            ?>
+            <li id="_Nav_Convenience_Finance_Payment">
+                <a href="../convenience-finance-payment/view-convenience-finance-payment.php"
+                    data-filter-tags="convenience finance payment">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <span class="nav-link-text" data-i18n="nav.convenience_finance_payment">Convenience Payment</span>
+                </a>
+            </li>
+            <?php
+            }
             if($_Nav_Employees_details)
             {
             ?>
@@ -501,8 +439,6 @@ if ($isPoonawalla) {
             </li>
             <?php
             }
-            ?>
-            <?php
             if($_Nav_Attendance_List)
             {
             ?>
@@ -515,19 +451,6 @@ if ($isPoonawalla) {
             </li>
             <?php
             }
-            if($_Nav_Attendance_Approval)
-            {
-            ?>
-            <li id="nav_attendance_approval">
-                <a href="../attendance-approval/view-attendance-approval.php"
-                    data-filter-tags="attendance approval">
-                    <i class="fa-solid fa-user-check"></i>
-                    <span class="nav-link-text" data-i18n="nav.attendance_approval">Team Attendance</span>
-                </a>
-            </li>
-
-            <?php
-            }
             if($_Nav_Attendance_HR_Approval)
             {
             ?>
@@ -536,61 +459,6 @@ if ($isPoonawalla) {
                     data-filter-tags="attendance hr approval">
                     <i class="fa-solid fa-clipboard-check"></i>
                     <span class="nav-link-text" data-i18n="nav.attendance_hr_approval">HR Attendance Approval</span>
-                </a>
-            </li>
-            <?php
-            }
-            if($_Nav_Leave_HR_Approval)
-            {
-            ?>
-            <li id="nav_leave_hr_approval">
-                <a href="../leave-hr-approval/view-leave-hr-approval.php"
-                    data-filter-tags="leave hr approval">
-                    <i class="fa-solid fa-calendar-check"></i>
-                    <span class="nav-link-text" data-i18n="nav.leave_hr_approval">HR Leave Approval</span>
-                </a>
-            </li>
-            <?php
-            }
-            if($_Nav_Leave_Mgmt_HR)
-            {
-            ?>
-            <li id="nav_leave_policy">
-                <a href="../employee-leave-mgmt/view-leave-policy"
-                    data-filter-tags="leave policy balance">
-                    <i class="fa-solid fa-sliders"></i>
-                    <span class="nav-link-text">Leave Policy</span>
-                </a>
-            </li>
-            <li id="nav_comp_off_approval">
-                <a href="../employee-leave-mgmt/view-comp-off-approval"
-                    data-filter-tags="comp off leave">
-                    <i class="fa-solid fa-business-time"></i>
-                    <span class="nav-link-text">Comp-off Approval</span>
-                </a>
-            </li>
-            <?php
-            }
-            if($_Nav_HR_Tickets)
-            {
-            ?>
-            <li id="nav_hr_tickets_manage">
-                <a href="../hr-tickets/view-hr-tickets"
-                    data-filter-tags="hr tickets employee concerns">
-                    <i class="fa-solid fa-headset"></i>
-                    <span class="nav-link-text">HR Tickets</span>
-                </a>
-            </li>
-            <?php
-            }
-            if($_Nav_Convenience_Approval)
-            {
-            ?>
-            <li id="_Nav_Convenience_Approval">
-                <a href="../convenience-approval/view-convenience-approval.php"
-                    data-filter-tags="convenience approval supervisor">
-                    <i class="fa-solid fa-route"></i>
-                    <span class="nav-link-text" data-i18n="nav.convenience_approval">Team Convenience</span>
                 </a>
             </li>
             <?php
@@ -607,14 +475,153 @@ if ($isPoonawalla) {
             </li>
             <?php
             }
-            if($_Nav_Convenience_Finance_Payment)
+            if($_Nav_Leave_HR_Approval)
             {
             ?>
-            <li id="_Nav_Convenience_Finance_Payment">
-                <a href="../convenience-finance-payment/view-convenience-finance-payment.php"
-                    data-filter-tags="convenience finance payment">
-                    <i class="fa-solid fa-money-check-dollar"></i>
-                    <span class="nav-link-text" data-i18n="nav.convenience_finance_payment">Convenience Payment</span>
+            <li id="nav_leave_hr_approval">
+                <a href="../leave-hr-approval/view-leave-hr-approval.php"
+                    data-filter-tags="leave hr approval">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span class="nav-link-text" data-i18n="nav.leave_hr_approval">HR Leave Approval</span>
+                </a>
+            </li>
+            <?php
+            }
+            if($_Nav_HR_Tickets)
+            {
+            ?>
+            <li id="nav_hr_tickets_manage">
+                <a href="../hr-tickets/view-hr-tickets"
+                    data-filter-tags="hr tickets employee concerns">
+                    <i class="fa-solid fa-headset"></i>
+                    <span class="nav-link-text">HR Tickets</span>
+                </a>
+            </li>
+            <?php
+            }
+            if($_Nav_Leave_Mgmt_HR)
+            {
+            ?>
+            <li id="nav_leave_policy">
+                <a href="../employee-leave-mgmt/view-leave-policy"
+                    data-filter-tags="leave policy balance">
+                    <i class="fa-solid fa-sliders"></i>
+                    <span class="nav-link-text">Leave Policy</span>
+                </a>
+            </li>
+            <?php
+            }
+            if($_Nav_Attendance_Approval)
+            {
+            ?>
+            <li id="nav_attendance_approval">
+                <a href="../attendance-approval/view-attendance-approval.php"
+                    data-filter-tags="attendance approval">
+                    <i class="fa-solid fa-user-check"></i>
+                    <span class="nav-link-text" data-i18n="nav.attendance_approval">Team Attendance</span>
+                </a>
+            </li>
+            <?php
+            }
+            if($_Nav_Convenience_Approval)
+            {
+            ?>
+            <li id="_Nav_Convenience_Approval">
+                <a href="../convenience-approval/view-convenience-approval.php"
+                    data-filter-tags="convenience approval supervisor">
+                    <i class="fa-solid fa-route"></i>
+                    <span class="nav-link-text" data-i18n="nav.convenience_approval">Team Convenience</span>
+                </a>
+            </li>
+            <?php
+            }
+            if($_Nav_Corporate_Finance_Tickets)
+            {
+            ?>
+            <li id="nav_finance">
+                <a href="#" data-filter-tags="Fianance">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="nav-link-text" data-i18n="nav.Fianance">Finance</span>
+                </a>
+                <ul class="pl-3">
+                    <li id="nav_ticket_quotations">
+                        <a href="../corporate-tickets/view-all-ticket-quotations" data-filter-tags="Quotations">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <span class="nav-link-text" data-i18n="nav.Quotations">Quotations</span>
+                        </a>
+                    </li>
+                    <li id="nav_corporate_tickets_finance">
+                        <a href="../corporate-tickets/view-corporate-tickets-finance" data-filter-tags="Tickets Finance">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <span class="nav-link-text" data-i18n="nav.Bookings">Tickets Finance</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <?php
+            }
+            if($_Nav_Mail_SC)
+            {
+            ?>
+            <li id="nav_mail_scheduler">
+                <a href="../mail-scheduler/view-mail-scheduler" data-filter-tags="Mail Scheduler">
+                    <i class="fal fa-clock"></i>
+                    <span class="nav-link-text" data-i18n="nav.MailScheduler">Mail Scheduler</span>
+                </a>
+            </li>
+            <?php
+            }
+            if($_Nav_PPM_SC)
+            {
+            ?>
+            <li id="nav_ppm_billing">
+                <a href="../PPMBilling/view-ppm-billing" data-filter-tags="Billing PPM Invoice">
+                    <i class="fas fa-file-invoice"></i>
+                    <span class="nav-link-text" data-i18n="nav.PPMBilling">PPM Billing</span>
+                </a>
+            </li>
+            <?php
+            }
+            if($_Nav_PPM_Tickets)
+            {
+            ?>
+            <li id="nav_ppm_tickets">
+                <a href="../ppm-ticket/view-all-ppm-tickets" data-filter-tags="Company">
+                    <i class="fal fa-warehouse"></i>
+                    <span class="nav-link-text" data-i18n="nav.PPMTickets">PPM Tickets</span>
+                </a>
+            </li>
+            <?php
+            }
+            if($_Nav_Projects)
+            {
+            ?>
+            <li id="nav_projects">
+                <a href="../project-management/view-projects" data-filter-tags="Projects">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span class="nav-link-text" data-i18n="nav.Projects">Projects</span>
+                </a>
+            </li>
+            <?php
+            }
+            if($_Nav_Site_Visits)
+            {
+            ?>
+            <li id="nav_site_visits">
+                <a href="../site_visits/view-all-site-visits" data-filter-tags="Company">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="nav-link-text" data-i18n="nav.Site Visits">Site Visits</span>
+                </a>
+            </li>
+            <?php
+            }
+            if($_Nav_Tender_RFQ)
+            {
+            ?>
+            <li id="nav_tender_rfq">
+                <a href="../tender-rfq/view-tender-rfq-tickets" data-filter-tags="Tender RFQ">
+                    <i class="fa-solid fa-file-signature"></i>
+                    <span class="nav-link-text" data-i18n="nav.Tender_RFQ">Tender RFQ</span>
                 </a>
             </li>
             <?php
@@ -1235,6 +1242,49 @@ if ($isPoonawalla) {
             ?>
 
             <?php
+            if(!empty($_Nav_Finance_Performance))
+            {
+            ?>
+            <li id="nav_finance_performance" class="nav-item">
+                <a href="#" data-filter-tags="finance performance expense">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <span class="nav-link-text">Finance &amp; Performance</span>
+                </a>
+                <ul class="pl-3">
+                    <?php foreach ($_Nav_Finance_Performance_Items as $fpNavItem) { ?>
+                    <?php if ($fpNavItem['type'] === 'group') { ?>
+                    <li id="nav_fp_group_<?php echo htmlspecialchars($fpNavItem['key']); ?>">
+                        <a href="#" data-filter-tags="<?php echo htmlspecialchars(strtolower($fpNavItem['label'])); ?>">
+                            <i class="<?php echo htmlspecialchars($fpNavItem['icon']); ?>"></i>
+                            <span class="nav-link-text"><?php echo htmlspecialchars($fpNavItem['label']); ?></span>
+                        </a>
+                        <ul class="pl-3">
+                            <?php foreach ($fpNavItem['children'] as $fpNavChild) { ?>
+                            <li id="nav_fp_<?php echo htmlspecialchars($fpNavChild['key']); ?>">
+                                <a href="<?php echo htmlspecialchars($fpNavChild['href']); ?>" data-filter-tags="<?php echo htmlspecialchars(strtolower($fpNavChild['label'])); ?>">
+                                    <i class="<?php echo htmlspecialchars($fpNavChild['icon']); ?>"></i>
+                                    <span class="nav-link-text"><?php echo htmlspecialchars($fpNavChild['label']); ?></span>
+                                </a>
+                            </li>
+                            <?php } ?>
+                        </ul>
+                    </li>
+                    <?php } else { ?>
+                    <li id="nav_fp_<?php echo htmlspecialchars($fpNavItem['key']); ?>">
+                        <a href="<?php echo htmlspecialchars($fpNavItem['href']); ?>" data-filter-tags="<?php echo htmlspecialchars(strtolower($fpNavItem['label'])); ?>">
+                            <i class="<?php echo htmlspecialchars($fpNavItem['icon']); ?>"></i>
+                            <span class="nav-link-text"><?php echo htmlspecialchars($fpNavItem['label']); ?></span>
+                        </a>
+                    </li>
+                    <?php } ?>
+                    <?php } ?>
+                </ul>
+            </li>
+            <?php
+            }
+            ?>
+
+            <?php
             if($_Nav_Ticket_Billing)
             {
             ?>
@@ -1252,3 +1302,56 @@ if ($isPoonawalla) {
         <div class="filter-message js-filter-message bg-success-600"></div>
     </nav>
 </aside>
+<script>
+(function () {
+    function itemLabel(li) {
+        var link = null;
+        var child;
+        for (var i = 0; i < li.children.length; i++) {
+            child = li.children[i];
+            if (child.tagName === "A") {
+                link = child;
+                break;
+            }
+        }
+        if (!link) {
+            return "";
+        }
+        var label = link.getElementsByClassName("nav-link-text")[0];
+        var text = label ? label.textContent : link.textContent;
+        return String(text || "").replace(/\s+/g, " ").trim().toLowerCase();
+    }
+
+    function sortMenuList(list) {
+        if (!list) {
+            return;
+        }
+        var items = [];
+        var i;
+        var child;
+        for (i = 0; i < list.children.length; i++) {
+            child = list.children[i];
+            if (child.tagName === "LI") {
+                items.push(child);
+            }
+        }
+        items.sort(function (a, b) {
+            return itemLabel(a).localeCompare(itemLabel(b), undefined, {
+                numeric: true,
+                sensitivity: "base"
+            });
+        });
+        for (i = 0; i < items.length; i++) {
+            list.appendChild(items[i]);
+            for (var j = 0; j < items[i].children.length; j++) {
+                child = items[i].children[j];
+                if (child.tagName === "UL") {
+                    sortMenuList(child);
+                }
+            }
+        }
+    }
+
+    sortMenuList(document.getElementById("js-nav-menu"));
+})();
+</script>

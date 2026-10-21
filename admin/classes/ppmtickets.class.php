@@ -457,14 +457,13 @@ class Ppmtickets extends Core
 				$filter_date = " AND (a.PPMDate >= '$StartDate' and a.PPMDate <= '$EndDate') ";
 			}
 		}
-		if($CorporateID != -1)
-		{
-			$sql = "SELECT CASE WHEN a.Status IN ('Planned', 'Raised') AND a.PPMDate < DATE_SUB(CURDATE(), INTERVAL 7 DAY) THEN 'Overdue' ELSE a.Status END AS Status, COUNT(*) AS ticket_counts FROM ppm_tickets a INNER JOIN branch b ON a.BranchID = b.ID  INNER JOIN company c ON a.CorporateID = c.ID INNER JOIN branch_assets d ON a.BranchAssetID = d.ID where a.CorporateID = $CorporateID $filter_is_active $filter_ticket_status $filter_ticket_type $filter_state $filter_region $filter_branch $filter_state_lead $filter_account_branch_manager $filter_date GROUP BY CASE WHEN a.Status IN ('Planned', 'Raised') AND a.PPMDate < DATE_SUB(CURDATE(), INTERVAL 7 DAY) THEN 'Overdue' ELSE a.Status END";
+		$needsBranchJoin = ($filter_state !== "" || $filter_region !== "" || $filter_state_lead !== "");
+		$fromSql = "FROM ppm_tickets a";
+		if ($needsBranchJoin) {
+			$fromSql .= " INNER JOIN branch b ON a.BranchID = b.ID";
 		}
-		else
-		{
-			$sql = "SELECT CASE WHEN a.Status IN ('Planned', 'Raised') AND a.PPMDate < DATE_SUB(CURDATE(), INTERVAL 7 DAY) THEN 'Overdue' ELSE a.Status END AS Status, COUNT(*) AS ticket_counts FROM ppm_tickets a INNER JOIN branch b ON a.BranchID = b.ID  INNER JOIN company c ON a.CorporateID = c.ID INNER JOIN branch_assets d ON a.BranchAssetID = d.ID where 1 $filter_is_active $filter_ticket_status $filter_ticket_type $filter_state $filter_region $filter_branch $filter_state_lead $filter_account_branch_manager $filter_date GROUP BY CASE WHEN a.Status IN ('Planned', 'Raised') AND a.PPMDate < DATE_SUB(CURDATE(), INTERVAL 7 DAY) THEN 'Overdue' ELSE a.Status END";
-		}
+		$whereCorporate = ($CorporateID != -1) ? "a.CorporateID = ".(int)$CorporateID : "1";
+		$sql = "SELECT CASE WHEN a.Status IN ('Planned', 'Raised') AND a.PPMDate < DATE_SUB(CURDATE(), INTERVAL 7 DAY) THEN 'Overdue' ELSE a.Status END AS Status, COUNT(*) AS ticket_counts $fromSql WHERE $whereCorporate $filter_is_active $filter_ticket_status $filter_ticket_type $filter_state $filter_region $filter_branch $filter_state_lead $filter_account_branch_manager $filter_date GROUP BY CASE WHEN a.Status IN ('Planned', 'Raised') AND a.PPMDate < DATE_SUB(CURDATE(), INTERVAL 7 DAY) THEN 'Overdue' ELSE a.Status END";
 
 
 		$result = mysqli_query($this->conn, $sql);

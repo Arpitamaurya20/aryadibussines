@@ -410,18 +410,40 @@ function ChangePassword() {
       return false;
     }
   }
-  document.getElementById("access_input").innerHTML = "Saving..";
+  var $btn = $("#save_access_btn");
+  $btn.prop("disabled", true).text("Saving..");
   $.ajax({
     url: "action/change_password.php",
     type: "POST",
     data: $("#access_form").serialize(),
     success: function (data) {
-      var response = JSON.parse(data);
+      var response;
+      try {
+        response = typeof data === "string" ? JSON.parse(data) : data;
+      } catch (e) {
+        TechXAlert("Could not update access. Please try again.");
+        return;
+      }
       TechXAlert(response.message);
       if (response.error == false) location.reload();
     },
+    error: function () {
+      TechXAlert("Could not update access. Please try again.");
+    },
+    complete: function () {
+      $btn.prop("disabled", false).text("Save");
+    },
   });
 }
+
+function openaccessmodal() {
+  $("#editaccess").modal("show");
+  return false;
+}
+
+$(document).on("click", "#save_access_btn", function () {
+  ChangePassword();
+});
 
 function ResetPassword() {
   var reset_passsword = $("#reset_passsword").val();
@@ -439,9 +461,21 @@ function ResetPassword() {
         type: "POST",
         data: $("#reset_password_form").serialize(),
         success: function (data) {
-          var response = JSON.parse(data);
-          alert(response.message);
-          $("#resetpassword").modal("hide");
+          var response;
+          try {
+            response = typeof data === "string" ? JSON.parse(data) : data;
+          } catch (e) {
+            TechXAlert("Could not reset password. Please try again.");
+            return;
+          }
+          TechXAlert(response.message);
+          if (response.error == false) {
+            $("#reset_password_form")[0].reset();
+            $("#resetpassword").modal("hide");
+          }
+        },
+        error: function () {
+          TechXAlert("Could not reset password. Please try again.");
         },
       });
     }

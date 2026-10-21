@@ -135,15 +135,36 @@ function GenerateDashboard(CorporateID)
   }
   RefreshBranchAnalytics(CorporateID);
 }
+function scheduleAnalyticsIdle(fn)
+{
+  if (window.requestIdleCallback) {
+    window.requestIdleCallback(fn, { timeout: 1200 });
+    return;
+  }
+  setTimeout(fn, 50);
+}
+var analyticsChartJsPromise = null;
+function ensureAnalyticsChartJs(cb)
+{
+  if (window.Chart) {
+    cb();
+    return;
+  }
+  if (!analyticsChartJsPromise) {
+    analyticsChartJsPromise = new Promise(function(resolve) {
+      var s = document.createElement("script");
+      s.src = "https://cdn.jsdelivr.net/npm/chart.js";
+      s.onload = resolve;
+      s.onerror = resolve;
+      document.body.appendChild(s);
+    });
+  }
+  analyticsChartJsPromise.then(cb);
+}
 function RefreshBranchAnalytics(CorporateID)
 {
   $("#panel-rnm").show();
-  /*$("#ticket_state_filter").val("");
-  $("#ticket_region_filter").val("");
-  $("#ticket_type_filter").val("");
-  $("#ticket_status_filter").val("");*/
   GenerateBranchAnalytics(CorporateID);
-  GenerateQuotationsDashboard_Analytics(CorporateID);
 }
 function GenerateBranchAnalytics(CorporateID)
 {
@@ -172,15 +193,19 @@ function GenerateBranchAnalytics(CorporateID)
   {
     filter_date = $("#filter_date").val();
   }
-	GenerateCorporateBranchStats(CorporateID,state_filter,region_filter,ticket_type_filter,ticket_status_filter,filter_date);
-  GenerateCorporateNameandTicketCount(CorporateID,state_filter,region_filter,ticket_type_filter,ticket_status_filter,filter_date);
-  GenerateStateandRegionofCorporate(CorporateID,state_filter,region_filter,ticket_type_filter,ticket_status_filter);
-  GenerateTypeStatus(CorporateID,state_filter,region_filter,ticket_type_filter,ticket_status_filter);
-  GenerateTicketStatusBarGraph(CorporateID,state_filter,region_filter,ticket_type_filter,ticket_status_filter,filter_date);
-  GenerateRegionDoughnutGraph(CorporateID,state_filter,region_filter,ticket_type_filter,ticket_status_filter,filter_date);
-  GenerateStateWiseTicketBarGraph(CorporateID,state_filter,region_filter,ticket_type_filter,ticket_status_filter,filter_date);
   GenerateStatusButtons(CorporateID,state_filter,region_filter,filter_date);
-  GenerateQuotationsDashboard_Analytics(CorporateID);
+  GenerateStateandRegionofCorporate(CorporateID,state_filter,region_filter,ticket_type_filter,ticket_status_filter);
+  scheduleAnalyticsIdle(function() {
+    GenerateCorporateBranchStats(CorporateID,state_filter,region_filter,ticket_type_filter,ticket_status_filter,filter_date);
+    GenerateCorporateNameandTicketCount(CorporateID,state_filter,region_filter,ticket_type_filter,ticket_status_filter,filter_date);
+    GenerateTypeStatus(CorporateID,state_filter,region_filter,ticket_type_filter,ticket_status_filter);
+    GenerateQuotationsDashboard_Analytics(CorporateID);
+    ensureAnalyticsChartJs(function() {
+      GenerateTicketStatusBarGraph(CorporateID,state_filter,region_filter,ticket_type_filter,ticket_status_filter,filter_date);
+      GenerateRegionDoughnutGraph(CorporateID,state_filter,region_filter,ticket_type_filter,ticket_status_filter,filter_date);
+      GenerateStateWiseTicketBarGraph(CorporateID,state_filter,region_filter,ticket_type_filter,ticket_status_filter,filter_date);
+    });
+  });
 }
 function GenerateStatusButtons(CorporateID,state_filter,region_filter,filter_date)
 {
@@ -202,22 +227,21 @@ function GenerateStatusButtons(CorporateID,state_filter,region_filter,filter_dat
     document.getElementById("status_buttons_div_loader").style.display = "none";
     document.getElementById("status_buttons_div").innerHTML = data;        
     document.getElementById("status_buttons_div").style.display = "";
-    $('.js-easy-pie-chart').each(function() 
-    {
-        // Get the color from the badge
-        let badgeColor = $(this).closest('.d-flex').find('.badge').css('background-color');
-        
-        // Initialize the pie chart with the badge color as the bar color
-        $(this).easyPieChart({
-            size: 50,
-            barColor: badgeColor,     // Dynamic color based on badge
-            trackColor: '#e9ecef',     // Background track color
-            scaleColor: '#adb5bd',     // Scale color for ticks
-            scaleLength: 2,            // Length of scale ticks
-            lineWidth: 5,
-            lineCap: 'butt'
-        });
-    });
+    if ($.fn.easyPieChart) {
+      $('.js-easy-pie-chart').each(function() 
+      {
+          let badgeColor = $(this).closest('.d-flex').find('.badge').css('background-color');
+          $(this).easyPieChart({
+              size: 50,
+              barColor: badgeColor,
+              trackColor: '#e9ecef',
+              scaleColor: '#adb5bd',
+              scaleLength: 2,
+              lineWidth: 5,
+              lineCap: 'butt'
+          });
+      });
+    }
     bindAnalyticsStatusTicketLinks();
   });
 }
